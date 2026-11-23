@@ -93,7 +93,7 @@ font-size:var(--cds-font-size-body,15px); line-height:1.5;
 .os-anchor:hover{color:var(--color-fg)}
 .os-anchor:focus-visible{outline:2px solid var(--os-c2); outline-offset:2px}
 @media (hover:none){.os-anchor{opacity:.55}}
-.os-row,.os-h2,.os-notes h3,.os-notes{scroll-margin-top:14px}
+.os-row,.os-h2,.os-notes h3,.os-notes{scroll-margin-top:calc(var(--os-sticky,0px) + 14px)}
 .os-row.is-target,.os-h2.is-target,.os-notes h3.is-target{animation:os-flash 2.6s ease-out}
 .os-notes.is-target{animation:os-flash 2.6s ease-out}
 @keyframes os-flash{0%,55%{background:color-mix(in srgb,var(--os-c2) 16%,transparent)}100%{background:transparent}}
@@ -115,6 +115,13 @@ font-size:var(--cds-font-size-body,15px); line-height:1.5;
 .os-adj-note{margin:0; font-size:12.5px; color:var(--color-fg-muted); max-width:80ch}
 .os-mode{position:sticky; top:0; z-index:30; flex-direction:row; flex-wrap:wrap; align-items:center; gap:8px 14px; padding:10px 16px; border:1px solid var(--color-fg); border-radius:14px; background:var(--color-bg); box-shadow:0 8px 22px rgba(0,0,0,.12)}
 .os-mode-l{font-size:13px; letter-spacing:.04em; font-weight:700; color:var(--color-fg); text-transform:uppercase}
+.os-ctl{flex-direction:column; align-items:stretch; gap:8px}
+.os-ctl-row{display:flex; flex-wrap:wrap; align-items:center; gap:6px 14px; min-width:0}
+.os-ctl .os-mode-l{flex:none; min-width:7.6em}
+.os-ctl .os-years{flex:1 1 0; min-width:0; gap:5px}
+.os-ctl .os-yr{padding:4px 8px; font-size:12.5px; letter-spacing:-.01em; font-weight:600; color:var(--color-fg); border-color:var(--color-fg-muted)}
+.os-ctl .os-yr[aria-pressed="true"]{color:var(--color-bg); background:var(--color-fg); border-color:var(--color-fg)}
+.os-ctl .os-yr small{font-size:10px; margin-left:3px}
 .os-modes{display:flex; flex-wrap:wrap; gap:8px}
 .os-modeshort{margin:0; flex:1 1 240px; font-size:13px; color:var(--color-fg-muted)}
 .os-md{display:inline-flex; align-items:baseline; gap:6px; font-size:14px; font-weight:600; padding:9px 16px; border-width:1.5px; border-color:var(--color-fg-muted); color:var(--color-fg)}
@@ -132,6 +139,15 @@ font-size:var(--cds-font-size-body,15px); line-height:1.5;
 .os-adj-icon{width:34px; height:34px; font-size:20px}
 .os-mode{padding:8px 10px; border-radius:12px}
 .os-mode-l{flex:1 0 100%}
+.os-ctl{gap:6px}
+.os-ctl .os-mode-l{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap}
+.os-ctl .os-years{flex:1 0 100%; flex-wrap:nowrap; overflow-x:auto; scrollbar-width:none; -webkit-overflow-scrolling:touch}
+.os-ctl .os-years::-webkit-scrollbar{display:none}
+.os-ctl .os-modes{flex:1 0 100%; min-width:0; flex-wrap:nowrap; overflow-x:auto; scrollbar-width:none; gap:6px}
+.os-ctl .os-modes::-webkit-scrollbar{display:none}
+.os-ctl .os-md{flex:none; padding:6px 11px; font-size:13px}
+.os-ctl .os-yr{flex:none; padding:5px 10px}
+.os-ctl-row{gap:2px 10px}
 .os-md{padding:7px 12px; font-size:13px}
 .os-modeshort{display:none}
 }
@@ -142,7 +158,7 @@ font-size:var(--cds-font-size-body,15px); line-height:1.5;
 <header class="os-head">
 <p class="os-eyebrow">Oyster River Cooperative School District · FY 2017-18 to FY 2026-27</p>
 <h1 class="os-title" id="os-title">Ten years at a glance</h1>
-<p class="os-intro">Seventy-seven measures from public filings, grouped into nine sections and drawn on the same ten school years, each row on its own scale. Select a year to read its value in every row, or hover, focus or tap a point for the exact figures. Every row shows its change since FY 2017-18 and links to its source data. Under each chart, FY18 means the 2017-18 school year (the year it ends in). Solid points are results; hollow, dotted points are budgets, provisional or approximate figures.</p>
+<p class="os-intro">Seventy-seven measures from public filings, grouped into nine sections and drawn on the same ten school years, each row on its own scale. The page opens on FY 2026-27 (the voted budget, provisional); select a year in the bar that stays at the top of the screen to read its value in every row, or hover, focus or tap a point for the exact figures. Every row shows its change since FY 2017-18 and links to its source data. Under each chart, FY18 means the 2017-18 school year (the year it ends in). Solid points are results; hollow, dotted points are budgets, provisional or approximate figures.</p>
 </header>
 <section class="os-adjust" aria-labelledby="os-adj-h">
 <div class="os-adj-icon" aria-hidden="true">$</div>
@@ -153,26 +169,31 @@ font-size:var(--cds-font-size-body,15px); line-height:1.5;
 <p class="os-adj-note" data-draw="modenote">—</p>
 </div>
 </section>
-<div class="os-mode" role="group" aria-labelledby="os-mode-l">
+<div class="os-mode os-ctl" role="group" aria-label="Page controls: fiscal year and dollar basis">
+<div class="os-ctl-row">
+<span class="os-mode-l" id="os-yr-l">Fiscal year</span>
+<div class="os-years" role="group" aria-labelledby="os-yr-l">
+<button type="button" class="os-yr" data-i="0" aria-pressed="false" aria-label="Fiscal year 2017-18">2017-18</button>
+<button type="button" class="os-yr" data-i="1" aria-pressed="false" aria-label="Fiscal year 2018-19">2018-19</button>
+<button type="button" class="os-yr" data-i="2" aria-pressed="false" aria-label="Fiscal year 2019-20">2019-20</button>
+<button type="button" class="os-yr" data-i="3" aria-pressed="false" aria-label="Fiscal year 2020-21">2020-21</button>
+<button type="button" class="os-yr" data-i="4" aria-pressed="false" aria-label="Fiscal year 2021-22">2021-22</button>
+<button type="button" class="os-yr" data-i="5" aria-pressed="false" aria-label="Fiscal year 2022-23">2022-23</button>
+<button type="button" class="os-yr" data-i="6" aria-pressed="false" aria-label="Fiscal year 2023-24">2023-24</button>
+<button type="button" class="os-yr" data-i="7" aria-pressed="false" aria-label="Fiscal year 2024-25">2024-25</button>
+<button type="button" class="os-yr" data-i="8" aria-pressed="false" aria-label="Fiscal year 2025-26">2025-26</button>
+<button type="button" class="os-yr" data-i="9" aria-pressed="true" aria-label="Fiscal year 2026-27, provisional">2026-27<small>prov.</small></button>
+</div>
+</div>
+<div class="os-ctl-row">
 <span class="os-mode-l" id="os-mode-l">Show dollars as</span>
-<div class="os-modes">
+<div class="os-modes" role="group" aria-labelledby="os-mode-l">
 <button type="button" class="os-md" data-m="nom" aria-pressed="true">As recorded</button>
 <button type="button" class="os-md" data-m="cpi" aria-pressed="false">Inflation-adjusted<small>CPI-U</small></button>
 <button type="button" class="os-md" data-m="eci" aria-pressed="false">School-cost adjusted<small>ECI</small></button>
 </div>
 <p class="os-modeshort" data-draw="modeshort" aria-live="polite">—</p>
 </div>
-<div class="os-years" role="group" aria-label="Fiscal year">
-<button type="button" class="os-yr" data-i="0" aria-pressed="false">FY 2017-18</button>
-<button type="button" class="os-yr" data-i="1" aria-pressed="false">FY 2018-19</button>
-<button type="button" class="os-yr" data-i="2" aria-pressed="false">FY 2019-20</button>
-<button type="button" class="os-yr" data-i="3" aria-pressed="false">FY 2020-21</button>
-<button type="button" class="os-yr" data-i="4" aria-pressed="false">FY 2021-22</button>
-<button type="button" class="os-yr" data-i="5" aria-pressed="false">FY 2022-23</button>
-<button type="button" class="os-yr" data-i="6" aria-pressed="false">FY 2023-24</button>
-<button type="button" class="os-yr" data-i="7" aria-pressed="true">FY 2024-25</button>
-<button type="button" class="os-yr" data-i="8" aria-pressed="false">FY 2025-26</button>
-<button type="button" class="os-yr" data-i="9" aria-pressed="false">FY 2026-27<small>provisional</small></button>
 </div>
 <header class="os-head os-head2">
 <h2 class="os-h2">Spending, enrollment and budget</h2>
@@ -1133,7 +1154,7 @@ description: 'Change in actual spending, cost per pupil (nominal and inflation-a
 });
 (function () {
 var NS = 'http://www.w3.org/2000/svg';
-var sel = 7;
+var sel = 9;
 var mode = 'nom';
 var MODES = { nom: { label: 'Nominal dollars', f: null }, cpi: { label: 'Northeast CPI-U', f: 'f_cpi', idx: 'cpi_ne', n: 'cpi_ne_months', nn: 12 }, eci: { label: 'education labor costs (ECI)', f: 'f_eci', idx: 'eci_edu', n: 'eci_quarters', nn: 4 } };
 var MONEY = ['gfo_sal', 'gfo_ben', 'gfo_pur', 'gfo_sup', 'gfo_prop', 'gfo_oth', 'gfo_tot', 'gfo_sb', 'gfo_np', 'sch_mw', 'sch_mo', 'sch_ps', 'sch_ms', 'sch_hs', 'sch_od', 'sch_tot', 'pers_t_sal', 'pers_a_sal', 'pers_o_sal', 'pers_t_ben', 'pers_a_ben', 'pers_o_ben', 'pers_ao_sal', 'fe_gen_rev', 'fe_gen_exp', 'fe_gen_net', 'fe_gen_beg', 'fe_gen_end', 'fe_food_rev', 'fe_food_exp', 'fe_food_net', 'fe_food_beg', 'fe_food_end', 'fe_spr_rev', 'fe_spr_exp', 'fe_spr_net', 'fe_spr_beg', 'fe_spr_end', 'rsd_ins', 'rsd_rel', 'rsd_adm', 'rsd_leg', 'rsd_trn', 'rsd_tui', 'rsd_sub', 'rsd_tot', 'rsd_aid', 'rsd_idea', 'rsd_med', 'rsd_rev', 'rsd_net', 'fb_prep', 'fb_vote', 'fb_enc', 'fb_ret', 'fb_una', 'fb_trust', 'bd_unspent', 'bd_appr', 'bd_exp', 'dflt_gap', 'dflt', 'f10', 'f21', 'f22', 'f23', 'nhrs_npl', 'nhrs_do', 'nhrs_di', 'nhrs_exp', 'nhrs_con', 'nhrs_onl', 'nhrs_oexp', 'nhrs_ocon', 'debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
@@ -2760,7 +2781,10 @@ ROWS.staff.chg = { get: function (r) { return r.instr_sal; }, kind: 'pct', note:
 var D0 = null;
 function setYearButtons() {
 document.querySelectorAll('.os-yr').forEach(function (b) {
-b.setAttribute('aria-pressed', String(+b.getAttribute('data-i') === sel));
+var on = +b.getAttribute('data-i') === sel;
+b.setAttribute('aria-pressed', String(on));
+var st = b.parentNode;
+if (on && st && st.scrollWidth > st.clientWidth) st.scrollLeft = b.offsetLeft - (st.clientWidth - b.offsetWidth) / 2;
 });
 }
 function redrawAll() {
@@ -3158,13 +3182,16 @@ var id = h.id || claim('notes-' + slug(h.textContent)); h.id = id; h.setAttribut
 h.classList.add('os-anch'); h.appendChild(mk(id, h.textContent.trim()));
 });
 }
-var take = root.querySelector('.os-years[aria-label="Fiscal year"]');
+var take = root.querySelector('.os-ctl');
 if (take && toc.length) {
 var nav = document.createElement('nav');
 nav.className = 'os-toc'; nav.setAttribute('aria-label', 'Jump to a section');
 nav.innerHTML = '<span class="os-toc-l">Jump to</span>' + toc.map(function (s) { return '<a href="#' + s[0] + '">' + s[1].replace(/&/g, '&amp;') + '</a>'; }).join('');
 take.parentNode.insertBefore(nav, take.nextSibling);
 }
+var bar = root.querySelector('.os-ctl');
+function bh() { if (bar) root.style.setProperty('--os-sticky', bar.offsetHeight + 'px'); }
+bh(); window.addEventListener('resize', bh); window.addEventListener('load', bh);
 var hl = 0;
 function go(first) {
 var h = location.hash.replace(/^#/, '');

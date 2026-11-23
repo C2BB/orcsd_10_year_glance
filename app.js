@@ -153,7 +153,7 @@ dash.calc('headline', {
 
 (function () {
   var NS = 'http://www.w3.org/2000/svg';
-  var sel = 7;
+  var sel = 9;
   var mode = 'nom';
   var MODES = { nom: { label: 'Nominal dollars', f: null }, cpi: { label: 'Northeast CPI-U', f: 'f_cpi', idx: 'cpi_ne', n: 'cpi_ne_months', nn: 12 }, eci: { label: 'education labor costs (ECI)', f: 'f_eci', idx: 'eci_edu', n: 'eci_quarters', nn: 4 } };
   var MONEY = ['gfo_sal', 'gfo_ben', 'gfo_pur', 'gfo_sup', 'gfo_prop', 'gfo_oth', 'gfo_tot', 'gfo_sb', 'gfo_np', 'sch_mw', 'sch_mo', 'sch_ps', 'sch_ms', 'sch_hs', 'sch_od', 'sch_tot', 'pers_t_sal', 'pers_a_sal', 'pers_o_sal', 'pers_t_ben', 'pers_a_ben', 'pers_o_ben', 'pers_ao_sal', 'fe_gen_rev', 'fe_gen_exp', 'fe_gen_net', 'fe_gen_beg', 'fe_gen_end', 'fe_food_rev', 'fe_food_exp', 'fe_food_net', 'fe_food_beg', 'fe_food_end', 'fe_spr_rev', 'fe_spr_exp', 'fe_spr_net', 'fe_spr_beg', 'fe_spr_end', 'rsd_ins', 'rsd_rel', 'rsd_adm', 'rsd_leg', 'rsd_trn', 'rsd_tui', 'rsd_sub', 'rsd_tot', 'rsd_aid', 'rsd_idea', 'rsd_med', 'rsd_rev', 'rsd_net', 'fb_prep', 'fb_vote', 'fb_enc', 'fb_ret', 'fb_una', 'fb_trust', 'bd_unspent', 'bd_appr', 'bd_exp', 'dflt_gap', 'dflt', 'f10', 'f21', 'f22', 'f23', 'nhrs_npl', 'nhrs_do', 'nhrs_di', 'nhrs_exp', 'nhrs_con', 'nhrs_onl', 'nhrs_oexp', 'nhrs_ocon', 'debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
@@ -1797,7 +1797,10 @@ dash.calc('headline', {
 
   function setYearButtons() {
     document.querySelectorAll('.os-yr').forEach(function (b) {
-      b.setAttribute('aria-pressed', String(+b.getAttribute('data-i') === sel));
+      var on = +b.getAttribute('data-i') === sel;
+      b.setAttribute('aria-pressed', String(on));
+      var st = b.parentNode;
+      if (on && st && st.scrollWidth > st.clientWidth) st.scrollLeft = b.offsetLeft - (st.clientWidth - b.offsetWidth) / 2;
     });
   }
   function redrawAll() {
@@ -2209,13 +2212,16 @@ dash.calc('headline', {
         h.classList.add('os-anch'); h.appendChild(mk(id, h.textContent.trim()));
       });
     }
-    var take = root.querySelector('.os-years[aria-label="Fiscal year"]');
+    var take = root.querySelector('.os-ctl');
     if (take && toc.length) {
       var nav = document.createElement('nav');
       nav.className = 'os-toc'; nav.setAttribute('aria-label', 'Jump to a section');
       nav.innerHTML = '<span class="os-toc-l">Jump to</span>' + toc.map(function (s) { return '<a href="#' + s[0] + '">' + s[1].replace(/&/g, '&amp;') + '</a>'; }).join('');
       take.parentNode.insertBefore(nav, take.nextSibling);
     }
+    var bar = root.querySelector('.os-ctl');
+    function bh() { if (bar) root.style.setProperty('--os-sticky', bar.offsetHeight + 'px'); }
+    bh(); window.addEventListener('resize', bh); window.addEventListener('load', bh);
     var hl = 0;
     function go(first) {
       var h = location.hash.replace(/^#/, '');

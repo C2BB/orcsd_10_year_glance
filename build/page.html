@@ -2,7 +2,7 @@
   <header class="os-head">
     <p class="os-eyebrow">Oyster River Cooperative School District · FY 2017-18 to FY 2026-27</p>
     <h1 class="os-title" id="os-title">Ten years at a glance</h1>
-    <p class="os-intro">Seventy-seven measures from public filings, grouped into nine sections and drawn on the same ten school years, each row on its own scale. Select a year to read its value in every row, or hover, focus or tap a point for the exact figures. Every row shows its change since FY 2017-18 and links to its source data. Under each chart, FY18 means the 2017-18 school year (the year it ends in). Solid points are results; hollow, dotted points are budgets, provisional or approximate figures.</p>
+    <p class="os-intro">Seventy-seven measures from public filings, grouped into nine sections and drawn on the same ten school years, each row on its own scale. The page opens on FY 2026-27 (the voted budget, provisional); select a year in the bar that stays at the top of the screen to read its value in every row, or hover, focus or tap a point for the exact figures. Every row shows its change since FY 2017-18 and links to its source data. Under each chart, FY18 means the 2017-18 school year (the year it ends in). Solid points are results; hollow, dotted points are budgets, provisional or approximate figures.</p>
   </header>
 
   <section class="os-adjust" aria-labelledby="os-adj-h">
@@ -15,27 +15,31 @@
     </div>
   </section>
 
-  <div class="os-mode" role="group" aria-labelledby="os-mode-l">
-    <span class="os-mode-l" id="os-mode-l">Show dollars as</span>
-    <div class="os-modes">
-      <button type="button" class="os-md" data-m="nom" aria-pressed="true">As recorded</button>
-      <button type="button" class="os-md" data-m="cpi" aria-pressed="false">Inflation-adjusted<small>CPI-U</small></button>
-      <button type="button" class="os-md" data-m="eci" aria-pressed="false">School-cost adjusted<small>ECI</small></button>
+  <div class="os-mode os-ctl" role="group" aria-label="Page controls: fiscal year and dollar basis">
+    <div class="os-ctl-row">
+      <span class="os-mode-l" id="os-yr-l">Fiscal year</span>
+      <div class="os-years" role="group" aria-labelledby="os-yr-l">
+      <button type="button" class="os-yr" data-i="0" aria-pressed="false" aria-label="Fiscal year 2017-18">2017-18</button>
+      <button type="button" class="os-yr" data-i="1" aria-pressed="false" aria-label="Fiscal year 2018-19">2018-19</button>
+      <button type="button" class="os-yr" data-i="2" aria-pressed="false" aria-label="Fiscal year 2019-20">2019-20</button>
+      <button type="button" class="os-yr" data-i="3" aria-pressed="false" aria-label="Fiscal year 2020-21">2020-21</button>
+      <button type="button" class="os-yr" data-i="4" aria-pressed="false" aria-label="Fiscal year 2021-22">2021-22</button>
+      <button type="button" class="os-yr" data-i="5" aria-pressed="false" aria-label="Fiscal year 2022-23">2022-23</button>
+      <button type="button" class="os-yr" data-i="6" aria-pressed="false" aria-label="Fiscal year 2023-24">2023-24</button>
+      <button type="button" class="os-yr" data-i="7" aria-pressed="false" aria-label="Fiscal year 2024-25">2024-25</button>
+      <button type="button" class="os-yr" data-i="8" aria-pressed="false" aria-label="Fiscal year 2025-26">2025-26</button>
+      <button type="button" class="os-yr" data-i="9" aria-pressed="true" aria-label="Fiscal year 2026-27, provisional">2026-27<small>prov.</small></button>
+      </div>
     </div>
-    <p class="os-modeshort" data-draw="modeshort" aria-live="polite">—</p>
-  </div>
-
-  <div class="os-years" role="group" aria-label="Fiscal year">
-    <button type="button" class="os-yr" data-i="0" aria-pressed="false">FY 2017-18</button>
-    <button type="button" class="os-yr" data-i="1" aria-pressed="false">FY 2018-19</button>
-    <button type="button" class="os-yr" data-i="2" aria-pressed="false">FY 2019-20</button>
-    <button type="button" class="os-yr" data-i="3" aria-pressed="false">FY 2020-21</button>
-    <button type="button" class="os-yr" data-i="4" aria-pressed="false">FY 2021-22</button>
-    <button type="button" class="os-yr" data-i="5" aria-pressed="false">FY 2022-23</button>
-    <button type="button" class="os-yr" data-i="6" aria-pressed="false">FY 2023-24</button>
-    <button type="button" class="os-yr" data-i="7" aria-pressed="true">FY 2024-25</button>
-    <button type="button" class="os-yr" data-i="8" aria-pressed="false">FY 2025-26</button>
-    <button type="button" class="os-yr" data-i="9" aria-pressed="false">FY 2026-27<small>provisional</small></button>
+    <div class="os-ctl-row">
+      <span class="os-mode-l" id="os-mode-l">Show dollars as</span>
+      <div class="os-modes" role="group" aria-labelledby="os-mode-l">
+        <button type="button" class="os-md" data-m="nom" aria-pressed="true">As recorded</button>
+        <button type="button" class="os-md" data-m="cpi" aria-pressed="false">Inflation-adjusted<small>CPI-U</small></button>
+        <button type="button" class="os-md" data-m="eci" aria-pressed="false">School-cost adjusted<small>ECI</small></button>
+      </div>
+      <p class="os-modeshort" data-draw="modeshort" aria-live="polite">—</p>
+    </div>
   </div>
 
   <header class="os-head os-head2">
