@@ -77,3 +77,22 @@
 .os-legend .lk{display:inline-flex; align-items:center; gap:7px}
 .os-legend svg{flex:none; display:block}
 .os-legend .ln{flex-basis:100%}
+
+.os-anchor{display:inline-flex; align-items:center; margin-left:6px; color:var(--color-fg-muted); opacity:0; text-decoration:none; border-radius:4px; padding:2px; transition:opacity .12s}
+.os-anch:hover>.os-anchor,.os-anchor:focus-visible{opacity:1}
+.os-anchor:hover{color:var(--color-fg)}
+.os-anchor:focus-visible{outline:2px solid var(--os-c2); outline-offset:2px}
+@media (hover:none){.os-anchor{opacity:.55}}
+.os-row,.os-h2,.os-notes h3,.os-notes{scroll-margin-top:14px}
+.os-row.is-target,.os-h2.is-target,.os-notes h3.is-target{animation:os-flash 2.6s ease-out}
+.os-notes.is-target{animation:os-flash 2.6s ease-out}
+@keyframes os-flash{0%,55%{background:color-mix(in srgb,var(--os-c2) 16%,transparent)}100%{background:transparent}}
+@media (prefers-reduced-motion:reduce){.os-row.is-target,.os-h2.is-target,.os-notes h3.is-target,.os-notes.is-target{animation:none; outline:2px solid var(--os-c2)}}
+.os-row:focus,.os-h2:focus,.os-notes h3:focus,.os-notes:focus{outline:none}
+.os-toc{display:flex; flex-wrap:wrap; gap:6px 14px; align-items:baseline; margin:4px 0 14px; font-size:13px}
+.os-toc-l{color:var(--color-fg-muted); font-size:12px; text-transform:uppercase; letter-spacing:.04em}
+.os-toc a{color:var(--color-fg); text-decoration:underline; text-underline-offset:3px; text-decoration-color:var(--color-border-line)}
+.os-toc a:hover{text-decoration-color:currentColor}
+.os-toc a:focus-visible{outline:2px solid var(--os-c2); outline-offset:2px}
+.os-copied{position:fixed; left:50%; bottom:18px; transform:translateX(-50%); padding:6px 12px; font-size:12.5px; background:var(--color-fg); color:var(--color-bg); border-radius:999px; opacity:0; pointer-events:none; transition:opacity .15s; z-index:20}
+.os-copied.on{opacity:1}

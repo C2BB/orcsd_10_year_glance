@@ -157,7 +157,7 @@ dash.calc('headline', {
   var mode = 'nom';
   var MODES = { nom: { label: 'Nominal dollars', f: null }, cpi: { label: 'Northeast CPI-U', f: 'f_cpi', idx: 'cpi_ne', n: 'cpi_ne_months', nn: 12 }, eci: { label: 'education labor costs (ECI)', f: 'f_eci', idx: 'eci_edu', n: 'eci_quarters', nn: 4 } };
   var MONEY = ['fb_tot', 'fb_un', 'fb_com', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state'];
-  var NAMES = ['spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'ratio', 'lvlenr', 'fb', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr'];
+  var NAMES = ['spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'ratio', 'lvlenr', 'fb', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part'];
 
   function svgEl(tag, attrs, parent) {
     var e = document.createElementNS(NS, tag);
@@ -737,6 +737,36 @@ dash.calc('headline', {
     }
   };
   ROWS.spedaid.chg = { get: function (r) { return r.sp_ent; }, kind: 'pct', note: 'aid owed' };
+  ROWS.grad = {
+    aria: 'Oyster River four-year high school graduation rate, by fiscal year',
+    domain: [90, 100], ticks: [92, 96, 100], axis: false,
+    tickFmt: function (v) { return v + '%'; },
+    series: [{ id: 'g4', get: function (r) { return r.grad4; }, main: true }],
+    label: function (r) {
+      if (r.grad4 == null) return nodata(r.fy < '2021-22' ? 'The DOE dashboard starts at 2021-22' : 'Not yet reported', 'grad4');
+      return { big: p1(r.grad4), sub: 'Of the class graduated in four years', delta: r.grad5 == null ? '' : 'Five-year ' + p1(r.grad5), tag: 'Actual', prov: false, src: 'years', field: 'grad4' };
+    },
+    tip: function (r) {
+      if (r.grad4 == null) return { lines: [['Graduation rate', 'not available']], note: 'The DOE iExplore dashboard shows the last five years. Earlier rates are in the DOE cohort reports.' };
+      var L = [['Four-year rate', p1(r.grad4)], ['Five-year rate', r.grad5 == null ? 'not reported' : p1(r.grad5)]];
+      if (r.psenr != null) L.push(['Enrolled in college within a year', p1(r.psenr)]);
+      return { lines: L, note: 'Share of the graduating cohort that finished in four (or five) years, with the year labeled as the DOE labels it. No New Hampshire figure is shown: the state value on the DOE dashboard is not a graduation rate. Source: NH DOE iExplore.' };
+    }
+  };
+  ROWS.part = {
+    aria: 'Share of Oyster River students who took the state English language arts test, by fiscal year',
+    domain: [84, 100], ticks: [88, 92, 96], axis: false,
+    tickFmt: function (v) { return v + '%'; },
+    series: [{ id: 'pe', get: function (r) { return r.pt_ela; }, main: true }],
+    label: function (r) {
+      if (r.pt_ela == null) return nodata(r.fy === '2019-20' ? 'No state test in spring 2020' : 'Not yet reported', 'pt_ela');
+      return { big: r.pt_ela + '%', sub: 'Students tested in reading and writing', delta: 'Science ' + r.pt_sci + '%', tag: 'Actual', prov: false, src: 'years', field: 'pt_ela' };
+    },
+    tip: function (r) {
+      if (r.pt_ela == null) return { lines: [['Participation', r.fy === '2019-20' ? 'no test (COVID-19)' : 'not yet reported']], note: 'The state did not give its tests in spring 2020.' };
+      return { lines: [['Reading and writing', r.pt_ela + '%'], ['Math', r.pt_mat + '%'], ['Science', r.pt_sci + '%']], note: 'Share of students required to test who did. Science is given in grades 5, 8 and 11 only. Federal rules call for 95%. Source: NH DOE iAchieve (assessment participation).' };
+    }
+  };
   ROWS.trunt = {
     aria: 'Oyster River students counted as habitually truant, by fiscal year',
     domain: [0, 190], ticks: [0, 50, 100, 150], axis: false,
@@ -752,6 +782,8 @@ dash.calc('headline', {
       return { lines: [['Students habitually truant', String(r.truant)], ['Per 100 students enrolled', r.enrollment ? (r.truant / r.enrollment * 100).toFixed(1) : '—']], note: 'Habitually truant means ten half days of unexcused absence during the school year. The district reports this to the DOE, and counts depend on how each school records excused and unexcused absences, so changes between years can reflect practice as well as behavior: in 2020-21 the middle school reported 149 of the 165 and in 2024-25 the high school reported 67 of the 105. Source: NH School Safety Data Collection, Section 6.' };
     }
   };
+  ROWS.grad.chg = { get: function (r) { return r.grad4; }, kind: 'pts', dec: true, note: 'four-year rate' };
+  ROWS.part.chg = { get: function (r) { return r.pt_ela; }, kind: 'pts', note: 'reading and writing' };
   ROWS.trunt.chg = { get: function (r) { return r.truant; }, kind: 'pts', unit: 'students', note: 'habitually truant' };
   ROWS.susp = {
     aria: 'Students who received out-of-school and in-school suspensions, by fiscal year',
@@ -1661,6 +1693,92 @@ dash.calc('headline', {
     b.addEventListener('click', function () { mode = b.getAttribute('data-m'); setModeButtons(); redrawAll(); });
   });
   setModeButtons();
+
+  // ---- Deep links: every section, row and note heading has an address (#ela, #who-pays, #notes-attendance)
+  (function () {
+    var root = document.querySelector('.os');
+    if (!root) return;
+    var SEC = {
+      'Spending, enrollment and budget': 'spending',
+      'Cost per student, and how it compares': 'cost-per-student',
+      'Where the money goes': 'where-the-money-goes',
+      'Who pays: local taxes, state aid and federal aid': 'who-pays',
+      'How Durham, Lee and Madbury share the school bill': 'town-shares',
+      'Who our students are': 'students',
+      'How students are doing': 'results',
+      'School climate and safety': 'climate-and-safety',
+      'More detail': 'more-detail'
+    };
+    var ALIAS = { sources: 'os-sources', notes: 'os-notes' };
+    var used = {};
+    function slug(t) { return t.toLowerCase().replace(/[’']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 56); }
+    function claim(id) { var base = id, n = 2; while (used[id] || (document.getElementById(id) && !used[id] && document.getElementById(id).getAttribute('data-anchor') == null)) { id = base + '-' + n++; } used[id] = 1; return id; }
+    var live = document.createElement('div');
+    live.className = 'os-copied'; live.setAttribute('role', 'status'); live.setAttribute('aria-live', 'polite');
+    root.appendChild(live);
+    var liveT = 0;
+    function say(msg) { live.textContent = msg; live.classList.add('on'); clearTimeout(liveT); liveT = setTimeout(function () { live.classList.remove('on'); live.textContent = ''; }, 2200); }
+    function mk(id, label) {
+      var a = document.createElement('a');
+      a.className = 'os-anchor'; a.href = '#' + id; a.setAttribute('aria-label', 'Link to ' + label);
+      a.title = 'Link to this ' + (label.length > 60 ? 'item' : 'item');
+      a.innerHTML = '<svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6.5 9.5l3-3M7 4.5l1-1a2.8 2.8 0 014 4l-1 1M9 11.5l-1 1a2.8 2.8 0 01-4-4l1-1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>';
+      a.addEventListener('click', function () {
+        setTimeout(function () {
+          try { if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(location.href).then(function () { say('Link copied'); }, function () {}); } catch (e) {}
+        }, 0);
+      });
+      return a;
+    }
+    var toc = [];
+    root.querySelectorAll('h2.os-h2').forEach(function (h) {
+      var t = h.textContent.trim(), id = claim(SEC[t] || slug(t));
+      h.id = id; h.setAttribute('data-anchor', '1'); h.classList.add('os-anch'); h.appendChild(mk(id, t));
+      toc.push([id, t]);
+    });
+    root.querySelectorAll('section.os-row[data-k]').forEach(function (r) {
+      var id = claim(r.getAttribute('data-k')), nm = r.querySelector('.os-name');
+      r.id = id; r.setAttribute('data-anchor', '1');
+      if (nm) {
+        var lab = nm.textContent.trim(), sp = document.createElement('span');
+        while (nm.lastChild && !(nm.lastChild.nodeType === 1 && nm.lastChild.classList.contains('os-dot'))) sp.insertBefore(nm.lastChild, sp.firstChild);
+        sp.id = (nm.id || 'os-n-' + id) + '-t'; nm.appendChild(sp); r.setAttribute('aria-labelledby', sp.id);
+        nm.classList.add('os-anch'); nm.appendChild(mk(id, lab));
+      }
+    });
+    var notes = root.querySelector('details.os-notes');
+    if (notes) {
+      notes.id = 'os-notes'; notes.setAttribute('data-anchor', '1'); used['os-notes'] = 1;
+      notes.querySelectorAll('h3').forEach(function (h) {
+        var id = h.id || claim('notes-' + slug(h.textContent)); h.id = id; h.setAttribute('data-anchor', '1'); used[id] = 1;
+        h.classList.add('os-anch'); h.appendChild(mk(id, h.textContent.trim()));
+      });
+    }
+    var take = root.querySelector('.os-take');
+    if (take && toc.length) {
+      var nav = document.createElement('nav');
+      nav.className = 'os-toc'; nav.setAttribute('aria-label', 'Jump to a section');
+      nav.innerHTML = '<span class="os-toc-l">Jump to</span>' + toc.map(function (s) { return '<a href="#' + s[0] + '">' + s[1].replace(/&/g, '&amp;') + '</a>'; }).join('');
+      take.parentNode.insertBefore(nav, take.nextSibling);
+    }
+    var hl = 0;
+    function go(first) {
+      var h = location.hash.replace(/^#/, '');
+      if (!h) return;
+      try { h = decodeURIComponent(h); } catch (e) {}
+      var el = document.getElementById(ALIAS[h] || h);
+      if (!el || !root.contains(el)) return;
+      for (var d = el.closest('details'); d; d = d.parentElement && d.parentElement.closest('details')) d.open = true;
+      el.scrollIntoView({ block: 'start', behavior: first ? 'auto' : 'smooth' });
+      document.querySelectorAll('.is-target').forEach(function (x) { x.classList.remove('is-target'); });
+      el.classList.add('is-target'); clearTimeout(hl); hl = setTimeout(function () { el.classList.remove('is-target'); }, 2600);
+      if (!el.hasAttribute('tabindex')) el.setAttribute('tabindex', '-1');
+      try { el.focus({ preventScroll: true }); } catch (e) {}
+    }
+    window.addEventListener('hashchange', function () { go(false); });
+    go(true);
+    window.addEventListener('load', function () { if (location.hash) go(true); });
+  })();
 
   document.addEventListener('pointerdown', function (e) {
     if (e.pointerType !== 'mouse' && !(e.target.closest && e.target.closest('.os-chart'))) {
