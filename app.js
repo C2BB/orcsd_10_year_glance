@@ -157,7 +157,14 @@ dash.calc('headline', {
   var mode = 'nom';
   var MODES = { nom: { label: 'Nominal dollars', f: null }, cpi: { label: 'Northeast CPI-U', f: 'f_cpi', idx: 'cpi_ne', n: 'cpi_ne_months', nn: 12 }, eci: { label: 'education labor costs (ECI)', f: 'f_eci', idx: 'eci_edu', n: 'eci_quarters', nn: 4 } };
   var MONEY = ['fb_tot', 'fb_un', 'fb_com', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
-  var NAMES = ['spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'ratio', 'lvlenr', 'fb', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd'];
+  var NAMES = ['spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'ratio', 'lvlenr', 'fb', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts'];
+
+  var SCH = [['High school', 'hs'], ['Middle school', 'ms'], ['Mast Way', 'mw'], ['Moharimet', 'mo']];
+  function schLines(r, fld, fmt) {
+    var L = [];
+    SCH.forEach(function (s) { var v = r['sc_' + s[1] + '_' + fld]; if (v != null) L.push([s[0], fmt(v)]); });
+    return L;
+  }
 
   function svgEl(tag, attrs, parent) {
     var e = document.createElementNS(NS, tag);
@@ -244,7 +251,8 @@ dash.calc('headline', {
         if (r[f] == null) return { lines: [[opts.noun, 'not yet available']], note: 'Spring 2027 results are not out.' };
         var l = [['Oyster River', r[f] + '%'], ['New Hampshire', r[sf] + '%']];
         if (opts.part && r.ela_part != null) l.push(['Participation', r.ela_part + '% (state ' + r.ela_state_part + '%)']);
-        return { lines: l, note: 'Source: NH DOE state assessment files, levels 3 and 4.' };
+        if (opts.sch) l = l.concat(schLines(r, opts.sch, function (v) { return v + '%'; }));
+        return { lines: l, note: 'Source: NH DOE state assessment files, levels 3 and 4.' + (opts.sch ? ' By-school shares: NH DOE iExplore (the high school figure is grade 11).' : '') };
       }
     };
   }
@@ -330,7 +338,7 @@ dash.calc('headline', {
         return { lines: l, note: 'Budget ÷ enrollment. The NH DOE figure is actual spending per average daily membership.' };
       }
     },
-    ela: testRow({ field: 'ela', stateField: 'ela_state', deltaField: 'ela_delta_pts', noun: 'ELA', part: true, axis: true, domain: [45, 85], ticks: [50, 60, 70, 80], aria: 'Share of students proficient in English language arts, Oyster River and New Hampshire' }),
+    ela: testRow({ sch: 'ela', field: 'ela', stateField: 'ela_state', deltaField: 'ela_delta_pts', noun: 'ELA', part: true, axis: true, domain: [45, 85], ticks: [50, 60, 70, 80], aria: 'Share of students proficient in English language arts, Oyster River and New Hampshire' }),
     cpp: {
       money: true,
       aria: 'Actual current expenditure per pupil by fiscal year',
@@ -418,7 +426,7 @@ dash.calc('headline', {
         };
       }
     },
-    math: testRow({ field: 'math', stateField: 'math_state', deltaField: 'math_delta_pts', noun: 'math', axis: false, domain: [30, 80], ticks: [40, 50, 60, 70], aria: 'Share of students proficient in math, Oyster River and New Hampshire' }),
+    math: testRow({ sch: 'mat', field: 'math', stateField: 'math_state', deltaField: 'math_delta_pts', noun: 'math', axis: false, domain: [30, 80], ticks: [40, 50, 60, 70], aria: 'Share of students proficient in math, Oyster River and New Hampshire' }),
     sci: testRow({ field: 'sci', stateField: 'sci_state', deltaField: 'sci_delta_pts', noun: 'science', axis: true, domain: [30, 70], ticks: [40, 50, 60], aria: 'Share of students proficient in science, Oyster River and New Hampshire' })
   };
 
@@ -478,7 +486,9 @@ dash.calc('headline', {
     },
     tip: function (r) {
       if (r.sgp_rea == null) return { lines: [['Mean growth', r.no_test ? 'not tested' : 'not reported']], note: r.no_test ? 'No statewide results were published for 2019-20.' : 'No growth figure was found in the DOE file for this year.' };
-      return { lines: [['Reading', String(r.sgp_rea)], ['Math', String(r.sgp_mat)], ['Typical (statewide)', '50']], note: 'Mean student growth percentile: how much students improved compared with peers who started at a similar level. Source: NH DOE assessment files.' };
+      var gl = [['Reading', String(r.sgp_rea)], ['Math', String(r.sgp_mat)], ['Typical (statewide)', '50']];
+      [['Middle school', 'ms'], ['Mast Way', 'mw'], ['Moharimet', 'mo']].forEach(function (s) { var a = r['sc_' + s[1] + '_gela'], b = r['sc_' + s[1] + '_gmat']; if (a != null && b != null) gl.push([s[0], 'reading ' + a + ' · math ' + b]); });
+      return { lines: gl, note: 'Mean student growth percentile: how much students improved compared with peers who started at a similar level. Source: NH DOE assessment files; by-school figures from NH DOE iExplore (the high school has no growth measure).' };
     }
   };
   ROWS.grp = {
@@ -781,7 +791,7 @@ dash.calc('headline', {
     },
     tip: function (r) {
       if (r.cslr == null) return { lines: [['Students per counselor', 'not available']], note: 'The DOE iExplore dashboard reports this ratio from 2020-21.' };
-      return { lines: [['Oyster River', r.cslr.toFixed(1) + ' students per counselor'], ['New Hampshire', r.cslr_nh != null ? r.cslr_nh.toFixed(1) : 'not reported']], note: 'Lower means fewer students for each counselor. Source: NH DOE iExplore (students per counselor).' };
+      return { lines: [['Oyster River', r.cslr.toFixed(1) + ' students per counselor'], ['New Hampshire', r.cslr_nh != null ? r.cslr_nh.toFixed(1) : 'not reported']].concat(schLines(r, 'cslr', function (v) { return v.toFixed(0) + ' per counselor'; })), note: 'Lower means fewer students for each counselor. The school figures divide each school’s enrollment by its counselor staffing, so an elementary school with one counselor shows its full enrollment. Source: NH DOE iExplore (students per counselor).' };
     }
   };
   ROWS.cert = {
@@ -798,7 +808,7 @@ dash.calc('headline', {
     },
     tip: function (r) {
       if (r.cert == null) return { lines: [['Certified in the subject', 'not available']], note: '' };
-      return { lines: [['Oyster River', p1(r.cert)], ['New Hampshire', r.cert_nh != null ? p1(r.cert_nh) : 'not reported']], note: 'As reported by the DOE on its iExplore dashboard. The drop after 2020-21 and the recovery since follow staff turnover and how courses were assigned; the dashboard does not break it down.' };
+      return { lines: [['Oyster River', p1(r.cert)], ['New Hampshire', r.cert_nh != null ? p1(r.cert_nh) : 'not reported']].concat(schLines(r, 'cert', p1)), note: 'As reported by the DOE on its iExplore dashboard. The drop after 2020-21 and the recovery since follow staff turnover and how courses were assigned; the dashboard does not break it down.' };
     }
   };
   ROWS.swd = {
@@ -815,9 +825,101 @@ dash.calc('headline', {
     },
     tip: function (r) {
       if (r.swd == null) return { lines: [['Students with disabilities', 'not available']], note: '' };
-      return { lines: [['Oyster River', p1(r.swd)], ['New Hampshire', r.swd_nh != null ? p1(r.swd_nh) : 'not reported']], note: 'The DOE’s share of enrolled students with an individualized education program. It differs a little from the district’s own October 1 special education count shown earlier, which uses its own enrollment base. Source: NH DOE iExplore.' };
+      return { lines: [['Oyster River', p1(r.swd)], ['New Hampshire', r.swd_nh != null ? p1(r.swd_nh) : 'not reported']].concat(schLines(r, 'swd', p1)), note: 'The DOE’s share of enrolled students with an individualized education program. It differs a little from the district’s own October 1 special education count shown earlier, which uses its own enrollment base. Source: NH DOE iExplore.' };
     }
   };
+
+  ROWS.town = {
+    aria: 'Public-school students living in Durham, Lee and Madbury as of October 1, by fiscal year',
+    domain: [250, 1000], ticks: [300, 600, 900], axis: false,
+    tickFmt: function (v) { return String(v); },
+    series: townSeries('en'),
+    label: function (r) {
+      if (r.en_lee == null) return nodata('Not yet counted', 'en_lee', 'years', 'Pending');
+      var pre = r.fy === '2026-27';
+      return { big: num(r.en_lee), sub: 'Lee students in public schools, October 1', delta: 'Durham ' + num(r.en_dur) + ' · Madbury ' + num(r.en_mad), tag: pre ? 'Preliminary' : 'Actual', prov: pre, src: 'years', field: 'en_lee' };
+    },
+    tip: function (r) {
+      if (r.en_lee == null) return { lines: [['Students by town', 'not yet counted']], note: '' };
+      function ln(nm, t) { return [nm, num(r['en_' + t]) + ' · K-4 ' + r['en_' + t + '_k4'] + ' · 5-8 ' + r['en_' + t + '_ms'] + ' · 9-12 ' + r['en_' + t + '_hs']]; }
+      var tot = r.en_dur + r.en_lee + r.en_mad;
+      var L = [ln('Durham', 'dur'), ln('Lee', 'lee'), ln('Madbury', 'mad'), ['Three towns together', num(tot)]];
+      if (r.enrollment != null) L.push(['District enrollment (Oct 1)', num(r.enrollment)]);
+      if (r.adm_dur != null) L.push(['Resident ADM in the cost formula (' + r.adm_file + ' DOE file)', 'Durham ' + Math.round(r.adm_dur) + ' · Lee ' + Math.round(r.adm_lee) + ' · Madbury ' + Math.round(r.adm_mad)]);
+      return { lines: L, note: 'Public-school students (preschool to grade 12) who live in each town on October 1, wherever they attend, so the town counts differ from the district’s own enrollment, which includes tuition students and excludes residents who attend other schools. K-4 includes kindergarten; preschool and postgraduate students are in the town total only. The formula row uses average daily membership from an older DOE file. ' + (r.fy === '2026-27' ? 'The 2026-27 counts are the DOE’s preliminary run. ' : '') + 'Source: NH DOE iPlatform, Town Level Enrollment By Grade.' };
+    }
+  };
+  ROWS.town.chg = { get: function (r) { return r.en_lee; }, kind: 'pct', note: 'Lee students' };
+  var ESS_SCH = [['High school', 'hs', [['ach', 'achievement'], ['ccr', 'college and career'], ['grad', 'graduation']]], ['Middle school', 'ms', [['ach', 'achievement'], ['gro', 'growth'], ['eq', 'equity']]], ['Mast Way', 'mw', [['ach', 'achievement'], ['gro', 'growth'], ['eq', 'equity'], ['el', 'English learners']]], ['Moharimet', 'mo', [['ach', 'achievement'], ['gro', 'growth'], ['eq', 'equity'], ['el', 'English learners']]]];
+  ROWS.essa = {
+    aria: 'Average state accountability rating, from 1 to 4, for achievement and equity across the four Oyster River schools, by fiscal year',
+    domain: [1.4, 4.1], ticks: [2, 3, 4], axis: false, noTestMark: true,
+    tickFmt: function (v) { return String(v); },
+    series: [
+      { id: 'eq', get: function (r) { return r.es_eq; }, comp: true },
+      { id: 'ach', get: function (r) { return r.es_ach; }, main: true }
+    ],
+    label: function (r) {
+      if (r.es_ach == null) return { big: '—', sub: r.no_test ? 'No state ratings for 2019-20' : 'State ratings not yet published', delta: '', tag: r.no_test ? 'No test' : 'Pending', prov: true, src: 'years', field: 'es_ach' };
+      return { big: r.es_ach.toFixed(2) + ' of 4', sub: 'State achievement rating, average of four schools', delta: 'Equity ' + (r.es_eq != null ? r.es_eq.toFixed(1) : 'not rated') + ' · growth ' + (r.es_gro != null ? r.es_gro.toFixed(1) : 'not rated'), tag: 'Actual', prov: false, src: 'years', field: 'es_ach' };
+    },
+    tip: function (r) {
+      if (r.es_ach == null) return { lines: [['State ratings', r.no_test ? 'none issued' : 'not yet published']], note: r.no_test ? 'The state issued no ratings for 2019-20 under the federal testing waiver.' : '' };
+      var L = [];
+      ESS_SCH.forEach(function (s) {
+        var parts = [];
+        s[2].forEach(function (m) { var v = r['es_' + s[1] + '_' + m[0]]; if (v != null) parts.push(m[1] + ' ' + v); });
+        L.push([s[0], parts.join(' · ') || 'not rated']);
+      });
+      return { lines: L, note: 'Ratings from 1 (lowest) to 4 (highest) under the state’s federal (ESSA) accountability system. The chart averages the schools’ achievement ratings (solid) and equity ratings (dashed); growth is in the label. The high school is rated on achievement, college and career readiness and graduation. Growth and equity were not rated in 2020-21, and English learner ratings are shown only where there are 11 or more such students. Source: NH DOE iReport.' };
+    }
+  };
+  ROWS.incl = {
+    aria: 'Share of students with disabilities who spend most of the school day in regular classes, Oyster River and New Hampshire, by fiscal year',
+    domain: [60, 96], ticks: [70, 80, 90], axis: false,
+    tickFmt: function (v) { return v + '%'; },
+    series: [
+      { id: 'nh', get: function (r) { return r.incl_nh; }, comp: true },
+      { id: 'orc', get: function (r) { return r.incl; }, main: true }
+    ],
+    label: function (r) {
+      if (r.incl == null) return nodata(r.fy === '2018-19' ? 'The DOE file repeats the prior year, so it is not plotted' : (r.fy > '2024-25' ? 'Not yet published by the NH DOE' : 'No report'), 'incl');
+      return { big: p1(r.incl), sub: 'Students with IEPs in regular classes 80% or more of the day', delta: r.incl_nh != null ? 'NH ' + p1(r.incl_nh) : '', tag: 'Actual', prov: false, src: 'years', field: 'incl' };
+    },
+    tip: function (r) {
+      if (r.incl == null) return { lines: [['In regular classes', 'not available']], note: r.fy === '2018-19' ? 'The DOE’s IDEA report shows the same values for 2018-19 as for 2017-18, for Oyster River and for New Hampshire, so the year is left blank.' : '' };
+      function pr(v) { return v != null ? p1(v) : 'not reported'; }
+      return { lines: [['80% or more of the day in regular classes: Oyster River', p1(r.incl)], ['New Hampshire', pr(r.incl_nh)], ['Under 40% of the day in regular classes: Oyster River', pr(r.incl_lt40)], ['New Hampshire', pr(r.incl_lt40_nh)], ['In separate schools or facilities: Oyster River', pr(r.incl_sep)], ['New Hampshire', pr(r.incl_sep_nh)]], note: 'Students ages 6 to 21 with an individualized education program (IDEA indicator 5). Higher means more students with disabilities are taught alongside their classmates. Blank values are suppressed or repeat the prior year in the DOE file. Source: NH DOE iReport, IDEA Report.' };
+    }
+  };
+  ROWS.incl.chg = { get: function (r) { return r.incl; }, kind: 'pts', dec: true, note: 'in regular classes' };
+  ROWS.nts = {
+    aria: 'Students per non-teacher staff member, Oyster River and New Hampshire, by fiscal year',
+    domain: [10, 26], ticks: [12, 18, 24], axis: false,
+    tickFmt: function (v) { return String(v); },
+    series: [
+      { id: 'nh', get: function (r) { return r.nts_nh; }, comp: true },
+      { id: 'orc', get: function (r) { return r.nts; }, main: true }
+    ],
+    label: function (r) {
+      if (r.nts == null) return nodata(r.fy < '2020-21' ? 'The DOE series starts in 2020-21' : 'Not yet reported', 'nts');
+      return { big: r.nts.toFixed(1) + ' to 1', sub: 'Students per non-teacher staff member', delta: r.nts_nh != null ? 'NH ' + r.nts_nh.toFixed(1) + ' to 1' : '', tag: 'Actual', prov: false, src: 'years', field: 'nts' };
+    },
+    tip: function (r) {
+      if (r.nts == null && r.ft_teach == null) return { lines: [['Students per non-teacher staff', 'not available']], note: 'The DOE iExplore dashboard reports this ratio from 2020-21; the staff counts below start in 2017-18.' };
+      var L = [];
+      if (r.nts != null) { L.push(['Students per non-teacher staff: Oyster River', r.nts.toFixed(1)]); L.push(['New Hampshire', r.nts_nh != null ? r.nts_nh.toFixed(1) : 'not reported']); }
+      if (r.tts != null) L.push(['Teachers as a share of all staff: Oyster River / NH', (r.tts * 100).toFixed(0) + '% / ' + (r.tts_nh != null ? (r.tts_nh * 100).toFixed(0) + '%' : 'n/a')]);
+      if (r.ft_teach != null) {
+        L.push(['Staff FTE (Oct 1): teachers', r.ft_teach.toFixed(1)]);
+        L.push(['Instruction support (aides, tutors)', r.ft_aide.toFixed(1)]);
+        L.push(['Specialists · librarians', r.ft_spec.toFixed(1) + ' · ' + r.ft_lib.toFixed(1)]);
+        L.push(['Administrative support · all other support', r.ft_adm.toFixed(1) + ' · ' + r.ft_oth.toFixed(1)]);
+      }
+      return { lines: L, note: 'Lower means fewer students for each non-teaching staff member. The DOE does not list which positions count as non-teacher staff in the ratio, and the staff counts are the DOE’s full-time-equivalent categories from its iPlatform staff report. The DOE’s ratio is its own calculation and is not enrollment divided by the staff categories listed here. “All other support” was 39.6 FTE in 2017-18, between 54 and 74 from 2018-19 to 2024-25 and 41.5 in 2025-26; the report does not explain those swings. Source: NH DOE iExplore (ratios) and iPlatform FTE Staff by District (counts).' };
+    }
+  };
+  ROWS.nts.chg = { get: function (r) { return r.nts; }, kind: 'pct', dec: true, note: 'students per non-teacher staff' };
   ROWS.trunt = {
     aria: 'Oyster River students counted as habitually truant, by fiscal year',
     domain: [0, 190], ticks: [0, 50, 100, 150], axis: false,
@@ -825,12 +927,12 @@ dash.calc('headline', {
     series: [{ id: 'tr', get: function (r) { return r.truant; }, main: true }],
     label: function (r) {
       if (r.truant == null) return nodata(r.fy > '2024-25' ? 'Not yet published by the NH DOE' : 'No report', 'truant', 'years', 'Pending');
-      var per = r.enrollment ? ' · ' + (r.truant / r.enrollment * 100).toFixed(1) + ' per 100 students' : '';
+      var per = r.enrollment ? ' · ' + (r.truant / r.enrollment * 100).toFixed(1) + ' per 100 students' + (r.trunt_nh != null ? ' (NH schools ' + r.trunt_nh.toFixed(1) + ')' : '') : '';
       return { big: String(r.truant), sub: 'Students habitually truant' + per, delta: '', tag: 'Actual', prov: false, src: 'years', field: 'truant' };
     },
     tip: function (r) {
       if (r.truant == null) return { lines: [['Habitually truant students', 'not yet published']], note: '' };
-      return { lines: [['Students habitually truant', String(r.truant)], ['Per 100 students enrolled', r.enrollment ? (r.truant / r.enrollment * 100).toFixed(1) : '—']], note: 'Habitually truant means ten half days of unexcused absence during the school year. The district reports this to the DOE, and counts depend on how each school records excused and unexcused absences, so changes between years can reflect practice as well as behavior: in 2020-21 the middle school reported 149 of the 165 and in 2024-25 the high school reported 67 of the 105. Source: NH School Safety Data Collection, Section 6.' };
+      return { lines: [['Students habitually truant', String(r.truant)], ['Per 100 students enrolled', r.enrollment ? (r.truant / r.enrollment * 100).toFixed(1) : '—'], ['New Hampshire schools, per 100 students', r.trunt_nh != null ? r.trunt_nh.toFixed(1) : 'not computed']], note: 'Habitually truant means ten half days of unexcused absence during the school year. The district reports this to the DOE, and counts depend on how each school records excused and unexcused absences, so changes between years can reflect practice as well as behavior: in 2020-21 the middle school reported 149 of the 165 and in 2024-25 the high school reported 67 of the 105. The New Hampshire rate is computed here from every school’s Section 6 count over its enrollment in the DOE workbooks, so it depends on how each school records absences. Source: NH School Safety Data Collection, Section 6.' };
     }
   };
   ROWS.cslr.chg = { get: function (r) { return r.cslr; }, kind: 'pct', dec: true, note: 'students per counselor' };
@@ -852,8 +954,8 @@ dash.calc('headline', {
       return { big: String(r.oss), sub: 'Students with an out-of-school suspension', delta: 'In-school suspensions ' + r.iss + ' · expelled ' + r.expel, tag: 'Actual', prov: false, src: 'years', field: 'oss' };
     },
     tip: function (r) {
-      if (r.oss == null) return r.oss_rate != null ? { lines: [['Out-of-school suspension, share of students', r.oss_rate.toFixed(2) + '%'], ['In-school suspension, share of students', r.iss_rate.toFixed(2) + '%']], note: 'Rates from the NH DOE iReport school profile; student counts are not yet published.' } : { lines: [['Suspensions', 'not yet published']], note: '' };
-      return { lines: [['Students with out-of-school suspension', String(r.oss)], ['Students with in-school suspension', String(r.iss)], ['Students expelled', String(r.expel)], ['Out-of-school, share of students (state report card)', r.oss_rate != null ? r.oss_rate.toFixed(2) + '%' : 'n/a'], ['In-school, share of students (state report card)', r.iss_rate != null ? r.iss_rate.toFixed(2) + '%' : 'n/a'], ['Out-of-school per 100 students', r.enrollment ? (r.oss / r.enrollment * 100).toFixed(1) : '—']], note: 'Counts of students, not suspensions, from the district’s School Safety Data Collection report (Section 4). A student suspended in school and out of school may be counted in both lines. Source: NH DOE school safety data.' };
+      if (r.oss == null) return r.oss_rate != null ? { lines: [['Out-of-school suspension, share of students', r.oss_rate.toFixed(2) + '%'], ['In-school suspension, share of students', r.iss_rate.toFixed(2) + '%']], note: 'Rates from the NH DOE iReport school profile; student counts are not yet published. New Hampshire (all students): ' + (r.oss_nh != null ? r.oss_nh.toFixed(2) + '% out-of-school, ' + r.iss_nh.toFixed(2) + '% in-school.' : 'not available.') } : { lines: [['Suspensions', 'not yet published']], note: '' };
+      return { lines: [['Students with out-of-school suspension', String(r.oss)], ['Students with in-school suspension', String(r.iss)], ['Students expelled', String(r.expel)], ['Out-of-school, share of students (state report card)', r.oss_rate != null ? r.oss_rate.toFixed(2) + '%' : 'n/a'], ['In-school, share of students (state report card)', r.iss_rate != null ? r.iss_rate.toFixed(2) + '%' : 'n/a'], ['Out-of-school per 100 students', r.enrollment ? (r.oss / r.enrollment * 100).toFixed(1) : '—'], ['New Hampshire, out-of-school / in-school share', r.oss_nh != null ? r.oss_nh.toFixed(2) + '% / ' + r.iss_nh.toFixed(2) + '%' : 'n/a']], note: 'Counts of students, not suspensions, from the district’s School Safety Data Collection report (Section 4). A student suspended in school and out of school may be counted in both lines. Source: NH DOE school safety data.' };
     }
   };
   ROWS.susp.chg = { get: function (r) { return r.oss; }, kind: 'pts', unit: 'students', note: 'out-of-school suspensions' };
@@ -1149,11 +1251,11 @@ dash.calc('headline', {
     series: [{ id: 'dr', get: function (r) { return r.drop; }, main: true }],
     label: function (r) {
       if (r.drop == null) return nodata('Not yet reported', 'drop');
-      return { big: String(r.drop), sub: 'Students who dropped out', delta: 'NH ' + num(r.drop_nh) + ' statewide', tag: 'Actual', prov: false, src: 'years', field: 'drop' };
+      return { big: String(r.drop), sub: 'Students who dropped out', delta: r.drop_nh != null ? 'NH ' + num(r.drop_nh) + ' statewide' : 'Rate 0.00% (DOE iExplore)', tag: 'Actual', prov: false, src: 'years', field: 'drop' };
     },
     tip: function (r) {
       if (r.drop == null) return { lines: [['Dropouts', 'not yet reported']], note: '' };
-      return { lines: [['Oyster River', String(r.drop)], ['New Hampshire (all districts)', num(r.drop_nh)]], note: 'Counts of students who left during the year or did not return by October 2. A count of one or two can change the line, so no trend should be read into it. Source: NH DOE, as printed in the ORCSD annual reports.' };
+      return { lines: [['Oyster River', String(r.drop)], ['New Hampshire (all districts)', r.drop_nh != null ? num(r.drop_nh) : 'not yet published']], note: 'Counts of students who left during the year or did not return by October 2. A count of one or two can change the line, so no trend should be read into it. Source: NH DOE, as printed in the ORCSD annual reports.' };
     }
   };
   ROWS.ctc = {
@@ -1198,7 +1300,9 @@ dash.calc('headline', {
     },
     tip: function (r) {
       if (r.tx_tot == null) return { lines: [['Experienced staff', 'not available']], note: '' };
-      return { lines: [['Mast Way', String(r.tx_mw)], ['Moharimet', String(r.tx_mo)], ['Middle school', String(r.tx_ms)], ['High school', String(r.tx_hs)], ['Total', String(r.tx_tot)]], note: 'Counts of professional staff with 14 or more years of experience, by school. Source: school district office, as printed in the ORCSD annual reports.' };
+      var xl = [['Mast Way', String(r.tx_mw)], ['Moharimet', String(r.tx_mo)], ['Middle school', String(r.tx_ms)], ['High school', String(r.tx_hs)], ['Total', String(r.tx_tot)]];
+      if (r.exp_doe != null) { xl.push(['DOE “experienced educators” share, Oyster River', p1(r.exp_doe)]); xl.push(['DOE “experienced educators” share, New Hampshire', r.exp_doe_nh != null ? p1(r.exp_doe_nh) : 'not reported']); }
+      return { lines: xl, note: 'Counts of professional staff with 14 or more years of experience, by school. Source: school district office, as printed in the ORCSD annual reports. The last two lines are the DOE’s own experienced-educators share from its iExplore dashboard, which uses the DOE’s definition (not stated on the dashboard) and so is not comparable to the 14-year counts.' };
     }
   };
   ROWS.attlvl = {
