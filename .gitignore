@@ -1,0 +1,4 @@
+__pycache__/
+build/orcsd_years.json
+.DS_Store
+.stage/

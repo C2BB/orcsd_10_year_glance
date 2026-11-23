@@ -1,0 +1,120 @@
+import json
+from doe25 import D
+from nhdoe_values import V
+from rc_data import fields_for
+from towns_data import town_fields
+cpp_lv={2018:(18421,17055,18704),2019:(17996,17409,18240),2020:(18390,18167,18130),2021:(21573,19393,19547),2022:(20831,20613,20235),2023:(21609,21347,21574),2024:(22876,22179,21511),2025:(24062,24148,23632)}
+enr={2018:2147,2019:2157,2020:2168,2021:2132,2022:2130,2023:2140,2024:2111,2025:2097,2026:2038,2027:2026}
+budget={2018:43787372,2019:45625555,2020:47405510,2021:47538867,2022:50173045,2023:52133325,2024:53211098,2025:56248037,2026:58002091,2027:62365067}
+ela={2018:(77,58),2019:(74,56),2020:None,2021:(74,52),2022:(71,51),2023:(76,52),2024:(74,53),2025:(75,55),2026:(76,55),2027:None}
+ela_p={2018:(98,96),2021:(89,80),2022:(96,92),2023:(96,94),2024:(96,94),2025:(96,96),2026:(95,95)}
+math={2018:(73,48),2019:(74,48),2020:None,2021:(59,38),2022:(66,40),2023:(68,42),2024:(66,41),2025:(65,42),2026:(69,44),2027:None}
+sci={2018:(65,42),2019:(58,40),2020:None,2021:(61,37),2022:(59,37),2023:(56,37),2024:(60,36),2025:(61,38),2026:(56,38),2027:None}
+idx={o['fy']:o for o in json.load(open('index_fy.json'))}
+sal={2018:[(11887683,5476840),(4144933,1758882),(488693,81983)],2019:[(12065379,5634205),(4130339,1746750),(404330,73271)],2020:[(12421041,5872264),(4038804,1814241),(397793,77828)],2021:[(13042044,6188272),(4084168,1821153),(424228,81357)],2022:[(13212309,6252840),(3839037,1677398),(520783,107949)],2023:[(13633696,6651046),(3992815,1788708),(522131,104989)],2024:[(13958820,6557416),(4279988,1881775),(557912,108059)],2025:[(13779632.43,7118599.59),(4318268.52,2175338.17),(570824.79,119113.75)]}
+att={2018:(95.8,94.4),2019:(95.9,94.1),2020:(97.2,95.1),2021:(96.6,93.1),2022:(92.6,90.9)}
+sgp={2018:(50,54),2019:(50,58),2022:(52,60),2023:(55,60),2024:(53,56),2025:(51,55),2026:(53,60)}
+iep={2018:44,2019:40,2021:26,2022:25,2023:36,2024:26,2025:34,2026:42}
+ses={2018:52,2019:50,2021:49,2022:50,2023:58,2024:50,2025:59,2026:52}
+tax_loc={}; tax_tot={}
+for _ty,_d in V.items():
+    tax_loc[_ty+1]=tuple(_d[t]["r_loc"] for t in ("DUR","LEE","MAD")); tax_tot[_ty+1]=tuple(_d[t]["r_tot"] for t in ("DUR","LEE","MAD"))
+# tax year 2026 (school year 2026-27): Dept. of Revenue Administration rates posted to date, DOE file not yet out
+_chk={2021:((15.37,19.80,16.29),(27.73,31.86,25.25)),2022:((15.28,13.65,17.03),(27.91,21.77,25.40)),2023:((16.56,13.97,17.30),(29.04,21.72,25.27)),2024:((11.58,14.30,17.91),(20.48,23.63,26.97)),2025:((11.52,16.63,19.57),(20.33,25.77,29.19)),2026:((10.79,18.29,11.77),(18.87,27.61,17.94))}
+for _k,(_l,_t) in _chk.items(): assert tax_loc[_k]==_l and tax_tot[_k]==_t,(_k,tax_loc[_k],_l)  # DOE files agree with the DRA rates already shown
+tax_loc[2027]=(11.94,None,12.49); tax_tot[2027]=(20.81,None,18.83)
+adq={2018:(7969424.71,3842252,8730575.67,None),2019:(8007720.60,3826884,8735778.04,(7090601,254072,616938,27321,18788)),2020:(8324197.64,3897028,9151535.64,(7406810,251075,615995,32902,17415)),2021:(8374529.33,3894347,9844351.74,None),2022:(8568610.14,3904459,9407584.84,None),2023:(8292784.21,2949457,9120122.21,None),2024:(9149744.69,4015162,9728090.22,(7960027,432265,732566,24887,0)),2025:(9141376.78,3734001,9766213.05,(7966343,433845,712599,26708,1882)),2026:(9215064.65,3807606,9714933.66,(8080571,395753,707197,30903,640)),2027:(9260707.66,3931070,10011234.14,(8091289,415286,721164,32968,0))}
+cmpd={2018:(15865.26,16568.55,15,53),2019:(16346.45,17001.61,17,52),2020:(16823.88,17515.58,21,52),2021:(18434.21,19108.33,17,53),2022:(19399.97,19788.61,19,53),2023:(20322.52,20266.78,22,54),2024:(21542.83,21623.89,25,54),2025:(22699.85,23612.77,24,54)}
+t_start={2018:(40523,37451),2019:(40725,38262),2020:(40929,39048),2021:(43430,39781),2022:(43864,40479),2023:(44303,41536),2024:(44746,42560),2025:(45193,44074),2026:(52500,45298)}
+t_avg_state={2018:58278,2019:59198,2020:59624,2021:61849,2022:62695,2023:63926,2024:67096,2025:69532}
+t_avg={2018:70514,2019:73778,2020:75202,2021:76645,2022:76257,2024:80573}
+t_avg_file={2018:70514,2019:73778,2020:75202,2021:76645,2022:76257,2023:63538,2024:80573,2025:80573}
+t_avg_fte={2018:175.1,2019:179.1,2020:182.1,2021:179.1,2022:179.1,2023:180.2,2024:178.6,2025:180.0}
+t_avg_note={2023:"The DOE file lists $63,538 for Oyster River, about 17% below the years on either side and out of line with other districts. It is not plotted.",2025:"The DOE file repeats the 2023-24 figure of $80,573 to the dollar although the teacher count changed. It is not plotted."}
+ratio={2018:(12.1,12.6,168.1,2028),2019:(12.0,12.1,179.1,2157),2020:(12.0,11.9,180.1,2168),2021:(11.8,11.3,179.1,2106),2022:(11.7,11.5,179.1,2100),2023:(11.8,11.24,None,None),2024:(11.9,12.02,None,None),2025:(11.6,11.24,None,None)}
+rows=[]
+for y in range(2018,2028):
+    fy="%d-%02d"%(y-1,y%100); short="%02d-%02d"%((y-1)%100,y%100)
+    d=D.get(y)
+    r=dict(fy=fy,short=short,budget=budget[y],budget_approx=False,enrollment=enr[y],
+      status="actual" if y<=2025 else ("budget" if y==2026 else "provisional"),
+      no_test=(y==2020))
+    r["actual_recurring"]=d["rec"] if d else None
+    r["actual_total"]=d["tot"] if d else None
+    r["construction"]=round(d["tot"]-d["rec"],2) if d else None
+    r["nhed_cpp"]=d["cpp"] if d else None
+    if d:
+        r["cpp_el"],r["cpp_ms"],r["cpp_hs"]=cpp_lv[y]
+    for k in "reg spec voc oi ss isup gab sadm bus plant trans bint food".split():
+        r["fn_"+k]=d[k] if d else None
+    for k in "rev_local rev_oth_local rev_adeq rev_ostate rev_fed rev_tot".split():
+        r[k]=d[k] if d else None
+    for nm,src in (("ela",ela),("math",math),("sci",sci)):
+        v=src[y]; r[nm]=v[0] if v else None; r[nm+"_state"]=v[1] if v else None
+    p=ela_p.get(y); r["ela_part"]=p[0] if p else None; r["ela_state_part"]=p[1] if p else None
+    r["instr_sal"]=round(sum(a for a,b in sal[y]),2) if y in sal else None
+    r["instr_ben"]=round(sum(b for a,b in sal[y]),2) if y in sal else None
+    a_=att.get(y); r["att"]=a_[0] if a_ else None; r["att_state"]=a_[1] if a_ else None
+    g_=sgp.get(y); r["sgp_rea"]=g_[0] if g_ else None; r["sgp_mat"]=g_[1] if g_ else None
+    r["ela_iep"]=iep.get(y); r["ela_ses"]=ses.get(y)
+    tl=tax_loc.get(y); tt=tax_tot.get(y)
+    for i,t in enumerate(('dur','lee','mad')):
+        r['tax_'+t]=tl[i] if tl else None; r['tt_'+t]=tt[i] if tt else None
+    vv=V.get(y-1)
+    for t,k in (("DUR","dur"),("LEE","lee"),("MAD","mad"),("ORCSD","tot")):
+        r["eq_"+k]=vv[t]["eq"] if vv else None; r["levy_"+k]=vv[t]["levy"] if vv else None
+    r["sw_levy"]=vv["ORCSD"]["sw"] if vv else None
+    ts=t_start.get(y); r["t_start"]=ts[0] if ts else None; r["t_start_state"]=ts[1] if ts else None
+    r["t_avg"]=t_avg.get(y); r["t_avg_state"]=t_avg_state.get(y); r["t_avg_file"]=t_avg_file.get(y); r["t_avg_fte"]=t_avg_fte.get(y); r["t_avg_note"]=t_avg_note.get(y)
+    ra=ratio.get(y)
+    r["ratio"]=ra[0] if ra else None; r["ratio_state"]=ra[1] if ra else None; r["ratio_teachers"]=ra[2] if ra else None; r["ratio_enr"]=ra[3] if ra else None
+    r.update(fields_for(y))
+    r.update(town_fields(y,r))
+    a=adq.get(y)
+    r["adq_cost"]=a[0] if a else None; r["adq_swept"]=a[1] if a else None; r["adq_total"]=a[2] if a else None
+    r["adq_est"]=(y>=2026)
+    cp=a[3] if a else None
+    for i,k in enumerate(("base","fr","sped","ell","home")): r["adq_"+k]=cp[i] if cp else None
+    c=cmpd.get(y)
+    r["cpp_state_avg"]=c[0] if c else None; r["cpp_k12_med"]=c[1] if c else None
+    r["cpp_rank"]=c[2] if c else None; r["cpp_rank_n"]=c[3] if c else None
+    ix=idx[fy]
+    for k in ('cpi_ne','cpi_ne_months','cpi_us','eci_edu','eci_quarters'): r[k]=ix[k]
+    rows.append(r)
+meta=[
+ {"label":"Spending, revenue and cost per pupil (actual)","value":"NH DOE DOE-25 Annual Financial Report, District Profile sheet, Oyster River Coop (d423000.xlsx), FY2018 to FY2025: function expenditures, Total Recurring Expenditures, Total Expenditures, revenues by source and per-pupil current expenditure. FY2026 is not yet filed."},
+ {"label":"Adopted budget","value":"Operating budget warrant article as printed on each March ballot (all funds). FY2017-18 to FY2023-24 checked against the budget summary tables and warrant articles in the official ORCSD annual reports (2018 to 2023 editions) at orcsd.org; FY2025-26 and FY2026-27 also on orcsd.org."},
+ {"label":"Inflation indexes","value":"US Bureau of Labor Statistics. CPI-U all items, Northeast urban, not seasonally adjusted (CUUR0100SA0) and US city average (CUUR0000SA0); Employment Cost Index, total compensation, state and local government workers in educational services (CIU3016100000000I). Fiscal-year values are July to June averages of monthly CPI and of the four quarters ending September to June. October 2025 CPI was not collected, so FY 2025-26 CPI averages 11 months; FY 2026-27 uses the months and quarters available so far."},
+ {"label":"Attendance","value":"NH DOE Attendance Rate by District CSVs, 2017-18 to 2021-22 (district total, all grades). The ORCSD annual report cards give attendance by school level for later years, but the 2022-23 and 2023-24 columns are identical to each other, and 2024-25 jumps to about 98% for both the district and the state, which looks like a change in how it is measured, so those years are not plotted."},
+ {"label":"Instruction salaries and benefits","value":"DOE-25 Salaries-Benefits sheet, accounts 1100 to 1400 (regular, special, vocational and other instructional programs), general and special revenue funds, FY2018 to FY2025."},
+ {"label":"Student growth and student groups","value":"NH DOE disaggregated assessment files: mean student growth percentile (SGP) for reading and math; reading proficiency for students with IEPs and economically disadvantaged students. Subgroup cohorts are small and swing from year to year."},
+ {"label":"Local school tax rates","value":"NH DOE, Valuations, Property Tax Assessments and Tax Rates of School Districts, tax years 2017 to 2025 (rows for Durham, Lee and Madbury); tax year 2026 from NH Department of Revenue Administration rates posted to date. Local education rate per $1,000 and total rate; tax year Y is shown against school year Y to Y+1. Tax years 2020 to 2025 agree with the DRA municipal rate sheets. Lee's 2026 rate was not yet set. Rates move with revaluations as well as spending."},
+ {"label":"Property values and school levy by town","value":"Same NH DOE valuation files: equalized valuation with utilities and local education tax assessed for schools for Durham, Lee and Madbury, tax years 2017 to 2025. The three towns sum to the Oyster River Coop row in every year, and the levy equals DOE-25 local property tax revenue for FY2018 to FY2025. Shares of levy and value, value per student and levy per $1,000 are computed here."},
+ {"label":"Per-student measures","value":"Special programs, plant operations, transportation, bond interest, local property tax and state aid from the DOE-25 District Profile divided by October 1 enrollment (NH DOE). Cost per pupil by school level is the NH DOE figure for elementary, middle and high school."},
+ {"label":"State adequacy aid","value":"NH DOE Bureau of School Finance, Adequate Education Aid municipal summaries (ad_ed_aid and adequacy muni-summary files), SFY 2018 to 2027. Oyster River's figures are the sum of its three member towns, Durham, Lee and Madbury: total calculated cost of an adequate education, the Statewide Education Property Tax (SWEPT) the towns retain, and the final total state grant (adequacy grant plus SWEPT). For 2017-18 to 2024-25 the three-town grant total equals the adequacy aid reported in the district's DOE-25 to the dollar. 2025-26 and 2026-27 are the state's published estimates (April 2026 and the SFY 2027 file); the district has not filed those years."},
+ {"label":"Cost per pupil comparison","value":"NH DOE Bureau of School Finance, Cost per Pupil by District, 2017-18 to 2024-25. State average is the DOE-published average for district-operated schools. Median and rank are computed here from the same file among the 52 to 54 districts that report elementary, middle and high school costs (K-12 districts). Districts with different grade ranges are not strictly comparable."},
+ {"label":"Teacher pay and staffing","value":"NH DOE Bureau of Education Statistics: Teacher Minimum Starting Salary (bachelor's degree, no experience), Teacher Average Salary in Public School Districts (2017-18 to 2024-25) and Student to Teacher Ratio in New Hampshire Public Schools (2017-18 to 2021-22; later years are not posted as files). State figures are the DOE's own: unweighted average of districts for starting salary, state average salary and state total ratio. Oyster River's 2022-23 average salary ($63,538) and 2024-25 average salary ($80,573, identical to 2023-24) look unreliable in the DOE files and are not plotted."},
+ {"label":"Enrollment","value":"October 1 fall enrollment, NH DOE, as printed in the ORCSD 2026 Annual Report."},
+ {"label":"Enrollment by school level","value":"October 1 counts for kindergarten to grade 4, grades 5 to 8 and grades 9 to 12 as printed in the ORCSD 2026 Annual Report (NH DOE history). From 2020-21 to 2024-25 the three levels fall 25 to 30 students short of the district total because some students are not itemized by level."},
+ {"label":"General fund balance","value":"Audited statements of the Oyster River Cooperative School District, general fund balance at June 30 (total, committed and unassigned), fiscal years ended 2018 to 2024, from the audit reports at orcsd.org. FY2020 comes from the 2020 audit because the 2021 annual report reprinted the FY2019 statements. The FY2025 audit is not yet posted."},
+ {"label":"Class size","value":"Average class size by grade band (grades 1 and 2, grades 3 and 4) for Mast Way and Moharimet schools and the NH average, as printed in the Annual Report Card in the ORCSD annual reports, 2017-18 to 2024-25. Middle school class size is not reported."},
+ {"label":"SAT scores","value":"Oyster River High School and New Hampshire average SAT evidence-based reading and writing plus math (total out of 1600), as printed in the ORCSD annual reports, spring 2018 to 2025. National averages in the report are not used because the printed 2019 values look inconsistent."},
+ {"label":"What graduates do next","value":"High School Completers table in the ORCSD annual reports: share of graduates entering four-year college, two-year college, work and military, district and NH, 2017-18 to 2023-24."},
+ {"label":"Special education, lunch eligibility and English learners","value":"Special education counts as of October 1 from the district special education department, as printed in the ORCSD annual reports; free and reduced lunch eligibility and English learner counts from NH DOE as printed in the reports. Shares are computed here against October 1 enrollment."},
+ {"label":"Education Freedom Account students","value":"NH DOE Education Freedom Account reports by municipality (June 2022, June 2023, April 2024, March 2025, March 2026): weighted counts of participating students living in Durham, Lee and Madbury and the aid awarded to them. The program began in 2021-22. These are residents, not necessarily former Oyster River students."},
+ {"label":"Dropouts and career technology","value":"Dropout counts (district and NH) and Tri-City Career Technology Center enrollment of ORHS students, from the ORCSD annual reports, 2017-18 to 2024-25."},
+ {"label":"Teacher education and experience","value":"Share of professional staff with a bachelor's, master's or higher degree (district and NH) and counts of staff with 14 or more years of experience by school, from the ORCSD annual reports (2017-18 to 2024-25). The 2019-20 education table is not printed."},
+ {"label":"Attendance by school level","value":"Attendance by school level from the ORCSD annual reports, 2017-18 to 2022-23, district and NH. Later years are not plotted: the 2023-24 column repeats 2022-23 and 2024-25 looks re-based."},
+ {"label":"Enrollment projections","value":"Projections of K-12 enrollment as printed in the ORCSD annual reports: the district's Long Range Planning Committee (2018 to 2024 editions, 2018-19 onward) and NESDEC (2021 to 2024 editions, 2021-22 onward). Each year shows the latest projection printed before that school year began; the 2024 edition repeats the 2023 tables and the 2025 and 2026 editions print none. Shown against actual October 1 enrollment (NH DOE)."},
+ {"label":"How the three towns share the school bill","value":"Formula: the NH DOE's Apportionment Formulas for Regional and Cooperative School Districts (July 1, 2024) says Oyster River apportions the total operating budget 50% on average daily membership (ADM) and 50% on equalized valuation, with adequacy aid credited to the pre-existing districts (the towns). Each town's formula share is printed in the ORCSD annual reports for FY2018 to FY2024 (the tax rate impact and apportionment page). For FY2025 and FY2026 it is computed here as (net school levy + state credits) divided by the total, which reproduces the official FY2024 figure to 0.001 point; the FY2027 figure is an estimate from the latest DOE files (the approved split was not found). Students and property value behind each share: NH DOE Equalized Valuation per Pupil files (ADM in residence and equalized valuation with utilities, per town); the formula uses the latest file available when the budget is set, which lags the budget year by two to three years. A 50/50 average of those two shares reproduces the official percentage to within 0.01 point for FY2018 to FY2022 and FY2024. State credits are each town's adequacy grant plus the state education property tax (SWEPT) it keeps, from the annual reports (FY2018 to FY2023) and the DOE adequate education aid municipal summaries (FY2024 on). State education tax rates per $1,000 are from the same annual report tables."},
+ {"label":"Assessment results","value":"NH DOE state assessment disaggregated files (2017-18 to 2025-26); District Level, All students, All grades, regular denominator; share at levels 3 and 4 in reading (ELA), math and science. No results exist for 2019-20."},
+]
+json.dump({"rows":rows,"meta":meta}, open("orcsd_years.json","w"), indent=1)
+b=rows[0]
+for r in rows:
+    if r["actual_recurring"]:
+        ins=r["fn_reg"]+r["fn_spec"]+r["fn_voc"]+r["fn_oi"]
+        print(r["fy"],"instr%",round(ins/r["actual_recurring"]*100,1),"local%",round(r["rev_local"]/r["rev_tot"]*100,1),"state%",round((r["rev_adeq"]+r["rev_ostate"])/r["rev_tot"]*100,1))
+print("spend delta",(rows[7]["actual_recurring"]/b["actual_recurring"]-1)*100,"enr",(2038/2147-1)*100)
+print("bps", [round(r["budget"]/(r["enrollment"] or 2038)) for r in rows])
+print(len(json.dumps(rows)))

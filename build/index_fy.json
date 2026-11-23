@@ -1,0 +1,156 @@
+[
+ {
+  "fy": "2013-14",
+  "cpi_ne": 251.02,
+  "cpi_ne_months": 12,
+  "cpi_us": 234.966,
+  "cpi_us_months": 12,
+  "eci_edu": 120.8,
+  "eci_quarters": 4,
+  "f_cpi": 1.31341,
+  "f_eci": 1.38219
+ },
+ {
+  "fy": "2014-15",
+  "cpi_ne": 252.12,
+  "cpi_ne_months": 12,
+  "cpi_us": 236.677,
+  "cpi_us_months": 12,
+  "eci_edu": 123.3,
+  "eci_quarters": 4,
+  "f_cpi": 1.30767,
+  "f_eci": 1.35416
+ },
+ {
+  "fy": "2015-16",
+  "cpi_ne": 253.132,
+  "cpi_ne_months": 12,
+  "cpi_us": 238.273,
+  "cpi_us_months": 12,
+  "eci_edu": 126.325,
+  "eci_quarters": 4,
+  "f_cpi": 1.30245,
+  "f_eci": 1.32173
+ },
+ {
+  "fy": "2016-17",
+  "cpi_ne": 257.486,
+  "cpi_ne_months": 12,
+  "cpi_us": 242.656,
+  "cpi_us_months": 12,
+  "eci_edu": 129.675,
+  "eci_quarters": 4,
+  "f_cpi": 1.28042,
+  "f_eci": 1.28759
+ },
+ {
+  "fy": "2017-18",
+  "cpi_ne": 262.223,
+  "cpi_ne_months": 12,
+  "cpi_us": 248.126,
+  "cpi_us_months": 12,
+  "eci_edu": 132.65,
+  "eci_quarters": 4,
+  "f_cpi": 1.25729,
+  "f_eci": 1.25871
+ },
+ {
+  "fy": "2018-19",
+  "cpi_ne": 267.166,
+  "cpi_ne_months": 12,
+  "cpi_us": 253.268,
+  "cpi_us_months": 12,
+  "eci_edu": 136.3,
+  "eci_quarters": 4,
+  "f_cpi": 1.23403,
+  "f_eci": 1.225
+ },
+ {
+  "fy": "2019-20",
+  "cpi_ne": 271.316,
+  "cpi_ne_months": 12,
+  "cpi_us": 257.23,
+  "cpi_us_months": 12,
+  "eci_edu": 140.125,
+  "eci_quarters": 4,
+  "f_cpi": 1.21516,
+  "f_eci": 1.19156
+ },
+ {
+  "fy": "2020-21",
+  "cpi_ne": 276.578,
+  "cpi_ne_months": 12,
+  "cpi_us": 263.151,
+  "cpi_us_months": 12,
+  "eci_edu": 143.05,
+  "eci_quarters": 4,
+  "f_cpi": 1.19204,
+  "f_eci": 1.1672
+ },
+ {
+  "fy": "2021-22",
+  "cpi_ne": 293.426,
+  "cpi_ne_months": 12,
+  "cpi_us": 282.025,
+  "cpi_us_months": 12,
+  "eci_edu": 146.8,
+  "eci_quarters": 4,
+  "f_cpi": 1.12359,
+  "f_eci": 1.13738
+ },
+ {
+  "fy": "2022-23",
+  "cpi_ne": 309.62,
+  "cpi_ne_months": 12,
+  "cpi_us": 299.685,
+  "cpi_us_months": 12,
+  "eci_edu": 153.625,
+  "eci_quarters": 4,
+  "f_cpi": 1.06482,
+  "f_eci": 1.08685
+ },
+ {
+  "fy": "2023-24",
+  "cpi_ne": 318.888,
+  "cpi_ne_months": 12,
+  "cpi_us": 309.57,
+  "cpi_us_months": 12,
+  "eci_edu": 160.45,
+  "eci_quarters": 4,
+  "f_cpi": 1.03388,
+  "f_eci": 1.04062
+ },
+ {
+  "fy": "2024-25",
+  "cpi_ne": 329.691,
+  "cpi_ne_months": 12,
+  "cpi_us": 317.731,
+  "cpi_us_months": 12,
+  "eci_edu": 166.968,
+  "eci_quarters": 4,
+  "f_cpi": 1.0,
+  "f_eci": 1.0
+ },
+ {
+  "fy": "2025-26",
+  "cpi_ne": 341.522,
+  "cpi_ne_months": 11,
+  "cpi_us": 327.668,
+  "cpi_us_months": 11,
+  "eci_edu": 172.761,
+  "eci_quarters": 4,
+  "f_cpi": 0.96536,
+  "f_eci": 0.96647
+ },
+ {
+  "fy": "2026-27",
+  "cpi_ne": 351.019,
+  "cpi_ne_months": 4,
+  "cpi_us": 335.837,
+  "cpi_us_months": 4,
+  "eci_edu": 177.343,
+  "eci_quarters": 1,
+  "f_cpi": 0.93924,
+  "f_eci": 0.9415
+ }
+]
