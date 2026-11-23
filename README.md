@@ -33,4 +33,4 @@ Some figures are estimates or computed (tagged on the page). Source files can mo
 
 ## About `raw/`
 
-Large statewide assessment CSVs are stored gzipped (`.csv.gz`); `MANIFEST.csv` records the SHA-256 of the original file. Rows marked `link-only (not mirrored)` could not be copied yet and are listed with their source URL so they can be added later.
+Large statewide assessment CSVs are stored gzipped (`.csv.gz`); `MANIFEST.csv` records the SHA-256 of the original file. Every file listed in the manifest is mirrored; a row marked `link-only (not mirrored)` would mean a copy could not be made, and its source URL is still listed.
