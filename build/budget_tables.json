@@ -1,0 +1,3293 @@
+{
+"dept": [
+{
+"report": 2018,
+"dept": "mastway",
+"kind": "expended",
+"fy": 2017,
+"value": 3487221.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "mastway",
+"kind": "approved",
+"fy": 2018,
+"value": 3817929.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "mastway",
+"kind": "proposed",
+"fy": 2019,
+"value": 4130205.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "moharimet",
+"kind": "expended",
+"fy": 2017,
+"value": 3776792.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "moharimet",
+"kind": "approved",
+"fy": 2018,
+"value": 3939762.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "moharimet",
+"kind": "proposed",
+"fy": 2019,
+"value": 3992650.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "middle",
+"kind": "expended",
+"fy": 2017,
+"value": 6933182.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "middle",
+"kind": "approved",
+"fy": 2018,
+"value": 6993369.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "middle",
+"kind": "proposed",
+"fy": 2019,
+"value": 7184117.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "high",
+"kind": "expended",
+"fy": 2017,
+"value": 7999845.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "high",
+"kind": "approved",
+"fy": 2018,
+"value": 8631603.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "high",
+"kind": "proposed",
+"fy": 2019,
+"value": 8962138.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "specialed",
+"kind": "expended",
+"fy": 2017,
+"value": 8671309.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "specialed",
+"kind": "approved",
+"fy": 2018,
+"value": 9176036.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "specialed",
+"kind": "proposed",
+"fy": 2019,
+"value": 9031221.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "sau",
+"kind": "expended",
+"fy": 2017,
+"value": 3891857.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "sau",
+"kind": "approved",
+"fy": 2018,
+"value": 3114546.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "sau",
+"kind": "proposed",
+"fy": 2019,
+"value": 3104847.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "transport",
+"kind": "expended",
+"fy": 2017,
+"value": 1835814.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "transport",
+"kind": "approved",
+"fy": 2018,
+"value": 2055994.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "transport",
+"kind": "proposed",
+"fy": 2019,
+"value": 2018364.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "technology",
+"kind": "expended",
+"fy": 2017,
+"value": 1154200.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "technology",
+"kind": "approved",
+"fy": 2018,
+"value": 1242119.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "technology",
+"kind": "proposed",
+"fy": 2019,
+"value": 1334140.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "facilities",
+"kind": "expended",
+"fy": 2017,
+"value": 3848419.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "facilities",
+"kind": "approved",
+"fy": 2018,
+"value": 3972043.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "facilities",
+"kind": "proposed",
+"fy": 2019,
+"value": 4441379.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "total",
+"kind": "expended",
+"fy": 2017,
+"value": 41598639.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "total",
+"kind": "approved",
+"fy": 2018,
+"value": 42943401.0,
+"pdf_page": 21
+},
+{
+"report": 2018,
+"dept": "total",
+"kind": "proposed",
+"fy": 2019,
+"value": 44199061.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "mastway",
+"kind": "expended",
+"fy": 2018,
+"value": 3705829.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "mastway",
+"kind": "approved",
+"fy": 2019,
+"value": 4051417.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "mastway",
+"kind": "proposed",
+"fy": 2020,
+"value": 4126398.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "moharimet",
+"kind": "expended",
+"fy": 2018,
+"value": 3907386.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "moharimet",
+"kind": "approved",
+"fy": 2019,
+"value": 3876450.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "moharimet",
+"kind": "proposed",
+"fy": 2020,
+"value": 3960546.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "middle",
+"kind": "expended",
+"fy": 2018,
+"value": 6927144.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "middle",
+"kind": "approved",
+"fy": 2019,
+"value": 7254288.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "middle",
+"kind": "proposed",
+"fy": 2020,
+"value": 7332774.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "high",
+"kind": "expended",
+"fy": 2018,
+"value": 8643103.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "high",
+"kind": "approved",
+"fy": 2019,
+"value": 8962044.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "high",
+"kind": "proposed",
+"fy": 2020,
+"value": 9359999.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "sau",
+"kind": "expended",
+"fy": 2018,
+"value": 3306723.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "sau",
+"kind": "approved",
+"fy": 2019,
+"value": 3092537.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "sau",
+"kind": "proposed",
+"fy": 2020,
+"value": 3086315.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "transport",
+"kind": "expended",
+"fy": 2018,
+"value": 1719680.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "transport",
+"kind": "approved",
+"fy": 2019,
+"value": 2041805.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "transport",
+"kind": "proposed",
+"fy": 2020,
+"value": 2062454.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "technology",
+"kind": "expended",
+"fy": 2018,
+"value": 1289271.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "technology",
+"kind": "approved",
+"fy": 2019,
+"value": 1416118.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "technology",
+"kind": "proposed",
+"fy": 2020,
+"value": 1422778.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "facilities",
+"kind": "expended",
+"fy": 2018,
+"value": 4195294.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "facilities",
+"kind": "approved",
+"fy": 2019,
+"value": 4639689.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "facilities",
+"kind": "proposed",
+"fy": 2020,
+"value": 5291423.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "specialed",
+"kind": "expended",
+"fy": 2018,
+"value": 8724236.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "specialed",
+"kind": "approved",
+"fy": 2019,
+"value": 8983672.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "specialed",
+"kind": "proposed",
+"fy": 2020,
+"value": 9297773.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "total",
+"kind": "expended",
+"fy": 2018,
+"value": 42418666.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "total",
+"kind": "approved",
+"fy": 2019,
+"value": 44318020.0,
+"pdf_page": 21
+},
+{
+"report": 2019,
+"dept": "total",
+"kind": "proposed",
+"fy": 2020,
+"value": 45940460.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "mastway",
+"kind": "expended",
+"fy": 2019,
+"value": 3956350.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "mastway",
+"kind": "approved",
+"fy": 2020,
+"value": 4185957.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "mastway",
+"kind": "proposed",
+"fy": 2021,
+"value": 4276124.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "moharimet",
+"kind": "expended",
+"fy": 2019,
+"value": 3798737.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "moharimet",
+"kind": "approved",
+"fy": 2020,
+"value": 3959766.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "moharimet",
+"kind": "proposed",
+"fy": 2021,
+"value": 4045635.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "middle",
+"kind": "expended",
+"fy": 2019,
+"value": 7065307.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "middle",
+"kind": "approved",
+"fy": 2020,
+"value": 7282620.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "middle",
+"kind": "proposed",
+"fy": 2021,
+"value": 7440964.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "high",
+"kind": "expended",
+"fy": 2019,
+"value": 8887142.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "high",
+"kind": "approved",
+"fy": 2020,
+"value": 9437348.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "high",
+"kind": "proposed",
+"fy": 2021,
+"value": 9620320.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "sau",
+"kind": "expended",
+"fy": 2019,
+"value": 3114226.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "sau",
+"kind": "approved",
+"fy": 2020,
+"value": 3094896.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "sau",
+"kind": "proposed",
+"fy": 2021,
+"value": 3053308.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "transport",
+"kind": "expended",
+"fy": 2019,
+"value": 1993018.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "transport",
+"kind": "approved",
+"fy": 2020,
+"value": 2070502.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "transport",
+"kind": "proposed",
+"fy": 2021,
+"value": 2167992.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "technology",
+"kind": "expended",
+"fy": 2019,
+"value": 1372700.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "technology",
+"kind": "approved",
+"fy": 2020,
+"value": 1426977.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "technology",
+"kind": "proposed",
+"fy": 2021,
+"value": 1525943.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "facilities",
+"kind": "expended",
+"fy": 2019,
+"value": 5119246.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "facilities",
+"kind": "approved",
+"fy": 2020,
+"value": 5306675.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "facilities",
+"kind": "proposed",
+"fy": 2021,
+"value": 4557280.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "specialed",
+"kind": "expended",
+"fy": 2019,
+"value": 8839480.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "specialed",
+"kind": "approved",
+"fy": 2020,
+"value": 9217097.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "specialed",
+"kind": "proposed",
+"fy": 2021,
+"value": 9386251.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "total",
+"kind": "expended",
+"fy": 2019,
+"value": 44146206.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "total",
+"kind": "approved",
+"fy": 2020,
+"value": 45981838.0,
+"pdf_page": 21
+},
+{
+"report": 2020,
+"dept": "total",
+"kind": "proposed",
+"fy": 2021,
+"value": 46073817.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "mastway",
+"kind": "expended",
+"fy": 2020,
+"value": 4143493.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "mastway",
+"kind": "approved",
+"fy": 2021,
+"value": 4329963.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "mastway",
+"kind": "proposed",
+"fy": 2022,
+"value": 4352809.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "moharimet",
+"kind": "expended",
+"fy": 2020,
+"value": 3910753.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "moharimet",
+"kind": "approved",
+"fy": 2021,
+"value": 4042213.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "moharimet",
+"kind": "proposed",
+"fy": 2022,
+"value": 4069366.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "middle",
+"kind": "expended",
+"fy": 2020,
+"value": 7013313.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "middle",
+"kind": "approved",
+"fy": 2021,
+"value": 7663793.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "middle",
+"kind": "proposed",
+"fy": 2022,
+"value": 7766242.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "high",
+"kind": "expended",
+"fy": 2020,
+"value": 9218967.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "high",
+"kind": "approved",
+"fy": 2021,
+"value": 9834586.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "high",
+"kind": "proposed",
+"fy": 2022,
+"value": 10287334.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "sau",
+"kind": "expended",
+"fy": 2020,
+"value": 3122478.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "sau",
+"kind": "approved",
+"fy": 2021,
+"value": 3678606.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "sau",
+"kind": "proposed",
+"fy": 2022,
+"value": 4185854.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "transport",
+"kind": "expended",
+"fy": 2020,
+"value": 1912642.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "transport",
+"kind": "approved",
+"fy": 2021,
+"value": 2167992.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "transport",
+"kind": "proposed",
+"fy": 2022,
+"value": 2222941.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "technology",
+"kind": "expended",
+"fy": 2020,
+"value": 1416966.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "technology",
+"kind": "approved",
+"fy": 2021,
+"value": 1525943.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "technology",
+"kind": "proposed",
+"fy": 2022,
+"value": 1545108.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "facilities",
+"kind": "expended",
+"fy": 2020,
+"value": 5115419.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "facilities",
+"kind": "approved",
+"fy": 2021,
+"value": 4557280.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "facilities",
+"kind": "proposed",
+"fy": 2022,
+"value": 4574432.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "specialed",
+"kind": "expended",
+"fy": 2020,
+"value": 9090523.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "specialed",
+"kind": "approved",
+"fy": 2021,
+"value": 9525805.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "specialed",
+"kind": "proposed",
+"fy": 2022,
+"value": 9703909.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "total",
+"kind": "expended",
+"fy": 2020,
+"value": 44944554.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "total",
+"kind": "approved",
+"fy": 2021,
+"value": 47326181.0,
+"pdf_page": 21
+},
+{
+"report": 2021,
+"dept": "total",
+"kind": "proposed",
+"fy": 2022,
+"value": 48707995.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "mastway",
+"kind": "expended",
+"fy": 2021,
+"value": 4268785.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "mastway",
+"kind": "approved",
+"fy": 2022,
+"value": 4359380.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "mastway",
+"kind": "proposed",
+"fy": 2023,
+"value": 4367790.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "moharimet",
+"kind": "expended",
+"fy": 2021,
+"value": 4136283.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "moharimet",
+"kind": "approved",
+"fy": 2022,
+"value": 4086177.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "moharimet",
+"kind": "proposed",
+"fy": 2023,
+"value": 4325027.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "middle",
+"kind": "expended",
+"fy": 2021,
+"value": 7488076.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "middle",
+"kind": "approved",
+"fy": 2022,
+"value": 7966409.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "middle",
+"kind": "proposed",
+"fy": 2023,
+"value": 8324777.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "high",
+"kind": "expended",
+"fy": 2021,
+"value": 9505872.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "high",
+"kind": "approved",
+"fy": 2022,
+"value": 10309494.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "high",
+"kind": "proposed",
+"fy": 2023,
+"value": 10637831.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "sau",
+"kind": "expended",
+"fy": 2021,
+"value": 3679827.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "sau",
+"kind": "approved",
+"fy": 2022,
+"value": 4197620.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "sau",
+"kind": "proposed",
+"fy": 2023,
+"value": 4386334.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "transport",
+"kind": "expended",
+"fy": 2021,
+"value": 1666513.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "transport",
+"kind": "approved",
+"fy": 2022,
+"value": 2208656.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "transport",
+"kind": "proposed",
+"fy": 2023,
+"value": 2285862.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "technology",
+"kind": "expended",
+"fy": 2021,
+"value": 1828345.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "technology",
+"kind": "approved",
+"fy": 2022,
+"value": 1409329.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "technology",
+"kind": "proposed",
+"fy": 2023,
+"value": 1579778.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "facilities",
+"kind": "expended",
+"fy": 2021,
+"value": 4321147.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "facilities",
+"kind": "approved",
+"fy": 2022,
+"value": 4626249.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "facilities",
+"kind": "proposed",
+"fy": 2023,
+"value": 4901017.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "specialed",
+"kind": "expended",
+"fy": 2021,
+"value": 9296845.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "specialed",
+"kind": "approved",
+"fy": 2022,
+"value": 9621303.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "specialed",
+"kind": "proposed",
+"fy": 2023,
+"value": 9859859.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "total",
+"kind": "expended",
+"fy": 2021,
+"value": 46191693.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "total",
+"kind": "approved",
+"fy": 2022,
+"value": 48784617.0,
+"pdf_page": 21
+},
+{
+"report": 2022,
+"dept": "total",
+"kind": "proposed",
+"fy": 2023,
+"value": 50668275.0,
+"pdf_page": 21
+},
+{
+"report": 2023,
+"dept": "mastway",
+"kind": "expended",
+"fy": 2022,
+"value": 4280364.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "mastway",
+"kind": "approved",
+"fy": 2023,
+"value": 4359192.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "mastway",
+"kind": "proposed",
+"fy": 2024,
+"value": 4527904.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "moharimet",
+"kind": "expended",
+"fy": 2022,
+"value": 3995173.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "moharimet",
+"kind": "approved",
+"fy": 2023,
+"value": 4321042.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "moharimet",
+"kind": "proposed",
+"fy": 2024,
+"value": 4479081.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "middle",
+"kind": "expended",
+"fy": 2022,
+"value": 7804092.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "middle",
+"kind": "approved",
+"fy": 2023,
+"value": 8306520.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "middle",
+"kind": "proposed",
+"fy": 2024,
+"value": 8736426.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "high",
+"kind": "expended",
+"fy": 2022,
+"value": 10173721.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "high",
+"kind": "approved",
+"fy": 2023,
+"value": 10717822.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "high",
+"kind": "proposed",
+"fy": 2024,
+"value": 10916259.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "sau",
+"kind": "expended",
+"fy": 2022,
+"value": 4268674.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "sau",
+"kind": "approved",
+"fy": 2023,
+"value": 4382863.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "sau",
+"kind": "proposed",
+"fy": 2024,
+"value": 4166967.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "transport",
+"kind": "expended",
+"fy": 2022,
+"value": 2201945.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "transport",
+"kind": "approved",
+"fy": 2023,
+"value": 2276511.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "transport",
+"kind": "proposed",
+"fy": 2024,
+"value": 2400675.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "technology",
+"kind": "expended",
+"fy": 2022,
+"value": 1471030.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "technology",
+"kind": "approved",
+"fy": 2023,
+"value": 1578927.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "technology",
+"kind": "proposed",
+"fy": 2024,
+"value": 1652172.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "facilities",
+"kind": "expended",
+"fy": 2022,
+"value": 4536839.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "facilities",
+"kind": "approved",
+"fy": 2023,
+"value": 5010825.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "facilities",
+"kind": "proposed",
+"fy": 2024,
+"value": 4644270.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "specialed",
+"kind": "expended",
+"fy": 2022,
+"value": 9382407.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "specialed",
+"kind": "approved",
+"fy": 2023,
+"value": 9962440.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "specialed",
+"kind": "proposed",
+"fy": 2024,
+"value": 10156130.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "total",
+"kind": "expended",
+"fy": 2022,
+"value": 48114245.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "total",
+"kind": "approved",
+"fy": 2023,
+"value": 50916142.0,
+"pdf_page": 20
+},
+{
+"report": 2023,
+"dept": "total",
+"kind": "proposed",
+"fy": 2024,
+"value": 51679884.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "mastway",
+"kind": "expended",
+"fy": 2023,
+"value": 4487862.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "mastway",
+"kind": "approved",
+"fy": 2024,
+"value": 4563824.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "mastway",
+"kind": "proposed",
+"fy": 2025,
+"value": 4676793.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "moharimet",
+"kind": "expended",
+"fy": 2023,
+"value": 4215354.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "moharimet",
+"kind": "approved",
+"fy": 2024,
+"value": 4483407.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "moharimet",
+"kind": "proposed",
+"fy": 2025,
+"value": 4496638.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "middle",
+"kind": "expended",
+"fy": 2023,
+"value": 8269805.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "middle",
+"kind": "approved",
+"fy": 2024,
+"value": 8702978.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "middle",
+"kind": "proposed",
+"fy": 2025,
+"value": 8705220.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "high",
+"kind": "expended",
+"fy": 2023,
+"value": 10534248.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "high",
+"kind": "approved",
+"fy": 2024,
+"value": 10821913.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "high",
+"kind": "proposed",
+"fy": 2025,
+"value": 11079102.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "sau",
+"kind": "expended",
+"fy": 2023,
+"value": 4651306.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "sau",
+"kind": "approved",
+"fy": 2024,
+"value": 4266157.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "sau",
+"kind": "proposed",
+"fy": 2025,
+"value": 4984742.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "transport",
+"kind": "expended",
+"fy": 2023,
+"value": 2257006.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "transport",
+"kind": "approved",
+"fy": 2024,
+"value": 2400675.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "transport",
+"kind": "proposed",
+"fy": 2025,
+"value": 2508644.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "technology",
+"kind": "expended",
+"fy": 2023,
+"value": 1605646.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "technology",
+"kind": "approved",
+"fy": 2024,
+"value": 1652172.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "technology",
+"kind": "proposed",
+"fy": 2025,
+"value": 1726995.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "facilities",
+"kind": "expended",
+"fy": 2023,
+"value": 5182471.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "facilities",
+"kind": "approved",
+"fy": 2024,
+"value": 4644656.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "facilities",
+"kind": "proposed",
+"fy": 2025,
+"value": 5216727.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "specialed",
+"kind": "expended",
+"fy": 2023,
+"value": 9491002.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "specialed",
+"kind": "approved",
+"fy": 2024,
+"value": 10270102.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "specialed",
+"kind": "proposed",
+"fy": 2025,
+"value": 11020492.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "total",
+"kind": "expended",
+"fy": 2023,
+"value": 50694701.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "total",
+"kind": "approved",
+"fy": 2024,
+"value": 51804884.0,
+"pdf_page": 20
+},
+{
+"report": 2024,
+"dept": "total",
+"kind": "proposed",
+"fy": 2025,
+"value": 54415352.0,
+"pdf_page": 20
+}
+],
+"funds": [
+{
+"report": 2018,
+"fy": 2019,
+"general_fund": 44199061.0,
+"food_service": 785494.0,
+"federal": 600000.0,
+"pass_through": 41000.0,
+"total": 45625555.0,
+"default": 45555984.0,
+"pdf_page": 17
+},
+{
+"report": 2019,
+"fy": 2020,
+"general_fund": 45940460.0,
+"food_service": 824050.0,
+"federal": 600000.0,
+"pass_through": 41000.0,
+"total": 47405510.0,
+"default": 46850794.0,
+"pdf_page": 17
+},
+{
+"report": 2020,
+"fy": 2021,
+"general_fund": 46073817.0,
+"food_service": 824050.0,
+"federal": 600000.0,
+"pass_through": 41000.0,
+"total": 47538867.0,
+"default": 48221487.0,
+"pdf_page": 17
+},
+{
+"report": 2021,
+"fy": 2022,
+"general_fund": 48707995.0,
+"food_service": 824050.0,
+"federal": 600000.0,
+"pass_through": 41000.0,
+"total": 50173045.0,
+"default": 50080250.0,
+"pdf_page": 17
+},
+{
+"report": 2022,
+"fy": 2023,
+"general_fund": 50668275.0,
+"food_service": 824050.0,
+"federal": 600000.0,
+"pass_through": 41000.0,
+"total": 52133325.0,
+"default": 51721541.0,
+"pdf_page": 17
+},
+{
+"report": 2023,
+"fy": 2024,
+"general_fund": 51679884.0,
+"food_service": 890214.0,
+"federal": 600000.0,
+"pass_through": 41000.0,
+"total": 53211098.0,
+"default": 52953910.0,
+"pdf_page": 16
+},
+{
+"report": 2024,
+"fy": 2025,
+"general_fund": 54415352.0,
+"food_service": 1191685.0,
+"federal": 600000.0,
+"pass_through": 41000.0,
+"total": 56248037.0,
+"default": 55929305.0,
+"pdf_page": 16
+},
+{
+"report": 2025,
+"fy": 2026,
+"general_fund": 56002463.0,
+"food_service": 1249628.0,
+"federal": 645000.0,
+"pass_through": 105000.0,
+"total": 58002091.0,
+"default": 57478995.0,
+"pdf_page": 14
+},
+{
+"report": 2026,
+"fy": 2027,
+"general_fund": 60183022.0,
+"food_service": 1432045.0,
+"federal": 645000.0,
+"pass_through": 105000.0,
+"total": 62365067.0,
+"default": 60463982.0,
+"pdf_page": 13
+}
+],
+"tax": [
+{
+"report": 2018,
+"town": "durham",
+"fy_cur": 2018,
+"fy_prop": 2019,
+"pdf_page": 22,
+"nav": [
+1019411430.0,
+1019411430.0
+],
+"local_rate": [
+16.98,
+17.54,
+0.56,
+2.89
+],
+"state_rate": [
+2.34,
+2.34
+],
+"app_pct": [
+53.7791,
+53.9636
+],
+"apportioned": [
+20996822.0,
+21659790.0
+],
+"state_grant": [
+1374746.0,
+1412021.0,
+37275.0
+],
+"state_tax": [
+2309834.0,
+2309834.0
+],
+"kg_aid": [
+56100.0
+],
+"net": [
+17312242.0,
+17881835.0
+]
+},
+{
+"report": 2018,
+"town": "lee",
+"fy_cur": 2018,
+"fy_prop": 2019,
+"pdf_page": 22,
+"nav": [
+443381344.0,
+443381344.0
+],
+"local_rate": [
+19.02,
+19.25,
+0.23,
+1.07
+],
+"state_rate": [
+2.39,
+2.39
+],
+"app_pct": [
+30.3612,
+30.0364
+],
+"apportioned": [
+11854580.0,
+12055944.0
+],
+"state_grant": [
+2380905.0,
+2430454.0,
+49549.0
+],
+"state_tax": [
+1041678.0,
+1041678.0
+],
+"kg_aid": [
+50600.0
+],
+"net": [
+8431997.0,
+8533212.0
+]
+},
+{
+"report": 2018,
+"town": "madbury",
+"fy_cur": 2018,
+"fy_prop": 2019,
+"pdf_page": 22,
+"nav": [
+235434027.0,
+235343027.0
+],
+"local_rate": [
+19.41,
+20.7,
+1.29,
+5.95
+],
+"state_rate": [
+2.23,
+2.23
+]
+},
+{
+"report": 2019,
+"town": "durham",
+"fy_cur": 2019,
+"fy_prop": 2020,
+"pdf_page": 22,
+"nav": [
+1189092535.0,
+1189092535.0
+],
+"local_rate": [
+14.93,
+15.44,
+0.52,
+3.04
+],
+"state_rate": [
+2.01,
+2.02
+],
+"app_pct": [
+53.8495,
+53.3714
+],
+"apportioned": [
+21630070.0,
+22180405.0
+],
+"state_grant": [
+1411418.0,
+1458151.0,
+46733.0
+],
+"state_tax": [
+2313512.0,
+2320697.0
+],
+"kg_aid": [
+56556.0,
+45100.0
+],
+"net": [
+17751938.0,
+18356457.0
+]
+},
+{
+"report": 2019,
+"town": "lee",
+"fy_cur": 2019,
+"fy_prop": 2020,
+"pdf_page": 22,
+"nav": [
+449628800.0,
+449628800.0
+],
+"local_rate": [
+19.16,
+20.92,
+1.91,
+8.88
+],
+"state_rate": [
+2.29,
+2.43
+],
+"app_pct": [
+30.1769,
+31.1264
+],
+"apportioned": [
+12121347.0,
+12935695.0
+],
+"state_grant": [
+2440620.0,
+2408442.0,
+32178.0
+],
+"state_tax": [
+1014020.0,
+1078250.0
+],
+"kg_aid": [
+51174.0,
+41800.0
+],
+"net": [
+8615533.0,
+9407203.0
+]
+},
+{
+"report": 2019,
+"town": "madbury",
+"fy_cur": 2019,
+"fy_prop": 2020,
+"pdf_page": 22,
+"nav": [
+239452002.0,
+239452002.0
+],
+"local_rate": [
+20.19,
+19.99,
+0.2,
+-0.89
+],
+"state_rate": [
+2.23,
+2.22
+]
+},
+{
+"report": 2020,
+"town": "durham",
+"fy_cur": 2020,
+"fy_prop": 2021,
+"pdf_page": 22,
+"nav": [
+1196283337.0,
+1196283337.0
+],
+"local_rate": [
+15.32,
+15.89,
+0.57,
+3.31
+],
+"state_rate": [
+2.01,
+2.01
+],
+"app_pct": [
+53.3713,
+53.0797
+],
+"apportioned": [
+22161578.0,
+22807784.0
+],
+"state_grant": [
+1503578.0,
+1473255.0,
+30323.0
+],
+"state_tax": [
+2320697.0,
+2320697.0
+],
+"kg_aid": [],
+"net": [
+18337303.0,
+19013832.0
+]
+},
+{
+"report": 2020,
+"town": "lee",
+"fy_cur": 2020,
+"fy_prop": 2021,
+"pdf_page": 22,
+"nav": [
+458402871.0,
+458402871.0
+],
+"local_rate": [
+20.19,
+20.26,
+0.07,
+0.32
+],
+"state_rate": [
+2.39,
+2.39
+],
+"app_pct": [
+31.1265,
+31.1375
+],
+"apportioned": [
+12924781.0,
+13379453.0
+],
+"state_grant": [
+2591692.0,
+3012969.0,
+421277.0
+],
+"state_tax": [
+1078250.0,
+1078250.0
+],
+"kg_aid": [],
+"net": [
+9254839.0,
+9288234.0
+]
+},
+{
+"report": 2020,
+"town": "madbury",
+"fy_cur": 2020,
+"fy_prop": 2021,
+"pdf_page": 22,
+"nav": [
+244765402.0,
+244765402.0
+],
+"local_rate": [
+19.53,
+19.97,
+0.44,
+2.02
+],
+"state_rate": [
+2.17,
+2.17
+]
+},
+{
+"report": 2021,
+"town": "durham",
+"fy_cur": 2021,
+"fy_prop": 2022,
+"pdf_page": 22,
+"nav": [
+1230868663.0,
+1230868663.0
+],
+"local_rate": [
+15.37,
+15.72,
+0.34,
+1.98
+],
+"state_rate": [
+2.0,
+1.99
+],
+"app_pct": [
+53.0797,
+52.7423
+],
+"apportioned": [
+22740619.0,
+23136821.0
+],
+"state_grant": [
+1497302.0,
+1473366.0,
+23936.0
+],
+"state_tax": [
+2321450.0,
+2316107.0
+],
+"kg_aid": [],
+"net": [
+18921867.0,
+19347348.0
+]
+},
+{
+"report": 2021,
+"town": "lee",
+"fy_cur": 2021,
+"fy_prop": 2022,
+"pdf_page": 22,
+"nav": [
+466532552.0,
+466532552.0
+],
+"local_rate": [
+19.8,
+21.83,
+0.07,
+9.35
+],
+"state_rate": [
+2.32,
+2.36
+],
+"app_pct": [
+31.1378,
+31.4492
+],
+"apportioned": [
+13340182.0,
+13796033.0
+],
+"state_grant": [
+3037561.0,
+2528794.0,
+508767.0
+],
+"state_tax": [
+1065137.0,
+1084091.0
+],
+"kg_aid": [],
+"net": [
+9237484.0,
+10183148.0
+]
+},
+{
+"report": 2021,
+"town": "madbury",
+"fy_cur": 2021,
+"fy_prop": 2022,
+"pdf_page": 22,
+"nav": [
+294284068.0,
+294284068.0
+],
+"local_rate": [
+16.29,
+17.78,
+1.47,
+8.13
+],
+"state_rate": [
+1.84,
+1.82
+]
+},
+{
+"report": 2022,
+"town": "durham",
+"fy_cur": 2022,
+"fy_prop": 2023,
+"pdf_page": 22,
+"nav": [
+1252334006.0,
+1252334006.0
+],
+"local_rate": [
+15.28,
+16.57,
+0.85,
+4.92
+],
+"state_rate": [
+1.98,
+1.53
+],
+"app_pct": [
+52.7423,
+54.0882
+],
+"apportioned": [
+23045911.0,
+24598514.0
+],
+"state_grant": [
+1586290.0,
+2047177.0,
+460887.0
+],
+"state_tax": [
+2316107.0,
+1796982.0
+],
+"kg_aid": [],
+"net": [
+19143514.0,
+20754355.0
+]
+},
+{
+"report": 2022,
+"town": "lee",
+"fy_cur": 2022,
+"fy_prop": 2023,
+"pdf_page": 22,
+"nav": [
+729919551.0,
+729919551.0
+],
+"local_rate": [
+13.65,
+14.21,
+0.16,
+1.08
+],
+"state_rate": [
+1.52,
+1.12
+],
+"app_pct": [
+31.4492,
+30.7527
+],
+"apportioned": [
+13741825.0,
+13985874.0
+],
+"state_grant": [
+2688618.0,
+2812094.0,
+123476.0
+],
+"state_tax": [
+1084091.0,
+798404.0
+],
+"kg_aid": [],
+"net": [
+9969116.0,
+10375376.0
+]
+},
+{
+"report": 2022,
+"town": "madbury",
+"fy_cur": 2022,
+"fy_prop": 2023,
+"pdf_page": 22,
+"nav": [
+304066305.0,
+304066305.0
+],
+"local_rate": [
+17.02,
+17.5,
+0.06,
+-0.3
+],
+"state_rate": [
+1.84,
+1.82
+]
+},
+{
+"report": 2023,
+"town": "durham",
+"fy_cur": 2023,
+"fy_prop": 2024,
+"pdf_page": 21,
+"nav": [
+1244023342.0,
+1244023342.0
+],
+"local_rate": [
+16.56,
+17.29,
+1.27,
+7.02
+],
+"state_rate": [
+1.53,
+2.07
+],
+"app_pct": [
+54.0882,
+54.3861
+],
+"apportioned": [
+24502040.0,
+25412930.0
+],
+"state_grant": [
+2098692.0,
+1476724.0,
+621968.0
+],
+"state_tax": [
+1796982.0,
+2431391.0
+],
+"kg_aid": [],
+"net": [
+20606366.0,
+21504815.0
+]
+},
+{
+"report": 2023,
+"town": "lee",
+"fy_cur": 2023,
+"fy_prop": 2024,
+"pdf_page": 21,
+"nav": [
+736219980.0,
+736219980.0
+],
+"local_rate": [
+13.97,
+14.22,
+0.63,
+4.2
+],
+"state_rate": [
+1.11,
+1.5
+],
+"app_pct": [
+30.7527,
+30.589
+],
+"apportioned": [
+13931022.0,
+14293287.0
+],
+"state_grant": [
+2845685.0,
+2747731.0,
+97954.0
+],
+"state_tax": [
+798404.0,
+1078084.0
+],
+"kg_aid": [],
+"net": [
+10286933.0,
+10467472.0
+]
+},
+{
+"report": 2023,
+"town": "madbury",
+"fy_cur": 2023,
+"fy_prop": 2024,
+"pdf_page": 21,
+"nav": [
+305534300.0,
+305534300.0
+],
+"local_rate": [
+17.3,
+17.73,
+0.97,
+5.21
+],
+"state_rate": [
+1.27,
+1.81
+]
+},
+{
+"report": 2024,
+"town": "durham",
+"fy_cur": 2024,
+"fy_prop": 2025,
+"pdf_page": 21,
+"nav": [
+1856713268.0,
+1856713268.0
+],
+"local_rate": [
+11.58,
+12.15,
+0.4,
+3.06
+],
+"state_rate": [
+1.39,
+1.21
+],
+"app_pct": [
+54.3861,
+54.3861
+],
+"apportioned": [
+25643243.0,
+26713047.0
+],
+"state_grant": [
+1712440.0,
+2027487.0
+],
+"state_tax": [
+2431391.0,
+2124704.0
+],
+"kg_aid": [],
+"net": [
+21499413.0,
+22560856.0
+]
+},
+{
+"report": 2024,
+"town": "lee",
+"fy_cur": 2024,
+"fy_prop": 2025,
+"pdf_page": 21,
+"nav": [
+733320216.0,
+733320216.0
+],
+"local_rate": [
+14.3,
+15.08,
+0.82,
+5.19
+],
+"state_rate": [
+1.5,
+1.54
+],
+"app_pct": [
+30.589,
+30.589
+],
+"apportioned": [
+14422824.0,
+15024527.0
+],
+"state_grant": [
+2857640.0,
+2857640.0
+],
+"state_tax": [
+1078084.0,
+1107028.0
+],
+"kg_aid": [],
+"net": [
+10487101.0,
+11059859.0
+]
+},
+{
+"report": 2024,
+"town": "madbury",
+"fy_cur": 2024,
+"fy_prop": 2025,
+"pdf_page": 21,
+"nav": [
+303447313.0,
+303447313.0
+],
+"local_rate": [
+17.91,
+18.9,
+0.97,
+4.94
+],
+"state_rate": [
+1.79,
+1.78
+]
+},
+{
+"report": 2025,
+"town": "durham",
+"fy_cur": 2025,
+"fy_prop": 2026,
+"pdf_page": 15,
+"nav": [
+1866124968.0,
+1866124968.0
+],
+"local_rate": [
+11.52,
+12.47,
+0.98
+],
+"state_rate": [
+1.21,
+1.24
+]
+},
+{
+"report": 2025,
+"town": "lee",
+"fy_cur": 2025,
+"fy_prop": 2026,
+"pdf_page": 15,
+"nav": [
+736320238.0,
+736320238.0
+],
+"local_rate": [
+16.63,
+18.15,
+1.56
+],
+"state_rate": [
+1.53,
+1.58
+]
+},
+{
+"report": 2025,
+"town": "madbury",
+"fy_cur": 2025,
+"fy_prop": 2026,
+"pdf_page": 15,
+"nav": [
+308278240.0,
+308278240.0
+],
+"local_rate": [
+19.57,
+20.96,
+1.34
+],
+"state_rate": [
+1.77,
+1.71
+]
+},
+{
+"report": 2026,
+"town": "durham",
+"fy_cur": 2026,
+"fy_prop": 2027,
+"pdf_page": 21,
+"nav": [
+2171925652.0,
+2171925652.0
+],
+"local_rate": [
+10.79,
+11.59,
+0.92
+],
+"state_rate": [
+1.06,
+1.18
+]
+},
+{
+"report": 2026,
+"town": "lee",
+"fy_cur": 2026,
+"fy_prop": 2027,
+"pdf_page": 21,
+"nav": [
+740818237.0,
+740818237.0
+],
+"local_rate": [
+18.29,
+19.28,
+0.85
+],
+"state_rate": [
+1.57,
+1.43
+]
+},
+{
+"report": 2026,
+"town": "madbury",
+"fy_cur": 2026,
+"fy_prop": 2027,
+"pdf_page": 21,
+"nav": [
+524225891.0,
+524225891.0
+],
+"local_rate": [
+11.77,
+12.72,
+0.91
+],
+"state_rate": [
+0.99,
+0.95
+]
+}
+],
+"house": [
+{
+"report": 2018,
+"town": "durham",
+"house_value": 200000.0,
+"tax_current": 3864.0,
+"tax_proposed": 3976.0,
+"impact": 112.0,
+"fy_cur": 2018,
+"fy_prop": 2019,
+"pdf_page": 22
+},
+{
+"report": 2018,
+"town": "durham",
+"house_value": 400000.0,
+"tax_current": 7728.0,
+"tax_proposed": 7952.0,
+"impact": 223.0,
+"fy_cur": 2018,
+"fy_prop": 2019,
+"pdf_page": 22
+},
+{
+"report": 2018,
+"town": "lee",
+"house_value": 200000.0,
+"tax_current": 4281.0,
+"tax_proposed": 4327.0,
+"impact": 46.0,
+"fy_cur": 2018,
+"fy_prop": 2019,
+"pdf_page": 22
+},
+{
+"report": 2018,
+"town": "lee",
+"house_value": 400000.0,
+"tax_current": 8562.0,
+"tax_proposed": 8653.0,
+"impact": 91.0,
+"fy_cur": 2018,
+"fy_prop": 2019,
+"pdf_page": 22
+},
+{
+"report": 2018,
+"town": "madbury",
+"house_value": 200000.0,
+"tax_current": 4329.0,
+"tax_proposed": 4587.0,
+"impact": 258.0,
+"fy_cur": 2018,
+"fy_prop": 2019,
+"pdf_page": 22
+},
+{
+"report": 2018,
+"town": "madbury",
+"house_value": 400000.0,
+"tax_current": 8659.0,
+"tax_proposed": 9174.0,
+"impact": 515.0,
+"fy_cur": 2018,
+"fy_prop": 2019,
+"pdf_page": 22
+},
+{
+"report": 2019,
+"town": "durham",
+"house_value": 200000.0,
+"tax_current": 3388.0,
+"tax_proposed": 3491.0,
+"impact": 103.0,
+"fy_cur": 2019,
+"fy_prop": 2020,
+"pdf_page": 22
+},
+{
+"report": 2019,
+"town": "durham",
+"house_value": 400000.0,
+"tax_current": 6776.0,
+"tax_proposed": 6983.0,
+"impact": 206.0,
+"fy_cur": 2019,
+"fy_prop": 2020,
+"pdf_page": 22
+},
+{
+"report": 2019,
+"town": "lee",
+"house_value": 200000.0,
+"tax_current": 4290.0,
+"tax_proposed": 4671.0,
+"impact": 381.0,
+"fy_cur": 2019,
+"fy_prop": 2020,
+"pdf_page": 22
+},
+{
+"report": 2019,
+"town": "lee",
+"house_value": 400000.0,
+"tax_current": 8579.0,
+"tax_proposed": 9342.0,
+"impact": 762.0,
+"fy_cur": 2019,
+"fy_prop": 2020,
+"pdf_page": 22
+},
+{
+"report": 2019,
+"town": "madbury",
+"house_value": 200000.0,
+"tax_current": 4483.0,
+"tax_proposed": 4443.0,
+"impact": -40.0,
+"fy_cur": 2019,
+"fy_prop": 2020,
+"pdf_page": 22
+},
+{
+"report": 2019,
+"town": "madbury",
+"house_value": 400000.0,
+"tax_current": 8966.0,
+"tax_proposed": 8887.0,
+"impact": -79.0,
+"fy_cur": 2019,
+"fy_prop": 2020,
+"pdf_page": 22
+},
+{
+"report": 2020,
+"town": "durham",
+"house_value": 200000.0,
+"tax_current": 3466.0,
+"tax_proposed": 3580.0,
+"impact": 115.0,
+"fy_cur": 2020,
+"fy_prop": 2021,
+"pdf_page": 22
+},
+{
+"report": 2020,
+"town": "durham",
+"house_value": 400000.0,
+"tax_current": 6931.0,
+"tax_proposed": 7161.0,
+"impact": 230.0,
+"fy_cur": 2020,
+"fy_prop": 2021,
+"pdf_page": 22
+},
+{
+"report": 2020,
+"town": "lee",
+"house_value": 200000.0,
+"tax_current": 4516.0,
+"tax_proposed": 4530.0,
+"impact": 15.0,
+"fy_cur": 2020,
+"fy_prop": 2021,
+"pdf_page": 22
+},
+{
+"report": 2020,
+"town": "lee",
+"house_value": 400000.0,
+"tax_current": 9032.0,
+"tax_proposed": 9061.0,
+"impact": 29.0,
+"fy_cur": 2020,
+"fy_prop": 2021,
+"pdf_page": 22
+},
+{
+"report": 2020,
+"town": "madbury",
+"house_value": 200000.0,
+"tax_current": 4340.0,
+"tax_proposed": 4428.0,
+"impact": 88.0,
+"fy_cur": 2020,
+"fy_prop": 2021,
+"pdf_page": 22
+},
+{
+"report": 2020,
+"town": "madbury",
+"house_value": 400000.0,
+"tax_current": 8680.0,
+"tax_proposed": 8856.0,
+"impact": 175.0,
+"fy_cur": 2020,
+"fy_prop": 2021,
+"pdf_page": 22
+},
+{
+"report": 2021,
+"town": "durham",
+"house_value": 300000.0,
+"tax_current": 5210.0,
+"tax_proposed": 5313.0,
+"impact": 103.0,
+"fy_cur": 2021,
+"fy_prop": 2022,
+"pdf_page": 22
+},
+{
+"report": 2021,
+"town": "durham",
+"house_value": 600000.0,
+"tax_current": 10421.0,
+"tax_proposed": 10627.0,
+"impact": 206.0,
+"fy_cur": 2021,
+"fy_prop": 2022,
+"pdf_page": 22
+},
+{
+"report": 2021,
+"town": "lee",
+"house_value": 300000.0,
+"tax_current": 6636.0,
+"tax_proposed": 7257.0,
+"impact": 621.0,
+"fy_cur": 2021,
+"fy_prop": 2022,
+"pdf_page": 22
+},
+{
+"report": 2021,
+"town": "lee",
+"house_value": 600000.0,
+"tax_current": 13272.0,
+"tax_proposed": 14513.0,
+"impact": 1241.0,
+"fy_cur": 2021,
+"fy_prop": 2022,
+"pdf_page": 22
+},
+{
+"report": 2021,
+"town": "madbury",
+"house_value": 300000.0,
+"tax_current": 5437.0,
+"tax_proposed": 5879.0,
+"impact": 442.0,
+"fy_cur": 2021,
+"fy_prop": 2022,
+"pdf_page": 22
+},
+{
+"report": 2021,
+"town": "madbury",
+"house_value": 600000.0,
+"tax_current": 10874.0,
+"tax_proposed": 11759.0,
+"impact": 885.0,
+"fy_cur": 2021,
+"fy_prop": 2022,
+"pdf_page": 22
+},
+{
+"report": 2022,
+"town": "durham",
+"house_value": 300000.0,
+"tax_current": 5177.0,
+"tax_proposed": 5432.0,
+"impact": 255.0,
+"fy_cur": 2022,
+"fy_prop": 2023,
+"pdf_page": 22
+},
+{
+"report": 2022,
+"town": "durham",
+"house_value": 600000.0,
+"tax_current": 10353.0,
+"tax_proposed": 10863.0,
+"impact": 510.0,
+"fy_cur": 2022,
+"fy_prop": 2023,
+"pdf_page": 22
+},
+{
+"report": 2022,
+"town": "lee",
+"house_value": 300000.0,
+"tax_current": 4551.0,
+"tax_proposed": 4600.0,
+"impact": 49.0,
+"fy_cur": 2022,
+"fy_prop": 2023,
+"pdf_page": 22
+},
+{
+"report": 2022,
+"town": "lee",
+"house_value": 600000.0,
+"tax_current": 9101.0,
+"tax_proposed": 9200.0,
+"impact": 99.0,
+"fy_cur": 2022,
+"fy_prop": 2023,
+"pdf_page": 22
+},
+{
+"report": 2022,
+"town": "madbury",
+"house_value": 300000.0,
+"tax_current": 5650.0,
+"tax_proposed": 5634.0,
+"impact": -17.0,
+"fy_cur": 2022,
+"fy_prop": 2023,
+"pdf_page": 22
+},
+{
+"report": 2022,
+"town": "madbury",
+"house_value": 600000.0,
+"tax_current": 11301.0,
+"tax_proposed": 11267.0,
+"impact": -34.0,
+"fy_cur": 2022,
+"fy_prop": 2023,
+"pdf_page": 22
+},
+{
+"report": 2023,
+"town": "durham",
+"house_value": 300000.0,
+"tax_current": 5427.0,
+"tax_proposed": 5808.0,
+"impact": 381.0,
+"fy_cur": 2023,
+"fy_prop": 2024,
+"pdf_page": 21
+},
+{
+"report": 2023,
+"town": "durham",
+"house_value": 600000.0,
+"tax_current": 10854.0,
+"tax_proposed": 11616.0,
+"impact": 762.0,
+"fy_cur": 2023,
+"fy_prop": 2024,
+"pdf_page": 21
+},
+{
+"report": 2023,
+"town": "lee",
+"house_value": 300000.0,
+"tax_current": 4524.0,
+"tax_proposed": 4714.0,
+"impact": 190.0,
+"fy_cur": 2023,
+"fy_prop": 2024,
+"pdf_page": 21
+},
+{
+"report": 2023,
+"town": "lee",
+"house_value": 600000.0,
+"tax_current": 9048.0,
+"tax_proposed": 9428.0,
+"impact": 380.0,
+"fy_cur": 2023,
+"fy_prop": 2024,
+"pdf_page": 21
+},
+{
+"report": 2023,
+"town": "madbury",
+"house_value": 300000.0,
+"tax_current": 5571.0,
+"tax_proposed": 5861.0,
+"impact": 290.0,
+"fy_cur": 2023,
+"fy_prop": 2024,
+"pdf_page": 21
+},
+{
+"report": 2023,
+"town": "madbury",
+"house_value": 600000.0,
+"tax_current": 11142.0,
+"tax_proposed": 11723.0,
+"impact": 581.0,
+"fy_cur": 2023,
+"fy_prop": 2024,
+"pdf_page": 21
+},
+{
+"report": 2024,
+"town": "durham",
+"house_value": 300000.0,
+"tax_current": 3890.0,
+"tax_proposed": 4009.0,
+"impact": 119.0,
+"fy_cur": 2024,
+"fy_prop": 2025,
+"pdf_page": 21
+},
+{
+"report": 2024,
+"town": "durham",
+"house_value": 600000.0,
+"tax_current": 7779.0,
+"tax_proposed": 8017.0,
+"impact": 238.0,
+"fy_cur": 2024,
+"fy_prop": 2025,
+"pdf_page": 21
+},
+{
+"report": 2024,
+"town": "lee",
+"house_value": 300000.0,
+"tax_current": 4739.0,
+"tax_proposed": 4985.0,
+"impact": 246.0,
+"fy_cur": 2024,
+"fy_prop": 2025,
+"pdf_page": 21
+},
+{
+"report": 2024,
+"town": "lee",
+"house_value": 600000.0,
+"tax_current": 9497.0,
+"tax_proposed": 9971.0,
+"impact": 492.0,
+"fy_cur": 2024,
+"fy_prop": 2025,
+"pdf_page": 21
+},
+{
+"report": 2024,
+"town": "madbury",
+"house_value": 300000.0,
+"tax_current": 5911.0,
+"tax_proposed": 6203.0,
+"impact": 292.0,
+"fy_cur": 2024,
+"fy_prop": 2025,
+"pdf_page": 21
+},
+{
+"report": 2024,
+"town": "madbury",
+"house_value": 600000.0,
+"tax_current": 11822.0,
+"tax_proposed": 12406.0,
+"impact": 584.0,
+"fy_cur": 2024,
+"fy_prop": 2025,
+"pdf_page": 21
+},
+{
+"report": 2025,
+"town": "durham",
+"house_value": 300000.0,
+"tax_current": 3819.0,
+"tax_proposed": 4113.0,
+"impact": 294.0,
+"fy_cur": 2025,
+"fy_prop": 2026,
+"pdf_page": 15
+},
+{
+"report": 2025,
+"town": "durham",
+"house_value": 600000.0,
+"tax_current": 7637.0,
+"tax_proposed": 8226.0,
+"impact": 589.0,
+"fy_cur": 2025,
+"fy_prop": 2026,
+"pdf_page": 15
+},
+{
+"report": 2025,
+"town": "lee",
+"house_value": 300000.0,
+"tax_current": 5449.0,
+"tax_proposed": 5916.0,
+"impact": 467.0,
+"fy_cur": 2025,
+"fy_prop": 2026,
+"pdf_page": 15
+},
+{
+"report": 2025,
+"town": "lee",
+"house_value": 600000.0,
+"tax_current": 10898.0,
+"tax_proposed": 11833.0,
+"impact": 935.0,
+"fy_cur": 2025,
+"fy_prop": 2026,
+"pdf_page": 15
+},
+{
+"report": 2025,
+"town": "madbury",
+"house_value": 300000.0,
+"tax_current": 6400.0,
+"tax_proposed": 6801.0,
+"impact": 401.0,
+"fy_cur": 2025,
+"fy_prop": 2026,
+"pdf_page": 15
+},
+{
+"report": 2025,
+"town": "madbury",
+"house_value": 600000.0,
+"tax_current": 12799.0,
+"tax_proposed": 13602.0,
+"impact": 803.0,
+"fy_cur": 2025,
+"fy_prop": 2026,
+"pdf_page": 15
+},
+{
+"report": 2026,
+"town": "durham",
+"house_value": 300000.0,
+"tax_current": 3557.0,
+"tax_proposed": 3832.0,
+"impact": 275.0,
+"fy_cur": 2026,
+"fy_prop": 2027,
+"pdf_page": 21
+},
+{
+"report": 2026,
+"town": "durham",
+"house_value": 600000.0,
+"tax_current": 7113.0,
+"tax_proposed": 7663.0,
+"impact": 550.0,
+"fy_cur": 2026,
+"fy_prop": 2027,
+"pdf_page": 21
+},
+{
+"report": 2026,
+"town": "durham",
+"house_value": 900000.0,
+"tax_current": 10670.0,
+"tax_proposed": 11495.0,
+"impact": 825.0,
+"fy_cur": 2026,
+"fy_prop": 2027,
+"pdf_page": 21
+},
+{
+"report": 2026,
+"town": "lee",
+"house_value": 300000.0,
+"tax_current": 5957.0,
+"tax_proposed": 6212.0,
+"impact": 254.0,
+"fy_cur": 2026,
+"fy_prop": 2027,
+"pdf_page": 21
+},
+{
+"report": 2026,
+"town": "lee",
+"house_value": 600000.0,
+"tax_current": 11915.0,
+"tax_proposed": 12423.0,
+"impact": 509.0,
+"fy_cur": 2026,
+"fy_prop": 2027,
+"pdf_page": 21
+},
+{
+"report": 2026,
+"town": "lee",
+"house_value": 900000.0,
+"tax_current": 17872.0,
+"tax_proposed": 18635.0,
+"impact": 763.0,
+"fy_cur": 2026,
+"fy_prop": 2027,
+"pdf_page": 21
+},
+{
+"report": 2026,
+"town": "madbury",
+"house_value": 300000.0,
+"tax_current": 3828.0,
+"tax_proposed": 4101.0,
+"impact": 273.0,
+"fy_cur": 2026,
+"fy_prop": 2027,
+"pdf_page": 21
+},
+{
+"report": 2026,
+"town": "madbury",
+"house_value": 600000.0,
+"tax_current": 7655.0,
+"tax_proposed": 8201.0,
+"impact": 546.0,
+"fy_cur": 2026,
+"fy_prop": 2027,
+"pdf_page": 21
+},
+{
+"report": 2026,
+"town": "madbury",
+"house_value": 900000.0,
+"tax_current": 11843.0,
+"tax_proposed": 12302.0,
+"impact": 819.0,
+"fy_cur": 2026,
+"fy_prop": 2027,
+"pdf_page": 21
+}
+]
+}

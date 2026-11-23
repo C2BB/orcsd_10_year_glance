@@ -144,8 +144,8 @@ dash.calc('headline', {
   var sel = 7;
   var mode = 'nom';
   var MODES = { nom: { label: 'Nominal dollars', f: null }, cpi: { label: 'Northeast CPI-U', f: 'f_cpi', idx: 'cpi_ne', n: 'cpi_ne_months', nn: 12 }, eci: { label: 'education labor costs (ECI)', f: 'f_eci', idx: 'eci_edu', n: 'eci_quarters', nn: 4 } };
-  var MONEY = ['debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'fb_tot', 'fb_un', 'fb_com', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
-  var NAMES = ['spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts'];
+  var MONEY = ['bd_unspent', 'bd_appr', 'bd_exp', 'dflt_gap', 'dflt', 'f10', 'f21', 'f22', 'f23', 'debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'fb_tot', 'fb_un', 'fb_com', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
+  var NAMES = ['spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'bvx', 'dflt', 'timp', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts'];
 
   var SCH = [['High school', 'hs'], ['Middle school', 'ms'], ['Mast Way', 'mw'], ['Moharimet', 'mo']];
   function schLines(r, fld, fmt) {
@@ -1189,6 +1189,63 @@ dash.calc('headline', {
       return { lines: L, note: 'From the audited statement of net position at June 30. The pension liability is the district’s share of the NH Retirement System shortfall and the retiree health liability is an actuarial estimate; both move with market and assumption changes, not only with district decisions. Net position is negative because of those two liabilities. Source: ORCSD audited financial statements.' };
     }
   };
+  var BD = [['Mast Way', 'mastway'], ['Moharimet', 'moharimet'], ['Middle school', 'middle'], ['High school', 'high'], ['Special education', 'specialed'], ['SAU and administration', 'sau'], ['Transportation', 'transport'], ['Technology', 'technology'], ['Facilities', 'facilities']];
+  BD.forEach(function (d) { MONEY.push('bd_a_' + d[1], 'bd_e_' + d[1]); });
+  function kM(v) { return Math.abs(v) >= 1e6 ? (v < 0 ? '−' : '') + '$' + (Math.abs(v) / 1e6).toFixed(1) + 'M' : (v < 0 ? '−' : '') + '$' + Math.round(Math.abs(v) / 1e3) + 'K'; }
+  ROWS.bvx = {
+    money: true,
+    aria: 'General Fund budget approved but not spent, by fiscal year',
+    domain: [0, 1500000], ticks: [0, 500000, 1000000, 1500000], axis: false,
+    tickFmt: function (v) { return v === 0 ? '$0' : v >= 1e6 ? '$' + (v / 1e6) + 'M' : '$' + (v / 1e3) + 'K'; },
+    series: [{ id: 'un', get: function (r) { return r.bd_unspent; }, main: true }],
+    label: function (r) {
+      if (r.bd_unspent == null) return nodata('Actual spending not yet printed', 'bd_unspent', 'years', 'Pending');
+      return { big: kM(r.bd_unspent), sub: 'General Fund approved but not spent', delta: p1(r.bd_unspent / r.bd_appr * 100) + ' of the approved budget', tag: 'Reported', prov: false, src: 'years', field: 'bd_unspent' };
+    },
+    tip: function (r) {
+      if (r.bd_unspent == null) return { lines: [['Approved vs spent', 'not yet printed']], note: 'The annual report prints actual spending two years after the budget year.' };
+      var L = [['Approved (General Fund)', money(r.bd_appr)], ['Actually spent', money(r.bd_exp)]];
+      BD.forEach(function (d) { var a = r['bd_a_' + d[1]], e = r['bd_e_' + d[1]]; if (a != null && e != null) L.push([d[0], kM(e) + ' of ' + kM(a)]); });
+      return { lines: L, note: 'General Fund only (debt service and food service are outside the table). Approved includes contract articles passed separately where the table counts them. From the General Fund Budget Comparison in the ORCSD annual reports; the audit’s General Fund spending differs slightly (see CONFLICTS.md).' };
+    }
+  };
+  ROWS.dflt = {
+    money: true,
+    aria: 'Operating budget above or below the default budget, by fiscal year',
+    domain: [-1000000, 2200000], ticks: [0, 1000000, 2000000], axis: false,
+    tickFmt: function (v) { return v === 0 ? '$0' : '$' + (v / 1e6) + 'M'; },
+    series: [{ id: 'gap', get: function (r) { return r.dflt_gap; }, main: true }],
+    label: function (r) {
+      if (r.dflt_gap == null) return nodata('No default budget on file', 'dflt_gap', 'years', 'Pending');
+      return { big: (r.dflt_gap < 0 ? '−' : '+') + kM(Math.abs(r.dflt_gap)).replace('−', ''), sub: 'Proposed operating budget versus the default budget', delta: 'Default ' + moneyM(r.dflt, 1), tag: 'Warrant', prov: false, src: 'years', field: 'dflt_gap' };
+    },
+    tip: function (r) {
+      if (r.dflt_gap == null) return { lines: [['Default budget', 'not on file']], note: 'The default budget is printed with each warrant.' };
+      var L = [['Operating budget (all funds)', money(r.budget)], ['Default budget', money(r.dflt)], ['Difference', money(r.dflt_gap)], ['General Fund', money(r.f10)], ['Food service', money(r.f21)], ['Federal funds', money(r.f22)], ['Pass-through', money(r.f23)]];
+      return { lines: L, note: 'The default budget is what applies if the operating budget article fails: last year’s appropriation adjusted for legal and contractual obligations and one-time items (RSA 40:13). The vote decides between the two. Source: the operating budget warrant article in the ORCSD annual reports.' };
+    }
+  };
+  ROWS.timp = {
+    aria: 'The district’s estimated change in the local school tax rate per $1,000 from the proposed budget, Durham, Lee and Madbury, by fiscal year',
+    domain: [-1, 2.5], ticks: [0, 1, 2], axis: false,
+    tickFmt: function (v) { return '$' + v; },
+    series: [
+      { id: 'mad', get: function (r) { return r.ti_mad; }, comp: true },
+      { id: 'lee', get: function (r) { return r.ti_lee; }, alt: 'square' },
+      { id: 'dur', get: function (r) { return r.ti_dur; }, main: true }
+    ],
+    label: function (r) {
+      if (r.ti_dur == null) return nodata('No estimate printed', 'ti_dur', 'years', 'None');
+      function s2(v) { return (v < 0 ? '−$' : '+$') + Math.abs(v).toFixed(2); }
+      return { big: s2(r.ti_dur), sub: 'Estimated change in the local school rate per $1,000, Durham', delta: 'Lee ' + s2(r.ti_lee) + ' · Madbury ' + s2(r.ti_mad), tag: 'Estimate', prov: true, src: 'years', field: 'ti_dur' };
+    },
+    tip: function (r) {
+      if (r.ti_dur == null) return { lines: [['Estimated impact', 'not printed']], note: 'Each annual report prints the estimate for the next budget year.' };
+      function s2(v) { return v == null ? 'not yet set' : (v < 0 ? '−$' : '+$') + Math.abs(v).toFixed(2); }
+      function ln(n, e, a) { return [n, 'est. ' + s2(e) + ' · actual ' + s2(a)]; }
+      return { lines: [ln('Durham', r.ti_dur, r.ta_dur), ln('Lee', r.ti_lee, r.ta_lee), ln('Madbury', r.ti_mad, r.ta_mad)], note: 'Estimated: the rate the district printed for the proposed budget minus the current rate, with assessed value held fixed. Actual: the state’s local school rate minus the previous year’s, which also moves with revaluations and state grants. Source: Tax Rate Impacts in the ORCSD annual reports; NH DOE and DRA rates.' };
+    }
+  };
   ROWS.cls = {
     aria: 'Average class size in grades 1 to 4 at Mast Way and Moharimet compared with the New Hampshire average, by fiscal year',
     domain: [15, 22], ticks: [16, 18, 20], axis: false,
@@ -1407,6 +1464,9 @@ dash.calc('headline', {
   ROWS.lvlenr.chg = { get: function (r) { return r.en_hs; }, kind: 'pct', note: 'high school' };
   ROWS.fb.chg = { get: function (r) { return r.fb_tot; }, kind: 'pct', note: 'total fund balance' };
   ROWS.debt.chg = { get: function (r) { return r.debt_total; }, kind: 'pct', note: 'total obligations' };
+  ROWS.bvx.chg = { get: function (r) { return r.bd_unspent; }, kind: 'pct', note: 'budget not spent' };
+  ROWS.dflt.chg = { get: function (r) { return r.dflt; }, kind: 'pct', note: 'default budget' };
+  ROWS.timp.chg = { get: function (r) { return r.ti_dur; }, kind: 'pct', note: 'Durham estimate' };
   ROWS.cls.chg = { get: function (r) { return r.cs_d; }, kind: 'pct', note: 'average class size' };
   ROWS.sat.chg = { get: function (r) { return r.sat_tot; }, kind: 'pts', note: 'ORHS average' };
   ROWS.coll.chg = { get: function (r) { return r.col4; }, kind: 'pts', dec: true, note: 'four-year college' };

@@ -117,6 +117,9 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `cpay` | `admsal` |
 | `tmax` | `tsched` |
 | `debt` | `audit` |
+| `bvx` | `ar` |
+| `dflt` | `ar` |
+| `timp` | `ar` |
 
 ## Mirrored but not charted
 

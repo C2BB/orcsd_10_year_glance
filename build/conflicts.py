@@ -12,6 +12,7 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 P = lambda *a: os.path.join(ROOT, *a)
 AR = json.load(open(P("build", "annual_report_tables.json")))
 AU = {int(k): v for k, v in json.load(open(P("build", "audit_metrics.json"))).items()}
+BT = json.load(open(P("build", "budget_tables.json")))
 PAGE = {int(r["fy"][:4]) + 1: r for r in json.load(open(P("data", "orcsd_years.json")))["rows"]}
 IX = collections.defaultdict(dict)       # (indicator, entity) -> {fy: value}
 for r in csv.DictReader(open(P("raw", "nh-doe", "dashboard-exports-2026-11-22", "iexplore_compare_all_entities.tsv")), delimiter="\t"):
@@ -199,9 +200,73 @@ repeat_check(["student_teacher_ratio"], "Student-to-teacher ratio", ents=("state
 repeat_check(["cpp_k4", "cpp_58", "cpp_912"], "Cost per pupil", ents=("district", "state"))
 
 
+# ---------------------------------------------------------------- 5. budget tables in the annual reports (build/budget_tables.json) -------------------------------------------
+ARW = lambda y, pg: "Annual_Reports__%d_ORCSD_Annual_Report.pdf p.%s" % (y, pg)
+DEPT = collections.defaultdict(dict)                      # (report, kind, fy) -> {dept: (value, page)}
+for r in BT["dept"]: DEPT[(r["report"], r["kind"], r["fy"])][r["dept"]] = (r["value"], r["pdf_page"])
+for (rep, kind, fy), d in sorted(DEPT.items()):          # (a) the nine department rows against the printed TOTAL row
+    if "total" not in d: continue
+    sm = sum(v[0] for k, v in d.items() if k != "total")
+    add("district-internal", "Budget Summary by Location (%s): printed TOTAL row vs the sum of its department rows" % kind, fy,
+        ("ORCSD annual report %d, printed TOTAL row" % rep, d["total"][0], ARW(rep, d["total"][1])), ("same table, sum of the nine department rows", sm, ARW(rep, d["total"][1])), tol=0)
+FUND = {(f["report"]): f for f in BT["funds"]}
+for rep, f in sorted(FUND.items()):                      # (b) the warrant article's four funds against its printed total
+    add("district-internal", "Operating-budget warrant article: Fund 10 + 21 + 22 + 23 vs the printed total", f["fy"],
+        ("ORCSD annual report %d, printed total" % rep, f["total"], ARW(rep, f["pdf_page"])), ("same article, sum of the four funds", f["general_fund"] + f["food_service"] + f["federal"] + f["pass_through"], ARW(rep, f["pdf_page"])), tol=0)
+for (rep, kind, fy), d in sorted(DEPT.items()):          # (c) the year's budget as proposed one report earlier vs as approved in the next
+    if kind != "approved" or "total" not in d: continue
+    pr = DEPT.get((rep - 1, "proposed", fy))
+    if pr and "total" in pr:
+        add("district-internal", "General Fund budget: approved total vs the same year's proposed total printed a year earlier", fy,
+            ("ORCSD annual report %d, approved" % rep, d["total"][0], ARW(rep, d["total"][1])), ("ORCSD annual report %d, proposed" % (rep - 1), pr["total"][0], ARW(rep - 1, pr["total"][1])), tol=0, verdict_if_diff="different basis",
+            note="The approved General Fund total is above the total proposed a year earlier in every year (by 0.1% to 2.7%). For FY2019 the gap ($118,959) equals the two contract articles on the same warrant ($54,083 + $64,876); the reports do not explain the other years (FY2021: $1.25M). A proposed total is not a ceiling on what is approved.")
+# (d) what the district says it spent (General Fund, two years back) vs the audit and vs DOE-25
+EXP = {}
+for (rep, kind, fy), d in sorted(DEPT.items()):
+    if kind == "expended" and "total" in d: EXP[fy] = (d["total"][0], rep, d["total"][1])
+for fy, (v, rep, pg) in sorted(EXP.items()):
+    a = ("ORCSD annual report %d, General Fund budget comparison, 'expended'" % rep, v, ARW(rep, pg))
+    b = AUs("gf_expenditures_total", fy)
+    if b: add("district-vs-district", "General Fund spending: annual report's 'expended' vs the audit's General Fund expenditures", fy, a, b, rel=0.005, verdict_if_diff="different basis",
+              note="Within 0.5% in FY2021-FY2024 (agree); FY2018-FY2020 differ by 0.9-7.6%. The report's table is the business office's own budget-basis figure and the audit is GAAP, so small differences (encumbrances, on-behalf payments) are expected.")
+    b = PG("actual_recurring", fy, "NH DOE DOE-25, recurring expenditures (as on the page)")
+    if b: add("district-vs-state", "General Fund spending: annual report's 'expended' vs DOE-25 recurring expenditures", fy, a, b, rel=0.005, verdict_if_diff="different basis",
+              note="The district's 'expended' General Fund total is within 0.3% of the audit but 0.5-6% from the state's DOE-25 'recurring' figure for the same year. DOE-25 excludes some items (capital, debt principal, food service and grant funds), so the two are not meant to match, and no document reconciles them. The page shows the DOE-25 figure.")
+# (e) tax rates: the district's printed 'current' rate vs the state's rate for the same year and town
+TOWN = {"durham": "dur", "lee": "lee", "madbury": "mad"}
+TAXR = {}
+for t in BT["tax"]:
+    lr, k = t["local_rate"], TOWN[t["town"]]
+    if not lr or len(lr) < 2: continue
+    TAXR[(t["report"], t["town"])] = t
+    cur = PAGE.get(t["fy_cur"], {}).get("tax_" + k)
+    add("district-vs-state", "Local school tax rate per $1,000 in the annual report's 'current' column vs the NH DRA rate", t["fy_cur"],
+        ("ORCSD annual report %d, Tax Rate Impact, %s current" % (t["report"], t["town"].title()), lr[0], ARW(t["report"], t["pdf_page"])),
+        ("NH DRA tax rate, %s (as on the page)" % t["town"].title(), cur, "data/orcsd_years.json field tax_" + k), tol=0.011, verdict_if_diff="CONFLICT")
+    if len(lr) >= 3:                                         # printed impact (the column is headed 'Impact Revised') vs the difference of the two printed rates
+        add("district-internal", "Tax Rate Impact: printed 'Impact Revised' vs proposed rate minus current rate", t["fy_prop"],
+            ("ORCSD annual report %d, %s printed 'Impact Revised'" % (t["report"], t["town"].title()), lr[2], ARW(t["report"], t["pdf_page"])),
+            ("same table, proposed minus current local rate", round(lr[1] - lr[0], 2), ARW(t["report"], t["pdf_page"])), tol=0.011, verdict_if_diff="different basis",
+            note="The table's last column is headed 'Impact Revised', so it is a later estimate (after the budget was revised) set beside a proposed-rate column that was not revised; the two do not subtract to it. For example FY2025, Durham: proposed rate 12.15 minus current 11.58 = 0.57, printed revised impact 0.40. The page's estimate row uses proposed minus current.")
+    nv = t.get("nav")
+    if nv and len(nv) == 2:
+        add("district-internal", "Tax Rate Impact: net assessed value in the 'current' and 'proposed' columns (held fixed, so they should be equal)", t["fy_cur"],
+            ("ORCSD annual report %d, %s current column" % (t["report"], t["town"].title()), nv[0], ARW(t["report"], t["pdf_page"])), ("same table, proposed column", nv[1], ARW(t["report"], t["pdf_page"])), tol=0,
+            note="Digits transposed in one column (235,434,027 vs 235,343,027); the proposed rate is computed from the second figure, so the effect on the rate is small.")
+# (f) projection against what happened: proposed rate vs the state's actual rate the following year
+for (rep, town), t in sorted(TAXR.items()):
+    k = TOWN[town]; act = PAGE.get(t["fy_prop"], {}).get("tax_" + k)
+    add("district-projection", "Projected local school rate per $1,000 (district, assessed value held fixed) vs the NH DRA rate that was set", t["fy_prop"],
+        ("ORCSD annual report %d, %s proposed rate" % (rep, town.title()), t["local_rate"][1], ARW(rep, t["pdf_page"])),
+        ("NH DRA tax rate, %s (as on the page)" % town.title(), act, "data/orcsd_years.json field tax_" + k), tol=0.011, verdict_if_diff="projection",
+        note="Not an error: the district's projection holds each town's assessed value and the state tax apportionment fixed, so it isolates the budget's effect. The rate that is actually set moves with revaluations, enrollment shares and state aid, and has differed from the projection by several dollars per $1,000 in some years (for example Durham FY2024).")
+
+
 # ---------------------------------------------------------------- notes, size, de-duplication, output ----------------------------------------------------------------------
 NOTES = [  # (topic prefix, note) - applied to rows that differ and have no note yet
  ("Enrollment, October 1, all grades", "The district's Report Card prints the sum of the four schools for FY2019, FY2020 and FY2026 (2,157, 2,168, 2,038), which is also what the DOE's student-to-teacher file uses (2,157, 2,168, 2,038), but the DOE district total in FY2016-FY2018 and FY2021-FY2025. So the state itself has two figures: its district total (iExplore) and the sum of its schools, 25-34 apart from FY2019 on. The page uses the iExplore district total in every year."),
+ ("Budget Summary by Location", "Arithmetic inside the district's own table: the FY2024 approved rows add to $1,000 more than the printed total (the other tables tie to the dollar)."),
+ ("Local school tax rate per $1,000 in the annual report", "The district's 'current' rate is the state's rate for that year; where they differ the page shows the state's."),
  ("Enrollment, high school", "One student: the district prints 795, iExplore 796 for FY2026 (iExplore's four schools sum to 2,039; the report prints 2,038)."),
  ("Average teacher salary, NH", "The state average the report prints is not the one the DOE's current files give. In FY2018 the report prints $53,984; the DOE salary file and iExplore both give about $58,277. FY2024: the DOE salary file and the report agree ($67,096); iExplore gives $66,576."),
  ("Student-to-teacher ratio, NH", "The report's NH column does not match the DOE ratio file: FY2024 prints 12.02 (DOE 11.3) and FY2025 prints 11.24, which is also the FY2023 figure (DOE 11.17)."),
@@ -239,6 +304,11 @@ PAGE_USES = [  # (topic prefix, what the page shows; rule: state first)
  ("Student-to-teacher", "State: DOE ratio file"), ("Cost per pupil", "State: DOE school-finance file"),
  ("Students with disabilities", "State: iExplore share. The district's own Oct 1 special-education count is a separate row labeled as district data"),
  ("Dropouts", "District counts (the state publishes a rate only; they agree)"),
+ ("General Fund spending", "Page shows the DOE-25 recurring figure (state) in the finance rows; the 'budget not spent' row uses the district's approved and expended figures because the state has no series for the approved budget"),
+ ("General Fund budget: approved", "District (no state series): page's operating-budget-versus-default row uses the warrant article"),
+ ("Operating-budget warrant", "District (no state series)"),
+ ("Tax Rate Impact", "District estimate, labeled as an estimate on the page; the actual rate change from the state's series is in the hover"),
+ ("Projected local school rate", "Page shows the district's estimate and the state's actual change side by side"),
  ("Total expenditures", "State: DOE-25"), ("Total revenues", "State: DOE-25"), ("General fund balance", "Audit (no state series)"),
  ("iExplore enrollment", "State: iExplore district total (not the school sum)"), ("School Year Enrollment", "Not used"), ("Same-year", "Not used"), ("Official Enrollment Counts", "Level rows shown as printed; total is the iExplore district total")]
 for o in OUT:
@@ -246,13 +316,13 @@ for o in OUT:
 FIELDS = ["cls", "verdict", "size", "page_uses", "topic", "fy", "a_source", "a_value", "a_where", "b_source", "b_value", "b_where", "diff", "diff_pct", "note"]
 
 def md():
-    C = [o for o in OUT if o["verdict"] == "CONFLICT"]; B = [o for o in OUT if o["verdict"] == "different basis"]; A = [o for o in OUT if o["verdict"] == "agree"]
+    C = [o for o in OUT if o["verdict"] == "CONFLICT"]; B = [o for o in OUT if o["verdict"] == "different basis"]; PJ = [o for o in OUT if o["verdict"] == "projection"]; A = [o for o in OUT if o["verdict"] == "agree"]
     L = ["# Conflicts between district-printed and state-reported figures", "",
          "Generated by `build/conflicts.py` from `build/annual_report_tables.json` (the Report Card tables of the nine ORCSD annual reports, 2018-2026), `build/audit_metrics.json` (the audited statements, FY2018-FY2024), "
          "the NH DOE iExplore export in `raw/nh-doe/dashboard-exports-2026-11-22/`, and the DOE files the page already holds. Every comparison made, agreements included, is in `data/conflicts.csv` with the file and page of both numbers. "
          "Year key is the fiscal year (2017-18 = FY2018).", "",
-         "**%d comparisons: %d agree, %d conflict, %d differ by basis.** A *conflict* means two sources print different numbers for the same measure and year and nothing about definitions explains it. "
-         "A *different basis* row is a difference the documents explain only in part (audit vs the state's DOE-25 form). Where the district disagrees with itself, the row says so (`district-internal`)." % (len(OUT), len(A), len(C), len(B)), "",
+         "**%d comparisons: %d agree, %d conflict, %d differ by basis, %d are the district's projection set against what happened.** A *conflict* means two sources print different numbers for the same measure and year and nothing about definitions explains it. "
+         "A *different basis* row is a difference the documents explain only in part (audit vs the state's DOE-25 form). Where the district disagrees with itself, the row says so (`district-internal`)." % (len(OUT), len(A), len(C), len(B), len(PJ)), "",
          "## Rule used on the page: state first", "",
          "Where the district and the state print different numbers for the same measure, the page shows the state's (NH DOE or DRA) and the district's figure stays in this log. Where two state series disagree, the page uses the DOE's headline district figure and the others are listed here. District figures are used only where the state has no series for the measure (class size, SAT, special-education counts, completers, dropout counts, the audited balance sheet). Open case: the NH SAT means come from the district's reports; the DOE's College Board reports in `raw/nh-doe/` cover only some years, so they are not yet substituted.", "",
          "## What matters most", "",
@@ -263,6 +333,10 @@ def md():
          "5. **Columns copied forward.** The attendance table (FY2023-24 repeats FY2022-23 for every level, district and state) and the district's average teacher salary (FY2025 = FY2024 = $80,573, which the DOE file also repeats) are identical to the prior year. The cost-per-pupil table prints one more column than its header names (2026 report) and two NH figures with a decimal point for a comma (22.107 and 20.583).",
          "6. **Students with disabilities:** the district's October 1 special-education count gives a lower share of enrollment than the DOE's count, by 0.3 points in FY2018 widening to 2.2 points in FY2026. Both are plausible counts of different things; the documents do not say which students each includes.",
          "7. **Audited statements vs DOE-25:** the audit's governmental-funds expenditures exceed DOE-25 total expenditures by 2.5-13.6% and revenues by 0.7-3.0% every year. They are different forms (GAAP funds vs the state's DOE-25) and were not reconciled to the dollar; FY2018 is the widest gap. The audit's general-fund balance agrees with the page to the dollar in all seven years.",
+         "8. **Budget tables (new):** the annual reports' own arithmetic ties to the dollar except the FY2024 approved department rows, which add to $1,000 more than the printed total (and two $1 rounding differences in the 2024 report). The approved General Fund total exceeds the total proposed a year earlier every year (FY2021 by $1.25M); only FY2019 is explained by the report (two contract articles).",
+         "9. **Tax-rate impact tables:** the table's 'current' local rate equals the state's rate for that year and town (the page uses the state's). The last column is headed 'Impact Revised' and does not subtract to proposed minus current (FY2025 Durham: 12.15 - 11.58 = 0.57, printed 0.40). The 2018 report prints Madbury's assessed value as 235,434,027 in one column and 235,343,027 in the other.",
+         "10. **Projected versus set rates:** holding assessed value fixed, the district's projected next-year rate differs from the rate the DRA set by under $1 per $1,000 in most town-years but by $2.61 to $9.19 in five (Durham FY2019 and FY2024, Madbury FY2021 and FY2026, Lee FY2022), because revaluations and state aid moved the real rate. See the section near the end.",
+         "11. **District 'expended' General Fund (budget table) vs the audit vs DOE-25:** within 0.5% of the audit in FY2021-FY2024 but 0.9-7.6% apart in FY2018-FY2020, and 0.5-5.9% above the state's DOE-25 recurring figure in every year; none of the documents reconciles them.",
          "", "## Where the Report Card matches the state", "",
          "Enrollment by level, average teacher salary (district), cost per pupil by level, student-to-teacher ratio (district), dropout counts against iExplore's dropout rate (count divided by grade 9-12 enrollment), and iExplore totals of expenditures, revenues, cost per pupil and salary against the DOE-25 and DOE files the page holds all agree wherever both exist (counts in the CSV). "
          "The Report Card is tied to the DOE for these measures; the differences above are where it is not.", ""]
@@ -281,9 +355,15 @@ def md():
     L += ["## Differences of basis", ""]
     for t in sorted({o["topic"] for o in B}):
         rows = [o for o in B if o["topic"] == t]
-        L += ["**%s.** %s" % (t, rows[0]["note"]), "", "| FY | audit | DOE-25 | diff % |", "|---|---|---|---|"]
-        L += ["| %s | %s | %s | %s |" % (o["fy"], "{:,.0f}".format(o["a_value"]), "{:,.0f}".format(o["b_value"]), o["diff_pct"]) for o in rows]
+        L += ["**%s.** %s" % (t, rows[0]["note"]), "", "| FY | A | B | diff % |", "|---|---|---|---|"]
+        L += ["| %s | %s: %s | %s: %s | %s |" % (o["fy"], o["a_source"], "{:,.2f}".format(o["a_value"]).rstrip("0").rstrip("."), o["b_source"], "{:,.2f}".format(o["b_value"]).rstrip("0").rstrip("."), o["diff_pct"]) for o in rows]
         L.append("")
+    L += ["## The district's tax-rate projection against the rate that was set", "",
+          "Each annual report prints a projected local school rate per $1,000 for the next year (assessed value held fixed). The table below sets it against the NH DRA rate that was actually set. The projection is meant to isolate the budget's effect, so a gap is not an error; it shows how much the real rate moves for other reasons (revaluations, enrollment shares, state aid). ",
+          "", "| FY | town | projected | set by DRA | diff |", "|---|---|---|---|---|"]
+    for o in PJ:
+        L.append("| %s | %s | %s | %s | %+.2f |" % (o["fy"], re.search(r"(Durham|Lee|Madbury)", o["a_source"]).group(1), o["a_value"], o["b_value"], o["diff"]))
+    L.append("")
     L += ["## Other defects found in the printed documents", "",
           "These are not two-source conflicts, but they affect which number to trust.", "",
           "- **District, 2021 annual report:** the Average Class Size table's Middle School row prints five column pairs under six headings (and zeros for the district), so it cannot be read; the Audit Balance Sheet and Statement of Revenues pages reprint the FY2019 statements where the FY2020 ones belong (the page uses the 2020 audit itself for FY2020).",
@@ -292,7 +372,7 @@ def md():
           "- **State, teacher salary file:** FY2023 lists $63,538 for Oyster River (about 17% under the years on either side) and FY2025 repeats the FY2024 figure of $80,573 to the dollar although the staff count changed. The page does not plot either.",
           "- **State, iExplore:** the district enrollment above the sum of its four schools (above); cost per pupil for FY2026 is suppressed (`*CS`).", ""]
     L += ["## Limits", "",
-          "Compared: the Report Card tables (SAT and special-education counts have no independent state series here), audit totals against DOE-25, iExplore against the DOE files. **Not compared:** the annual reports' reprinted budget and revenue tables against DOE-25 by function (the tables are mostly images in 2025-2026); NH SAT by year against the College Board's state reports; district per-school class size against iExplore (different definitions); anything the DOE publishes only in Tableau pages that could not be exported. "
+          "Compared: the Report Card tables (SAT and special-education counts have no independent state series here), audit totals against DOE-25, iExplore against the DOE files. **Not compared:** the annual reports' budget-by-location table for FY2025 onward (it is an image in the 2025 and 2026 reports) and the revenue tables against DOE-25 by function; NH SAT by year against the College Board's state reports; district per-school class size against iExplore (different definitions); anything the DOE publishes only in Tableau pages that could not be exported. "
           "A *conflict* here means only that two printed numbers differ; the third source that would settle which is right is not always in hand, and the notes say where it is not.", ""]
     return "\n".join(L)
 

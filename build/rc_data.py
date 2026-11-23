@@ -311,6 +311,28 @@ put("debt_total", {y: RC["debt_bonds"][y] + RC["debt_pension"][y] + RC["debt_ope
 put("netpos", {y: int(v) for y, v in _au("net_position").items()})
 put("debt_int", {y: int(v) for y, v in _au("interest_expense").items()})
 
+# Budget tables printed in the annual reports (build/budget_extract.py -> build/budget_tables.json)
+_BT = _json.load(open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "budget_tables.json")))
+_DEPTS = ["mastway", "moharimet", "middle", "high", "specialed", "sau", "transport", "technology", "facilities"]
+def _dept(kind, dept):
+    d = {}
+    for r in sorted(_BT["dept"], key=lambda r: r["report"]):       # later reports overwrite earlier ones for the same year
+        if r["kind"] == kind and r["dept"] == dept: d[r["fy"]] = int(r["value"])
+    return d
+for _k in _DEPTS:
+    put("bd_a_" + _k, {y: v for y, v in _dept("approved", _k).items() if y >= 2018})
+    put("bd_e_" + _k, {y: v for y, v in _dept("expended", _k).items() if y >= 2018})
+put("bd_appr", {y: v for y, v in _dept("approved", "total").items() if y >= 2018})
+put("bd_exp", {y: v for y, v in _dept("expended", "total").items() if y >= 2018})
+for _name, _key in (("f10", "general_fund"), ("f21", "food_service"), ("f22", "federal"), ("f23", "pass_through"), ("dflt", "default")):
+    put(_name, {r["fy"]: int(r[_key]) for r in _BT["funds"]})
+put("bd_unspent", {y: RC["bd_appr"][y] - RC["bd_exp"][y] for y in RC["bd_exp"] if y in RC["bd_appr"]})
+# total operating budget (all funds) minus the default budget: what the vote adds (or removes) relative to the default
+put("dflt_gap", {y: RC["f10"][y] + RC["f21"][y] + RC["f22"][y] + RC["f23"][y] - RC["dflt"][y] for y in RC["dflt"]})
+# the district's estimated change in the local school tax rate (per $1,000) from the proposed budget, by town: proposed rate minus current rate, assessed value held fixed
+for _t in ("durham", "lee", "madbury"):
+    put("ti_" + _t[:3], {r["fy_prop"]: round(r["local_rate"][1] - r["local_rate"][0], 2) for r in _BT["tax"] if r["town"] == _t})
+
 FIELDS = sorted(RC)
 def fields_for(y):
     return {k: RC[k].get(y) for k in FIELDS}
