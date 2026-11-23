@@ -20,13 +20,15 @@ APP_OFFICIAL = {
  2018: (53.7791, 30.3612, 15.8597), 2019: (53.8495, 30.1769, 15.9736), 2020: (53.3713, 31.1265, 15.5022),
  2021: (53.0797, 31.1378, 15.7826), 2022: (52.7423, 31.4492, 15.8086), 2023: (54.0882, 30.7527, 15.1591),
  2024: (54.3861, 30.5890, 15.0250),
+ # FY2025 and FY2026: NH DOE Bureau of School Finance cooperative apportionment sheets published by the Department of Revenue Administration (combined % for current expenses)
+ 2025: (51.8592, 32.6712, 15.4696), 2026: (52.09371, 32.98994, 14.91635),
 }
 # State credits applied to each town's share = adequacy grant + SWEPT retained (Durham, Lee, Madbury).
 # FY2018-2023: figures printed in the ORCSD annual reports' apportionment table; FY2024-2027: NH DOE adequate education aid municipal summaries.
 CREDITS = {
  2018: (3684580, 3422583, 1621667), 2019: (3724930, 3454640, 1558624), 2020: (3824275, 3669942, 1657319),
  2021: (3818752, 4102698, 1935542), 2022: (3902397, 3772709, 1732476), 2023: (3895674, 3644089, 1580360),
- 2024: (4143830.67, 3935723.95, 1648535.60), 2025: (4156427.50, 3964667.95, 1645117.60), 2026: (4108954.74, 3888819.59, 1717159.33),
+ 2024: (4143830.67, 3935723.95, 1648535.60), 2025: (4164537, 3964668, 1645118), 2026: (4106562, 3888671, 1717159),  # FY2025-26: final state aid per the DOE cooperative apportionment sheets
  2027: (4078953.07, 4208915.72, 1723365.35),
 }
 # State education property tax rate per $1,000 by tax year (FY-1): printed in the ORCSD annual reports' tax rate impact tables (current-year column)

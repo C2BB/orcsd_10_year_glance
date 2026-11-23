@@ -30,7 +30,3 @@ To preview locally: `python3 -m http.server` in the repo root and open http://lo
 ## Caveats
 
 Some figures are estimates or computed (tagged on the page). Source files can move or disappear on the agency sites, which is why copies are kept in `raw/`. Prose notes on the page contain a few numbers typed in as text; the charts and labels come from `data/orcsd_years.json`.
-
-## About `raw/`
-
-Large statewide assessment CSVs are stored gzipped (`.csv.gz`); `MANIFEST.csv` records the SHA-256 of the original file. Every file listed in the manifest is mirrored; a row marked `link-only (not mirrored)` would mean a copy could not be made, and its source URL is still listed.
