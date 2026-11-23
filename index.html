@@ -747,12 +747,12 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <script>
 (function () {
   function fail(e) { var d = document.createElement('div'); d.className = 'os-loaderr'; d.textContent = 'Could not load the data files (' + e + '). Open the single-file version in the dist folder, or try again.'; document.body.insertBefore(d, document.body.firstChild); }
-  Promise.all([fetch('data/orcsd_years.json?v=ed019ee47f'), fetch('data/sources.json?v=ed019ee47f')]).then(function (rs) {
+  Promise.all([fetch('data/orcsd_years.json?v=c1d4fd3a9a'), fetch('data/sources.json?v=c1d4fd3a9a')]).then(function (rs) {
     rs.forEach(function (r) { if (!r.ok) throw new Error(r.status + ' ' + r.url); });
     return Promise.all(rs.map(function (r) { return r.json(); }));
   }).then(function (j) {
     window.__DATA = j[0]; window.__SRC = j[1];
-    var s = document.createElement('script'); s.src = 'app.js?v=ed019ee47f'; s.onerror = function () { fail('app.js'); };
+    var s = document.createElement('script'); s.src = 'app.js?v=c1d4fd3a9a'; s.onerror = function () { fail('app.js'); };
     document.body.appendChild(s);
   }).catch(fail);
 })();

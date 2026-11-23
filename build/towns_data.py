@@ -18,8 +18,8 @@ FILES = {  # file year: ((Durham, Lee, Madbury) equalized valuation incl. utilit
 # Official apportionment percentages printed in the ORCSD annual reports (the "Present Budget Year" column), Durham, Lee, Madbury
 APP_OFFICIAL = {
  2018: (53.7791, 30.3612, 15.8597), 2019: (53.8495, 30.1769, 15.9736), 2020: (53.3713, 31.1265, 15.5022),
- 2021: (53.0797, 31.1378, 15.7826), 2022: (52.7423, 31.4492, 15.8086), 2023: (54.0882, 30.7527, 15.1591),
- 2024: (54.3861, 30.5890, 15.0250),
+ 2021: (53.0797, 31.1378, 15.7826), 2022: (52.7310, 31.4478, 15.8212), 2023: (54.0882, 30.7527, 15.1591),
+ 2024: (54.3861, 30.5886, 15.0253),
  # FY2025 and FY2026: NH DOE Bureau of School Finance cooperative apportionment sheets published by the Department of Revenue Administration (combined % for current expenses)
  2025: (51.8592, 32.6712, 15.4696), 2026: (52.09371, 32.98994, 14.91635),
 }
