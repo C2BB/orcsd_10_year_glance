@@ -893,10 +893,10 @@ dash.calc('headline', {
       return { big: r.ratio.toFixed(1), sub: 'Students per teacher', delta: r.ratio_state != null ? 'NH ' + r.ratio_state.toFixed(1) : 'NH total not in this year’s file', tag: 'Actual', prov: false, src: 'years', field: 'ratio' };
     },
     tip: function (r) {
-      if (r.ratio == null) return { lines: [['Student-teacher ratio', 'not available']], note: 'The district’s annual report prints DOE ratios through 2024-25; nothing is published yet for this year.' };
+      if (r.ratio == null) return { lines: [['Student-teacher ratio', 'not available']], note: 'The DOE publishes the Oct 1 ratio the following winter; nothing is published yet for this year.' };
       var L = [['Oyster River', r.ratio.toFixed(1) + ' students per teacher'], ['NH total', r.ratio_state != null ? r.ratio_state.toFixed(1) : 'not in file'], ];
       if (r.ratio_teachers != null) L.push(['Teachers (FTE)', r.ratio_teachers.toFixed(1)], ['Students counted', r.ratio_enr.toLocaleString('en-US')]);
-      return { lines: L, note: 'The DOE counts students and teachers its own way, so the student count differs from the October 1 enrollment elsewhere on this page. Source: NH DOE student to teacher ratio files.' };
+      return { lines: L, note: 'The DOE counts students and teachers its own way, so the student count differs from the October 1 enrollment elsewhere on this page. Source: NH DOE student to teacher ratio files (iPlatform for 2022-23 on).' };
     }
   };
 
@@ -961,7 +961,7 @@ dash.calc('headline', {
       return { big: r.cs_d.toFixed(1), sub: 'Students per class, grades 1 to 4', delta: 'NH ' + r.cs_st.toFixed(1), tag: 'Actual', prov: false, src: 'derived', field: 'cs_d' };
     },
     tip: function (r) {
-      if (r.cs_d == null) return { lines: [['Class size', 'not yet published']], note: 'The district’s reports print DOE class sizes through 2024-25.' };
+      if (r.cs_d == null) return { lines: [['Class size', 'not yet published']], note: 'The DOE publishes class sizes (as of October 1) the following winter; nothing is published yet for this year.' };
       return { lines: [['Grades 1-2, Mast Way', r.cs_mw12.toFixed(1)], ['Grades 1-2, Moharimet', r.cs_mo12.toFixed(1)], ['Grades 3-4, Mast Way', r.cs_mw34.toFixed(1)], ['Grades 3-4, Moharimet', r.cs_mo34.toFixed(1)], ['NH grades 1-2 / 3-4', r.cs_st12.toFixed(1) + ' / ' + r.cs_st34.toFixed(1)]], note: 'Oyster River is the average of the four school and grade-band figures. The DOE lists no class size for the middle school. Source: NH DOE average class size, as printed in the ORCSD annual reports.' };
     }
   };
