@@ -351,6 +351,11 @@ put("gfo_np", {y: round(RC["gfo_pur"][y] + RC["gfo_sup"][y] + RC["gfo_prop"][y] 
 put("pers_ao_sal", {y: round(RC["pers_a_sal"][y] + RC["pers_o_sal"][y], 2) for y in RC["pers_a_sal"]})
 put("sch_tot", {y: round(sum(RC[k].get(y, 0) for k in ("sch_mw", "sch_mo", "sch_ps", "sch_ms", "sch_hs")), 2) for y in RC["sch_mw"]})
 
+# From the NH Retirement System employer reporting schedules (nhrs_rows.py; PDFs in raw/nhrs/): ORCSD's pension and retiree-health shares.
+import nhrs_rows as _nhrs
+for _k, _v in _nhrs.fields().items():
+    put(_k, _v)
+
 FIELDS = sorted(RC)
 def fields_for(y):
     return {k: RC[k].get(y) for k in FIELDS}

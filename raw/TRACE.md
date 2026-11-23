@@ -46,6 +46,8 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `tatt` | Educational attainment of teachers by district | `nh-doe/inline-documents__sonh__teach-att-21-22_0.csv`, `nh-doe/inline-documents__sonh__teach-attain20-21_0.csv`, `nh-doe/inline-documents__teach_attain17-18.csv`, `nh-doe/inline-documents__teach_attain18-19.csv` (4/4 URLs mirrored) |
 | `sat` | College Board NH SAT annual report | `collegeboard/2022-new-hampshire-sat-suite-of-assessments-annual-report.pdf`, `collegeboard/2023-new-hampshire-sat-suite-of-assessments-annual-report-ADA.pdf`, `collegeboard/2024-new-hampshire-sat-suite-of-assessments-annual-report-ADA.pdf`, `collegeboard/2025-new-hampshire-sat-suite-of-assessments-annual-report-ADA-v0.2.pdf` +4 more (8/8 URLs mirrored) |
 | `ar25` | ORCSD annual report 2025 | `orcsd/Annual_Reports__2025_ORCSD_Annual_Report.pdf` (1/1 URLs mirrored) |
+| `nhrs68` | NHRS GASB 68 employer schedules | `nhrs/gasb68_2017__kpmg-nhrs-gasb68-6-30-17.pdf`, `nhrs/gasb68_2018__pm-gasb-68-report-nhrs-june-30-2018.pdf`, `nhrs/gasb68_2019__schedule-of-employer-allocations-and-schedule-of-pension-amounts-by-employer-june-30-2019.pdf`, `nhrs/gasb68_2020__schedule-of-employer-allocations-and-schedule-of-pension-amounts-by-employer-june-30-2020.pdf` +5 more (9/9 URLs mirrored) |
+| `nhrs75` | NHRS GASB 75 employer schedules | `nhrs/gasb75_2017__kpmg-gasb-75-report-nhrs-june-30-2017.pdf`, `nhrs/gasb75_2018__pm-gasb-75-report-nhrs-june-30-2018.pdf`, `nhrs/gasb75_2019__schedule-of-employer-allocations-and-schedule-of-opeb-amounts-by-employer-june-30-2019.pdf`, `nhrs/gasb75_2020__schedule-of-employer-allocations-and-schedule-of-opeb-amounts-by-employer-june-30-2020.pdf` +5 more (9/9 URLs mirrored) |
 
 ## Dashboard rows
 
@@ -127,6 +129,7 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `sps` | `doe25` |
 | `pers` | `doe25` |
 | `fres` | `doe25` |
+| `nhrs` | `nhrs68`, `nhrs75` |
 
 ## Mirrored but not charted
 
