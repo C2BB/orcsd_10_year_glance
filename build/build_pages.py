@@ -91,6 +91,12 @@ if hp:
     _a = js.index('  // ---- Deep links'); _b = js.index('\n  })();\n', _a) + len('\n  })();\n')
     hjs = js[:_a] + js[_b:]
     hjs = re.sub(r'(?m)^[ \t]*//[^\n]*\n', '', hjs)
+    # hosted copy only: minify (terser, local names only) when available
+    import subprocess, shutil
+    _t = os.environ.get('TERSER') or shutil.which('terser')
+    if _t:
+        _r = subprocess.run([_t, '--compress', '--mangle', '--format', 'ascii_only=false'], input=hjs, capture_output=True, text=True)
+        if _r.returncode == 0 and _r.stdout.strip(): hjs = _r.stdout
     hcss = re.sub(r'/\*.*?\*/', '', css, flags=re.S); hcss = re.sub(r'\s*([{};,>])\s*', r'\1', hcss); hcss = re.sub(r'\n+', '', hcss)
     hosted = '<meta name="dash-one-writer">\n<style>\n' + hcss + '</style>\n' + html + '<script>\n' + pre + hjs + '</script>\n'
     # hosted copy only: trim repeated legend-swatch attributes (moved to CSS) to stay under the 256 KB document limit
