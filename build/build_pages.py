@@ -98,7 +98,10 @@ if hp:
         _r = subprocess.run([_t, '--compress', '--mangle', '--format', 'ascii_only=false'], input=hjs, capture_output=True, text=True)
         if _r.returncode == 0 and _r.stdout.strip(): hjs = _r.stdout
     hcss = re.sub(r'/\*.*?\*/', '', css, flags=re.S); hcss = re.sub(r'\s*([{};,>])\s*', r'\1', hcss); hcss = re.sub(r'\n+', '', hcss)
-    hosted = '<meta name="dash-one-writer">\n<style>\n' + hcss + '</style>\n' + html + '<script>\n' + pre + hjs + '</script>\n'
+    hjs_all = pre + hjs
+    _hjs_path = os.environ.get('HOSTED_JS')      # two-file hosted copy: the script goes to files/app.js (each document is capped at 262,144 bytes)
+    hosted = '<meta name="dash-one-writer">\n<style>\n' + hcss + '</style>\n' + html + ('<script src="app.js"></script>\n' if _hjs_path else '<script>\n' + hjs_all + '</script>\n')
+    if _hjs_path: pathlib.Path(_hjs_path).write_text(hjs_all)
     # hosted copy only: trim repeated legend-swatch attributes (moved to CSS) to stay under the 256 KB document limit
     hosted = hosted.replace('<svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true">', '<svg viewBox="0 0 30 12">').replace(' stroke-linecap="round"', '')
     # hosted copy only: the repeated legend swatches become <use> references to symbols defined once (static markup, no script)

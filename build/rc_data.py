@@ -33,8 +33,10 @@ put("cs_st34", per([17.5, 18.8, 18.7, 17.2, 17.5, 17.6, 17.9, 17.1, 16.6]))
 # SAT, Oyster River High School vs NH (spring of the school year); national averages printed in the report are not used
 put("sat_rw",    per([573, 580, 577, 577, 557, 559, 563, 566]))
 put("sat_m",     per([578, 564, 567, 566, 561, 560, 541, 545]))
-put("sat_rw_nh", per([535, 508, 528, 531, 512, 506, 526, 510]))
-put("sat_m_nh",  per([528, 516, 512, 514, 494, 488, 508, 491]))
+# NH: the College Board's New Hampshire SAT annual reports (hosted by the NH DOE), Total row = all NH graduates of that class who took the SAT. The district's own reports print different
+# NH figures (508/516, 528/512, 531/514, 512/494, 506/488, 526/508, 510/491 for 2019-2025); they are in CONFLICTS.md, the state's are used here (state-first rule).
+put("sat_rw_nh", per([535, 533, 531, 540, 530, 526, 520, 523]))
+put("sat_m_nh",  per([528, 526, 524, 526, 521, 508, 503, 495]))
 
 # What graduates do next (High School Completers table), 2017-18 to 2023-24; district / NH, percent
 # Graduation and state-test participation: NH DOE iExplore / iAchieve (Tableau dashboards), school years labeled by the DOE (2026 = 2025-26)
@@ -333,6 +335,17 @@ put("dflt_gap", {y: RC["f10"][y] + RC["f21"][y] + RC["f22"][y] + RC["f23"][y] - 
 for _t in ("durham", "lee", "madbury"):
     put("ti_" + _t[:3], {r["fy_prop"]: round(r["local_rate"][1] - r["local_rate"][0], 2) for r in _BT["tax"] if r["town"] == _t})
 
+# Special education expenditures and offsetting revenue "per RSA 32:11-a", printed in the 2025 report (2022-23, 2023-24) and the 2026 report (2023-24, 2024-25); FY = year the school year ends.
+# The 2026 report repeats FY2024 and its figures match the 2025 report to the dollar. Revenue total FY2023 is printed $987,617 (its three lines add to $987,618).
+_RSA = {  # fy: (special ed 1200, related services, transportation 2722, IDEA grant 1210, total, state aid, Medicaid, IDEA, total revenues)
+    2023: (7500199, 2248265, 305784, 558569, 10612817, 298552, 130497, 558569, 987617),
+    2024: (8023162, 2413345, 406057, 520529, 11363093, 295029, 168136, 520529, 983694),
+    2025: (8419644, 2620469, 259742, 500208, 11800063, 133198, 195370, 500208, 828776)}
+for _i, _n in enumerate(("rsa_cost", "rsa_rel", "rsa_trn", "rsa_idea", "rsa_tot", "rsa_aid", "rsa_med", "rsa_fed", "rsa_rev")):
+    put(_n, {y: v[_i] for y, v in _RSA.items()})
+put("rsa_net", {y: v[4] - v[8] for y, v in _RSA.items()})
+
 FIELDS = sorted(RC)
 def fields_for(y):
     return {k: RC[k].get(y) for k in FIELDS}
+

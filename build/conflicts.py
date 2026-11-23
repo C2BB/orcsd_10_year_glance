@@ -13,6 +13,7 @@ P = lambda *a: os.path.join(ROOT, *a)
 AR = json.load(open(P("build", "annual_report_tables.json")))
 AU = {int(k): v for k, v in json.load(open(P("build", "audit_metrics.json"))).items()}
 BT = json.load(open(P("build", "budget_tables.json")))
+MS = json.load(open(P("build", "ms26_tables.json")))["lines"]
 PAGE = {int(r["fy"][:4]) + 1: r for r in json.load(open(P("data", "orcsd_years.json")))["rows"]}
 IX = collections.defaultdict(dict)       # (indicator, entity) -> {fy: value}
 for r in csv.DictReader(open(P("raw", "nh-doe", "dashboard-exports-2026-11-22", "iexplore_compare_all_entities.tsv")), delimiter="\t"):
@@ -262,10 +263,71 @@ for (rep, town), t in sorted(TAXR.items()):
         note="Not an error: the district's projection holds each town's assessed value and the state tax apportionment fixed, so it isolates the budget's effect. The rate that is actually set moves with revaluations, enrollment shares and state aid, and has differed from the projection by several dollars per $1,000 in some years (for example Durham FY2024).")
 
 
+# ---------------------------------------------------------------- 6. NH DRA MS-26 (reprinted as images in the 2025 and 2026 annual reports; build/ms26_tables.json, OCR) --------------------------------------
+MSW = lambda y, pg: "Annual_Reports__%d_ORCSD_Annual_Report.pdf p.%s (MS-26, OCR)" % (y, pg)
+FNMAP = {"1100-1199": ("fn_reg", "regular programs"), "1200-1299": ("fn_spec", "special programs"), "1300-1399": ("fn_voc", "vocational programs"), "1400-1499": ("fn_oi", "other instruction programs"),
+         "2000-2199": ("fn_ss", "student support services"), "2200-2299": ("fn_isup", "instructional staff services"), "2400-2499": ("fn_sadm", "school administration"),
+         "2500-2599": ("fn_bus", "business"), "2600-2699": ("fn_plant", "plant operations and maintenance"), "2700-2799": ("fn_trans", "student transportation"), "5120": ("fn_bint", "debt service, interest")}
+for r in MS:
+    if r.get("kind") != "line" or r["part"] != "appropriations" or r["section"] not in ("Instruction", "Support Services", "Executive Administration", "Other Outlays"): continue
+    k = FNMAP.get(r["account"])
+    if not k: continue
+    fy = r["report"] - 1
+    add("state-vs-state", "Expenditure by function, MS-26 (NH DRA form) vs DOE-25 (NH DOE form): " + k[1], fy, ("ORCSD annual report %d, MS-26 actual" % r["report"], r["values"][0], MSW(r["report"], r["pdf_page"])),
+        PG(k[0], fy, "NH DOE DOE-25 (as on the page)"), tol=2, verdict_if_diff="CONFLICT",
+        note="FY2024 plant operations is printed as $0 in the 2025 report's MS-26 (the printed subtotals add up with it), against $4,362,304 in DOE-25, so that report's MS-26 actual column understates FY2024 spending by about that amount. Otherwise: two state forms filed by the district for the same fiscal year give different amounts for the same function. Regular programs, vocational, student support, school administration, transportation and debt interest tie (to $1 rounding); special programs, other instruction, instructional staff services and plant operations do not, with DOE-25 higher in each case. The documents do not say why. The page shows DOE-25.")
+def ms_total(rep, i):
+    """Operating budget = sum of the line items of the eight operating sections (OCR'd subtotal rows are used only as a check in ms26_extract.py; the Facilities subtotal row is unreadable in the 2025 report)."""
+    return sum(r["values"][i] for r in MS if r["report"] == rep and r.get("kind") == "line" and r["part"] == "appropriations" and r["section"] in ("Instruction", "Support Services", "General Administration", "Executive Administration", "Non-Instructional Services", "Facilities Acquisition and Construction", "Other Outlays", "Fund Transfers") and len(r["values"]) >= 3)
+for rep in (2025, 2026):
+    pg = next(r["pdf_page"] for r in MS if r["report"] == rep)
+    add("state-vs-district", "Operating budget approved for the current year: MS-26 vs the adopted budget on the page", rep, ("ORCSD annual report %d, MS-26 appropriations, current year" % rep, ms_total(rep, 1), MSW(rep, pg)),
+        PG("budget", rep, "Adopted budget (as on the page)"), tol=1, verdict_if_diff="different basis",
+        note="The MS-26 'appropriations for the current year' column includes the individual warrant articles (the union contracts) that the page's operating-budget figure leaves out: for FY2026 the gap, $1,672,126, is exactly the 2025 report's Individual Warrant Articles total. The FY2025 gap ($139,869) is probably the same kind of item; the report does not itemise it.")
+    add("state-vs-district", "Operating budget proposed for next year: MS-26 recommended vs the budget on the page", rep + 1, ("ORCSD annual report %d, MS-26 operating budget recommended" % rep, ms_total(rep, 2), MSW(rep, pg)),
+        PG("budget", rep + 1, "Budget (as on the page)"), tol=1, verdict_if_diff="different basis",
+        note="For FY2027 the page's $62,365,067 is $519,000 above the MS-26's $61,846,067 (the $519K figure is the amendment discussed in the district's budget record); for FY2026 the MS-26 operating total is what the voters were asked to approve before amendment.")
+    add("state-vs-state", "Total expenditures, MS-26 actual vs DOE-25 recurring expenditures", rep - 1, ("ORCSD annual report %d, MS-26 actual (sum of subtotals)" % rep, ms_total(rep, 0), MSW(rep, pg)),
+        PG("actual_recurring", rep - 1, "NH DOE DOE-25 recurring expenditures (as on the page)"), tol=2, verdict_if_diff="different basis",
+        note="The MS-26 actual column is the general fund as the district reported it to the DRA; DOE-25 recurring excludes some items. The page shows DOE-25.")
+
+# ---------------------------------------------------------------- 7. NH SAT means: the district's printed "State" column vs the College Board's NH report (hosted by the DOE) ------------------------------
+for fy in range(2018, 2026):
+    for metric, key, nm in (("sat_rw", "sat_rw_nh", "evidence-based reading and writing"), ("sat_math", "sat_m_nh", "math")):
+        a = RCs(metric, fy, "state")
+        b = PG(key, fy, "College Board NH SAT annual report, class of %d, Total row (as on the page)" % fy)
+        if a and b: add("district-vs-state", "New Hampshire average SAT, %s: district annual report's State column vs the College Board NH report" % nm, fy, a, b, tol=0.5,
+                        note="The district's printed 'State' averages differ from the College Board's New Hampshire report (all NH graduates who took the SAT) in every year but 2018, by up to 27 points; the district's figures do not match any other total-group table in that report either, and the source of the district's column is not stated. The page now uses the College Board figure.")
+
+# ---------------------------------------------------------------- 8. special education expenditures "per RSA 32:11-a" (annual reports 2025 and 2026) -------------------------------------------
+RSAW = lambda fy: "Annual_Reports__%d_ORCSD_Annual_Report.pdf p.15 (RSA 32:11-a table)" % (2025 if fy <= 2024 else 2026)
+def msl(rep, acct, part="appropriations"):
+    return next((r for r in MS if r["report"] == rep and r.get("kind") == "line" and r["part"] == part and r.get("account") == acct), None)
+for fy in (2023, 2024, 2025):
+    a = PG("rsa_cost", fy, "ORCSD annual report, RSA 32:11-a table, special education costs (1200)"); a = None if a is None else (a[0], a[1], RSAW(fy))
+    b = PG("fn_spec", fy, "NH DOE DOE-25, special programs (as on the page)")
+    if a and b: add("district-vs-state", "Special education programs (function 1200): RSA 32:11-a table vs DOE-25", fy, a, b, tol=2, verdict_if_diff="CONFLICT",
+                    note="The district's RSA 32:11-a table, the MS-26 (DRA) and the DOE-25 (DOE) give three different amounts for special programs in the same year (FY2025: $8,419,644, $7,470,356, $7,970,563). The documents do not say why; the table may include the district's share of costs that the two state forms classify elsewhere. The page's special-education row uses the district's table and labels it as the district's.")
+    for rep in (2025, 2026):
+        m = msl(rep, "1200-1299")
+        if m and rep - 1 == fy and a: add("district-vs-state", "Special education programs (function 1200): RSA 32:11-a table vs MS-26", fy, a, ("ORCSD annual report %d, MS-26 special programs actual" % rep, m["values"][0], MSW(rep, m["pdf_page"])), tol=2, verdict_if_diff="CONFLICT")
+    sa = PG("rsa_aid", fy, "ORCSD annual report, RSA 32:11-a table, state special education aid")
+    for rep in (2025, 2026):
+        m = msl(rep, "3230", "revenue")
+        if m and rep - 1 == fy and sa: add("district-vs-state", "State special education aid: RSA 32:11-a table vs MS-26 revenue (3230)", fy, (sa[0], sa[1], RSAW(fy)), ("ORCSD annual report %d, MS-26 actual revenue" % rep, m["values"][0], MSW(rep, m["pdf_page"])), tol=2)
+    me = PG("rsa_med", fy, "ORCSD annual report, RSA 32:11-a table, Medicaid reimbursement")
+    for rep in (2025, 2026):
+        m = msl(rep, "4580", "revenue")
+        if m and rep - 1 == fy and me: add("district-vs-state", "Medicaid reimbursement: RSA 32:11-a table vs MS-26 revenue (4580)", fy, (me[0], me[1], RSAW(fy)), ("ORCSD annual report %d, MS-26 actual revenue" % rep, m["values"][0], MSW(rep, m["pdf_page"])), tol=2)
+
 # ---------------------------------------------------------------- notes, size, de-duplication, output ----------------------------------------------------------------------
 NOTES = [  # (topic prefix, note) - applied to rows that differ and have no note yet
  ("Enrollment, October 1, all grades", "The district's Report Card prints the sum of the four schools for FY2019, FY2020 and FY2026 (2,157, 2,168, 2,038), which is also what the DOE's student-to-teacher file uses (2,157, 2,168, 2,038), but the DOE district total in FY2016-FY2018 and FY2021-FY2025. So the state itself has two figures: its district total (iExplore) and the sum of its schools, 25-34 apart from FY2019 on. The page uses the iExplore district total in every year."),
  ("Budget Summary by Location", "Arithmetic inside the district's own table: the FY2024 approved rows add to $1,000 more than the printed total (the other tables tie to the dollar)."),
+ ("Expenditure by function, MS-26", "State: DOE-25 (the MS-26 figure is in this log)"), ("Operating budget approved for the current year", "Adopted budget (agrees)"), ("Operating budget proposed", "The page's budget series (see note)"), ("Total expenditures, MS-26", "State: DOE-25"),
+ ("New Hampshire average SAT", "State: College Board NH SAT annual report (hosted by the NH DOE). Oyster River High School comes from the district (no state series)."),
+ ("Special education programs (function 1200)", "District's RSA 32:11-a table, labeled as the district's (the DOE-25 special programs figure is on the Spending by function rows)"),
+ ("State special education aid", "n/a (agrees)"), ("Medicaid reimbursement", "n/a"),
  ("Local school tax rate per $1,000 in the annual report", "The district's 'current' rate is the state's rate for that year; where they differ the page shows the state's."),
  ("Enrollment, high school", "One student: the district prints 795, iExplore 796 for FY2026 (iExplore's four schools sum to 2,039; the report prints 2,038)."),
  ("Average teacher salary, NH", "The state average the report prints is not the one the DOE's current files give. In FY2018 the report prints $53,984; the DOE salary file and iExplore both give about $58,277. FY2024: the DOE salary file and the report agree ($67,096); iExplore gives $66,576."),
@@ -324,7 +386,7 @@ def md():
          "**%d comparisons: %d agree, %d conflict, %d differ by basis, %d are the district's projection set against what happened.** A *conflict* means two sources print different numbers for the same measure and year and nothing about definitions explains it. "
          "A *different basis* row is a difference the documents explain only in part (audit vs the state's DOE-25 form). Where the district disagrees with itself, the row says so (`district-internal`)." % (len(OUT), len(A), len(C), len(B), len(PJ)), "",
          "## Rule used on the page: state first", "",
-         "Where the district and the state print different numbers for the same measure, the page shows the state's (NH DOE or DRA) and the district's figure stays in this log. Where two state series disagree, the page uses the DOE's headline district figure and the others are listed here. District figures are used only where the state has no series for the measure (class size, SAT, special-education counts, completers, dropout counts, the audited balance sheet). Open case: the NH SAT means come from the district's reports; the DOE's College Board reports in `raw/nh-doe/` cover only some years, so they are not yet substituted.", "",
+         "Where the district and the state print different numbers for the same measure, the page shows the state's (NH DOE or DRA) and the district's figure stays in this log. Where two state series disagree, the page uses the DOE's headline district figure and the others are listed here. District figures are used only where the state has no series for the measure (class size, Oyster River High School SAT, special-education counts, completers, dropout counts, the audited balance sheet).", "",
          "## What matters most", "",
          "1. **Enrollment: the DOE has two totals, and the district mixes them.** The DOE's district total (iExplore) is 25-34 above the sum of its own four schools every year from FY2019 on (the DOE student-to-teacher file uses roughly the school sum). The district's Report Card prints the DOE district total for FY2021-FY2025 but the school sum for FY2019, FY2020 and FY2026 (2,157, 2,168, 2,038 against the district total 2,190, 2,202, 2,064). Its own Official Enrollment table therefore has a Totals row 25-30 above the sum of its level rows from FY2021. **The page now uses the iExplore district total throughout.**",
          "2. **The annual report's second enrollment table (School Year Enrollment, the district's own October 1 report) disagrees with both.** For FY2022 it prints a Totals row of 2,106 that does not equal its four school rows (2,083), and the DOE says 2,130; high school is 839 against the DOE's 858.",
@@ -337,6 +399,9 @@ def md():
          "9. **Tax-rate impact tables:** the table's 'current' local rate equals the state's rate for that year and town (the page uses the state's). The last column is headed 'Impact Revised' and does not subtract to proposed minus current (FY2025 Durham: 12.15 - 11.58 = 0.57, printed 0.40). The 2018 report prints Madbury's assessed value as 235,434,027 in one column and 235,343,027 in the other.",
          "10. **Projected versus set rates:** holding assessed value fixed, the district's projected next-year rate differs from the rate the DRA set by under $1 per $1,000 in most town-years but by $2.61 to $9.19 in five (Durham FY2019 and FY2024, Madbury FY2021 and FY2026, Lee FY2022), because revaluations and state aid moved the real rate. See the section near the end.",
          "11. **District 'expended' General Fund (budget table) vs the audit vs DOE-25:** within 0.5% of the audit in FY2021-FY2024 but 0.9-7.6% apart in FY2018-FY2020, and 0.5-5.9% above the state's DOE-25 recurring figure in every year; none of the documents reconciles them.",
+         "12. **MS-26 (the NH DRA budget form, reprinted as images in the 2025 and 2026 reports; OCR'd, every subtotal re-added) vs DOE-25:** for FY2024 and FY2025 regular programs, vocational, student support, school administration, business, transportation and debt interest tie to the dollar, but special programs ($312K and $500K), other instruction, instructional staff services and (FY2025) plant operations differ, DOE-25 mostly higher. The 2025 report's MS-26 prints FY2024 plant operations as $0 against $4.36M in DOE-25, so its total actual spending is $4.3M low. The MS-26's FY2026 'appropriated' column includes the $1.67M of union-contract warrant articles that the page's operating budget leaves out.",
+         "13. **NH SAT averages:** the district's printed State column does not match the College Board's New Hampshire report (the DOE hosts it) in any year but 2018, by up to 27 points; the page now uses the College Board's figures for all graduates (class of 2018-2025).",
+         "14. **Special education spending, three amounts for one year:** for FY2025 special programs are $8,419,644 in the district's RSA 32:11-a table, $7,970,563 in the DOE-25 and $7,470,356 in the MS-26 (FY2024: $8,023,162, $7,694,329, $8,006,444). The state aid and Medicaid lines of the RSA table tie to the MS-26 revenue lines to the dollar, so the disagreement is in expenditure classification. The page shows the district's table in its own row, labeled as the district's.",
          "", "## Where the Report Card matches the state", "",
          "Enrollment by level, average teacher salary (district), cost per pupil by level, student-to-teacher ratio (district), dropout counts against iExplore's dropout rate (count divided by grade 9-12 enrollment), and iExplore totals of expenditures, revenues, cost per pupil and salary against the DOE-25 and DOE files the page holds all agree wherever both exist (counts in the CSV). "
          "The Report Card is tied to the DOE for these measures; the differences above are where it is not.", ""]

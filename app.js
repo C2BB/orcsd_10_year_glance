@@ -156,8 +156,8 @@ dash.calc('headline', {
   var sel = 7;
   var mode = 'nom';
   var MODES = { nom: { label: 'Nominal dollars', f: null }, cpi: { label: 'Northeast CPI-U', f: 'f_cpi', idx: 'cpi_ne', n: 'cpi_ne_months', nn: 12 }, eci: { label: 'education labor costs (ECI)', f: 'f_eci', idx: 'eci_edu', n: 'eci_quarters', nn: 4 } };
-  var MONEY = ['bd_unspent', 'bd_appr', 'bd_exp', 'dflt_gap', 'dflt', 'f10', 'f21', 'f22', 'f23', 'debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'fb_tot', 'fb_un', 'fb_com', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
-  var NAMES = ['spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'bvx', 'dflt', 'timp', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts'];
+  var MONEY = ['rsa_cost', 'rsa_rel', 'rsa_trn', 'rsa_idea', 'rsa_tot', 'rsa_aid', 'rsa_med', 'rsa_fed', 'rsa_rev', 'rsa_net', 'bd_unspent', 'bd_appr', 'bd_exp', 'dflt_gap', 'dflt', 'f10', 'f21', 'f22', 'f23', 'debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'fb_tot', 'fb_un', 'fb_com', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
+  var NAMES = ['rsa', 'spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'bvx', 'dflt', 'timp', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts'];
 
   var SCH = [['High school', 'hs'], ['Middle school', 'ms'], ['Mast Way', 'mw'], ['Moharimet', 'mo']];
   function schLines(r, fld, fmt) {
@@ -1289,7 +1289,7 @@ dash.calc('headline', {
     },
     tip: function (r) {
       if (r.sat_tot == null) return { lines: [['SAT', 'not yet reported']], note: 'The high school counseling office reports scores after each spring test.' };
-      return { lines: [['ORHS reading and writing', String(r.sat_rw)], ['ORHS math', String(r.sat_m)], ['NH reading and writing', String(r.sat_rw_nh)], ['NH math', String(r.sat_m_nh)]], note: 'Section scores run 200 to 800, so the total runs 400 to 1600. Which students test differs from year to year, so compare trends with care. National averages printed in the report are left out because the 2019 figures do not match the College Board’s, and the NH figures differ from the NH DOE’s College Board report for all NH graduates (class of 2020: 531 reading and writing, 524 math; class of 2021: 540 and 526), so read the NH comparison as approximate. Source: ORHS counseling, as printed in the ORCSD annual reports.' };
+      return { lines: [['ORHS reading and writing', String(r.sat_rw)], ['ORHS math', String(r.sat_m)], ['NH reading and writing', String(r.sat_rw_nh)], ['NH math', String(r.sat_m_nh)]], note: 'Section scores run 200 to 800, so the total runs 400 to 1600. Which students test differs from year to year, so compare trends with care. National averages printed in the report are left out because the 2019 figures do not match the College Board’s. The NH figures are the College Board’s New Hampshire report for all graduates who took the SAT, not the (different) figures the district prints. Source: ORHS counseling, as printed in the ORCSD annual reports; NH: College Board NH SAT annual reports.' };
     }
   };
   ROWS.coll = {
@@ -1475,6 +1475,27 @@ dash.calc('headline', {
   };
   ROWS.lvlenr.chg = { get: function (r) { return r.en_hs; }, kind: 'pct', note: 'high school' };
   ROWS.fb.chg = { get: function (r) { return r.fb_tot; }, kind: 'pct', note: 'total fund balance' };
+  ROWS.rsa = {
+    money: true,
+    aria: 'Special education expenditures and the state and federal revenue that offsets them, by fiscal year',
+    domain: [0, 13000000], ticks: [0, 5000000, 10000000], axis: false,
+    tickFmt: function (v) { return v === 0 ? '$0' : '$' + (v / 1e6) + 'M'; },
+    series: [
+      { id: 'rev', get: function (r) { return r.rsa_rev; }, alt: 'square' },
+      { id: 'tot', get: function (r) { return r.rsa_tot; }, main: true }
+    ],
+    label: function (r) {
+      if (r.rsa_tot == null) return nodata('Printed for 2022-23 to 2024-25 only', 'rsa_tot', 'years', 'Not printed');
+      return { big: moneyM(r.rsa_tot, 1), sub: 'Special education expenditures, all functions', delta: 'Net after aid and grants ' + moneyM(r.rsa_net, 1), tag: 'Reported', prov: false, src: 'years', field: 'rsa_tot' };
+    },
+    tip: function (r) {
+      if (r.rsa_tot == null) return { lines: [['Special education', 'not printed for this year']], note: 'The district prints this table for 2022-23 to 2024-25 only.' };
+      var L = [['Special education programs (1200)', money(r.rsa_cost)], ['Related services', money(r.rsa_rel)], ['Transportation', money(r.rsa_trn)], ['IDEA federal grant', money(r.rsa_idea)], ['Total expenditures', money(r.rsa_tot)],
+               ['State special education aid', money(r.rsa_aid)], ['Medicaid reimbursement', money(r.rsa_med)], ['IDEA federal grant (revenue)', money(r.rsa_fed)], ['Total revenues', money(r.rsa_rev)], ['Net cost to the district', money(r.rsa_net)]];
+      return { lines: L, note: 'The table the district prints per RSA 32:11-a. It is the district’s own table, not a state series: its special programs figure differs from the DOE-25 and the MS-26 for the same year (see CONFLICTS.md). Source: ORCSD annual reports, 2025 and 2026 editions.' };
+    }
+  };
+  ROWS.rsa.chg = { get: function (r) { return r.rsa_tot; }, kind: 'pct', note: 'special education spending' };
   ROWS.debt.chg = { get: function (r) { return r.debt_total; }, kind: 'pct', note: 'total obligations' };
   ROWS.bvx.chg = { get: function (r) { return r.bd_unspent; }, kind: 'pct', note: 'budget not spent' };
   ROWS.dflt.chg = { get: function (r) { return r.dflt; }, kind: 'pct', note: 'default budget' };
@@ -1909,6 +1930,7 @@ dash.calc('headline', {
       if (a.indexOf('cooperative-school-district') >= 0) a = 'dra--' + a.split('__').pop();
       return (/education/.test(u) ? 'nh-doe/' : 'nh-dra/') + a;
     }
+    if (/reports\.collegeboard\.org/.test(u)) return 'collegeboard/' + decodeURIComponent(u.replace(/^.*\//, '')).replace(/ /g, '-');
     if (/orcsd\.org/.test(u)) {
       m = /\/files\/documents\/(.*)$/.exec(decodeURIComponent(u));
       return m ? 'orcsd/' + m[1].replace(/ /g, '_').replace(/\//g, '__') : (/1823327/.test(u) ? 'orcsd/web/news_2026-03-10_official-voting-results.html' : null);
@@ -1995,7 +2017,7 @@ dash.calc('headline', {
   dash.draw('modeshort', function (el) { el.textContent = MODE_SHORT[mode]; });
   // Tag on each dollar row: whether it follows the switch, and what it is showing right now.
   var CHIP_B = ['instr', 'local', 'ben', 'adm', 'share', 'eff', 'cred', 'efa'];
-  var CHIP_C = { base: 'Property values are market prices, not spending, so they are shown as recorded.', rate: 'A tax rate per $1,000 of value is a ratio, so inflation does not apply to it.' };
+  var CHIP_C = { base: 'Property values are market prices, not spending, so they are shown as recorded.', rate: 'A tax rate per $1,000 of value is a ratio, so inflation does not apply to it.', timp: 'An estimated change in a tax rate per $1,000 of value is a ratio, so inflation does not apply to it.' };
   CHIP_B.forEach(function (k) { ROWS[k].tipMoney = true; });
   var CHIP_NAMES = Object.keys(ROWS).filter(function (k) { return ROWS[k].money; }).concat(CHIP_B, Object.keys(CHIP_C));
   CHIP_NAMES.forEach(function (k) {

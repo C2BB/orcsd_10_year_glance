@@ -44,6 +44,8 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `restrep` | Annual restraint and seclusion report to the legislature | `nh-doe/inline-documents__sonh__ltr-restraint-seclusion-sy-2022-2023.pdf`, `nh-doe/inline-documents__sonh__restraintandseclusion11-8-18.pdf`, `nh-doe/inline-documents__sonh__restraintandseclusion20-21.pdf`, `nh-doe/inline-documents__sonh__restraintandseclusionsy-2018-2019.pdf` +4 more (8/8 URLs mirrored) |
 | `fte` | Staff full-time equivalents by district | `nh-doe/inline-documents__2020-04__fte-district17-18.xlsx`, `nh-doe/inline-documents__fte-district18-19.csv`, `nh-doe/inline-documents__sonh__fte-district19-20.csv`, `nh-doe/inline-documents__sonh__fte-district20-21.csv` +1 more (5/5 URLs mirrored) |
 | `tatt` | Educational attainment of teachers by district | `nh-doe/inline-documents__sonh__teach-att-21-22_0.csv`, `nh-doe/inline-documents__sonh__teach-attain20-21_0.csv`, `nh-doe/inline-documents__teach_attain17-18.csv`, `nh-doe/inline-documents__teach_attain18-19.csv` (4/4 URLs mirrored) |
+| `sat` | College Board NH SAT annual report | `collegeboard/2022-new-hampshire-sat-suite-of-assessments-annual-report.pdf`, `collegeboard/2023-new-hampshire-sat-suite-of-assessments-annual-report-ADA.pdf`, `collegeboard/2024-new-hampshire-sat-suite-of-assessments-annual-report-ADA.pdf`, `collegeboard/2025-new-hampshire-sat-suite-of-assessments-annual-report-ADA-v0.2.pdf` +4 more (8/8 URLs mirrored) |
+| `ar25` | ORCSD annual report 2025 | `orcsd/Annual_Reports__2025_ORCSD_Annual_Report.pdf` (1/1 URLs mirrored) |
 
 ## Dashboard rows
 
@@ -90,7 +92,7 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `grp` | `assess` |
 | `att` | `att`, `ar` |
 | `cls` | `ar`, `ip` |
-| `sat` | `ar` |
+| `sat` | `ar`, `sat` |
 | `coll` | `ar`, `ip` |
 | `drop` | `ar`, `ip` |
 | `ctc` | `ar` |
@@ -120,6 +122,7 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `bvx` | `ar` |
 | `dflt` | `ar` |
 | `timp` | `ar` |
+| `rsa` | `ar25`, `ar26` |
 
 ## Mirrored but not charted
 
@@ -127,7 +130,7 @@ Files found on the DOE and DRA pages during the 2026-11-23 sweep that no dashboa
 
 - listed on DOE page assessment-data: 4 files, e.g. `inline-documents__2026__disagdatabytownresponsible_2026_0.xlsx`, `inline-documents__sonh__disagdata2022_2023_2024_bytownresponsible_static.xlsx`, `inline-documents__sonh__disagdata2024bytownresponsible_static.xlsx`
 - listed on DOE page financial-reports: 16 files, e.g. `inline-documents__2020-04__est_exp19-20.csv`, `inline-documents__2020-04__indirect2020-21.csv`, `inline-documents__est_exp17-18.csv`
-- listed on DOE page non-statewide-assessment-college-board-reports: 24 files, e.g. `inline-documents__nh_2017_saturday_sat_integrated_report.pdf`, `inline-documents__nh_2018_saturday_sat_integrated_report.pdf`, `inline-documents__sonh__2017-new-hampshire-sat-suite-assessments-annual-report.pdf`
+- listed on DOE page non-statewide-assessment-college-board-reports: 20 files, e.g. `inline-documents__nh_2017_saturday_sat_integrated_report.pdf`, `inline-documents__nh_2018_saturday_sat_integrated_report.pdf`, `inline-documents__sonh__2017-new-hampshire-sat-suite-assessments-annual-report.pdf`
 - listed on DOE page other-state-aid-programs: 9 files, e.g. `inline-documents__2026__excel-fy-25-phase-out.xlsx`, `inline-documents__2026__excel-fy-26-phase-out.xlsx`, `inline-documents__2026__fy-2025-efa-phase-report.pdf`
 - listed on DOE page staffing-and-salary-reports: 10 files, e.g. `inline-documents__principal-salaries19-20.csv`, `inline-documents__sonh__principal-salaries20-21.xlsx`, `inline-documents__sonh__principal-salaries20-21_1.csv`
 - listed on DRA municipal and property reports page: 13 files, e.g. `documents__2023-comparison-of-full-value-tax-rates-ranking-order.pdf`, `documents__2023-equalization-survey-including-utilities.pdf`, `documents__2023-equalization-survey-including-utilities.xlsx`

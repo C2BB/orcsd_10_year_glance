@@ -1,0 +1,3020 @@
+{
+"lines": [
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+21109048.0,
+21730736.0,
+21771482.0,
+0.0
+],
+"kind": "line",
+"account": "1100-1199",
+"purpose": "Regular Programs 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+8006444.0,
+8701955.0,
+8683591.0,
+0.0
+],
+"kind": "line",
+"account": "1200-1299",
+"purpose": "Special Programs 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+136263.0,
+100000.0,
+100000.0,
+0.0
+],
+"kind": "line",
+"account": "1300-1399",
+"purpose": "Vocational Programs 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+818332.0,
+911250.0,
+957585.0,
+0.0
+],
+"kind": "line",
+"account": "1400-1499",
+"purpose": "Other Programs 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "1500-1599",
+"purpose": "Non-Public Programs 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "1600-1699",
+"purpose": "Adult/Continuing Education Programs  3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "1700-1799",
+"purpose": "a College Education",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "1800-1899",
+"purpose": "Community Service Programs",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+30070087.0,
+31443941.0,
+31512658.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Instruction Subtotal",
+"check": "ok"
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Support Services",
+"values": [
+5201404.0,
+5454447.0,
+5792467.0,
+0.0
+],
+"kind": "line",
+"account": "2000-2199",
+"purpose": "Student Support Services 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Support Services",
+"values": [
+1029817.0,
+1157458.0,
+1448514.0,
+0.0
+],
+"kind": "line",
+"account": "2200-2299",
+"purpose": "Instructional Staff Services 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Support Services",
+"values": [
+6231221.0,
+6611905.0,
+7240981.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Support Services Subtotal",
+"check": "ok"
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "General Administration",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "2310",
+"purpose": "School Board Contingency",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "General Administration",
+"values": [
+154196.0,
+95351.0,
+92065.0,
+0.0
+],
+"kind": "line",
+"account": "2310-2319",
+"purpose": "Other School Board , 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "General Administration",
+"values": [
+154196.0,
+95351.0,
+92065.0,
+0.0
+],
+"kind": "subtotal",
+"label": "General Administration Subtotal",
+"check": "ok"
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Executive Administration",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "2320",
+"purpose": "SAU Management Services",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Executive Administration",
+"values": [
+877523.0,
+1249839.0,
+1270754.0,
+0.0
+],
+"kind": "line",
+"account": "2320-2399",
+"purpose": "All Other Administration 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Executive Administration",
+"values": [
+2176559.0,
+2284129.0,
+2284414.0,
+0.0
+],
+"kind": "line",
+"account": "2400-2499",
+"purpose": "School Administration Service 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Executive Administration",
+"values": [
+722663.0,
+696896.0,
+772583.0,
+0.0
+],
+"kind": "line",
+"account": "2500-2599",
+"purpose": "Business 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Executive Administration",
+"values": [
+0.0,
+4890082.0,
+4711064.0,
+0.0
+],
+"kind": "line",
+"account": "2600-2699",
+"purpose": "Plant Operations and Maintenance 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Executive Administration",
+"values": [
+2413496.0,
+2382200.0,
+2496314.0,
+0.0
+],
+"kind": "line",
+"account": "2700-2799",
+"purpose": "Student Transportation 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Executive Administration",
+"values": [
+1661668.0,
+1673911.0,
+1832655.0,
+0.0
+],
+"kind": "line",
+"account": "2800-2999",
+"purpose": "Support Service, Central and Other 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Executive Administration",
+"values": [
+7851909.0,
+13177057.0,
+13367784.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Executive Administration Subtotal",
+"check": "ok"
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Non-Instructional Services",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "3100",
+"purpose": "Food Service Operations",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Non-Instructional Services",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "3200",
+"purpose": "Enterprise Operations",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Non-Instructional Services",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Non-Instructional Services Subtotal",
+"check": "ok"
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Facilities Acquisition and Construction",
+"values": [
+0.0,
+1.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4100",
+"purpose": "Site Acquisition",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Facilities Acquisition and Construction",
+"values": [
+0.0,
+1.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4200",
+"purpose": "Site Improvement",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Facilities Acquisition and Construction",
+"values": [
+0.0,
+1.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4300",
+"purpose": "Architectural/Engineering",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Facilities Acquisition and Construction",
+"values": [
+0.0
+],
+"kind": "line",
+"account": "4400",
+"purpose": "Educational Specification Development",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Facilities Acquisition and Construction",
+"values": [
+0.0,
+1.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4500",
+"purpose": "Building Acquisition/Construction",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Facilities Acquisition and Construction",
+"values": [
+418853.0,
+418853.0,
+986558.0,
+0.0
+],
+"kind": "line",
+"account": "4600",
+"purpose": "Building Improvement Services 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Facilities Acquisition and Construction",
+"values": [
+0.0,
+1.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4900",
+"purpose": "larry Acquisition and",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Other Outlays",
+"values": [
+796800.0,
+1428950.0,
+1490000.0,
+0.0
+],
+"kind": "line",
+"account": "5110",
+"purpose": "Debt Service - Principal 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Other Outlays",
+"values": [
+1431117.0,
+1379159.0,
+1312417.0,
+0.0
+],
+"kind": "line",
+"account": "5120",
+"purpose": "Debt Service - Interest 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Other Outlays",
+"values": [
+2227917.0,
+2808109.0,
+2802417.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Other Outlays Subtotal",
+"check": "ok"
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+0.0,
+1191685.0,
+1249628.0,
+0.0
+],
+"kind": "line",
+"account": "5220-5221",
+"purpose": "To Food Service 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+0.0,
+641000.0,
+750000.0,
+0.0
+],
+"kind": "line",
+"account": "5222-5229",
+"purpose": "To Other Special Revenue 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5230-5239",
+"purpose": "To Capital Projects",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5254",
+"purpose": "To Agency Funds",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5310",
+"purpose": "To Charter Schools",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5390",
+"purpose": "To Other Agencies",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5990",
+"purpose": "Supplemental Appropriation",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5992",
+"purpose": "Deficit Appropriation",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+0.0,
+1832685.0,
+1999628.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Fund Transfers Subtotal",
+"check": "ok"
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+58002091.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Total Operating Budget Appropriations"
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Special Warrant Articles",
+"values": [
+125000.0,
+0.0
+],
+"kind": "line",
+"account": "5252",
+"purpose": "To Expendable Trusts/Fiduciary Funds 6",
+"article": null,
+"purpose_note": "Facilities Trust Fund"
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Special Warrant Articles",
+"values": [
+125000.0,
+0.0
+],
+"kind": "line",
+"account": "5252",
+"purpose": "To Expendable Trusts/Fiduciary Funds 7",
+"article": null,
+"purpose_note": "Turf Field Trust"
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Special Warrant Articles",
+"values": [
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5251",
+"purpose": "To Capital Reserve Fund",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Special Warrant Articles",
+"values": [
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5252",
+"purpose": "To Expendable Trust Fund",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Special Warrant Articles",
+"values": [
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5253",
+"purpose": "To Non-Expendable Trust Fund",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Special Warrant Articles",
+"values": [
+250000.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Total Proposed Special Articles"
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "appropriations",
+"section": "Individual Warrant Articles",
+"values": [
+177415.0,
+0.0
+],
+"kind": "line",
+"account": "1200-1299",
+"purpose": "Special Programs 4",
+"article": null,
+"purpose_note": "Approval of the Guild CBA :"
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "appropriations",
+"section": "Individual Warrant Articles",
+"values": [
+134587.0,
+0.0
+],
+"kind": "line",
+"account": "2000-2199",
+"purpose": "Student Support Services 4 OB",
+"article": null,
+"purpose_note": "Approval of the Guild CBA"
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "appropriations",
+"section": "Individual Warrant Articles",
+"values": [
+12912.0,
+0.0
+],
+"kind": "line",
+"account": "2200-2299",
+"purpose": "Instructional Staff Services 4.",
+"article": null,
+"purpose_note": "Approval of the Guild CBA"
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "appropriations",
+"section": "Individual Warrant Articles",
+"values": [
+530922.0,
+0.0
+],
+"kind": "line",
+"account": "4300",
+"purpose": "ArchitecturaVEngineerng ss ( ttiti(\u2018is\u00e9\u2018S",
+"article": null,
+"purpose_note": "To raise and appropriate money for the engineering plans for the MOH/MW projects"
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "appropriations",
+"section": "Individual Warrant Articles",
+"values": [
+1672126.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Total Proposed Individual Articles"
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Local Sources",
+"values": [
+3512966.0,
+3947359.0,
+3573674.0
+],
+"kind": "line",
+"account": "1300-1349",
+"purpose": "Tuition 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Local Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "1400-1449",
+"purpose": "Transportation Fees",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Local Sources",
+"values": [
+156900.0,
+150000.0,
+150000.0
+],
+"kind": "line",
+"account": "1500-1599",
+"purpose": "Earnings on Investments 3",
+"article": null,
+"ocr_corrected": true
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Local Sources",
+"values": [
+919296.0,
+1116685.0,
+1249628.0
+],
+"kind": "line",
+"account": "1600-1699",
+"purpose": "Food Service Sales 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Local Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "1700-1799",
+"purpose": "Student Activities",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Local Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "1800-1899",
+"purpose": "Community Services Activities",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Local Sources",
+"values": [
+0.0,
+110958.0,
+30000.0
+],
+"kind": "line",
+"account": "1900-1999",
+"purpose": "Other Local Sources 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Local Sources",
+"values": [
+4589162.0,
+5325002.0,
+5003302.0
+],
+"kind": "subtotal",
+"label": "Local Sources Subtotal",
+"check": "ok"
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "3210",
+"purpose": "School Building Aid",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "3215",
+"purpose": "Kindergarten Building Aid",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "3220",
+"purpose": "Kindergarten Aid",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+295029.0,
+142613.0,
+150000.0
+],
+"kind": "line",
+"account": "3230",
+"purpose": "Special Education Aid 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+7887.0,
+5000.0,
+5000.0
+],
+"kind": "line",
+"account": "3240-3249",
+"purpose": "Vocational Aid 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "3250",
+"purpose": "Adult Education",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+10567.0,
+5000.0,
+0.0
+],
+"kind": "line",
+"account": "3260",
+"purpose": "Child Nutrition",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "3270",
+"purpose": "Driver Education",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+8920.0,
+10067.0,
+9100.0
+],
+"kind": "line",
+"account": "3290-3299",
+"purpose": "Other State Sources 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+322403.0,
+162680.0,
+164100.0
+],
+"kind": "subtotal",
+"label": "State Sources Subtotal",
+"check": "ok"
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Federal Sources",
+"values": [
+0.0,
+641000.0,
+750000.0
+],
+"kind": "line",
+"account": "4100-4539",
+"purpose": "Federal Program Grants 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Federal Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4550",
+"purpose": "Adult Education",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Federal Sources",
+"values": [
+205565.0,
+70000.0,
+0.0
+],
+"kind": "line",
+"account": "4560",
+"purpose": "Child Nutrition",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Federal Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4570",
+"purpose": "Disabilities Programs",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Federal Sources",
+"values": [
+168135.0,
+150000.0,
+150000.0
+],
+"kind": "line",
+"account": "4580",
+"purpose": "Medicaid Distribution , 3",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Federal Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4590-4999",
+"purpose": "Other Federal Sources (non-4810)",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Federal Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4810",
+"purpose": "Federal Forest Reserve",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Federal Sources",
+"values": [
+373700.0,
+861000.0,
+900000.0
+],
+"kind": "subtotal",
+"label": "Federal Sources Subtotal",
+"check": "ok"
+},
+{
+"report": 2025,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5110-5139",
+"purpose": "Sale of Bonds or Notes",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5140",
+"purpose": "Reimbursement Anticipation Notes",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5222",
+"purpose": "Transfer from Other Special Revenue Funds",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0
+],
+"kind": "line",
+"account": "5230",
+"purpose": "Transfer from Capital Project Funds",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5251",
+"purpose": "Transfer from Capital Reserve Funds",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5252",
+"purpose": "Transfer from Expendable Trust Funds",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5253",
+"purpose": "Transfer from Non-Expendable Trust Funds OO",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5300-5699",
+"purpose": "Other Financing Sources",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "9997",
+"purpose": "Supplemental Appropriation (Contra) i",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+250000.0,
+0.0,
+250000.0
+],
+"kind": "line",
+"account": "9998",
+"purpose": "Amount Voted from Fund Balance 6,7",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+491685.0,
+0.0,
+250000.0
+],
+"kind": "line",
+"account": "9999",
+"purpose": "Fund Balance to Reduce Tes = si(\u2018\u00e9",
+"article": null
+},
+{
+"report": 2025,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+741685.0,
+0.0,
+500000.0
+],
+"kind": "subtotal",
+"label": "Other Financing Sources Subtotal",
+"check": "ok"
+},
+{
+"report": 2025,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+6026950.0,
+6348682.0,
+6567402.0
+],
+"kind": "subtotal",
+"label": "Total Estimated Revenues and Credits"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+21491698.0,
+22587772.0,
+22680929.0,
+0.0
+],
+"kind": "line",
+"account": "1100-1199",
+"purpose": "Regular Programs",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+7470356.0,
+8861006.0,
+8437669.0,
+0.0
+],
+"kind": "line",
+"account": "1200-1299",
+"purpose": "Special Programs",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+162727.0,
+100000.0,
+150000.0,
+0.0
+],
+"kind": "line",
+"account": "1300-1399",
+"purpose": "Vocational Programs",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+888021.0,
+957585.0,
+1010683.0,
+0.0
+],
+"kind": "line",
+"account": "1400-1499",
+"purpose": "Other Programs",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "1500-1599",
+"purpose": "Non-Public Programs",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "1600-1699",
+"purpose": "Adult/Continuing Education Programs",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "1700-1799",
+"purpose": "oer College Education",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "1800-1899",
+"purpose": "Community Service Programs",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Instruction",
+"values": [
+30012802.0,
+32506363.0,
+32279281.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Instruction Subtotal",
+"check": "ok"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Support Services",
+"values": [
+5513338.0,
+5927054.0,
+5939916.0,
+0.0
+],
+"kind": "line",
+"account": "2000-2199",
+"purpose": "Student Support Services",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Support Services",
+"values": [
+1139747.0,
+1461426.0,
+1833057.0,
+0.0
+],
+"kind": "line",
+"account": "2200-2299",
+"purpose": "Instructional Staff Services",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Support Services",
+"values": [
+6653085.0,
+7388480.0,
+7772973.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Support Services Subtotal",
+"check": "ok"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "General Administration",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "2310",
+"purpose": "School Board Contingency",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "General Administration",
+"values": [
+223358.0,
+92065.0,
+101890.0,
+0.0
+],
+"kind": "line",
+"account": "2310-2319",
+"purpose": "Other School Board",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "General Administration",
+"values": [
+223358.0,
+92065.0,
+101890.0,
+0.0
+],
+"kind": "subtotal",
+"label": "General Administration Subtotal",
+"check": "ok"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Executive Administration",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "2320",
+"purpose": "SAU Management Services",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Executive Administration",
+"values": [
+2089339.0,
+1270754.0,
+2314077.0,
+0.0
+],
+"kind": "line",
+"account": "2320-2399",
+"purpose": "All Other Administration",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Executive Administration",
+"values": [
+2241655.0,
+2284414.0,
+2402857.0,
+0.0
+],
+"kind": "line",
+"account": "2400-2499",
+"purpose": "School Administration Service",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Executive Administration",
+"values": [
+734471.0,
+772583.0,
+893969.0,
+0.0
+],
+"kind": "line",
+"account": "2500-2599",
+"purpose": "Business",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Executive Administration",
+"values": [
+5166794.0,
+4711064.0,
+4730104.0,
+0.0
+],
+"kind": "line",
+"account": "2600-2699",
+"purpose": "Plant Operations and Maintenance",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Executive Administration",
+"values": [
+2252309.0,
+2496314.0,
+2796484.0,
+0.0
+],
+"kind": "line",
+"account": "2700-2799",
+"purpose": "Student Transportation",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Executive Administration",
+"values": [
+1672920.0,
+1832655.0,
+1921390.0,
+0.0
+],
+"kind": "line",
+"account": "2800-2999",
+"purpose": "Support Service, Central and Other",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Executive Administration",
+"values": [
+14157488.0,
+13367784.0,
+15058881.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Executive Administration Subtotal",
+"check": "ok"
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Non-Instructional Services",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "3100",
+"purpose": "Food Service Operations",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Non-Instructional Services",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "3200",
+"purpose": "Enterprise Operations",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 17,
+"part": "appropriations",
+"section": "Non-Instructional Services",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Non-Instructional Services Subtotal",
+"check": "ok"
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Facilities Acquisition and Construction",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4100",
+"purpose": "Site Acquisition",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Facilities Acquisition and Construction",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4200",
+"purpose": "Site Improvement",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Facilities Acquisition and Construction",
+"values": [
+0.0,
+530922.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4300",
+"purpose": "Architectural/Engineering",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Facilities Acquisition and Construction",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4400",
+"purpose": "Educational Specification Development",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Facilities Acquisition and Construction",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4500",
+"purpose": "Building Acquisition/Construction",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Facilities Acquisition and Construction",
+"values": [
+418857.0,
+986558.0,
+1659208.0,
+0.0
+],
+"kind": "line",
+"account": "4600",
+"purpose": "Building Improvement Services",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Facilities Acquisition and Construction",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4900",
+"purpose": "qiner Facilities Acquisition and",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Facilities Acquisition and Construction",
+"values": [
+418857.0,
+1517480.0,
+1659208.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Facilities Acquisition and Construction Subtotal",
+"check": "ok"
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Other Outlays",
+"values": [
+1428950.0,
+1490000.0,
+1555000.0,
+0.0
+],
+"kind": "line",
+"account": "5110",
+"purpose": "Debt Service - Principal",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Other Outlays",
+"values": [
+1379175.0,
+1312417.0,
+1236789.0,
+0.0
+],
+"kind": "line",
+"account": "5120",
+"purpose": "Debt Service - Interest",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Other Outlays",
+"values": [
+2808125.0,
+2802417.0,
+2791789.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Other Outlays Subtotal",
+"check": "ok"
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+1345209.0,
+1249628.0,
+1432045.0,
+0.0
+],
+"kind": "line",
+"account": "5220-5221",
+"purpose": "To Food Service",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+825161.0,
+750000.0,
+750000.0,
+0.0
+],
+"kind": "line",
+"account": "5222-5229",
+"purpose": "To Other Special Revenue",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5230-5239",
+"purpose": "To Capital Projects",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5254",
+"purpose": "To Agency Funds",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5310",
+"purpose": "To Charter Schools",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5390",
+"purpose": "To Other Agencies",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5990",
+"purpose": "Supplemental Appropriation",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5992",
+"purpose": "Deficit Appropriation",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+2170370.0,
+1999628.0,
+2182045.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Fund Transfers Subtotal",
+"check": "ok"
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Fund Transfers",
+"values": [
+61846067.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Total Operating Budget Appropriations"
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Special Warrant Articles",
+"values": [
+0.0,
+60000.0
+],
+"kind": "line",
+"account": "2320-2399",
+"purpose": "All Other Administration",
+"article": "013",
+"purpose_note": "Petition Warrant Article: Performance Audit"
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Special Warrant Articles",
+"values": [
+9827000.0,
+0.0
+],
+"kind": "line",
+"account": "4500",
+"purpose": "Building Acquisition/Construction",
+"article": "003",
+"purpose_note": "Mast Way/Moharimet Renovation Expansion Project"
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Special Warrant Articles",
+"values": [
+245675.0,
+0.0
+],
+"kind": "line",
+"account": "5120",
+"purpose": "Debt Service - Interest",
+"article": "003",
+"purpose_note": "Mast Way/Moharimet Renovation Expansion Project"
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Special Warrant Articles",
+"values": [
+125000.0,
+0.0
+],
+"kind": "line",
+"account": "5252",
+"purpose": "To Expendable Trusts/Fiduciary Funds",
+"article": "007",
+"purpose_note": "Facilities Trust Fund \\"
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Special Warrant Articles",
+"values": [
+125000.0,
+0.0
+],
+"kind": "line",
+"account": "5252",
+"purpose": "To Expendable Trusts/Fiduciary Funds",
+"article": "008",
+"purpose_note": "Special Education Trust"
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Special Warrant Articles",
+"values": [
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5251",
+"purpose": "To Capital Reserve Fund",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Special Warrant Articles",
+"values": [
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5252",
+"purpose": "To Expendable Trust Fund",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Special Warrant Articles",
+"values": [
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5253",
+"purpose": "To Non-Expendable Trust Fund",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 18,
+"part": "appropriations",
+"section": "Special Warrant Articles",
+"values": [
+10322675.0,
+60000.0
+],
+"kind": "subtotal",
+"label": "Total Proposed Special Articles"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "appropriations",
+"section": "Individual Warrant Articles",
+"values": [
+77791.0,
+0.0
+],
+"kind": "line",
+"account": "1100-1199",
+"purpose": "Regular Programs",
+"article": "005",
+"purpose_note": "Approval of the ORPASS CBA"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "appropriations",
+"section": "Individual Warrant Articles",
+"values": [
+64136.0,
+0.0
+],
+"kind": "line",
+"account": "1100-1199",
+"purpose": "Regular Programs",
+"article": "006",
+"purpose_note": "Approval of the ORESPA CBA"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "appropriations",
+"section": "Individual Warrant Articles",
+"values": [
+466181.0,
+0.0
+],
+"kind": "line",
+"account": "1200-1298",
+"purpose": "Special Programs",
+"article": "005",
+"purpose_note": "Approval of the ORPASS CBA"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "appropriations",
+"section": "Individual Warrant Articles",
+"values": [
+149362.0,
+0.0
+],
+"kind": "line",
+"account": "2600-2699",
+"purpose": "Plant Operations and Maintenance",
+"article": "006",
+"purpose_note": "Approval of the ORESPA CBA"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "appropriations",
+"section": "Individual Warrant Articles",
+"values": [
+757470.0,
+0.0
+],
+"kind": "subtotal",
+"label": "Total Proposed Individual Articles"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Local Sources",
+"values": [
+3479495.0,
+3662258.0,
+3766556.0
+],
+"kind": "line",
+"account": "1300-1349",
+"purpose": "Tuition",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Local Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "1400-1449",
+"purpose": "Transportation Fees",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Local Sources",
+"values": [
+169404.0,
+150000.0,
+150000.0
+],
+"kind": "line",
+"account": "1500-1599",
+"purpose": "Earnings on Investments",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Local Sources",
+"values": [
+962285.0,
+1064628.0,
+1432045.0
+],
+"kind": "line",
+"account": "1600-1699",
+"purpose": "Food Service Sales",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Local Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "1700-1799",
+"purpose": "Student Activities",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Local Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "1800-1899",
+"purpose": "Community Services Activities",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Local Sources",
+"values": [
+202319.0,
+30000.0,
+39617.0
+],
+"kind": "line",
+"account": "1900-1999",
+"purpose": "Other Local Sources",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Local Sources",
+"values": [
+4813503.0,
+4906886.0,
+5388218.0
+],
+"kind": "subtotal",
+"label": "Local Sources Subtotal",
+"check": "ok"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "3210",
+"purpose": "School Building Aid",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "3215",
+"purpose": "Kindergarten Building Aid",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "3220",
+"purpose": "Kindergarten Aid",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+133198.0,
+182637.0,
+190000.0
+],
+"kind": "line",
+"account": "3230",
+"purpose": "Special Education Aid",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+12801.0,
+7500.0,
+7500.0
+],
+"kind": "line",
+"account": "3240-3249",
+"purpose": "Vocational Aid",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "3250",
+"purpose": "Adult Education",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+11007.0,
+15000.0,
+15000.0
+],
+"kind": "line",
+"account": "3260",
+"purpose": "Child Nutrition",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "3270",
+"purpose": "Driver Education",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+0.0,
+9617.0,
+0.0
+],
+"kind": "line",
+"account": "3290-3299",
+"purpose": "Other State Sources",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "State Sources",
+"values": [
+157006.0,
+214754.0,
+212500.0
+],
+"kind": "subtotal",
+"label": "State Sources Subtotal",
+"check": "ok"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Federal Sources",
+"values": [
+860557.0,
+750000.0,
+750000.0
+],
+"kind": "line",
+"account": "4100-4539",
+"purpose": "Federal Program Grants",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Federal Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4540",
+"purpose": "Vocational Education",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Federal Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4550",
+"purpose": "Adult Education",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Federal Sources",
+"values": [
+165624.0,
+170000.0,
+170000.0
+],
+"kind": "line",
+"account": "4560",
+"purpose": "Child Nutrition",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Federal Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4570",
+"purpose": "Disabilities Programs",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Federal Sources",
+"values": [
+195370.0,
+150000.0,
+150000.0
+],
+"kind": "line",
+"account": "4580",
+"purpose": "Medicaid Distribution",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Federal Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4590-4999",
+"purpose": "Other Federal Sources (non-4810)",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Federal Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "4810",
+"purpose": "Federal Forest Reserve",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 19,
+"part": "revenue",
+"section": "Federal Sources",
+"values": [
+1221551.0,
+1070000.0,
+1070000.0
+],
+"kind": "subtotal",
+"label": "Federal Sources Subtotal",
+"check": "ok"
+},
+{
+"report": 2026,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+9827000.0
+],
+"kind": "line",
+"account": "5110-5139",
+"purpose": "Sale of Bonds or Notes",
+"article": "003"
+},
+{
+"report": 2026,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5140",
+"purpose": "Reimbursement Anticipation Notes",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5094",
+"purpose": "lie las Service Special",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5222",
+"purpose": "Transfer from Other Special Revenue Funds",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5230",
+"purpose": "Transfer from Capital Project Funds",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5251",
+"purpose": "Transfer from Capital Reserve Funds",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5252",
+"purpose": "Transfer from Expendable Trust Funds",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5253",
+"purpose": "Transfer from Non-Expendable Trust Funds",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "5300-5699",
+"purpose": "Other Financing Sources",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+0.0
+],
+"kind": "line",
+"account": "9997",
+"purpose": "Supplemental Appropriation (Contra)",
+"article": null
+},
+{
+"report": 2026,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+250000.0
+],
+"kind": "line",
+"account": "9998",
+"purpose": "Amount Voted from Fund Balance 007,",
+"article": "008"
+},
+{
+"report": 2026,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+250000.0
+],
+"kind": "line",
+"account": "9999",
+"purpose": "Fund Balance to Reduce Taxes",
+"article": "004"
+},
+{
+"report": 2026,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+0.0,
+0.0,
+10327000.0
+],
+"kind": "subtotal",
+"label": "Other Financing Sources Subtotal",
+"check": "ok"
+},
+{
+"report": 2026,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+6192060.0,
+6191640.0,
+16997718.0
+],
+"kind": "subtotal",
+"label": "Total Estimated Revenues and Credits"
+},
+{
+"report": 2026,
+"pdf_page": 20,
+"part": "revenue",
+"section": "Other Financing Sources",
+"values": [
+72926212.0
+],
+"kind": "subtotal",
+"label": "Total Appropriations"
+}
+]
+}
