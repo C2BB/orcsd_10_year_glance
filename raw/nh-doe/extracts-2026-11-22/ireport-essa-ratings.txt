@@ -1,0 +1,16 @@
+ESSA ratings 1-4 (iReport ESSA - Indicators (District)), columns FY2018..FY2026 (DOE year labels; 2018 = 2017-18). *COVID = not rated, *N = suppressed (<11 students), - = not applicable
+HS.ach 3,3,*COVID,3,3,3,3,3,3
+HS.ccr 3,3,*COVID,3,3,2,3,4,4
+HS.grad 4,4,*COVID,4,4,4,4,4,4
+MO.ach 3,4,*COVID,4,4,4,3,4,4
+MO.el 4,3,*COVID,*N,*N,*N,*N,*N,*N
+MO.eq 1,3,*COVID,*COVID,2,3,1,1,3
+MO.gro 2,3,*COVID,*COVID,3,2,2,2,3
+MS.ach 4,3,*COVID,3,3,4,3,3,3
+MS.eq 2,2,*COVID,*COVID,3,3,3,2,3
+MS.gro 3,3,*COVID,*COVID,3,3,3,3,3
+MW.ach 4,4,*COVID,4,4,4,3,4,4
+MW.el *N,3,*COVID,*N,*N,*N,*N,*N,3
+MW.eq 3,4,*COVID,*COVID,2,4,3,3,4
+MW.gro 4,4,*COVID,*COVID,3,4,3,4,4
+HS=Oyster River High School, MS=Oyster River Middle School, MW=Mast Way School (K-4? as listed), MO=Moharimet School
