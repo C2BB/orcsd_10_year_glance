@@ -156,8 +156,8 @@ dash.calc('headline', {
   var sel = 7;
   var mode = 'nom';
   var MODES = { nom: { label: 'Nominal dollars', f: null }, cpi: { label: 'Northeast CPI-U', f: 'f_cpi', idx: 'cpi_ne', n: 'cpi_ne_months', nn: 12 }, eci: { label: 'education labor costs (ECI)', f: 'f_eci', idx: 'eci_edu', n: 'eci_quarters', nn: 4 } };
-  var MONEY = ['fb_tot', 'fb_un', 'fb_com', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
-  var NAMES = ['spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts'];
+  var MONEY = ['debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'fb_tot', 'fb_un', 'fb_com', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
+  var NAMES = ['spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts'];
 
   var SCH = [['High school', 'hs'], ['Middle school', 'ms'], ['Mast Way', 'mw'], ['Moharimet', 'mo']];
   function schLines(r, fld, fmt) {
@@ -1181,6 +1181,26 @@ dash.calc('headline', {
       return { lines: L, note: 'Audited general fund balances at June 30. Committed money is set aside for specific purposes such as the facilities and special education trusts and encumbrances. Unassigned balance can be used to lower the next tax rate. Source: ORCSD audited financial statements.' };
     }
   };
+  ROWS.debt = {
+    money: true,
+    aria: 'Long-term obligations at June 30: bonds and loans, and the total with the net pension and retiree health liabilities, by fiscal year',
+    domain: [0, 110000000], ticks: [0, 25000000, 50000000, 75000000, 100000000], axis: false,
+    tickFmt: function (v) { return v === 0 ? '$0' : '$' + (v / 1e6) + 'M'; },
+    series: [
+      { id: 'bonds', get: function (r) { return r.debt_bonds; }, alt: 'square' },
+      { id: 'tot', get: function (r) { return r.debt_total; }, main: true }
+    ],
+    label: function (r) {
+      if (r.debt_total == null) return nodata('Audit for this year not yet posted', 'debt_total', 'years', 'Pending');
+      return { big: moneyM(r.debt_total, 1), sub: 'Bonds, net pension and retiree health liabilities at June 30', delta: 'Bonds and loans ' + moneyM(r.debt_bonds, 1), tag: 'Audited', prov: false, src: 'years', field: 'debt_total' };
+    },
+    tip: function (r) {
+      if (r.debt_total == null) return { lines: [['Long-term obligations', 'not yet posted']], note: 'The audit for this year has not been posted. The district’s audits are on orcsd.org under Business Office.' };
+      var L = [['Bonds and loans payable', money(r.debt_bonds)], ['Net pension liability', money(r.debt_pension)], ['Net retiree health (OPEB) liability', money(r.debt_opeb)], ['Total', money(r.debt_total)], ['Total net position', money(r.netpos)]];
+      if (r.debt_int != null) L.push(['Interest expense for the year', money(r.debt_int)]);
+      return { lines: L, note: 'From the audited statement of net position at June 30. The pension liability is the district’s share of the NH Retirement System shortfall and the retiree health liability is an actuarial estimate; both move with market and assumption changes, not only with district decisions. Net position is negative because of those two liabilities. Source: ORCSD audited financial statements.' };
+    }
+  };
   ROWS.cls = {
     aria: 'Average class size in grades 1 to 4 at Mast Way and Moharimet compared with the New Hampshire average, by fiscal year',
     domain: [15, 22], ticks: [16, 18, 20], axis: false,
@@ -1398,6 +1418,7 @@ dash.calc('headline', {
   };
   ROWS.lvlenr.chg = { get: function (r) { return r.en_hs; }, kind: 'pct', note: 'high school' };
   ROWS.fb.chg = { get: function (r) { return r.fb_tot; }, kind: 'pct', note: 'total fund balance' };
+  ROWS.debt.chg = { get: function (r) { return r.debt_total; }, kind: 'pct', note: 'total obligations' };
   ROWS.cls.chg = { get: function (r) { return r.cs_d; }, kind: 'pct', note: 'average class size' };
   ROWS.sat.chg = { get: function (r) { return r.sat_tot; }, kind: 'pts', note: 'ORHS average' };
   ROWS.coll.chg = { get: function (r) { return r.col4; }, kind: 'pts', dec: true, note: 'four-year college' };

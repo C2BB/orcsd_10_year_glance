@@ -300,6 +300,17 @@ put('es_eq', per([2.0, 3.0, None, None, 2.33, 3.33, 2.33, 2.0, 3.33]))
 put('es_gro', per([3.0, 3.33, None, None, 3.0, 3.0, 2.67, 3.0, 3.33]))
 put("drop", {**RC["drop"], 2026: 0})  # FY26: iExplore dropout rate 0.00% (NH DOE)
 
+# Long-term obligations at June 30, from the audited statement of net position (page 14 of each audit; build/audit_extract.py -> build/audit_metrics.json)
+import json as _json, os as _os
+_AU = {int(y): v for y, v in _json.load(open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "audit_metrics.json"))).items()}
+def _au(k): return {y: v[k]["v"] for y, v in _AU.items() if k in v}
+put("debt_bonds", {y: int(_au("bonds_current")[y] + _au("bonds_noncurrent")[y]) for y in _AU})
+put("debt_pension", {y: int(v) for y, v in _au("net_pension").items()})
+put("debt_opeb", {y: int(v) for y, v in _au("net_opeb").items()})
+put("debt_total", {y: RC["debt_bonds"][y] + RC["debt_pension"][y] + RC["debt_opeb"][y] for y in _AU})
+put("netpos", {y: int(v) for y, v in _au("net_position").items()})
+put("debt_int", {y: int(v) for y, v in _au("interest_expense").items()})
+
 FIELDS = sorted(RC)
 def fields_for(y):
     return {k: RC[k].get(y) for k in FIELDS}

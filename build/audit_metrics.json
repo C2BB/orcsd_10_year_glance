@@ -1,0 +1,1232 @@
+{
+ "2018": {
+  "bonds_current": {
+   "pdf_page": 14,
+   "v": 1285000.0
+  },
+  "bonds_noncurrent": {
+   "pdf_page": 14,
+   "v": 5625000.0
+  },
+  "capital_assets": {
+   "pdf_page": 14,
+   "v": 36277715.0
+  },
+  "cash": {
+   "pdf_page": 14,
+   "v": 1943570.0
+  },
+  "change_net_position": {
+   "pdf_page": 15,
+   "v": -3023309.0
+  },
+  "charges_for_services": {
+   "pdf_page": 15,
+   "v": 699423.0
+  },
+  "exp_instruction": {
+   "pdf_page": 15,
+   "v": 26741387.0
+  },
+  "expenses_total": {
+   "pdf_page": 15,
+   "v": 46938003.0
+  },
+  "f_exp_business": {
+   "pdf_page": 18,
+   "v": 663706.0
+  },
+  "f_exp_gen_admin": {
+   "pdf_page": 18,
+   "v": 1272366.0
+  },
+  "f_exp_instr_staff": {
+   "pdf_page": 18,
+   "v": 945664.0
+  },
+  "f_exp_instruction": {
+   "pdf_page": 18,
+   "v": 25434406.0
+  },
+  "f_exp_operations": {
+   "pdf_page": 18,
+   "v": 8717494.0
+  },
+  "f_exp_school_admin": {
+   "pdf_page": 18,
+   "v": 1766207.0
+  },
+  "f_exp_student": {
+   "pdf_page": 18,
+   "v": 3776761.0
+  },
+  "f_exp_transport": {
+   "pdf_page": 18,
+   "v": 1984843.0
+  },
+  "f_expenditures_total": {
+   "pdf_page": 18,
+   "v": 47439189.0
+  },
+  "f_intergovernmental": {
+   "pdf_page": 18,
+   "v": 1456042.0
+  },
+  "f_property_taxes": {
+   "pdf_page": 18,
+   "v": 39046908.0
+  },
+  "f_revenues_total": {
+   "pdf_page": 18,
+   "v": 43914694.0
+  },
+  "f_tuition": {
+   "pdf_page": 18,
+   "v": 2246047.0
+  },
+  "gf_debt_service": {
+   "pdf_page": 18,
+   "v": 1588688.0
+  },
+  "gf_expenditures_total": {
+   "pdf_page": 18,
+   "v": 45906536.0
+  },
+  "gf_fb_assigned": {
+   "pdf_page": 16,
+   "v": 43305.0
+  },
+  "gf_fb_committed": {
+   "pdf_page": 16,
+   "v": 1493229.0
+  },
+  "gf_fb_nonspendable": {
+   "pdf_page": 16,
+   "v": 140083.0
+  },
+  "gf_fb_restricted": {
+   "pdf_page": 16,
+   "v": 181857.0
+  },
+  "gf_fb_total": {
+   "pdf_page": 16,
+   "v": 1864974.0
+  },
+  "gf_fb_unassigned": {
+   "pdf_page": 16,
+   "v": 188357.0
+  },
+  "gf_revenues_total": {
+   "pdf_page": 18,
+   "v": 42361060.0
+  },
+  "govfunds_fb_total": {
+   "pdf_page": 16,
+   "v": 2046831.0
+  },
+  "interest_expense": {
+   "pdf_page": 15,
+   "v": 283983.0
+  },
+  "investment_income": {
+   "pdf_page": 15,
+   "v": 16494.0
+  },
+  "net_inv_capital": {
+   "pdf_page": 14,
+   "v": 25129152.0
+  },
+  "net_opeb": {
+   "pdf_page": 14,
+   "v": 8418172.0
+  },
+  "net_pension": {
+   "pdf_page": 14,
+   "v": 32028173.0
+  },
+  "net_position": {
+   "pdf_page": 14,
+   "v": -8005985.0
+  },
+  "net_unrestricted": {
+   "pdf_page": 14,
+   "v": -33316994.0
+  },
+  "operating_grants": {
+   "pdf_page": 15,
+   "v": 819242.0
+  },
+  "property_taxes": {
+   "pdf_page": 15,
+   "v": 39046908.0
+  },
+  "tuition_revenue": {
+   "pdf_page": 15,
+   "v": 2246047.0
+  }
+ },
+ "2019": {
+  "bonds_current": {
+   "pdf_page": 14,
+   "v": 1285000.0
+  },
+  "bonds_noncurrent": {
+   "pdf_page": 14,
+   "v": 4340000.0
+  },
+  "capital_assets": {
+   "pdf_page": 14,
+   "v": 41295572.0
+  },
+  "cash": {
+   "pdf_page": 14,
+   "v": 2061146.0
+  },
+  "change_net_position": {
+   "pdf_page": 15,
+   "v": 1547584.0
+  },
+  "charges_for_services": {
+   "pdf_page": 15,
+   "v": 735021.0
+  },
+  "exp_instruction": {
+   "pdf_page": 15,
+   "v": 25572522.0
+  },
+  "expenses_total": {
+   "pdf_page": 15,
+   "v": 44660873.0
+  },
+  "f_exp_business": {
+   "pdf_page": 18,
+   "v": 668872.0
+  },
+  "f_exp_gen_admin": {
+   "pdf_page": 18,
+   "v": 1333040.0
+  },
+  "f_exp_instr_staff": {
+   "pdf_page": 18,
+   "v": 983541.0
+  },
+  "f_exp_instruction": {
+   "pdf_page": 18,
+   "v": 25971231.0
+  },
+  "f_exp_operations": {
+   "pdf_page": 18,
+   "v": 6731911.0
+  },
+  "f_exp_school_admin": {
+   "pdf_page": 18,
+   "v": 1794008.0
+  },
+  "f_exp_student": {
+   "pdf_page": 18,
+   "v": 3969221.0
+  },
+  "f_exp_transport": {
+   "pdf_page": 18,
+   "v": 2126677.0
+  },
+  "f_expenditures_total": {
+   "pdf_page": 18,
+   "v": 46493006.0
+  },
+  "f_intergovernmental": {
+   "pdf_page": 18,
+   "v": 2069619.0
+  },
+  "f_property_taxes": {
+   "pdf_page": 18,
+   "v": 39936778.0
+  },
+  "f_revenues_total": {
+   "pdf_page": 18,
+   "v": 46208457.0
+  },
+  "f_tuition": {
+   "pdf_page": 18,
+   "v": 2759591.0
+  },
+  "gf_debt_service": {
+   "pdf_page": 18,
+   "v": 1536593.0
+  },
+  "gf_expenditures_total": {
+   "pdf_page": 18,
+   "v": 44997335.0
+  },
+  "gf_fb_committed": {
+   "pdf_page": 16,
+   "v": 1557413.0
+  },
+  "gf_fb_nonspendable": {
+   "pdf_page": 16,
+   "v": 34137.0
+  },
+  "gf_fb_restricted": {
+   "pdf_page": 16,
+   "v": 216489.0
+  },
+  "gf_fb_total": {
+   "pdf_page": 16,
+   "v": 1718793.0
+  },
+  "gf_fb_unassigned": {
+   "pdf_page": 16,
+   "v": 127243.0
+  },
+  "gf_revenues_total": {
+   "pdf_page": 18,
+   "v": 44678154.0
+  },
+  "govfunds_fb_total": {
+   "pdf_page": 16,
+   "v": 1935282.0
+  },
+  "interest_expense": {
+   "pdf_page": 15,
+   "v": 260014.0
+  },
+  "investment_income": {
+   "pdf_page": 15,
+   "v": 92479.0
+  },
+  "net_inv_capital": {
+   "pdf_page": 14,
+   "v": 31585569.0
+  },
+  "net_opeb": {
+   "pdf_page": 14,
+   "v": 8045607.0
+  },
+  "net_pension": {
+   "pdf_page": 14,
+   "v": 33748138.0
+  },
+  "net_position": {
+   "pdf_page": 14,
+   "v": -2856161.0
+  },
+  "net_unrestricted": {
+   "pdf_page": 14,
+   "v": -34658219.0
+  },
+  "operating_grants": {
+   "pdf_page": 15,
+   "v": 1477239.0
+  },
+  "property_taxes": {
+   "pdf_page": 15,
+   "v": 39936778.0
+  },
+  "tuition_revenue": {
+   "pdf_page": 15,
+   "v": 2759591.0
+  }
+ },
+ "2020": {
+  "bonds_current": {
+   "pdf_page": 14,
+   "v": 1285000.0
+  },
+  "bonds_noncurrent": {
+   "pdf_page": 14,
+   "v": 3055000.0
+  },
+  "capital_assets": {
+   "pdf_page": 14,
+   "v": 46137095.0
+  },
+  "cash": {
+   "pdf_page": 14,
+   "v": 2012308.0
+  },
+  "change_net_position": {
+   "pdf_page": 15,
+   "v": 20823.0
+  },
+  "charges_for_services": {
+   "pdf_page": 15,
+   "v": 461032.0
+  },
+  "exp_instruction": {
+   "pdf_page": 15,
+   "v": 28855452.0
+  },
+  "expenses_total": {
+   "pdf_page": 15,
+   "v": 47127066.0
+  },
+  "f_debt_interest": {
+   "pdf_page": 18,
+   "v": 199134.0
+  },
+  "f_debt_principal": {
+   "pdf_page": 18,
+   "v": 1285000.0
+  },
+  "f_exp_business": {
+   "pdf_page": 18,
+   "v": 724676.0
+  },
+  "f_exp_gen_admin": {
+   "pdf_page": 18,
+   "v": 1475243.0
+  },
+  "f_exp_instr_staff": {
+   "pdf_page": 18,
+   "v": 1099563.0
+  },
+  "f_exp_instruction": {
+   "pdf_page": 18,
+   "v": 26928171.0
+  },
+  "f_exp_operations": {
+   "pdf_page": 18,
+   "v": 10471914.0
+  },
+  "f_exp_school_admin": {
+   "pdf_page": 18,
+   "v": 1805953.0
+  },
+  "f_exp_student": {
+   "pdf_page": 18,
+   "v": 4149069.0
+  },
+  "f_exp_transport": {
+   "pdf_page": 18,
+   "v": 2266648.0
+  },
+  "f_expenditures_total": {
+   "pdf_page": 18,
+   "v": 51827914.0
+  },
+  "f_intergovernmental": {
+   "pdf_page": 18,
+   "v": 1740782.0
+  },
+  "f_property_taxes": {
+   "pdf_page": 18,
+   "v": 41517104.0
+  },
+  "f_revenues_total": {
+   "pdf_page": 18,
+   "v": 47147889.0
+  },
+  "f_tuition": {
+   "pdf_page": 18,
+   "v": 2890842.0
+  },
+  "gf_debt_service": {
+   "pdf_page": 18,
+   "v": 1484134.0
+  },
+  "gf_expenditures_total": {
+   "pdf_page": 18,
+   "v": 45358673.0
+  },
+  "gf_fb_committed": {
+   "pdf_page": 16,
+   "v": 2322307.0
+  },
+  "gf_fb_nonspendable": {
+   "pdf_page": 16,
+   "v": 10050.0
+  },
+  "gf_fb_restricted": {
+   "pdf_page": 16,
+   "v": 164406.0
+  },
+  "gf_fb_total": {
+   "pdf_page": 16,
+   "v": 2746428.0
+  },
+  "gf_fb_unassigned": {
+   "pdf_page": 16,
+   "v": 414071.0
+  },
+  "gf_revenues_total": {
+   "pdf_page": 18,
+   "v": 45638152.0
+  },
+  "govfunds_fb_total": {
+   "pdf_page": 16,
+   "v": -1996587.0
+  },
+  "interest_expense": {
+   "pdf_page": 15,
+   "v": 256314.0
+  },
+  "investment_income": {
+   "pdf_page": 15,
+   "v": 81005.0
+  },
+  "net_inv_capital": {
+   "pdf_page": 14,
+   "v": 32861702.0
+  },
+  "net_opeb": {
+   "pdf_page": 14,
+   "v": 10424553.0
+  },
+  "net_pension": {
+   "pdf_page": 14,
+   "v": 33333582.0
+  },
+  "net_position": {
+   "pdf_page": 14,
+   "v": -2835338.0
+  },
+  "net_unrestricted": {
+   "pdf_page": 14,
+   "v": -35861446.0
+  },
+  "operating_grants": {
+   "pdf_page": 15,
+   "v": 1091868.0
+  },
+  "property_taxes": {
+   "pdf_page": 15,
+   "v": 41517104.0
+  },
+  "tuition_revenue": {
+   "pdf_page": 15,
+   "v": 2890842.0
+  }
+ },
+ "2021": {
+  "bonds_current": {
+   "pdf_page": 14,
+   "v": 1363328.0
+  },
+  "bonds_noncurrent": {
+   "pdf_page": 14,
+   "v": 26691672.0
+  },
+  "capital_assets": {
+   "pdf_page": 14,
+   "v": 70128080.0
+  },
+  "cash": {
+   "pdf_page": 14,
+   "v": 5562153.0
+  },
+  "change_net_position": {
+   "pdf_page": 15,
+   "v": -3672522.0
+  },
+  "charges_for_services": {
+   "pdf_page": 15,
+   "v": 39617.0
+  },
+  "exp_instruction": {
+   "pdf_page": 15,
+   "v": 32797008.0
+  },
+  "expenses_total": {
+   "pdf_page": 15,
+   "v": 52400328.0
+  },
+  "f_capital_outlay": {
+   "pdf_page": 18,
+   "v": 25256290.0
+  },
+  "f_charges": {
+   "pdf_page": 18,
+   "v": 39617.0
+  },
+  "f_debt_interest": {
+   "pdf_page": 18,
+   "v": 503108.0
+  },
+  "f_debt_principal": {
+   "pdf_page": 18,
+   "v": 1285000.0
+  },
+  "f_exp_business": {
+   "pdf_page": 18,
+   "v": 540026.0
+  },
+  "f_exp_gen_admin": {
+   "pdf_page": 18,
+   "v": 1587017.0
+  },
+  "f_exp_instr_staff": {
+   "pdf_page": 18,
+   "v": 852809.0
+  },
+  "f_exp_instruction": {
+   "pdf_page": 18,
+   "v": 28160000.0
+  },
+  "f_exp_operations": {
+   "pdf_page": 18,
+   "v": 4579214.0
+  },
+  "f_exp_school_admin": {
+   "pdf_page": 18,
+   "v": 1895787.0
+  },
+  "f_exp_student": {
+   "pdf_page": 18,
+   "v": 4474807.0
+  },
+  "f_exp_transport": {
+   "pdf_page": 18,
+   "v": 1809552.0
+  },
+  "f_expenditures_total": {
+   "pdf_page": 18,
+   "v": 72795895.0
+  },
+  "f_intergovernmental": {
+   "pdf_page": 18,
+   "v": 2127326.0
+  },
+  "f_property_taxes": {
+   "pdf_page": 18,
+   "v": 42830263.0
+  },
+  "f_revenues_total": {
+   "pdf_page": 18,
+   "v": 48727806.0
+  },
+  "f_tuition": {
+   "pdf_page": 18,
+   "v": 3237706.0
+  },
+  "gf_capital_outlay": {
+   "pdf_page": 18,
+   "v": 503773.0
+  },
+  "gf_debt_service": {
+   "pdf_page": 18,
+   "v": 1788108.0
+  },
+  "gf_expenditures_total": {
+   "pdf_page": 18,
+   "v": 46212519.0
+  },
+  "gf_fb_assigned": {
+   "pdf_page": 16,
+   "v": 266967.0
+  },
+  "gf_fb_committed": {
+   "pdf_page": 16,
+   "v": 2575093.0
+  },
+  "gf_fb_nonspendable": {
+   "pdf_page": 16,
+   "v": 20200.0
+  },
+  "gf_fb_restricted": {
+   "pdf_page": 16,
+   "v": 125000.0
+  },
+  "gf_fb_total": {
+   "pdf_page": 16,
+   "v": 3816193.0
+  },
+  "gf_fb_unassigned": {
+   "pdf_page": 16,
+   "v": 828933.0
+  },
+  "gf_revenues_total": {
+   "pdf_page": 18,
+   "v": 47004696.0
+  },
+  "govfunds_fb_total": {
+   "pdf_page": 16,
+   "v": -501589.0
+  },
+  "interest_expense": {
+   "pdf_page": 15,
+   "v": 739148.0
+  },
+  "investment_income": {
+   "pdf_page": 15,
+   "v": 113959.0
+  },
+  "net_inv_capital": {
+   "pdf_page": 14,
+   "v": 36029500.0
+  },
+  "net_opeb": {
+   "pdf_page": 14,
+   "v": 11185614.0
+  },
+  "net_pension": {
+   "pdf_page": 14,
+   "v": 45445639.0
+  },
+  "net_position": {
+   "pdf_page": 14,
+   "v": -6126339.0
+  },
+  "net_unrestricted": {
+   "pdf_page": 14,
+   "v": -42606667.0
+  },
+  "operating_grants": {
+   "pdf_page": 15,
+   "v": 1444693.0
+  },
+  "property_taxes": {
+   "pdf_page": 15,
+   "v": 42830263.0
+  },
+  "tuition_revenue": {
+   "pdf_page": 15,
+   "v": 3237706.0
+  }
+ },
+ "2022": {
+  "bonds_current": {
+   "pdf_page": 14,
+   "v": 1867523.0
+  },
+  "bonds_noncurrent": {
+   "pdf_page": 14,
+   "v": 52676642.0
+  },
+  "capital_assets": {
+   "pdf_page": 14,
+   "v": 80566771.0
+  },
+  "cash": {
+   "pdf_page": 14,
+   "v": 8842805.0
+  },
+  "change_net_position": {
+   "pdf_page": 15,
+   "v": -2708220.0
+  },
+  "charges_for_services": {
+   "pdf_page": 15,
+   "v": 181945.0
+  },
+  "exp_instruction": {
+   "pdf_page": 15,
+   "v": 30417289.0
+  },
+  "expenses_total": {
+   "pdf_page": 15,
+   "v": 48796346.0
+  },
+  "f_capital_outlay": {
+   "pdf_page": 18,
+   "v": 15044473.0
+  },
+  "f_charges": {
+   "pdf_page": 18,
+   "v": 181945.0
+  },
+  "f_debt_interest": {
+   "pdf_page": 18,
+   "v": 1168999.0
+  },
+  "f_debt_principal": {
+   "pdf_page": 18,
+   "v": 1285000.0
+  },
+  "f_exp_business": {
+   "pdf_page": 18,
+   "v": 294652.0
+  },
+  "f_exp_gen_admin": {
+   "pdf_page": 18,
+   "v": 1665982.0
+  },
+  "f_exp_instr_staff": {
+   "pdf_page": 18,
+   "v": 940941.0
+  },
+  "f_exp_instruction": {
+   "pdf_page": 18,
+   "v": 30058497.0
+  },
+  "f_exp_operations": {
+   "pdf_page": 18,
+   "v": 5358414.0
+  },
+  "f_exp_school_admin": {
+   "pdf_page": 18,
+   "v": 2028406.0
+  },
+  "f_exp_student": {
+   "pdf_page": 18,
+   "v": 4910036.0
+  },
+  "f_exp_transport": {
+   "pdf_page": 18,
+   "v": 2344528.0
+  },
+  "f_expenditures_total": {
+   "pdf_page": 18,
+   "v": 66640754.0
+  },
+  "f_intergovernmental": {
+   "pdf_page": 18,
+   "v": 2960030.0
+  },
+  "f_property_taxes": {
+   "pdf_page": 18,
+   "v": 43680588.0
+  },
+  "f_revenues_total": {
+   "pdf_page": 18,
+   "v": 50590615.0
+  },
+  "f_tuition": {
+   "pdf_page": 18,
+   "v": 3266130.0
+  },
+  "gf_capital_outlay": {
+   "pdf_page": 18,
+   "v": 519534.0
+  },
+  "gf_debt_service": {
+   "pdf_page": 18,
+   "v": 2453999.0
+  },
+  "gf_expenditures_total": {
+   "pdf_page": 18,
+   "v": 48086313.0
+  },
+  "gf_fb_assigned": {
+   "pdf_page": 16,
+   "v": 93860.0
+  },
+  "gf_fb_committed": {
+   "pdf_page": 16,
+   "v": 2343483.0
+  },
+  "gf_fb_nonspendable": {
+   "pdf_page": 16,
+   "v": 13761.0
+  },
+  "gf_fb_restricted": {
+   "pdf_page": 16,
+   "v": 125000.0
+  },
+  "gf_fb_total": {
+   "pdf_page": 16,
+   "v": 3706994.0
+  },
+  "gf_fb_unassigned": {
+   "pdf_page": 16,
+   "v": 1130890.0
+  },
+  "gf_revenues_total": {
+   "pdf_page": 18,
+   "v": 47793516.0
+  },
+  "govfunds_fb_total": {
+   "pdf_page": 16,
+   "v": 8479602.0
+  },
+  "interest_expense": {
+   "pdf_page": 15,
+   "v": 1369367.0
+  },
+  "net_inv_capital": {
+   "pdf_page": 14,
+   "v": 29848923.0
+  },
+  "net_opeb": {
+   "pdf_page": 14,
+   "v": 7050856.0
+  },
+  "net_pension": {
+   "pdf_page": 14,
+   "v": 32066870.0
+  },
+  "net_position": {
+   "pdf_page": 14,
+   "v": -8834559.0
+  },
+  "net_unrestricted": {
+   "pdf_page": 14,
+   "v": -39586363.0
+  },
+  "operating_grants": {
+   "pdf_page": 15,
+   "v": 2202501.0
+  },
+  "property_taxes": {
+   "pdf_page": 15,
+   "v": 43680588.0
+  },
+  "tuition_revenue": {
+   "pdf_page": 15,
+   "v": 3266130.0
+  }
+ },
+ "2023": {
+  "bonds_current": {
+   "pdf_page": 14,
+   "v": 1470843.0
+  },
+  "bonds_noncurrent": {
+   "pdf_page": 14,
+   "v": 51364229.0
+  },
+  "capital_assets": {
+   "pdf_page": 13,
+   "v": 82905988.0
+  },
+  "cash": {
+   "pdf_page": 13,
+   "v": 5740218.0
+  },
+  "change_net_position": {
+   "pdf_page": 15,
+   "v": 907035.0
+  },
+  "charges_for_services": {
+   "pdf_page": 15,
+   "v": 890735.0
+  },
+  "exp_instruction": {
+   "pdf_page": 15,
+   "v": 29519330.0
+  },
+  "expenses_total": {
+   "pdf_page": 15,
+   "v": 51832909.0
+  },
+  "f_capital_outlay": {
+   "pdf_page": 18,
+   "v": 3311444.0
+  },
+  "f_charges": {
+   "pdf_page": 18,
+   "v": 890735.0
+  },
+  "f_debt_interest": {
+   "pdf_page": 18,
+   "v": 1474409.0
+  },
+  "f_debt_principal": {
+   "pdf_page": 18,
+   "v": 1170000.0
+  },
+  "f_exp_business": {
+   "pdf_page": 18,
+   "v": 780549.0
+  },
+  "f_exp_gen_admin": {
+   "pdf_page": 18,
+   "v": 1700590.0
+  },
+  "f_exp_instr_staff": {
+   "pdf_page": 18,
+   "v": 1402275.0
+  },
+  "f_exp_instruction": {
+   "pdf_page": 18,
+   "v": 29527092.0
+  },
+  "f_exp_operations": {
+   "pdf_page": 18,
+   "v": 6147607.0
+  },
+  "f_exp_school_admin": {
+   "pdf_page": 18,
+   "v": 2170255.0
+  },
+  "f_exp_student": {
+   "pdf_page": 18,
+   "v": 5159746.0
+  },
+  "f_exp_transport": {
+   "pdf_page": 18,
+   "v": 2414102.0
+  },
+  "f_expenditures_total": {
+   "pdf_page": 18,
+   "v": 56884997.0
+  },
+  "f_intergovernmental": {
+   "pdf_page": 18,
+   "v": 2406960.0
+  },
+  "f_property_taxes": {
+   "pdf_page": 18,
+   "v": 45300157.0
+  },
+  "f_revenues_total": {
+   "pdf_page": 18,
+   "v": 52739945.0
+  },
+  "f_tuition": {
+   "pdf_page": 18,
+   "v": 3249457.0
+  },
+  "gf_capital_outlay": {
+   "pdf_page": 18,
+   "v": 419728.0
+  },
+  "gf_debt_service": {
+   "pdf_page": 18,
+   "v": 2644409.0
+  },
+  "gf_expenditures_total": {
+   "pdf_page": 18,
+   "v": 50842707.0
+  },
+  "gf_fb_committed": {
+   "pdf_page": 16,
+   "v": 2543657.0
+  },
+  "gf_fb_nonspendable": {
+   "pdf_page": 16,
+   "v": 44692.0
+  },
+  "gf_fb_restricted": {
+   "pdf_page": 16,
+   "v": 0.0
+  },
+  "gf_fb_total": {
+   "pdf_page": 16,
+   "v": 3343147.0
+  },
+  "gf_fb_unassigned": {
+   "pdf_page": 16,
+   "v": 754798.0
+  },
+  "gf_revenues_total": {
+   "pdf_page": 18,
+   "v": 50278360.0
+  },
+  "govfunds_fb_total": {
+   "pdf_page": 16,
+   "v": 4535050.0
+  },
+  "interest_expense": {
+   "pdf_page": 15,
+   "v": 1253326.0
+  },
+  "investment_income": {
+   "pdf_page": 15,
+   "v": 154638.0
+  },
+  "net_inv_capital": {
+   "pdf_page": 14,
+   "v": 30306016.0
+  },
+  "net_opeb": {
+   "pdf_page": 14,
+   "v": 6709625.0
+  },
+  "net_pension": {
+   "pdf_page": 14,
+   "v": 39703339.0
+  },
+  "net_position": {
+   "pdf_page": 14,
+   "v": -7927524.0
+  },
+  "net_unrestricted": {
+   "pdf_page": 14,
+   "v": -39425443.0
+  },
+  "operating_grants": {
+   "pdf_page": 15,
+   "v": 1454169.0
+  },
+  "property_taxes": {
+   "pdf_page": 15,
+   "v": 45300157.0
+  },
+  "tuition_revenue": {
+   "pdf_page": 15,
+   "v": 3249457.0
+  }
+ },
+ "2024": {
+  "bonds_current": {
+   "pdf_page": 14,
+   "v": 2069102.0
+  },
+  "bonds_noncurrent": {
+   "pdf_page": 14,
+   "v": 49295126.0
+  },
+  "capital_assets": {
+   "pdf_page": 13,
+   "v": 80982868.0
+  },
+  "cash": {
+   "pdf_page": 13,
+   "v": 6533104.0
+  },
+  "change_net_position": {
+   "pdf_page": 15,
+   "v": 9921.0
+  },
+  "charges_for_services": {
+   "pdf_page": 15,
+   "v": 995472.0
+  },
+  "exp_instruction": {
+   "pdf_page": 15,
+   "v": 30557963.0
+  },
+  "expenses_total": {
+   "pdf_page": 15,
+   "v": 54025439.0
+  },
+  "f_capital_outlay": {
+   "pdf_page": 18,
+   "v": 434990.0
+  },
+  "f_charges": {
+   "pdf_page": 18,
+   "v": 995472.0
+  },
+  "f_debt_interest": {
+   "pdf_page": 18,
+   "v": 1431117.0
+  },
+  "f_debt_principal": {
+   "pdf_page": 18,
+   "v": 796800.0
+  },
+  "f_exp_business": {
+   "pdf_page": 18,
+   "v": 821655.0
+  },
+  "f_exp_gen_admin": {
+   "pdf_page": 18,
+   "v": 1881897.0
+  },
+  "f_exp_instr_staff": {
+   "pdf_page": 18,
+   "v": 1514507.0
+  },
+  "f_exp_instruction": {
+   "pdf_page": 18,
+   "v": 29631715.0
+  },
+  "f_exp_operations": {
+   "pdf_page": 18,
+   "v": 5633866.0
+  },
+  "f_exp_school_admin": {
+   "pdf_page": 18,
+   "v": 2190200.0
+  },
+  "f_exp_student": {
+   "pdf_page": 18,
+   "v": 5752144.0
+  },
+  "f_exp_transport": {
+   "pdf_page": 18,
+   "v": 2413497.0
+  },
+  "f_expenditures_total": {
+   "pdf_page": 18,
+   "v": 54173657.0
+  },
+  "f_intergovernmental": {
+   "pdf_page": 18,
+   "v": 1495123.0
+  },
+  "f_property_taxes": {
+   "pdf_page": 18,
+   "v": 47150362.0
+  },
+  "f_revenues_total": {
+   "pdf_page": 18,
+   "v": 54035358.0
+  },
+  "f_tuition": {
+   "pdf_page": 18,
+   "v": 3454490.0
+  },
+  "gf_capital_outlay": {
+   "pdf_page": 18,
+   "v": 418857.0
+  },
+  "gf_debt_service": {
+   "pdf_page": 18,
+   "v": 2227917.0
+  },
+  "gf_expenditures_total": {
+   "pdf_page": 18,
+   "v": 51188843.0
+  },
+  "gf_fb_committed": {
+   "pdf_page": 16,
+   "v": 3279007.0
+  },
+  "gf_fb_nonspendable": {
+   "pdf_page": 16,
+   "v": 31363.0
+  },
+  "gf_fb_restricted": {
+   "pdf_page": 16,
+   "v": 0.0
+  },
+  "gf_fb_total": {
+   "pdf_page": 16,
+   "v": 3629203.0
+  },
+  "gf_fb_unassigned": {
+   "pdf_page": 16,
+   "v": 318833.0
+  },
+  "gf_revenues_total": {
+   "pdf_page": 18,
+   "v": 51474899.0
+  },
+  "govfunds_fb_total": {
+   "pdf_page": 16,
+   "v": 4396751.0
+  },
+  "interest_expense": {
+   "pdf_page": 15,
+   "v": 1302409.0
+  },
+  "investment_income": {
+   "pdf_page": 15,
+   "v": 322875.0
+  },
+  "net_inv_capital": {
+   "pdf_page": 14,
+   "v": 29652285.0
+  },
+  "net_opeb": {
+   "pdf_page": 14,
+   "v": 5699132.0
+  },
+  "net_pension": {
+   "pdf_page": 14,
+   "v": 39214679.0
+  },
+  "net_position": {
+   "pdf_page": 14,
+   "v": -7917603.0
+  },
+  "net_unrestricted": {
+   "pdf_page": 14,
+   "v": -38337436.0
+  },
+  "operating_grants": {
+   "pdf_page": 15,
+   "v": 1031958.0
+  },
+  "property_taxes": {
+   "pdf_page": 15,
+   "v": 47150362.0
+  },
+  "tuition_revenue": {
+   "pdf_page": 15,
+   "v": 3454490.0
+  }
+ }
+}
