@@ -147,7 +147,7 @@ _efa = {"efa_dur": 52.0, "efa_lee": 30.0, "efa_mad": 20.0, "efa_aid": 533277.0}
 for _k, _v in _efa.items():
     RC[_k][2027] = _v
 # School Safety Data Collection (NH DOE), district totals over Mast Way, Moharimet, Middle, High (and preschool where listed)
-put("truant", per([58, 93, 163, 165, 101, 47, 29, 105]))
+put("truant", per([58, 93, 163, 165, 101, 47, 29, 105]))  # Oyster River schools (SAU 5, district 423); reproduced by build/nh_truancy.py
 put("iss",     per([43, 23, 22, 3, 25, 40, 59, 55]))
 put("oss",     per([19, 23, 5, 1, 14, 14, 18, 14]))
 put("expel",   per([0, 0, 0, 0, 0, 0, 0, 0]))
@@ -161,8 +161,8 @@ put("weap",    per([2, 2, 1, 0, 0, 2, 0, 0]))
 put("drug",    per([34, 8, 2, 0, 6, 2, 1, 2]))
 put("alc",     per([0, 0, 0, 1, 0, 0, 1, 1]))
 put("vio_oth", per([1, 0, 0, 0, 1, 1, 0, 0]))
-put("restr",   per([0, 0, 0, 0, 0, 34, 0, 3]))
-put("seclu",   per([0, 0, 0, 0, 0, 0, 13, 23]))
+put("restr",   per([0, 0, 0, 0, 0, 34, 0, 3, 1]))  # FY26: NH DOE corrected restraint and seclusion report SY2025-26 (Nov 17, 2026): Mast Way 1
+put("seclu",   per([0, 0, 0, 0, 0, 0, 13, 23, 1]))  # FY26: Mast Way 1 seclusion; FY18-22, FY23 (34) and FY25 also match the DOE annual report PDFs in raw/nh-doe
 
 put("vote_y", per([1516, 789, 1047, 2720, 1584, 2205, 894, 1208, 1164, 1897]))
 put("vote_n", per([263, 282, 504, 462, 435, 689, 303, 415, 551, 1110]))
@@ -228,6 +228,37 @@ put('exp_doe', per([92.59, 90.77, 92.42, 93.85, 89.5, 92.54, 89.45, 86.7, 89.73]
 put('exp_doe_nh', per([85.79, 85.74, 85.06, 84.95, 84.55, 83.78, 83.54, 83.68, 83.36]))
 put('nts', per([None, None, None, 16.84, 17.99, 16.71, 15.49, 14.36, 18.95]))
 put('nts_nh', per([None, None, None, 22.18, 23.45, 24.8, 22.78, 21.81, 21.05]))
+# Central-office pay: NH DOE 'Salaries of superintendents, assistant superintendents and business administrators' files (FY18-FY26; FY26 is the DOE's preliminary file).
+# Reproduced by build/admin_pay.py (reads raw/nh-doe/*salaries*, *admin-sal*). Oyster River = SAU #5. NH median = median of SAUs (ID < 200) that listed a figure that year; n = how many.
+put('co_sup', per([163017, 167908, 172945, 178133, 178133, 192651, 200357, 210000, 210000]))
+put('co_sup_med', per([123600, 127154, 132000, 132700, 134239, 139467, 145249, 148500, 147000]))
+put('co_sup_n', per([95, 96, 89, 99, 92, 98, 95, 91, 101]))
+put('co_sup_rk', per([4, 2, 2, 1, 1, 1, 1, 1, 1]))
+put('co_asst', per([118990, 122560, 128560, 132417, 136390, 143210, 148938, 171000, 171000]))
+put('co_asst_med', per([110527, 114900, 117760, 120391.5, 130203, 130593, 133150, 135290.5, 136500]))
+put('co_asst_n', per([42, 40, 37, 42, 21, 40, 38, 44, 43]))
+put('co_asst_rk', per([10, 9, 5, 5, 3, 3, 4, 1, 1]))
+put('co_ba', per([110373, 113684, 118231, 121778, 125431, 131703, 125000, 139000, 125000]))
+put('co_ba_med', per([92000, 93840, 98066.44, 100477.5, 106954, 110000, 111240, 116901, 117210]))
+put('co_ba_n', per([91, 91, 82, 98, 53, 81, 93, 91, 98]))
+put('co_ba_rk', per([15, 14, 13, 13, 9, 8, 25, 10, 31]))
+# Top of the teacher salary schedule (Oyster River vs NH average of districts), DOE 'Teacher Salary Schedule' files; no 2022-23 file found. Reproduced by build/teacher_sched.py
+put('ts_ma_max', per([74639, 75013, 75388, 77742, 78519, None, 80098, 80899, 84401]))
+put('ts_ma_max_nh', per([64450, 65332, 66355, 66866, 68313, None, 70903, 73797, 75633]))
+put('ts_ba_max', per([68206, 68547, 68890, 71179, 71891, None, 73336, 74069, 77062]))
+put('ts_ba_max_nh', per([57243, 57778, 59001, 59938, 60841, None, 63119, 65818, 68119]))
+put('ts_ma_steps', per([14, 14, 14, 15, 15, None, 15, 15, 13]))
+put('ts_ma_n', per([93, 87, 88, 96, 94, None, 100, 94, 99]))
+# NH statewide shares (all districts), DOE 'State Summary Revenue and Expenditures of School Districts' FY18-FY25; reproduced by build/nh_summary.py
+put('nh_adm_sh', per([10.452, 10.432, 10.687, 10.696, 10.447, 10.535, 10.675, 10.845]))
+put('nh_spec_sh', per([19.654, 19.665, 19.895, 19.278, 19.203, 19.349, 19.715, 20.362]))
+put('nh_instr_sh', per([63.106, 62.855, 62.865, 62.165, 61.546, 61.126, 60.472, 60.532]))
+put('nh_local_sh', per([61.507, 62.131, 62.561, 60.681, 60.048, 61.435, 60.924, 63.524]))
+put('nh_state_sh', per([31.609, 31.152, 31.444, 30.907, 29.452, 28.313, 28.675, 28.193]))
+put('nh_fed_sh', per([5.344, 5.115, 4.82, 7.134, 8.887, 8.705, 8.412, 6.034]))
+put('nh_plant_sh', per([8.027, 8.23, 8.027, 8.653, 8.318, 8.884, 9.285, 8.977]))
+put('nh_trans_sh', per([4.438, 4.517, 4.139, 3.998, 4.548, 4.826, 5.111, 5.361]))
+put('nh_debt_sh', per([1.479, 1.419, 1.354, 1.199, 1.139, 1.128, 1.132, 1.049]))
 put('tts', per([None, None, None, 0.63, 0.66, 0.63, 0.6, 0.59, 0.64]))
 put('tts_nh', per([None, None, None, 0.67, 0.68, 0.68, 0.67, 0.67, 0.66]))
 # FTE staff by category, NH DOE iPlatform "Full Time Equivalent Staff Count by District" (ReportID 38), Oyster River Coop, Oct 1 counts
@@ -248,7 +279,7 @@ put('incl_sep_nh', per([2.84, None, None, 2.46, 1.95, 1.52, 1.24, 1.1]))
 put('iss_nh', per([3.62, 3.72, 2.56, 0.89, 3.22, 3.48, 3.67, 3.29, 2.9]))
 put('oss_nh', per([3.98, 4.15, 3.03, 1.37, 3.98, 4.12, 4.11, 4.41, 4.05]))
 # NH habitual truancy: sum of habitually truant students over sum of school enrollment, all NH schools in the DOE School Safety workbooks (2017-18 to 2024-25), per 100 students
-put('trunt_nh', per([10.4, 13.94, 11.19, 17.14, 17.23, 16.41, 17.12, 18.79]))
+put('trunt_nh', per([10.4, 13.94, 11.25, 17.14, 17.23, 16.41, 17.12, 18.79]))  # reproduced by build/nh_truancy.py (FY20 corrected from 11.19 to 11.25 on 2026-11-23)
 # State ESSA ratings 1-4 per school (iReport ESSA - Indicators (District)); None = not rated (COVID years), suppressed (<11 students) or not applicable
 put('es_hs_ach', per([3, 3, None, 3, 3, 3, 3, 3, 3]))
 put('es_hs_ccr', per([3, 3, None, 3, 3, 2, 3, 4, 4]))

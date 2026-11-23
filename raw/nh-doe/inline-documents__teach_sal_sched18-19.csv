@@ -1,0 +1,786 @@
+,,,,,,,3/29/2019,
+"New Hampshire Department of Education
+
+
+",,,,,,,,
+"Division of Education Analytics and Resources, Bureau of Educational Statistics",,,,,,,,
+"101 Pleasant Street, Concord NH 03301-3852",,,,,,,,
+Telephone:(603) 271-2778 Fax: (603) 271-3875,,,,,,,,
+,,,,,,,,
+New Hampshire School Districts and Public Academies,,,,,,,,
+ Teacher Salary Schedules 2018-2019,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+SAU ID,SAU Name,District ID,District Name,Degree Type,Minimum Salary ($),Maximum Salary ($),Number of Steps,Same Schedule
+1,Contoocook Valley SAU Office,112,Contoocook Valley,BA," 36,347 "," 55,648 ",17,
+1,Contoocook Valley SAU Office,112,Contoocook Valley,BA15," 37,256 "," 57,016 ",17,
+1,Contoocook Valley SAU Office,112,Contoocook Valley,BA30," 38,164 "," 59,929 ",18,
+1,Contoocook Valley SAU Office,112,Contoocook Valley,MA," 39,875 "," 65,942 ",21,
+1,Contoocook Valley SAU Office,112,Contoocook Valley,MA15," 40,784 "," 67,426 ",21,
+1,Contoocook Valley SAU Office,112,Contoocook Valley,MA30," 41,691 "," 70,746 ",21,
+2,Inter-Lakes Cooperative SAU Office,23,Ashland,BA," 37,118 "," 60,925 ",16,
+2,Inter-Lakes Cooperative SAU Office,23,Ashland,BA15," 38,416 "," 63,055 ",16,
+2,Inter-Lakes Cooperative SAU Office,23,Ashland,MA," 39,955 "," 65,579 ",16,
+2,Inter-Lakes Cooperative SAU Office,23,Ashland,MA15," 41,353 "," 67,874 ",16,
+2,Inter-Lakes Cooperative SAU Office,269,Inter-Lakes Cooperative,BA," 40,898 "," 92,680 ",54,
+2,Inter-Lakes Cooperative SAU Office,269,Inter-Lakes Cooperative,MA," 46,207 "," 97,988 ",54,
+2,Inter-Lakes Cooperative SAU Office,269,Inter-Lakes Cooperative,MA30," 48,861 "," 100,643 ",54,
+3,Berlin SAU Office,51,Berlin,BA," 38,002 "," 66,895 ",16,
+3,Berlin SAU Office,51,Berlin,BA15," 39,522 "," 68,415 ",16,
+3,Berlin SAU Office,51,Berlin,MA," 41,042 "," 69,935 ",16,
+3,Berlin SAU Office,51,Berlin,MA15," 42,562 "," 71,455 ",16,
+3,Berlin SAU Office,51,Berlin,MA30," 44,082 "," 72,975 ",16,
+4,Newfound Area SAU Office,388,Newfound Area ,BA," 35,755 "," 57,877 ",15,
+4,Newfound Area SAU Office,388,Newfound Area ,BA15," 36,828 "," 59,613 ",15,
+4,Newfound Area SAU Office,388,Newfound Area ,MA," 37,933 "," 61,401 ",15,
+4,Newfound Area SAU Office,388,Newfound Area ,MA15," 39,071 "," 63,243 ",15,
+4,Newfound Area SAU Office,388,Newfound Area ,MA30," 40,242 "," 65,141 ",15,
+5,Oyster River SAU Office,423,Oyster River Coop,BA," 40,725 "," 68,547 ",14,
+5,Oyster River SAU Office,423,Oyster River Coop,BA30," 42,786 "," 72,848 ",14,
+5,Oyster River SAU Office,423,Oyster River Coop,MA," 43,821 "," 75,013 ",14,
+5,Oyster River SAU Office,423,Oyster River Coop,MA30," 45,881 "," 81,806 ",15,
+6,Claremont SAU Office,101,Claremont,BA," 36,228 "," 56,428 ",17,
+6,Claremont SAU Office,101,Claremont,BA15," 37,138 "," 57,864 ",17,
+6,Claremont SAU Office,101,Claremont,BA30," 37,138 "," 57,864 ",17,**
+6,Claremont SAU Office,101,Claremont,MA," 38,071 "," 59,334 ",17,**
+6,Claremont SAU Office,101,Claremont,MA15," 39,030 "," 60,845 ",17,**
+6,Claremont SAU Office,101,Claremont,MA30," 39,030 "," 60,845 ",17,**
+6,Claremont SAU Office,539,Unity,BA," 36,559 "," 55,303 ",22,**
+6,Claremont SAU Office,539,Unity,BA15," 37,201 "," 55,981 ",22,**
+6,Claremont SAU Office,539,Unity,BA30," 37,201 "," 55,981 ",22,
+6,Claremont SAU Office,539,Unity,MA," 38,230 "," 57,045 ",22,
+6,Claremont SAU Office,539,Unity,MA15," 40,116 "," 58,930 ",22,
+6,Claremont SAU Office,539,Unity,MA30," 41,838 "," 60,654 ",22,
+9,Conway SAU Office,35,Bartlett,BA," 33,000 "," 43,500 ",8,
+9,Conway SAU Office,35,Bartlett,BA15," 34,000 "," 44,500 ",8,
+9,Conway SAU Office,35,Bartlett,BA30," 34,750 "," 46,750 ",9,**
+9,Conway SAU Office,35,Bartlett,MA," 35,300 "," 48,800 ",10,**
+9,Conway SAU Office,35,Bartlett,MA15," 35,850 "," 49,350 ",10,**
+9,Conway SAU Office,35,Bartlett,MA30," 36,400 "," 49,900 ",10,**
+9,Conway SAU Office,113,Conway,BA," 35,800 "," 43,090 ",10,**
+9,Conway SAU Office,113,Conway,BA15," 37,089 "," 44,641 ",10,**
+9,Conway SAU Office,113,Conway,BA30," 37,948 "," 45,675 ",10,
+9,Conway SAU Office,113,Conway,MA," 38,378 "," 47,800 ",12,
+9,Conway SAU Office,113,Conway,MA30," 40,168 "," 50,030 ",12,
+9,Conway SAU Office,271,Jackson,BA," 37,500 "," 51,000 ",10,
+9,Conway SAU Office,271,Jackson,BA15," 38,850 "," 52,836 ",10,**
+9,Conway SAU Office,271,Jackson,BA30," 39,750 "," 54,060 ",10,**
+9,Conway SAU Office,271,Jackson,MA," 40,200 "," 54,672 ",10,**
+9,Conway SAU Office,271,Jackson,MA30," 42,075 "," 57,222 ",10,**
+10,Derry Cooperative SAU Office,131,Derry Cooperative,BA," 38,400 "," 61,563 ",15,**
+10,Derry Cooperative SAU Office,131,Derry Cooperative,BA15," 39,726 "," 63,637 ",15,**
+10,Derry Cooperative SAU Office,131,Derry Cooperative,BA30," 41,099 "," 65,784 ",15,
+10,Derry Cooperative SAU Office,131,Derry Cooperative,MA," 43,941 "," 70,229 ",15,
+10,Derry Cooperative SAU Office,131,Derry Cooperative,MA15," 45,461 "," 72,607 ",15,
+10,Derry Cooperative SAU Office,131,Derry Cooperative,MA30," 47,035 "," 75,067 ",15,
+11,Dover SAU Office,141,Dover,BA," 36,288 "," 67,142 ",20,
+11,Dover SAU Office,141,Dover,BA15," 37,213 "," 68,822 ",20,**
+11,Dover SAU Office,141,Dover,BA30," 38,163 "," 70,550 ",20,**
+11,Dover SAU Office,141,Dover,MA," 39,136 "," 72,322 ",20,**
+11,Dover SAU Office,141,Dover,MA15," 40,133 "," 74,136 ",20,**
+11,Dover SAU Office,141,Dover,MA30," 41,156 "," 75,995 ",20,**
+12,Londonderry SAU Office,319,Londonderry,BA," 38,207 "," 55,808 ",10,
+12,Londonderry SAU Office,319,Londonderry,BA15," 38,493 "," 58,645 ",11,
+12,Londonderry SAU Office,319,Londonderry,BA30," 38,789 "," 69,602 ",14,
+12,Londonderry SAU Office,319,Londonderry,MA," 39,371 "," 70,646 ",14,
+12,Londonderry SAU Office,319,Londonderry,MA15," 39,666 "," 71,176 ",14,
+12,Londonderry SAU Office,319,Londonderry,MA30," 39,964 "," 71,709 ",14,
+13,Tamworth SAU Office,187,Freedom,BA," 38,666 "," 49,085 ",25,
+13,Tamworth SAU Office,187,Freedom,MA," 43,501 "," 60,056 ",25,
+13,Tamworth SAU Office,187,Freedom,MA15," 45,111 "," 62,278 ",25,
+13,Tamworth SAU Office,187,Freedom,MA30," 46,725 "," 64,507 ",25,
+13,Tamworth SAU Office,333,Madison,BA," 37,806 "," 53,743 ",10,
+13,Tamworth SAU Office,333,Madison,MA," 41,353 "," 58,840 ",10,
+13,Tamworth SAU Office,333,Madison,MA15," 42,573 "," 60,614 ",10,
+13,Tamworth SAU Office,333,Madison,MA30," 43,802 "," 62,387 ",10,
+13,Tamworth SAU Office,525,Tamworth,BA," 38,126 "," 57,474 ",13,
+13,Tamworth SAU Office,525,Tamworth,MA," 41,904 "," 69,960 ",21,
+13,Tamworth SAU Office,525,Tamworth,MA15," 43,786 "," 71,846 ",21,
+13,Tamworth SAU Office,525,Tamworth,MA30," 45,676 "," 74,735 ",22,
+14,Epping SAU Office,165,Epping,BA," 38,611 "," 60,005 ",14,
+14,Epping SAU Office,165,Epping,BA15," 39,248 "," 60,918 ",14,
+14,Epping SAU Office,165,Epping,BA30," 39,992 "," 61,984 ",14,
+14,Epping SAU Office,165,Epping,MA," 40,851 "," 63,203 ",14,
+14,Epping SAU Office,165,Epping,MA15," 41,797 "," 64,573 ",14,
+14,Epping SAU Office,165,Epping,MA30," 42,859 "," 66,096 ",14,
+15,Hooksett SAU Office,29,Auburn,BA," 36,626 "," 57,373 ",17,
+15,Hooksett SAU Office,29,Auburn,BA15," 37,690 "," 64,973 ",17,
+15,Hooksett SAU Office,29,Auburn,BA30," 38,784 "," 66,807 ",17,
+15,Hooksett SAU Office,29,Auburn,MA," 39,912 "," 68,697 ",17,
+15,Hooksett SAU Office,29,Auburn,MA15," 41,073 "," 70,643 ",17,
+15,Hooksett SAU Office,29,Auburn,MA30," 42,270 "," 72,646 ",17,
+15,Hooksett SAU Office,79,Candia,BA," 36,008 "," 53,097 ",15,
+15,Hooksett SAU Office,79,Candia,BA15," 37,562 "," 54,651 ",15,
+15,Hooksett SAU Office,79,Candia,BA30," 39,448 "," 56,537 ",15,
+15,Hooksett SAU Office,79,Candia,MA," 42,555 "," 59,644 ",15,
+15,Hooksett SAU Office,79,Candia,MA15," 45,884 "," 62,973 ",15,
+15,Hooksett SAU Office,79,Candia,MA30," 49,213 "," 66,302 ",15,
+15,Hooksett SAU Office,261,Hooksett,BA," 36,419 "," 61,027 ",16,
+15,Hooksett SAU Office,261,Hooksett,BA15," 36,419 "," 63,733 ",17,
+15,Hooksett SAU Office,261,Hooksett,BA30," 36,419 "," 68,134 ",19,
+15,Hooksett SAU Office,261,Hooksett,MA," 39,802 "," 69,488 ",19,
+15,Hooksett SAU Office,261,Hooksett,MA15," 39,802 "," 73,888 ",21,
+15,Hooksett SAU Office,261,Hooksett,MA30," 39,802 "," 76,596 ",22,
+16,Exeter SAU Office,63,Brentwood,BA," 41,270 "," 64,028 ",10,
+16,Exeter SAU Office,63,Brentwood,BA15," 42,923 "," 66,587 ",10,
+16,Exeter SAU Office,63,Brentwood,BA30," 44,639 "," 69,251 ",10,
+16,Exeter SAU Office,63,Brentwood,MA," 46,283 "," 72,020 ",10,
+16,Exeter SAU Office,63,Brentwood,MA15," 48,283 "," 74,903 ",10,
+16,Exeter SAU Office,63,Brentwood,MA30," 50,212 "," 77,925 ",10,
+16,Exeter SAU Office,153,East Kingston,BA," 44,296 "," 65,828 ",10,
+16,Exeter SAU Office,153,East Kingston,BA15," 45,847 "," 68,133 ",10,
+16,Exeter SAU Office,153,East Kingston,BA30," 47,452 "," 70,517 ",10,
+16,Exeter SAU Office,153,East Kingston,MA," 49,112 "," 72,985 ",10,
+16,Exeter SAU Office,153,East Kingston,MA15," 50,831 "," 75,541 ",10,
+16,Exeter SAU Office,153,East Kingston,MA30," 52,612 "," 78,185 ",10,
+16,Exeter SAU Office,173,Exeter,BA," 45,462 "," 66,796 ",10,
+16,Exeter SAU Office,173,Exeter,BA15," 48,255 "," 71,340 ",10,
+16,Exeter SAU Office,173,Exeter,MA," 51,736 "," 77,355 ",10,
+16,Exeter SAU Office,173,Exeter,MA15," 54,457 "," 82,260 ",10,
+16,Exeter SAU Office,173,Exeter,MA30," 58,196 "," 87,602 ",10,
+16,Exeter SAU Office,172,Exeter Region Cooperative,BA," 42,371 "," 61,932 ",10,
+16,Exeter SAU Office,172,Exeter Region Cooperative,BA15," 45,282 "," 66,299 ",10,**
+16,Exeter SAU Office,172,Exeter Region Cooperative,MA," 47,613 "," 73,336 ",10,**
+16,Exeter SAU Office,172,Exeter Region Cooperative,MA15," 51,831 "," 78,956 ",10,**
+16,Exeter SAU Office,172,Exeter Region Cooperative,MA30," 55,284 "," 84,371 ",10,**
+16,Exeter SAU Office,281,Kensington,BA," 43,786 "," 64,415 ",12,**
+16,Exeter SAU Office,281,Kensington,BA15," 46,705 "," 68,517 ",12,**
+16,Exeter SAU Office,281,Kensington,BA30," 48,164 "," 71,333 ",12,
+16,Exeter SAU Office,281,Kensington,MA," 49,622 "," 74,288 ",12,
+16,Exeter SAU Office,281,Kensington,MA15," 52,544 "," 78,960 ",12,
+16,Exeter SAU Office,281,Kensington,MA30," 55,462 "," 83,921 ",12,
+16,Exeter SAU Office,387,Newfields,BA," 41,623 "," 61,855 ",10,
+16,Exeter SAU Office,387,Newfields,BA15," 43,079 "," 64,019 ",10,
+16,Exeter SAU Office,387,Newfields,BA30," 44,588 "," 66,260 ",10,
+16,Exeter SAU Office,387,Newfields,MA," 46,147 "," 68,579 ",10,
+16,Exeter SAU Office,387,Newfields,MA15," 47,762 "," 70,981 ",10,
+16,Exeter SAU Office,387,Newfields,MA30," 49,435 "," 73,463 ",10,
+16,Exeter SAU Office,511,Stratham,BA," 45,060 "," 71,272 ",13,
+16,Exeter SAU Office,511,Stratham,BA15," 48,104 "," 78,867 ",13,
+16,Exeter SAU Office,511,Stratham,MA," 51,917 "," 84,840 ",13,**
+16,Exeter SAU Office,511,Stratham,MA15," 53,938 "," 88,008 ",13,**
+16,Exeter SAU Office,511,Stratham,MA30," 56,096 "," 91,388 ",13,**
+17,Sanborn Regional SAU Office,476,Sanborn Regional,BA," 36,902 "," 59,042 ",16,**
+17,Sanborn Regional SAU Office,476,Sanborn Regional,BA15," 38,133 "," 61,039 ",16,**
+17,Sanborn Regional SAU Office,476,Sanborn Regional,BA30," 39,363 "," 63,376 ",16,**
+17,Sanborn Regional SAU Office,476,Sanborn Regional,MA," 41,823 "," 67,572 ",16,
+17,Sanborn Regional SAU Office,476,Sanborn Regional,MA30," 42,946 "," 68,695 ",16,
+18,Franklin SAU Office,185,Franklin,BA," 32,782 "," 53,700 ",17,
+18,Franklin SAU Office,185,Franklin,BA15," 34,343 "," 54,948 ",17,
+18,Franklin SAU Office,185,Franklin,MA," 35,904 "," 56,197 ",17,
+18,Franklin SAU Office,185,Franklin,MA15," 37,465 "," 57,446 ",17,
+19,Goffstown SAU Office,199,Goffstown,BA," 39,069 "," 64,574 ",18,
+19,Goffstown SAU Office,199,Goffstown,BA15," 39,707 "," 65,630 ",18,
+19,Goffstown SAU Office,199,Goffstown,BA30," 40,347 "," 66,687 ",18,
+19,Goffstown SAU Office,199,Goffstown,MA," 40,984 "," 67,741 ",18,
+19,Goffstown SAU Office,199,Goffstown,MA15," 41,623 "," 68,798 ",18,
+19,Goffstown SAU Office,199,Goffstown,MA30," 42,264 "," 69,856 ",18,
+19,Goffstown SAU Office,377,New Boston,BA," 36,738 "," 53,883 ",15,
+19,Goffstown SAU Office,377,New Boston,BA15," 37,952 "," 58,782 ",15,
+19,Goffstown SAU Office,377,New Boston,BA30," 39,201 "," 63,679 ",15,
+19,Goffstown SAU Office,377,New Boston,MA," 40,497 "," 65,782 ",15,
+19,Goffstown SAU Office,377,New Boston,MA15," 41,831 "," 67,949 ",15,
+19,Goffstown SAU Office,377,New Boston,MA30," 43,213 "," 70,195 ",15,
+20,Gorham SAU Office,171,Errol,BA," 30,061 "," 41,961 ",15,
+20,Gorham SAU Office,171,Errol,BA15," 31,077 "," 42,798 ",15,
+20,Gorham SAU Office,171,Errol,MA," 31,914 "," 43,636 ",15,
+20,Gorham SAU Office,171,Errol,MA15," 32,752 "," 44,473 ",15,
+20,Gorham SAU Office,171,Errol,MA30," 33,589 "," 45,311 ",15,
+20,Gorham SAU Office,203,Gorham Randolph Shelburne Cooperative,BA," 38,000 "," 52,000 ",5,
+20,Gorham SAU Office,203,Gorham Randolph Shelburne Cooperative,BA15," 39,000 "," 53,000 ",5,
+20,Gorham SAU Office,203,Gorham Randolph Shelburne Cooperative,MA," 40,000 "," 54,000 ",5,
+20,Gorham SAU Office,203,Gorham Randolph Shelburne Cooperative,MA15," 41,000 "," 55,000 ",5,
+20,Gorham SAU Office,203,Gorham Randolph Shelburne Cooperative,MA30," 42,000 "," 56,000 ",5,
+20,Gorham SAU Office,355,Milan,BA," 34,054 "," 43,859 ",12,
+20,Gorham SAU Office,355,Milan,BA15," 34,699 "," 44,996 ",12,
+20,Gorham SAU Office,355,Milan,MA," 35,344 "," 52,953 ",18,
+20,Gorham SAU Office,355,Milan,MA15," 36,450 "," 54,090 ",18,
+20,Gorham SAU Office,355,Milan,MA30," 37,556 "," 55,227 ",18,
+21,Winnacunnet SAU Office,227,Hampton Falls,BA," 42,404 "," 61,146 ",11,
+21,Winnacunnet SAU Office,227,Hampton Falls,BA15," 43,888 "," 63,286 ",11,
+21,Winnacunnet SAU Office,227,Hampton Falls,BA30," 45,424 "," 65,501 ",11,
+21,Winnacunnet SAU Office,227,Hampton Falls,MA," 47,241 "," 73,327 ",13,
+21,Winnacunnet SAU Office,227,Hampton Falls,MA15," 48,895 "," 75,892 ",13,
+21,Winnacunnet SAU Office,227,Hampton Falls,MA30," 50,606 "," 78,550 ",13,
+21,Winnacunnet SAU Office,405,North Hampton,BA," 42,404 "," 61,146 ",11,
+21,Winnacunnet SAU Office,405,North Hampton,BA15," 43,888 "," 63,286 ",11,
+21,Winnacunnet SAU Office,405,North Hampton,BA30," 45,424 "," 65,501 ",11,
+21,Winnacunnet SAU Office,405,North Hampton,MA," 47,241 "," 73,327 ",13,
+21,Winnacunnet SAU Office,405,North Hampton,MA15," 48,895 "," 75,892 ",13,
+21,Winnacunnet SAU Office,405,North Hampton,MA30," 50,606 "," 78,550 ",13,
+21,Winnacunnet SAU Office,485,Seabrook,BA," 42,404 "," 61,146 ",11,
+21,Winnacunnet SAU Office,485,Seabrook,BA15," 43,888 "," 63,286 ",11,
+21,Winnacunnet SAU Office,485,Seabrook,BA30," 45,424 "," 65,501 ",11,
+21,Winnacunnet SAU Office,485,Seabrook,MA," 47,241 "," 73,327 ",13,
+21,Winnacunnet SAU Office,485,Seabrook,MA15," 48,895 "," 75,892 ",13,
+21,Winnacunnet SAU Office,485,Seabrook,MA30," 50,606 "," 78,550 ",13,
+21,Winnacunnet SAU Office,495,South Hampton,BA," 42,404 "," 61,146 ",11,
+21,Winnacunnet SAU Office,495,South Hampton,BA15," 43,888 "," 63,286 ",11,
+21,Winnacunnet SAU Office,495,South Hampton,BA30," 45,424 "," 65,501 ",11,
+21,Winnacunnet SAU Office,495,South Hampton,MA," 47,241 "," 73,327 ",13,
+21,Winnacunnet SAU Office,495,South Hampton,MA15," 48,895 "," 75,892 ",13,
+21,Winnacunnet SAU Office,495,South Hampton,MA30," 50,606 "," 78,550 ",13,
+21,Winnacunnet SAU Office,581,Winnacunnet Cooperative,BA," 42,404 "," 61,146 ",11,
+21,Winnacunnet SAU Office,581,Winnacunnet Cooperative,BA15," 43,888 "," 63,286 ",11,
+21,Winnacunnet SAU Office,581,Winnacunnet Cooperative,BA30," 45,424 "," 65,501 ",11,
+21,Winnacunnet SAU Office,581,Winnacunnet Cooperative,MA," 47,241 "," 73,327 ",13,
+21,Winnacunnet SAU Office,581,Winnacunnet Cooperative,MA15," 48,895 "," 75,892 ",13,
+21,Winnacunnet SAU Office,581,Winnacunnet Cooperative,MA30," 50,606 "," 78,550 ",13,
+23,Haverhill Cooperative SAU Office,39,Bath,BA," 32,000 "," 47,680 ",15,
+23,Haverhill Cooperative SAU Office,39,Bath,BA15," 33,120 "," 48,800 ",15,
+23,Haverhill Cooperative SAU Office,39,Bath,MA," 34,400 "," 52,320 ",15,
+23,Haverhill Cooperative SAU Office,39,Bath,MA15," 35,680 "," 53,600 ",15,
+23,Haverhill Cooperative SAU Office,238,Haverhill Cooperative,BA," 36,605 "," 49,056 ",12,
+23,Haverhill Cooperative SAU Office,238,Haverhill Cooperative,BA15," 37,790 "," 53,884 ",15,
+23,Haverhill Cooperative SAU Office,238,Haverhill Cooperative,MA," 39,481 "," 63,477 ",21,
+23,Haverhill Cooperative SAU Office,238,Haverhill Cooperative,MA15," 40,666 "," 64,118 ",21,
+23,Haverhill Cooperative SAU Office,435,Piermont,BA," 31,081 "," 54,703 ",20,
+23,Haverhill Cooperative SAU Office,435,Piermont,BA15," 32,324 "," 55,946 ",20,**
+23,Haverhill Cooperative SAU Office,435,Piermont,BA30," 33,878 "," 57,500 ",20,**
+23,Haverhill Cooperative SAU Office,435,Piermont,MA," 35,743 "," 59,365 ",20,**
+23,Haverhill Cooperative SAU Office,549,Warren,BA," 31,993 "," 45,613 ",13,**
+23,Haverhill Cooperative SAU Office,549,Warren,BA15," 34,877 "," 50,935 ",15,**
+23,Haverhill Cooperative SAU Office,549,Warren,MA," 36,988 "," 57,024 ",17,
+23,Haverhill Cooperative SAU Office,549,Warren,MA15," 38,002 "," 58,584 ",17,
+24,Henniker SAU Office,245,Henniker,BA," 40,107 "," 46,252 ",10,
+24,Henniker SAU Office,245,Henniker,MA," 47,128 "," 65,809 ",20,
+24,Henniker SAU Office,245,Henniker,MA30," 50,041 "," 69,877 ",20,
+24,Henniker SAU Office,275,John Stark Regional,BA," 38,197 "," 44,750 ",10,
+24,Henniker SAU Office,275,John Stark Regional,MA," 44,884 "," 64,685 ",20,
+24,Henniker SAU Office,503,Stoddard,BA," 35,000 "," 48,750 ",13,
+24,Henniker SAU Office,503,Stoddard,BA15," 36,000 "," 49,750 ",13,
+24,Henniker SAU Office,503,Stoddard,MA," 37,000 "," 50,750 ",13,
+24,Henniker SAU Office,503,Stoddard,MA30," 38,000 "," 51,750 ",13,
+24,Henniker SAU Office,555,Weare,BA," 35,949 "," 44,894 ",10,
+24,Henniker SAU Office,555,Weare,BA15," 37,211 "," 46,471 ",10,
+24,Henniker SAU Office,555,Weare,BA30," 38,514 "," 48,098 ",10,
+24,Henniker SAU Office,555,Weare,MA," 39,861 "," 49,781 ",10,
+24,Henniker SAU Office,555,Weare,MA15," 41,256 "," 51,524 ",10,
+24,Henniker SAU Office,555,Weare,MA30," 42,700 "," 53,327 ",10,
+25,Bedford SAU Office,41,Bedford,BA," 39,697 "," 61,465 ",12,
+25,Bedford SAU Office,41,Bedford,BA15," 41,065 "," 66,256 ",14,
+25,Bedford SAU Office,41,Bedford,BA30," 42,433 "," 71,046 ",16,
+25,Bedford SAU Office,41,Bedford,MA," 43,460 "," 75,493 ",18,
+25,Bedford SAU Office,41,Bedford,MA15," 44,828 "," 76,861 ",18,
+25,Bedford SAU Office,41,Bedford,MA30," 46,197 "," 78,230 ",18,**
+26,Merrimack SAU Office,351,Merrimack,BA," 36,200 "," 65,367 ",20,**
+26,Merrimack SAU Office,351,Merrimack,BA15," 36,497 "," 68,000 ",20,**
+26,Merrimack SAU Office,351,Merrimack,BA30," 38,311 "," 71,488 ",20,**
+26,Merrimack SAU Office,351,Merrimack,MA," 39,521 "," 74,200 ",20,**
+26,Merrimack SAU Office,351,Merrimack,MA15," 40,378 "," 75,300 ",20,**
+26,Merrimack SAU Office,351,Merrimack,MA30," 41,888 "," 76,900 ",20,**
+27,Litchfield SAU Office,315,Litchfield,BA," 39,303 "," 60,263 ",15,**
+27,Litchfield SAU Office,315,Litchfield,BA15," 40,705 "," 62,689 ",15,**
+27,Litchfield SAU Office,315,Litchfield,BA30," 42,107 "," 65,114 ",15,**
+27,Litchfield SAU Office,315,Litchfield,MA," 43,513 "," 67,552 ",15,**
+27,Litchfield SAU Office,315,Litchfield,MA15," 44,765 "," 69,115 ",15,**
+27,Litchfield SAU Office,315,Litchfield,MA30," 46,017 "," 70,703 ",15,
+28,Pelham SAU Office,425,Pelham,BA," 40,060 "," 48,560 ",13,
+28,Pelham SAU Office,425,Pelham,BA15," 40,760 "," 49,260 ",13,
+28,Pelham SAU Office,425,Pelham,BA30," 41,760 "," 50,260 ",13,
+28,Pelham SAU Office,425,Pelham,MA," 43,460 "," 51,960 ",13,
+28,Pelham SAU Office,425,Pelham,MA15," 44,460 "," 52,960 ",13,
+28,Pelham SAU Office,425,Pelham,MA30," 45,460 "," 53,960 ",13,
+29,Keene SAU Office,95,Chesterfield,BA," 41,000 "," 58,100 ",25,
+29,Keene SAU Office,95,Chesterfield,BA15," 43,000 "," 61,500 ",25,
+29,Keene SAU Office,95,Chesterfield,MA," 45,100 "," 68,500 ",25,
+29,Keene SAU Office,95,Chesterfield,MA15," 46,200 "," 69,300 ",25,
+29,Keene SAU Office,235,Harrisville,BA," 40,925 "," 60,500 ",10,
+29,Keene SAU Office,235,Harrisville,BA15," 41,900 "," 61,348 ",10,
+29,Keene SAU Office,235,Harrisville,MA," 42,900 "," 62,696 ",10,
+29,Keene SAU Office,235,Harrisville,MA30," 44,400 "," 64,681 ",10,
+29,Keene SAU Office,339,Marlborough,BA," 41,460 "," 62,815 ",13,
+29,Keene SAU Office,339,Marlborough,BA30," 42,460 "," 64,215 ",13,
+29,Keene SAU Office,339,Marlborough,MA," 43,460 "," 69,084 ",13,
+29,Keene SAU Office,339,Marlborough,MA30," 44,460 "," 69,977 ",13,
+29,Keene SAU Office,341,Marlow,BA," 41,000 "," 55,900 ",25,
+29,Keene SAU Office,341,Marlow,BA15," 41,500 "," 56,400 ",25,
+29,Keene SAU Office,341,Marlow,MA," 42,300 "," 57,200 ",25,
+29,Keene SAU Office,341,Marlow,MA15," 42,800 "," 58,000 ",25,**
+29,Keene SAU Office,375,Nelson,BA," 42,800 "," 56,500 ",20,**
+29,Keene SAU Office,375,Nelson,MA," 43,800 "," 58,500 ",20,**
+29,Keene SAU Office,375,Nelson,MA30," 44,800 "," 59,500 ",20,**
+29,Keene SAU Office,563,Westmoreland,BA," 37,500 "," 60,500 ",21,**
+29,Keene SAU Office,563,Westmoreland,BA15," 38,000 "," 61,500 ",21,
+29,Keene SAU Office,563,Westmoreland,MA," 39,500 "," 64,500 ",21,
+29,Keene SAU Office,563,Westmoreland,MA15," 41,000 "," 63,000 ",21,
+30,Laconia SAU Office,285,Laconia,BA," 38,312 "," 64,210 ",19,
+30,Laconia SAU Office,285,Laconia,BA15," 39,352 "," 65,958 ",19,
+30,Laconia SAU Office,285,Laconia,MA," 40,800 "," 71,648 ",19,
+30,Laconia SAU Office,285,Laconia,MA15," 41,951 "," 73,681 ",19,
+30,Laconia SAU Office,285,Laconia,MA30," 43,407 "," 76,250 ",19,
+31,Newmarket SAU Office,399,Newmarket,BA," 35,851 "," 58,031 ",15,
+31,Newmarket SAU Office,399,Newmarket,BA15," 36,746 "," 59,481 ",15,
+31,Newmarket SAU Office,399,Newmarket,BA30," 37,665 "," 60,968 ",15,
+31,Newmarket SAU Office,399,Newmarket,MA," 38,606 "," 62,491 ",15,
+31,Newmarket SAU Office,399,Newmarket,MA15," 39,572 "," 64,055 ",15,
+31,Newmarket SAU Office,399,Newmarket,MA30," 40,562 "," 65,656 ",15,
+33,Raymond SAU Office,453,Raymond,BA," 34,173 "," 59,950 ",17,
+33,Raymond SAU Office,453,Raymond,BA15," 34,744 "," 60,958 ",17,
+33,Raymond SAU Office,453,Raymond,BA30," 35,328 "," 61,987 ",17,
+33,Raymond SAU Office,453,Raymond,MA," 35,923 "," 63,034 ",17,
+33,Raymond SAU Office,453,Raymond,MA15," 36,528 "," 64,103 ",17,
+33,Raymond SAU Office,453,Raymond,MA30," 37,149 "," 65,195 ",17,
+34,Hillsboro-Deering SAU Office,251,Hillsboro-Deering Cooperative,BA," 36,756 "," 58,287 ",15,
+34,Hillsboro-Deering SAU Office,251,Hillsboro-Deering Cooperative,BA30," 39,885 "," 63,248 ",15,
+34,Hillsboro-Deering SAU Office,251,Hillsboro-Deering Cooperative,MA," 43,268 "," 68,612 ",15,
+34,Hillsboro-Deering SAU Office,251,Hillsboro-Deering Cooperative,MA30," 45,063 "," 71,459 ",15,
+34,Hillsboro-Deering SAU Office,551,Washington,BA," 35,601 "," 56,997 ",13,
+34,Hillsboro-Deering SAU Office,551,Washington,BA15," 38,632 "," 61,851 ",13,
+34,Hillsboro-Deering SAU Office,551,Washington,MA," 41,907 "," 67,094 ",13,
+34,Hillsboro-Deering SAU Office,551,Washington,MA30," 43,646 "," 69,878 ",13,**
+35,SAU #35 Office,53,Bethlehem,BA," 33,841 "," 56,141 ",16,**
+35,SAU #35 Office,53,Bethlehem,BA15," 34,591 "," 56,891 ",16,**
+35,SAU #35 Office,53,Bethlehem,BA30," 35,341 "," 56,891 ",16,**
+35,SAU #35 Office,53,Bethlehem,MA," 36,841 "," 59,141 ",16,**
+35,SAU #35 Office,53,Bethlehem,MA15," 38,341 "," 60,641 ",16,
+35,SAU #35 Office,288,Lafayette Regional,BA," 38,841 "," 58,261 ",11,
+35,SAU #35 Office,288,Lafayette Regional,BA15," 40,783 "," 62,145 ",12,
+35,SAU #35 Office,288,Lafayette Regional,BA30," 42,725 "," 69,913 ",15,
+35,SAU #35 Office,288,Lafayette Regional,MA," 44,667 "," 71,855 ",15,
+35,SAU #35 Office,288,Lafayette Regional,MA15," 46,609 "," 73,797 ",15,
+35,SAU #35 Office,288,Lafayette Regional,MA30," 48,551 "," 75,739 ",15,
+35,SAU #35 Office,291,Landaff,BA," 54,682 "," 54,682 ",0,
+35,SAU #35 Office,306,Lisbon Regional,BA," 34,734 "," 55,574 ",13,
+35,SAU #35 Office,306,Lisbon Regional,BA15," 36,471 "," 57,311 ",13,
+35,SAU #35 Office,306,Lisbon Regional,MA," 38,207 "," 59,048 ",13,
+35,SAU #35 Office,306,Lisbon Regional,MA15," 39,944 "," 60,785 ",15,
+35,SAU #35 Office,306,Lisbon Regional,MA30," 41,681 "," 62,521 ",15,
+35,SAU #35 Office,450,Profile,BA," 34,938 "," 57,338 ",15,
+35,SAU #35 Office,450,Profile,BA15," 35,738 "," 58,138 ",15,
+35,SAU #35 Office,450,Profile,MA," 36,538 "," 58,938 ",15,
+35,SAU #35 Office,450,Profile,MA15," 38,138 "," 60,538 ",15,
+35,SAU #35 Office,450,Profile,MA30," 39,738 "," 62,138 ",15,
+36,White Mountains Regional SAU Office,568,White Mountains Regional,BA," 34,500 "," 52,700 ",15,
+36,White Mountains Regional SAU Office,568,White Mountains Regional,BA15," 35,500 "," 53,700 ",15,
+36,White Mountains Regional SAU Office,568,White Mountains Regional,MA," 37,000 "," 55,200 ",15,
+36,White Mountains Regional SAU Office,568,White Mountains Regional,MA15," 38,000 "," 56,200 ",15,
+36,White Mountains Regional SAU Office,568,White Mountains Regional,MA30," 39,000 "," 57,200 ",15,
+37,Manchester SAU Office,335,Manchester,BA," 37,250 "," 67,423 ",15,
+37,Manchester SAU Office,335,Manchester,BA15," 37,250 "," 67,423 ",15,
+37,Manchester SAU Office,335,Manchester,BA30," 40,230 "," 70,403 ",15,
+37,Manchester SAU Office,335,Manchester,MA," 41,720 "," 71,893 ",15,
+37,Manchester SAU Office,335,Manchester,MA15," 41,720 "," 71,893 ",15,
+37,Manchester SAU Office,335,Manchester,MA30," 44,700 "," 74,873 ",15,
+39,Amherst SAU Office,17,Amherst,BA," 40,097 "," 62,279 ",12,**
+39,Amherst SAU Office,17,Amherst,BA15," 41,625 "," 67,869 ",14,
+39,Amherst SAU Office,17,Amherst,BA30," 43,152 "," 73,458 ",16,
+39,Amherst SAU Office,17,Amherst,MA," 44,297 "," 78,648 ",18,
+39,Amherst SAU Office,17,Amherst,MA15," 45,825 "," 80,245 ",18,
+39,Amherst SAU Office,17,Amherst,MA30," 47,352 "," 81,842 ",18,
+39,Amherst SAU Office,367,Mont Vernon,BA," 36,768 "," 61,923 ",16,
+39,Amherst SAU Office,367,Mont Vernon,BA15," 38,444 "," 63,600 ",16,
+39,Amherst SAU Office,367,Mont Vernon,BA30," 40,121 "," 65,279 ",16,
+39,Amherst SAU Office,367,Mont Vernon,MA," 40,121 "," 65,279 ",16,
+39,Amherst SAU Office,367,Mont Vernon,MA15," 41,798 "," 66,955 ",16,
+39,Amherst SAU Office,367,Mont Vernon,MA30," 43,475 "," 68,631 ",16,
+39,Amherst SAU Office,493,Souhegan Cooperative,BA," 45,334 "," 59,554 ",13,
+39,Amherst SAU Office,493,Souhegan Cooperative,BA30," 47,980 "," 66,940 ",17,
+39,Amherst SAU Office,493,Souhegan Cooperative,MA," 47,980 "," 66,940 ",17,
+39,Amherst SAU Office,493,Souhegan Cooperative,MA30," 50,626 "," 69,586 ",17,
+40,Milford SAU Office,357,Milford,BA," 42,360 "," 70,859 ",15,
+40,Milford SAU Office,357,Milford,BA15," 43,462 "," 72,649 ",15,
+40,Milford SAU Office,357,Milford,BA30," 44,548 "," 74,418 ",15,
+40,Milford SAU Office,357,Milford,MA," 46,330 "," 77,318 ",15,
+40,Milford SAU Office,357,Milford,MA15," 47,442 "," 79,128 ",15,
+40,Milford SAU Office,357,Milford,MA30," 48,532 "," 80,904 ",15,
+41,Hollis-Brookline SAU Office,71,Brookline,BA," 38,640 "," 48,948 ",9,
+41,Hollis-Brookline SAU Office,71,Brookline,BA15," 39,993 "," 52,181 ",10,
+41,Hollis-Brookline SAU Office,71,Brookline,BA30," 41,393 "," 55,629 ",11,
+41,Hollis-Brookline SAU Office,71,Brookline,MA," 44,984 "," 66,059 ",14,
+41,Hollis-Brookline SAU Office,71,Brookline,MA15," 46,558 "," 68,372 ",14,
+41,Hollis-Brookline SAU Office,71,Brookline,MA30," 48,187 "," 70,765 ",14,
+41,Hollis-Brookline SAU Office,259,Hollis,BA," 40,715 "," 59,776 ",12,
+41,Hollis-Brookline SAU Office,259,Hollis,BA15," 41,772 "," 63,122 ",13,**
+41,Hollis-Brookline SAU Office,259,Hollis,BA30," 43,165 "," 66,709 ",14,**
+41,Hollis-Brookline SAU Office,259,Hollis,MA," 44,870 "," 70,992 ",15,**
+41,Hollis-Brookline SAU Office,259,Hollis,MA15," 46,199 "," 75,095 ",16,**
+41,Hollis-Brookline SAU Office,259,Hollis,MA30," 47,569 "," 79,445 ",17,**
+41,Hollis-Brookline SAU Office,260,Hollis-Brookline Cooperative,BA," 39,973 "," 61,567 ",15,
+41,Hollis-Brookline SAU Office,260,Hollis-Brookline Cooperative,BA15," 41,235 "," 63,840 ",15,
+41,Hollis-Brookline SAU Office,260,Hollis-Brookline Cooperative,BA30," 42,289 "," 68,711 ",17,
+41,Hollis-Brookline SAU Office,260,Hollis-Brookline Cooperative,MA," 44,984 "," 73,118 ",18,
+41,Hollis-Brookline SAU Office,260,Hollis-Brookline Cooperative,MA15," 46,558 "," 77,346 ",19,
+41,Hollis-Brookline SAU Office,260,Hollis-Brookline Cooperative,MA30," 48,187 "," 81,828 ",20,
+42,Nashua SAU Office,371,Nashua,BA," 40,284 "," 70,230 ",18,
+42,Nashua SAU Office,371,Nashua,BA30," 42,078 "," 72,623 ",18,
+42,Nashua SAU Office,371,Nashua,MA," 43,918 "," 74,273 ",18,
+42,Nashua SAU Office,371,Nashua,MA30," 45,758 "," 76,644 ",18,
+43,Newport SAU Office,401,Newport,BA," 34,363 "," 50,466 ",14,
+43,Newport SAU Office,401,Newport,BA15," 35,440 "," 52,782 ",15,
+43,Newport SAU Office,401,Newport,MA," 36,517 "," 56,335 ",17,
+43,Newport SAU Office,401,Newport,MA15," 37,593 "," 58,651 ",18,
+44,Northwood SAU Office,411,Northwood,BA," 35,472 "," 52,193 ",15,
+44,Northwood SAU Office,411,Northwood,BA15," 38,336 "," 56,521 ",15,
+44,Northwood SAU Office,411,Northwood,BA30," 38,336 "," 55,771 ",15,
+44,Northwood SAU Office,411,Northwood,MA," 39,972 "," 58,243 ",15,
+44,Northwood SAU Office,411,Northwood,MA15," 41,609 "," 60,716 ",15,
+44,Northwood SAU Office,411,Northwood,MA30," 42,836 "," 62,570 ",15,
+44,Northwood SAU Office,413,Nottingham,BA," 36,504 "," 55,791 ",14,
+44,Northwood SAU Office,413,Nottingham,BA15," 37,885 "," 57,961 ",14,
+44,Northwood SAU Office,413,Nottingham,BA30," 39,335 "," 60,239 ",14,
+44,Northwood SAU Office,413,Nottingham,MA," 39,335 "," 60,236 ",14,
+44,Northwood SAU Office,413,Nottingham,MA15," 41,164 "," 63,111 ",14,
+44,Northwood SAU Office,413,Nottingham,MA30," 43,098 "," 66,151 ",14,
+44,Northwood SAU Office,507,Strafford,BA," 38,038 "," 55,450 ",19,
+44,Northwood SAU Office,507,Strafford,BA15," 38,661 "," 60,492 ",19,
+44,Northwood SAU Office,507,Strafford,BA30," 39,283 "," 63,605 ",19,
+44,Northwood SAU Office,507,Strafford,MA," 39,283 "," 63,605 ",19,
+44,Northwood SAU Office,507,Strafford,MA15," 39,906 "," 64,913 ",19,**
+44,Northwood SAU Office,507,Strafford,MA30," 40,528 "," 66,158 ",19,**
+45,Moultonborough SAU Office,369,Moultonborough,BA," 37,402 "," 65,624 ",1,**
+45,Moultonborough SAU Office,369,Moultonborough,BA15," 38,609 "," 66,962 ",0,**
+45,Moultonborough SAU Office,369,Moultonborough,BA30," 39,867 "," 79,345 ",0,**
+45,Moultonborough SAU Office,369,Moultonborough,MA," 39,867 "," 79,345 ",0,
+45,Moultonborough SAU Office,369,Moultonborough,MA15," 41,125 "," 82,298 ",0,
+45,Moultonborough SAU Office,369,Moultonborough,MA30," 42,418 "," 87,667 ",48,
+46,Merrimack Valley SAU Office,19,Andover,BA," 35,791 "," 49,739 ",12,
+46,Merrimack Valley SAU Office,19,Andover,BA15," 36,428 "," 50,376 ",12,
+46,Merrimack Valley SAU Office,19,Andover,BA30," 37,064 "," 51,012 ",12,
+46,Merrimack Valley SAU Office,19,Andover,MA," 37,701 "," 51,649 ",12,**
+46,Merrimack Valley SAU Office,19,Andover,MA15," 38,337 "," 52,285 ",12,**
+46,Merrimack Valley SAU Office,19,Andover,MA30," 40,201 "," 54,149 ",12,**
+46,Merrimack Valley SAU Office,352,Merrimack Valley,BA," 37,218 "," 49,734 ",10,**
+46,Merrimack Valley SAU Office,352,Merrimack Valley,BA15," 38,252 "," 51,189 ",10,
+46,Merrimack Valley SAU Office,352,Merrimack Valley,MA," 40,250 "," 54,000 ",10,
+46,Merrimack Valley SAU Office,352,Merrimack Valley,MA15," 41,309 "," 55,498 ",10,
+46,Merrimack Valley SAU Office,352,Merrimack Valley,MA30," 42,309 "," 56,498 ",10,
+47,Jaffrey-Rindge SAU Office,274,Jaffrey-Rindge Cooperative,BA," 37,650 "," 61,850 ",23,
+47,Jaffrey-Rindge SAU Office,274,Jaffrey-Rindge Cooperative,BA15," 38,600 "," 62,800 ",23,
+47,Jaffrey-Rindge SAU Office,274,Jaffrey-Rindge Cooperative,BA30," 39,550 "," 64,700 ",23,**
+47,Jaffrey-Rindge SAU Office,274,Jaffrey-Rindge Cooperative,MA," 42,000 "," 66,200 ",23,**
+47,Jaffrey-Rindge SAU Office,274,Jaffrey-Rindge Cooperative,MA15," 43,500 "," 67,700 ",23,**
+47,Jaffrey-Rindge SAU Office,274,Jaffrey-Rindge Cooperative,MA30," 45,000 "," 70,700 ",23,**
+48,Plymouth SAU Office,75,Campton,BA," 41,509 "," 61,688 ",10,**
+48,Plymouth SAU Office,75,Campton,MA," 46,179 "," 68,626 ",10,
+48,Plymouth SAU Office,257,Holderness,BA," 37,771 "," 59,925 ",10,
+48,Plymouth SAU Office,257,Holderness,BA30," 40,286 "," 63,915 ",10,
+48,Plymouth SAU Office,257,Holderness,MA," 40,286 "," 63,915 ",10,
+48,Plymouth SAU Office,257,Holderness,MA15," 42,223 "," 66,986 ",10,
+48,Plymouth SAU Office,257,Holderness,MA30," 43,383 "," 68,828 ",10,
+48,Plymouth SAU Office,428,Pemi-Baker Regional,BA," 37,646 "," 63,276 ",13,
+48,Plymouth SAU Office,428,Pemi-Baker Regional,BA15," 38,645 "," 70,066 ",15,
+48,Plymouth SAU Office,428,Pemi-Baker Regional,MA," 39,668 "," 71,924 ",15,
+48,Plymouth SAU Office,428,Pemi-Baker Regional,MA15," 40,719 "," 73,829 ",15,**
+48,Plymouth SAU Office,428,Pemi-Baker Regional,MA30," 41,799 "," 75,787 ",15,**
+48,Plymouth SAU Office,447,Plymouth,BA," 38,532 "," 65,934 ",13,**
+48,Plymouth SAU Office,447,Plymouth,BA15," 39,690 "," 67,914 ",13,**
+48,Plymouth SAU Office,447,Plymouth,MA," 40,878 "," 73,448 ",14,**
+48,Plymouth SAU Office,447,Plymouth,MA15," 42,103 "," 75,649 ",14,**
+48,Plymouth SAU Office,447,Plymouth,MA30," 43,370 "," 77,919 ",14,
+48,Plymouth SAU Office,467,Rumney,BA," 35,070 "," 52,570 ",13,
+48,Plymouth SAU Office,467,Rumney,BA15," 36,570 "," 54,070 ",13,
+48,Plymouth SAU Office,467,Rumney,BA30," 38,070 "," 55,570 ",13,
+48,Plymouth SAU Office,467,Rumney,MA," 38,070 "," 55,570 ",13,
+48,Plymouth SAU Office,467,Rumney,MA30," 39,570 "," 57,070 ",13,
+48,Plymouth SAU Office,531,Thornton,BA," 42,148 "," 68,553 ",15,
+48,Plymouth SAU Office,531,Thornton,BA15," 43,201 "," 70,268 ",15,
+48,Plymouth SAU Office,531,Thornton,MA," 44,281 "," 72,023 ",15,
+48,Plymouth SAU Office,531,Thornton,MA15," 45,388 "," 73,825 ",15,
+48,Plymouth SAU Office,531,Thornton,MA30," 46,523 "," 75,670 ",15,
+48,Plymouth SAU Office,553,Waterville Valley,BA," 33,596 "," 58,180 ",15,
+48,Plymouth SAU Office,553,Waterville Valley,BA15," 35,076 "," 60,740 ",15,
+48,Plymouth SAU Office,553,Waterville Valley,BA30," 36,618 "," 63,410 ",15,
+48,Plymouth SAU Office,553,Waterville Valley,MA," 38,230 "," 66,202 ",15,
+48,Plymouth SAU Office,553,Waterville Valley,MA30," 39,913 "," 69,114 ",15,
+48,Plymouth SAU Office,559,Wentworth,BA," 34,291 "," 56,074 ",15,
+48,Plymouth SAU Office,559,Wentworth,BA15," 35,148 "," 57,476 ",15,
+48,Plymouth SAU Office,559,Wentworth,MA," 36,027 "," 58,912 ",15,
+48,Plymouth SAU Office,559,Wentworth,MA15," 36,930 "," 60,385 ",15,
+48,Plymouth SAU Office,559,Wentworth,MA30," 37,852 "," 61,895 ",15,
+49,Governor Wentworth Regional SAU Office,208,Governor Wentworth Regional,BA," 40,000 "," 54,350 ",10,
+49,Governor Wentworth Regional SAU Office,208,Governor Wentworth Regional,BA15," 41,000 "," 61,600 ",12,
+49,Governor Wentworth Regional SAU Office,208,Governor Wentworth Regional,MA," 42,000 "," 69,485 ",13,
+49,Governor Wentworth Regional SAU Office,208,Governor Wentworth Regional,MA30," 46,000 "," 79,914 ",14,
+51,Pittsfield SAU Office,439,Pittsfield,BA," 30,452 "," 48,411 ",17,
+51,Pittsfield SAU Office,439,Pittsfield,BA15," 31,487 "," 50,059 ",17,
+51,Pittsfield SAU Office,439,Pittsfield,BA30," 32,523 "," 51,703 ",17,
+51,Pittsfield SAU Office,439,Pittsfield,MA," 34,323 "," 54,559 ",17,
+51,Pittsfield SAU Office,439,Pittsfield,MA15," 35,363 "," 56,213 ",17,
+51,Pittsfield SAU Office,439,Pittsfield,MA30," 36,403 "," 57,865 ",17,
+52,Portsmouth SAU Office,449,Portsmouth,BA," 44,667 "," 69,590 ",16,
+52,Portsmouth SAU Office,449,Portsmouth,BA15," 47,507 "," 75,549 ",16,
+52,Portsmouth SAU Office,449,Portsmouth,BA30," 47,507 "," 75,549 ",16,
+52,Portsmouth SAU Office,449,Portsmouth,MA," 51,604 "," 80,219 ",16,
+52,Portsmouth SAU Office,449,Portsmouth,MA15," 52,337 "," 81,117 ",16,
+52,Portsmouth SAU Office,449,Portsmouth,MA30," 53,067 "," 81,961 ",16,
+53,Pembroke SAU Office,9,Allenstown,BA," 34,311 "," 61,970 ",15,
+53,Pembroke SAU Office,9,Allenstown,BA15," 35,668 "," 63,584 ",15,
+53,Pembroke SAU Office,9,Allenstown,MA," 39,736 "," 68,430 ",15,
+53,Pembroke SAU Office,99,Chichester,BA," 38,307 "," 62,784 ",14,
+53,Pembroke SAU Office,99,Chichester,MA," 41,123 "," 69,127 ",14,
+53,Pembroke SAU Office,127,Deerfield,BA," 36,503 "," 56,853 ",12,
+53,Pembroke SAU Office,127,Deerfield,BA15," 37,495 "," 58,670 ",12,
+53,Pembroke SAU Office,127,Deerfield,BA30," 38,026 "," 60,301 ",12,
+53,Pembroke SAU Office,127,Deerfield,MA," 38,734 "," 64,309 ",12,
+53,Pembroke SAU Office,127,Deerfield,MA15," 39,873 "," 65,448 ",12,
+53,Pembroke SAU Office,127,Deerfield,MA30," 41,098 "," 66,673 ",12,
+53,Pembroke SAU Office,167,Epsom,BA," 37,001 "," 60,425 ",14,
+53,Pembroke SAU Office,167,Epsom,BA15," 38,296 "," 62,540 ",14,
+53,Pembroke SAU Office,167,Epsom,BA30," 39,637 "," 64,730 ",14,
+53,Pembroke SAU Office,167,Epsom,MA," 41,123 "," 67,156 ",14,
+53,Pembroke SAU Office,167,Epsom,MA15," 42,666 "," 69,674 ",14,
+53,Pembroke SAU Office,167,Epsom,MA30," 44,265 "," 72,288 ",14,
+53,Pembroke SAU Office,427,Pembroke,BA," 36,772 "," 59,564 ",15,
+53,Pembroke SAU Office,427,Pembroke,BA15," 38,111 "," 60,903 ",15,
+53,Pembroke SAU Office,427,Pembroke,MA," 42,104 "," 64,896 ",15,
+53,Pembroke SAU Office,427,Pembroke,MA15," 43,443 "," 66,235 ",15,**
+54,Rochester SAU Office,461,Rochester,BA," 36,693 "," 59,647 ",17,**
+54,Rochester SAU Office,461,Rochester,BA15," 38,045 "," 61,035 ",17,**
+54,Rochester SAU Office,461,Rochester,MA," 40,186 "," 63,238 ",17,**
+54,Rochester SAU Office,461,Rochester,MA15," 41,539 "," 64,628 ",17,**
+54,Rochester SAU Office,461,Rochester,MA30," 42,890 "," 66,171 ",17,**
+55,Timberlane Regional SAU Office,223,Hampstead,BA," 40,507 "," 53,032 ",12,**
+55,Timberlane Regional SAU Office,223,Hampstead,BA15," 42,426 "," 56,450 ",13,**
+55,Timberlane Regional SAU Office,223,Hampstead,BA30," 44,344 "," 61,309 ",15,**
+55,Timberlane Regional SAU Office,223,Hampstead,MA," 45,988 "," 63,817 ",15,**
+55,Timberlane Regional SAU Office,223,Hampstead,MA15," 47,815 "," 66,611 ",15,
+55,Timberlane Regional SAU Office,223,Hampstead,MA30," 49,641 "," 69,400 ",15,
+55,Timberlane Regional SAU Office,534,Timberlane Regional,BA," 36,641 "," 60,208 ",15,
+55,Timberlane Regional SAU Office,534,Timberlane Regional,BA15," 38,274 "," 63,010 ",15,
+55,Timberlane Regional SAU Office,534,Timberlane Regional,MA," 40,674 "," 67,131 ",15,
+55,Timberlane Regional SAU Office,534,Timberlane Regional,MA30," 42,506 "," 70,280 ",15,
+56,Somersworth SAU Office,463,Rollinsford,BA," 37,406 "," 54,068 ",8,
+56,Somersworth SAU Office,463,Rollinsford,BA15," 39,276 "," 56,267 ",8,
+56,Somersworth SAU Office,463,Rollinsford,BA30," 41,242 "," 59,030 ",8,
+56,Somersworth SAU Office,463,Rollinsford,MA," 43,305 "," 61,932 ",8,
+56,Somersworth SAU Office,463,Rollinsford,MA15," 45,468 "," 64,977 ",8,
+56,Somersworth SAU Office,463,Rollinsford,MA30," 47,743 "," 68,175 ",8,
+56,Somersworth SAU Office,491,Somersworth,BA," 36,138 "," 43,839 ",8,
+56,Somersworth SAU Office,491,Somersworth,BA15," 37,182 "," 46,275 ",9,
+56,Somersworth SAU Office,491,Somersworth,BA30," 38,427 "," 51,985 ",11,
+56,Somersworth SAU Office,491,Somersworth,MA," 39,644 "," 57,375 ",12,
+56,Somersworth SAU Office,491,Somersworth,MA15," 39,644 "," 57,375 ",13,
+56,Somersworth SAU Office,491,Somersworth,MA30," 40,768 "," 63,445 ",13,
+57,Salem SAU Office,473,Salem,BA," 38,951 "," 66,403 ",13,
+57,Salem SAU Office,473,Salem,BA15," 40,548 "," 69,125 ",13,
+57,Salem SAU Office,473,Salem,BA30," 42,207 "," 71,960 ",13,
+57,Salem SAU Office,473,Salem,MA," 43,940 "," 74,910 ",13,
+57,Salem SAU Office,473,Salem,MA15," 45,739 "," 77,981 ",13,
+57,Salem SAU Office,473,Salem,MA30," 47,613 "," 81,178 ",13,
+58,Northumberland SAU Office,407,Northumberland,BA," 33,699 "," 42,699 ",10,
+58,Northumberland SAU Office,407,Northumberland,BA15," 34,524 "," 43,524 ",10,
+58,Northumberland SAU Office,407,Northumberland,BA30," 35,349 "," 44,349 ",10,
+58,Northumberland SAU Office,407,Northumberland,MA," 36,174 "," 45,174 ",10,
+58,Northumberland SAU Office,499,Stark,BA," 32,000 "," 45,000 ",14,
+58,Northumberland SAU Office,499,Stark,BA15," 32,600 "," 45,600 ",14,
+58,Northumberland SAU Office,499,Stark,BA30," 33,200 "," 46,200 ",14,
+58,Northumberland SAU Office,499,Stark,MA," 33,800 "," 46,800 ",14,
+58,Northumberland SAU Office,499,Stark,MA15," 34,400 "," 47,400 ",14,
+58,Northumberland SAU Office,509,Stratford,BA," 32,800 "," 42,550 ",14,
+58,Northumberland SAU Office,509,Stratford,BA15," 33,300 "," 43,050 ",14,
+58,Northumberland SAU Office,509,Stratford,BA30," 33,800 "," 43,550 ",14,**
+58,Northumberland SAU Office,509,Stratford,MA," 34,300 "," 44,050 ",14,**
+58,Northumberland SAU Office,509,Stratford,MA15," 34,800 "," 44,550 ",14,**
+59,Winnisquam Regional SAU Office,582,Winnisquam Regional,BA," 37,558 "," 47,330 ",10,**
+59,Winnisquam Regional SAU Office,582,Winnisquam Regional,BA15," 38,779 "," 48,551 ",10,
+59,Winnisquam Regional SAU Office,582,Winnisquam Regional,MA," 39,999 "," 49,771 ",10,
+59,Winnisquam Regional SAU Office,582,Winnisquam Regional,MA15," 41,220 "," 50,992 ",10,
+59,Winnisquam Regional SAU Office,582,Winnisquam Regional,MA30," 42,441 "," 52,213 ",10,
+60,Fall Mountain Regional SAU Office,174,Fall Mountain Regional,BA," 43,926 "," 57,635 ",11,
+60,Fall Mountain Regional SAU Office,174,Fall Mountain Regional,MA," 46,792 "," 61,396 ",11,
+60,Fall Mountain Regional SAU Office,174,Fall Mountain Regional,MA15," 47,676 "," 62,557 ",11,**
+60,Fall Mountain Regional SAU Office,174,Fall Mountain Regional,MA30," 48,558 "," 63,711 ",11,**
+62,Mascoma Valley SAU Office,343,Mascoma Valley Regional,BA," 37,555 "," 60,009 ",16,**
+62,Mascoma Valley SAU Office,343,Mascoma Valley Regional,BA15," 38,622 "," 61,715 ",16,**
+62,Mascoma Valley SAU Office,343,Mascoma Valley Regional,BA30," 39,709 "," 63,468 ",16,**
+62,Mascoma Valley SAU Office,343,Mascoma Valley Regional,MA," 40,848 "," 65,272 ",16,
+62,Mascoma Valley SAU Office,343,Mascoma Valley Regional,MA15," 42,009 "," 67,127 ",16,
+62,Mascoma Valley SAU Office,343,Mascoma Valley Regional,MA30," 43,204 "," 69,034 ",16,
+63,Wilton SAU Office,572,Wilton-Lyndeborough Cooperative,BA," 37,000 "," 61,500 ",18,
+63,Wilton SAU Office,572,Wilton-Lyndeborough Cooperative,BA15," 37,500 "," 62,000 ",18,
+63,Wilton SAU Office,572,Wilton-Lyndeborough Cooperative,BA30," 38,000 "," 62,500 ",18,
+63,Wilton SAU Office,572,Wilton-Lyndeborough Cooperative,MA," 40,000 "," 69,500 ",18,
+63,Wilton SAU Office,572,Wilton-Lyndeborough Cooperative,MA30," 41,500 "," 71,500 ",18,
+64,Milton SAU Office,359,Milton,BA," 33,357 "," 49,392 ",14,
+64,Milton SAU Office,359,Milton,BA15," 34,329 "," 50,844 ",14,
+64,Milton SAU Office,359,Milton,BA30," 35,329 "," 52,339 ",14,
+64,Milton SAU Office,359,Milton,MA," 36,359 "," 53,879 ",14,**
+64,Milton SAU Office,359,Milton,MA15," 37,419 "," 55,465 ",14,**
+65,Kearsarge Regional SAU Office,276,Kearsarge Regional,BA," 39,411 "," 57,522 ",10,**
+65,Kearsarge Regional SAU Office,276,Kearsarge Regional,BA15," 40,870 "," 65,068 ",13,**
+65,Kearsarge Regional SAU Office,276,Kearsarge Regional,MA," 44,336 "," 76,646 ",17,
+65,Kearsarge Regional SAU Office,276,Kearsarge Regional,MA30," 45,796 "," 78,134 ",17,
+66,Hopkinton SAU Office,263,Hopkinton,BA," 38,897 "," 53,601 ",8,
+66,Hopkinton SAU Office,263,Hopkinton,BA15," 40,220 "," 59,124 ",10,
+66,Hopkinton SAU Office,263,Hopkinton,BA30," 40,998 "," 64,103 ",11,
+66,Hopkinton SAU Office,263,Hopkinton,MA," 43,008 "," 73,001 ",15,
+66,Hopkinton SAU Office,263,Hopkinton,MA15," 43,802 "," 73,796 ",15,
+66,Hopkinton SAU Office,263,Hopkinton,MA30," 44,595 "," 74,590 ",15,
+67,Bow SAU Office,57,Bow,BA," 38,106 "," 63,421 ",14,
+67,Bow SAU Office,57,Bow,BA15," 39,249 "," 65,326 ",14,
+67,Bow SAU Office,57,Bow,BA30," 40,426 "," 67,287 ",14,
+67,Bow SAU Office,57,Bow,MA," 42,447 "," 70,650 ",14,
+67,Bow SAU Office,57,Bow,MA15," 43,721 "," 72,770 ",14,
+67,Bow SAU Office,57,Bow,MA30," 45,032 "," 74,953 ",14,
+67,Bow SAU Office,149,Dunbarton,BA," 35,096 "," 53,849 ",15,
+67,Bow SAU Office,149,Dunbarton,BA15," 36,167 "," 55,671 ",15,
+67,Bow SAU Office,149,Dunbarton,BA30," 37,239 "," 57,492 ",15,
+67,Bow SAU Office,149,Dunbarton,MA," 38,578 "," 59,581 ",15,
+67,Bow SAU Office,149,Dunbarton,MA15," 39,811 "," 61,564 ",15,
+67,Bow SAU Office,149,Dunbarton,MA30," 41,043 "," 62,796 ",15,
+68,Lincoln-Woodstock SAU Office,305,Lincoln-Woodstock Cooperative,BA," 34,584 "," 47,584 ",11,
+68,Lincoln-Woodstock SAU Office,305,Lincoln-Woodstock Cooperative,BA15," 35,334 "," 48,334 ",11,
+68,Lincoln-Woodstock SAU Office,305,Lincoln-Woodstock Cooperative,BA30," 36,184 "," 49,184 ",11,**
+68,Lincoln-Woodstock SAU Office,305,Lincoln-Woodstock Cooperative,MA," 37,184 "," 50,184 ",11,**
+68,Lincoln-Woodstock SAU Office,305,Lincoln-Woodstock Cooperative,MA30," 38,284 "," 51,284 ",11,**
+69,Middleton SAU,353,Middleton,BA," 40,000 "," 54,350 ",10,**
+69,Middleton SAU,353,Middleton,BA15," 41,000 "," 61,600 ",12,**
+69,Middleton SAU,353,Middleton,MA," 42,000 "," 69,485 ",13,**
+69,Middleton SAU,353,Middleton,MA30," 46,000 "," 79,914 ",14,
+70,Hanover SAU Office,142,Dresden,BA," 45,167 "," 61,424 ",9,
+70,Hanover SAU Office,142,Dresden,BA15," 47,424 "," 71,814 ",12,
+70,Hanover SAU Office,142,Dresden,BA30," 48,777 "," 76,782 ",13,
+70,Hanover SAU Office,142,Dresden,MA," 50,135 "," 82,652 ",14,
+70,Hanover SAU Office,142,Dresden,MA15," 51,942 "," 84,911 ",14,**
+70,Hanover SAU Office,142,Dresden,MA30," 53,296 "," 87,623 ",14,**
+70,Hanover SAU Office,233,Hanover,BA," 45,167 "," 61,424 ",9,**
+70,Hanover SAU Office,233,Hanover,BA15," 47,424 "," 71,814 ",12,**
+70,Hanover SAU Office,233,Hanover,BA30," 48,777 "," 76,782 ",13,**
+70,Hanover SAU Office,233,Hanover,MA," 50,135 "," 82,652 ",14,**
+70,Hanover SAU Office,233,Hanover,MA15," 51,942 "," 84,911 ",14,**
+70,Hanover SAU Office,233,Hanover,MA30," 53,296 "," 87,623 ",14,**
+71,Lempster SAU Office,299,Lempster,BA," 35,992 "," 53,674 ",15,**
+71,Lempster SAU Office,299,Lempster,BA15," 36,964 "," 55,123 ",15,**
+71,Lempster SAU Office,299,Lempster,BA30," 37,962 "," 56,612 ",15,**
+71,Lempster SAU Office,299,Lempster,MA," 38,987 "," 58,140 ",15,**
+71,Lempster SAU Office,299,Lempster,MA15," 40,040 "," 59,710 ",15,**
+71,Lempster SAU Office,299,Lempster,MA30," 41,121 "," 61,322 ",15,**
+72,Alton SAU Office,15,Alton,BA," 36,945 "," 56,719 ",16,**
+72,Alton SAU Office,15,Alton,BA15," 38,425 "," 59,705 ",16,**
+72,Alton SAU Office,15,Alton,MA," 41,380 "," 64,181 ",16,**
+72,Alton SAU Office,15,Alton,MA30," 44,335 "," 69,033 ",16,
+73,Gilford SAU Office,191,Gilford,BA," 39,906 "," 58,841 ",16,
+73,Gilford SAU Office,191,Gilford,BA15," 41,348 "," 60,283 ",16,
+73,Gilford SAU Office,191,Gilford,MA," 42,896 "," 69,685 ",20,
+73,Gilford SAU Office,191,Gilford,MA15," 44,059 "," 71,763 ",20,**
+73,Gilford SAU Office,191,Gilford,MA30," 45,111 "," 73,034 ",20,**
+74,Barrington SAU Office,33,Barrington,BA," 36,000 "," 54,000 ",15,**
+74,Barrington SAU Office,33,Barrington,BA15," 36,500 "," 55,000 ",15,**
+74,Barrington SAU Office,33,Barrington,BA30," 37,000 "," 56,000 ",15,**
+74,Barrington SAU Office,33,Barrington,MA," 38,500 "," 60,000 ",15,**
+74,Barrington SAU Office,33,Barrington,MA15," 39,000 "," 61,000 ",15,
+74,Barrington SAU Office,33,Barrington,MA30," 39,500 "," 62,000 ",15,
+75,Grantham SAU Office,211,Grantham,BA," 41,380 "," 62,591 ",15,
+75,Grantham SAU Office,211,Grantham,BA15," 42,622 "," 66,404 ",16,
+75,Grantham SAU Office,211,Grantham,BA30," 43,901 "," 70,446 ",17,
+75,Grantham SAU Office,211,Grantham,MA," 46,095 "," 76,189 ",18,**
+75,Grantham SAU Office,211,Grantham,MA15," 47,478 "," 78,474 ",18,**
+75,Grantham SAU Office,211,Grantham,MA30," 48,903 "," 80,827 ",18,**
+76,Lyme SAU Office,327,Lyme,BA," 47,365 "," 67,495 ",11,**
+76,Lyme SAU Office,327,Lyme,BA15," 49,378 "," 69,508 ",11,
+76,Lyme SAU Office,327,Lyme,BA30," 51,391 "," 79,573 ",15,
+76,Lyme SAU Office,327,Lyme,MA," 51,391 "," 79,573 ",15,
+76,Lyme SAU Office,327,Lyme,MA15," 53,404 "," 83,599 ",16,
+76,Lyme SAU Office,327,Lyme,MA30," 55,417 "," 85,612 ",16,
+77,Monroe SAU Office,365,Monroe,BA," 34,377 "," 47,994 ",10,
+77,Monroe SAU Office,365,Monroe,BA15," 35,890 "," 37,403 ",11,
+77,Monroe SAU Office,365,Monroe,MA," 37,402 "," 63,123 ",18,
+77,Monroe SAU Office,365,Monroe,MA15," 38,915 "," 64,636 ",18,
+77,Monroe SAU Office,365,Monroe,MA30," 41,940 "," 67,661 ",18,
+79,Gilmanton SAU Office,195,Gilmanton,BA," 36,771 "," 58,539 ",16,
+79,Gilmanton SAU Office,195,Gilmanton,BA15," 38,352 "," 61,056 ",16,
+79,Gilmanton SAU Office,195,Gilmanton,MA," 40,270 "," 64,109 ",16,
+79,Gilmanton SAU Office,195,Gilmanton,MA30," 42,585 "," 67,795 ",16,
+80,Shaker Regional SAU Office,486,Shaker Regional,BA," 35,750 "," 49,575 ",10,
+80,Shaker Regional SAU Office,486,Shaker Regional,BA15," 38,250 "," 50,850 ",10,
+80,Shaker Regional SAU Office,486,Shaker Regional,MA," 39,750 "," 52,350 ",10,
+80,Shaker Regional SAU Office,486,Shaker Regional,MA15," 41,650 "," 54,250 ",10,
+80,Shaker Regional SAU Office,486,Shaker Regional,MA30," 43,150 "," 55,750 ",10,
+82,Chester SAU Office,93,Chester,BA," 36,767 "," 52,915 ",15,
+82,Chester SAU Office,93,Chester,BA15," 37,763 "," 54,371 ",15,
+82,Chester SAU Office,93,Chester,BA30," 38,862 "," 55,935 ",15,
+82,Chester SAU Office,93,Chester,MA," 39,980 "," 57,733 ",15,
+82,Chester SAU Office,93,Chester,MA15," 41,109 "," 58,932 ",15,
+82,Chester SAU Office,93,Chester,MA30," 42,342 "," 60,270 ",15,
+83,Fremont SAU Office,189,Fremont,BA," 34,714 "," 55,810 ",15,
+83,Fremont SAU Office,189,Fremont,BA15," 35,793 "," 57,433 ",15,
+83,Fremont SAU Office,189,Fremont,BA30," 36,912 "," 59,108 ",15,
+83,Fremont SAU Office,189,Fremont,MA," 38,064 "," 60,848 ",15,
+83,Fremont SAU Office,189,Fremont,MA15," 39,263 "," 62,648 ",15,
+83,Fremont SAU Office,189,Fremont,MA30," 40,499 "," 64,504 ",15,
+84,Littleton SAU Office,317,Littleton,BA," 41,220 "," 61,470 ",16,
+84,Littleton SAU Office,317,Littleton,BA30," 42,570 "," 62,820 ",16,
+84,Littleton SAU Office,317,Littleton,MA," 43,920 "," 64,170 ",16,
+84,Littleton SAU Office,317,Littleton,MA15," 45,270 "," 65,520 ",16,
+84,Littleton SAU Office,317,Littleton,MA30," 46,620 "," 66,870 ",16,
+85,Sunapee SAU Office,515,Sunapee,BA," 40,270 "," 70,473 ",15,
+85,Sunapee SAU Office,515,Sunapee,BA15," 42,284 "," 72,486 ",15,
+85,Sunapee SAU Office,515,Sunapee,BA30," 44,297 "," 74,500 ",15,
+85,Sunapee SAU Office,515,Sunapee,MA," 46,311 "," 76,513 ",15,
+85,Sunapee SAU Office,515,Sunapee,MA15," 48,324 "," 78,527 ",15,
+86,Barnstead SAU Office,31,Barnstead,BA," 32,000 "," 46,250 ",16,
+86,Barnstead SAU Office,31,Barnstead,BA15," 32,320 "," 46,713 ",16,
+86,Barnstead SAU Office,31,Barnstead,BA30," 32,966 "," 47,647 ",16,
+86,Barnstead SAU Office,31,Barnstead,MA," 33,955 "," 49,076 ",16,
+86,Barnstead SAU Office,31,Barnstead,MA15," 35,314 "," 51,039 ",16,
+86,Barnstead SAU Office,31,Barnstead,MA30," 35,314 "," 51,039 ",16,**
+87,Mascenic Regional SAU Office,342,Mascenic Regional,BA," 37,794 "," 57,374 ",25,**
+87,Mascenic Regional SAU Office,342,Mascenic Regional,BA15," 38,801 "," 58,840 ",25,**
+87,Mascenic Regional SAU Office,342,Mascenic Regional,MA," 39,806 "," 64,986 ",25,**
+87,Mascenic Regional SAU Office,342,Mascenic Regional,MA15," 40,812 "," 66,929 ",25,
+87,Mascenic Regional SAU Office,342,Mascenic Regional,MA30," 41,818 "," 68,822 ",25,
+88,Lebanon SAU Office,295,Lebanon,BA," 42,803 "," 68,686 ",17,
+88,Lebanon SAU Office,295,Lebanon,BA15," 44,088 "," 70,750 ",17,
+88,Lebanon SAU Office,295,Lebanon,BA30," 45,411 "," 72,874 ",17,**
+88,Lebanon SAU Office,295,Lebanon,MA," 47,682 "," 76,519 ",17,**
+88,Lebanon SAU Office,295,Lebanon,MA15," 49,110 "," 78,812 ",17,**
+88,Lebanon SAU Office,295,Lebanon,MA30," 50,585 "," 81,177 ",17,**
+89,Mason SAU Office,345,Mason,BA," 42,203 "," 48,373 ",0,**
+89,Mason SAU Office,345,Mason,BA30," 48,644 ", -   ,0,**
+89,Mason SAU Office,345,Mason,MA," 32,952 "," 50,706 ",0,**
+89,Mason SAU Office,345,Mason,MA15," 58,282 ", -   ,0,**
+90,Hampton SAU Office,225,Hampton,BA," 41,576 "," 62,278 ",15,**
+90,Hampton SAU Office,225,Hampton,BA15," 43,029 "," 64,457 ",15,**
+90,Hampton SAU Office,225,Hampton,BA30," 44,535 "," 67,195 ",15,**
+90,Hampton SAU Office,225,Hampton,MA," 46,316 "," 74,681 ",17,**
+90,Hampton SAU Office,225,Hampton,MA15," 47,939 "," 77,297 ",17,**
+90,Hampton SAU Office,225,Hampton,MA30," 49,616 "," 80,002 ",17,**
+92,Hinsdale SAU Office,255,Hinsdale,BA," 42,525 "," 55,302 ",15,**
+92,Hinsdale SAU Office,255,Hinsdale,BA15," 43,025 "," 55,968 ",15,**
+92,Hinsdale SAU Office,255,Hinsdale,MA," 44,025 "," 56,956 ",15,
+92,Hinsdale SAU Office,255,Hinsdale,MA15," 44,525 "," 58,345 ",15,
+92,Hinsdale SAU Office,255,Hinsdale,MA30," 45,825 "," 60,796 ",15,
+93,Monadnock Regional SAU Office,363,Monadnock Regional,BA," 37,400 "," 47,400 ",12,
+93,Monadnock Regional SAU Office,363,Monadnock Regional,BA15," 39,400 "," 50,600 ",13,**
+93,Monadnock Regional SAU Office,363,Monadnock Regional,MA," 42,300 "," 54,500 ",14,**
+93,Monadnock Regional SAU Office,363,Monadnock Regional,MA15," 45,000 "," 57,000 ",14,**
+93,Monadnock Regional SAU Office,363,Monadnock Regional,MA30," 48,000 "," 61,000 ",15,**
+94,Winchester SAU Office,573,Winchester,BA," 37,381 "," 43,615 ",10,**
+94,Winchester SAU Office,573,Winchester,BA15," 38,304 "," 47,615 ",12,
+94,Winchester SAU Office,573,Winchester,MA," 40,763 "," 54,768 ",13,
+94,Winchester SAU Office,573,Winchester,MA15," 42,276 "," 58,766 ",14,
+94,Winchester SAU Office,573,Winchester,MA30," 45,202 "," 65,991 ",16,
+101,Wakefield SAU Office,543,Wakefield,BA," 33,468 "," 51,553 ",13,
+101,Wakefield SAU Office,543,Wakefield,BA15," 34,793 "," 54,305 ",13,
+101,Wakefield SAU Office,543,Wakefield,BA30," 36,172 "," 56,964 ",13,
+101,Wakefield SAU Office,543,Wakefield,MA," 37,848 "," 60,518 ",13,
+101,Wakefield SAU Office,543,Wakefield,MA15," 39,342 "," 61,976 ",13,
+101,Wakefield SAU Office,543,Wakefield,MA30," 40,875 "," 64,394 ",13,
+103,Hill SAU Office,247,Hill,BA," 37,285 "," 44,000 ",0,**
+103,Hill SAU Office,247,Hill,BA15," 44,274 "," 47,604 ",0,**
+201,Coe-Brown Northwood Academy,998,Coe-Brown Northwood Academy,BA," 44,026 "," 87,172 ",25,**
+201,Coe-Brown Northwood Academy,998,Coe-Brown Northwood Academy,BA15," 45,567 "," 82,549 ",25,**
+201,Coe-Brown Northwood Academy,998,Coe-Brown Northwood Academy,BA30," 47,108 "," 84,090 ",25,**
+201,Coe-Brown Northwood Academy,998,Coe-Brown Northwood Academy,MA," 48,649 "," 85,631 ",25,**
+201,Coe-Brown Northwood Academy,998,Coe-Brown Northwood Academy,MA30," 50,190 "," 87,172 ",25,
+301,Prospect Mountain JMA,970,Prospect Mountain JMA,BA," 35,858 "," 55,051 ",16,
+301,Prospect Mountain JMA,970,Prospect Mountain JMA,BA30," 37,295 "," 57,949 ",16,
+301,Prospect Mountain JMA,970,Prospect Mountain JMA,MA," 40,163 "," 62,294 ",16,
+301,Prospect Mountain JMA,970,Prospect Mountain JMA,MA30," 43,031 "," 67,003 ",16,
+,,,,,,,,
+Notes:,,,,,,,,
+BA = Bachelor's Degree,,,,,,,,
+BA15 = Bachelor's Degree + 15 credits,,,,,,,,
+BA30 = Bachelor's Degree + 30 credits,,,,,,,,
+MA = Master's Degree,,,,,,,,
+MA15 = Master's Degree + 15 credits,,,,,,,,
+MA30 = Master's Degree + 30 credits,,,,,,,,
+A district's professional education levels may not match exactly the standard grid as presented in this report. Contact the district directly for details.,,,,,,,,
+Charter school information is not included.,,,,,,,,
+,,,,,,,,
+* Pinkerton Academy uses a merit system.,,,,,,,,
+**No schedule provided,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,

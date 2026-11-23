@@ -38,6 +38,12 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `iach` | NH DOE iAchieve and iExplore dashboards | `nh-doe/dashboard-exports-2026-11-22/iexplore_compare_all_entities.tsv`, `nh-doe/extracts-2026-11-22/iexplore-school-level.py` |
 | `iplat` | NH DOE iPlatform public reports | `nh-doe/iplatform-extracts-2026-11-22.md`, `nh-doe/extracts-2026-11-22/` |
 | `irep` | NH DOE iReport (ESSA and IDEA reports) | `nh-doe/dashboard-exports-2026-11-22/ireport_essa_idea_suspension.tsv`, `nh-doe/extracts-2026-11-22/ireport-essa-ratings.txt` |
+| `admsal` | Superintendent, assistant superintendent and business administrator salaries by SAU | `nh-doe/inline-documents__salaries17-18.csv`, `nh-doe/inline-documents__salaries18-19.csv`, `nh-doe/inline-documents__salaries19-20.csv`, `nh-doe/inline-documents__sonh__admin-sal-21-22.csv` +5 more (9/9 URLs mirrored) |
+| `nhsum` | NH state summary of school district revenue and expenditures | `nh-doe/inline-documents__sonh__summary-of-rev-exp-fy2022.csv`, `nh-doe/inline-documents__sonh__summary-of-rev-exp-fy2023.csv`, `nh-doe/inline-documents__sonh__summary-of-rev-exp-fy2024.csv`, `nh-doe/inline-documents__sonh__summary-of-rev-exp-fy2025.csv` +4 more (8/8 URLs mirrored) |
+| `tsched` | Teacher salary schedules by district | `nh-doe/inline-documents__sonh__teach-sal-sched20-21_0.csv`, `nh-doe/inline-documents__sonh__teach-sal-sched21-22.csv`, `nh-doe/inline-documents__sonh__teach-sal-sched24-25.xlsx`, `nh-doe/inline-documents__sonh__teach-sal-schedl23-24.csv` +4 more (8/8 URLs mirrored) |
+| `restrep` | Annual restraint and seclusion report to the legislature | `nh-doe/inline-documents__sonh__ltr-restraint-seclusion-sy-2022-2023.pdf`, `nh-doe/inline-documents__sonh__restraintandseclusion11-8-18.pdf`, `nh-doe/inline-documents__sonh__restraintandseclusion20-21.pdf`, `nh-doe/inline-documents__sonh__restraintandseclusionsy-2018-2019.pdf` +4 more (8/8 URLs mirrored) |
+| `fte` | Staff full-time equivalents by district | `nh-doe/inline-documents__2020-04__fte-district17-18.xlsx`, `nh-doe/inline-documents__fte-district18-19.csv`, `nh-doe/inline-documents__sonh__fte-district19-20.csv`, `nh-doe/inline-documents__sonh__fte-district20-21.csv` +1 more (5/5 URLs mirrored) |
+| `tatt` | Educational attainment of teachers by district | `nh-doe/inline-documents__sonh__teach-att-21-22_0.csv`, `nh-doe/inline-documents__sonh__teach-attain20-21_0.csv`, `nh-doe/inline-documents__teach_attain17-18.csv`, `nh-doe/inline-documents__teach_attain18-19.csv` (4/4 URLs mirrored) |
 
 ## Dashboard rows
 
@@ -51,19 +57,19 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `cpp` | `doe25`, `cpp` |
 | `cmp` | `cpp`, `cppst` |
 | `lvl` | `cpp`, `doe25` |
-| `instr` | `doe25` |
-| `spec` | `doe25` |
-| `adm` | `doe25` |
+| `instr` | `doe25`, `nhsum` |
+| `spec` | `doe25`, `nhsum` |
+| `adm` | `doe25`, `nhsum` |
 | `bldg` | `doe25` |
 | `staff` | `doe25` |
 | `ben` | `doe25` |
 | `tstart` | `tstart` |
 | `tavg` | `tsal`, `ip` |
 | `ratio` | `ratio`, `ip` |
-| `local` | `doe25` |
+| `local` | `doe25`, `nhsum` |
 | `pay` | `doe25` |
 | `aid` | `adeq`, `doe25` |
-| `fed` | `doe25` |
+| `fed` | `doe25`, `nhsum` |
 | `share` | `values` |
 | `base` | `values` |
 | `rate` | `values`, `dra` |
@@ -88,7 +94,7 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `coll` | `ar`, `ip` |
 | `drop` | `ar`, `ip` |
 | `ctc` | `ar` |
-| `tdeg` | `ar`, `ip` |
+| `tdeg` | `ar`, `ip`, `tatt` |
 | `texp` | `ar` |
 | `attlvl` | `ar`, `ip` |
 | `proj` | `arp` |
@@ -98,7 +104,7 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `susp` | `safety` |
 | `bully` | `safety` |
 | `viol` | `safety` |
-| `restr` | `safety` |
+| `restr` | `safety`, `restrep` |
 | `grad` | `iach` |
 | `part` | `iach` |
 | `cslr` | `iach` |
@@ -107,7 +113,20 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `town` | `iplat` |
 | `essa` | `irep` |
 | `incl` | `irep` |
-| `nts` | `iach`, `iplat` |
+| `nts` | `iach`, `iplat`, `fte` |
+| `cpay` | `admsal` |
+| `tmax` | `tsched` |
+
+## Mirrored but not charted
+
+Files found on the DOE and DRA pages during the 2026-11-23 sweep that no dashboard row uses. They are kept so the sweep can be checked. Grouped by the page they were listed on.
+
+- listed on DOE page assessment-data: 4 files, e.g. `inline-documents__2026__disagdatabytownresponsible_2026_0.xlsx`, `inline-documents__sonh__disagdata2022_2023_2024_bytownresponsible_static.xlsx`, `inline-documents__sonh__disagdata2024bytownresponsible_static.xlsx`
+- listed on DOE page financial-reports: 16 files, e.g. `inline-documents__2020-04__est_exp19-20.csv`, `inline-documents__2020-04__indirect2020-21.csv`, `inline-documents__est_exp17-18.csv`
+- listed on DOE page non-statewide-assessment-college-board-reports: 24 files, e.g. `inline-documents__nh_2017_saturday_sat_integrated_report.pdf`, `inline-documents__nh_2018_saturday_sat_integrated_report.pdf`, `inline-documents__sonh__2017-new-hampshire-sat-suite-assessments-annual-report.pdf`
+- listed on DOE page other-state-aid-programs: 9 files, e.g. `inline-documents__2026__excel-fy-25-phase-out.xlsx`, `inline-documents__2026__excel-fy-26-phase-out.xlsx`, `inline-documents__2026__fy-2025-efa-phase-report.pdf`
+- listed on DOE page staffing-and-salary-reports: 10 files, e.g. `inline-documents__principal-salaries19-20.csv`, `inline-documents__sonh__principal-salaries20-21.xlsx`, `inline-documents__sonh__principal-salaries20-21_1.csv`
+- listed on DRA municipal and property reports page: 13 files, e.g. `documents__2023-comparison-of-full-value-tax-rates-ranking-order.pdf`, `documents__2023-equalization-survey-including-utilities.pdf`, `documents__2023-equalization-survey-including-utilities.xlsx`
 
 ## Gaps and caveats
 
@@ -116,5 +135,6 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 - `nh-doe/dashboard-exports-2026-11-22/ireport_essa_idea_suspension.tsv` has the suspension, expulsion and IDEA Indicator 5 worksheets. Its ESSA Indicators section carries only a header (that worksheet returned every NH school and was left out); ESSA ratings are instead backed by the iExplore export and checked by `build/verify_dashboard_values.py`.
 - FY26 and FY27 budget context also draws on `orcsd/board-packets/` and `orcsd/financial-reports/`, which are cited by URL on the page.
 - NH DOE assessment files for 2019-20 do not exist (no testing that spring).
+- NH truancy rate (`trunt_nh`) is recomputed from the eight school-safety workbooks by `build/nh_truancy.py --check`; central-office pay by `build/admin_pay.py`; NH expenditure and revenue shares by `build/nh_summary.py`; Durham, Lee and Madbury tax rates by `build/verify_dra_rates.py`.
 
 Checks: `python3 build/verify_raw.py` (manifest, checksums, no unlisted files) and `python3 build/verify_dashboard_values.py` (transcribed school-level and ESSA values against the raw exports).

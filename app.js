@@ -156,8 +156,8 @@ dash.calc('headline', {
   var sel = 7;
   var mode = 'nom';
   var MODES = { nom: { label: 'Nominal dollars', f: null }, cpi: { label: 'Northeast CPI-U', f: 'f_cpi', idx: 'cpi_ne', n: 'cpi_ne_months', nn: 12 }, eci: { label: 'education labor costs (ECI)', f: 'f_eci', idx: 'eci_edu', n: 'eci_quarters', nn: 4 } };
-  var MONEY = ['fb_tot', 'fb_un', 'fb_com', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
-  var NAMES = ['spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'ratio', 'lvlenr', 'fb', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts'];
+  var MONEY = ['fb_tot', 'fb_un', 'fb_com', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
+  var NAMES = ['spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts'];
 
   var SCH = [['High school', 'hs'], ['Middle school', 'ms'], ['Mast Way', 'mw'], ['Moharimet', 'mo']];
   function schLines(r, fld, fmt) {
@@ -374,7 +374,7 @@ dash.calc('headline', {
         return {
           big: pct1(r.instr_share),
           sub: 'Instruction ÷ operating spending',
-          delta: baseOr(r, (Math.abs(r.instr_share - D0.instr_share) < 0.05 ? '▬ No change' : arrow(r.instr_share - D0.instr_share) + ' ' + Math.abs(r.instr_share - D0.instr_share).toFixed(1) + ' points') + ' since ' + BASE),
+          delta: baseOr(r, (Math.abs(r.instr_share - D0.instr_share) < 0.05 ? '▬ No change' : arrow(r.instr_share - D0.instr_share) + ' ' + Math.abs(r.instr_share - D0.instr_share).toFixed(1) + ' points') + ' since ' + BASE) + (r.nh_instr_sh != null ? ' · NH ' + pct1(r.nh_instr_sh) : ''),
           tag: 'Actual', prov: false, src: 'derived', field: 'instr_share'
         };
       },
@@ -389,9 +389,10 @@ dash.calc('headline', {
             ln('Plant operations', r.fn_plant, r.plant_share),
             ln('Transportation', r.fn_trans, r.trans_share),
             ln('Debt interest', r.fn_bint, r.debt_share),
-            ln('Food service', r.fn_food, r.food_share)
+            ln('Food service', r.fn_food, r.food_share),
+            r.nh_instr_sh != null ? ['New Hampshire: instruction · administration', pct1(r.nh_instr_sh) + ' · ' + pct1(r.nh_adm_sh)] : ['New Hampshire', 'not yet published']
           ],
-          note: 'Share of total recurring expenditures. Source: DOE-25 District Profile.'
+          note: 'Share of total recurring expenditures. The New Hampshire figures are the DOE’s statewide summary of all districts (state summary of revenue and expenditures). Source: DOE-25 District Profile.'
         };
       }
     },
@@ -409,7 +410,7 @@ dash.calc('headline', {
         return {
           big: pct1(r.local_share),
           sub: 'Local property tax ÷ total revenue',
-          delta: baseOr(r, (arrow(r.local_share - D0.local_share) + ' ' + Math.abs(r.local_share - D0.local_share).toFixed(1) + ' points') + ' since ' + BASE),
+          delta: baseOr(r, (arrow(r.local_share - D0.local_share) + ' ' + Math.abs(r.local_share - D0.local_share).toFixed(1) + ' points') + ' since ' + BASE) + (r.nh_local_sh != null ? ' · NH ' + pct1(r.nh_local_sh) : ''),
           tag: 'Actual', prov: false, src: 'derived', field: 'local_share'
         };
       },
@@ -420,7 +421,8 @@ dash.calc('headline', {
             ['Local property tax', moneyM(r.rev_local, 1) + ' · ' + r.local_share.toFixed(1) + '%'],
             ['State aid', moneyM(r.state_aid_amt, 1) + ' · ' + r.state_share.toFixed(1) + '%'],
             ['Federal aid', moneyM(r.rev_fed, 1) + ' · ' + r.fed_share.toFixed(1) + '%'],
-            ['Tuition, food, other local', moneyM(r.rev_oth_local, 1) + ' · ' + r.other_share.toFixed(1) + '%']
+            ['Tuition, food, other local', moneyM(r.rev_oth_local, 1) + ' · ' + r.other_share.toFixed(1) + '%'],
+            r.nh_local_sh != null ? ['New Hampshire: local · state · federal', pct1(r.nh_local_sh) + ' · ' + pct1(r.nh_state_sh) + ' · ' + pct1(r.nh_fed_sh)] : ['New Hampshire', 'not yet published']
           ],
           note: 'Share of total revenues of ' + moneyM(r.rev_tot, 1) + '. Source: DOE-25 District Profile.'
         };
@@ -468,7 +470,7 @@ dash.calc('headline', {
     },
     tip: function (r) {
       if (r.rev_fed == null) return { lines: [['Federal aid', 'not yet filed']], note: 'Appears after the district files its DOE-25.' };
-      return { lines: [['Federal aid', money(r.rev_fed)], ['Share of total revenue', r.fed_share.toFixed(1) + '%']], note: 'Source: DOE-25 District Profile. The DOE-25 also reports $473,496 of operating spending paid from CARES Act funds in FY 2020-21.' };
+      return { lines: [['Federal aid', money(r.rev_fed)], ['Share of total revenue', r.fed_share.toFixed(1) + '%'], r.nh_fed_sh != null ? ['New Hampshire share (all districts)', pct1(r.nh_fed_sh)] : ['New Hampshire share', 'not yet published']], note: 'Source: DOE-25 District Profile. The DOE-25 also reports $473,496 of operating spending paid from CARES Act funds in FY 2020-21.' };
     }
   };
   ROWS.sgp = {
@@ -1068,6 +1070,49 @@ dash.calc('headline', {
       return { lines: [['Oyster River', money(r.t_avg)], ['NH average', money(r.t_avg_state)], ['Gap', signPct((r.t_avg / r.t_avg_state - 1) * 100)], ['Teachers counted', r.t_avg_fte.toFixed(1) + ' FTE']], note: 'Average salary of teachers in the district, as reported to the NH DOE, before benefits. Source: NH DOE teacher average salary files.' };
     }
   };
+  ROWS.tmax = {
+    money: true,
+    aria: 'Top of the master’s degree salary scale, Oyster River and the New Hampshire average, by fiscal year',
+    domain: [60000, 90000], ticks: [65000, 75000, 85000], axis: false,
+    tickFmt: function (v) { return '$' + (v / 1000) + 'K'; },
+    series: [
+      { id: 'nh', get: function (r) { return r.ts_ma_max_nh; }, comp: true },
+      { id: 'orc', get: function (r) { return r.ts_ma_max; }, main: true }
+    ],
+    label: function (r) {
+      if (r.ts_ma_max == null) return { big: '—', sub: r.fy === '2022-23' ? 'No 2022-23 schedule file on the DOE site' : 'Not yet published by the NH DOE', delta: '', tag: r.fy === '2022-23' ? 'No data' : 'Pending', prov: true, src: 'years', field: 'ts_ma_max' };
+      return { big: money(r.ts_ma_max), sub: 'Top of the master’s degree scale', delta: 'NH average ' + money(r.ts_ma_max_nh) + ' · ' + signPct((r.ts_ma_max / r.ts_ma_max_nh - 1) * 100), tag: 'Actual', prov: false, src: 'years', field: 'ts_ma_max' };
+    },
+    tip: function (r) {
+      if (r.ts_ma_max == null) return { lines: [['Top of the master’s scale', r.fy === '2022-23' ? 'no file on the DOE site' : 'not yet published']], note: r.fy === '2022-23' ? 'The DOE lists a salary schedule file for every other year in this range but not 2022-23.' : 'Appears when the DOE posts the year.' };
+      return { lines: [['Master’s, top step: Oyster River', money(r.ts_ma_max)], ['NH average', money(r.ts_ma_max_nh)], ['Bachelor’s, top step: Oyster River', money(r.ts_ba_max)], ['NH average', money(r.ts_ba_max_nh)], ['Steps on the master’s scale', String(r.ts_ma_steps)], ['Districts averaged', String(r.ts_ma_n)]], note: 'Highest salary on each district’s schedule for the degree level, before benefits; many teachers are not at the top step. The NH figure is an unweighted average of the districts that listed the level. The 2025-26 Oyster River schedule has 13 steps, down from 15, with a much higher starting salary. Source: NH DOE teacher salary schedule files.' };
+    }
+  };
+  ROWS.cpay = {
+    money: true,
+    aria: 'Superintendent salary, Oyster River and the New Hampshire median, by fiscal year',
+    domain: [100000, 220000], ticks: [120000, 160000, 200000], axis: false,
+    tickFmt: function (v) { return '$' + (v / 1000) + 'K'; },
+    series: [
+      { id: 'nh', get: function (r) { return r.co_sup_med; }, comp: true },
+      { id: 'orc', get: function (r) { return r.co_sup; }, main: true }
+    ],
+    label: function (r) {
+      if (r.co_sup == null) return { big: '—', sub: 'Not yet published by the NH DOE', delta: '', tag: 'Pending', prov: true, src: 'years', field: 'co_sup' };
+      return { big: money(r.co_sup), sub: 'Superintendent salary', delta: 'NH median ' + money(r.co_sup_med) + ' · ' + signPct((r.co_sup / r.co_sup_med - 1) * 100), tag: r.fy === '2025-26' ? 'Preliminary' : 'Actual', prov: r.fy === '2025-26', src: 'years', field: 'co_sup' };
+    },
+    tip: function (r) {
+      if (r.co_sup == null) return { lines: [['Superintendent salary', 'not yet published']], note: 'Appears when the DOE posts the year.' };
+      var L = [];
+      [['Superintendent', 'sup'], ['Assistant superintendent', 'asst'], ['Business administrator', 'ba']].forEach(function (p) {
+        var a = r['co_' + p[1]], m = r['co_' + p[1] + '_med'];
+        L.push([p[0], money(a) + ' (' + signPct((a / m - 1) * 100) + ')']);
+        L.push(['NH median · rank', money(m) + ' · ' + r['co_' + p[1] + '_rk'] + ' of ' + r['co_' + p[1] + '_n']]);
+      });
+      return { lines: L,
+        note: 'Annual salary of the SAU office position as reported to the NH DOE, before benefits; Oyster River is SAU #5. The NH median is the middle value among the SAUs that listed a figure that year, and the count shown is how many did, so it moves with who reports and not only with pay (in 2021-22 many SAUs listed “Not Provided” for assistant superintendent and business administrator). SAUs differ in size and some share a superintendent. The 2025-26 file is the DOE’s preliminary report. Source: NH DOE administration salary files.' };
+    }
+  };
   ROWS.ratio = {
     aria: 'Students per teacher, Oyster River and the New Hampshire total, by fiscal year',
     domain: [10.5, 13.2], ticks: [11, 12, 13], axis: false,
@@ -1167,7 +1212,7 @@ dash.calc('headline', {
     },
     tip: function (r) {
       if (r.sat_tot == null) return { lines: [['SAT', 'not yet reported']], note: 'The high school counseling office reports scores after each spring test.' };
-      return { lines: [['ORHS reading and writing', String(r.sat_rw)], ['ORHS math', String(r.sat_m)], ['NH reading and writing', String(r.sat_rw_nh)], ['NH math', String(r.sat_m_nh)]], note: 'Section scores run 200 to 800, so the total runs 400 to 1600. Which students test differs from year to year, so compare trends with care. National averages printed in the report are left out because the 2019 figures do not match the College Board’s. Source: ORHS counseling, as printed in the ORCSD annual reports.' };
+      return { lines: [['ORHS reading and writing', String(r.sat_rw)], ['ORHS math', String(r.sat_m)], ['NH reading and writing', String(r.sat_rw_nh)], ['NH math', String(r.sat_m_nh)]], note: 'Section scores run 200 to 800, so the total runs 400 to 1600. Which students test differs from year to year, so compare trends with care. National averages printed in the report are left out because the 2019 figures do not match the College Board’s, and the NH figures differ from the NH DOE’s College Board report for all NH graduates (class of 2020: 531 reading and writing, 524 math; class of 2021: 540 and 526), so read the NH comparison as approximate. Source: ORHS counseling, as printed in the ORCSD annual reports.' };
     }
   };
   ROWS.coll = {
@@ -1394,11 +1439,11 @@ dash.calc('headline', {
     series: [{ id: 'spec', get: function (r) { return r.spec_pps; }, main: true }],
     label: function (r) {
       if (r.spec_pps == null) return pend('spec_pps');
-      return { big: money(r.spec_pps), sub: 'Special programs spending per student', delta: pct1(r.spec_share) + ' of operating spending', tag: 'Actual', prov: false, src: 'derived', field: 'spec_pps' };
+      return { big: money(r.spec_pps), sub: 'Special programs spending per student', delta: pct1(r.spec_share) + ' of operating spending' + (r.nh_spec_sh != null ? ' · NH ' + pct1(r.nh_spec_sh) : ''), tag: 'Actual', prov: false, src: 'derived', field: 'spec_pps' };
     },
     tip: function (r) {
       if (r.spec_pps == null) return { lines: [['Special programs', 'not yet filed']], note: 'Appears after the district files its DOE-25.' };
-      return { lines: [['Special programs spending', money(r.fn_spec)], ['Per October 1 student', money(r.spec_pps)], ['Share of operating spending', pct1(r.spec_share)]], note: 'Function 1200 (special programs), which includes special education and gifted programs. ' + DOEN };
+      return { lines: [['Special programs spending', money(r.fn_spec)], ['Per October 1 student', money(r.spec_pps)], ['Share of operating spending', pct1(r.spec_share)], r.nh_spec_sh != null ? ['New Hampshire share (all districts)', pct1(r.nh_spec_sh)] : ['New Hampshire share', 'not yet published']], note: 'Function 1200 (special programs), which includes special education and gifted programs. ' + DOEN };
     }
   };
   ROWS.adm = {
@@ -1408,11 +1453,11 @@ dash.calc('headline', {
     series: [{ id: 'adm', get: function (r) { return r.adm_share; }, main: true }],
     label: function (r) {
       if (r.adm_share == null) return pend('adm_share');
-      return { big: pct1(r.adm_share), sub: 'Administration and business ÷ operating spending', delta: moneyM(r.adm_amt, 1) + ' in total', tag: 'Actual', prov: false, src: 'derived', field: 'adm_share' };
+      return { big: pct1(r.adm_share), sub: 'Administration and business ÷ operating spending', delta: moneyM(r.adm_amt, 1) + ' in total' + (r.nh_adm_sh != null ? ' · NH ' + pct1(r.nh_adm_sh) : ''), tag: 'Actual', prov: false, src: 'derived', field: 'adm_share' };
     },
     tip: function (r) {
       if (r.adm_share == null) return { lines: [['Administration', 'not yet filed']], note: 'Appears after the district files its DOE-25.' };
-      return { lines: [['General administration and business (2300, 2800)', moneyM(r.fn_gab, 2)], ['School administration (2400)', moneyM(r.fn_sadm, 2)], ['Business services (2500)', moneyM(r.fn_bus, 2)], ['Total', moneyM(r.adm_amt, 2) + ' · ' + pct1(r.adm_share)]], note: 'Share of total recurring expenditures. Source: DOE-25 District Profile.' };
+      return { lines: [['General administration and business (2300, 2800)', moneyM(r.fn_gab, 2)], ['School administration (2400)', moneyM(r.fn_sadm, 2)], ['Business services (2500)', moneyM(r.fn_bus, 2)], ['Total', moneyM(r.adm_amt, 2) + ' · ' + pct1(r.adm_share)], r.nh_adm_sh != null ? ['New Hampshire share (all districts)', pct1(r.nh_adm_sh)] : ['New Hampshire share', 'not yet published']], note: 'Share of total recurring expenditures. The New Hampshire figure is the DOE’s statewide summary of all districts, using the same three functions. Source: DOE-25 District Profile.' };
     }
   };
   ROWS.bldg = {
@@ -1539,6 +1584,8 @@ dash.calc('headline', {
   ROWS.base.chg = { get: function (r) { return r.eq_pps; }, kind: 'pct', note: 'value per student' };
   ROWS.tstart.chg = { get: function (r) { return r.t_start; }, kind: 'pct', note: 'starting salary' };
   ROWS.tavg.chg = { get: function (r) { return r.t_avg; }, kind: 'pct', note: 'average salary' };
+  ROWS.tmax.chg = { get: function (r) { return r.ts_ma_max; }, kind: 'pct', note: 'top of master’s scale' };
+  ROWS.cpay.chg = { get: function (r) { return r.co_sup; }, kind: 'pct', note: 'superintendent salary' };
   ROWS.ratio.chg = { get: function (r) { return r.ratio; }, kind: 'pct', dec: true, note: 'students per teacher' };
   ROWS.staff.chg = { get: function (r) { return r.instr_sal; }, kind: 'pct', note: 'salaries' };
   var D0 = null;
@@ -1769,6 +1816,24 @@ dash.calc('headline', {
     return null;
   }
   function fileExt(u) { var m = /\.(csv|pdf|xlsx|xls)(?:$|\?)/i.exec(u); return m ? m[1].toUpperCase() : (/DownloadRecords/.test(u) ? 'XLSX' : ''); }
+  var REPO = 'https://github.com/C2BB/orcsd_10_year_glance/blob/main/raw/';
+  // Path of the mirrored copy in the repo's raw/ folder (verified against raw/MANIFEST.csv by build/verify_raw.py).
+  function rawPath(u) {
+    var m;
+    if (/education\.nh\.gov|revenue\.nh\.gov/.test(u)) {
+      var path = decodeURIComponent(u.replace(/^https?:\/\/[^\/]+/, '').replace(/[?#].*$/, ''));
+      m = /^.*\/files\/(.*)$/.exec(path); if (!m) return null;
+      var a = m[1].replace(/\//g, '__');
+      if (/\/(assessment\d+|disagg[\w-]*|publicdata[\w-]*|publicdisagg[\w-]*)\.csv$/.test(path)) a += '.gz';
+      if (a.indexOf('cooperative-school-district') >= 0) a = 'dra--' + a.split('__').pop();
+      return (/education/.test(u) ? 'nh-doe/' : 'nh-dra/') + a;
+    }
+    if (/orcsd\.org/.test(u)) {
+      m = /\/files\/documents\/(.*)$/.exec(decodeURIComponent(u));
+      return m ? 'orcsd/' + m[1].replace(/ /g, '_').replace(/\//g, '__') : (/1823327/.test(u) ? 'orcsd/web/news_2026-03-10_official-voting-results.html' : null);
+    }
+    m = /DownloadRecords\?id=(\d+)/.exec(u); return m ? 'nh-doe25/DOE25_id' + m[1] + '.xlsx' : null;
+  }
   function aLink(href, text) {
     var a = document.createElement('a');
     a.href = href; a.target = '_blank'; a.rel = 'noopener'; a.textContent = text;
@@ -1792,7 +1857,7 @@ dash.calc('headline', {
       }
       if (!url) { if (shown[s.page]) return; shown[s.page] = 1; }
       sep();
-      if (url) host.appendChild(aLink(url, text));
+      if (url) { host.appendChild(aLink(url, text)); var rp = s.k === 'page' ? null : rawPath(url); if (rp) { host.appendChild(document.createTextNode(' (')); var ra = aLink(REPO + rp, 'repo copy'); ra.className = 'rawcopy'; host.appendChild(ra); host.appendChild(document.createTextNode(')')); } }
       else { host.appendChild(aLink(s.page, s.pn)); host.appendChild(document.createTextNode(' (no file for this year)')); }
     });
     sep();

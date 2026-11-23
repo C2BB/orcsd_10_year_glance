@@ -35,12 +35,21 @@ for k, s in SRC.items():
     out.append(f"| `{k}` | {s['n']} | {loc or '-'}{note} |")
 out += ['', '## Dashboard rows', '', '| Row key | Sources cited |', '|---|---|']
 for k, v in MAP.items(): out.append(f"| `{k}` | {', '.join('`'+x+'`' for x in v)} |")
+out += ['', '## Mirrored but not charted', '',
+       'Files found on the DOE and DRA pages during the 2026-11-23 sweep that no dashboard row uses. They are kept so the sweep can be checked. Grouped by the page they were listed on.', '']
+grp = {}
+for r in man:
+    if r['used_by'].startswith('listed on'):
+        grp.setdefault(r['used_by'], []).append(r['stored_as'])
+for g, fl in sorted(grp.items()):
+    out.append('- ' + g.replace('; not charted', '') + ': ' + str(len(fl)) + ' files, e.g. ' + ', '.join('`' + f.split('/')[-1] + '`' for f in sorted(fl)[:3]))
 out += ['', '## Gaps and caveats', '',
  '- iPlatform reports (town enrollment by grade, FTE staff, student-teacher ratio 2022-26, class size, teacher salary and attainment 2023+, attendance by school, completers) offer no file download. Only the values read from the report viewer are kept (`nh-doe/iplatform-extracts-2026-11-22.md`, `nh-doe/extracts-2026-11-22/`). These are transcriptions, not original files.',
  '- iAchieve participation and graduation figures come from the iExplore export; values outside that export are transcribed.',
  '- `nh-doe/dashboard-exports-2026-11-22/ireport_essa_idea_suspension.tsv` has the suspension, expulsion and IDEA Indicator 5 worksheets. Its ESSA Indicators section carries only a header (that worksheet returned every NH school and was left out); ESSA ratings are instead backed by the iExplore export and checked by `build/verify_dashboard_values.py`.',
  '- FY26 and FY27 budget context also draws on `orcsd/board-packets/` and `orcsd/financial-reports/`, which are cited by URL on the page.',
  '- NH DOE assessment files for 2019-20 do not exist (no testing that spring).',
+ '- NH truancy rate (`trunt_nh`) is recomputed from the eight school-safety workbooks by `build/nh_truancy.py --check`; central-office pay by `build/admin_pay.py`; NH expenditure and revenue shares by `build/nh_summary.py`; Durham, Lee and Madbury tax rates by `build/verify_dra_rates.py`.',
  '', 'Checks: `python3 build/verify_raw.py` (manifest, checksums, no unlisted files) and `python3 build/verify_dashboard_values.py` (transcribed school-level and ESSA values against the raw exports).']
 open('raw/TRACE.md', 'w').write('\n'.join(out) + '\n')
 print('\n'.join(l for l in out if 'NO RAW' in l or '/' not in l and 'mirrored' in l))

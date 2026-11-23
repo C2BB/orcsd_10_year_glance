@@ -1,0 +1,825 @@
+Final 03-28-2022,,,,,,,,
+"New Hampshire Department of Education
+  Division of Education Analytics and Resources
+  Bureau of Educational Statistics
+  101 Pleasant St., Concord, NH 03301-3852
+  Telephone: (603) 271-2778",,,,,,,,
+,,,,,,,,
+"2021 - 2022 Teacher Salary Schedule by District
+In Non-Charter Public Schools and Public Academies",,,,,,,,
+,,,,,,,,
+SAU ID,SAU Name,District ID,,District Name,Degree Type,Minimum Salary ,Maximum Salary ,Number of Steps
+1,Contoocook Valley SAU Office,112,,Contoocook Valley,BA,"$40,000.00","$59,100.00",18
+1,Contoocook Valley SAU Office,112,,Contoocook Valley,BA15,"$41,000.00","$61,600.00",18
+1,Contoocook Valley SAU Office,112,,Contoocook Valley,BA30,"$42,000.00","$62,100.00",18
+1,Contoocook Valley SAU Office,112,,Contoocook Valley,MA,"$45,000.00","$64,100.00",18
+1,Contoocook Valley SAU Office,112,,Contoocook Valley,MA15,"$46,000.00","$65,100.00",18
+1,Contoocook Valley SAU Office,112,,Contoocook Valley,MA30,"$47,000.00","$66,600.00",18
+2,Inter-Lakes Cooperative SAU Office,23,,Ashland,BA,"$39,390.00","$64,654.00",16
+2,Inter-Lakes Cooperative SAU Office,23,,Ashland,BA15,"$40,768.00","$66,915.00",16
+2,Inter-Lakes Cooperative SAU Office,23,,Ashland,MA,"$42,401.00","$69,593.00",16
+2,Inter-Lakes Cooperative SAU Office,23,,Ashland,MA15,"$43,884.00","$72,028.00",16
+2,Inter-Lakes Cooperative SAU Office,269,,Inter-Lakes Cooperative,BA,"$42,975.00","$68,077.00",10
+2,Inter-Lakes Cooperative SAU Office,269,,Inter-Lakes Cooperative,BA15,"$45,764.00","$70,866.00",10
+2,Inter-Lakes Cooperative SAU Office,269,,Inter-Lakes Cooperative,MA,"$48,553.00","$73,655.00",10
+2,Inter-Lakes Cooperative SAU Office,269,,Inter-Lakes Cooperative,MA15,"$49,946.00","$75,047.00",10
+2,Inter-Lakes Cooperative SAU Office,269,,Inter-Lakes Cooperative,MA30,"$51,458.00","$76,560.00",10
+3,Berlin SAU Office,51,,Berlin,BA,"$39,681.00","$69,850.00",16
+3,Berlin SAU Office,51,,Berlin,BA15,"$41,268.00","$71,437.00",16
+3,Berlin SAU Office,51,,Berlin,MA,"$42,855.00","$73,024.00",16
+3,Berlin SAU Office,51,,Berlin,MA15,"$44,443.00","$74,611.00",16
+3,Berlin SAU Office,51,,Berlin,MA30,"$46,030.00","$76,198.00",16
+4,Newfound Area SAU Office,388,,Newfound Area ,BA,"$37,021.00","$59,926.00",15
+4,Newfound Area SAU Office,388,,Newfound Area ,BA15,"$38,132.00","$61,724.00",15
+4,Newfound Area SAU Office,388,,Newfound Area ,MA,"$39,276.00","$63,575.00",15
+4,Newfound Area SAU Office,388,,Newfound Area ,MA15,"$40,454.00","$65,482.00",15
+4,Newfound Area SAU Office,388,,Newfound Area ,MA30,"$41,667.00","$67,448.00",15
+5,Oyster River SAU Office,423,,Oyster River Coop,BA,"$43,864.00","$71,891.00",15
+5,Oyster River SAU Office,423,,Oyster River Coop,BA30,"$46,155.00","$76,300.00",15
+5,Oyster River SAU Office,423,,Oyster River Coop,MA,"$47,301.00","$78,519.00",15
+5,Oyster River SAU Office,423,,Oyster River Coop,MA30,"$49,590.00","$83,868.00",15
+6,Claremont SAU Office,101,,Claremont,BA,"$39,228.00","$59,428.00",17
+6,Claremont SAU Office,101,,Claremont,BA15,"$40,138.00","$60,864.00",17
+6,Claremont SAU Office,101,,Claremont,MA,"$41,071.00","$62,334.00",17
+6,Claremont SAU Office,101,,Claremont,MA15,"$42,030.00","$63,845.00",17
+6,Claremont SAU Office,539,,Unity,BA,"$39,063.00","$59,013.00",22
+6,Claremont SAU Office,539,,Unity,BA15,"$39,748.00","$59,698.00",22
+6,Claremont SAU Office,539,,Unity,MA,"$40,848.00","$60,798.00",22
+6,Claremont SAU Office,539,,Unity,MA15,"$42,863.00","$62,813.00",22
+6,Claremont SAU Office,539,,Unity,MA30,"$44,704.00","$64,654.00",22
+7,Colebrook SAU Office,105,,Colebrook,BA,"$37,000.00","$54,500.00",20
+7,Colebrook SAU Office,105,,Colebrook,BA15,"$38,250.00","$55,750.00",20
+7,Colebrook SAU Office,105,,Colebrook,MA,"$41,250.00","$58,750.00",20
+7,Colebrook SAU Office,437,,Pittsburg,BA,"$40,052.00",$0.00,0
+7,Colebrook SAU Office,437,,Pittsburg,BA15,"$40,992.00",$0.00,0
+7,Colebrook SAU Office,437,,Pittsburg,BA30,"$41,933.00",$0.00,0
+7,Colebrook SAU Office,437,,Pittsburg,MA,"$42,873.00",$0.00,0
+7,Colebrook SAU Office,501,,Stewartstown,BA,"$35,500.00","$41,800.00",10
+7,Colebrook SAU Office,501,,Stewartstown,BA15,"$36,000.00","$42,300.00",10
+7,Colebrook SAU Office,501,,Stewartstown,MA,"$36,500.00","$42,800.00",10
+8,Concord SAU Office,111,,Concord,BA,"$45,816.00","$79,124.00",13
+8,Concord SAU Office,111,,Concord,MA,"$50,398.00","$87,188.00",14
+8,Concord SAU Office,111,,Concord,MA30,"$53,147.00","$89,937.00",14
+9,Conway SAU Office,35,,Bartlett,BA,"$35,800.00","$46,300.00",8
+9,Conway SAU Office,35,,Bartlett,BA15,"$36,800.00","$47,300.00",8
+9,Conway SAU Office,35,,Bartlett,BA30,"$37,550.00","$49,550.00",9
+9,Conway SAU Office,35,,Bartlett,MA,"$38,100.00","$51,600.00",10
+9,Conway SAU Office,35,,Bartlett,MA15,"$38,650.00","$52,150.00",10
+9,Conway SAU Office,35,,Bartlett,MA30,"$39,200.00","$52,700.00",10
+9,Conway SAU Office,113,,Conway,BA,"$39,147.00","$76,547.00",45
+9,Conway SAU Office,113,,Conway,BA15,"$40,556.00","$79,302.00",45
+9,Conway SAU Office,113,,Conway,BA30,"$41,496.00","$81,139.00",45
+9,Conway SAU Office,113,,Conway,MA,"$41,965.00","$82,058.00",45
+9,Conway SAU Office,113,,Conway,MA30,"$43,923.00","$85,885.00",45
+9,Conway SAU Office,271,,Jackson,BA,"$40,500.00","$54,000.00",10
+9,Conway SAU Office,271,,Jackson,BA15,"$41,958.00","$55,944.00",10
+9,Conway SAU Office,271,,Jackson,BA30,"$42,930.00","$57,240.00",10
+9,Conway SAU Office,271,,Jackson,MA,"$43,416.00","$57,888.00",10
+9,Conway SAU Office,271,,Jackson,MA30,"$45,441.00","$60,588.00",10
+10,Derry Cooperative SAU Office,131,,Derry Cooperative,Did Not Report,Did Not Report,Did Not Report,Did Not Report
+11,Dover SAU Office,141,,Dover,BA,"$38,250.00","$70,207.00",15
+11,Dover SAU Office,141,,Dover,BA15,"$39,206.00","$71,962.00",15
+11,Dover SAU Office,141,,Dover,BA30,"$40,186.00","$73,761.00",15
+11,Dover SAU Office,141,,Dover,MA,"$41,191.00","$75,606.00",15
+11,Dover SAU Office,141,,Dover,MA15,"$42,221.00","$77,496.00",15
+11,Dover SAU Office,141,,Dover,MA30,"$43,276.00","$79,433.00",15
+12,Londonderry SAU Office,319,,Londonderry,BA,"$40,305.00","$58,749.00",11
+12,Londonderry SAU Office,319,,Londonderry,BA15,"$40,950.00","$62,196.00",12
+12,Londonderry SAU Office,319,,Londonderry,BA30,"$42,465.00","$72,970.00",15
+12,Londonderry SAU Office,319,,Londonderry,MA,"$43,527.00","$74,794.00",15
+12,Londonderry SAU Office,319,,Londonderry,MA15,"$43,962.00","$75,542.00",15
+12,Londonderry SAU Office,319,,Londonderry,MA30,"$44,401.00","$76,298.00",15
+13,Tamworth SAU Office,187,,Freedom,BA,"$41,033.00","$52,089.00",25
+13,Tamworth SAU Office,187,,Freedom,MA,"$46,164.00","$63,732.00",25
+13,Tamworth SAU Office,187,,Freedom,MA15,"$47,872.00","$66,090.00",25
+13,Tamworth SAU Office,187,,Freedom,MA30,"$4,958,500.00","$68,455.00",25
+13,Tamworth SAU Office,333,,Madison,Did Not Report,Did Not Report,Did Not Report,Did Not Report
+13,Tamworth SAU Office,525,,Tamworth,Did Not Report,Did Not Report,Did Not Report,Did Not Report
+14,Epping SAU Office,165,,Epping,BA,"$40,173.00","$63,755.00",14
+14,Epping SAU Office,165,,Epping,BA15,"$40,830.00","$64,668.00",14
+14,Epping SAU Office,165,,Epping,BA30,"$41,596.00","$65,734.00",14
+14,Epping SAU Office,165,,Epping,MA,"$42,472.00","$66,953.00",14
+14,Epping SAU Office,165,,Epping,MA15,"$43,456.00","$68,323.00",14
+14,Epping SAU Office,165,,Epping,MA30,"$44,551.00","$69,846.00",14
+15,Hooksett SAU Office,29,,Auburn,BA,"$38,110.00","$59,698.00",17
+15,Hooksett SAU Office,29,,Auburn,BA15,"$39,218.00","$67,606.00",17
+15,Hooksett SAU Office,29,,Auburn,BA30,"$40,356.00","$69,514.00",17
+15,Hooksett SAU Office,29,,Auburn,MA,"$41,529.00","$71,481.00",17
+15,Hooksett SAU Office,29,,Auburn,MA15,"$42,738.00","$73,506.00",17
+15,Hooksett SAU Office,29,,Auburn,MA30,"$43,983.00","$75,590.00",17
+15,Hooksett SAU Office,79,,Candia,BA,"$37,466.00","$55,248.00",15
+15,Hooksett SAU Office,79,,Candia,BA15,"$39,083.00","$56,864.00",15
+15,Hooksett SAU Office,79,,Candia,BA30,"$41,046.00","$58,827.00",15
+15,Hooksett SAU Office,79,,Candia,MA,"$44,278.00","$62,060.00",15
+15,Hooksett SAU Office,79,,Candia,MA15,"$47,743.00","$65,523.00",15
+15,Hooksett SAU Office,79,,Candia,MA30,"$51,206.00","$68,987.00",15
+15,Hooksett SAU Office,261,,Hooksett,BA,"$38,082.00","$64,631.00",16
+15,Hooksett SAU Office,261,,Hooksett,BA15,"$39,143.00","$67,462.00",17
+15,Hooksett SAU Office,261,,Hooksett,BA30,"$40,205.00","$72,063.00",19
+15,Hooksett SAU Office,261,,Hooksett,MA,"$41,621.00","$73,479.00",19
+15,Hooksett SAU Office,261,,Hooksett,MA15,"$42,682.00","$78,080.00",21
+15,Hooksett SAU Office,261,,Hooksett,MA30,"$43,743.00","$80,911.00",22
+16,Exeter SAU Office,63,,Brentwood,BA,"$43,443.00","$67,401.00",10
+16,Exeter SAU Office,63,,Brentwood,BA15,"$45,184.00","$70,094.00",10
+16,Exeter SAU Office,63,,Brentwood,BA30,"$46,990.00","$72,899.00",10
+16,Exeter SAU Office,63,,Brentwood,MA,"$48,869.00","$75,814.00",10
+16,Exeter SAU Office,63,,Brentwood,MA15,"$50,827.00","$78,848.00",10
+16,Exeter SAU Office,63,,Brentwood,MA30,"$52,857.00","$82,030.00",10
+16,Exeter SAU Office,153,,East Kingston,BA,"$45,625.00","$67,803.00",10
+16,Exeter SAU Office,153,,East Kingston,BA15,"$47,222.00","$70,177.00",10
+16,Exeter SAU Office,153,,East Kingston,BA30,"$48,875.00","$72,633.00",10
+16,Exeter SAU Office,153,,East Kingston,MA,"$50,585.00","$76,175.00",10
+16,Exeter SAU Office,153,,East Kingston,MA15,"$52,356.00","$77,807.00",10
+16,Exeter SAU Office,153,,East Kingston,MA30,"$54,190.00","$80,530.00",10
+16,Exeter SAU Office,173,,Exeter,BA,"$47,228.00","$69,391.00",10
+16,Exeter SAU Office,173,,Exeter,BA15,"$50,130.00","$74,112.00",10
+16,Exeter SAU Office,173,,Exeter,MA,"$53,746.00","$80,362.00",10
+16,Exeter SAU Office,173,,Exeter,MA15,"$56,573.00","$85,457.00",10
+16,Exeter SAU Office,173,,Exeter,MA30,"$60,456.00","$91,006.00",10
+16,Exeter SAU Office,172,,Exeter Region Cooperative,BA,"$44,256.00","$64,687.00",10
+16,Exeter SAU Office,172,,Exeter Region Cooperative,BA15,"$47,296.00","$69,248.00",10
+16,Exeter SAU Office,172,,Exeter Region Cooperative,MA,"$49,731.00","$76,598.00",10
+16,Exeter SAU Office,172,,Exeter Region Cooperative,MA15,"$54,137.00","$82,469.00",10
+16,Exeter SAU Office,172,,Exeter Region Cooperative,MA30,"$57,743.00","$88,124.00",10
+16,Exeter SAU Office,281,,Kensington,BA,"$46,453.00","$68,337.00",12
+16,Exeter SAU Office,281,,Kensington,BA15,"$49,549.00","$72,689.00",12
+16,Exeter SAU Office,281,,Kensington,BA30,"$51,097.00","$75,677.00",12
+16,Exeter SAU Office,281,,Kensington,MA,"$52,644.00","$78,813.00",12
+16,Exeter SAU Office,281,,Kensington,MA15,"$55,743.00","$83,768.00",12
+16,Exeter SAU Office,281,,Kensington,MA30,"$58,839.00","$89,032.00",12
+16,Exeter SAU Office,387,,Newfields,BA,"$43,943.00","$65,303.00",10
+16,Exeter SAU Office,387,,Newfields,BA15,"$45,481.00","$67,588.00",10
+16,Exeter SAU Office,387,,Newfields,BA30,"$47,073.00","$69,953.00",10
+16,Exeter SAU Office,387,,Newfields,MA,"$48,719.00","$72,403.00",10
+16,Exeter SAU Office,387,,Newfields,MA15,"$50,425.00","$74,939.00",10
+16,Exeter SAU Office,387,,Newfields,MA30,"$52,191.00","$77,559.00",10
+16,Exeter SAU Office,511,,Stratham,BA,"$46,468.00","$73,497.00",12
+16,Exeter SAU Office,511,,Stratham,BA15,"$49,606.00","$81,329.00",13
+16,Exeter SAU Office,511,,Stratham,MA,"$53,537.00","$87,489.00",13
+16,Exeter SAU Office,511,,Stratham,MA15,"$55,621.00","$90,755.00",13
+16,Exeter SAU Office,511,,Stratham,MA30,"$57,847.00","$92,240.00",13
+17,Sanborn Regional SAU Office,476,,Sanborn Regional,BA,"$38,969.00","$62,348.00",16
+17,Sanborn Regional SAU Office,476,,Sanborn Regional,BA15,"$40,268.00","$64,457.00",16
+17,Sanborn Regional SAU Office,476,,Sanborn Regional,BA30,"$41,567.00","$66,925.00",16
+17,Sanborn Regional SAU Office,476,,Sanborn Regional,MA,"$44,165.00","$71,357.00",16
+17,Sanborn Regional SAU Office,476,,Sanborn Regional,MA30,"$45,351.00","$72,542.00",16
+18,Franklin SAU Office,185,,Franklin,Did Not Report,Did Not Report,Did Not Report,Did Not Report
+19,Goffstown SAU Office,199,,Goffstown,BA,"$41,055.00","$67,857.00",18
+19,Goffstown SAU Office,199,,Goffstown,BA15,"$41,726.00","$68,967.00",18
+19,Goffstown SAU Office,199,,Goffstown,BA30,"$42,398.00","$70,077.00",18
+19,Goffstown SAU Office,199,,Goffstown,MA,"$43,068.00","$71,184.00",18
+19,Goffstown SAU Office,199,,Goffstown,MA15,"$43,738.00","$72,295.00",18
+19,Goffstown SAU Office,199,,Goffstown,MA30,"$44,413.00","$73,407.00",18
+19,Goffstown SAU Office,377,,New Boston,BA,"$39,752.00","$56,678.00",15
+19,Goffstown SAU Office,377,,New Boston,BA15,"$42,105.00","$61,831.00",15
+19,Goffstown SAU Office,377,,New Boston,BA30,"$44,285.00","$66,983.00",15
+19,Goffstown SAU Office,377,,New Boston,MA,"$45,745.00","$69,194.00",15
+19,Goffstown SAU Office,377,,New Boston,MA15,"$47,252.00","$71,474.00",15
+19,Goffstown SAU Office,377,,New Boston,MA30,"$48,814.00","$73,836.00",15
+20,Gorham SAU Office,171,,Errol,BA,"$31,712.00","$44,265.00",15
+20,Gorham SAU Office,171,,Errol,BA15,"$32,783.00","$45,148.00",15
+20,Gorham SAU Office,171,,Errol,MA,"$33,667.00","$46,031.00",15
+20,Gorham SAU Office,171,,Errol,MA15,"$34,550.00","$46,915.00",15
+20,Gorham SAU Office,171,,Errol,MA30,"$35,433.00","$47,799.00",15
+20,Gorham SAU Office,203,,Gorham Randolph Shelburne Cooperative,BA,"$38,400.00","$52,400.00",6
+20,Gorham SAU Office,203,,Gorham Randolph Shelburne Cooperative,BA15,"$39,400.00","$53,400.00",6
+20,Gorham SAU Office,203,,Gorham Randolph Shelburne Cooperative,MA,"$40,400.00","$54,400.00",6
+20,Gorham SAU Office,203,,Gorham Randolph Shelburne Cooperative,MA15,"$41,400.00","$55,400.00",6
+20,Gorham SAU Office,203,,Gorham Randolph Shelburne Cooperative,MA30,"$42,400.00","$56,400.00",6
+20,Gorham SAU Office,355,,Milan,BA,"$35,558.00","$44,519.00",10
+20,Gorham SAU Office,355,,Milan,BA15,"$36,220.00","$45,673.00",10
+20,Gorham SAU Office,355,,Milan,MA,"$38,869.00","$48,343.00",10
+20,Gorham SAU Office,355,,Milan,MA15,"$40,002.00","$49,496.00",10
+20,Gorham SAU Office,355,,Milan,MA30,"$41,136.00","$50,649.00",10
+21,Winnacunnet SAU Office,227,,Hampton Falls,BA,"$45,999.00","$66,331.00",11
+21,Winnacunnet SAU Office,227,,Hampton Falls,BA15,"$47,609.00","$68,652.00",11
+21,Winnacunnet SAU Office,227,,Hampton Falls,BA30,"$49,275.00","$71,055.00",11
+21,Winnacunnet SAU Office,227,,Hampton Falls,MA,"$51,247.00","$79,544.00",13
+21,Winnacunnet SAU Office,227,,Hampton Falls,MA15,"$53,041.00","$82,327.00",13
+21,Winnacunnet SAU Office,227,,Hampton Falls,MA30,"$54,897.00","$85,210.00",13
+21,Winnacunnet SAU Office,405,,North Hampton,BA,"$45,999.00","$66,331.00",11
+21,Winnacunnet SAU Office,405,,North Hampton,BA15,"$47,609.00","$68,652.00",11
+21,Winnacunnet SAU Office,405,,North Hampton,BA30,"$49,275.00","$71,055.00",11
+21,Winnacunnet SAU Office,405,,North Hampton,MA,"$51,247.00","$79,544.00",13
+21,Winnacunnet SAU Office,405,,North Hampton,MA15,"$53,041.00","$82,327.00",13
+21,Winnacunnet SAU Office,405,,North Hampton,MA30,"$54,897.00","$85,210.00",13
+21,Winnacunnet SAU Office,485,,Seabrook,BA,"$45,999.00","$66,331.00",11
+21,Winnacunnet SAU Office,485,,Seabrook,BA15,"$47,609.00","$68,652.00",11
+21,Winnacunnet SAU Office,485,,Seabrook,BA30,"$49,275.00","$71,055.00",11
+21,Winnacunnet SAU Office,485,,Seabrook,MA,"$51,247.00","$79,544.00",13
+21,Winnacunnet SAU Office,485,,Seabrook,MA15,"$53,041.00","$82,327.00",13
+21,Winnacunnet SAU Office,485,,Seabrook,MA30,"$54,897.00","$85,210.00",13
+21,Winnacunnet SAU Office,495,,South Hampton,BA,"$45,999.00","$66,331.00",11
+21,Winnacunnet SAU Office,495,,South Hampton,BA15,"$47,609.00","$68,652.00",11
+21,Winnacunnet SAU Office,495,,South Hampton,BA30,"$49,275.00","$71,055.00",11
+21,Winnacunnet SAU Office,495,,South Hampton,MA,"$51,247.00","$79,544.00",13
+21,Winnacunnet SAU Office,495,,South Hampton,MA15,"$53,041.00","$82,327.00",13
+21,Winnacunnet SAU Office,495,,South Hampton,MA30,"$54,897.00","$85,210.00",13
+21,Winnacunnet SAU Office,581,,Winnacunnet Cooperative,BA,"$45,999.00","$66,331.00",11
+21,Winnacunnet SAU Office,581,,Winnacunnet Cooperative,BA15,"$47,609.00","$68,652.00",11
+21,Winnacunnet SAU Office,581,,Winnacunnet Cooperative,BA30,"$49,275.00","$71,055.00",11
+21,Winnacunnet SAU Office,581,,Winnacunnet Cooperative,MA,"$51,247.00","$79,544.00",13
+21,Winnacunnet SAU Office,581,,Winnacunnet Cooperative,MA15,"$53,041.00","$82,327.00",13
+21,Winnacunnet SAU Office,581,,Winnacunnet Cooperative,MA30,"$54,897.00","$85,210.00",13
+23,Haverhill Cooperative SAU Office,39,,Bath,BA,"$32,320.00","$48,157.00",15
+23,Haverhill Cooperative SAU Office,39,,Bath,BA15,"$33,451.00","$49,288.00",15
+23,Haverhill Cooperative SAU Office,39,,Bath,MA,"$34,744.00","$52,843.00",15
+23,Haverhill Cooperative SAU Office,39,,Bath,MA15,"$36,037.00","$54,136.00",15
+23,Haverhill Cooperative SAU Office,238,,Haverhill Cooperative,BA,"$37,714.00","$50,542.00",12
+23,Haverhill Cooperative SAU Office,238,,Haverhill Cooperative,BA15,"$38,936.00","$55,517.00",15
+23,Haverhill Cooperative SAU Office,238,,Haverhill Cooperative,MA,"$40,678.00","$65,401.00",21
+23,Haverhill Cooperative SAU Office,238,,Haverhill Cooperative,MA30,"$41,899.00","$66,061.00",21
+23,Haverhill Cooperative SAU Office,435,,Piermont,BA,"$35,350.00","$55,500.00",20
+23,Haverhill Cooperative SAU Office,435,,Piermont,BA15,"$37,118.00","$57,267.00",20
+23,Haverhill Cooperative SAU Office,435,,Piermont,BA30,"$38,885.00","$59,035.00",20
+23,Haverhill Cooperative SAU Office,435,,Piermont,MA,"$40,653.00","$60,802.00",20
+23,Haverhill Cooperative SAU Office,549,,Warren,BA,"$34,214.00","$46,211.00",11
+23,Haverhill Cooperative SAU Office,549,,Warren,BA15,"$37,291.00","$51,603.00",13
+23,Haverhill Cooperative SAU Office,549,,Warren,BA30,"$38,385.00","$54,577.00",14
+23,Haverhill Cooperative SAU Office,549,,Warren,MA,"$39,549.00","$57,772.00",15
+23,Haverhill Cooperative SAU Office,549,,Warren,MA15,"$40,633.00","$62,644.00",17
+24,Henniker SAU Office,245,,Henniker,BA,"$40,107.00","$46,252.00",10
+24,Henniker SAU Office,245,,Henniker,MA,"$47,128.00","$65,809.00",20
+24,Henniker SAU Office,245,,Henniker,MA30,"$50,041.00","$69,877.00",20
+24,Henniker SAU Office,275,,John Stark Regional,BA,"$38,197.00","$44,750.00",10
+24,Henniker SAU Office,275,,John Stark Regional,MA,"$44,884.00","$64,685.00",20
+24,Henniker SAU Office,503,,Stoddard,BA,"$37,500.00","$51,778.00",14
+24,Henniker SAU Office,503,,Stoddard,BA15,"$38,500.00","$53,123.00",14
+24,Henniker SAU Office,503,,Stoddard,MA,"$39,500.00","$54,468.00",14
+24,Henniker SAU Office,503,,Stoddard,MA30,"$40,500.00","$55,813.00",14
+24,Henniker SAU Office,555,,Weare,BA,"$38,675.00","$48,300.00",10
+24,Henniker SAU Office,555,,Weare,BA15,"$40,029.00","$49,990.00",10
+24,Henniker SAU Office,555,,Weare,BA30,"$41,430.00","$51,740.00",10
+24,Henniker SAU Office,555,,Weare,MA,"$42,880.00","$53,551.00",10
+24,Henniker SAU Office,555,,Weare,MA15,"$44,380.00","$55,425.00",10
+24,Henniker SAU Office,555,,Weare,MA30,"$45,934.00","$57,365.00",10
+25,Bedford SAU Office,41,,Bedford,BA,"$42,241.00","$62,667.00",11
+25,Bedford SAU Office,41,,Bedford,BA15,"$43,609.00","$67,508.00",14
+25,Bedford SAU Office,41,,Bedford,BA30,"$44,978.00","$72,298.00",16
+25,Bedford SAU Office,41,,Bedford,MA,"$46,178.00","$77,245.00",18
+25,Bedford SAU Office,41,,Bedford,MA15,"$47,603.00","$78,613.00",18
+25,Bedford SAU Office,41,,Bedford,MA30,"$49,326.00","$80,928.00",18
+26,Merrimack SAU Office,351,,Merrimack,BA,"$38,892.00","$69,784.00",20
+26,Merrimack SAU Office,351,,Merrimack,BA15,"$39,189.00","$72,423.00",20
+26,Merrimack SAU Office,351,,Merrimack,BA30,"$41,003.00","$75,919.00",20
+26,Merrimack SAU Office,351,,Merrimack,MA,"$42,531.00","$79,057.00",20
+26,Merrimack SAU Office,351,,Merrimack,MA15,"$43,408.00","$80,180.00",20
+26,Merrimack SAU Office,351,,Merrimack,MA30,"$44,942.00","$81,808.00",20
+27,Litchfield SAU Office,315,,Litchfield,BA,"$40,997.00","$62,860.00",15
+27,Litchfield SAU Office,315,,Litchfield,BA15,"$42,459.00","$64,973.00",15
+27,Litchfield SAU Office,315,,Litchfield,BA30,"$43,921.00","$67,920.00",15
+27,Litchfield SAU Office,315,,Litchfield,MA,"$45,388.00","$70,463.00",15
+27,Litchfield SAU Office,315,,Litchfield,MA15,"$46,694.00","$72,093.00",15
+27,Litchfield SAU Office,315,,Litchfield,MA30,"$48,000.00","$73,750.00",15
+28,Pelham SAU Office,425,,Pelham,BA,"$41,730.00","$61,645.00",20
+28,Pelham SAU Office,425,,Pelham,BA15,"$42,451.00","$62,366.00",20
+28,Pelham SAU Office,425,,Pelham,BA30,"$43,482.00","$63,396.00",20
+28,Pelham SAU Office,425,,Pelham,MA,"$45,233.00","$65,147.00",20
+28,Pelham SAU Office,425,,Pelham,MA15,"$46,263.00","$66,179.00",20
+28,Pelham SAU Office,425,,Pelham,MA30,"$47,293.00","$67,209.00",20
+29,Keene SAU Office,95,,Chesterfield,BA,"$41,100.00","$60,100.00",26
+29,Keene SAU Office,95,,Chesterfield,BA15,"$43,100.00","$63,650.00",26
+29,Keene SAU Office,95,,Chesterfield,MA,"$45,400.00","$71,350.00",26
+29,Keene SAU Office,95,,Chesterfield,MA15,"$46,700.00","$72,450.00",26
+29,Keene SAU Office,235,,Harrisville,BA,"$41,725.00","$66,850.00",14
+29,Keene SAU Office,235,,Harrisville,BA15,"$42,700.00","$67,698.00",14
+29,Keene SAU Office,235,,Harrisville,MA,"$43,700.00","$69,046.00",14
+29,Keene SAU Office,235,,Harrisville,MA15,"$45,200.00","$71,031.00",14
+29,Keene SAU Office,279,,Keene,BA,"$40,000.00","$67,898.00",30
+29,Keene SAU Office,279,,Keene,BA15,"$41,000.00","$68,931.00",30
+29,Keene SAU Office,279,,Keene,MA,"$42,000.00","$70,313.00",30
+29,Keene SAU Office,279,,Keene,MA30,"$43,000.00","$71,346.00",30
+29,Keene SAU Office,339,,Marlborough,BA,"$41,460.00","$64,634.00",24
+29,Keene SAU Office,339,,Marlborough,BA30,"$42,460.00","$66,074.00",24
+29,Keene SAU Office,339,,Marlborough,MA,"$43,460.00","$71,084.00",24
+29,Keene SAU Office,339,,Marlborough,MA30,"$44,460.00","$72,003.00",24
+29,Keene SAU Office,341,,Marlow,BA,"$41,300.00","$59,000.00",26
+29,Keene SAU Office,341,,Marlow,BA15,"$41,800.00","$60,000.00",26
+29,Keene SAU Office,341,,Marlow,MA,"$42,800.00","$61,000.00",26
+29,Keene SAU Office,341,,Marlow,MA15,"$43,800.00","$62,000.00",26
+29,Keene SAU Office,375,,Nelson,BA,"$43,000.00","$60,928.00",21
+29,Keene SAU Office,375,,Nelson,MA,"$44,100.00","$63,029.00",21
+29,Keene SAU Office,375,,Nelson,MA30,"$45,100.00","$64,085.00",21
+29,Keene SAU Office,563,,Westmoreland,BA,"$38,700.00","$63,151.00",25
+29,Keene SAU Office,563,,Westmoreland,BA15,"$39,200.00","$63,864.00",25
+29,Keene SAU Office,563,,Westmoreland,MA,"$41,200.00","$66,731.00",25
+29,Keene SAU Office,563,,Westmoreland,MA15,"$42,200.00","$68,138.00",25
+30,Laconia SAU Office,285,,Laconia,BA,"$43,073.00","$68,110.00",22
+30,Laconia SAU Office,285,,Laconia,BA15,"$44,573.00","$69,858.00",22
+30,Laconia SAU Office,285,,Laconia,MA,"$46,173.00","$75,548.00",22
+30,Laconia SAU Office,285,,Laconia,MA15,"$47,673.00","$77,581.00",22
+30,Laconia SAU Office,285,,Laconia,MA30,"$49,173.00","$80,150.00",22
+31,Newmarket SAU Office,399,,Newmarket,BA,"$41,537.00","$67,235.00",15
+31,Newmarket SAU Office,399,,Newmarket,BA15,"$42,574.00","$68,915.00",15
+31,Newmarket SAU Office,399,,Newmarket,BA30,"$43,639.00","$70,638.00",15
+31,Newmarket SAU Office,399,,Newmarket,MA,"$44,729.00","$72,403.00",15
+31,Newmarket SAU Office,399,,Newmarket,MA15,"$45,849.00","$74,215.00",15
+31,Newmarket SAU Office,399,,Newmarket,MA30,"$46,996.00","$76,070.00",15
+32,Plainfield SAU Office,441,,Plainfield,BA,"$43,165.00","$72,736.00",16
+32,Plainfield SAU Office,441,,Plainfield,BA15,"$44,631.00","$75,207.00",16
+32,Plainfield SAU Office,441,,Plainfield,BA30,"$46,150.00","$77,765.00",16
+32,Plainfield SAU Office,441,,Plainfield,MA15,"$47,719.00","$80,409.00",16
+32,Plainfield SAU Office,441,,Plainfield,MA30,"$49,340.00","$83,143.00",16
+33,Raymond SAU Office,453,,Raymond,BA,"$34,840.00","$63,065.00",15
+33,Raymond SAU Office,453,,Raymond,BA15,"$35,411.00","$64,099.00",15
+33,Raymond SAU Office,453,,Raymond,BA30,"$35,995.00","$65,156.00",15
+33,Raymond SAU Office,453,,Raymond,MA,"$36,589.00","$66,232.00",15
+33,Raymond SAU Office,453,,Raymond,MA15,"$37,195.00","$67,328.00",15
+33,Raymond SAU Office,453,,Raymond,MA30,"$37,816.00","$68,452.00",15
+34,Hillsboro-Deering SAU Office,251,,Hillsboro-Deering Cooperative,BA,"$45,384.00","$62,821.00",12
+34,Hillsboro-Deering SAU Office,251,,Hillsboro-Deering Cooperative,BA30,"$49,248.00","$68,170.00",12
+34,Hillsboro-Deering SAU Office,251,,Hillsboro-Deering Cooperative,MA,"$53,424.00","$73,951.00",12
+34,Hillsboro-Deering SAU Office,251,,Hillsboro-Deering Cooperative,MA15,"$55,640.00","$77,019.00",12
+34,Hillsboro-Deering SAU Office,551,,Washington,BA,"$37,777.00","$60,480.00",13
+34,Hillsboro-Deering SAU Office,551,,Washington,BA15,"$40,992.00","$65,631.00",13
+34,Hillsboro-Deering SAU Office,551,,Washington,MA,"$44,468.00","$71,194.00",13
+34,Hillsboro-Deering SAU Office,551,,Washington,MA15,"$46,313.00","$74,148.00",13
+35,SAU #35 Office,53,,Bethlehem,BA,"$36,841.00","$61,591.00",16
+35,SAU #35 Office,53,,Bethlehem,BA15,"$37,591.00","$62,341.00",16
+35,SAU #35 Office,53,,Bethlehem,BA30,"$38,341.00","$63,091.00",16
+35,SAU #35 Office,53,,Bethlehem,MA,"$39,841.00","$64,591.00",16
+35,SAU #35 Office,53,,Bethlehem,MA15,"$41,341.00","$66,091.00",16
+35,SAU #35 Office,53,,Bethlehem,MA30,"$42,841.00","$67,591.00",16
+35,SAU #35 Office,288,,Lafayette Regional,BA,"$40,413.00","$60,620.00",11
+35,SAU #35 Office,288,,Lafayette Regional,BA15,"$42,434.00","$64,661.00",12
+35,SAU #35 Office,288,,Lafayette Regional,BA30,"$44,454.00","$72,744.00",15
+35,SAU #35 Office,288,,Lafayette Regional,MA,"$46,475.00","$74,764.00",15
+35,SAU #35 Office,288,,Lafayette Regional,MA15,"$48,496.00","$76,785.00",15
+35,SAU #35 Office,288,,Lafayette Regional,MA30,"$50,516.00","$78,805.00",15
+35,SAU #35 Office,291,,Landaff,BA,"$59,752.00",$0.00,0
+35,SAU #35 Office,306,,Lisbon Regional,BA,"$36,499.00","$58,398.00",13
+35,SAU #35 Office,306,,Lisbon Regional,BA15,"$38,324.00","$60,223.00",13
+35,SAU #35 Office,306,,Lisbon Regional,MA,"$40,149.00","$62,048.00",13
+35,SAU #35 Office,306,,Lisbon Regional,MA15,"$41,974.00","$63,873.00",13
+35,SAU #35 Office,306,,Lisbon Regional,MA30,"$43,799.00","$65,698.00",13
+35,SAU #35 Office,450,,Profile,BA,"$38,638.00","$57,838.00",13
+35,SAU #35 Office,450,,Profile,BA15,"$39,438.00","$58,638.00",13
+35,SAU #35 Office,450,,Profile,MA,"$40,238.00","$59,438.00",13
+35,SAU #35 Office,450,,Profile,MA15,"$41,838.00","$61,038.00",13
+35,SAU #35 Office,450,,Profile,MA30,"$43,438.00","$62,638.00",13
+36,White Mountains Regional SAU Office,568,,White Mountains Regional,BA,"$35,500.00","$53,700.00",15
+36,White Mountains Regional SAU Office,568,,White Mountains Regional,BA15,"$36,500.00","$54,700.00",15
+36,White Mountains Regional SAU Office,568,,White Mountains Regional,MA,"$38,000.00","$56,200.00",15
+36,White Mountains Regional SAU Office,568,,White Mountains Regional,MA15,"$39,000.00","$57,200.00",15
+36,White Mountains Regional SAU Office,568,,White Mountains Regional,MA30,"$40,000.00","$58,200.00",15
+37,Manchester SAU Office,335,,Manchester,BA,"$39,250.00","$71,398.00",17
+37,Manchester SAU Office,335,,Manchester,BA15,"$39,250.00","$71,398.00",17
+37,Manchester SAU Office,335,,Manchester,BA30,"$42,230.00","$74,607.00",17
+37,Manchester SAU Office,335,,Manchester,MA,"$43,720.00","$76,211.00",17
+37,Manchester SAU Office,335,,Manchester,MA15,"$46,700.00","$76,211.00",17
+37,Manchester SAU Office,335,,Manchester,MA30,"$46,700.00","$79,420.00",17
+39,Amherst SAU Office,17,,Amherst,BA,"$41,717.00","$67,790.00",19
+39,Amherst SAU Office,17,,Amherst,BA15,"$43,307.00","$73,874.00",19
+39,Amherst SAU Office,17,,Amherst,BA30,"$44,895.00","$79,958.00",19
+39,Amherst SAU Office,17,,Amherst,MA,"$46,087.00","$85,607.00",19
+39,Amherst SAU Office,17,,Amherst,MA15,"$47,676.00","$87,346.00",19
+39,Amherst SAU Office,17,,Amherst,MA30,"$49,265.00","$89,084.00",19
+39,Amherst SAU Office,367,,Mont Vernon,BA,"$39,775.00","$68,320.00",16
+39,Amherst SAU Office,367,,Mont Vernon,BA15,"$41,588.00","$70,170.00",16
+39,Amherst SAU Office,367,,Mont Vernon,BA30,"$43,402.00","$72,023.00",16
+39,Amherst SAU Office,367,,Mont Vernon,MA,"$43,402.00","$72,023.00",16
+39,Amherst SAU Office,367,,Mont Vernon,MA15,"$45,216.00","$73,872.00",16
+39,Amherst SAU Office,367,,Mont Vernon,MA30,"$47,031.00","$75,722.00",16
+39,Amherst SAU Office,493,,Souhegan Cooperative,BA,"$46,334.00","$63,590.00",17
+39,Amherst SAU Office,493,,Souhegan Cooperative,BA15,"$47,216.00","$64,472.00",17
+39,Amherst SAU Office,493,,Souhegan Cooperative,BA30,"$48,098.00","$65,354.00",17
+39,Amherst SAU Office,493,,Souhegan Cooperative,MA,"$48,980.00","$71,988.00",17
+39,Amherst SAU Office,493,,Souhegan Cooperative,MA15,"$49,862.00","$72,870.00",17
+39,Amherst SAU Office,493,,Souhegan Cooperative,MA30,"$50,744.00","$73,752.00",17
+40,Milford SAU Office,357,,Milford,BA,"$43,860.00","$74,459.00",15
+40,Milford SAU Office,357,,Milford,BA15,"$45,135.00","$76,340.00",15
+40,Milford SAU Office,357,,Milford,BA30,"$46,811.00","$78,199.00",15
+40,Milford SAU Office,357,,Milford,MA,"$46,410.00","$81,246.00",15
+40,Milford SAU Office,357,,Milford,MA15,"$47,940.00","$83,148.00",15
+40,Milford SAU Office,357,,Milford,MA30,"$49,470.00","$85,014.00",15
+41,Hollis-Brookline SAU Office,71,,Brookline,BA,"$39,516.00","$50,057.00",9
+41,Hollis-Brookline SAU Office,71,,Brookline,BA15,"$40,900.00","$53,365.00",10
+41,Hollis-Brookline SAU Office,71,,Brookline,BA30,"$42,331.00","$56,890.00",11
+41,Hollis-Brookline SAU Office,71,,Brookline,MA,"$46,003.00","$67,557.00",14
+41,Hollis-Brookline SAU Office,71,,Brookline,MA15,"$47,613.00","$69,922.00",14
+41,Hollis-Brookline SAU Office,71,,Brookline,MA30,"$49,280.00","$72,369.00",14
+41,Hollis-Brookline SAU Office,259,,Hollis,BA,"$45,898.00","$62,189.00",12
+41,Hollis-Brookline SAU Office,259,,Hollis,BA15,"$47,147.00","$65,671.00",13
+41,Hollis-Brookline SAU Office,259,,Hollis,BA30,"$48,469.00","$69,402.00",14
+41,Hollis-Brookline SAU Office,259,,Hollis,MA,"$50,176.00","$73,858.00",15
+41,Hollis-Brookline SAU Office,259,,Hollis,MA15,"$51,630.00","$78,127.00",16
+41,Hollis-Brookline SAU Office,259,,Hollis,MA30,"$53,133.00","$82,653.00",17
+41,Hollis-Brookline SAU Office,260,,Hollis-Brookline Cooperative,BA,"$45,335.00","$64,535.00",15
+41,Hollis-Brookline SAU Office,260,,Hollis-Brookline Cooperative,BA15,"$46,662.00","$66,917.00",15
+41,Hollis-Brookline SAU Office,260,,Hollis-Brookline Cooperative,BA30,"$48,089.00","$72,023.00",17
+41,Hollis-Brookline SAU Office,260,,Hollis-Brookline Cooperative,MA,"$49,839.00","$76,643.00",18
+41,Hollis-Brookline SAU Office,260,,Hollis-Brookline Cooperative,MA15,"$51,401.00","$81,074.00",19
+41,Hollis-Brookline SAU Office,260,,Hollis-Brookline Cooperative,MA30,"$53,280.00","$85,773.00",20
+42,Nashua SAU Office,371,,Nashua,BA,"$40,884.00","$72,680.00",20
+42,Nashua SAU Office,371,,Nashua,BA30,"$42,678.00","$75,073.00",20
+42,Nashua SAU Office,371,,Nashua,MA,"$44,518.00","$77,466.00",20
+42,Nashua SAU Office,371,,Nashua,MA30,"$46,358.00","$79,861.00",20
+43,Newport SAU Office,401,,Newport,BA,"$35,405.00","$51,525.00",14
+43,Newport SAU Office,401,,Newport,BA15,"$36,482.00","$53,842.00",15
+43,Newport SAU Office,401,,Newport,MA,"$37,559.00","$57,399.00",17
+43,Newport SAU Office,401,,Newport,MA15,"$38,636.00","$59,716.00",18
+44,Northwood SAU Office,411,,Northwood,BA,"$36,184.00","$53,241.00",15
+44,Northwood SAU Office,411,,Northwood,BA15,"$39,106.00","$57,656.00",15
+44,Northwood SAU Office,411,,Northwood,BA30,"$39,106.00","$57,656.00",15
+44,Northwood SAU Office,411,,Northwood,MA,"$40,774.00","$60,177.00",15
+44,Northwood SAU Office,411,,Northwood,MA15,"$42,444.00","$62,700.00",15
+44,Northwood SAU Office,411,,Northwood,MA30,"$43,696.00","$64,591.00",15
+44,Northwood SAU Office,413,,Nottingham,BA,"$41,290.00","$59,696.00",14
+44,Northwood SAU Office,413,,Nottingham,BA15,"$42,789.00","$61,966.00",14
+44,Northwood SAU Office,413,,Nottingham,BA30,"$44,365.00","$64,350.00",14
+44,Northwood SAU Office,413,,Nottingham,MA,"$44,365.00","$64,350.00",14
+44,Northwood SAU Office,413,,Nottingham,MA15,"$48,454.00","$70,537.00",14
+44,Northwood SAU Office,413,,Nottingham,MA30,"$48,454.00","$70,537.00",14
+45,Moultonborough SAU Office,369,,Moultonborough,BA,"$38,716.00","$67,601.00",43
+45,Moultonborough SAU Office,369,,Moultonborough,BA15,"$39,719.00","$68,724.00",43
+45,Moultonborough SAU Office,369,,Moultonborough,BA30,"$40,932.00","$78,003.00",43
+45,Moultonborough SAU Office,369,,Moultonborough,MA,"$40,932.00","$78,003.00",43
+45,Moultonborough SAU Office,369,,Moultonborough,MA15,"$42,001.00","$80,325.00",43
+45,Moultonborough SAU Office,369,,Moultonborough,MA30,"$43,136.00","$84,439.00",43
+46,Merrimack Valley SAU Office,19,,Andover,BA,"$37,044.00","$51,480.00",12
+46,Merrimack Valley SAU Office,19,,Andover,BA15,"$37,703.00","$52,139.00",12
+46,Merrimack Valley SAU Office,19,,Andover,BA30,"$38,361.00","$52,797.00",12
+46,Merrimack Valley SAU Office,19,,Andover,MA,"$39,021.00","$53,457.00",12
+46,Merrimack Valley SAU Office,19,,Andover,MA15,"$39,679.00","$54,115.00",12
+46,Merrimack Valley SAU Office,19,,Andover,MA30,"$41,608.00","$56,044.00",12
+46,Merrimack Valley SAU Office,352,,Merrimack Valley,BA,"$40,690.00","$51,033.00",10
+46,Merrimack Valley SAU Office,352,,Merrimack Valley,BA15,"$41,821.00","$52,768.00",10
+46,Merrimack Valley SAU Office,352,,Merrimack Valley,BA30,"$41,821.00","$52,768.00",10
+46,Merrimack Valley SAU Office,352,,Merrimack Valley,MA,"$44,005.00","$55,699.00",10
+46,Merrimack Valley SAU Office,352,,Merrimack Valley,MA15,"$45,163.00","$57,255.00",10
+46,Merrimack Valley SAU Office,352,,Merrimack Valley,MA30,"$46,256.00","$58,348.00",10
+47,Jaffrey-Rindge SAU Office,274,,Jaffrey-Rindge Cooperative,BA,"$43,350.00","$64,250.00",20
+47,Jaffrey-Rindge SAU Office,274,,Jaffrey-Rindge Cooperative,BA15,"$44,300.00","$65,200.00",20
+47,Jaffrey-Rindge SAU Office,274,,Jaffrey-Rindge Cooperative,BA30,"$45,250.00","$66,150.00",20
+47,Jaffrey-Rindge SAU Office,274,,Jaffrey-Rindge Cooperative,MA,"$47,700.00","$68,600.00",20
+47,Jaffrey-Rindge SAU Office,274,,Jaffrey-Rindge Cooperative,MA15,"$49,200.00","$70,100.00",20
+47,Jaffrey-Rindge SAU Office,274,,Jaffrey-Rindge Cooperative,MA30,"$50,700.00","$71,600.00",20
+48,Plymouth SAU Office,75,,Campton,BA,"$43,726.00","$64,983.00",10
+48,Plymouth SAU Office,75,,Campton,MA,"$48,646.00","$72,292.00",10
+48,Plymouth SAU Office,257,,Holderness,BA,"$40,892.00","$63,574.00",10
+48,Plymouth SAU Office,257,,Holderness,MA,"$43,616.00","$67,807.00",10
+48,Plymouth SAU Office,257,,Holderness,MA15,"$45,712.00","$71,065.00",10
+48,Plymouth SAU Office,257,,Holderness,MA30,"$46,969.00","$73,020.00",10
+48,Plymouth SAU Office,428,,Pemi-Baker Regional,BA,"$42,000.00","$68,800.00",15
+48,Plymouth SAU Office,428,,Pemi-Baker Regional,BA15,"$43,500.00","$71,300.00",15
+48,Plymouth SAU Office,428,,Pemi-Baker Regional,MA,"$45,000.00","$73,700.00",15
+48,Plymouth SAU Office,428,,Pemi-Baker Regional,MA15,"$46,000.00","$75,300.00",15
+48,Plymouth SAU Office,428,,Pemi-Baker Regional,MA30,"$47,000.00","$77,100.00",15
+48,Plymouth SAU Office,447,,Plymouth,BA,"$41,495.00","$71,004.00",13
+48,Plymouth SAU Office,447,,Plymouth,BA15,"$42,742.00","$73,136.00",13
+48,Plymouth SAU Office,447,,Plymouth,MA,"$44,021.00","$79,095.00",14
+48,Plymouth SAU Office,447,,Plymouth,MA15,"$45,340.00","$81,466.00",14
+48,Plymouth SAU Office,447,,Plymouth,MA30,"$46,705.00","$83,910.00",14
+48,Plymouth SAU Office,467,,Rumney,BA,"$38,318.00","$55,818.00",13
+48,Plymouth SAU Office,467,,Rumney,BA15,"$39,818.00","$57,318.00",13
+48,Plymouth SAU Office,467,,Rumney,BA30,"$41,318.00","$58,818.00",13
+48,Plymouth SAU Office,467,,Rumney,MA,"$41,318.00","$58,818.00",13
+48,Plymouth SAU Office,467,,Rumney,MA30,"$42,818.00","$60,318.00",13
+48,Plymouth SAU Office,531,,Thornton,BA,"$44,070.00","$72,748.00",16
+48,Plymouth SAU Office,531,,Thornton,BA15,"$45,171.00","$74,569.00",16
+48,Plymouth SAU Office,531,,Thornton,MA,"$46,300.00","$76,432.00",16
+48,Plymouth SAU Office,531,,Thornton,MA15,"$47,458.00","$78,343.00",16
+48,Plymouth SAU Office,531,,Thornton,MA30,"$48,644.00","$80,302.00",16
+48,Plymouth SAU Office,553,,Waterville Valley,BA,"$37,604.00","$65,118.00",15
+48,Plymouth SAU Office,553,,Waterville Valley,BA15,"$39,108.00","$67,723.00",15
+48,Plymouth SAU Office,553,,Waterville Valley,BA30,"$40,672.00","$70,432.00",15
+48,Plymouth SAU Office,553,,Waterville Valley,MA,"$42,299.00","$73,249.00",15
+48,Plymouth SAU Office,553,,Waterville Valley,MA30,"$43,991.00","$76,179.00",15
+48,Plymouth SAU Office,559,,Wentworth,BA,"$35,330.00","$57,773.00",15
+48,Plymouth SAU Office,559,,Wentworth,BA15,"$36,213.00","$59,217.00",15
+48,Plymouth SAU Office,559,,Wentworth,MA,"$37,118.00","$60,697.00",15
+48,Plymouth SAU Office,559,,Wentworth,MA15,"$38,049.00","$62,215.00",15
+48,Plymouth SAU Office,559,,Wentworth,MA30,"$38,999.00","$63,770.00",15
+49,Governor Wentworth Regional SAU Office,208,,Governor Wentworth Regional,BA,"$42,552.00","$57,818.00",10
+49,Governor Wentworth Regional SAU Office,208,,Governor Wentworth Regional,BA15,"$43,616.00","$65,531.00",12
+49,Governor Wentworth Regional SAU Office,208,,Governor Wentworth Regional,MA,"$44,680.00","$73,918.00",13
+49,Governor Wentworth Regional SAU Office,208,,Governor Wentworth Regional,MA30,"$48,936.00","$85,013.00",14
+50,Greenland SAU Office,215,,Greenland,BA,"$44,588.00","$57,830.00",10
+50,Greenland SAU Office,215,,Greenland,BA30,"$48,025.00","$61,267.00",10
+50,Greenland SAU Office,215,,Greenland,MA,"$50,051.00","$63,293.00",10
+50,Greenland SAU Office,215,,Greenland,MA15,"$50,973.00","$64,215.00",10
+50,Greenland SAU Office,215,,Greenland,MA30,"$51,585.00","$64,827.00",10
+50,Greenland SAU Office,381,,New Castle,BA,"$49,773.00","$67,243.00",10
+50,Greenland SAU Office,381,,New Castle,BA15,"$50,773.00","$68,243.00",10
+50,Greenland SAU Office,381,,New Castle,MA,"$53,373.00","$70,843.00",10
+50,Greenland SAU Office,381,,New Castle,MA15,"$53,973.00","$71,443.00",10
+50,Greenland SAU Office,381,,New Castle,MA30,"$54,773.00","$72,243.00",10
+50,Greenland SAU Office,391,,Newington,BA,"$46,589.00","$67,554.00",10
+50,Greenland SAU Office,391,,Newington,MA,"$47,661.00","$69,108.00",10
+50,Greenland SAU Office,391,,Newington,MA15,"$48,196.00","$69,885.00",10
+50,Greenland SAU Office,391,,Newington,MA30,"$48,732.00","$70,661.00",10
+50,Greenland SAU Office,471,,Rye,BA,"$51,993.00","$66,811.00",10
+50,Greenland SAU Office,471,,Rye,BA15,"$54,379.00","$69,198.00",10
+50,Greenland SAU Office,471,,Rye,BA30,"$56,766.00","$71,584.00",10
+50,Greenland SAU Office,471,,Rye,MA,"$61,538.00","$76,357.00",10
+50,Greenland SAU Office,471,,Rye,MA15,"$63,925.00","$78,743.00",10
+50,Greenland SAU Office,471,,Rye,MA30,"$66,311.00","$81,130.00",10
+51,Pittsfield SAU Office,439,,Pittsfield,BA,"$32,794.00","$52,134.00",17
+51,Pittsfield SAU Office,439,,Pittsfield,BA15,"$33,908.00","$53,908.00",17
+51,Pittsfield SAU Office,439,,Pittsfield,BA30,"$35,023.00","$55,679.00",17
+51,Pittsfield SAU Office,439,,Pittsfield,MA,"$36,962.00","$58,754.00",17
+51,Pittsfield SAU Office,439,,Pittsfield,MA15,"$38,082.00","$60,535.00",17
+51,Pittsfield SAU Office,439,,Pittsfield,MA30,"$39,202.00","$62,314.00",17
+52,Portsmouth SAU Office,449,,Portsmouth,BA,"$47,867.00","$79,119.00",16
+52,Portsmouth SAU Office,449,,Portsmouth,BA15,"$50,910.00","$85,505.00",16
+52,Portsmouth SAU Office,449,,Portsmouth,BA30,"$50,910.00","$85,505.00",16
+52,Portsmouth SAU Office,449,,Portsmouth,MA,"$55,301.00","$90,509.00",16
+52,Portsmouth SAU Office,449,,Portsmouth,MA15,"$56,086.00","$91,472.00",16
+52,Portsmouth SAU Office,449,,Portsmouth,MA30,"$56,869.00","$92,376.00",16
+53,Pembroke SAU Office,9,,Allenstown,BA,"$35,614.00","$64,323.00",15
+53,Pembroke SAU Office,9,,Allenstown,BA15,"$37,022.00","$65,998.00",15
+53,Pembroke SAU Office,9,,Allenstown,MA,"$41,245.00","$71,028.00",15
+53,Pembroke SAU Office,9,,Allenstown,MA30,"$45,814.00","$76,310.00",15
+53,Pembroke SAU Office,99,,Chichester,BA,"$40,057.00","$65,652.00",14
+53,Pembroke SAU Office,99,,Chichester,MA,"$43,002.00","$72,285.00",14
+53,Pembroke SAU Office,127,,Deerfield,BA,"$40,903.00","$62,674.00",13
+53,Pembroke SAU Office,127,,Deerfield,BA15,"$41,895.00","$64,536.00",13
+53,Pembroke SAU Office,127,,Deerfield,BA30,"$42,426.00","$66,209.00",13
+53,Pembroke SAU Office,127,,Deerfield,MA,"$43,134.00","$70,317.00",13
+53,Pembroke SAU Office,127,,Deerfield,MA15,"$44,273.00","$71,485.00",13
+53,Pembroke SAU Office,127,,Deerfield,MA30,"$45,498.00","$72,740.00",13
+53,Pembroke SAU Office,167,,Epsom,BA,"$38,411.00","$62,726.00",14
+53,Pembroke SAU Office,167,,Epsom,BA15,"$39,755.00","$64,922.00",14
+53,Pembroke SAU Office,167,,Epsom,BA30,"$41,147.00","$67,195.00",14
+53,Pembroke SAU Office,167,,Epsom,MA,"$42,689.00","$69,713.00",14
+53,Pembroke SAU Office,167,,Epsom,MA15,"$44,290.00","$72,328.00",14
+53,Pembroke SAU Office,167,,Epsom,MA30,"$45,951.00","$75,041.00",14
+53,Pembroke SAU Office,427,,Pembroke,BA,"$39,136.00","$62,803.00",15
+53,Pembroke SAU Office,427,,Pembroke,BA15,"$40,561.00","$64,227.00",15
+53,Pembroke SAU Office,427,,Pembroke,MA,"$44,812.00","$68,478.00",15
+53,Pembroke SAU Office,427,,Pembroke,MA15,"$46,237.00","$69,903.00",15
+54,Rochester SAU Office,461,,Rochester,BA,"$39,982.00","$65,166.00",19
+54,Rochester SAU Office,461,,Rochester,BA15,"$41,360.00","$66,610.00",19
+54,Rochester SAU Office,461,,Rochester,MA,"$43,544.00","$68,906.00",19
+54,Rochester SAU Office,461,,Rochester,MA15,"$44,923.00","$70,355.00",19
+54,Rochester SAU Office,461,,Rochester,MA30,"$46,301.00","$71,967.00",19
+55,Hampstead SAU Office,223,,Hampstead,BA,"$42,358.00","$55,454.00",12
+55,Hampstead SAU Office,223,,Hampstead,BA15,"$44,364.00","$59,029.00",13
+55,Hampstead SAU Office,223,,Hampstead,BA30,"$46,369.00","$64,109.00",15
+55,Hampstead SAU Office,223,,Hampstead,MA,"$48,089.00","$66,733.00",15
+55,Hampstead SAU Office,223,,Hampstead,MA15,"$49,999.00","$69,654.00",15
+55,Hampstead SAU Office,223,,Hampstead,MA30,"$51,909.00","$72,570.00",15
+56,Somersworth SAU Office,491,,Somersworth,BA,"$38,339.00","$46,509.00",13
+56,Somersworth SAU Office,491,,Somersworth,BA15,"$39,446.00","$49,093.00",13
+56,Somersworth SAU Office,491,,Somersworth,BA30,"$40,767.00","$55,151.00",13
+56,Somersworth SAU Office,491,,Somersworth,MA,"$40,767.00","$55,151.00",13
+56,Somersworth SAU Office,491,,Somersworth,MA15,"$42,058.00","$60,869.00",13
+56,Somersworth SAU Office,491,,Somersworth,MA30,"$43,251.00","$67,309.00",13
+57,Salem SAU Office,473,,Salem,BA,"$40,724.00","$70,380.00",13
+57,Salem SAU Office,473,,Salem,BA15,"$42,393.00","$73,265.00",13
+57,Salem SAU Office,473,,Salem,BA30,"$44,128.00","$76,269.00",13
+57,Salem SAU Office,473,,Salem,MA,"$45,939.00","$79,396.00",13
+57,Salem SAU Office,473,,Salem,MA15,"$47,821.00","$82,651.00",13
+57,Salem SAU Office,473,,Salem,MA30,"$49,780.00","$86,039.00",13
+58,Northumberland SAU Office,407,,Northumberland,BA,"$34,300.00","$43,300.00",10
+58,Northumberland SAU Office,407,,Northumberland,BA15,"$35,300.00","$44,300.00",10
+58,Northumberland SAU Office,407,,Northumberland,BA30,"$36,300.00","$45,300.00",10
+58,Northumberland SAU Office,407,,Northumberland,MA,"$37,300.00","$46,300.00",10
+58,Northumberland SAU Office,499,,Stark,BA,"$33,200.00","$46,200.00",14
+58,Northumberland SAU Office,499,,Stark,BA15,"$33,800.00","$46,800.00",14
+58,Northumberland SAU Office,499,,Stark,BA30,"$34,400.00","$47,400.00",14
+58,Northumberland SAU Office,499,,Stark,MA,"$35,000.00","$48,000.00",14
+58,Northumberland SAU Office,499,,Stark,MA15,"$35,600.00","$48,600.00",14
+58,Northumberland SAU Office,509,,Stratford,BA,"$33,700.00","$45,400.00",14
+58,Northumberland SAU Office,509,,Stratford,BA15,"$34,200.00","$45,900.00",14
+58,Northumberland SAU Office,509,,Stratford,BA30,"$34,700.00","$46,400.00",14
+58,Northumberland SAU Office,509,,Stratford,MA,"$35,200.00","$46,900.00",14
+58,Northumberland SAU Office,509,,Stratford,MA15,"$35,700.00","$47,400.00",14
+59,Winnisquam Regional SAU Office,582,,Winnisquam Regional,BA,"$40,000.00","$52,000.00",41
+59,Winnisquam Regional SAU Office,582,,Winnisquam Regional,BA15,"$40,500.00","$59,500.00",41
+59,Winnisquam Regional SAU Office,582,,Winnisquam Regional,MA,"$42,500.00","$72,500.00",41
+59,Winnisquam Regional SAU Office,582,,Winnisquam Regional,MA15,"$43,700.00","$83,700.00",41
+59,Winnisquam Regional SAU Office,582,,Winnisquam Regional,MA30,"$46,200.00","$85,200.00",41
+60,Fall Mountain Regional SAU Office,174,,Fall Mountain Regional,Did Not Report,Did Not Report,Did Not Report,Did Not Report
+61,Farmington SAU Office,175,,Farmington,BA,"$38,157.00","$55,261.00",18
+61,Farmington SAU Office,175,,Farmington,BA15,"$38,714.00","$56,077.00",18
+61,Farmington SAU Office,175,,Farmington,MA,"$39,280.00","$56,905.00",18
+61,Farmington SAU Office,175,,Farmington,MA30,"$39,854.00","$57,744.00",18
+62,Mascoma Valley SAU Office,343,,Mascoma Valley Regional,BA,"$39,658.00","$63,370.00",16
+62,Mascoma Valley SAU Office,343,,Mascoma Valley Regional,BA15,"$40,785.00","$65,171.00",16
+62,Mascoma Valley SAU Office,343,,Mascoma Valley Regional,BA30,"$41,933.00","$67,023.00",16
+62,Mascoma Valley SAU Office,343,,Mascoma Valley Regional,MA,"$43,136.00","$68,928.00",16
+62,Mascoma Valley SAU Office,343,,Mascoma Valley Regional,MA15,"$44,363.00","$70,887.00",16
+62,Mascoma Valley SAU Office,343,,Mascoma Valley Regional,MA30,"$45,624.00","$72,901.00",16
+63,Wilton SAU Office,572,,Wilton-Lyndeborough Cooperative,BA,"$37,000.00","$61,000.00",18
+63,Wilton SAU Office,572,,Wilton-Lyndeborough Cooperative,BA15,"$37,500.00","$61,500.00",18
+63,Wilton SAU Office,572,,Wilton-Lyndeborough Cooperative,BA30,"$38,000.00","$63,000.00",18
+63,Wilton SAU Office,572,,Wilton-Lyndeborough Cooperative,MA,"$40,000.00","$69,200.00",18
+63,Wilton SAU Office,572,,Wilton-Lyndeborough Cooperative,MA30,"$41,500.00","$71,000.00",18
+64,Milton SAU Office,359,,Milton,BA,"$33,691.00","$49,886.00",14
+64,Milton SAU Office,359,,Milton,BA15,"$34,672.00","$51,352.00",14
+64,Milton SAU Office,359,,Milton,BA30,"$35,682.00","$52,862.00",14
+64,Milton SAU Office,359,,Milton,MA,"$36,723.00","$54,418.00",14
+64,Milton SAU Office,359,,Milton,MA15,"$37,793.00","$56,020.00",14
+65,Kearsarge Regional SAU Office,276,,Kearsarge Regional,Did Not Report,Did Not Report,Did Not Report,Did Not Report
+66,Hopkinton SAU Office,263,,Hopkinton,BA,"$39,675.00","$56,173.00",9
+66,Hopkinton SAU Office,263,,Hopkinton,BA15,"$41,024.00","$61,807.00",11
+66,Hopkinton SAU Office,263,,Hopkinton,BA30,"$41,818.00","$66,885.00",13
+66,Hopkinton SAU Office,263,,Hopkinton,MA,"$43,868.00","$75,963.00",16
+66,Hopkinton SAU Office,263,,Hopkinton,MA15,"$44,678.00","$76,772.00",16
+66,Hopkinton SAU Office,263,,Hopkinton,MA30,"$45,487.00","$77,582.00",16
+67,Bow SAU Office,57,,Bow,BA,"$40,438.00","$67,303.00",14
+67,Bow SAU Office,57,,Bow,BA15,"$41,652.00","$69,325.00",14
+67,Bow SAU Office,57,,Bow,BA30,"$42,901.00","$71,406.00",14
+67,Bow SAU Office,57,,Bow,MA,"$45,045.00","$74,974.00",14
+67,Bow SAU Office,57,,Bow,MA15,"$46,397.00","$77,724.00",14
+67,Bow SAU Office,57,,Bow,MA30,"$47,789.00","$79,541.00",14
+67,Bow SAU Office,149,,Dunbarton,BA,"$38,350.00","$58,842.00",15
+67,Bow SAU Office,149,,Dunbarton,BA15,"$39,521.00","$60,833.00",15
+67,Bow SAU Office,149,,Dunbarton,BA30,"$40,692.00","$62,824.00",15
+67,Bow SAU Office,149,,Dunbarton,MA,"$42,155.00","$65,105.00",15
+67,Bow SAU Office,149,,Dunbarton,MA15,"$43,502.00","$67,272.00",15
+67,Bow SAU Office,149,,Dunbarton,MA30,"$44,848.00","$68,619.00",15
+68,Lincoln-Woodstock SAU Office,305,,Lincoln-Woodstock Cooperative,BA,"$37,284.00","$50,284.00",11
+68,Lincoln-Woodstock SAU Office,305,,Lincoln-Woodstock Cooperative,BA15,"$38,034.00","$51,034.00",11
+68,Lincoln-Woodstock SAU Office,305,,Lincoln-Woodstock Cooperative,BA30,"$38,884.00","$51,884.00",11
+68,Lincoln-Woodstock SAU Office,305,,Lincoln-Woodstock Cooperative,MA,"$39,884.00","$52,884.00",11
+68,Lincoln-Woodstock SAU Office,305,,Lincoln-Woodstock Cooperative,MA30,"$40,984.00","$53,984.00",11
+69,Middleton SAU,353,,Middleton,BA,"$42,552.00","$57,818.00",10
+69,Middleton SAU,353,,Middleton,BA15,"$43,616.00","$65,531.00",12
+69,Middleton SAU,353,,Middleton,MA,"$44,680.00","$73,918.00",13
+69,Middleton SAU,353,,Middleton,MA30,"$48,936.00","$85,013.00",14
+70,Hanover SAU Office,142,,Dresden,BA,"$47,932.00","$65,184.00",9
+70,Hanover SAU Office,142,,Dresden,BA15,"$50,327.00","$76,210.00",12
+70,Hanover SAU Office,142,,Dresden,BA30,"$51,763.00","$81,482.00",13
+70,Hanover SAU Office,142,,Dresden,MA,"$53,204.00","$87,233.00",14
+70,Hanover SAU Office,142,,Dresden,MA15,"$55,121.00","$90,108.00",14
+70,Hanover SAU Office,142,,Dresden,MA30,"$56,558.00","$92,986.00",14
+70,Hanover SAU Office,233,,Hanover,BA,"$47,932.00","$65,184.00",9
+70,Hanover SAU Office,233,,Hanover,BA15,"$50,327.00","$76,210.00",12
+70,Hanover SAU Office,233,,Hanover,BA30,"$51,763.00","$81,482.00",13
+70,Hanover SAU Office,233,,Hanover,MA,"$53,204.00","$87,233.00",14
+70,Hanover SAU Office,233,,Hanover,MA15,"$55,121.00","$90,108.00",14
+70,Hanover SAU Office,233,,Hanover,MA30,"$56,558.00","$92,986.00",14
+71,Lempster SAU Office,299,,Lempster,BA,"$37,266.00","$55,574.00",15
+71,Lempster SAU Office,299,,Lempster,BA15,"$38,272.00","$57,074.00",15
+71,Lempster SAU Office,299,,Lempster,BA30,"$39,306.00","$58,615.00",15
+71,Lempster SAU Office,299,,Lempster,MA,"$40,878.00","$60,960.00",15
+71,Lempster SAU Office,299,,Lempster,MA15,"$41,982.00","$62,606.00",15
+71,Lempster SAU Office,299,,Lempster,MA30,"$43,115.00","$64,296.00",15
+72,Alton SAU Office,15,,Alton,BA,"$39,471.00","$60,598.00",16
+72,Alton SAU Office,15,,Alton,BA15,"$40,893.00","$63,540.00",16
+72,Alton SAU Office,15,,Alton,MA,"$43,696.00","$67,773.00",16
+72,Alton SAU Office,15,,Alton,MA30,"$46,587.00","$72,540.00",16
+73,Gilford SAU Office,191,,Gilford,BA,"$41,934.00","$61,831.00",16
+73,Gilford SAU Office,191,,Gilford,BA15,"$43,449.00","$63,348.00",16
+73,Gilford SAU Office,191,,Gilford,MA,"$45,076.00","$73,227.00",20
+73,Gilford SAU Office,191,,Gilford,MA15,"$46,299.00","$75,410.00",20
+73,Gilford SAU Office,191,,Gilford,MA30,"$47,405.00","$76,747.00",20
+74,Barrington SAU Office,33,,Barrington,BA,"$39,000.00","$60,500.00",15
+74,Barrington SAU Office,33,,Barrington,BA15,"$39,500.00","$61,000.00",15
+74,Barrington SAU Office,33,,Barrington,BA30,"$39,750.00","$61,500.00",15
+74,Barrington SAU Office,33,,Barrington,MA,"$41,750.00","$66,500.00",15
+74,Barrington SAU Office,33,,Barrington,MA15,"$42,500.00","$67,500.00",15
+74,Barrington SAU Office,33,,Barrington,MA30,"$43,000.00","$69,000.00",0
+75,Grantham SAU Office,211,,Grantham,BA,"$43,912.00","$66,420.00",15
+75,Grantham SAU Office,211,,Grantham,BA15,"$45,229.00","$70,465.00",16
+75,Grantham SAU Office,211,,Grantham,BA30,"$46,586.00","$74,757.00",17
+75,Grantham SAU Office,211,,Grantham,MA,"$48,915.00","$80,849.00",18
+75,Grantham SAU Office,211,,Grantham,MA15,"$50,383.00","$83,275.00",18
+75,Grantham SAU Office,211,,Grantham,MA30,"$51,894.00","$85,773.00",18
+76,Lyme SAU Office,327,,Lyme,BA,"$49,076.00","$68,516.00",11
+76,Lyme SAU Office,327,,Lyme,BA15,"$50,941.00","$70,535.00",11
+76,Lyme SAU Office,327,,Lyme,BA30,"$53,026.00","$80,870.00",15
+76,Lyme SAU Office,327,,Lyme,MA,"$53,026.00","$80,870.00",15
+76,Lyme SAU Office,327,,Lyme,MA15,"$54,900.00","$85,020.00",16
+76,Lyme SAU Office,327,,Lyme,MA30,"$56,784.00","$87,110.00",16
+77,Monroe SAU Office,365,,Monroe,BA,"$35,770.00","$49,935.00",10
+77,Monroe SAU Office,365,,Monroe,BA15,"$37,344.00","$53,083.00",11
+77,Monroe SAU Office,365,,Monroe,MA,"$38,918.00","$65,674.00",18
+77,Monroe SAU Office,365,,Monroe,MA15,"$40,492.00","$67,248.00",18
+77,Monroe SAU Office,365,,Monroe,MA30,"$43,639.00","$70,395.00",18
+79,Gilmanton SAU Office,195,,Gilmanton,BA,"$38,921.00","$61,962.00",16
+79,Gilmanton SAU Office,195,,Gilmanton,BA15,"$40,593.00","$64,626.00",16
+79,Gilmanton SAU Office,195,,Gilmanton,MA,"$42,624.00","$67,858.00",16
+79,Gilmanton SAU Office,195,,Gilmanton,MA15,"$44,755.00","$71,251.00",16
+79,Gilmanton SAU Office,195,,Gilmanton,MA30,"$49,343.00","$78,554.00",16
+80,Shaker Regional SAU Office,486,,Shaker Regional,BA,"$40,136.00","$51,465.00",10
+80,Shaker Regional SAU Office,486,,Shaker Regional,BA15,"$40,715.00","$52,411.00",10
+80,Shaker Regional SAU Office,486,,Shaker Regional,MA,"$42,215.00","$54,134.00",10
+80,Shaker Regional SAU Office,486,,Shaker Regional,MA15,"$44,115.00","$56,320.00",10
+80,Shaker Regional SAU Office,486,,Shaker Regional,MA30,"$45,615.00","$58,234.00",10
+81,Hudson SAU Office,267,,Hudson,BA,"$38,000.00","$65,000.00",19
+81,Hudson SAU Office,267,,Hudson,BA15,"$39,200.00","$66,750.00",19
+81,Hudson SAU Office,267,,Hudson,MA,"$41,000.00","$70,000.00",18
+81,Hudson SAU Office,267,,Hudson,MA30,"$42,200.00","$72,500.00",18
+82,Chester SAU Office,93,,Chester,BA,"$38,855.00","$57,775.00",15
+82,Chester SAU Office,93,,Chester,BA15,"$39,576.00","$60,336.00",15
+82,Chester SAU Office,93,,Chester,BA30,"$40,714.00","$63,334.00",15
+82,Chester SAU Office,93,,Chester,MA,"$41,920.00","$67,260.00",15
+82,Chester SAU Office,93,,Chester,MA15,"$43,175.00","$68,795.00",15
+82,Chester SAU Office,93,,Chester,MA30,"$44,844.00","$70,884.00",15
+83,Fremont SAU Office,189,,Fremont,BA,"$37,507.00","$58,501.00",15
+83,Fremont SAU Office,189,,Fremont,BA15,"$38,693.00","$60,173.00",15
+83,Fremont SAU Office,189,,Fremont,BA30,"$39,929.00","$61,899.00",15
+83,Fremont SAU Office,189,,Fremont,MA,"$41,202.00","$63,692.00",15
+83,Fremont SAU Office,189,,Fremont,MA15,"$42,523.00","$65,546.00",15
+83,Fremont SAU Office,189,,Fremont,MA30,"$43,892.00","$67,459.00",15
+84,Littleton SAU Office,317,,Littleton,BA,"$41,220.00","$62,820.00",17
+84,Littleton SAU Office,317,,Littleton,BA30,"$42,570.00","$64,170.00",17
+84,Littleton SAU Office,317,,Littleton,MA,"$43,920.00","$65,520.00",17
+84,Littleton SAU Office,317,,Littleton,MA15,"$45,270.00","$66,870.00",17
+84,Littleton SAU Office,317,,Littleton,MA30,"$46,620.00","$68,220.00",17
+85,Sunapee SAU Office,515,,Sunapee,BA,"$43,029.00","$75,300.00",15
+85,Sunapee SAU Office,515,,Sunapee,BA15,"$45,180.00","$77,451.00",15
+85,Sunapee SAU Office,515,,Sunapee,BA30,"$47,331.00","$79,603.00",15
+85,Sunapee SAU Office,515,,Sunapee,MA,"$49,483.00","$81,754.00",15
+85,Sunapee SAU Office,515,,Sunapee,MA15,"$51,634.00","$83,906.00",15
+86,Barnstead SAU Office,31,,Barnstead,BA,"$38,000.00","$51,000.00",16
+86,Barnstead SAU Office,31,,Barnstead,BA15,"$38,380.00","$51,510.00",16
+86,Barnstead SAU Office,31,,Barnstead,BA30,"$39,148.00","$52,540.00",16
+86,Barnstead SAU Office,31,,Barnstead,MA,"$40,322.00","$54,116.00",16
+86,Barnstead SAU Office,31,,Barnstead,MA30,"$41,935.00","$56,281.00",16
+87,Mascenic Regional SAU Office,342,,Mascenic Regional,BA,"$40,180.00","$60,512.00",14
+87,Mascenic Regional SAU Office,342,,Mascenic Regional,BA15,"$41,229.00","$62,093.00",14
+87,Mascenic Regional SAU Office,342,,Mascenic Regional,MA,"$42,732.00","$67,675.00",14
+87,Mascenic Regional SAU Office,342,,Mascenic Regional,MA15,"$44,046.00","$69,756.00",14
+87,Mascenic Regional SAU Office,342,,Mascenic Regional,MA30,"$45,329.00","$71,788.00",14
+88,Lebanon SAU Office,295,,Lebanon,BA,"$44,532.00","$73,605.00",18
+88,Lebanon SAU Office,295,,Lebanon,BA15,"$45,868.00","$75,813.00",18
+88,Lebanon SAU Office,295,,Lebanon,BA30,"$47,244.00","$78,087.00",18
+88,Lebanon SAU Office,295,,Lebanon,MA,"$49,606.00","$81,991.00",18
+88,Lebanon SAU Office,295,,Lebanon,MA15,"$51,094.00","$84,451.00",18
+88,Lebanon SAU Office,295,,Lebanon,MA30,"$52,627.00","$86,985.00",18
+89,Mason SAU Office,345,,Mason,BA,"$39,253.00","$52,897.00",0
+89,Mason SAU Office,345,,Mason,MA,"$55,139.00","$63,377.00",0
+90,Hampton SAU Office,225,,Hampton,BA,"$41,784.00","$65,396.00",16
+90,Hampton SAU Office,225,,Hampton,BA15,"$43,244.00","$67,684.00",16
+90,Hampton SAU Office,225,,Hampton,BA30,"$44,758.00","$70,559.00",16
+90,Hampton SAU Office,225,,Hampton,MA,"$46,548.00","$78,420.00",18
+90,Hampton SAU Office,225,,Hampton,MA15,"$48,179.00","$81,167.00",18
+90,Hampton SAU Office,225,,Hampton,MA30,"$49,864.00","$84,007.00",18
+92,Hinsdale SAU Office,255,,Hinsdale,BA,"$44,775.00","$57,552.00",15
+92,Hinsdale SAU Office,255,,Hinsdale,BA15,"$45,275.00","$58,218.00",15
+92,Hinsdale SAU Office,255,,Hinsdale,MA,"$46,275.00","$59,206.00",15
+92,Hinsdale SAU Office,255,,Hinsdale,MA15,"$46,775.00","$60,595.00",15
+92,Hinsdale SAU Office,255,,Hinsdale,MA30,"$48,075.00","$63,046.00",15
+93,Monadnock Regional SAU Office,363,,Monadnock Regional,BA,"$39,000.00","$58,850.00",13
+93,Monadnock Regional SAU Office,363,,Monadnock Regional,BA15,"$41,000.00","$61,800.00",14
+93,Monadnock Regional SAU Office,363,,Monadnock Regional,MA,"$44,000.00","$65,050.00",15
+93,Monadnock Regional SAU Office,363,,Monadnock Regional,MA15,"$46,000.00","$69,050.00",15
+93,Monadnock Regional SAU Office,363,,Monadnock Regional,MA30,"$49,000.00","$73,050.00",16
+94,Winchester SAU Office,573,,Winchester,BA,"$39,300.00","$46,200.00",13
+94,Winchester SAU Office,573,,Winchester,BA15,"$40,300.00","$49,075.00",14
+94,Winchester SAU Office,573,,Winchester,MA,"$42,300.00","$54,300.00",16
+94,Winchester SAU Office,573,,Winchester,MA15,"$44,000.00","$58,400.00",17
+94,Winchester SAU Office,573,,Winchester,MA30,"$46,500.00","$66,500.00",17
+95,Windham SAU Office,575,,Windham,BA,"$39,402.00","$66,897.00",15
+95,Windham SAU Office,575,,Windham,BA15,"$40,350.00","$68,503.00",15
+95,Windham SAU Office,575,,Windham,BA30,"$41,613.00","$70,648.00",15
+95,Windham SAU Office,575,,Windham,MA,"$45,402.00","$77,080.00",15
+95,Windham SAU Office,575,,Windham,MA15,"$46,347.00","$78,690.00",15
+95,Windham SAU Office,575,,Windham,MA30,"$47,611.00","$80,834.00",15
+99,Croydon SAU Office,117,,Croydon,Did Not Report,Did Not Report,Did Not Report,Did Not Report
+100,Cornish SAU Office,115,,Cornish,BA,"$35,700.00","$59,600.00",14
+100,Cornish SAU Office,115,,Cornish,BA15,"$37,200.00","$61,100.00",14
+100,Cornish SAU Office,115,,Cornish,MA,"$40,300.00","$64,200.00",14
+100,Cornish SAU Office,115,,Cornish,MA15,"$41,800.00","$65,700.00",14
+101,Wakefield SAU Office,543,,Wakefield,BA,"$34,137.00","$52,584.00",13
+101,Wakefield SAU Office,543,,Wakefield,BA15,"$35,489.00","$55,391.00",13
+101,Wakefield SAU Office,543,,Wakefield,BA30,"$36,895.00","$58,103.00",13
+101,Wakefield SAU Office,543,,Wakefield,MA,"$38,605.00","$61,728.00",13
+101,Wakefield SAU Office,543,,Wakefield,MA15,"$40,129.00","$63,216.00",13
+101,Wakefield SAU Office,543,,Wakefield,MA30,"$41,693.00","$65,682.00",13
+103,Hill SAU Office,247,,Hill,BA,"$35,798.00","$52,568.00",15
+103,Hill SAU Office,247,,Hill,BA15,"$36,782.00","$55,194.00",15
+103,Hill SAU Office,247,,Hill,MA,"$37,794.00","$55,500.00",15
+103,Hill SAU Office,247,,Hill,MA15,"$38,833.00","$57,077.00",15
+103,Hill SAU Office,247,,Hill,MA30,"$39,901.00","$58,595.00",15
+104,Rollinsford SAU Office,463,,Rollinsford,BA,"$38,921.00","$56,258.00",8
+104,Rollinsford SAU Office,463,,Rollinsford,BA15,"$40,867.00","$58,547.00",8
+104,Rollinsford SAU Office,463,,Rollinsford,BA30,"$42,912.00","$61,420.00",8
+104,Rollinsford SAU Office,463,,Rollinsford,MA,"$45,059.00","$64,440.00",8
+104,Rollinsford SAU Office,463,,Rollinsford,MA15,"$47,309.00","$67,609.00",8
+104,Rollinsford SAU Office,463,,Rollinsford,MA30,"$49,676.00","$70,936.00",8
+105,Strafford SAU Office,507,,Strafford,BA,"$39,319.00","$57,317.00",19
+105,Strafford SAU Office,507,,Strafford,BA15,"$39,963.00","$62,529.00",19
+105,Strafford SAU Office,507,,Strafford,BA30,"$40,606.00","$65,747.00",19
+105,Strafford SAU Office,507,,Strafford,MA,"$40,606.00","$65,747.00",19
+105,Strafford SAU Office,507,,Strafford,MA15,"$41,250.00","$67,099.00",19
+105,Strafford SAU Office,507,,Strafford,MA30,"$41,893.00","$68,386.00",19
+106,Timberlane Regional SAU Office,534,,Timberlane Regional,BA,"$39,960.00","$61,266.00",15
+106,Timberlane Regional SAU Office,534,,Timberlane Regional,BA15,"$41,756.00","$64,117.00",15
+106,Timberlane Regional SAU Office,534,,Timberlane Regional,MA,"$44,395.00","$68,311.00",15
+106,Timberlane Regional SAU Office,534,,Timberlane Regional,MA30,"$46,411.00","$71,515.00",15
+201,Coe-Brown Northwood Academy,998,,Coe-Brown Northwood Academy,BA,"$47,643.00","$87,663.00",25
+201,Coe-Brown Northwood Academy,998,,Coe-Brown Northwood Academy,BA15,"$49,311.00","$89,331.00",25
+201,Coe-Brown Northwood Academy,998,,Coe-Brown Northwood Academy,BA30,"$50,978.00","$90,998.00",25
+201,Coe-Brown Northwood Academy,998,,Coe-Brown Northwood Academy,MA,"$52,646.00","$92,666.00",25
+201,Coe-Brown Northwood Academy,998,,Coe-Brown Northwood Academy,MA15,"$54,313.00","$94,333.00",25
+202,Pinkerton Academy,999,,Pinkerton Academy,Pinkerton uses a merit system,,,
+301,Prospect Mountain JMA,970,,Prospect Mountain JMA,BA,"$39,201.00","$60,184.00",16
+301,Prospect Mountain JMA,970,,Prospect Mountain JMA,BA15,"$40,772.00","$63,352.00",16
+301,Prospect Mountain JMA,970,,Prospect Mountain JMA,MA,"$43,907.00","$68,102.00",16
+301,Prospect Mountain JMA,970,,Prospect Mountain JMA,MA30,"$47,044.00","$73,250.00",16
+Report Source: ESS Teacher Salary Schedule Survey,,,,,,,,
+Does not include public school districts whose boundaries include parts of more than one state.,,,,,,,,
+,,,,,,,,
+BA = Bachelor's Degree,,,,,,,,
+BA15 = Bachelor's Degree + 15 credits,,,,,,,,
+BA30 = Bachelor's Degree + 30 credits,,,,,,,,
+MA = Master's Degree,,,,,,,,
+MA15 = Master's Degree + 15 credits,,,,,,,,
+MA30 = Master's Degree + 30 credits,,,,,,,,
+A district's professional education levels may not match exactly the standard grid as presented in this report. Contact the district directly for details,,,,,,,,
+Charter and Interstate school information is not included.,,,,,,,,
