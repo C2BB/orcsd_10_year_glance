@@ -95,6 +95,13 @@ if hp:
     hosted = '<meta name="dash-one-writer">\n<style>\n' + hcss + '</style>\n' + html + '<script>\n' + pre + hjs + '</script>\n'
     # hosted copy only: trim repeated legend-swatch attributes (moved to CSS) to stay under the 256 KB document limit
     hosted = hosted.replace('<svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true">', '<svg viewBox="0 0 30 12">').replace(' stroke-linecap="round"', '')
+    # hosted copy only: the repeated legend swatches become <use> references to symbols defined once (static markup, no script)
+    import collections
+    _sv = collections.Counter(re.findall(r'<svg viewBox="0 0 30 12">(.*?)</svg>', hosted, flags=re.S))
+    _gl = [x for x, n in _sv.most_common() if n > 2]
+    for i, x in enumerate(_gl): hosted = hosted.replace('<svg viewBox="0 0 30 12">' + x + '</svg>', '<svg viewBox="0 0 30 12"><use href="#g%d"/></svg>' % i)
+    _defs = '<svg width="0" height="0" style="position:absolute" aria-hidden="true">' + ''.join('<symbol id="g%d" viewBox="0 0 30 12">%s</symbol>' % (i, x.replace('<line ', '<line stroke-linecap="round" ')) for i, x in enumerate(_gl)) + '</svg>\n'
+    hosted = hosted.replace('</style>\n', '</style>\n' + _defs, 1)
     hosted = hosted.replace('<style>\n', '<style>\n.os-legend .lk svg{width:30px;height:12px}.os-legend .lk svg line{stroke-linecap:round}\n', 1)
     hosted = re.sub(r'(<div class="os-src" data-draw="src-[a-z0-9]+">)Data:.*?(</div>)', r'\1—\2', hosted, flags=re.S)
     hosted = re.sub(r'\n[ \t]+', '\n', hosted); hosted = re.sub(r'\n{2,}', '\n', hosted)
