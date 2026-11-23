@@ -80,7 +80,13 @@ single = re.sub(r'\n[ \t]+', '\n', single); single = re.sub(r'\n{2,}', '\n', sin
 # --- hosted artifact copy (Claude data-artifact format; optional) ---
 hp = os.environ.get('HOSTED_OUT')
 if hp:
-    pre = "window.__SRC = " + dump(sources) + ";\n"
+    # hosted copy only: shorten the long repeated URL prefixes (256 KB document limit)
+    PFX = {'A': 'https://www.education.nh.gov/sites/g/files/ehbemt326/files/inline-documents/sonh/',
+           'B': 'https://www.orcsd.org/departments/business-office/files/documents/Annual%20Reports/',
+           'C': 'https://www.education.nh.gov/sites/g/files/ehbemt326/files/inline-documents/'}
+    sj = dump(sources)
+    for k in ('A', 'B', 'C'): sj = sj.replace(PFX[k], '@' + k + '@')
+    pre = "var __P = " + dump(PFX) + ";\nwindow.__SRC = JSON.parse(" + dump(sj) + ".replace(/@([ABC])@/g, function (m, k) { return __P[k]; }));\n"
     hosted = '<meta name="dash-one-writer">\n<style>\n' + css + '</style>\n' + html + '<script>\n' + pre + js + '</script>\n'
     hosted = re.sub(r'(<div class="os-src" data-draw="src-[a-z0-9]+">)Data:.*?(</div>)', r'\1—\2', hosted, flags=re.S)
     hosted = re.sub(r'\n[ \t]+', '\n', hosted); hosted = re.sub(r'\n{2,}', '\n', hosted)
