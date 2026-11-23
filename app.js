@@ -156,8 +156,8 @@ dash.calc('headline', {
   var sel = 7;
   var mode = 'nom';
   var MODES = { nom: { label: 'Nominal dollars', f: null }, cpi: { label: 'Northeast CPI-U', f: 'f_cpi', idx: 'cpi_ne', n: 'cpi_ne_months', nn: 12 }, eci: { label: 'education labor costs (ECI)', f: 'f_eci', idx: 'eci_edu', n: 'eci_quarters', nn: 4 } };
-  var MONEY = ['rsa_cost', 'rsa_rel', 'rsa_trn', 'rsa_idea', 'rsa_tot', 'rsa_aid', 'rsa_med', 'rsa_fed', 'rsa_rev', 'rsa_net', 'bd_unspent', 'bd_appr', 'bd_exp', 'dflt_gap', 'dflt', 'f10', 'f21', 'f22', 'f23', 'debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'fb_tot', 'fb_un', 'fb_com', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
-  var NAMES = ['rsa', 'spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'bvx', 'dflt', 'timp', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts'];
+  var MONEY = ['gfo_sal', 'gfo_ben', 'gfo_pur', 'gfo_sup', 'gfo_prop', 'gfo_oth', 'gfo_tot', 'gfo_sb', 'gfo_np', 'sch_mw', 'sch_mo', 'sch_ps', 'sch_ms', 'sch_hs', 'sch_od', 'sch_tot', 'pers_t_sal', 'pers_a_sal', 'pers_o_sal', 'pers_t_ben', 'pers_a_ben', 'pers_o_ben', 'pers_ao_sal', 'fe_gen_rev', 'fe_gen_exp', 'fe_gen_net', 'fe_gen_beg', 'fe_gen_end', 'fe_food_rev', 'fe_food_exp', 'fe_food_net', 'fe_food_beg', 'fe_food_end', 'fe_spr_rev', 'fe_spr_exp', 'fe_spr_net', 'fe_spr_beg', 'fe_spr_end', 'rsa_cost', 'rsa_rel', 'rsa_trn', 'rsa_idea', 'rsa_tot', 'rsa_aid', 'rsa_med', 'rsa_fed', 'rsa_rev', 'rsa_net', 'bd_unspent', 'bd_appr', 'bd_exp', 'dflt_gap', 'dflt', 'f10', 'f21', 'f22', 'f23', 'debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'fb_tot', 'fb_un', 'fb_com', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
+  var NAMES = ['gfo', 'sps', 'pers', 'fres', 'rsa', 'spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'bvx', 'dflt', 'timp', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts'];
 
   var SCH = [['High school', 'hs'], ['Middle school', 'ms'], ['Mast Way', 'mw'], ['Moharimet', 'mo']];
   function schLines(r, fld, fmt) {
@@ -1496,6 +1496,90 @@ dash.calc('headline', {
     }
   };
   ROWS.rsa.chg = { get: function (r) { return r.rsa_tot; }, kind: 'pct', note: 'special education spending' };
+  ROWS.gfo = {
+    money: true,
+    aria: 'General Fund expenditures: salaries and benefits, and everything else, by fiscal year',
+    domain: [0, 56000000], ticks: [0, 20000000, 40000000], axis: false,
+    tickFmt: function (v) { return v === 0 ? '$0' : '$' + (v / 1e6) + 'M'; },
+    series: [
+      { id: 'np', get: function (r) { return r.gfo_np; }, alt: 'square' },
+      { id: 'sb', get: function (r) { return r.gfo_sb; }, main: true }
+    ],
+    label: function (r) {
+      if (r.gfo_tot == null) return nodata('DOE-25 for this year not yet filed', 'gfo_tot', 'years', 'Pending');
+      return { big: moneyM(r.gfo_sb, 1), sub: 'Salaries and benefits, General Fund', delta: Math.round(r.gfo_sb / r.gfo_tot * 100) + '% of ' + moneyM(r.gfo_tot, 1) + ' total', tag: 'Reported', prov: false, src: 'years', field: 'gfo_sb' };
+    },
+    tip: function (r) {
+      if (r.gfo_tot == null) return { lines: [['General Fund', 'DOE-25 not yet filed']], note: 'The DOE-25 for this year has not been published.' };
+      var L = [['Salaries', money(r.gfo_sal)], ['Employee benefits', money(r.gfo_ben)], ['Purchased services', money(r.gfo_pur)], ['Supplies', money(r.gfo_sup)], ['Property', money(r.gfo_prop)], ['Other', money(r.gfo_oth)], ['Total General Fund', money(r.gfo_tot)]];
+      return { lines: L, note: 'DOE-25, line “Total Expenditures General Fund”. Purchased services are accounts 300 to 500 (professional services, tuition, transportation, utilities, repairs, insurance). Food service and grant funds are not included, so the total is below the all-funds figure in the first row.' };
+    }
+  };
+  ROWS.gfo.chg = { get: function (r) { return r.gfo_sb; }, kind: 'pct', note: 'salaries and benefits' };
+  var SPS = [['Mast Way School', 'sch_mw', 'sc_mw_enr'], ['Moharimet School', 'sch_mo', 'sc_mo_enr'], ['Oyster River Preschool Education Program', 'sch_ps', null], ['Oyster River Middle School', 'sch_ms', 'sc_ms_enr'], ['Oyster River High School', 'sch_hs', 'sc_hs_enr']];
+  ROWS.sps = {
+    money: true,
+    aria: 'Spending by school, all five school lines together and the high school, by fiscal year',
+    domain: [0, 60000000], ticks: [0, 20000000, 40000000], axis: false,
+    tickFmt: function (v) { return v === 0 ? '$0' : '$' + (v / 1e6) + 'M'; },
+    series: [
+      { id: 'hs', get: function (r) { return r.sch_hs; }, alt: 'square' },
+      { id: 'tot', get: function (r) { return r.sch_tot; }, main: true }
+    ],
+    label: function (r) {
+      if (r.sch_tot == null) return nodata(r.fy === '2017-18' ? 'No school-level sheet in the FY2018 filing' : 'DOE-25 for this year not yet filed', 'sch_tot', 'years', r.fy === '2017-18' ? 'Not filed' : 'Pending');
+      return { big: moneyM(r.sch_tot, 1), sub: 'Spending at the schools, all funds', delta: 'High school ' + moneyM(r.sch_hs, 1), tag: 'Reported', prov: false, src: 'years', field: 'sch_tot' };
+    },
+    tip: function (r) {
+      if (r.sch_tot == null) return { lines: [['School spending', 'not available for this year']], note: 'The School Level Expenditures sheet starts with the FY2019 filing and FY2026 is not yet filed.' };
+      var L = [];
+      SPS.forEach(function (d) { var v = r[d[1]]; if (v == null) return; var e = d[2] ? r[d[2]] : null; L.push([d[0].replace('Oyster River ', '').replace(' Education Program', ''), money(v) + (e ? '  ·  ' + money(v / e) + ' per pupil' : '')]); });
+      if (r.sch_od != null) L.push(['Out-of-district tuition and transportation', money(r.sch_od)]);
+      return { lines: L, note: 'State/local plus federal expenditures by school, from the DOE-25 School Level Expenditures sheet. Per pupil divides by October 1 enrollment, so it is not the state’s cost-per-pupil measure. Out-of-district tuition and transportation is broken out on its own line from FY2024 and is not in the chart total; the sheets for FY2019 to FY2023 do not break it out, so whether those years’ school lines include it is not stated. The preschool has its own line from FY2022.' };
+    }
+  };
+  ROWS.sps.chg = { get: function (r) { return r.sch_tot; }, kind: 'pct', note: 'spending at the schools' };
+  ROWS.pers = {
+    money: true,
+    aria: 'Teacher salaries and aide, paraprofessional and other instructional salaries, by fiscal year',
+    domain: [0, 20000000], ticks: [0, 10000000, 20000000], axis: false,
+    tickFmt: function (v) { return v === 0 ? '$0' : '$' + (v / 1e6) + 'M'; },
+    series: [
+      { id: 'ao', get: function (r) { return r.pers_ao_sal; }, alt: 'square' },
+      { id: 't', get: function (r) { return r.pers_t_sal; }, main: true }
+    ],
+    label: function (r) {
+      if (r.pers_t_sal == null) return nodata('DOE-25 for this year not yet filed', 'pers_t_sal', 'years', 'Pending');
+      return { big: moneyM(r.pers_t_sal, 1), sub: 'Teacher salaries, instruction', delta: 'Aides and other staff ' + moneyM(r.pers_ao_sal, 1), tag: 'Reported', prov: false, src: 'years', field: 'pers_t_sal' };
+    },
+    tip: function (r) {
+      if (r.pers_t_sal == null) return { lines: [['Instructional pay', 'DOE-25 not yet filed']], note: 'The DOE-25 for this year has not been published.' };
+      var L = [['Teachers: salaries', money(r.pers_t_sal)], ['Teachers: benefits', money(r.pers_t_ben)], ['Aides and paraprofessionals: salaries', money(r.pers_a_sal)], ['Aides and paraprofessionals: benefits', money(r.pers_a_ben)], ['Other instructional: salaries', money(r.pers_o_sal)], ['Other instructional: benefits', money(r.pers_o_ben)]];
+      return { lines: L, note: 'DOE-25 Salaries-Benefits sheet, summed over regular, special, vocational and other instructional programs (general and special revenue funds). The split between job classes is the district’s own coding; benefits by class move more from year to year than salaries do (for example aide benefits roughly double between FY2024 and FY2025), which may reflect how the district allocated benefits rather than a change in staffing.' };
+    }
+  };
+  ROWS.pers.chg = { get: function (r) { return r.pers_t_sal; }, kind: 'pct', note: 'teacher salaries' };
+  ROWS.fres = {
+    money: true,
+    aria: 'General Fund and Food Service Fund: revenue less expenditures, by fiscal year',
+    domain: [-1000000, 1000000], ticks: [-1000000, 0, 1000000], axis: false,
+    tickFmt: function (v) { return v === 0 ? '$0' : (v < 0 ? '−' : '') + '$' + (Math.abs(v) / 1e6) + 'M'; },
+    series: [
+      { id: 'food', get: function (r) { return r.fe_food_net; }, alt: 'square' },
+      { id: 'gen', get: function (r) { return r.fe_gen_net; }, main: true }
+    ],
+    label: function (r) {
+      if (r.fe_gen_net == null) return nodata('DOE-25 for this year not yet filed', 'fe_gen_net', 'years', 'Pending');
+      return { big: (r.fe_gen_net < 0 ? '−' : '+') + kM(Math.abs(r.fe_gen_net)).replace('−', ''), sub: 'General Fund: revenue less expenditures', delta: 'Food service ' + (r.fe_food_net < 0 ? '−' : '+') + kM(Math.abs(r.fe_food_net)).replace('−', ''), tag: 'Reported', prov: false, src: 'years', field: 'fe_gen_net' };
+    },
+    tip: function (r) {
+      if (r.fe_gen_net == null) return { lines: [['Fund results', 'DOE-25 not yet filed']], note: 'The DOE-25 for this year has not been published.' };
+      var sg = function (v) { return (v < 0 ? '−' : '+') + money(Math.abs(v)); };
+      var L = [['General Fund result', sg(r.fe_gen_net)], ['General Fund balance June 30', money(r.fe_gen_end)], ['Food service result', sg(r.fe_food_net)], ['Food service balance June 30', money(r.fe_food_end)], ['Special revenue (grants) result', sg(r.fe_spr_net)], ['Special revenue balance June 30', money(r.fe_spr_end)]];
+      return { lines: L, note: 'DOE-25 Statement of Analysis of Change in Fund Equity: revenue and other additions less expenditures and other deletions. The General Fund balance here is the DOE-25 figure, which is lower than the “General fund balance” in the audited statements shown in the fund balance row (see CONFLICTS.md).' };
+    }
+  };
+  ROWS.fres.chg = { get: function (r) { return r.fe_gen_end; }, kind: 'pct', note: 'General Fund balance at June 30' };
   ROWS.debt.chg = { get: function (r) { return r.debt_total; }, kind: 'pct', note: 'total obligations' };
   ROWS.bvx.chg = { get: function (r) { return r.bd_unspent; }, kind: 'pct', note: 'budget not spent' };
   ROWS.dflt.chg = { get: function (r) { return r.dflt; }, kind: 'pct', note: 'default budget' };

@@ -123,6 +123,10 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `dflt` | `ar` |
 | `timp` | `ar` |
 | `rsa` | `ar25`, `ar26` |
+| `gfo` | `doe25` |
+| `sps` | `doe25` |
+| `pers` | `doe25` |
+| `fres` | `doe25` |
 
 ## Mirrored but not charted
 

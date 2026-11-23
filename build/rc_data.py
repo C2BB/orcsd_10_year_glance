@@ -345,6 +345,18 @@ for _i, _n in enumerate(("rsa_cost", "rsa_rel", "rsa_trn", "rsa_idea", "rsa_tot"
     put(_n, {y: v[_i] for y, v in _RSA.items()})
 put("rsa_net", {y: v[4] - v[8] for y, v in _RSA.items()})
 
+# From the other sheets of the DOE-25 workbooks (doe25_rows.py reads doe25_all.json, made by doe25_extract.py): General Fund by type,
+# change in fund equity by fund, instructional pay by job class, and spending by school.
+import doe25_rows as _d25
+for _k, _v in _d25.fields().items():
+    put(_k, _v)
+for _f in ("gen", "food", "spr"):
+    put("fe_%s_net" % _f, {y: round(RC["fe_%s_rev" % _f][y] - RC["fe_%s_exp" % _f][y], 2) for y in RC["fe_%s_rev" % _f]})
+put("gfo_sb", {y: round(RC["gfo_sal"][y] + RC["gfo_ben"][y], 2) for y in RC["gfo_sal"]})
+put("gfo_np", {y: round(RC["gfo_pur"][y] + RC["gfo_sup"][y] + RC["gfo_prop"][y] + RC["gfo_oth"][y], 2) for y in RC["gfo_sal"]})
+put("pers_ao_sal", {y: round(RC["pers_a_sal"][y] + RC["pers_o_sal"][y], 2) for y in RC["pers_a_sal"]})
+put("sch_tot", {y: round(sum(RC[k].get(y, 0) for k in ("sch_mw", "sch_mo", "sch_ps", "sch_ms", "sch_hs")), 2) for y in RC["sch_mw"]})
+
 FIELDS = sorted(RC)
 def fields_for(y):
     return {k: RC[k].get(y) for k in FIELDS}
