@@ -1,0 +1,2387 @@
+category	indicator	doe_year	entity	value
+Academic Growth	Student Growth - ELA	2016	State of New Hampshire	50.00
+Academic Growth	Student Growth - ELA	2017	State of New Hampshire	50.00
+Academic Growth	Student Growth - ELA	2018	State of New Hampshire	50.00
+Academic Growth	Student Growth - ELA	2016	Oyster River Coop (District)	53.00
+Academic Growth	Student Growth - ELA	2017	Oyster River Coop (District)	48.00
+Academic Growth	Student Growth - ELA	2018	Oyster River Coop (District)	50.00
+Academic Growth	Student Growth - Math	2016	State of New Hampshire	50.00
+Academic Growth	Student Growth - Math	2017	State of New Hampshire	50.00
+Academic Growth	Student Growth - Math	2018	State of New Hampshire	50.00
+Academic Growth	Student Growth - Math	2016	Oyster River Coop (District)	57.00
+Academic Growth	Student Growth - Math	2017	Oyster River Coop (District)	52.00
+Academic Growth	Student Growth - Math	2018	Oyster River Coop (District)	54.00
+Achievement	Participation - ELA (%)	2016	State of New Hampshire	84.18%
+Achievement	Participation - ELA (%)	2017	State of New Hampshire	83.98%
+Achievement	Participation - ELA (%)	2018	State of New Hampshire	88.63%
+Achievement	Participation - ELA (%)	2016	Oyster River Coop (District)	>90.00%
+Achievement	Participation - ELA (%)	2017	Oyster River Coop (District)	>90.00%
+Achievement	Participation - ELA (%)	2018	Oyster River Coop (District)	>90.00%
+Achievement	Participation - Math (%)	2016	State of New Hampshire	84.18%
+Achievement	Participation - Math (%)	2017	State of New Hampshire	83.95%
+Achievement	Participation - Math (%)	2018	State of New Hampshire	88.68%
+Achievement	Participation - Math (%)	2016	Oyster River Coop (District)	>90.00%
+Achievement	Participation - Math (%)	2017	Oyster River Coop (District)	>90.00%
+Achievement	Participation - Math (%)	2018	Oyster River Coop (District)	>90.00%
+Achievement	Participation - Science (%)	2016	State of New Hampshire	0.00%
+Achievement	Participation - Science (%)	2017	State of New Hampshire	0.00%
+Achievement	Participation - Science (%)	2018	State of New Hampshire	76.26%
+Achievement	Participation - Science (%)	2016	Oyster River Coop (District)	N/A
+Achievement	Participation - Science (%)	2017	Oyster River Coop (District)	N/A
+Achievement	Participation - Science (%)	2018	Oyster River Coop (District)	>90.00%
+Achievement	Proficiency - ELA (%)	2016	State of New Hampshire	61.00%
+Achievement	Proficiency - ELA (%)	2017	State of New Hampshire	59.00%
+Achievement	Proficiency - ELA (%)	2018	State of New Hampshire	58.00%
+Achievement	Proficiency - ELA (%)	2016	Oyster River Coop (District)	82.00%
+Achievement	Proficiency - ELA (%)	2017	Oyster River Coop (District)	79.00%
+Achievement	Proficiency - ELA (%)	2018	Oyster River Coop (District)	77.00%
+Achievement	Proficiency - Math (%)	2016	State of New Hampshire	49.00%
+Achievement	Proficiency - Math (%)	2017	State of New Hampshire	48.00%
+Achievement	Proficiency - Math (%)	2018	State of New Hampshire	48.00%
+Achievement	Proficiency - Math (%)	2016	Oyster River Coop (District)	73.00%
+Achievement	Proficiency - Math (%)	2017	Oyster River Coop (District)	70.00%
+Achievement	Proficiency - Math (%)	2018	Oyster River Coop (District)	73.00%
+Achievement	Proficiency - Math & ELA (%)	2016	State of New Hampshire	51.81%
+Achievement	Proficiency - Math & ELA (%)	2017	State of New Hampshire	49.99%
+Achievement	Proficiency - Math & ELA (%)	2018	State of New Hampshire	50.05%
+Achievement	Proficiency - Math & ELA (%)	2016	Oyster River Coop (District)	77.50%
+Achievement	Proficiency - Math & ELA (%)	2017	Oyster River Coop (District)	74.50%
+Achievement	Proficiency - Math & ELA (%)	2018	Oyster River Coop (District)	74.60%
+College and Career Readiness	Dropout Rate (%)	2016	State of New Hampshire	0.79%
+College and Career Readiness	Dropout Rate (%)	2017	State of New Hampshire	0.83%
+College and Career Readiness	Dropout Rate (%)	2018	State of New Hampshire	0.80%
+College and Career Readiness	Dropout Rate (%)	2016	Oyster River Coop (District)	0.28%
+College and Career Readiness	Dropout Rate (%)	2017	Oyster River Coop (District)	0.00%
+College and Career Readiness	Dropout Rate (%)	2018	Oyster River Coop (District)	0.13%
+College and Career Readiness	Graduation Rate - 4YR (%)	2016	State of New Hampshire	37.06%
+College and Career Readiness	Graduation Rate - 4YR (%)	2017	State of New Hampshire	37.03%
+College and Career Readiness	Graduation Rate - 4YR (%)	2018	State of New Hampshire	36.35%
+College and Career Readiness	Graduation Rate - 4YR (%)	2016	Oyster River Coop (District)	95.07%
+College and Career Readiness	Graduation Rate - 4YR (%)	2017	Oyster River Coop (District)	96.65%
+College and Career Readiness	Graduation Rate - 4YR (%)	2018	Oyster River Coop (District)	94.74%
+College and Career Readiness	Graduation Rate - 5YR (%)	2016	State of New Hampshire	37.47%
+College and Career Readiness	Graduation Rate - 5YR (%)	2017	State of New Hampshire	38.79%
+College and Career Readiness	Graduation Rate - 5YR (%)	2018	State of New Hampshire	38.36%
+College and Career Readiness	Graduation Rate - 5YR (%)	2016	Oyster River Coop (District)	97.84%
+College and Career Readiness	Graduation Rate - 5YR (%)	2017	Oyster River Coop (District)	97.89%
+College and Career Readiness	Graduation Rate - 5YR (%)	2018	Oyster River Coop (District)	97.21%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2016	State of New Hampshire	60.06%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2017	State of New Hampshire	60.25%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2018	State of New Hampshire	60.18%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2016	Oyster River Coop (District)	72.34%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2017	Oyster River Coop (District)	73.60%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2018	Oyster River Coop (District)	70.33%
+Educator	Average Teacher Salary ($)	2016	State of New Hampshire	$56,616
+Educator	Average Teacher Salary ($)	2017	State of New Hampshire	$57,521
+Educator	Average Teacher Salary ($)	2018	State of New Hampshire	$58,277
+Educator	Average Teacher Salary ($)	2016	Oyster River Coop (District)	$68,713
+Educator	Average Teacher Salary ($)	2017	Oyster River Coop (District)	$71,810
+Educator	Average Teacher Salary ($)	2018	Oyster River Coop (District)	$70,514
+Educator	Educators certified in the subject (%)	2016	State of New Hampshire	88.78%
+Educator	Educators certified in the subject (%)	2017	State of New Hampshire	89.21%
+Educator	Educators certified in the subject (%)	2018	State of New Hampshire	89.96%
+Educator	Educators certified in the subject (%)	2016	Oyster River Coop (District)	89.53%
+Educator	Educators certified in the subject (%)	2017	Oyster River Coop (District)	95.39%
+Educator	Educators certified in the subject (%)	2018	Oyster River Coop (District)	94.38%
+Educator	Experienced Educators (%)	2016	State of New Hampshire	86.93%
+Educator	Experienced Educators (%)	2017	State of New Hampshire	85.78%
+Educator	Experienced Educators (%)	2018	State of New Hampshire	85.79%
+Educator	Experienced Educators (%)	2016	Oyster River Coop (District)	96.35%
+Educator	Experienced Educators (%)	2017	Oyster River Coop (District)	94.79%
+Educator	Experienced Educators (%)	2018	Oyster River Coop (District)	92.59%
+ESSA	Achievement Rating	2016	State of New Hampshire	 0.00
+ESSA	Achievement Rating	2017	State of New Hampshire	 0.00
+ESSA	Achievement Rating	2018	State of New Hampshire	 2.35
+ESSA	College and Career Readiness Rating	2016	State of New Hampshire	 0.00
+ESSA	College and Career Readiness Rating	2017	State of New Hampshire	 0.00
+ESSA	College and Career Readiness Rating	2018	State of New Hampshire	 0.28
+ESSA	English Language Proficiency Rating	2018	State of New Hampshire	 0.31
+ESSA	Equity Rating	2016	State of New Hampshire	0.00
+ESSA	Equity Rating	2017	State of New Hampshire	0.00
+ESSA	Equity Rating	2018	State of New Hampshire	1.44
+ESSA	Graduation Rate Rating	2018	State of New Hampshire	 0.53
+ESSA	Growth Rating	2016	State of New Hampshire	0.00
+ESSA	Growth Rating	2017	State of New Hampshire	0.00
+ESSA	Growth Rating	2018	State of New Hampshire	1.86
+ESSA	School Improvement Funds ($)	2016	State of New Hampshire	$0
+ESSA	School Improvement Funds ($)	2017	State of New Hampshire	$0
+ESSA	School Improvement Funds ($)	2018	State of New Hampshire	$0
+Finance	Adequacy Aid Revenue (%)	2016	State of New Hampshire	26.62%
+Finance	Adequacy Aid Revenue (%)	2017	State of New Hampshire	26.57%
+Finance	Adequacy Aid Revenue (%)	2018	State of New Hampshire	25.49%
+Finance	Adequacy Aid Revenue (%)	2016	Oyster River Coop (District)	21.60%
+Finance	Adequacy Aid Revenue (%)	2017	Oyster River Coop (District)	20.50%
+Finance	Adequacy Aid Revenue (%)	2018	Oyster River Coop (District)	20.20%
+Finance	Administration Expenses (%)	2016	State of New Hampshire	8.98%
+Finance	Administration Expenses (%)	2017	State of New Hampshire	9.18%
+Finance	Administration Expenses (%)	2018	State of New Hampshire	9.28%
+Finance	Administration Expenses (%)	2016	Oyster River Coop (District)	7.90%
+Finance	Administration Expenses (%)	2017	Oyster River Coop (District)	11.60%
+Finance	Administration Expenses (%)	2018	Oyster River Coop (District)	11.90%
+Finance	Average Cost Per Pupil ($)	2016	State of New Hampshire	$14,902
+Finance	Average Cost Per Pupil ($)	2017	State of New Hampshire	$15,311
+Finance	Average Cost Per Pupil ($)	2018	State of New Hampshire	$15,865
+Finance	Average Cost Per Pupil ($)	2016	Oyster River Coop (District)	$17,182
+Finance	Average Cost Per Pupil ($)	2017	Oyster River Coop (District)	$17,490
+Finance	Average Cost Per Pupil ($)	2018	Oyster River Coop (District)	$18,099
+Finance	Equalized Tax Rates (%)	2016	State of New Hampshire	18.22%
+Finance	Equalized Tax Rates (%)	2017	State of New Hampshire	17.89%
+Finance	Equalized Tax Rates (%)	2018	State of New Hampshire	17.97%
+Finance	Equalized Tax Rates (%)	2016	Oyster River Coop (District)	27.44%
+Finance	Equalized Tax Rates (%)	2017	Oyster River Coop (District)	27.52%
+Finance	Equalized Tax Rates (%)	2018	Oyster River Coop (District)	26.55%
+Finance	Equalized Valuation Per Pupil ($)	2016	State of New Hampshire	$1,237,617
+Finance	Equalized Valuation Per Pupil ($)	2017	State of New Hampshire	$1,313,196
+Finance	Equalized Valuation Per Pupil ($)	2018	State of New Hampshire	$1,338,352
+Finance	Equalized Valuation Per Pupil ($)	2016	Oyster River Coop (District)	$895,137
+Finance	Equalized Valuation Per Pupil ($)	2017	Oyster River Coop (District)	$882,904
+Finance	Equalized Valuation Per Pupil ($)	2018	Oyster River Coop (District)	$950,053
+Finance	Federal Aid Revenue (%)	2016	State of New Hampshire	3.79%
+Finance	Federal Aid Revenue (%)	2017	State of New Hampshire	3.75%
+Finance	Federal Aid Revenue (%)	2018	State of New Hampshire	3.61%
+Finance	Federal Aid Revenue (%)	2016	Oyster River Coop (District)	2.90%
+Finance	Federal Aid Revenue (%)	2017	Oyster River Coop (District)	2.40%
+Finance	Federal Aid Revenue (%)	2018	Oyster River Coop (District)	2.50%
+Finance	Instructional Staff Expenses (%)	2016	State of New Hampshire	2.51%
+Finance	Instructional Staff Expenses (%)	2017	State of New Hampshire	2.58%
+Finance	Instructional Staff Expenses (%)	2018	State of New Hampshire	2.50%
+Finance	Instructional Staff Expenses (%)	2016	Oyster River Coop (District)	2.70%
+Finance	Instructional Staff Expenses (%)	2017	Oyster River Coop (District)	2.50%
+Finance	Instructional Staff Expenses (%)	2018	Oyster River Coop (District)	2.30%
+Finance	Operational/Plant Maintenance Expenses (%)	2016	State of New Hampshire	6.08%
+Finance	Operational/Plant Maintenance Expenses (%)	2017	State of New Hampshire	5.90%
+Finance	Operational/Plant Maintenance Expenses (%)	2018	State of New Hampshire	5.93%
+Finance	Operational/Plant Maintenance Expenses (%)	2016	Oyster River Coop (District)	9.70%
+Finance	Operational/Plant Maintenance Expenses (%)	2017	Oyster River Coop (District)	9.80%
+Finance	Operational/Plant Maintenance Expenses (%)	2018	Oyster River Coop (District)	10.30%
+Finance	Other State Aid Revenue (%)	2016	State of New Hampshire	1.46%
+Finance	Other State Aid Revenue (%)	2017	State of New Hampshire	1.56%
+Finance	Other State Aid Revenue (%)	2018	State of New Hampshire	1.47%
+Finance	Other State Aid Revenue (%)	2016	Oyster River Coop (District)	2.10%
+Finance	Other State Aid Revenue (%)	2017	Oyster River Coop (District)	1.70%
+Finance	Other State Aid Revenue (%)	2018	Oyster River Coop (District)	1.50%
+Finance	Total Expenditures ($)	2016	State of New Hampshire	$15,336,417
+Finance	Total Expenditures ($)	2017	State of New Hampshire	$15,661,425
+Finance	Total Expenditures ($)	2018	State of New Hampshire	$16,208,834
+Finance	Total Expenditures ($)	2016	Oyster River Coop (District)	$39,644,683
+Finance	Total Expenditures ($)	2017	Oyster River Coop (District)	$41,272,328
+Finance	Total Expenditures ($)	2018	Oyster River Coop (District)	$41,756,740
+Finance	Total Revenues ($)	2016	State of New Hampshire	$15,591,270
+Finance	Total Revenues ($)	2017	State of New Hampshire	$15,877,205
+Finance	Total Revenues ($)	2018	State of New Hampshire	$16,238,456
+Finance	Total Revenues ($)	2016	Oyster River Coop (District)	$39,915,394
+Finance	Total Revenues ($)	2017	Oyster River Coop (District)	$41,288,283
+Finance	Total Revenues ($)	2018	Oyster River Coop (District)	$43,193,983
+Profile	Economically Disadvantaged Students (%)	2016	State of New Hampshire	29.73%
+Profile	Economically Disadvantaged Students (%)	2017	State of New Hampshire	28.82%
+Profile	Economically Disadvantaged Students (%)	2018	State of New Hampshire	28.52%
+Profile	Economically Disadvantaged Students (%)	2016	Oyster River Coop (District)	<10.00%
+Profile	Economically Disadvantaged Students (%)	2017	Oyster River Coop (District)	<10.00%
+Profile	Economically Disadvantaged Students (%)	2018	Oyster River Coop (District)	<10.00%
+Profile	English Language Learner (%)	2016	State of New Hampshire	1.82%
+Profile	English Language Learner (%)	2017	State of New Hampshire	1.86%
+Profile	English Language Learner (%)	2018	State of New Hampshire	1.85%
+Profile	English Language Learner (%)	2016	Oyster River Coop (District)	<10.00%
+Profile	English Language Learner (%)	2017	Oyster River Coop (District)	<10.00%
+Profile	English Language Learner (%)	2018	Oyster River Coop (District)	<10.00%
+Profile	Students with Disability (%)	2016	State of New Hampshire	14.63%
+Profile	Students with Disability (%)	2017	State of New Hampshire	15.71%
+Profile	Students with Disability (%)	2018	State of New Hampshire	16.42%
+Profile	Students with Disability (%)	2016	Oyster River Coop (District)	16.36%
+Profile	Students with Disability (%)	2017	Oyster River Coop (District)	15.81%
+Profile	Students with Disability (%)	2018	Oyster River Coop (District)	15.84%
+Profile	Total Enrollment	2016	State of New Hampshire	901
+Profile	Total Enrollment	2017	State of New Hampshire	893
+Profile	Total Enrollment	2018	State of New Hampshire	886
+Profile	Total Enrollment	2016	Oyster River Coop (District)	2,054
+Profile	Total Enrollment	2017	Oyster River Coop (District)	2,113
+Profile	Total Enrollment	2018	Oyster River Coop (District)	2,147
+School Environment	Average Class Size	2016	State of New Hampshire	18.80
+School Environment	Average Class Size	2017	State of New Hampshire	18.70
+School Environment	Average Class Size	2018	State of New Hampshire	16.60
+School Environment	Average Class Size	2016	Oyster River Coop (District)	19.30
+School Environment	Average Class Size	2017	Oyster River Coop (District)	21.10
+School Environment	Average Class Size	2018	Oyster River Coop (District)	20.60
+School Environment	Expulsion Rate (%)	2016	State of New Hampshire	5.00%
+School Environment	Expulsion Rate (%)	2017	State of New Hampshire	5.00%
+School Environment	Expulsion Rate (%)	2018	State of New Hampshire	5.00%
+School Environment	Expulsion Rate (%)	2016	Oyster River Coop (District)	<10.00%
+School Environment	Expulsion Rate (%)	2017	Oyster River Coop (District)	<10.00%
+School Environment	Expulsion Rate (%)	2018	Oyster River Coop (District)	<10.00%
+School Environment	In School Suspension Rate (%)	2016	State of New Hampshire	5.89%
+School Environment	In School Suspension Rate (%)	2017	State of New Hampshire	6.01%
+School Environment	In School Suspension Rate (%)	2018	State of New Hampshire	5.91%
+School Environment	In School Suspension Rate (%)	2016	Oyster River Coop (District)	<10.00%
+School Environment	In School Suspension Rate (%)	2017	Oyster River Coop (District)	<10.00%
+School Environment	In School Suspension Rate (%)	2018	Oyster River Coop (District)	<10.00%
+School Environment	Incidents of Violence	2016	State of New Hampshire	28.54
+School Environment	Incidents of Violence	2017	State of New Hampshire	33.88
+School Environment	Incidents of Violence	2018	State of New Hampshire	38.71
+School Environment	Incidents of Violence	2016	Oyster River Coop (District)	10.00
+School Environment	Incidents of Violence	2017	Oyster River Coop (District)	19.00
+School Environment	Incidents of Violence	2018	Oyster River Coop (District)	53.00
+School Environment	Out Of School Suspension Rate (%)	2016	State of New Hampshire	5.65%
+School Environment	Out Of School Suspension Rate (%)	2017	State of New Hampshire	5.59%
+School Environment	Out Of School Suspension Rate (%)	2018	State of New Hampshire	5.82%
+School Environment	Out Of School Suspension Rate (%)	2016	Oyster River Coop (District)	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2017	Oyster River Coop (District)	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2018	Oyster River Coop (District)	<10.00%
+Academic Growth	Student Growth - ELA	2019	State of New Hampshire	50.00
+Academic Growth	Student Growth - ELA	2020	State of New Hampshire	50.00
+Academic Growth	Student Growth - ELA	2021	State of New Hampshire	50.00
+Academic Growth	Student Growth - ELA	2019	Oyster River Coop (District)	50.00
+Academic Growth	Student Growth - ELA	2020	Oyster River Coop (District)	*COVID
+Academic Growth	Student Growth - ELA	2021	Oyster River Coop (District)	*COVID
+Academic Growth	Student Growth - Math	2019	State of New Hampshire	50.00
+Academic Growth	Student Growth - Math	2020	State of New Hampshire	50.00
+Academic Growth	Student Growth - Math	2021	State of New Hampshire	50.00
+Academic Growth	Student Growth - Math	2019	Oyster River Coop (District)	58.00
+Academic Growth	Student Growth - Math	2020	Oyster River Coop (District)	*COVID
+Academic Growth	Student Growth - Math	2021	Oyster River Coop (District)	*COVID
+Achievement	Participation - ELA (%)	2019	State of New Hampshire	87.98%
+Achievement	Participation - ELA (%)	2020	State of New Hampshire	0.00%
+Achievement	Participation - ELA (%)	2021	State of New Hampshire	78.81%
+Achievement	Participation - ELA (%)	2019	Oyster River Coop (District)	>90.00%
+Achievement	Participation - ELA (%)	2020	Oyster River Coop (District)	NA
+Achievement	Participation - ELA (%)	2021	Oyster River Coop (District)	89.00%
+Achievement	Participation - Math (%)	2019	State of New Hampshire	87.98%
+Achievement	Participation - Math (%)	2020	State of New Hampshire	0.00%
+Achievement	Participation - Math (%)	2021	State of New Hampshire	79.02%
+Achievement	Participation - Math (%)	2019	Oyster River Coop (District)	>90.00%
+Achievement	Participation - Math (%)	2020	Oyster River Coop (District)	NA
+Achievement	Participation - Math (%)	2021	Oyster River Coop (District)	89.00%
+Achievement	Participation - Science (%)	2019	State of New Hampshire	75.67%
+Achievement	Participation - Science (%)	2020	State of New Hampshire	0.00%
+Achievement	Participation - Science (%)	2021	State of New Hampshire	66.68%
+Achievement	Participation - Science (%)	2019	Oyster River Coop (District)	90.00%
+Achievement	Participation - Science (%)	2020	Oyster River Coop (District)	NA
+Achievement	Participation - Science (%)	2021	Oyster River Coop (District)	72.00%
+Achievement	Proficiency - ELA (%)	2019	State of New Hampshire	56.00%
+Achievement	Proficiency - ELA (%)	2020	State of New Hampshire	*COVID
+Achievement	Proficiency - ELA (%)	2021	State of New Hampshire	52.00%
+Achievement	Proficiency - ELA (%)	2019	Oyster River Coop (District)	74.00%
+Achievement	Proficiency - ELA (%)	2020	Oyster River Coop (District)	*COVID
+Achievement	Proficiency - ELA (%)	2021	Oyster River Coop (District)	74.00%
+Achievement	Proficiency - Math (%)	2019	State of New Hampshire	48.00%
+Achievement	Proficiency - Math (%)	2020	State of New Hampshire	*COVID
+Achievement	Proficiency - Math (%)	2021	State of New Hampshire	38.00%
+Achievement	Proficiency - Math (%)	2019	Oyster River Coop (District)	74.00%
+Achievement	Proficiency - Math (%)	2020	Oyster River Coop (District)	*COVID
+Achievement	Proficiency - Math (%)	2021	Oyster River Coop (District)	59.00%
+Achievement	Proficiency - Math & ELA (%)	2019	State of New Hampshire	48.89%
+Achievement	Proficiency - Math & ELA (%)	2020	State of New Hampshire	0.00%
+Achievement	Proficiency - Math & ELA (%)	2021	State of New Hampshire	41.84%
+Achievement	Proficiency - Math & ELA (%)	2019	Oyster River Coop (District)	74.00%
+Achievement	Proficiency - Math & ELA (%)	2020	Oyster River Coop (District)	*COVID
+Achievement	Proficiency - Math & ELA (%)	2021	Oyster River Coop (District)	66.50%
+College and Career Readiness	Dropout Rate (%)	2019	State of New Hampshire	0.71%
+College and Career Readiness	Dropout Rate (%)	2020	State of New Hampshire	0.82%
+College and Career Readiness	Dropout Rate (%)	2021	State of New Hampshire	1.05%
+College and Career Readiness	Dropout Rate (%)	2019	Oyster River Coop (District)	0.12%
+College and Career Readiness	Dropout Rate (%)	2020	Oyster River Coop (District)	0.00%
+College and Career Readiness	Dropout Rate (%)	2021	Oyster River Coop (District)	0.12%
+College and Career Readiness	Graduation Rate - 4YR (%)	2019	State of New Hampshire	36.70%
+College and Career Readiness	Graduation Rate - 4YR (%)	2020	State of New Hampshire	36.35%
+College and Career Readiness	Graduation Rate - 4YR (%)	2021	State of New Hampshire	36.02%
+College and Career Readiness	Graduation Rate - 4YR (%)	2019	Oyster River Coop (District)	97.25%
+College and Career Readiness	Graduation Rate - 4YR (%)	2020	Oyster River Coop (District)	97.06%
+College and Career Readiness	Graduation Rate - 4YR (%)	2021	Oyster River Coop (District)	96.12%
+College and Career Readiness	Graduation Rate - 5YR (%)	2019	State of New Hampshire	37.07%
+College and Career Readiness	Graduation Rate - 5YR (%)	2020	State of New Hampshire	37.78%
+College and Career Readiness	Graduation Rate - 5YR (%)	2021	State of New Hampshire	37.69%
+College and Career Readiness	Graduation Rate - 5YR (%)	2019	Oyster River Coop (District)	96.30%
+College and Career Readiness	Graduation Rate - 5YR (%)	2020	Oyster River Coop (District)	97.80%
+College and Career Readiness	Graduation Rate - 5YR (%)	2021	Oyster River Coop (District)	97.06%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2019	State of New Hampshire	60.57%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2020	State of New Hampshire	57.72%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2021	State of New Hampshire	55.69%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2019	Oyster River Coop (District)	68.68%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2020	Oyster River Coop (District)	71.21%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2021	Oyster River Coop (District)	74.37%
+Educator	Average Teacher Salary ($)	2019	State of New Hampshire	$59,198
+Educator	Average Teacher Salary ($)	2020	State of New Hampshire	$59,621
+Educator	Average Teacher Salary ($)	2021	State of New Hampshire	$61,848
+Educator	Average Teacher Salary ($)	2019	Oyster River Coop (District)	$73,778
+Educator	Average Teacher Salary ($)	2020	Oyster River Coop (District)	$75,202
+Educator	Average Teacher Salary ($)	2021	Oyster River Coop (District)	$76,645
+Educator	Educators certified in the subject (%)	2019	State of New Hampshire	90.06%
+Educator	Educators certified in the subject (%)	2020	State of New Hampshire	89.50%
+Educator	Educators certified in the subject (%)	2021	State of New Hampshire	89.92%
+Educator	Educators certified in the subject (%)	2019	Oyster River Coop (District)	93.67%
+Educator	Educators certified in the subject (%)	2020	Oyster River Coop (District)	94.48%
+Educator	Educators certified in the subject (%)	2021	Oyster River Coop (District)	95.86%
+Educator	Experienced Educators (%)	2019	State of New Hampshire	85.74%
+Educator	Experienced Educators (%)	2020	State of New Hampshire	85.06%
+Educator	Experienced Educators (%)	2021	State of New Hampshire	84.95%
+Educator	Experienced Educators (%)	2019	Oyster River Coop (District)	90.77%
+Educator	Experienced Educators (%)	2020	Oyster River Coop (District)	92.42%
+Educator	Experienced Educators (%)	2021	Oyster River Coop (District)	93.85%
+ESSA	Achievement Rating	2019	State of New Hampshire	 2.26
+ESSA	Achievement Rating	2020	State of New Hampshire	 0.00
+ESSA	Achievement Rating	2021	State of New Hampshire	 1.96
+ESSA	College and Career Readiness Rating	2019	State of New Hampshire	 0.29
+ESSA	College and Career Readiness Rating	2020	State of New Hampshire	 0.00
+ESSA	College and Career Readiness Rating	2021	State of New Hampshire	 0.27
+ESSA	English Language Proficiency Rating	2019	State of New Hampshire	 0.30
+ESSA	English Language Proficiency Rating	2020	State of New Hampshire	 0.00
+ESSA	English Language Proficiency Rating	2021	State of New Hampshire	 0.14
+ESSA	Equity Rating	2019	State of New Hampshire	1.43
+ESSA	Equity Rating	2020	State of New Hampshire	0.00
+ESSA	Equity Rating	2021	State of New Hampshire	0.00
+ESSA	Graduation Rate Rating	2019	State of New Hampshire	 0.54
+ESSA	Graduation Rate Rating	2020	State of New Hampshire	 0.00
+ESSA	Graduation Rate Rating	2021	State of New Hampshire	 0.53
+ESSA	Growth Rating	2019	State of New Hampshire	1.87
+ESSA	Growth Rating	2020	State of New Hampshire	0.00
+ESSA	Growth Rating	2021	State of New Hampshire	0.00
+ESSA	School Improvement Funds ($)	2019	State of New Hampshire	$4,201
+ESSA	School Improvement Funds ($)	2020	State of New Hampshire	$4,175
+ESSA	School Improvement Funds ($)	2021	State of New Hampshire	$4,193
+Finance	Adequacy Aid Revenue (%)	2019	State of New Hampshire	24.29%
+Finance	Adequacy Aid Revenue (%)	2020	State of New Hampshire	32.83%
+Finance	Adequacy Aid Revenue (%)	2021	State of New Hampshire	32.64%
+Finance	Adequacy Aid Revenue (%)	2019	Oyster River Coop (District)	19.20%
+Finance	Adequacy Aid Revenue (%)	2020	Oyster River Coop (District)	19.70%
+Finance	Adequacy Aid Revenue (%)	2021	Oyster River Coop (District)	20.30%
+Finance	Administration Expenses (%)	2019	State of New Hampshire	9.09%
+Finance	Administration Expenses (%)	2020	State of New Hampshire	11.56%
+Finance	Administration Expenses (%)	2021	State of New Hampshire	11.62%
+Finance	Administration Expenses (%)	2019	Oyster River Coop (District)	12.20%
+Finance	Administration Expenses (%)	2020	Oyster River Coop (District)	12.70%
+Finance	Administration Expenses (%)	2021	Oyster River Coop (District)	12.70%
+Finance	Average Cost Per Pupil ($)	2019	State of New Hampshire	$16,346
+Finance	Average Cost Per Pupil ($)	2020	State of New Hampshire	$16,824
+Finance	Average Cost Per Pupil ($)	2021	State of New Hampshire	$18,434
+Finance	Average Cost Per Pupil ($)	2019	Oyster River Coop (District)	$17,903
+Finance	Average Cost Per Pupil ($)	2020	Oyster River Coop (District)	$18,224
+Finance	Average Cost Per Pupil ($)	2021	Oyster River Coop (District)	$20,105
+Finance	Equalized Tax Rates (%)	2019	State of New Hampshire	17.26%
+Finance	Equalized Tax Rates (%)	2020	State of New Hampshire	16.34%
+Finance	Equalized Tax Rates (%)	2021	State of New Hampshire	0.00%
+Finance	Equalized Tax Rates (%)	2019	Oyster River Coop (District)	25.59%
+Finance	Equalized Tax Rates (%)	2020	Oyster River Coop (District)	24.67%
+Finance	Equalized Tax Rates (%)	2021	Oyster River Coop (District)	NA
+Finance	Equalized Valuation Per Pupil ($)	2019	State of New Hampshire	$1,376,441
+Finance	Equalized Valuation Per Pupil ($)	2020	State of New Hampshire	$1,561,930
+Finance	Equalized Valuation Per Pupil ($)	2021	State of New Hampshire	$1,586,775
+Finance	Equalized Valuation Per Pupil ($)	2019	Oyster River Coop (District)	$1,019,444
+Finance	Equalized Valuation Per Pupil ($)	2020	Oyster River Coop (District)	$1,089,146
+Finance	Equalized Valuation Per Pupil ($)	2021	Oyster River Coop (District)	$1,288,639
+Finance	Federal Aid Revenue (%)	2019	State of New Hampshire	3.57%
+Finance	Federal Aid Revenue (%)	2020	State of New Hampshire	3.75%
+Finance	Federal Aid Revenue (%)	2021	State of New Hampshire	6.30%
+Finance	Federal Aid Revenue (%)	2019	Oyster River Coop (District)	2.10%
+Finance	Federal Aid Revenue (%)	2020	Oyster River Coop (District)	2.30%
+Finance	Federal Aid Revenue (%)	2021	Oyster River Coop (District)	3.10%
+Finance	Instructional Staff Expenses (%)	2019	State of New Hampshire	2.50%
+Finance	Instructional Staff Expenses (%)	2020	State of New Hampshire	2.74%
+Finance	Instructional Staff Expenses (%)	2021	State of New Hampshire	2.76%
+Finance	Instructional Staff Expenses (%)	2019	Oyster River Coop (District)	2.50%
+Finance	Instructional Staff Expenses (%)	2020	Oyster River Coop (District)	2.60%
+Finance	Instructional Staff Expenses (%)	2021	Oyster River Coop (District)	2.10%
+Finance	Operational/Plant Maintenance Expenses (%)	2019	State of New Hampshire	6.09%
+Finance	Operational/Plant Maintenance Expenses (%)	2020	State of New Hampshire	7.55%
+Finance	Operational/Plant Maintenance Expenses (%)	2021	State of New Hampshire	8.36%
+Finance	Operational/Plant Maintenance Expenses (%)	2019	Oyster River Coop (District)	8.00%
+Finance	Operational/Plant Maintenance Expenses (%)	2020	Oyster River Coop (District)	7.40%
+Finance	Operational/Plant Maintenance Expenses (%)	2021	Oyster River Coop (District)	8.60%
+Finance	Other State Aid Revenue (%)	2019	State of New Hampshire	2.00%
+Finance	Other State Aid Revenue (%)	2020	State of New Hampshire	2.40%
+Finance	Other State Aid Revenue (%)	2021	State of New Hampshire	1.97%
+Finance	Other State Aid Revenue (%)	2019	Oyster River Coop (District)	2.90%
+Finance	Other State Aid Revenue (%)	2020	Oyster River Coop (District)	1.70%
+Finance	Other State Aid Revenue (%)	2021	Oyster River Coop (District)	1.30%
+Finance	Total Expenditures ($)	2019	State of New Hampshire	$5,904,522
+Finance	Total Expenditures ($)	2020	State of New Hampshire	$6,040,583
+Finance	Total Expenditures ($)	2021	State of New Hampshire	$6,466,039
+Finance	Total Expenditures ($)	2019	Oyster River Coop (District)	$43,761,970
+Finance	Total Expenditures ($)	2020	Oyster River Coop (District)	$49,687,536
+Finance	Total Expenditures ($)	2021	Oyster River Coop (District)	$70,995,176
+Finance	Total Revenues ($)	2019	State of New Hampshire	$16,444,495
+Finance	Total Revenues ($)	2020	State of New Hampshire	$17,153,144
+Finance	Total Revenues ($)	2021	State of New Hampshire	$17,970,412
+Finance	Total Revenues ($)	2019	Oyster River Coop (District)	$45,457,190
+Finance	Total Revenues ($)	2020	Oyster River Coop (District)	$46,477,884
+Finance	Total Revenues ($)	2021	Oyster River Coop (District)	$48,393,325
+Profile	Economically Disadvantaged Students (%)	2019	State of New Hampshire	29.81%
+Profile	Economically Disadvantaged Students (%)	2020	State of New Hampshire	28.50%
+Profile	Economically Disadvantaged Students (%)	2021	State of New Hampshire	25.92%
+Profile	Economically Disadvantaged Students (%)	2019	Oyster River Coop (District)	<10.00%
+Profile	Economically Disadvantaged Students (%)	2020	Oyster River Coop (District)	<10.00%
+Profile	Economically Disadvantaged Students (%)	2021	Oyster River Coop (District)	<10.00%
+Profile	English Language Learner (%)	2019	State of New Hampshire	1.99%
+Profile	English Language Learner (%)	2020	State of New Hampshire	2.14%
+Profile	English Language Learner (%)	2021	State of New Hampshire	2.29%
+Profile	English Language Learner (%)	2019	Oyster River Coop (District)	<10.00%
+Profile	English Language Learner (%)	2020	Oyster River Coop (District)	<10.00%
+Profile	English Language Learner (%)	2021	Oyster River Coop (District)	<10.00%
+Profile	Students with Disability (%)	2019	State of New Hampshire	16.92%
+Profile	Students with Disability (%)	2020	State of New Hampshire	16.80%
+Profile	Students with Disability (%)	2021	State of New Hampshire	18.17%
+Profile	Students with Disability (%)	2019	Oyster River Coop (District)	15.84%
+Profile	Students with Disability (%)	2020	Oyster River Coop (District)	15.21%
+Profile	Students with Disability (%)	2021	Oyster River Coop (District)	15.34%
+Profile	Total Enrollment	2019	State of New Hampshire	872
+Profile	Total Enrollment	2020	State of New Hampshire	862
+Profile	Total Enrollment	2021	State of New Hampshire	814
+Profile	Total Enrollment	2019	Oyster River Coop (District)	2,190
+Profile	Total Enrollment	2020	Oyster River Coop (District)	2,202
+Profile	Total Enrollment	2021	Oyster River Coop (District)	2,132
+School Environment	Average Class Size	2019	State of New Hampshire	18.50
+School Environment	Average Class Size	2020	State of New Hampshire	18.30
+School Environment	Average Class Size	2021	State of New Hampshire	16.80
+School Environment	Average Class Size	2019	Oyster River Coop (District)	21.00
+School Environment	Average Class Size	2020	Oyster River Coop (District)	19.70
+School Environment	Average Class Size	2021	Oyster River Coop (District)	17.70
+School Environment	Expulsion Rate (%)	2019	State of New Hampshire	5.00%
+School Environment	Expulsion Rate (%)	2020	State of New Hampshire	5.00%
+School Environment	Expulsion Rate (%)	2021	State of New Hampshire	4.95%
+School Environment	Expulsion Rate (%)	2019	Oyster River Coop (District)	<10.00%
+School Environment	Expulsion Rate (%)	2020	Oyster River Coop (District)	<10.00%
+School Environment	Expulsion Rate (%)	2021	Oyster River Coop (District)	<10.00%
+School Environment	In School Suspension Rate (%)	2019	State of New Hampshire	5.95%
+School Environment	In School Suspension Rate (%)	2020	State of New Hampshire	5.39%
+School Environment	In School Suspension Rate (%)	2021	State of New Hampshire	5.01%
+School Environment	In School Suspension Rate (%)	2019	Oyster River Coop (District)	<10.00%
+School Environment	In School Suspension Rate (%)	2020	Oyster River Coop (District)	<10.00%
+School Environment	In School Suspension Rate (%)	2021	Oyster River Coop (District)	<10.00%
+School Environment	Incidents of Violence	2019	State of New Hampshire	40.03
+School Environment	Incidents of Violence	2020	State of New Hampshire	26.75
+School Environment	Incidents of Violence	2021	State of New Hampshire	4.80
+School Environment	Incidents of Violence	2019	Oyster River Coop (District)	17.00
+School Environment	Incidents of Violence	2020	Oyster River Coop (District)	6.00
+School Environment	Incidents of Violence	2021	Oyster River Coop (District)	1.00
+School Environment	Out Of School Suspension Rate (%)	2019	State of New Hampshire	5.87%
+School Environment	Out Of School Suspension Rate (%)	2020	State of New Hampshire	5.43%
+School Environment	Out Of School Suspension Rate (%)	2021	State of New Hampshire	5.00%
+School Environment	Out Of School Suspension Rate (%)	2019	Oyster River Coop (District)	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2020	Oyster River Coop (District)	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2021	Oyster River Coop (District)	<10.00%
+School Environment	Students/Counselors Ratio	2021	State of New Hampshire	246.38
+School Environment	Students/Counselors Ratio	2021	Oyster River Coop (District)	210.70
+School Environment	Students/Non-Teacher Staff Ratio	2021	State of New Hampshire	22.18
+School Environment	Students/Non-Teacher Staff Ratio	2021	Oyster River Coop (District)	16.84
+School Environment	Teachers/Total Staff Ratio	2021	State of New Hampshire	0.67
+School Environment	Teachers/Total Staff Ratio	2021	Oyster River Coop (District)	0.63
+Academic Growth	Student Growth - ELA	2022	State of New Hampshire	50.00
+Academic Growth	Student Growth - ELA	2023	State of New Hampshire	50.00
+Academic Growth	Student Growth - ELA	2024	State of New Hampshire	50.00
+Academic Growth	Student Growth - ELA	2022	Oyster River Coop (District)	52.00
+Academic Growth	Student Growth - ELA	2023	Oyster River Coop (District)	55.00
+Academic Growth	Student Growth - ELA	2024	Oyster River Coop (District)	53.00
+Academic Growth	Student Growth - Math	2022	State of New Hampshire	50.00
+Academic Growth	Student Growth - Math	2023	State of New Hampshire	50.00
+Academic Growth	Student Growth - Math	2024	State of New Hampshire	50.00
+Academic Growth	Student Growth - Math	2022	Oyster River Coop (District)	60.00
+Academic Growth	Student Growth - Math	2023	Oyster River Coop (District)	60.00
+Academic Growth	Student Growth - Math	2024	Oyster River Coop (District)	56.00
+Achievement	Participation - ELA (%)	2022	State of New Hampshire	86.51%
+Achievement	Participation - ELA (%)	2023	State of New Hampshire	86.39%
+Achievement	Participation - ELA (%)	2024	State of New Hampshire	85.67%
+Achievement	Participation - ELA (%)	2022	Oyster River Coop (District)	>90.00%
+Achievement	Participation - ELA (%)	2023	Oyster River Coop (District)	>90.00%
+Achievement	Participation - ELA (%)	2024	Oyster River Coop (District)	>90.00%
+Achievement	Participation - Math (%)	2022	State of New Hampshire	86.56%
+Achievement	Participation - Math (%)	2023	State of New Hampshire	86.49%
+Achievement	Participation - Math (%)	2024	State of New Hampshire	85.71%
+Achievement	Participation - Math (%)	2022	Oyster River Coop (District)	>90.00%
+Achievement	Participation - Math (%)	2023	Oyster River Coop (District)	>90.00%
+Achievement	Participation - Math (%)	2024	Oyster River Coop (District)	>90.00%
+Achievement	Participation - Science (%)	2022	State of New Hampshire	74.54%
+Achievement	Participation - Science (%)	2023	State of New Hampshire	72.28%
+Achievement	Participation - Science (%)	2024	State of New Hampshire	75.19%
+Achievement	Participation - Science (%)	2022	Oyster River Coop (District)	>90.00%
+Achievement	Participation - Science (%)	2023	Oyster River Coop (District)	>90.00%
+Achievement	Participation - Science (%)	2024	Oyster River Coop (District)	>90.00%
+Achievement	Proficiency - ELA (%)	2022	State of New Hampshire	51.00%
+Achievement	Proficiency - ELA (%)	2023	State of New Hampshire	52.00%
+Achievement	Proficiency - ELA (%)	2024	State of New Hampshire	53.00%
+Achievement	Proficiency - ELA (%)	2022	Oyster River Coop (District)	71.00%
+Achievement	Proficiency - ELA (%)	2023	Oyster River Coop (District)	76.00%
+Achievement	Proficiency - ELA (%)	2024	Oyster River Coop (District)	74.00%
+Achievement	Proficiency - Math (%)	2022	State of New Hampshire	40.00%
+Achievement	Proficiency - Math (%)	2023	State of New Hampshire	42.00%
+Achievement	Proficiency - Math (%)	2024	State of New Hampshire	41.00%
+Achievement	Proficiency - Math (%)	2022	Oyster River Coop (District)	66.00%
+Achievement	Proficiency - Math (%)	2023	Oyster River Coop (District)	68.00%
+Achievement	Proficiency - Math (%)	2024	Oyster River Coop (District)	66.00%
+Achievement	Proficiency - Math & ELA (%)	2022	State of New Hampshire	44.37%
+Achievement	Proficiency - Math & ELA (%)	2023	State of New Hampshire	44.15%
+Achievement	Proficiency - Math & ELA (%)	2024	State of New Hampshire	43.29%
+Achievement	Proficiency - Math & ELA (%)	2022	Oyster River Coop (District)	68.50%
+Achievement	Proficiency - Math & ELA (%)	2023	Oyster River Coop (District)	72.00%
+Achievement	Proficiency - Math & ELA (%)	2024	Oyster River Coop (District)	70.00%
+College and Career Readiness	Dropout Rate (%)	2022	State of New Hampshire	0.90%
+College and Career Readiness	Dropout Rate (%)	2023	State of New Hampshire	0.78%
+College and Career Readiness	Dropout Rate (%)	2024	State of New Hampshire	0.66%
+College and Career Readiness	Dropout Rate (%)	2022	Oyster River Coop (District)	0.12%
+College and Career Readiness	Dropout Rate (%)	2023	Oyster River Coop (District)	0.48%
+College and Career Readiness	Dropout Rate (%)	2024	Oyster River Coop (District)	0.00%
+College and Career Readiness	Graduation Rate - 4YR (%)	2022	State of New Hampshire	37.18%
+College and Career Readiness	Graduation Rate - 4YR (%)	2023	State of New Hampshire	36.58%
+College and Career Readiness	Graduation Rate - 4YR (%)	2024	State of New Hampshire	36.32%
+College and Career Readiness	Graduation Rate - 4YR (%)	2022	Oyster River Coop (District)	96.79%
+College and Career Readiness	Graduation Rate - 4YR (%)	2023	Oyster River Coop (District)	93.85%
+College and Career Readiness	Graduation Rate - 4YR (%)	2024	Oyster River Coop (District)	97.06%
+College and Career Readiness	Graduation Rate - 5YR (%)	2022	State of New Hampshire	37.27%
+College and Career Readiness	Graduation Rate - 5YR (%)	2023	State of New Hampshire	36.36%
+College and Career Readiness	Graduation Rate - 5YR (%)	2024	State of New Hampshire	36.64%
+College and Career Readiness	Graduation Rate - 5YR (%)	2022	Oyster River Coop (District)	96.12%
+College and Career Readiness	Graduation Rate - 5YR (%)	2023	Oyster River Coop (District)	97.24%
+College and Career Readiness	Graduation Rate - 5YR (%)	2024	Oyster River Coop (District)	94.90%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2022	State of New Hampshire	55.50%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2023	State of New Hampshire	55.24%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2024	State of New Hampshire	47.12%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2022	Oyster River Coop (District)	69.67%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2023	Oyster River Coop (District)	73.26%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2024	Oyster River Coop (District)	68.29%
+Educator	Average Teacher Salary ($)	2022	State of New Hampshire	$62,695
+Educator	Average Teacher Salary ($)	2023	State of New Hampshire	$63,925
+Educator	Average Teacher Salary ($)	2024	State of New Hampshire	$66,576
+Educator	Average Teacher Salary ($)	2022	Oyster River Coop (District)	$76,257
+Educator	Average Teacher Salary ($)	2023	Oyster River Coop (District)	$63,538
+Educator	Average Teacher Salary ($)	2024	Oyster River Coop (District)	$80,573
+Educator	Educators certified in the subject (%)	2022	State of New Hampshire	90.13%
+Educator	Educators certified in the subject (%)	2023	State of New Hampshire	88.77%
+Educator	Educators certified in the subject (%)	2024	State of New Hampshire	87.78%
+Educator	Educators certified in the subject (%)	2022	Oyster River Coop (District)	88.68%
+Educator	Educators certified in the subject (%)	2023	Oyster River Coop (District)	88.61%
+Educator	Educators certified in the subject (%)	2024	Oyster River Coop (District)	85.88%
+Educator	Experienced Educators (%)	2022	State of New Hampshire	84.55%
+Educator	Experienced Educators (%)	2023	State of New Hampshire	83.78%
+Educator	Experienced Educators (%)	2024	State of New Hampshire	83.54%
+Educator	Experienced Educators (%)	2022	Oyster River Coop (District)	89.50%
+Educator	Experienced Educators (%)	2023	Oyster River Coop (District)	92.54%
+Educator	Experienced Educators (%)	2024	Oyster River Coop (District)	89.45%
+ESSA	Achievement Rating	2022	State of New Hampshire	 1.82
+ESSA	Achievement Rating	2023	State of New Hampshire	 1.94
+ESSA	Achievement Rating	2024	State of New Hampshire	 1.92
+ESSA	College and Career Readiness Rating	2022	State of New Hampshire	 0.28
+ESSA	College and Career Readiness Rating	2023	State of New Hampshire	 0.30
+ESSA	College and Career Readiness Rating	2024	State of New Hampshire	 0.33
+ESSA	English Language Proficiency Rating	2022	State of New Hampshire	 0.17
+ESSA	English Language Proficiency Rating	2023	State of New Hampshire	 0.24
+ESSA	English Language Proficiency Rating	2024	State of New Hampshire	 0.33
+ESSA	Equity Rating	2022	State of New Hampshire	1.51
+ESSA	Equity Rating	2023	State of New Hampshire	1.54
+ESSA	Equity Rating	2024	State of New Hampshire	1.64
+ESSA	Graduation Rate Rating	2022	State of New Hampshire	 0.52
+ESSA	Graduation Rate Rating	2023	State of New Hampshire	 0.53
+ESSA	Graduation Rate Rating	2024	State of New Hampshire	 0.53
+ESSA	Growth Rating	2022	State of New Hampshire	1.77
+ESSA	Growth Rating	2023	State of New Hampshire	1.90
+ESSA	Growth Rating	2024	State of New Hampshire	1.91
+ESSA	School Improvement Funds ($)	2022	State of New Hampshire	$1,246
+ESSA	School Improvement Funds ($)	2023	State of New Hampshire	$4,303
+ESSA	School Improvement Funds ($)	2024	State of New Hampshire	$6,587
+Finance	Adequacy Aid Revenue (%)	2022	State of New Hampshire	31.44%
+Finance	Adequacy Aid Revenue (%)	2023	State of New Hampshire	31.73%
+Finance	Adequacy Aid Revenue (%)	2024	State of New Hampshire	29.41%
+Finance	Adequacy Aid Revenue (%)	2022	Oyster River Coop (District)	18.80%
+Finance	Adequacy Aid Revenue (%)	2023	Oyster River Coop (District)	17.70%
+Finance	Adequacy Aid Revenue (%)	2024	Oyster River Coop (District)	18.50%
+Finance	Administration Expenses (%)	2022	State of New Hampshire	11.73%
+Finance	Administration Expenses (%)	2023	State of New Hampshire	11.89%
+Finance	Administration Expenses (%)	2024	State of New Hampshire	12.59%
+Finance	Administration Expenses (%)	2022	Oyster River Coop (District)	12.60%
+Finance	Administration Expenses (%)	2023	Oyster River Coop (District)	12.50%
+Finance	Administration Expenses (%)	2024	Oyster River Coop (District)	12.80%
+Finance	Average Cost Per Pupil ($)	2022	State of New Hampshire	$19,340
+Finance	Average Cost Per Pupil ($)	2023	State of New Hampshire	$20,323
+Finance	Average Cost Per Pupil ($)	2024	State of New Hampshire	$21,545
+Finance	Average Cost Per Pupil ($)	2022	Oyster River Coop (District)	$20,530
+Finance	Average Cost Per Pupil ($)	2023	Oyster River Coop (District)	$21,514
+Finance	Average Cost Per Pupil ($)	2024	Oyster River Coop (District)	$22,134
+Finance	Equalized Tax Rates (%)	2022	State of New Hampshire	13.18%
+Finance	Equalized Tax Rates (%)	2023	State of New Hampshire	11.09%
+Finance	Equalized Tax Rates (%)	2024	State of New Hampshire	11.00%
+Finance	Equalized Tax Rates (%)	2022	Oyster River Coop (District)	19.86%
+Finance	Equalized Tax Rates (%)	2023	Oyster River Coop (District)	18.58%
+Finance	Equalized Tax Rates (%)	2024	Oyster River Coop (District)	17.84%
+Finance	Equalized Valuation Per Pupil ($)	2022	State of New Hampshire	$1,923,280
+Finance	Equalized Valuation Per Pupil ($)	2023	State of New Hampshire	$2,439,739
+Finance	Equalized Valuation Per Pupil ($)	2024	State of New Hampshire	$2,743,576
+Finance	Equalized Valuation Per Pupil ($)	2022	Oyster River Coop (District)	$1,509,332
+Finance	Equalized Valuation Per Pupil ($)	2023	Oyster River Coop (District)	$1,634,947
+Finance	Equalized Valuation Per Pupil ($)	2024	Oyster River Coop (District)	$1,839,838
+Finance	Federal Aid Revenue (%)	2022	State of New Hampshire	7.37%
+Finance	Federal Aid Revenue (%)	2023	State of New Hampshire	7.63%
+Finance	Federal Aid Revenue (%)	2024	State of New Hampshire	7.55%
+Finance	Federal Aid Revenue (%)	2022	Oyster River Coop (District)	4.50%
+Finance	Federal Aid Revenue (%)	2023	Oyster River Coop (District)	2.30%
+Finance	Federal Aid Revenue (%)	2024	Oyster River Coop (District)	1.90%
+Finance	Instructional Staff Expenses (%)	2022	State of New Hampshire	2.93%
+Finance	Instructional Staff Expenses (%)	2023	State of New Hampshire	2.99%
+Finance	Instructional Staff Expenses (%)	2024	State of New Hampshire	2.87%
+Finance	Instructional Staff Expenses (%)	2022	Oyster River Coop (District)	2.00%
+Finance	Instructional Staff Expenses (%)	2023	Oyster River Coop (District)	1.90%
+Finance	Instructional Staff Expenses (%)	2024	Oyster River Coop (District)	2.10%
+Finance	Operational/Plant Maintenance Expenses (%)	2022	State of New Hampshire	7.83%
+Finance	Operational/Plant Maintenance Expenses (%)	2023	State of New Hampshire	8.80%
+Finance	Operational/Plant Maintenance Expenses (%)	2024	State of New Hampshire	8.68%
+Finance	Operational/Plant Maintenance Expenses (%)	2022	Oyster River Coop (District)	9.00%
+Finance	Operational/Plant Maintenance Expenses (%)	2023	Oyster River Coop (District)	9.80%
+Finance	Operational/Plant Maintenance Expenses (%)	2024	Oyster River Coop (District)	8.50%
+Finance	Other State Aid Revenue (%)	2022	State of New Hampshire	2.00%
+Finance	Other State Aid Revenue (%)	2023	State of New Hampshire	2.48%
+Finance	Other State Aid Revenue (%)	2024	State of New Hampshire	2.03%
+Finance	Other State Aid Revenue (%)	2022	Oyster River Coop (District)	1.30%
+Finance	Other State Aid Revenue (%)	2023	Oyster River Coop (District)	2.20%
+Finance	Other State Aid Revenue (%)	2024	Oyster River Coop (District)	0.70%
+Finance	Total Expenditures ($)	2022	State of New Hampshire	$6,610,783
+Finance	Total Expenditures ($)	2023	State of New Hampshire	$6,777,664
+Finance	Total Expenditures ($)	2024	State of New Hampshire	$7,083,912
+Finance	Total Expenditures ($)	2022	Oyster River Coop (District)	$64,598,549
+Finance	Total Expenditures ($)	2023	Oyster River Coop (District)	$54,257,240
+Finance	Total Expenditures ($)	2024	Oyster River Coop (District)	$51,907,061
+Finance	Total Revenues ($)	2022	State of New Hampshire	$18,467,890
+Finance	Total Revenues ($)	2023	State of New Hampshire	$18,969,359
+Finance	Total Revenues ($)	2024	State of New Hampshire	$19,981,645
+Finance	Total Revenues ($)	2022	Oyster River Coop (District)	$50,008,391
+Finance	Total Revenues ($)	2023	Oyster River Coop (District)	$51,484,944
+Finance	Total Revenues ($)	2024	Oyster River Coop (District)	$52,480,879
+Profile	Economically Disadvantaged Students (%)	2022	State of New Hampshire	24.24%
+Profile	Economically Disadvantaged Students (%)	2023	State of New Hampshire	27.05%
+Profile	Economically Disadvantaged Students (%)	2024	State of New Hampshire	27.70%
+Profile	Economically Disadvantaged Students (%)	2022	Oyster River Coop (District)	<10.00%
+Profile	Economically Disadvantaged Students (%)	2023	Oyster River Coop (District)	<10.00%
+Profile	Economically Disadvantaged Students (%)	2024	Oyster River Coop (District)	<10.00%
+Profile	English Language Learner (%)	2022	State of New Hampshire	2.29%
+Profile	English Language Learner (%)	2023	State of New Hampshire	2.48%
+Profile	English Language Learner (%)	2024	State of New Hampshire	2.47%
+Profile	English Language Learner (%)	2022	Oyster River Coop (District)	<10.00%
+Profile	English Language Learner (%)	2023	Oyster River Coop (District)	<10.00%
+Profile	English Language Learner (%)	2024	Oyster River Coop (District)	<10.00%
+Profile	Students with Disability (%)	2022	State of New Hampshire	18.60%
+Profile	Students with Disability (%)	2023	State of New Hampshire	18.94%
+Profile	Students with Disability (%)	2024	State of New Hampshire	19.82%
+Profile	Students with Disability (%)	2022	Oyster River Coop (District)	16.85%
+Profile	Students with Disability (%)	2023	Oyster River Coop (District)	18.08%
+Profile	Students with Disability (%)	2024	Oyster River Coop (District)	17.43%
+Profile	Total Enrollment	2022	State of New Hampshire	818
+Profile	Total Enrollment	2023	State of New Hampshire	796
+Profile	Total Enrollment	2024	State of New Hampshire	778
+Profile	Total Enrollment	2022	Oyster River Coop (District)	2,130
+Profile	Total Enrollment	2023	Oyster River Coop (District)	2,140
+Profile	Total Enrollment	2024	Oyster River Coop (District)	2,111
+School Environment	Average Class Size	2022	State of New Hampshire	16.80
+School Environment	Average Class Size	2023	State of New Hampshire	16.90
+School Environment	Average Class Size	2024	State of New Hampshire	16.90
+School Environment	Average Class Size	2022	Oyster River Coop (District)	18.70
+School Environment	Average Class Size	2023	Oyster River Coop (District)	19.10
+School Environment	Average Class Size	2024	Oyster River Coop (District)	18.90
+School Environment	Expulsion Rate (%)	2022	State of New Hampshire	4.99%
+School Environment	Expulsion Rate (%)	2023	State of New Hampshire	5.00%
+School Environment	Expulsion Rate (%)	2024	State of New Hampshire	4.97%
+School Environment	Expulsion Rate (%)	2022	Oyster River Coop (District)	<10.00%
+School Environment	Expulsion Rate (%)	2023	Oyster River Coop (District)	<10.00%
+School Environment	Expulsion Rate (%)	2024	Oyster River Coop (District)	<10.00%
+School Environment	In School Suspension Rate (%)	2022	State of New Hampshire	5.81%
+School Environment	In School Suspension Rate (%)	2023	State of New Hampshire	5.89%
+School Environment	In School Suspension Rate (%)	2024	State of New Hampshire	5.84%
+School Environment	In School Suspension Rate (%)	2022	Oyster River Coop (District)	<10.00%
+School Environment	In School Suspension Rate (%)	2023	Oyster River Coop (District)	<10.00%
+School Environment	In School Suspension Rate (%)	2024	Oyster River Coop (District)	<10.00%
+School Environment	Incidents of Violence	2022	State of New Hampshire	36.23
+School Environment	Incidents of Violence	2023	State of New Hampshire	43.10
+School Environment	Incidents of Violence	2024	State of New Hampshire	39.51
+School Environment	Incidents of Violence	2022	Oyster River Coop (District)	13.00
+School Environment	Incidents of Violence	2023	Oyster River Coop (District)	13.00
+School Environment	Incidents of Violence	2024	Oyster River Coop (District)	16.00
+School Environment	Out Of School Suspension Rate (%)	2022	State of New Hampshire	5.76%
+School Environment	Out Of School Suspension Rate (%)	2023	State of New Hampshire	5.76%
+School Environment	Out Of School Suspension Rate (%)	2024	State of New Hampshire	5.97%
+School Environment	Out Of School Suspension Rate (%)	2022	Oyster River Coop (District)	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2023	Oyster River Coop (District)	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2024	Oyster River Coop (District)	<10.00%
+School Environment	Students/Counselors Ratio	2022	State of New Hampshire	227.35
+School Environment	Students/Counselors Ratio	2023	State of New Hampshire	219.56
+School Environment	Students/Counselors Ratio	2024	State of New Hampshire	210.24
+School Environment	Students/Counselors Ratio	2022	Oyster River Coop (District)	210.10
+School Environment	Students/Counselors Ratio	2023	Oyster River Coop (District)	194.55
+School Environment	Students/Counselors Ratio	2024	Oyster River Coop (District)	191.91
+School Environment	Students/Non-Teacher Staff Ratio	2022	State of New Hampshire	23.45
+School Environment	Students/Non-Teacher Staff Ratio	2023	State of New Hampshire	24.80
+School Environment	Students/Non-Teacher Staff Ratio	2024	State of New Hampshire	22.78
+School Environment	Students/Non-Teacher Staff Ratio	2022	Oyster River Coop (District)	17.99
+School Environment	Students/Non-Teacher Staff Ratio	2023	Oyster River Coop (District)	16.71
+School Environment	Students/Non-Teacher Staff Ratio	2024	Oyster River Coop (District)	15.49
+School Environment	Teachers/Total Staff Ratio	2022	State of New Hampshire	0.68
+School Environment	Teachers/Total Staff Ratio	2023	State of New Hampshire	0.68
+School Environment	Teachers/Total Staff Ratio	2024	State of New Hampshire	0.67
+School Environment	Teachers/Total Staff Ratio	2022	Oyster River Coop (District)	0.66
+School Environment	Teachers/Total Staff Ratio	2023	Oyster River Coop (District)	0.63
+School Environment	Teachers/Total Staff Ratio	2024	Oyster River Coop (District)	0.60
+Academic Growth	Student Growth - ELA	2025	State of New Hampshire	50.00
+Academic Growth	Student Growth - ELA	2026	State of New Hampshire	50.00
+Academic Growth	Student Growth - ELA	2025	Oyster River Coop (District)	51.00
+Academic Growth	Student Growth - ELA	2026	Oyster River Coop (District)	53.00
+Academic Growth	Student Growth - Math	2025	State of New Hampshire	50.00
+Academic Growth	Student Growth - Math	2026	State of New Hampshire	50.00
+Academic Growth	Student Growth - Math	2025	Oyster River Coop (District)	55.00
+Academic Growth	Student Growth - Math	2026	Oyster River Coop (District)	60.00
+Achievement	Participation - ELA (%)	2025	State of New Hampshire	86.04%
+Achievement	Participation - ELA (%)	2026	State of New Hampshire	86.55%
+Achievement	Participation - ELA (%)	2025	Oyster River Coop (District)	>90.00%
+Achievement	Participation - ELA (%)	2026	Oyster River Coop (District)	>90.00%
+Achievement	Participation - Math (%)	2025	State of New Hampshire	86.18%
+Achievement	Participation - Math (%)	2026	State of New Hampshire	86.56%
+Achievement	Participation - Math (%)	2025	Oyster River Coop (District)	>90.00%
+Achievement	Participation - Math (%)	2026	Oyster River Coop (District)	>90.00%
+Achievement	Participation - Science (%)	2025	State of New Hampshire	74.44%
+Achievement	Participation - Science (%)	2026	State of New Hampshire	75.43%
+Achievement	Participation - Science (%)	2025	Oyster River Coop (District)	>90.00%
+Achievement	Participation - Science (%)	2026	Oyster River Coop (District)	89.00%
+Achievement	Proficiency - ELA (%)	2025	State of New Hampshire	55.00%
+Achievement	Proficiency - ELA (%)	2026	State of New Hampshire	55.00%
+Achievement	Proficiency - ELA (%)	2025	Oyster River Coop (District)	75.00%
+Achievement	Proficiency - ELA (%)	2026	Oyster River Coop (District)	76.00%
+Achievement	Proficiency - Math (%)	2025	State of New Hampshire	42.00%
+Achievement	Proficiency - Math (%)	2026	State of New Hampshire	44.00%
+Achievement	Proficiency - Math (%)	2025	Oyster River Coop (District)	65.00%
+Achievement	Proficiency - Math (%)	2026	Oyster River Coop (District)	69.00%
+Achievement	Proficiency - Math & ELA (%)	2025	State of New Hampshire	44.58%
+Achievement	Proficiency - Math & ELA (%)	2026	State of New Hampshire	45.11%
+Achievement	Proficiency - Math & ELA (%)	2025	Oyster River Coop (District)	70.00%
+Achievement	Proficiency - Math & ELA (%)	2026	Oyster River Coop (District)	72.50%
+College and Career Readiness	Dropout Rate (%)	2025	State of New Hampshire	0.67%
+College and Career Readiness	Dropout Rate (%)	2026	State of New Hampshire	0.50%
+College and Career Readiness	Dropout Rate (%)	2025	Oyster River Coop (District)	0.00%
+College and Career Readiness	Dropout Rate (%)	2026	Oyster River Coop (District)	0.00%
+College and Career Readiness	Graduation Rate - 4YR (%)	2025	State of New Hampshire	36.01%
+College and Career Readiness	Graduation Rate - 4YR (%)	2026	State of New Hampshire	35.89%
+College and Career Readiness	Graduation Rate - 4YR (%)	2025	Oyster River Coop (District)	98.19%
+College and Career Readiness	Graduation Rate - 4YR (%)	2026	Oyster River Coop (District)	99.48%
+College and Career Readiness	Graduation Rate - 5YR (%)	2025	State of New Hampshire	36.95%
+College and Career Readiness	Graduation Rate - 5YR (%)	2026	State of New Hampshire	35.86%
+College and Career Readiness	Graduation Rate - 5YR (%)	2025	Oyster River Coop (District)	97.06%
+College and Career Readiness	Graduation Rate - 5YR (%)	2026	Oyster River Coop (District)	99.10%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2025	State of New Hampshire	*CS
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2026	State of New Hampshire	*CS
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2025	Oyster River Coop (District)	74.77%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2026	Oyster River Coop (District)	*CS
+Educator	Average Teacher Salary ($)	2025	State of New Hampshire	$69,531
+Educator	Average Teacher Salary ($)	2026	State of New Hampshire	$71,857
+Educator	Average Teacher Salary ($)	2025	Oyster River Coop (District)	$80,573
+Educator	Average Teacher Salary ($)	2026	Oyster River Coop (District)	$84,074
+Educator	Educators certified in the subject (%)	2025	State of New Hampshire	86.55%
+Educator	Educators certified in the subject (%)	2026	State of New Hampshire	86.22%
+Educator	Educators certified in the subject (%)	2025	Oyster River Coop (District)	91.67%
+Educator	Educators certified in the subject (%)	2026	Oyster River Coop (District)	92.66%
+Educator	Experienced Educators (%)	2025	State of New Hampshire	83.68%
+Educator	Experienced Educators (%)	2026	State of New Hampshire	83.36%
+Educator	Experienced Educators (%)	2025	Oyster River Coop (District)	86.70%
+Educator	Experienced Educators (%)	2026	Oyster River Coop (District)	89.73%
+ESSA	Achievement Rating	2025	State of New Hampshire	 2.02
+ESSA	Achievement Rating	2026	State of New Hampshire	 1.98
+ESSA	College and Career Readiness Rating	2025	State of New Hampshire	 0.37
+ESSA	College and Career Readiness Rating	2026	State of New Hampshire	 0.40
+ESSA	English Language Proficiency Rating	2025	State of New Hampshire	 0.34
+ESSA	English Language Proficiency Rating	2026	State of New Hampshire	 0.34
+ESSA	Equity Rating	2025	State of New Hampshire	1.59
+ESSA	Equity Rating	2026	State of New Hampshire	1.62
+ESSA	Graduation Rate Rating	2025	State of New Hampshire	 0.52
+ESSA	Graduation Rate Rating	2026	State of New Hampshire	 0.54
+ESSA	Growth Rating	2025	State of New Hampshire	1.88
+ESSA	Growth Rating	2026	State of New Hampshire	1.86
+ESSA	School Improvement Funds ($)	2025	State of New Hampshire	$3,178
+ESSA	School Improvement Funds ($)	2026	State of New Hampshire	$0
+Finance	Adequacy Aid Revenue (%)	2025	State of New Hampshire	31.42%
+Finance	Adequacy Aid Revenue (%)	2026	State of New Hampshire	%
+Finance	Adequacy Aid Revenue (%)	2025	Oyster River Coop (District)	17.80%
+Finance	Adequacy Aid Revenue (%)	2026	Oyster River Coop (District)	*CS
+Finance	Administration Expenses (%)	2025	State of New Hampshire	12.79%
+Finance	Administration Expenses (%)	2026	State of New Hampshire	%
+Finance	Administration Expenses (%)	2025	Oyster River Coop (District)	13.20%
+Finance	Administration Expenses (%)	2026	Oyster River Coop (District)	*CS
+Finance	Average Cost Per Pupil ($)	2025	State of New Hampshire	$22,700
+Finance	Average Cost Per Pupil ($)	2025	Oyster River Coop (District)	$23,922
+Finance	Average Cost Per Pupil ($)	2026	Oyster River Coop (District)	*CS
+Finance	Equalized Tax Rates (%)	2025	State of New Hampshire	10.76%
+Finance	Equalized Tax Rates (%)	2026	State of New Hampshire	%
+Finance	Equalized Tax Rates (%)	2025	Oyster River Coop (District)	16.46%
+Finance	Equalized Tax Rates (%)	2026	Oyster River Coop (District)	*CS
+Finance	Equalized Valuation Per Pupil ($)	2025	State of New Hampshire	$3,149,811
+Finance	Equalized Valuation Per Pupil ($)	2026	State of New Hampshire	%null%
+Finance	Equalized Valuation Per Pupil ($)	2025	Oyster River Coop (District)	$2,086,624
+Finance	Equalized Valuation Per Pupil ($)	2026	Oyster River Coop (District)	*CS
+Finance	Federal Aid Revenue (%)	2025	State of New Hampshire	5.83%
+Finance	Federal Aid Revenue (%)	2026	State of New Hampshire	%
+Finance	Federal Aid Revenue (%)	2025	Oyster River Coop (District)	1.70%
+Finance	Federal Aid Revenue (%)	2026	Oyster River Coop (District)	*CS
+Finance	Instructional Staff Expenses (%)	2025	State of New Hampshire	2.74%
+Finance	Instructional Staff Expenses (%)	2026	State of New Hampshire	%
+Finance	Instructional Staff Expenses (%)	2025	Oyster River Coop (District)	2.30%
+Finance	Instructional Staff Expenses (%)	2026	Oyster River Coop (District)	*CS
+Finance	Operational/Plant Maintenance Expenses (%)	2025	State of New Hampshire	8.67%
+Finance	Operational/Plant Maintenance Expenses (%)	2026	State of New Hampshire	%
+Finance	Operational/Plant Maintenance Expenses (%)	2025	Oyster River Coop (District)	9.80%
+Finance	Operational/Plant Maintenance Expenses (%)	2026	Oyster River Coop (District)	*CS
+Finance	Other State Aid Revenue (%)	2025	State of New Hampshire	2.44%
+Finance	Other State Aid Revenue (%)	2026	State of New Hampshire	%
+Finance	Other State Aid Revenue (%)	2025	Oyster River Coop (District)	0.50%
+Finance	Other State Aid Revenue (%)	2026	Oyster River Coop (District)	*CS
+Finance	Total Expenditures ($)	2025	State of New Hampshire	$7,450,698
+Finance	Total Expenditures ($)	2026	State of New Hampshire	%null%
+Finance	Total Expenditures ($)	2025	Oyster River Coop (District)	$54,052,851
+Finance	Total Expenditures ($)	2026	Oyster River Coop (District)	*CS
+Finance	Total Revenues ($)	2025	State of New Hampshire	$20,549,018
+Finance	Total Revenues ($)	2026	State of New Hampshire	%null%
+Finance	Total Revenues ($)	2025	Oyster River Coop (District)	$54,971,855
+Finance	Total Revenues ($)	2026	Oyster River Coop (District)	*CS
+Profile	Economically Disadvantaged Students (%)	2025	State of New Hampshire	26.64%
+Profile	Economically Disadvantaged Students (%)	2026	State of New Hampshire	25.28%
+Profile	Economically Disadvantaged Students (%)	2025	Oyster River Coop (District)	<10.00%
+Profile	Economically Disadvantaged Students (%)	2026	Oyster River Coop (District)	<10.00%
+Profile	English Language Learner (%)	2025	State of New Hampshire	2.61%
+Profile	English Language Learner (%)	2026	State of New Hampshire	2.82%
+Profile	English Language Learner (%)	2025	Oyster River Coop (District)	<10.00%
+Profile	English Language Learner (%)	2026	Oyster River Coop (District)	<10.00%
+Profile	Students with Disability (%)	2025	State of New Hampshire	20.27%
+Profile	Students with Disability (%)	2026	State of New Hampshire	20.41%
+Profile	Students with Disability (%)	2025	Oyster River Coop (District)	17.36%
+Profile	Students with Disability (%)	2026	Oyster River Coop (District)	17.49%
+Profile	Total Enrollment	2025	State of New Hampshire	767
+Profile	Total Enrollment	2026	State of New Hampshire	738
+Profile	Total Enrollment	2025	Oyster River Coop (District)	2,097
+Profile	Total Enrollment	2026	Oyster River Coop (District)	2,064
+School Environment	Average Class Size	2025	State of New Hampshire	15.30
+School Environment	Average Class Size	2026	State of New Hampshire	14.40
+School Environment	Average Class Size	2025	Oyster River Coop (District)	18.50
+School Environment	Average Class Size	2026	Oyster River Coop (District)	18.40
+School Environment	Expulsion Rate (%)	2025	State of New Hampshire	4.97%
+School Environment	Expulsion Rate (%)	2026	State of New Hampshire	4.98%
+School Environment	Expulsion Rate (%)	2025	Oyster River Coop (District)	<10.00%
+School Environment	Expulsion Rate (%)	2026	Oyster River Coop (District)	<10.00%
+School Environment	In School Suspension Rate (%)	2025	State of New Hampshire	5.74%
+School Environment	In School Suspension Rate (%)	2026	State of New Hampshire	5.58%
+School Environment	In School Suspension Rate (%)	2025	Oyster River Coop (District)	<10.00%
+School Environment	In School Suspension Rate (%)	2026	Oyster River Coop (District)	<10.00%
+School Environment	Incidents of Violence	2025	State of New Hampshire	32.94
+School Environment	Incidents of Violence	2026	State of New Hampshire	76.04
+School Environment	Incidents of Violence	2025	Oyster River Coop (District)	24.00
+School Environment	Incidents of Violence	2026	Oyster River Coop (District)	9.00
+School Environment	Out Of School Suspension Rate (%)	2025	State of New Hampshire	6.13%
+School Environment	Out Of School Suspension Rate (%)	2026	State of New Hampshire	6.01%
+School Environment	Out Of School Suspension Rate (%)	2025	Oyster River Coop (District)	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2026	Oyster River Coop (District)	<10.00%
+School Environment	Students/Counselors Ratio	2025	State of New Hampshire	202.44
+School Environment	Students/Counselors Ratio	2026	State of New Hampshire	200.37
+School Environment	Students/Counselors Ratio	2025	Oyster River Coop (District)	174.75
+School Environment	Students/Counselors Ratio	2026	Oyster River Coop (District)	158.77
+School Environment	Students/Non-Teacher Staff Ratio	2025	State of New Hampshire	21.81
+School Environment	Students/Non-Teacher Staff Ratio	2026	State of New Hampshire	21.05
+School Environment	Students/Non-Teacher Staff Ratio	2025	Oyster River Coop (District)	14.36
+School Environment	Students/Non-Teacher Staff Ratio	2026	Oyster River Coop (District)	18.95
+School Environment	Teachers/Total Staff Ratio	2025	State of New Hampshire	0.67
+School Environment	Teachers/Total Staff Ratio	2026	State of New Hampshire	0.66
+School Environment	Teachers/Total Staff Ratio	2025	Oyster River Coop (District)	0.59
+School Environment	Teachers/Total Staff Ratio	2026	Oyster River Coop (District)	0.64
+Academic Growth	Student Growth - ELA	2016	Oyster River High School	NA
+Academic Growth	Student Growth - ELA	2017	Oyster River High School	NA
+Academic Growth	Student Growth - ELA	2018	Oyster River High School	NA
+Academic Growth	Student Growth - Math	2016	Oyster River High School	NA
+Academic Growth	Student Growth - Math	2017	Oyster River High School	NA
+Academic Growth	Student Growth - Math	2018	Oyster River High School	NA
+Achievement	Participation - ELA (%)	2016	Oyster River High School	NA
+Achievement	Participation - ELA (%)	2017	Oyster River High School	NA
+Achievement	Participation - ELA (%)	2018	Oyster River High School	>90.00%
+Achievement	Participation - Math (%)	2016	Oyster River High School	NA
+Achievement	Participation - Math (%)	2017	Oyster River High School	NA
+Achievement	Participation - Math (%)	2018	Oyster River High School	>90.00%
+Achievement	Participation - Science (%)	2016	Oyster River High School	NA
+Achievement	Participation - Science (%)	2017	Oyster River High School	NA
+Achievement	Participation - Science (%)	2018	Oyster River High School	88.00%
+Achievement	Proficiency - ELA (%)	2016	Oyster River High School	NA
+Achievement	Proficiency - ELA (%)	2017	Oyster River High School	NA
+Achievement	Proficiency - ELA (%)	2018	Oyster River High School	79.00%
+Achievement	Proficiency - Math (%)	2016	Oyster River High School	NA
+Achievement	Proficiency - Math (%)	2017	Oyster River High School	NA
+Achievement	Proficiency - Math (%)	2018	Oyster River High School	67.00%
+Achievement	Proficiency - Math & ELA (%)	2016	Oyster River High School	77.50%
+Achievement	Proficiency - Math & ELA (%)	2017	Oyster River High School	76.50%
+Achievement	Proficiency - Math & ELA (%)	2018	Oyster River High School	72.80%
+College and Career Readiness	Dropout Rate (%)	2016	Oyster River High School	0.28%
+College and Career Readiness	Dropout Rate (%)	2017	Oyster River High School	0.00%
+College and Career Readiness	Dropout Rate (%)	2018	Oyster River High School	0.13%
+College and Career Readiness	Graduation Rate - 4YR (%)	2016	Oyster River High School	95.07%
+College and Career Readiness	Graduation Rate - 4YR (%)	2017	Oyster River High School	96.61%
+College and Career Readiness	Graduation Rate - 4YR (%)	2018	Oyster River High School	94.74%
+College and Career Readiness	Graduation Rate - 5YR (%)	2016	Oyster River High School	97.84%
+College and Career Readiness	Graduation Rate - 5YR (%)	2017	Oyster River High School	97.89%
+College and Career Readiness	Graduation Rate - 5YR (%)	2018	Oyster River High School	97.18%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2016	Oyster River High School	72.34%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2017	Oyster River High School	73.60%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2018	Oyster River High School	70.33%
+Educator	Average Teacher Salary ($)	2016	Oyster River High School	$68,713
+Educator	Average Teacher Salary ($)	2017	Oyster River High School	$71,810
+Educator	Average Teacher Salary ($)	2018	Oyster River High School	$70,514
+Educator	Educators certified in the subject (%)	2016	Oyster River High School	79.10%
+Educator	Educators certified in the subject (%)	2017	Oyster River High School	93.33%
+Educator	Educators certified in the subject (%)	2018	Oyster River High School	86.89%
+Educator	Experienced Educators (%)	2016	Oyster River High School	95.71%
+Educator	Experienced Educators (%)	2017	Oyster River High School	94.29%
+Educator	Experienced Educators (%)	2018	Oyster River High School	92.86%
+ESSA	Achievement Rating	2016	Oyster River High School	N/A
+ESSA	Achievement Rating	2017	Oyster River High School	N/A
+ESSA	Achievement Rating	2018	Oyster River High School	 3.00
+ESSA	College and Career Readiness Rating	2016	Oyster River High School	N/A
+ESSA	College and Career Readiness Rating	2017	Oyster River High School	N/A
+ESSA	College and Career Readiness Rating	2018	Oyster River High School	 3.00
+ESSA	English Language Proficiency Rating	2018	Oyster River High School	*N
+ESSA	Equity Rating	2016	Oyster River High School	N/A
+ESSA	Equity Rating	2017	Oyster River High School	N/A
+ESSA	Equity Rating	2018	Oyster River High School	
+ESSA	Graduation Rate Rating	2018	Oyster River High School	 4.00
+ESSA	Growth Rating	2016	Oyster River High School	N/A
+ESSA	Growth Rating	2017	Oyster River High School	N/A
+ESSA	Growth Rating	2018	Oyster River High School	
+ESSA	School Improvement Funds ($)	2016	Oyster River High School	N/A
+ESSA	School Improvement Funds ($)	2017	Oyster River High School	N/A
+ESSA	School Improvement Funds ($)	2018	Oyster River High School	N/A
+Finance	Average Cost Per Pupil ($)	2016	Oyster River High School	NA
+Finance	Average Cost Per Pupil ($)	2017	Oyster River High School	NA
+Finance	Average Cost Per Pupil ($)	2018	Oyster River High School	NA
+Finance	Total Expenditures ($)	2016	Oyster River High School	%null%
+Finance	Total Expenditures ($)	2017	Oyster River High School	%null%
+Finance	Total Expenditures ($)	2018	Oyster River High School	%null%
+Profile	Economically Disadvantaged Students (%)	2016	Oyster River High School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2017	Oyster River High School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2018	Oyster River High School	<10.00%
+Profile	English Language Learner (%)	2016	Oyster River High School	<10.00%
+Profile	English Language Learner (%)	2017	Oyster River High School	<10.00%
+Profile	English Language Learner (%)	2018	Oyster River High School	*N
+Profile	Students with Disability (%)	2016	Oyster River High School	17.23%
+Profile	Students with Disability (%)	2017	Oyster River High School	16.75%
+Profile	Students with Disability (%)	2018	Oyster River High School	15.26%
+Profile	Total Enrollment	2016	Oyster River High School	714
+Profile	Total Enrollment	2017	Oyster River High School	764
+Profile	Total Enrollment	2018	Oyster River High School	793
+School Environment	Average Class Size	2016	Oyster River High School	
+School Environment	Average Class Size	2017	Oyster River High School	
+School Environment	Average Class Size	2018	Oyster River High School	
+School Environment	Expulsion Rate (%)	2016	Oyster River High School	<10.00%
+School Environment	Expulsion Rate (%)	2017	Oyster River High School	<10.00%
+School Environment	Expulsion Rate (%)	2018	Oyster River High School	<10.00%
+School Environment	In School Suspension Rate (%)	2016	Oyster River High School	<10.00%
+School Environment	In School Suspension Rate (%)	2017	Oyster River High School	<10.00%
+School Environment	In School Suspension Rate (%)	2018	Oyster River High School	<10.00%
+School Environment	Incidents of Violence	2016	Oyster River High School	9.00
+School Environment	Incidents of Violence	2017	Oyster River High School	15.00
+School Environment	Incidents of Violence	2018	Oyster River High School	43.00
+School Environment	Out Of School Suspension Rate (%)	2016	Oyster River High School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2017	Oyster River High School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2018	Oyster River High School	<10.00%
+Academic Growth	Student Growth - ELA	2019	Oyster River High School	NA
+Academic Growth	Student Growth - ELA	2020	Oyster River High School	*COVID
+Academic Growth	Student Growth - ELA	2021	Oyster River High School	*COVID
+Academic Growth	Student Growth - Math	2019	Oyster River High School	NA
+Academic Growth	Student Growth - Math	2020	Oyster River High School	*COVID
+Academic Growth	Student Growth - Math	2021	Oyster River High School	*COVID
+Achievement	Participation - ELA (%)	2019	Oyster River High School	>90.00%
+Achievement	Participation - ELA (%)	2020	Oyster River High School	NA
+Achievement	Participation - ELA (%)	2021	Oyster River High School	83.00%
+Achievement	Participation - Math (%)	2019	Oyster River High School	>90.00%
+Achievement	Participation - Math (%)	2020	Oyster River High School	NA
+Achievement	Participation - Math (%)	2021	Oyster River High School	83.00%
+Achievement	Participation - Science (%)	2019	Oyster River High School	79.00%
+Achievement	Participation - Science (%)	2020	Oyster River High School	NA
+Achievement	Participation - Science (%)	2021	Oyster River High School	45.00%
+Achievement	Proficiency - ELA (%)	2019	Oyster River High School	85.00%
+Achievement	Proficiency - ELA (%)	2020	Oyster River High School	*COVID
+Achievement	Proficiency - ELA (%)	2021	Oyster River High School	88.00%
+Achievement	Proficiency - Math (%)	2019	Oyster River High School	75.00%
+Achievement	Proficiency - Math (%)	2020	Oyster River High School	*COVID
+Achievement	Proficiency - Math (%)	2021	Oyster River High School	66.00%
+Achievement	Proficiency - Math & ELA (%)	2019	Oyster River High School	80.10%
+Achievement	Proficiency - Math & ELA (%)	2020	Oyster River High School	*COVID
+Achievement	Proficiency - Math & ELA (%)	2021	Oyster River High School	77.00%
+College and Career Readiness	Dropout Rate (%)	2019	Oyster River High School	0.12%
+College and Career Readiness	Dropout Rate (%)	2020	Oyster River High School	0.00%
+College and Career Readiness	Dropout Rate (%)	2021	Oyster River High School	0.12%
+College and Career Readiness	Graduation Rate - 4YR (%)	2019	Oyster River High School	97.79%
+College and Career Readiness	Graduation Rate - 4YR (%)	2020	Oyster River High School	97.54%
+College and Career Readiness	Graduation Rate - 4YR (%)	2021	Oyster River High School	96.12%
+College and Career Readiness	Graduation Rate - 5YR (%)	2019	Oyster River High School	96.30%
+College and Career Readiness	Graduation Rate - 5YR (%)	2020	Oyster River High School	98.34%
+College and Career Readiness	Graduation Rate - 5YR (%)	2021	Oyster River High School	97.54%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2019	Oyster River High School	68.68%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2020	Oyster River High School	71.21%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2021	Oyster River High School	74.37%
+Educator	Average Teacher Salary ($)	2019	Oyster River High School	$73,778
+Educator	Average Teacher Salary ($)	2020	Oyster River High School	$75,202
+Educator	Average Teacher Salary ($)	2021	Oyster River High School	$76,645
+Educator	Educators certified in the subject (%)	2019	Oyster River High School	88.52%
+Educator	Educators certified in the subject (%)	2020	Oyster River High School	89.23%
+Educator	Educators certified in the subject (%)	2021	Oyster River High School	89.06%
+Educator	Experienced Educators (%)	2019	Oyster River High School	91.67%
+Educator	Experienced Educators (%)	2020	Oyster River High School	90.28%
+Educator	Experienced Educators (%)	2021	Oyster River High School	92.96%
+ESSA	Achievement Rating	2019	Oyster River High School	 3.00
+ESSA	Achievement Rating	2020	Oyster River High School	*COVID
+ESSA	Achievement Rating	2021	Oyster River High School	 3.00
+ESSA	College and Career Readiness Rating	2019	Oyster River High School	 3.00
+ESSA	College and Career Readiness Rating	2020	Oyster River High School	*COVID
+ESSA	College and Career Readiness Rating	2021	Oyster River High School	 3.00
+ESSA	English Language Proficiency Rating	2019	Oyster River High School	*N
+ESSA	English Language Proficiency Rating	2020	Oyster River High School	*COVID
+ESSA	English Language Proficiency Rating	2021	Oyster River High School	*N
+ESSA	Equity Rating	2019	Oyster River High School	
+ESSA	Equity Rating	2020	Oyster River High School	*COVID
+ESSA	Equity Rating	2021	Oyster River High School	*COVID
+ESSA	Graduation Rate Rating	2019	Oyster River High School	 4.00
+ESSA	Graduation Rate Rating	2020	Oyster River High School	*COVID
+ESSA	Graduation Rate Rating	2021	Oyster River High School	 4.00
+ESSA	Growth Rating	2019	Oyster River High School	
+ESSA	Growth Rating	2020	Oyster River High School	*COVID
+ESSA	Growth Rating	2021	Oyster River High School	*COVID
+ESSA	School Improvement Funds ($)	2019	Oyster River High School	N/A
+ESSA	School Improvement Funds ($)	2020	Oyster River High School	N/A
+ESSA	School Improvement Funds ($)	2021	Oyster River High School	N/A
+Finance	Average Cost Per Pupil ($)	2019	Oyster River High School	$19,567
+Finance	Average Cost Per Pupil ($)	2020	Oyster River High School	$19,148
+Finance	Average Cost Per Pupil ($)	2021	Oyster River High School	$20,438
+Finance	Total Expenditures ($)	2019	Oyster River High School	$15,500,998
+Finance	Total Expenditures ($)	2020	Oyster River High School	$15,897,316
+Finance	Total Expenditures ($)	2021	Oyster River High School	$16,972,348
+Profile	Economically Disadvantaged Students (%)	2019	Oyster River High School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2020	Oyster River High School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2021	Oyster River High School	<10.00%
+Profile	English Language Learner (%)	2019	Oyster River High School	*N
+Profile	English Language Learner (%)	2020	Oyster River High School	*N
+Profile	English Language Learner (%)	2021	Oyster River High School	*N
+Profile	Students with Disability (%)	2019	Oyster River High School	13.35%
+Profile	Students with Disability (%)	2020	Oyster River High School	13.22%
+Profile	Students with Disability (%)	2021	Oyster River High School	12.93%
+Profile	Total Enrollment	2019	Oyster River High School	809
+Profile	Total Enrollment	2020	Oyster River High School	832
+Profile	Total Enrollment	2021	Oyster River High School	835
+School Environment	Average Class Size	2019	Oyster River High School	
+School Environment	Average Class Size	2020	Oyster River High School	
+School Environment	Average Class Size	2021	Oyster River High School	
+School Environment	Expulsion Rate (%)	2019	Oyster River High School	<10.00%
+School Environment	Expulsion Rate (%)	2020	Oyster River High School	<10.00%
+School Environment	Expulsion Rate (%)	2021	Oyster River High School	<10.00%
+School Environment	In School Suspension Rate (%)	2019	Oyster River High School	<10.00%
+School Environment	In School Suspension Rate (%)	2020	Oyster River High School	<10.00%
+School Environment	In School Suspension Rate (%)	2021	Oyster River High School	<10.00%
+School Environment	Incidents of Violence	2019	Oyster River High School	13.00
+School Environment	Incidents of Violence	2020	Oyster River High School	4.00
+School Environment	Incidents of Violence	2021	Oyster River High School	1.00
+School Environment	Out Of School Suspension Rate (%)	2019	Oyster River High School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2020	Oyster River High School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2021	Oyster River High School	<10.00%
+School Environment	Students/Counselors Ratio	2021	Oyster River High School	167.00
+School Environment	Students/Non-Teacher Staff Ratio	2021	Oyster River High School	20.72
+School Environment	Teachers/Total Staff Ratio	2021	Oyster River High School	0.64
+Academic Growth	Student Growth - ELA	2022	Oyster River High School	NA
+Academic Growth	Student Growth - ELA	2023	Oyster River High School	NA
+Academic Growth	Student Growth - ELA	2024	Oyster River High School	NA
+Academic Growth	Student Growth - Math	2022	Oyster River High School	NA
+Academic Growth	Student Growth - Math	2023	Oyster River High School	NA
+Academic Growth	Student Growth - Math	2024	Oyster River High School	NA
+Achievement	Participation - ELA (%)	2022	Oyster River High School	89.00%
+Achievement	Participation - ELA (%)	2023	Oyster River High School	>90.00%
+Achievement	Participation - ELA (%)	2024	Oyster River High School	>90.00%
+Achievement	Participation - Math (%)	2022	Oyster River High School	89.00%
+Achievement	Participation - Math (%)	2023	Oyster River High School	>90.00%
+Achievement	Participation - Math (%)	2024	Oyster River High School	>90.00%
+Achievement	Participation - Science (%)	2022	Oyster River High School	>90.00%
+Achievement	Participation - Science (%)	2023	Oyster River High School	>90.00%
+Achievement	Participation - Science (%)	2024	Oyster River High School	>90.00%
+Achievement	Proficiency - ELA (%)	2022	Oyster River High School	79.00%
+Achievement	Proficiency - ELA (%)	2023	Oyster River High School	79.00%
+Achievement	Proficiency - ELA (%)	2024	Oyster River High School	80.00%
+Achievement	Proficiency - Math (%)	2022	Oyster River High School	63.00%
+Achievement	Proficiency - Math (%)	2023	Oyster River High School	61.00%
+Achievement	Proficiency - Math (%)	2024	Oyster River High School	53.00%
+Achievement	Proficiency - Math & ELA (%)	2022	Oyster River High School	71.00%
+Achievement	Proficiency - Math & ELA (%)	2023	Oyster River High School	70.00%
+Achievement	Proficiency - Math & ELA (%)	2024	Oyster River High School	66.50%
+College and Career Readiness	Dropout Rate (%)	2022	Oyster River High School	0.12%
+College and Career Readiness	Dropout Rate (%)	2023	Oyster River High School	0.48%
+College and Career Readiness	Dropout Rate (%)	2024	Oyster River High School	0.00%
+College and Career Readiness	Graduation Rate - 4YR (%)	2022	Oyster River High School	97.24%
+College and Career Readiness	Graduation Rate - 4YR (%)	2023	Oyster River High School	93.85%
+College and Career Readiness	Graduation Rate - 4YR (%)	2024	Oyster River High School	97.06%
+College and Career Readiness	Graduation Rate - 5YR (%)	2022	Oyster River High School	96.12%
+College and Career Readiness	Graduation Rate - 5YR (%)	2023	Oyster River High School	97.69%
+College and Career Readiness	Graduation Rate - 5YR (%)	2024	Oyster River High School	94.90%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2022	Oyster River High School	69.67%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2023	Oyster River High School	73.26%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2024	Oyster River High School	68.29%
+Educator	Average Teacher Salary ($)	2022	Oyster River High School	$76,257
+Educator	Average Teacher Salary ($)	2023	Oyster River High School	$63,538
+Educator	Average Teacher Salary ($)	2024	Oyster River High School	$80,573
+Educator	Educators certified in the subject (%)	2022	Oyster River High School	73.68%
+Educator	Educators certified in the subject (%)	2023	Oyster River High School	78.69%
+Educator	Educators certified in the subject (%)	2024	Oyster River High School	79.71%
+Educator	Experienced Educators (%)	2022	Oyster River High School	82.67%
+Educator	Experienced Educators (%)	2023	Oyster River High School	86.84%
+Educator	Experienced Educators (%)	2024	Oyster River High School	83.33%
+ESSA	Achievement Rating	2022	Oyster River High School	 3.00
+ESSA	Achievement Rating	2023	Oyster River High School	 3.00
+ESSA	Achievement Rating	2024	Oyster River High School	 3.00
+ESSA	College and Career Readiness Rating	2022	Oyster River High School	 3.00
+ESSA	College and Career Readiness Rating	2023	Oyster River High School	 2.00
+ESSA	College and Career Readiness Rating	2024	Oyster River High School	 3.00
+ESSA	English Language Proficiency Rating	2022	Oyster River High School	
+ESSA	English Language Proficiency Rating	2023	Oyster River High School	*N
+ESSA	English Language Proficiency Rating	2024	Oyster River High School	*N
+ESSA	Equity Rating	2022	Oyster River High School	
+ESSA	Equity Rating	2023	Oyster River High School	
+ESSA	Equity Rating	2024	Oyster River High School	
+ESSA	Graduation Rate Rating	2022	Oyster River High School	 4.00
+ESSA	Graduation Rate Rating	2023	Oyster River High School	 4.00
+ESSA	Graduation Rate Rating	2024	Oyster River High School	 4.00
+ESSA	Growth Rating	2022	Oyster River High School	
+ESSA	Growth Rating	2023	Oyster River High School	
+ESSA	Growth Rating	2024	Oyster River High School	
+ESSA	School Improvement Funds ($)	2022	Oyster River High School	N/A
+ESSA	School Improvement Funds ($)	2023	Oyster River High School	N/A
+ESSA	School Improvement Funds ($)	2024	Oyster River High School	N/A
+Finance	Average Cost Per Pupil ($)	2022	Oyster River High School	$20,795
+Finance	Average Cost Per Pupil ($)	2023	Oyster River High School	$22,613
+Finance	Average Cost Per Pupil ($)	2024	Oyster River High School	$22,027
+Finance	Total Expenditures ($)	2022	Oyster River High School	$17,587,450
+Finance	Total Expenditures ($)	2023	Oyster River High School	$18,874,072
+Finance	Total Expenditures ($)	2024	Oyster River High School	$18,371,356
+Profile	Economically Disadvantaged Students (%)	2022	Oyster River High School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2023	Oyster River High School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2024	Oyster River High School	<10.00%
+Profile	English Language Learner (%)	2022	Oyster River High School	*N
+Profile	English Language Learner (%)	2023	Oyster River High School	*N
+Profile	English Language Learner (%)	2024	Oyster River High School	*N
+Profile	Students with Disability (%)	2022	Oyster River High School	15.50%
+Profile	Students with Disability (%)	2023	Oyster River High School	16.49%
+Profile	Students with Disability (%)	2024	Oyster River High School	16.95%
+Profile	Total Enrollment	2022	Oyster River High School	858
+Profile	Total Enrollment	2023	Oyster River High School	843
+Profile	Total Enrollment	2024	Oyster River High School	838
+School Environment	Average Class Size	2022	Oyster River High School	
+School Environment	Average Class Size	2023	Oyster River High School	
+School Environment	Average Class Size	2024	Oyster River High School	
+School Environment	Expulsion Rate (%)	2022	Oyster River High School	<10.00%
+School Environment	Expulsion Rate (%)	2023	Oyster River High School	<10.00%
+School Environment	Expulsion Rate (%)	2024	Oyster River High School	<10.00%
+School Environment	In School Suspension Rate (%)	2022	Oyster River High School	<10.00%
+School Environment	In School Suspension Rate (%)	2023	Oyster River High School	<10.00%
+School Environment	In School Suspension Rate (%)	2024	Oyster River High School	<10.00%
+School Environment	Incidents of Violence	2022	Oyster River High School	12.00
+School Environment	Incidents of Violence	2023	Oyster River High School	5.00
+School Environment	Incidents of Violence	2024	Oyster River High School	8.00
+School Environment	Out Of School Suspension Rate (%)	2022	Oyster River High School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2023	Oyster River High School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2024	Oyster River High School	<10.00%
+School Environment	Students/Counselors Ratio	2022	Oyster River High School	171.60
+School Environment	Students/Counselors Ratio	2023	Oyster River High School	168.60
+School Environment	Students/Counselors Ratio	2024	Oyster River High School	167.60
+School Environment	Students/Non-Teacher Staff Ratio	2022	Oyster River High School	20.67
+School Environment	Students/Non-Teacher Staff Ratio	2023	Oyster River High School	17.71
+School Environment	Students/Non-Teacher Staff Ratio	2024	Oyster River High School	20.74
+School Environment	Teachers/Total Staff Ratio	2022	Oyster River High School	0.65
+School Environment	Teachers/Total Staff Ratio	2023	Oyster River High School	0.61
+School Environment	Teachers/Total Staff Ratio	2024	Oyster River High School	0.64
+Academic Growth	Student Growth - ELA	2025	Oyster River High School	NA
+Academic Growth	Student Growth - ELA	2026	Oyster River High School	NA
+Academic Growth	Student Growth - Math	2025	Oyster River High School	NA
+Academic Growth	Student Growth - Math	2026	Oyster River High School	NA
+Achievement	Participation - ELA (%)	2025	Oyster River High School	>90.00%
+Achievement	Participation - ELA (%)	2026	Oyster River High School	>90.00%
+Achievement	Participation - Math (%)	2025	Oyster River High School	>90.00%
+Achievement	Participation - Math (%)	2026	Oyster River High School	>90.00%
+Achievement	Participation - Science (%)	2025	Oyster River High School	83.00%
+Achievement	Participation - Science (%)	2026	Oyster River High School	79.00%
+Achievement	Proficiency - ELA (%)	2025	Oyster River High School	86.00%
+Achievement	Proficiency - ELA (%)	2026	Oyster River High School	82.00%
+Achievement	Proficiency - Math (%)	2025	Oyster River High School	55.00%
+Achievement	Proficiency - Math (%)	2026	Oyster River High School	51.00%
+Achievement	Proficiency - Math & ELA (%)	2025	Oyster River High School	70.50%
+Achievement	Proficiency - Math & ELA (%)	2026	Oyster River High School	66.50%
+College and Career Readiness	Dropout Rate (%)	2025	Oyster River High School	0.00%
+College and Career Readiness	Dropout Rate (%)	2026	Oyster River High School	0.00%
+College and Career Readiness	Graduation Rate - 4YR (%)	2025	Oyster River High School	99.09%
+College and Career Readiness	Graduation Rate - 4YR (%)	2026	Oyster River High School	99.47%
+College and Career Readiness	Graduation Rate - 5YR (%)	2025	Oyster River High School	97.06%
+College and Career Readiness	Graduation Rate - 5YR (%)	2026	Oyster River High School	99.09%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2025	Oyster River High School	74.77%
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2026	Oyster River High School	*CS
+Educator	Average Teacher Salary ($)	2025	Oyster River High School	$80,573
+Educator	Average Teacher Salary ($)	2026	Oyster River High School	$84,074
+Educator	Educators certified in the subject (%)	2025	Oyster River High School	83.33%
+Educator	Educators certified in the subject (%)	2026	Oyster River High School	85.51%
+Educator	Experienced Educators (%)	2025	Oyster River High School	84.42%
+Educator	Experienced Educators (%)	2026	Oyster River High School	90.28%
+ESSA	Achievement Rating	2025	Oyster River High School	 3.00
+ESSA	Achievement Rating	2026	Oyster River High School	 3.00
+ESSA	College and Career Readiness Rating	2025	Oyster River High School	 4.00
+ESSA	College and Career Readiness Rating	2026	Oyster River High School	 4.00
+ESSA	English Language Proficiency Rating	2025	Oyster River High School	*N
+ESSA	English Language Proficiency Rating	2026	Oyster River High School	
+ESSA	Equity Rating	2025	Oyster River High School	
+ESSA	Equity Rating	2026	Oyster River High School	
+ESSA	Graduation Rate Rating	2025	Oyster River High School	 4.00
+ESSA	Graduation Rate Rating	2026	Oyster River High School	 4.00
+ESSA	Growth Rating	2025	Oyster River High School	
+ESSA	Growth Rating	2026	Oyster River High School	
+ESSA	School Improvement Funds ($)	2025	Oyster River High School	N/A
+ESSA	School Improvement Funds ($)	2026	Oyster River High School	*CS
+Finance	Average Cost Per Pupil ($)	2025	Oyster River High School	$23,874
+Finance	Average Cost Per Pupil ($)	2026	Oyster River High School	*CS
+Finance	Total Expenditures ($)	2025	Oyster River High School	$19,505,214
+Finance	Total Expenditures ($)	2026	Oyster River High School	*CS
+Profile	Economically Disadvantaged Students (%)	2025	Oyster River High School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2026	Oyster River High School	<10.00%
+Profile	English Language Learner (%)	2025	Oyster River High School	*N
+Profile	English Language Learner (%)	2026	Oyster River High School	*N
+Profile	Students with Disability (%)	2025	Oyster River High School	17.94%
+Profile	Students with Disability (%)	2026	Oyster River High School	19.10%
+Profile	Total Enrollment	2025	Oyster River High School	825
+Profile	Total Enrollment	2026	Oyster River High School	796
+School Environment	Average Class Size	2025	Oyster River High School	
+School Environment	Average Class Size	2026	Oyster River High School	
+School Environment	Expulsion Rate (%)	2025	Oyster River High School	<10.00%
+School Environment	Expulsion Rate (%)	2026	Oyster River High School	<10.00%
+School Environment	In School Suspension Rate (%)	2025	Oyster River High School	<10.00%
+School Environment	In School Suspension Rate (%)	2026	Oyster River High School	<10.00%
+School Environment	Incidents of Violence	2025	Oyster River High School	13.00
+School Environment	Incidents of Violence	2026	Oyster River High School	3.00
+School Environment	Out Of School Suspension Rate (%)	2025	Oyster River High School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2026	Oyster River High School	<10.00%
+School Environment	Students/Counselors Ratio	2025	Oyster River High School	165.00
+School Environment	Students/Counselors Ratio	2026	Oyster River High School	113.71
+School Environment	Students/Non-Teacher Staff Ratio	2025	Oyster River High School	17.55
+School Environment	Students/Non-Teacher Staff Ratio	2026	Oyster River High School	20.95
+School Environment	Teachers/Total Staff Ratio	2025	Oyster River High School	0.61
+School Environment	Teachers/Total Staff Ratio	2026	Oyster River High School	0.64
+Academic Growth	Student Growth - ELA	2016	Oyster River Middle School	NA
+Academic Growth	Student Growth - ELA	2017	Oyster River Middle School	NA
+Academic Growth	Student Growth - ELA	2018	Oyster River Middle School	49.00
+Academic Growth	Student Growth - Math	2016	Oyster River Middle School	NA
+Academic Growth	Student Growth - Math	2017	Oyster River Middle School	NA
+Academic Growth	Student Growth - Math	2018	Oyster River Middle School	55.00
+Achievement	Participation - ELA (%)	2016	Oyster River Middle School	NA
+Achievement	Participation - ELA (%)	2017	Oyster River Middle School	NA
+Achievement	Participation - ELA (%)	2018	Oyster River Middle School	>90.00%
+Achievement	Participation - Math (%)	2016	Oyster River Middle School	NA
+Achievement	Participation - Math (%)	2017	Oyster River Middle School	NA
+Achievement	Participation - Math (%)	2018	Oyster River Middle School	>90.00%
+Achievement	Participation - Science (%)	2016	Oyster River Middle School	NA
+Achievement	Participation - Science (%)	2017	Oyster River Middle School	NA
+Achievement	Participation - Science (%)	2018	Oyster River Middle School	>90.00%
+Achievement	Proficiency - ELA (%)	2016	Oyster River Middle School	NA
+Achievement	Proficiency - ELA (%)	2017	Oyster River Middle School	NA
+Achievement	Proficiency - ELA (%)	2018	Oyster River Middle School	76.00%
+Achievement	Proficiency - Math (%)	2016	Oyster River Middle School	NA
+Achievement	Proficiency - Math (%)	2017	Oyster River Middle School	NA
+Achievement	Proficiency - Math (%)	2018	Oyster River Middle School	72.00%
+Achievement	Proficiency - Math & ELA (%)	2016	Oyster River Middle School	77.00%
+Achievement	Proficiency - Math & ELA (%)	2017	Oyster River Middle School	72.00%
+Achievement	Proficiency - Math & ELA (%)	2018	Oyster River Middle School	74.40%
+College and Career Readiness	Dropout Rate (%)	2016	Oyster River Middle School	NA
+College and Career Readiness	Dropout Rate (%)	2017	Oyster River Middle School	NA
+College and Career Readiness	Dropout Rate (%)	2018	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2016	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2017	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2018	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2016	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2017	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2018	Oyster River Middle School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2016	Oyster River Middle School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2017	Oyster River Middle School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2018	Oyster River Middle School	NA
+Educator	Average Teacher Salary ($)	2016	Oyster River Middle School	$68,713
+Educator	Average Teacher Salary ($)	2017	Oyster River Middle School	$71,810
+Educator	Average Teacher Salary ($)	2018	Oyster River Middle School	$70,514
+Educator	Educators certified in the subject (%)	2016	Oyster River Middle School	100.00%
+Educator	Educators certified in the subject (%)	2017	Oyster River Middle School	100.00%
+Educator	Educators certified in the subject (%)	2018	Oyster River Middle School	98.08%
+Educator	Experienced Educators (%)	2016	Oyster River Middle School	95.45%
+Educator	Experienced Educators (%)	2017	Oyster River Middle School	93.85%
+Educator	Experienced Educators (%)	2018	Oyster River Middle School	90.63%
+ESSA	Achievement Rating	2016	Oyster River Middle School	N/A
+ESSA	Achievement Rating	2017	Oyster River Middle School	N/A
+ESSA	Achievement Rating	2018	Oyster River Middle School	 4.00
+ESSA	College and Career Readiness Rating	2016	Oyster River Middle School	N/A
+ESSA	College and Career Readiness Rating	2017	Oyster River Middle School	N/A
+ESSA	College and Career Readiness Rating	2018	Oyster River Middle School	
+ESSA	English Language Proficiency Rating	2018	Oyster River Middle School	*N
+ESSA	Equity Rating	2016	Oyster River Middle School	N/A
+ESSA	Equity Rating	2017	Oyster River Middle School	N/A
+ESSA	Equity Rating	2018	Oyster River Middle School	2.00
+ESSA	Graduation Rate Rating	2018	Oyster River Middle School	
+ESSA	Growth Rating	2016	Oyster River Middle School	N/A
+ESSA	Growth Rating	2017	Oyster River Middle School	N/A
+ESSA	Growth Rating	2018	Oyster River Middle School	3.00
+ESSA	School Improvement Funds ($)	2016	Oyster River Middle School	N/A
+ESSA	School Improvement Funds ($)	2017	Oyster River Middle School	N/A
+ESSA	School Improvement Funds ($)	2018	Oyster River Middle School	N/A
+Finance	Average Cost Per Pupil ($)	2016	Oyster River Middle School	NA
+Finance	Average Cost Per Pupil ($)	2017	Oyster River Middle School	NA
+Finance	Average Cost Per Pupil ($)	2018	Oyster River Middle School	NA
+Finance	Total Expenditures ($)	2016	Oyster River Middle School	%null%
+Finance	Total Expenditures ($)	2017	Oyster River Middle School	%null%
+Finance	Total Expenditures ($)	2018	Oyster River Middle School	%null%
+Profile	Economically Disadvantaged Students (%)	2016	Oyster River Middle School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2017	Oyster River Middle School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2018	Oyster River Middle School	<10.00%
+Profile	English Language Learner (%)	2016	Oyster River Middle School	<10.00%
+Profile	English Language Learner (%)	2017	Oyster River Middle School	<10.00%
+Profile	English Language Learner (%)	2018	Oyster River Middle School	<10.00%
+Profile	Students with Disability (%)	2016	Oyster River Middle School	18.72%
+Profile	Students with Disability (%)	2017	Oyster River Middle School	16.46%
+Profile	Students with Disability (%)	2018	Oyster River Middle School	16.69%
+Profile	Total Enrollment	2016	Oyster River Middle School	673
+Profile	Total Enrollment	2017	Oyster River Middle School	656
+Profile	Total Enrollment	2018	Oyster River Middle School	659
+School Environment	Average Class Size	2016	Oyster River Middle School	
+School Environment	Average Class Size	2017	Oyster River Middle School	
+School Environment	Average Class Size	2018	Oyster River Middle School	
+School Environment	Expulsion Rate (%)	2016	Oyster River Middle School	<10.00%
+School Environment	Expulsion Rate (%)	2017	Oyster River Middle School	<10.00%
+School Environment	Expulsion Rate (%)	2018	Oyster River Middle School	<10.00%
+School Environment	In School Suspension Rate (%)	2016	Oyster River Middle School	<10.00%
+School Environment	In School Suspension Rate (%)	2017	Oyster River Middle School	<10.00%
+School Environment	In School Suspension Rate (%)	2018	Oyster River Middle School	<10.00%
+School Environment	Incidents of Violence	2016	Oyster River Middle School	1.00
+School Environment	Incidents of Violence	2017	Oyster River Middle School	0.00
+School Environment	Incidents of Violence	2018	Oyster River Middle School	5.00
+School Environment	Out Of School Suspension Rate (%)	2016	Oyster River Middle School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2017	Oyster River Middle School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2018	Oyster River Middle School	<10.00%
+Academic Growth	Student Growth - ELA	2019	Oyster River Middle School	48.00
+Academic Growth	Student Growth - ELA	2020	Oyster River Middle School	*COVID
+Academic Growth	Student Growth - ELA	2021	Oyster River Middle School	*COVID
+Academic Growth	Student Growth - Math	2019	Oyster River Middle School	56.00
+Academic Growth	Student Growth - Math	2020	Oyster River Middle School	*COVID
+Academic Growth	Student Growth - Math	2021	Oyster River Middle School	*COVID
+Achievement	Participation - ELA (%)	2019	Oyster River Middle School	>90.00%
+Achievement	Participation - ELA (%)	2020	Oyster River Middle School	NA
+Achievement	Participation - ELA (%)	2021	Oyster River Middle School	90.00%
+Achievement	Participation - Math (%)	2019	Oyster River Middle School	>90.00%
+Achievement	Participation - Math (%)	2020	Oyster River Middle School	NA
+Achievement	Participation - Math (%)	2021	Oyster River Middle School	90.00%
+Achievement	Participation - Science (%)	2019	Oyster River Middle School	>90.00%
+Achievement	Participation - Science (%)	2020	Oyster River Middle School	NA
+Achievement	Participation - Science (%)	2021	Oyster River Middle School	90.00%
+Achievement	Proficiency - ELA (%)	2019	Oyster River Middle School	72.00%
+Achievement	Proficiency - ELA (%)	2020	Oyster River Middle School	*COVID
+Achievement	Proficiency - ELA (%)	2021	Oyster River Middle School	67.00%
+Achievement	Proficiency - Math (%)	2019	Oyster River Middle School	72.00%
+Achievement	Proficiency - Math (%)	2020	Oyster River Middle School	*COVID
+Achievement	Proficiency - Math (%)	2021	Oyster River Middle School	51.00%
+Achievement	Proficiency - Math & ELA (%)	2019	Oyster River Middle School	72.10%
+Achievement	Proficiency - Math & ELA (%)	2020	Oyster River Middle School	*COVID
+Achievement	Proficiency - Math & ELA (%)	2021	Oyster River Middle School	59.00%
+College and Career Readiness	Dropout Rate (%)	2019	Oyster River Middle School	NA
+College and Career Readiness	Dropout Rate (%)	2020	Oyster River Middle School	NA
+College and Career Readiness	Dropout Rate (%)	2021	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2019	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2020	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2021	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2019	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2020	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2021	Oyster River Middle School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2019	Oyster River Middle School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2020	Oyster River Middle School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2021	Oyster River Middle School	NA
+Educator	Average Teacher Salary ($)	2019	Oyster River Middle School	$73,778
+Educator	Average Teacher Salary ($)	2020	Oyster River Middle School	$75,202
+Educator	Average Teacher Salary ($)	2021	Oyster River Middle School	$76,645
+Educator	Educators certified in the subject (%)	2019	Oyster River Middle School	93.62%
+Educator	Educators certified in the subject (%)	2020	Oyster River Middle School	96.23%
+Educator	Educators certified in the subject (%)	2021	Oyster River Middle School	100.00%
+Educator	Experienced Educators (%)	2019	Oyster River Middle School	84.85%
+Educator	Experienced Educators (%)	2020	Oyster River Middle School	89.39%
+Educator	Experienced Educators (%)	2021	Oyster River Middle School	93.85%
+ESSA	Achievement Rating	2019	Oyster River Middle School	 3.00
+ESSA	Achievement Rating	2020	Oyster River Middle School	*COVID
+ESSA	Achievement Rating	2021	Oyster River Middle School	 3.00
+ESSA	College and Career Readiness Rating	2019	Oyster River Middle School	
+ESSA	College and Career Readiness Rating	2020	Oyster River Middle School	*COVID
+ESSA	College and Career Readiness Rating	2021	Oyster River Middle School	
+ESSA	English Language Proficiency Rating	2019	Oyster River Middle School	*N
+ESSA	English Language Proficiency Rating	2020	Oyster River Middle School	*COVID
+ESSA	English Language Proficiency Rating	2021	Oyster River Middle School	*N
+ESSA	Equity Rating	2019	Oyster River Middle School	2.00
+ESSA	Equity Rating	2020	Oyster River Middle School	*COVID
+ESSA	Equity Rating	2021	Oyster River Middle School	*COVID
+ESSA	Graduation Rate Rating	2019	Oyster River Middle School	
+ESSA	Graduation Rate Rating	2020	Oyster River Middle School	*COVID
+ESSA	Graduation Rate Rating	2021	Oyster River Middle School	
+ESSA	Growth Rating	2019	Oyster River Middle School	3.00
+ESSA	Growth Rating	2020	Oyster River Middle School	*COVID
+ESSA	Growth Rating	2021	Oyster River Middle School	*COVID
+ESSA	School Improvement Funds ($)	2019	Oyster River Middle School	N/A
+ESSA	School Improvement Funds ($)	2020	Oyster River Middle School	N/A
+ESSA	School Improvement Funds ($)	2021	Oyster River Middle School	N/A
+Finance	Average Cost Per Pupil ($)	2019	Oyster River Middle School	$19,011
+Finance	Average Cost Per Pupil ($)	2020	Oyster River Middle School	$18,978
+Finance	Average Cost Per Pupil ($)	2021	Oyster River Middle School	$20,494
+Finance	Total Expenditures ($)	2019	Oyster River Middle School	$12,476,846
+Finance	Total Expenditures ($)	2020	Oyster River Middle School	$12,652,128
+Finance	Total Expenditures ($)	2021	Oyster River Middle School	$13,408,775
+Profile	Economically Disadvantaged Students (%)	2019	Oyster River Middle School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2020	Oyster River Middle School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2021	Oyster River Middle School	<10.00%
+Profile	English Language Learner (%)	2019	Oyster River Middle School	<10.00%
+Profile	English Language Learner (%)	2020	Oyster River Middle School	*N
+Profile	English Language Learner (%)	2021	Oyster River Middle School	<10.00%
+Profile	Students with Disability (%)	2019	Oyster River Middle School	15.74%
+Profile	Students with Disability (%)	2020	Oyster River Middle School	16.99%
+Profile	Students with Disability (%)	2021	Oyster River Middle School	18.39%
+Profile	Total Enrollment	2019	Oyster River Middle School	667
+Profile	Total Enrollment	2020	Oyster River Middle School	665
+Profile	Total Enrollment	2021	Oyster River Middle School	658
+School Environment	Average Class Size	2019	Oyster River Middle School	
+School Environment	Average Class Size	2020	Oyster River Middle School	
+School Environment	Average Class Size	2021	Oyster River Middle School	
+School Environment	Expulsion Rate (%)	2019	Oyster River Middle School	<10.00%
+School Environment	Expulsion Rate (%)	2020	Oyster River Middle School	<10.00%
+School Environment	Expulsion Rate (%)	2021	Oyster River Middle School	<10.00%
+School Environment	In School Suspension Rate (%)	2019	Oyster River Middle School	<10.00%
+School Environment	In School Suspension Rate (%)	2020	Oyster River Middle School	<10.00%
+School Environment	In School Suspension Rate (%)	2021	Oyster River Middle School	<10.00%
+School Environment	Incidents of Violence	2019	Oyster River Middle School	4.00
+School Environment	Incidents of Violence	2020	Oyster River Middle School	2.00
+School Environment	Incidents of Violence	2021	Oyster River Middle School	0.00
+School Environment	Out Of School Suspension Rate (%)	2019	Oyster River Middle School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2020	Oyster River Middle School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2021	Oyster River Middle School	<10.00%
+School Environment	Students/Counselors Ratio	2021	Oyster River Middle School	219.33
+School Environment	Students/Non-Teacher Staff Ratio	2021	Oyster River Middle School	21.02
+School Environment	Teachers/Total Staff Ratio	2021	Oyster River Middle School	0.70
+Academic Growth	Student Growth - ELA	2022	Oyster River Middle School	53.00
+Academic Growth	Student Growth - ELA	2023	Oyster River Middle School	55.00
+Academic Growth	Student Growth - ELA	2024	Oyster River Middle School	54.00
+Academic Growth	Student Growth - Math	2022	Oyster River Middle School	61.00
+Academic Growth	Student Growth - Math	2023	Oyster River Middle School	62.00
+Academic Growth	Student Growth - Math	2024	Oyster River Middle School	57.00
+Achievement	Participation - ELA (%)	2022	Oyster River Middle School	>90.00%
+Achievement	Participation - ELA (%)	2023	Oyster River Middle School	>90.00%
+Achievement	Participation - ELA (%)	2024	Oyster River Middle School	>90.00%
+Achievement	Participation - Math (%)	2022	Oyster River Middle School	>90.00%
+Achievement	Participation - Math (%)	2023	Oyster River Middle School	>90.00%
+Achievement	Participation - Math (%)	2024	Oyster River Middle School	>90.00%
+Achievement	Participation - Science (%)	2022	Oyster River Middle School	>90.00%
+Achievement	Participation - Science (%)	2023	Oyster River Middle School	>90.00%
+Achievement	Participation - Science (%)	2024	Oyster River Middle School	>90.00%
+Achievement	Proficiency - ELA (%)	2022	Oyster River Middle School	69.00%
+Achievement	Proficiency - ELA (%)	2023	Oyster River Middle School	76.00%
+Achievement	Proficiency - ELA (%)	2024	Oyster River Middle School	73.00%
+Achievement	Proficiency - Math (%)	2022	Oyster River Middle School	65.00%
+Achievement	Proficiency - Math (%)	2023	Oyster River Middle School	68.00%
+Achievement	Proficiency - Math (%)	2024	Oyster River Middle School	68.00%
+Achievement	Proficiency - Math & ELA (%)	2022	Oyster River Middle School	67.00%
+Achievement	Proficiency - Math & ELA (%)	2023	Oyster River Middle School	72.00%
+Achievement	Proficiency - Math & ELA (%)	2024	Oyster River Middle School	70.50%
+College and Career Readiness	Dropout Rate (%)	2022	Oyster River Middle School	NA
+College and Career Readiness	Dropout Rate (%)	2023	Oyster River Middle School	NA
+College and Career Readiness	Dropout Rate (%)	2024	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2022	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2023	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2024	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2022	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2023	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2024	Oyster River Middle School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2022	Oyster River Middle School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2023	Oyster River Middle School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2024	Oyster River Middle School	NA
+Educator	Average Teacher Salary ($)	2022	Oyster River Middle School	$76,257
+Educator	Average Teacher Salary ($)	2023	Oyster River Middle School	$63,538
+Educator	Average Teacher Salary ($)	2024	Oyster River Middle School	$80,573
+Educator	Educators certified in the subject (%)	2022	Oyster River Middle School	94.44%
+Educator	Educators certified in the subject (%)	2023	Oyster River Middle School	94.23%
+Educator	Educators certified in the subject (%)	2024	Oyster River Middle School	87.04%
+Educator	Experienced Educators (%)	2022	Oyster River Middle School	93.65%
+Educator	Experienced Educators (%)	2023	Oyster River Middle School	95.45%
+Educator	Experienced Educators (%)	2024	Oyster River Middle School	93.65%
+ESSA	Achievement Rating	2022	Oyster River Middle School	 3.00
+ESSA	Achievement Rating	2023	Oyster River Middle School	 4.00
+ESSA	Achievement Rating	2024	Oyster River Middle School	 3.00
+ESSA	College and Career Readiness Rating	2022	Oyster River Middle School	
+ESSA	College and Career Readiness Rating	2023	Oyster River Middle School	
+ESSA	College and Career Readiness Rating	2024	Oyster River Middle School	
+ESSA	English Language Proficiency Rating	2022	Oyster River Middle School	*N
+ESSA	English Language Proficiency Rating	2023	Oyster River Middle School	*N
+ESSA	English Language Proficiency Rating	2024	Oyster River Middle School	*N
+ESSA	Equity Rating	2022	Oyster River Middle School	3.00
+ESSA	Equity Rating	2023	Oyster River Middle School	3.00
+ESSA	Equity Rating	2024	Oyster River Middle School	3.00
+ESSA	Graduation Rate Rating	2022	Oyster River Middle School	
+ESSA	Graduation Rate Rating	2023	Oyster River Middle School	
+ESSA	Graduation Rate Rating	2024	Oyster River Middle School	
+ESSA	Growth Rating	2022	Oyster River Middle School	3.00
+ESSA	Growth Rating	2023	Oyster River Middle School	3.00
+ESSA	Growth Rating	2024	Oyster River Middle School	3.00
+ESSA	School Improvement Funds ($)	2022	Oyster River Middle School	N/A
+ESSA	School Improvement Funds ($)	2023	Oyster River Middle School	N/A
+ESSA	School Improvement Funds ($)	2024	Oyster River Middle School	N/A
+Finance	Average Cost Per Pupil ($)	2022	Oyster River Middle School	$21,340
+Finance	Average Cost Per Pupil ($)	2023	Oyster River Middle School	$22,653
+Finance	Average Cost Per Pupil ($)	2024	Oyster River Middle School	$23,275
+Finance	Total Expenditures ($)	2022	Oyster River Middle School	$13,449,064
+Finance	Total Expenditures ($)	2023	Oyster River Middle School	$14,692,025
+Finance	Total Expenditures ($)	2024	Oyster River Middle School	$14,398,568
+Profile	Economically Disadvantaged Students (%)	2022	Oyster River Middle School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2023	Oyster River Middle School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2024	Oyster River Middle School	10.68%
+Profile	English Language Learner (%)	2022	Oyster River Middle School	<10.00%
+Profile	English Language Learner (%)	2023	Oyster River Middle School	<10.00%
+Profile	English Language Learner (%)	2024	Oyster River Middle School	<10.00%
+Profile	Students with Disability (%)	2022	Oyster River Middle School	21.14%
+Profile	Students with Disability (%)	2023	Oyster River Middle School	21.31%
+Profile	Students with Disability (%)	2024	Oyster River Middle School	18.12%
+Profile	Total Enrollment	2022	Oyster River Middle School	629
+Profile	Total Enrollment	2023	Oyster River Middle School	643
+Profile	Total Enrollment	2024	Oyster River Middle School	618
+School Environment	Average Class Size	2022	Oyster River Middle School	
+School Environment	Average Class Size	2023	Oyster River Middle School	
+School Environment	Average Class Size	2024	Oyster River Middle School	
+School Environment	Expulsion Rate (%)	2022	Oyster River Middle School	<10.00%
+School Environment	Expulsion Rate (%)	2023	Oyster River Middle School	<10.00%
+School Environment	Expulsion Rate (%)	2024	Oyster River Middle School	<10.00%
+School Environment	In School Suspension Rate (%)	2022	Oyster River Middle School	<10.00%
+School Environment	In School Suspension Rate (%)	2023	Oyster River Middle School	<10.00%
+School Environment	In School Suspension Rate (%)	2024	Oyster River Middle School	<10.00%
+School Environment	Incidents of Violence	2022	Oyster River Middle School	1.00
+School Environment	Incidents of Violence	2023	Oyster River Middle School	2.00
+School Environment	Incidents of Violence	2024	Oyster River Middle School	5.00
+School Environment	Out Of School Suspension Rate (%)	2022	Oyster River Middle School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2023	Oyster River Middle School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2024	Oyster River Middle School	<10.00%
+School Environment	Students/Counselors Ratio	2022	Oyster River Middle School	209.67
+School Environment	Students/Counselors Ratio	2023	Oyster River Middle School	160.75
+School Environment	Students/Counselors Ratio	2024	Oyster River Middle School	154.50
+School Environment	Students/Non-Teacher Staff Ratio	2022	Oyster River Middle School	20.62
+School Environment	Students/Non-Teacher Staff Ratio	2023	Oyster River Middle School	19.37
+School Environment	Students/Non-Teacher Staff Ratio	2024	Oyster River Middle School	15.89
+School Environment	Teachers/Total Staff Ratio	2022	Oyster River Middle School	0.70
+School Environment	Teachers/Total Staff Ratio	2023	Oyster River Middle School	0.69
+School Environment	Teachers/Total Staff Ratio	2024	Oyster River Middle School	0.62
+Academic Growth	Student Growth - ELA	2025	Oyster River Middle School	50.00
+Academic Growth	Student Growth - ELA	2026	Oyster River Middle School	51.00
+Academic Growth	Student Growth - Math	2025	Oyster River Middle School	55.00
+Academic Growth	Student Growth - Math	2026	Oyster River Middle School	59.00
+Achievement	Participation - ELA (%)	2025	Oyster River Middle School	>90.00%
+Achievement	Participation - ELA (%)	2026	Oyster River Middle School	>90.00%
+Achievement	Participation - Math (%)	2025	Oyster River Middle School	>90.00%
+Achievement	Participation - Math (%)	2026	Oyster River Middle School	>90.00%
+Achievement	Participation - Science (%)	2025	Oyster River Middle School	>90.00%
+Achievement	Participation - Science (%)	2026	Oyster River Middle School	>90.00%
+Achievement	Proficiency - ELA (%)	2025	Oyster River Middle School	73.00%
+Achievement	Proficiency - ELA (%)	2026	Oyster River Middle School	71.00%
+Achievement	Proficiency - Math (%)	2025	Oyster River Middle School	65.00%
+Achievement	Proficiency - Math (%)	2026	Oyster River Middle School	69.00%
+Achievement	Proficiency - Math & ELA (%)	2025	Oyster River Middle School	69.00%
+Achievement	Proficiency - Math & ELA (%)	2026	Oyster River Middle School	70.00%
+College and Career Readiness	Dropout Rate (%)	2025	Oyster River Middle School	NA
+College and Career Readiness	Dropout Rate (%)	2026	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2025	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2026	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2025	Oyster River Middle School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2026	Oyster River Middle School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2025	Oyster River Middle School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2026	Oyster River Middle School	*CS
+Educator	Average Teacher Salary ($)	2025	Oyster River Middle School	$80,573
+Educator	Average Teacher Salary ($)	2026	Oyster River Middle School	$84,074
+Educator	Educators certified in the subject (%)	2025	Oyster River Middle School	96.72%
+Educator	Educators certified in the subject (%)	2026	Oyster River Middle School	98.18%
+Educator	Experienced Educators (%)	2025	Oyster River Middle School	88.89%
+Educator	Experienced Educators (%)	2026	Oyster River Middle School	91.23%
+ESSA	Achievement Rating	2025	Oyster River Middle School	 3.00
+ESSA	Achievement Rating	2026	Oyster River Middle School	 3.00
+ESSA	College and Career Readiness Rating	2025	Oyster River Middle School	
+ESSA	College and Career Readiness Rating	2026	Oyster River Middle School	
+ESSA	English Language Proficiency Rating	2025	Oyster River Middle School	*N
+ESSA	English Language Proficiency Rating	2026	Oyster River Middle School	*N
+ESSA	Equity Rating	2025	Oyster River Middle School	2.00
+ESSA	Equity Rating	2026	Oyster River Middle School	3.00
+ESSA	Graduation Rate Rating	2025	Oyster River Middle School	
+ESSA	Graduation Rate Rating	2026	Oyster River Middle School	
+ESSA	Growth Rating	2025	Oyster River Middle School	3.00
+ESSA	Growth Rating	2026	Oyster River Middle School	3.00
+ESSA	School Improvement Funds ($)	2025	Oyster River Middle School	N/A
+ESSA	School Improvement Funds ($)	2026	Oyster River Middle School	*CS
+Finance	Average Cost Per Pupil ($)	2025	Oyster River Middle School	$25,131
+Finance	Average Cost Per Pupil ($)	2026	Oyster River Middle School	*CS
+Finance	Total Expenditures ($)	2025	Oyster River Middle School	$14,691,479
+Finance	Total Expenditures ($)	2026	Oyster River Middle School	*CS
+Profile	Economically Disadvantaged Students (%)	2025	Oyster River Middle School	11.28%
+Profile	Economically Disadvantaged Students (%)	2026	Oyster River Middle School	12.32%
+Profile	English Language Learner (%)	2025	Oyster River Middle School	<10.00%
+Profile	English Language Learner (%)	2026	Oyster River Middle School	<10.00%
+Profile	Students with Disability (%)	2025	Oyster River Middle School	17.26%
+Profile	Students with Disability (%)	2026	Oyster River Middle School	18.57%
+Profile	Total Enrollment	2025	Oyster River Middle School	585
+Profile	Total Enrollment	2026	Oyster River Middle School	560
+School Environment	Average Class Size	2025	Oyster River Middle School	
+School Environment	Average Class Size	2026	Oyster River Middle School	
+School Environment	Expulsion Rate (%)	2025	Oyster River Middle School	<10.00%
+School Environment	Expulsion Rate (%)	2026	Oyster River Middle School	<10.00%
+School Environment	In School Suspension Rate (%)	2025	Oyster River Middle School	<10.00%
+School Environment	In School Suspension Rate (%)	2026	Oyster River Middle School	<10.00%
+School Environment	Incidents of Violence	2025	Oyster River Middle School	10.00
+School Environment	Incidents of Violence	2026	Oyster River Middle School	6.00
+School Environment	Out Of School Suspension Rate (%)	2025	Oyster River Middle School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2026	Oyster River Middle School	<10.00%
+School Environment	Students/Counselors Ratio	2025	Oyster River Middle School	117.00
+School Environment	Students/Counselors Ratio	2026	Oyster River Middle School	140.00
+School Environment	Students/Non-Teacher Staff Ratio	2025	Oyster River Middle School	13.83
+School Environment	Students/Non-Teacher Staff Ratio	2026	Oyster River Middle School	19.05
+School Environment	Teachers/Total Staff Ratio	2025	Oyster River Middle School	0.62
+School Environment	Teachers/Total Staff Ratio	2026	Oyster River Middle School	0.65
+Academic Growth	Student Growth - ELA	2016	Mast Way School	NA
+Academic Growth	Student Growth - ELA	2017	Mast Way School	NA
+Academic Growth	Student Growth - ELA	2018	Mast Way School	60.00
+Academic Growth	Student Growth - Math	2016	Mast Way School	NA
+Academic Growth	Student Growth - Math	2017	Mast Way School	NA
+Academic Growth	Student Growth - Math	2018	Mast Way School	66.00
+Achievement	Participation - ELA (%)	2016	Mast Way School	NA
+Achievement	Participation - ELA (%)	2017	Mast Way School	NA
+Achievement	Participation - ELA (%)	2018	Mast Way School	>90.00%
+Achievement	Participation - Math (%)	2016	Mast Way School	NA
+Achievement	Participation - Math (%)	2017	Mast Way School	NA
+Achievement	Participation - Math (%)	2018	Mast Way School	>90.00%
+Achievement	Participation - Science (%)	2016	Mast Way School	NA
+Achievement	Participation - Science (%)	2017	Mast Way School	NA
+Achievement	Participation - Science (%)	2018	Mast Way School	NA
+Achievement	Proficiency - ELA (%)	2016	Mast Way School	NA
+Achievement	Proficiency - ELA (%)	2017	Mast Way School	NA
+Achievement	Proficiency - ELA (%)	2018	Mast Way School	76.00%
+Achievement	Proficiency - Math (%)	2016	Mast Way School	NA
+Achievement	Proficiency - Math (%)	2017	Mast Way School	NA
+Achievement	Proficiency - Math (%)	2018	Mast Way School	84.00%
+Achievement	Proficiency - Math & ELA (%)	2016	Mast Way School	81.50%
+Achievement	Proficiency - Math & ELA (%)	2017	Mast Way School	84.50%
+Achievement	Proficiency - Math & ELA (%)	2018	Mast Way School	80.00%
+College and Career Readiness	Dropout Rate (%)	2016	Mast Way School	NA
+College and Career Readiness	Dropout Rate (%)	2017	Mast Way School	NA
+College and Career Readiness	Dropout Rate (%)	2018	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2016	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2017	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2018	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2016	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2017	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2018	Mast Way School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2016	Mast Way School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2017	Mast Way School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2018	Mast Way School	NA
+Educator	Average Teacher Salary ($)	2016	Mast Way School	$68,713
+Educator	Average Teacher Salary ($)	2017	Mast Way School	$71,810
+Educator	Average Teacher Salary ($)	2018	Mast Way School	$70,514
+Educator	Educators certified in the subject (%)	2016	Mast Way School	94.74%
+Educator	Educators certified in the subject (%)	2017	Mast Way School	100.00%
+Educator	Educators certified in the subject (%)	2018	Mast Way School	100.00%
+Educator	Experienced Educators (%)	2016	Mast Way School	95.65%
+Educator	Experienced Educators (%)	2017	Mast Way School	92.00%
+Educator	Experienced Educators (%)	2018	Mast Way School	88.46%
+ESSA	Achievement Rating	2016	Mast Way School	N/A
+ESSA	Achievement Rating	2017	Mast Way School	N/A
+ESSA	Achievement Rating	2018	Mast Way School	 4.00
+ESSA	College and Career Readiness Rating	2016	Mast Way School	N/A
+ESSA	College and Career Readiness Rating	2017	Mast Way School	N/A
+ESSA	College and Career Readiness Rating	2018	Mast Way School	
+ESSA	English Language Proficiency Rating	2018	Mast Way School	*N
+ESSA	Equity Rating	2016	Mast Way School	N/A
+ESSA	Equity Rating	2017	Mast Way School	N/A
+ESSA	Equity Rating	2018	Mast Way School	3.00
+ESSA	Graduation Rate Rating	2018	Mast Way School	
+ESSA	Growth Rating	2016	Mast Way School	N/A
+ESSA	Growth Rating	2017	Mast Way School	N/A
+ESSA	Growth Rating	2018	Mast Way School	4.00
+ESSA	School Improvement Funds ($)	2016	Mast Way School	N/A
+ESSA	School Improvement Funds ($)	2017	Mast Way School	N/A
+ESSA	School Improvement Funds ($)	2018	Mast Way School	N/A
+Finance	Average Cost Per Pupil ($)	2016	Mast Way School	NA
+Finance	Average Cost Per Pupil ($)	2017	Mast Way School	NA
+Finance	Average Cost Per Pupil ($)	2018	Mast Way School	NA
+Finance	Total Expenditures ($)	2016	Mast Way School	%null%
+Finance	Total Expenditures ($)	2017	Mast Way School	%null%
+Finance	Total Expenditures ($)	2018	Mast Way School	%null%
+Profile	Economically Disadvantaged Students (%)	2016	Mast Way School	10.53%
+Profile	Economically Disadvantaged Students (%)	2017	Mast Way School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2018	Mast Way School	<10.00%
+Profile	English Language Learner (%)	2016	Mast Way School	<10.00%
+Profile	English Language Learner (%)	2017	Mast Way School	<10.00%
+Profile	English Language Learner (%)	2018	Mast Way School	<10.00%
+Profile	Students with Disability (%)	2016	Mast Way School	11.23%
+Profile	Students with Disability (%)	2017	Mast Way School	11.25%
+Profile	Students with Disability (%)	2018	Mast Way School	11.36%
+Profile	Total Enrollment	2016	Mast Way School	285
+Profile	Total Enrollment	2017	Mast Way School	320
+Profile	Total Enrollment	2018	Mast Way School	352
+School Environment	Average Class Size	2016	Mast Way School	19.30
+School Environment	Average Class Size	2017	Mast Way School	20.80
+School Environment	Average Class Size	2018	Mast Way School	20.10
+School Environment	Expulsion Rate (%)	2016	Mast Way School	<10.00%
+School Environment	Expulsion Rate (%)	2017	Mast Way School	<10.00%
+School Environment	Expulsion Rate (%)	2018	Mast Way School	<10.00%
+School Environment	In School Suspension Rate (%)	2016	Mast Way School	<10.00%
+School Environment	In School Suspension Rate (%)	2017	Mast Way School	<10.00%
+School Environment	In School Suspension Rate (%)	2018	Mast Way School	<10.00%
+School Environment	Incidents of Violence	2016	Mast Way School	0.00
+School Environment	Incidents of Violence	2017	Mast Way School	0.00
+School Environment	Incidents of Violence	2018	Mast Way School	2.00
+School Environment	Out Of School Suspension Rate (%)	2016	Mast Way School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2017	Mast Way School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2018	Mast Way School	<10.00%
+Academic Growth	Student Growth - ELA	2019	Mast Way School	56.00
+Academic Growth	Student Growth - ELA	2020	Mast Way School	*COVID
+Academic Growth	Student Growth - ELA	2021	Mast Way School	*COVID
+Academic Growth	Student Growth - Math	2019	Mast Way School	70.00
+Academic Growth	Student Growth - Math	2020	Mast Way School	*COVID
+Academic Growth	Student Growth - Math	2021	Mast Way School	*COVID
+Achievement	Participation - ELA (%)	2019	Mast Way School	>90.00%
+Achievement	Participation - ELA (%)	2020	Mast Way School	NA
+Achievement	Participation - ELA (%)	2021	Mast Way School	>90.00%
+Achievement	Participation - Math (%)	2019	Mast Way School	>90.00%
+Achievement	Participation - Math (%)	2020	Mast Way School	NA
+Achievement	Participation - Math (%)	2021	Mast Way School	>90.00%
+Achievement	Participation - Science (%)	2019	Mast Way School	NA
+Achievement	Participation - Science (%)	2020	Mast Way School	NA
+Achievement	Participation - Science (%)	2021	Mast Way School	NA
+Achievement	Proficiency - ELA (%)	2019	Mast Way School	67.00%
+Achievement	Proficiency - ELA (%)	2020	Mast Way School	*COVID
+Achievement	Proficiency - ELA (%)	2021	Mast Way School	83.00%
+Achievement	Proficiency - Math (%)	2019	Mast Way School	78.00%
+Achievement	Proficiency - Math (%)	2020	Mast Way School	*COVID
+Achievement	Proficiency - Math (%)	2021	Mast Way School	75.00%
+Achievement	Proficiency - Math & ELA (%)	2019	Mast Way School	72.40%
+Achievement	Proficiency - Math & ELA (%)	2020	Mast Way School	*COVID
+Achievement	Proficiency - Math & ELA (%)	2021	Mast Way School	79.00%
+College and Career Readiness	Dropout Rate (%)	2019	Mast Way School	NA
+College and Career Readiness	Dropout Rate (%)	2020	Mast Way School	NA
+College and Career Readiness	Dropout Rate (%)	2021	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2019	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2020	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2021	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2019	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2020	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2021	Mast Way School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2019	Mast Way School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2020	Mast Way School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2021	Mast Way School	NA
+Educator	Average Teacher Salary ($)	2019	Mast Way School	$73,778
+Educator	Average Teacher Salary ($)	2020	Mast Way School	$75,202
+Educator	Average Teacher Salary ($)	2021	Mast Way School	$76,645
+Educator	Educators certified in the subject (%)	2019	Mast Way School	100.00%
+Educator	Educators certified in the subject (%)	2020	Mast Way School	100.00%
+Educator	Educators certified in the subject (%)	2021	Mast Way School	100.00%
+Educator	Experienced Educators (%)	2019	Mast Way School	92.86%
+Educator	Experienced Educators (%)	2020	Mast Way School	96.67%
+Educator	Experienced Educators (%)	2021	Mast Way School	93.33%
+ESSA	Achievement Rating	2019	Mast Way School	 4.00
+ESSA	Achievement Rating	2020	Mast Way School	*COVID
+ESSA	Achievement Rating	2021	Mast Way School	 4.00
+ESSA	College and Career Readiness Rating	2019	Mast Way School	
+ESSA	College and Career Readiness Rating	2020	Mast Way School	*COVID
+ESSA	College and Career Readiness Rating	2021	Mast Way School	
+ESSA	English Language Proficiency Rating	2019	Mast Way School	 3.00
+ESSA	English Language Proficiency Rating	2020	Mast Way School	*COVID
+ESSA	English Language Proficiency Rating	2021	Mast Way School	*N
+ESSA	Equity Rating	2019	Mast Way School	4.00
+ESSA	Equity Rating	2020	Mast Way School	*COVID
+ESSA	Equity Rating	2021	Mast Way School	*COVID
+ESSA	Graduation Rate Rating	2019	Mast Way School	
+ESSA	Graduation Rate Rating	2020	Mast Way School	*COVID
+ESSA	Graduation Rate Rating	2021	Mast Way School	
+ESSA	Growth Rating	2019	Mast Way School	4.00
+ESSA	Growth Rating	2020	Mast Way School	*COVID
+ESSA	Growth Rating	2021	Mast Way School	*COVID
+ESSA	School Improvement Funds ($)	2019	Mast Way School	N/A
+ESSA	School Improvement Funds ($)	2020	Mast Way School	N/A
+ESSA	School Improvement Funds ($)	2021	Mast Way School	N/A
+Finance	Average Cost Per Pupil ($)	2019	Mast Way School	$18,573
+Finance	Average Cost Per Pupil ($)	2020	Mast Way School	$18,657
+Finance	Average Cost Per Pupil ($)	2021	Mast Way School	$21,542
+Finance	Total Expenditures ($)	2019	Mast Way School	$6,713,026
+Finance	Total Expenditures ($)	2020	Mast Way School	$6,913,174
+Finance	Total Expenditures ($)	2021	Mast Way School	$7,033,668
+Profile	Economically Disadvantaged Students (%)	2019	Mast Way School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2020	Mast Way School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2021	Mast Way School	<10.00%
+Profile	English Language Learner (%)	2019	Mast Way School	<10.00%
+Profile	English Language Learner (%)	2020	Mast Way School	<10.00%
+Profile	English Language Learner (%)	2021	Mast Way School	<10.00%
+Profile	Students with Disability (%)	2019	Mast Way School	11.51%
+Profile	Students with Disability (%)	2020	Mast Way School	10.46%
+Profile	Students with Disability (%)	2021	Mast Way School	10.12%
+Profile	Total Enrollment	2019	Mast Way School	365
+Profile	Total Enrollment	2020	Mast Way School	373
+Profile	Total Enrollment	2021	Mast Way School	326
+School Environment	Average Class Size	2019	Mast Way School	20.90
+School Environment	Average Class Size	2020	Mast Way School	20.60
+School Environment	Average Class Size	2021	Mast Way School	17.10
+School Environment	Expulsion Rate (%)	2019	Mast Way School	<10.00%
+School Environment	Expulsion Rate (%)	2020	Mast Way School	<10.00%
+School Environment	Expulsion Rate (%)	2021	Mast Way School	<10.00%
+School Environment	In School Suspension Rate (%)	2019	Mast Way School	<10.00%
+School Environment	In School Suspension Rate (%)	2020	Mast Way School	<10.00%
+School Environment	In School Suspension Rate (%)	2021	Mast Way School	<10.00%
+School Environment	Incidents of Violence	2019	Mast Way School	0.00
+School Environment	Incidents of Violence	2020	Mast Way School	0.00
+School Environment	Incidents of Violence	2021	Mast Way School	0.00
+School Environment	Out Of School Suspension Rate (%)	2019	Mast Way School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2020	Mast Way School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2021	Mast Way School	<10.00%
+School Environment	Students/Counselors Ratio	2021	Mast Way School	326.00
+School Environment	Students/Non-Teacher Staff Ratio	2021	Mast Way School	12.54
+School Environment	Teachers/Total Staff Ratio	2021	Mast Way School	0.57
+Academic Growth	Student Growth - ELA	2022	Mast Way School	53.00
+Academic Growth	Student Growth - ELA	2023	Mast Way School	63.00
+Academic Growth	Student Growth - ELA	2024	Mast Way School	53.00
+Academic Growth	Student Growth - Math	2022	Mast Way School	58.00
+Academic Growth	Student Growth - Math	2023	Mast Way School	60.00
+Academic Growth	Student Growth - Math	2024	Mast Way School	55.00
+Achievement	Participation - ELA (%)	2022	Mast Way School	>90.00%
+Achievement	Participation - ELA (%)	2023	Mast Way School	>90.00%
+Achievement	Participation - ELA (%)	2024	Mast Way School	>90.00%
+Achievement	Participation - Math (%)	2022	Mast Way School	>90.00%
+Achievement	Participation - Math (%)	2023	Mast Way School	>90.00%
+Achievement	Participation - Math (%)	2024	Mast Way School	>90.00%
+Achievement	Participation - Science (%)	2022	Mast Way School	NA
+Achievement	Participation - Science (%)	2023	Mast Way School	NA
+Achievement	Participation - Science (%)	2024	Mast Way School	NA
+Achievement	Proficiency - ELA (%)	2022	Mast Way School	70.00%
+Achievement	Proficiency - ELA (%)	2023	Mast Way School	73.00%
+Achievement	Proficiency - ELA (%)	2024	Mast Way School	70.00%
+Achievement	Proficiency - Math (%)	2022	Mast Way School	69.00%
+Achievement	Proficiency - Math (%)	2023	Mast Way School	73.00%
+Achievement	Proficiency - Math (%)	2024	Mast Way School	74.00%
+Achievement	Proficiency - Math & ELA (%)	2022	Mast Way School	69.50%
+Achievement	Proficiency - Math & ELA (%)	2023	Mast Way School	73.00%
+Achievement	Proficiency - Math & ELA (%)	2024	Mast Way School	72.00%
+College and Career Readiness	Dropout Rate (%)	2022	Mast Way School	NA
+College and Career Readiness	Dropout Rate (%)	2023	Mast Way School	NA
+College and Career Readiness	Dropout Rate (%)	2024	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2022	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2023	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2024	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2022	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2023	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2024	Mast Way School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2022	Mast Way School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2023	Mast Way School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2024	Mast Way School	NA
+Educator	Average Teacher Salary ($)	2022	Mast Way School	$76,257
+Educator	Average Teacher Salary ($)	2023	Mast Way School	$63,538
+Educator	Average Teacher Salary ($)	2024	Mast Way School	$80,573
+Educator	Educators certified in the subject (%)	2022	Mast Way School	100.00%
+Educator	Educators certified in the subject (%)	2023	Mast Way School	100.00%
+Educator	Educators certified in the subject (%)	2024	Mast Way School	100.00%
+Educator	Experienced Educators (%)	2022	Mast Way School	90.32%
+Educator	Experienced Educators (%)	2023	Mast Way School	96.67%
+Educator	Experienced Educators (%)	2024	Mast Way School	93.10%
+ESSA	Achievement Rating	2022	Mast Way School	 4.00
+ESSA	Achievement Rating	2023	Mast Way School	 4.00
+ESSA	Achievement Rating	2024	Mast Way School	 3.00
+ESSA	College and Career Readiness Rating	2022	Mast Way School	
+ESSA	College and Career Readiness Rating	2023	Mast Way School	
+ESSA	College and Career Readiness Rating	2024	Mast Way School	
+ESSA	English Language Proficiency Rating	2022	Mast Way School	*N
+ESSA	English Language Proficiency Rating	2023	Mast Way School	*N
+ESSA	English Language Proficiency Rating	2024	Mast Way School	*N
+ESSA	Equity Rating	2022	Mast Way School	2.00
+ESSA	Equity Rating	2023	Mast Way School	4.00
+ESSA	Equity Rating	2024	Mast Way School	3.00
+ESSA	Graduation Rate Rating	2022	Mast Way School	
+ESSA	Graduation Rate Rating	2023	Mast Way School	
+ESSA	Graduation Rate Rating	2024	Mast Way School	
+ESSA	Growth Rating	2022	Mast Way School	3.00
+ESSA	Growth Rating	2023	Mast Way School	4.00
+ESSA	Growth Rating	2024	Mast Way School	3.00
+ESSA	School Improvement Funds ($)	2022	Mast Way School	N/A
+ESSA	School Improvement Funds ($)	2023	Mast Way School	N/A
+ESSA	School Improvement Funds ($)	2024	Mast Way School	N/A
+Finance	Average Cost Per Pupil ($)	2022	Mast Way School	$21,340
+Finance	Average Cost Per Pupil ($)	2023	Mast Way School	$23,456
+Finance	Average Cost Per Pupil ($)	2024	Mast Way School	$23,863
+Finance	Total Expenditures ($)	2022	Mast Way School	$7,021,190
+Finance	Total Expenditures ($)	2023	Mast Way School	$7,609,465
+Finance	Total Expenditures ($)	2024	Mast Way School	$7,933,806
+Profile	Economically Disadvantaged Students (%)	2022	Mast Way School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2023	Mast Way School	12.23%
+Profile	Economically Disadvantaged Students (%)	2024	Mast Way School	<10.00%
+Profile	English Language Learner (%)	2022	Mast Way School	<10.00%
+Profile	English Language Learner (%)	2023	Mast Way School	<10.00%
+Profile	English Language Learner (%)	2024	Mast Way School	<10.00%
+Profile	Students with Disability (%)	2022	Mast Way School	10.22%
+Profile	Students with Disability (%)	2023	Mast Way School	13.76%
+Profile	Students with Disability (%)	2024	Mast Way School	12.99%
+Profile	Total Enrollment	2022	Mast Way School	323
+Profile	Total Enrollment	2023	Mast Way School	327
+Profile	Total Enrollment	2024	Mast Way School	331
+School Environment	Average Class Size	2022	Mast Way School	18.60
+School Environment	Average Class Size	2023	Mast Way School	18.20
+School Environment	Average Class Size	2024	Mast Way School	19.10
+School Environment	Expulsion Rate (%)	2022	Mast Way School	<10.00%
+School Environment	Expulsion Rate (%)	2023	Mast Way School	<10.00%
+School Environment	Expulsion Rate (%)	2024	Mast Way School	<10.00%
+School Environment	In School Suspension Rate (%)	2022	Mast Way School	<10.00%
+School Environment	In School Suspension Rate (%)	2023	Mast Way School	<10.00%
+School Environment	In School Suspension Rate (%)	2024	Mast Way School	<10.00%
+School Environment	Incidents of Violence	2022	Mast Way School	0.00
+School Environment	Incidents of Violence	2023	Mast Way School	0.00
+School Environment	Incidents of Violence	2024	Mast Way School	0.00
+School Environment	Out Of School Suspension Rate (%)	2022	Mast Way School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2023	Mast Way School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2024	Mast Way School	<10.00%
+School Environment	Students/Counselors Ratio	2022	Mast Way School	323.00
+School Environment	Students/Counselors Ratio	2023	Mast Way School	327.00
+School Environment	Students/Counselors Ratio	2024	Mast Way School	331.00
+School Environment	Students/Non-Teacher Staff Ratio	2022	Mast Way School	15.24
+School Environment	Students/Non-Teacher Staff Ratio	2023	Mast Way School	15.50
+School Environment	Students/Non-Teacher Staff Ratio	2024	Mast Way School	12.78
+School Environment	Teachers/Total Staff Ratio	2022	Mast Way School	0.66
+School Environment	Teachers/Total Staff Ratio	2023	Mast Way School	0.62
+School Environment	Teachers/Total Staff Ratio	2024	Mast Way School	0.59
+Academic Growth	Student Growth - ELA	2025	Mast Way School	65.00
+Academic Growth	Student Growth - ELA	2026	Mast Way School	66.00
+Academic Growth	Student Growth - Math	2025	Mast Way School	64.00
+Academic Growth	Student Growth - Math	2026	Mast Way School	70.00
+Achievement	Participation - ELA (%)	2025	Mast Way School	>90.00%
+Achievement	Participation - ELA (%)	2026	Mast Way School	>90.00%
+Achievement	Participation - Math (%)	2025	Mast Way School	>90.00%
+Achievement	Participation - Math (%)	2026	Mast Way School	>90.00%
+Achievement	Participation - Science (%)	2025	Mast Way School	NA
+Achievement	Participation - Science (%)	2026	Mast Way School	NA
+Achievement	Proficiency - ELA (%)	2025	Mast Way School	75.00%
+Achievement	Proficiency - ELA (%)	2026	Mast Way School	82.00%
+Achievement	Proficiency - Math (%)	2025	Mast Way School	74.00%
+Achievement	Proficiency - Math (%)	2026	Mast Way School	75.00%
+Achievement	Proficiency - Math & ELA (%)	2025	Mast Way School	74.50%
+Achievement	Proficiency - Math & ELA (%)	2026	Mast Way School	78.50%
+College and Career Readiness	Dropout Rate (%)	2025	Mast Way School	NA
+College and Career Readiness	Dropout Rate (%)	2026	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2025	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2026	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2025	Mast Way School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2026	Mast Way School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2025	Mast Way School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2026	Mast Way School	*CS
+Educator	Average Teacher Salary ($)	2025	Mast Way School	$80,573
+Educator	Average Teacher Salary ($)	2026	Mast Way School	$84,074
+Educator	Educators certified in the subject (%)	2025	Mast Way School	100.00%
+Educator	Educators certified in the subject (%)	2026	Mast Way School	100.00%
+Educator	Experienced Educators (%)	2025	Mast Way School	80.65%
+Educator	Experienced Educators (%)	2026	Mast Way School	81.48%
+ESSA	Achievement Rating	2025	Mast Way School	 4.00
+ESSA	Achievement Rating	2026	Mast Way School	 4.00
+ESSA	College and Career Readiness Rating	2025	Mast Way School	
+ESSA	College and Career Readiness Rating	2026	Mast Way School	
+ESSA	English Language Proficiency Rating	2025	Mast Way School	*N
+ESSA	English Language Proficiency Rating	2026	Mast Way School	 3.00
+ESSA	Equity Rating	2025	Mast Way School	3.00
+ESSA	Equity Rating	2026	Mast Way School	4.00
+ESSA	Graduation Rate Rating	2025	Mast Way School	
+ESSA	Graduation Rate Rating	2026	Mast Way School	
+ESSA	Growth Rating	2025	Mast Way School	4.00
+ESSA	Growth Rating	2026	Mast Way School	4.00
+ESSA	School Improvement Funds ($)	2025	Mast Way School	N/A
+ESSA	School Improvement Funds ($)	2026	Mast Way School	*CS
+Finance	Average Cost Per Pupil ($)	2025	Mast Way School	$24,531
+Finance	Average Cost Per Pupil ($)	2026	Mast Way School	*CS
+Finance	Total Expenditures ($)	2025	Mast Way School	$8,561,818
+Finance	Total Expenditures ($)	2026	Mast Way School	*CS
+Profile	Economically Disadvantaged Students (%)	2025	Mast Way School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2026	Mast Way School	<10.00%
+Profile	English Language Learner (%)	2025	Mast Way School	<10.00%
+Profile	English Language Learner (%)	2026	Mast Way School	<10.00%
+Profile	Students with Disability (%)	2025	Mast Way School	12.64%
+Profile	Students with Disability (%)	2026	Mast Way School	11.96%
+Profile	Total Enrollment	2025	Mast Way School	348
+Profile	Total Enrollment	2026	Mast Way School	368
+School Environment	Average Class Size	2025	Mast Way School	18.50
+School Environment	Average Class Size	2026	Mast Way School	18.40
+School Environment	Expulsion Rate (%)	2025	Mast Way School	<10.00%
+School Environment	Expulsion Rate (%)	2026	Mast Way School	<10.00%
+School Environment	In School Suspension Rate (%)	2025	Mast Way School	<10.00%
+School Environment	In School Suspension Rate (%)	2026	Mast Way School	<10.00%
+School Environment	Incidents of Violence	2025	Mast Way School	0.00
+School Environment	Incidents of Violence	2026	Mast Way School	0.00
+School Environment	Out Of School Suspension Rate (%)	2025	Mast Way School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2026	Mast Way School	<10.00%
+School Environment	Students/Counselors Ratio	2025	Mast Way School	348.00
+School Environment	Students/Counselors Ratio	2026	Mast Way School	368.00
+School Environment	Students/Non-Teacher Staff Ratio	2025	Mast Way School	12.70
+School Environment	Students/Non-Teacher Staff Ratio	2026	Mast Way School	19.37
+School Environment	Teachers/Total Staff Ratio	2025	Mast Way School	0.57
+School Environment	Teachers/Total Staff Ratio	2026	Mast Way School	0.63
+Academic Growth	Student Growth - ELA	2016	Moharimet School	NA
+Academic Growth	Student Growth - ELA	2017	Moharimet School	NA
+Academic Growth	Student Growth - ELA	2018	Moharimet School	42.00
+Academic Growth	Student Growth - Math	2016	Moharimet School	NA
+Academic Growth	Student Growth - Math	2017	Moharimet School	NA
+Academic Growth	Student Growth - Math	2018	Moharimet School	37.00
+Achievement	Participation - ELA (%)	2016	Moharimet School	NA
+Achievement	Participation - ELA (%)	2017	Moharimet School	NA
+Achievement	Participation - ELA (%)	2018	Moharimet School	>90.00%
+Achievement	Participation - Math (%)	2016	Moharimet School	NA
+Achievement	Participation - Math (%)	2017	Moharimet School	NA
+Achievement	Participation - Math (%)	2018	Moharimet School	>90.00%
+Achievement	Participation - Science (%)	2016	Moharimet School	NA
+Achievement	Participation - Science (%)	2017	Moharimet School	NA
+Achievement	Participation - Science (%)	2018	Moharimet School	NA
+Achievement	Proficiency - ELA (%)	2016	Moharimet School	NA
+Achievement	Proficiency - ELA (%)	2017	Moharimet School	NA
+Achievement	Proficiency - ELA (%)	2018	Moharimet School	76.00%
+Achievement	Proficiency - Math (%)	2016	Moharimet School	NA
+Achievement	Proficiency - Math (%)	2017	Moharimet School	NA
+Achievement	Proficiency - Math (%)	2018	Moharimet School	72.00%
+Achievement	Proficiency - Math & ELA (%)	2016	Moharimet School	79.00%
+Achievement	Proficiency - Math & ELA (%)	2017	Moharimet School	78.50%
+Achievement	Proficiency - Math & ELA (%)	2018	Moharimet School	73.80%
+College and Career Readiness	Dropout Rate (%)	2016	Moharimet School	NA
+College and Career Readiness	Dropout Rate (%)	2017	Moharimet School	NA
+College and Career Readiness	Dropout Rate (%)	2018	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2016	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2017	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2018	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2016	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2017	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2018	Moharimet School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2016	Moharimet School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2017	Moharimet School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2018	Moharimet School	NA
+Educator	Average Teacher Salary ($)	2016	Moharimet School	$68,713
+Educator	Average Teacher Salary ($)	2017	Moharimet School	$71,810
+Educator	Average Teacher Salary ($)	2018	Moharimet School	$70,514
+Educator	Educators certified in the subject (%)	2016	Moharimet School	90.00%
+Educator	Educators certified in the subject (%)	2017	Moharimet School	88.46%
+Educator	Educators certified in the subject (%)	2018	Moharimet School	100.00%
+Educator	Experienced Educators (%)	2016	Moharimet School	100.00%
+Educator	Experienced Educators (%)	2017	Moharimet School	100.00%
+Educator	Experienced Educators (%)	2018	Moharimet School	100.00%
+ESSA	Achievement Rating	2016	Moharimet School	N/A
+ESSA	Achievement Rating	2017	Moharimet School	N/A
+ESSA	Achievement Rating	2018	Moharimet School	 3.00
+ESSA	College and Career Readiness Rating	2016	Moharimet School	N/A
+ESSA	College and Career Readiness Rating	2017	Moharimet School	N/A
+ESSA	College and Career Readiness Rating	2018	Moharimet School	
+ESSA	English Language Proficiency Rating	2018	Moharimet School	 4.00
+ESSA	Equity Rating	2016	Moharimet School	N/A
+ESSA	Equity Rating	2017	Moharimet School	N/A
+ESSA	Equity Rating	2018	Moharimet School	1.00
+ESSA	Graduation Rate Rating	2018	Moharimet School	
+ESSA	Growth Rating	2016	Moharimet School	N/A
+ESSA	Growth Rating	2017	Moharimet School	N/A
+ESSA	Growth Rating	2018	Moharimet School	2.00
+ESSA	School Improvement Funds ($)	2016	Moharimet School	N/A
+ESSA	School Improvement Funds ($)	2017	Moharimet School	N/A
+ESSA	School Improvement Funds ($)	2018	Moharimet School	N/A
+Finance	Average Cost Per Pupil ($)	2016	Moharimet School	NA
+Finance	Average Cost Per Pupil ($)	2017	Moharimet School	NA
+Finance	Average Cost Per Pupil ($)	2018	Moharimet School	NA
+Finance	Total Expenditures ($)	2016	Moharimet School	%null%
+Finance	Total Expenditures ($)	2017	Moharimet School	%null%
+Finance	Total Expenditures ($)	2018	Moharimet School	%null%
+Profile	Economically Disadvantaged Students (%)	2016	Moharimet School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2017	Moharimet School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2018	Moharimet School	<10.00%
+Profile	English Language Learner (%)	2016	Moharimet School	<10.00%
+Profile	English Language Learner (%)	2017	Moharimet School	<10.00%
+Profile	English Language Learner (%)	2018	Moharimet School	<10.00%
+Profile	Students with Disability (%)	2016	Moharimet School	14.40%
+Profile	Students with Disability (%)	2017	Moharimet School	16.62%
+Profile	Students with Disability (%)	2018	Moharimet School	20.12%
+Profile	Total Enrollment	2016	Moharimet School	382
+Profile	Total Enrollment	2017	Moharimet School	373
+Profile	Total Enrollment	2018	Moharimet School	343
+School Environment	Average Class Size	2016	Moharimet School	19.40
+School Environment	Average Class Size	2017	Moharimet School	21.30
+School Environment	Average Class Size	2018	Moharimet School	21.00
+School Environment	Expulsion Rate (%)	2016	Moharimet School	<10.00%
+School Environment	Expulsion Rate (%)	2017	Moharimet School	<10.00%
+School Environment	Expulsion Rate (%)	2018	Moharimet School	<10.00%
+School Environment	In School Suspension Rate (%)	2016	Moharimet School	<10.00%
+School Environment	In School Suspension Rate (%)	2017	Moharimet School	<10.00%
+School Environment	In School Suspension Rate (%)	2018	Moharimet School	<10.00%
+School Environment	Incidents of Violence	2016	Moharimet School	0.00
+School Environment	Incidents of Violence	2017	Moharimet School	4.00
+School Environment	Incidents of Violence	2018	Moharimet School	3.00
+School Environment	Out Of School Suspension Rate (%)	2016	Moharimet School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2017	Moharimet School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2018	Moharimet School	<10.00%
+Academic Growth	Student Growth - ELA	2019	Moharimet School	56.00
+Academic Growth	Student Growth - ELA	2020	Moharimet School	*COVID
+Academic Growth	Student Growth - ELA	2021	Moharimet School	*COVID
+Academic Growth	Student Growth - Math	2019	Moharimet School	64.00
+Academic Growth	Student Growth - Math	2020	Moharimet School	*COVID
+Academic Growth	Student Growth - Math	2021	Moharimet School	*COVID
+Achievement	Participation - ELA (%)	2019	Moharimet School	>90.00%
+Achievement	Participation - ELA (%)	2020	Moharimet School	NA
+Achievement	Participation - ELA (%)	2021	Moharimet School	86.00%
+Achievement	Participation - Math (%)	2019	Moharimet School	>90.00%
+Achievement	Participation - Math (%)	2020	Moharimet School	NA
+Achievement	Participation - Math (%)	2021	Moharimet School	85.00%
+Achievement	Participation - Science (%)	2019	Moharimet School	NA
+Achievement	Participation - Science (%)	2020	Moharimet School	NA
+Achievement	Participation - Science (%)	2021	Moharimet School	NA
+Achievement	Proficiency - ELA (%)	2019	Moharimet School	75.00%
+Achievement	Proficiency - ELA (%)	2020	Moharimet School	*COVID
+Achievement	Proficiency - ELA (%)	2021	Moharimet School	81.00%
+Achievement	Proficiency - Math (%)	2019	Moharimet School	77.00%
+Achievement	Proficiency - Math (%)	2020	Moharimet School	*COVID
+Achievement	Proficiency - Math (%)	2021	Moharimet School	71.00%
+Achievement	Proficiency - Math & ELA (%)	2019	Moharimet School	76.10%
+Achievement	Proficiency - Math & ELA (%)	2020	Moharimet School	*COVID
+Achievement	Proficiency - Math & ELA (%)	2021	Moharimet School	76.00%
+College and Career Readiness	Dropout Rate (%)	2019	Moharimet School	NA
+College and Career Readiness	Dropout Rate (%)	2020	Moharimet School	NA
+College and Career Readiness	Dropout Rate (%)	2021	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2019	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2020	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2021	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2019	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2020	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2021	Moharimet School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2019	Moharimet School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2020	Moharimet School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2021	Moharimet School	NA
+Educator	Average Teacher Salary ($)	2019	Moharimet School	$73,778
+Educator	Average Teacher Salary ($)	2020	Moharimet School	$75,202
+Educator	Average Teacher Salary ($)	2021	Moharimet School	$76,645
+Educator	Educators certified in the subject (%)	2019	Moharimet School	100.00%
+Educator	Educators certified in the subject (%)	2020	Moharimet School	100.00%
+Educator	Educators certified in the subject (%)	2021	Moharimet School	100.00%
+Educator	Experienced Educators (%)	2019	Moharimet School	100.00%
+Educator	Experienced Educators (%)	2020	Moharimet School	100.00%
+Educator	Experienced Educators (%)	2021	Moharimet School	96.55%
+ESSA	Achievement Rating	2019	Moharimet School	 4.00
+ESSA	Achievement Rating	2020	Moharimet School	*COVID
+ESSA	Achievement Rating	2021	Moharimet School	 4.00
+ESSA	College and Career Readiness Rating	2019	Moharimet School	
+ESSA	College and Career Readiness Rating	2020	Moharimet School	*COVID
+ESSA	College and Career Readiness Rating	2021	Moharimet School	
+ESSA	English Language Proficiency Rating	2019	Moharimet School	 3.00
+ESSA	English Language Proficiency Rating	2020	Moharimet School	*COVID
+ESSA	English Language Proficiency Rating	2021	Moharimet School	*N
+ESSA	Equity Rating	2019	Moharimet School	3.00
+ESSA	Equity Rating	2020	Moharimet School	*COVID
+ESSA	Equity Rating	2021	Moharimet School	*COVID
+ESSA	Graduation Rate Rating	2019	Moharimet School	
+ESSA	Graduation Rate Rating	2020	Moharimet School	*COVID
+ESSA	Graduation Rate Rating	2021	Moharimet School	
+ESSA	Growth Rating	2019	Moharimet School	3.00
+ESSA	Growth Rating	2020	Moharimet School	*COVID
+ESSA	Growth Rating	2021	Moharimet School	*COVID
+ESSA	School Improvement Funds ($)	2019	Moharimet School	N/A
+ESSA	School Improvement Funds ($)	2020	Moharimet School	N/A
+ESSA	School Improvement Funds ($)	2021	Moharimet School	N/A
+Finance	Average Cost Per Pupil ($)	2019	Moharimet School	$20,949
+Finance	Average Cost Per Pupil ($)	2020	Moharimet School	$22,374
+Finance	Average Cost Per Pupil ($)	2021	Moharimet School	$25,508
+Finance	Total Expenditures ($)	2019	Moharimet School	$6,650,333
+Finance	Total Expenditures ($)	2020	Moharimet School	$6,708,171
+Finance	Total Expenditures ($)	2021	Moharimet School	$7,329,374
+Profile	Economically Disadvantaged Students (%)	2019	Moharimet School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2020	Moharimet School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2021	Moharimet School	<10.00%
+Profile	English Language Learner (%)	2019	Moharimet School	<10.00%
+Profile	English Language Learner (%)	2020	Moharimet School	<10.00%
+Profile	English Language Learner (%)	2021	Moharimet School	<10.00%
+Profile	Students with Disability (%)	2019	Moharimet School	21.84%
+Profile	Students with Disability (%)	2020	Moharimet School	16.78%
+Profile	Students with Disability (%)	2021	Moharimet School	17.01%
+Profile	Total Enrollment	2019	Moharimet School	316
+Profile	Total Enrollment	2020	Moharimet School	298
+Profile	Total Enrollment	2021	Moharimet School	288
+School Environment	Average Class Size	2019	Moharimet School	21.20
+School Environment	Average Class Size	2020	Moharimet School	18.60
+School Environment	Average Class Size	2021	Moharimet School	18.50
+School Environment	Expulsion Rate (%)	2019	Moharimet School	<10.00%
+School Environment	Expulsion Rate (%)	2020	Moharimet School	<10.00%
+School Environment	Expulsion Rate (%)	2021	Moharimet School	<10.00%
+School Environment	In School Suspension Rate (%)	2019	Moharimet School	<10.00%
+School Environment	In School Suspension Rate (%)	2020	Moharimet School	<10.00%
+School Environment	In School Suspension Rate (%)	2021	Moharimet School	<10.00%
+School Environment	Incidents of Violence	2019	Moharimet School	0.00
+School Environment	Incidents of Violence	2020	Moharimet School	0.00
+School Environment	Incidents of Violence	2021	Moharimet School	0.00
+School Environment	Out Of School Suspension Rate (%)	2019	Moharimet School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2020	Moharimet School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2021	Moharimet School	<10.00%
+School Environment	Students/Counselors Ratio	2021	Moharimet School	288.00
+School Environment	Students/Non-Teacher Staff Ratio	2021	Moharimet School	10.47
+School Environment	Teachers/Total Staff Ratio	2021	Moharimet School	0.57
+Academic Growth	Student Growth - ELA	2022	Moharimet School	48.00
+Academic Growth	Student Growth - ELA	2023	Moharimet School	52.00
+Academic Growth	Student Growth - ELA	2024	Moharimet School	47.00
+Academic Growth	Student Growth - Math	2022	Moharimet School	56.00
+Academic Growth	Student Growth - Math	2023	Moharimet School	45.00
+Academic Growth	Student Growth - Math	2024	Moharimet School	47.00
+Achievement	Participation - ELA (%)	2022	Moharimet School	>90.00%
+Achievement	Participation - ELA (%)	2023	Moharimet School	>90.00%
+Achievement	Participation - ELA (%)	2024	Moharimet School	>90.00%
+Achievement	Participation - Math (%)	2022	Moharimet School	>90.00%
+Achievement	Participation - Math (%)	2023	Moharimet School	>90.00%
+Achievement	Participation - Math (%)	2024	Moharimet School	>90.00%
+Achievement	Participation - Science (%)	2022	Moharimet School	NA
+Achievement	Participation - Science (%)	2023	Moharimet School	NA
+Achievement	Participation - Science (%)	2024	Moharimet School	NA
+Achievement	Proficiency - ELA (%)	2022	Moharimet School	73.00%
+Achievement	Proficiency - ELA (%)	2023	Moharimet School	72.00%
+Achievement	Proficiency - ELA (%)	2024	Moharimet School	74.00%
+Achievement	Proficiency - Math (%)	2022	Moharimet School	76.00%
+Achievement	Proficiency - Math (%)	2023	Moharimet School	74.00%
+Achievement	Proficiency - Math (%)	2024	Moharimet School	68.00%
+Achievement	Proficiency - Math & ELA (%)	2022	Moharimet School	74.50%
+Achievement	Proficiency - Math & ELA (%)	2023	Moharimet School	73.00%
+Achievement	Proficiency - Math & ELA (%)	2024	Moharimet School	71.00%
+College and Career Readiness	Dropout Rate (%)	2022	Moharimet School	NA
+College and Career Readiness	Dropout Rate (%)	2023	Moharimet School	NA
+College and Career Readiness	Dropout Rate (%)	2024	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2022	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2023	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2024	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2022	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2023	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2024	Moharimet School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2022	Moharimet School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2023	Moharimet School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2024	Moharimet School	NA
+Educator	Average Teacher Salary ($)	2022	Moharimet School	$76,257
+Educator	Average Teacher Salary ($)	2023	Moharimet School	$63,538
+Educator	Average Teacher Salary ($)	2024	Moharimet School	$80,573
+Educator	Educators certified in the subject (%)	2022	Moharimet School	100.00%
+Educator	Educators certified in the subject (%)	2023	Moharimet School	95.45%
+Educator	Educators certified in the subject (%)	2024	Moharimet School	95.83%
+Educator	Experienced Educators (%)	2022	Moharimet School	96.55%
+Educator	Experienced Educators (%)	2023	Moharimet School	100.00%
+Educator	Experienced Educators (%)	2024	Moharimet School	96.30%
+ESSA	Achievement Rating	2022	Moharimet School	 4.00
+ESSA	Achievement Rating	2023	Moharimet School	 4.00
+ESSA	Achievement Rating	2024	Moharimet School	 3.00
+ESSA	College and Career Readiness Rating	2022	Moharimet School	
+ESSA	College and Career Readiness Rating	2023	Moharimet School	
+ESSA	College and Career Readiness Rating	2024	Moharimet School	
+ESSA	English Language Proficiency Rating	2022	Moharimet School	*N
+ESSA	English Language Proficiency Rating	2023	Moharimet School	*N
+ESSA	English Language Proficiency Rating	2024	Moharimet School	*N
+ESSA	Equity Rating	2022	Moharimet School	2.00
+ESSA	Equity Rating	2023	Moharimet School	3.00
+ESSA	Equity Rating	2024	Moharimet School	1.00
+ESSA	Graduation Rate Rating	2022	Moharimet School	
+ESSA	Graduation Rate Rating	2023	Moharimet School	
+ESSA	Graduation Rate Rating	2024	Moharimet School	
+ESSA	Growth Rating	2022	Moharimet School	3.00
+ESSA	Growth Rating	2023	Moharimet School	2.00
+ESSA	Growth Rating	2024	Moharimet School	2.00
+ESSA	School Improvement Funds ($)	2022	Moharimet School	N/A
+ESSA	School Improvement Funds ($)	2023	Moharimet School	N/A
+ESSA	School Improvement Funds ($)	2024	Moharimet School	N/A
+Finance	Average Cost Per Pupil ($)	2022	Moharimet School	$22,979
+Finance	Average Cost Per Pupil ($)	2023	Moharimet School	$24,001
+Finance	Average Cost Per Pupil ($)	2024	Moharimet School	$24,852
+Finance	Total Expenditures ($)	2022	Moharimet School	$6,698,901
+Finance	Total Expenditures ($)	2023	Moharimet School	$7,174,228
+Finance	Total Expenditures ($)	2024	Moharimet School	$7,374,339
+Profile	Economically Disadvantaged Students (%)	2022	Moharimet School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2023	Moharimet School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2024	Moharimet School	<10.00%
+Profile	English Language Learner (%)	2022	Moharimet School	<10.00%
+Profile	English Language Learner (%)	2023	Moharimet School	<10.00%
+Profile	English Language Learner (%)	2024	Moharimet School	<10.00%
+Profile	Students with Disability (%)	2022	Moharimet School	14.09%
+Profile	Students with Disability (%)	2023	Moharimet School	15.82%
+Profile	Students with Disability (%)	2024	Moharimet School	18.12%
+Profile	Total Enrollment	2022	Moharimet School	291
+Profile	Total Enrollment	2023	Moharimet School	297
+Profile	Total Enrollment	2024	Moharimet School	298
+School Environment	Average Class Size	2022	Moharimet School	18.80
+School Environment	Average Class Size	2023	Moharimet School	20.20
+School Environment	Average Class Size	2024	Moharimet School	18.70
+School Environment	Expulsion Rate (%)	2022	Moharimet School	<10.00%
+School Environment	Expulsion Rate (%)	2023	Moharimet School	<10.00%
+School Environment	Expulsion Rate (%)	2024	Moharimet School	<10.00%
+School Environment	In School Suspension Rate (%)	2022	Moharimet School	<10.00%
+School Environment	In School Suspension Rate (%)	2023	Moharimet School	<10.00%
+School Environment	In School Suspension Rate (%)	2024	Moharimet School	<10.00%
+School Environment	Incidents of Violence	2022	Moharimet School	0.00
+School Environment	Incidents of Violence	2023	Moharimet School	6.00
+School Environment	Incidents of Violence	2024	Moharimet School	3.00
+School Environment	Out Of School Suspension Rate (%)	2022	Moharimet School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2023	Moharimet School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2024	Moharimet School	<10.00%
+School Environment	Students/Counselors Ratio	2022	Moharimet School	291.00
+School Environment	Students/Counselors Ratio	2023	Moharimet School	297.00
+School Environment	Students/Counselors Ratio	2024	Moharimet School	298.00
+School Environment	Students/Non-Teacher Staff Ratio	2022	Moharimet School	12.33
+School Environment	Students/Non-Teacher Staff Ratio	2023	Moharimet School	11.34
+School Environment	Students/Non-Teacher Staff Ratio	2024	Moharimet School	10.24
+School Environment	Teachers/Total Staff Ratio	2022	Moharimet School	0.64
+School Environment	Teachers/Total Staff Ratio	2023	Moharimet School	0.57
+School Environment	Teachers/Total Staff Ratio	2024	Moharimet School	0.54
+Academic Growth	Student Growth - ELA	2025	Moharimet School	43.00
+Academic Growth	Student Growth - ELA	2026	Moharimet School	54.00
+Academic Growth	Student Growth - Math	2025	Moharimet School	48.00
+Academic Growth	Student Growth - Math	2026	Moharimet School	59.00
+Achievement	Participation - ELA (%)	2025	Moharimet School	>90.00%
+Achievement	Participation - ELA (%)	2026	Moharimet School	>90.00%
+Achievement	Participation - Math (%)	2025	Moharimet School	>90.00%
+Achievement	Participation - Math (%)	2026	Moharimet School	>90.00%
+Achievement	Participation - Science (%)	2025	Moharimet School	NA
+Achievement	Participation - Science (%)	2026	Moharimet School	NA
+Achievement	Proficiency - ELA (%)	2025	Moharimet School	74.00%
+Achievement	Proficiency - ELA (%)	2026	Moharimet School	83.00%
+Achievement	Proficiency - Math (%)	2025	Moharimet School	74.00%
+Achievement	Proficiency - Math (%)	2026	Moharimet School	84.00%
+Achievement	Proficiency - Math & ELA (%)	2025	Moharimet School	74.00%
+Achievement	Proficiency - Math & ELA (%)	2026	Moharimet School	83.50%
+College and Career Readiness	Dropout Rate (%)	2025	Moharimet School	NA
+College and Career Readiness	Dropout Rate (%)	2026	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2025	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 4YR (%)	2026	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2025	Moharimet School	NA
+College and Career Readiness	Graduation Rate - 5YR (%)	2026	Moharimet School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2025	Moharimet School	NA
+College and Career Readiness	Post-secondary Enrollment Rate (%)	2026	Moharimet School	*CS
+Educator	Average Teacher Salary ($)	2025	Moharimet School	$80,573
+Educator	Average Teacher Salary ($)	2026	Moharimet School	$84,074
+Educator	Educators certified in the subject (%)	2025	Moharimet School	100.00%
+Educator	Educators certified in the subject (%)	2026	Moharimet School	100.00%
+Educator	Experienced Educators (%)	2025	Moharimet School	96.55%
+Educator	Experienced Educators (%)	2026	Moharimet School	96.00%
+ESSA	Achievement Rating	2025	Moharimet School	 4.00
+ESSA	Achievement Rating	2026	Moharimet School	 4.00
+ESSA	College and Career Readiness Rating	2025	Moharimet School	
+ESSA	College and Career Readiness Rating	2026	Moharimet School	
+ESSA	English Language Proficiency Rating	2025	Moharimet School	*N
+ESSA	English Language Proficiency Rating	2026	Moharimet School	*N
+ESSA	Equity Rating	2025	Moharimet School	1.00
+ESSA	Equity Rating	2026	Moharimet School	3.00
+ESSA	Graduation Rate Rating	2025	Moharimet School	
+ESSA	Graduation Rate Rating	2026	Moharimet School	
+ESSA	Growth Rating	2025	Moharimet School	2.00
+ESSA	Growth Rating	2026	Moharimet School	3.00
+ESSA	School Improvement Funds ($)	2025	Moharimet School	N/A
+ESSA	School Improvement Funds ($)	2026	Moharimet School	*CS
+Finance	Average Cost Per Pupil ($)	2025	Moharimet School	$24,253
+Finance	Average Cost Per Pupil ($)	2026	Moharimet School	*CS
+Finance	Total Expenditures ($)	2025	Moharimet School	$7,578,715
+Finance	Total Expenditures ($)	2026	Moharimet School	*CS
+Profile	Economically Disadvantaged Students (%)	2025	Moharimet School	<10.00%
+Profile	Economically Disadvantaged Students (%)	2026	Moharimet School	<10.00%
+Profile	English Language Learner (%)	2025	Moharimet School	<10.00%
+Profile	English Language Learner (%)	2026	Moharimet School	<10.00%
+Profile	Students with Disability (%)	2025	Moharimet School	17.48%
+Profile	Students with Disability (%)	2026	Moharimet School	16.19%
+Profile	Total Enrollment	2025	Moharimet School	309
+Profile	Total Enrollment	2026	Moharimet School	315
+School Environment	Average Class Size	2025	Moharimet School	18.50
+School Environment	Average Class Size	2026	Moharimet School	18.50
+School Environment	Expulsion Rate (%)	2025	Moharimet School	<10.00%
+School Environment	Expulsion Rate (%)	2026	Moharimet School	<10.00%
+School Environment	In School Suspension Rate (%)	2025	Moharimet School	<10.00%
+School Environment	In School Suspension Rate (%)	2026	Moharimet School	<10.00%
+School Environment	Incidents of Violence	2025	Moharimet School	1.00
+School Environment	Incidents of Violence	2026	Moharimet School	0.00
+School Environment	Out Of School Suspension Rate (%)	2025	Moharimet School	<10.00%
+School Environment	Out Of School Suspension Rate (%)	2026	Moharimet School	<10.00%
+School Environment	Students/Counselors Ratio	2025	Moharimet School	309.00
+School Environment	Students/Counselors Ratio	2026	Moharimet School	315.00
+School Environment	Students/Non-Teacher Staff Ratio	2025	Moharimet School	10.55
+School Environment	Students/Non-Teacher Staff Ratio	2026	Moharimet School	16.15
+School Environment	Teachers/Total Staff Ratio	2025	Moharimet School	0.51
+School Environment	Teachers/Total Staff Ratio	2026	Moharimet School	0.61
