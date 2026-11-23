@@ -144,7 +144,7 @@ dash.calc('headline', {
   var sel = 7;
   var mode = 'nom';
   var MODES = { nom: { label: 'Nominal dollars', f: null }, cpi: { label: 'Northeast CPI-U', f: 'f_cpi', idx: 'cpi_ne', n: 'cpi_ne_months', nn: 12 }, eci: { label: 'education labor costs (ECI)', f: 'f_eci', idx: 'eci_edu', n: 'eci_quarters', nn: 4 } };
-  var MONEY = ['gfo_sal', 'gfo_ben', 'gfo_pur', 'gfo_sup', 'gfo_prop', 'gfo_oth', 'gfo_tot', 'gfo_sb', 'gfo_np', 'sch_mw', 'sch_mo', 'sch_ps', 'sch_ms', 'sch_hs', 'sch_od', 'sch_tot', 'pers_t_sal', 'pers_a_sal', 'pers_o_sal', 'pers_t_ben', 'pers_a_ben', 'pers_o_ben', 'pers_ao_sal', 'fe_gen_rev', 'fe_gen_exp', 'fe_gen_net', 'fe_gen_beg', 'fe_gen_end', 'fe_food_rev', 'fe_food_exp', 'fe_food_net', 'fe_food_beg', 'fe_food_end', 'fe_spr_rev', 'fe_spr_exp', 'fe_spr_net', 'fe_spr_beg', 'fe_spr_end', 'rsa_cost', 'rsa_rel', 'rsa_trn', 'rsa_idea', 'rsa_tot', 'rsa_aid', 'rsa_med', 'rsa_fed', 'rsa_rev', 'rsa_net', 'bd_unspent', 'bd_appr', 'bd_exp', 'dflt_gap', 'dflt', 'f10', 'f21', 'f22', 'f23', 'debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'fb_tot', 'fb_un', 'fb_com', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
+  var MONEY = ['gfo_sal', 'gfo_ben', 'gfo_pur', 'gfo_sup', 'gfo_prop', 'gfo_oth', 'gfo_tot', 'gfo_sb', 'gfo_np', 'sch_mw', 'sch_mo', 'sch_ps', 'sch_ms', 'sch_hs', 'sch_od', 'sch_tot', 'pers_t_sal', 'pers_a_sal', 'pers_o_sal', 'pers_t_ben', 'pers_a_ben', 'pers_o_ben', 'pers_ao_sal', 'fe_gen_rev', 'fe_gen_exp', 'fe_gen_net', 'fe_gen_beg', 'fe_gen_end', 'fe_food_rev', 'fe_food_exp', 'fe_food_net', 'fe_food_beg', 'fe_food_end', 'fe_spr_rev', 'fe_spr_exp', 'fe_spr_net', 'fe_spr_beg', 'fe_spr_end', 'rsd_ins', 'rsd_rel', 'rsd_adm', 'rsd_leg', 'rsd_trn', 'rsd_tui', 'rsd_sub', 'rsd_tot', 'rsd_aid', 'rsd_idea', 'rsd_med', 'rsd_rev', 'rsd_net', 'fb_prep', 'fb_vote', 'fb_enc', 'fb_ret', 'fb_una', 'fb_trust', 'bd_unspent', 'bd_appr', 'bd_exp', 'dflt_gap', 'dflt', 'f10', 'f21', 'f22', 'f23', 'debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
   var NAMES = ['gfo', 'sps', 'pers', 'fres', 'rsa', 'spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'bvx', 'dflt', 'timp', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts'];
 
   var SCH = [['High school', 'hs'], ['Middle school', 'ms'], ['Mast Way', 'mw'], ['Moharimet', 'mo']];
@@ -1149,24 +1149,22 @@ dash.calc('headline', {
   };
   ROWS.fb = {
     money: true,
-    aria: 'General fund balance at June 30: total and unassigned, by fiscal year',
-    domain: [0, 4300000], ticks: [0, 1000000, 2000000, 3000000, 4000000], axis: false,
+    aria: 'General Fund equity and trust-fund equity at June 30, by fiscal year',
+    domain: [0, 3000000], ticks: [0, 1000000, 2000000], axis: false,
     tickFmt: function (v) { return v === 0 ? '$0' : '$' + (v / 1e6) + 'M'; },
     series: [
-      { id: 'un', get: function (r) { return r.fb_un; }, alt: 'square' },
-      { id: 'tot', get: function (r) { return r.fb_tot; }, main: true }
+      { id: 'trust', get: function (r) { return r.fb_trust; }, alt: 'square' },
+      { id: 'gen', get: function (r) { return r.fe_gen_end; }, main: true }
     ],
     label: function (r) {
-      if (r.fb_tot == null && r.fb_un_pre != null) return { big: moneyM(r.fb_un_pre, 2), sub: 'Unassigned balance, preliminary (audit not posted)', delta: 'Total not yet available', tag: 'Preliminary', prov: true, src: 'years', field: 'fb_un_pre' };
-      if (r.fb_tot == null) return nodata('Audit for this year not yet posted', 'fb_tot', 'years', 'Pending');
-      return { big: moneyM(r.fb_tot, 2), sub: 'General fund balance at June 30', delta: 'Unassigned ' + moneyM(r.fb_un, 2), tag: 'Audited', prov: false, src: 'years', field: 'fb_tot' };
+      if (r.fe_gen_end == null) return nodata('DOE-25 for this year not yet filed', 'fe_gen_end', 'years', 'Pending');
+      return { big: moneyM(r.fe_gen_end, 2), sub: 'General Fund balance at June 30', delta: 'Trust funds ' + moneyM(r.fb_trust, 2), tag: 'Reported', prov: false, src: 'years', field: 'fe_gen_end' };
     },
     tip: function (r) {
-      if (r.fb_tot == null && r.fb_un_pre != null) return { lines: [['Unassigned fund balance (preliminary)', money(r.fb_un_pre)], ['Total fund balance', 'not yet posted']], note: 'From the district June 2025 monthly financial report, which is preliminary and unaudited. The FY2025 audit has not been posted. Total and committed balances will be added when it is.' };
-      if (r.fb_tot == null) return { lines: [['Fund balance', 'not yet posted']], note: 'The audit for this year has not been posted. The district’s audits are on orcsd.org under Business Office.' };
-      var L = [['Total general fund balance', money(r.fb_tot)], ['Unassigned (free to use)', money(r.fb_un)], ['Committed (set aside)', money(r.fb_com)]];
-      if (r.actual_recurring != null) L.push(['Unassigned ÷ operating spending', p1(r.fb_un / r.actual_recurring * 100)]);
-      return { lines: L, note: 'Audited general fund balances at June 30. Committed money is set aside for specific purposes such as the facilities and special education trusts and encumbrances. Unassigned balance can be used to lower the next tax rate. Source: ORCSD audited financial statements.' };
+      if (r.fe_gen_end == null) return { lines: [['Fund balance', 'DOE-25 not yet filed']], note: 'The DOE-25 for this year has not been published.' };
+      var L = [['General Fund balance', money(r.fe_gen_end)], ['Reserved for prepaid expenses', money(r.fb_prep)], ['Reserved for amounts voted', money(r.fb_vote)], ['Reserved for encumbrances', money(r.fb_enc)], ['Unassigned fund balance retained', money(r.fb_ret)], ['Unassigned fund balance', money(r.fb_una)], ['Trust funds (capital reserves)', money(r.fb_trust)]];
+      if (r.actual_recurring != null) L.push(['General Fund balance ÷ operating spending', p1(r.fe_gen_end / r.actual_recurring * 100)]);
+      return { lines: L, note: 'NH DOE DOE-25 balance sheet at June 30, the General Fund column, with the trust-fund column shown separately. The audited statements fold the trust funds into the General Fund, which is why the audit’s “general fund balance” is higher (FY2024: audit $3.63M; DOE-25 General Fund $1.84M plus trust funds $1.93M = $3.77M); the audit and the DOE-25 also differ on the direction of change in some years (see CONFLICTS.md). The lines are labeled as the DOE-25 labels them.' };
     }
   };
   ROWS.debt = {
@@ -1462,28 +1460,28 @@ dash.calc('headline', {
     }
   };
   ROWS.lvlenr.chg = { get: function (r) { return r.en_hs; }, kind: 'pct', note: 'high school' };
-  ROWS.fb.chg = { get: function (r) { return r.fb_tot; }, kind: 'pct', note: 'total fund balance' };
+  ROWS.fb.chg = { get: function (r) { return r.fe_gen_end; }, kind: 'pct', note: 'General Fund balance' };
   ROWS.rsa = {
     money: true,
     aria: 'Special education expenditures and the state and federal revenue that offsets them, by fiscal year',
-    domain: [0, 13000000], ticks: [0, 5000000, 10000000], axis: false,
+    domain: [0, 14000000], ticks: [0, 5000000, 10000000], axis: false,
     tickFmt: function (v) { return v === 0 ? '$0' : '$' + (v / 1e6) + 'M'; },
     series: [
-      { id: 'rev', get: function (r) { return r.rsa_rev; }, alt: 'square' },
-      { id: 'tot', get: function (r) { return r.rsa_tot; }, main: true }
+      { id: 'rev', get: function (r) { return r.rsd_rev; }, alt: 'square' },
+      { id: 'tot', get: function (r) { return r.rsd_tot; }, main: true }
     ],
     label: function (r) {
-      if (r.rsa_tot == null) return nodata('Printed for 2022-23 to 2024-25 only', 'rsa_tot', 'years', 'Not printed');
-      return { big: moneyM(r.rsa_tot, 1), sub: 'Special education expenditures, all functions', delta: 'Net after aid and grants ' + moneyM(r.rsa_net, 1), tag: 'Reported', prov: false, src: 'years', field: 'rsa_tot' };
+      if (r.rsd_tot == null) return nodata('DOE-25 for this year not yet filed', 'rsd_tot', 'years', 'Pending');
+      return { big: moneyM(r.rsd_tot, 1), sub: 'Special education expenditures, all functions', delta: 'Net after aid and grants ' + moneyM(r.rsd_net, 1), tag: 'Reported', prov: false, src: 'years', field: 'rsd_tot' };
     },
     tip: function (r) {
-      if (r.rsa_tot == null) return { lines: [['Special education', 'not printed for this year']], note: 'The district prints this table for 2022-23 to 2024-25 only.' };
-      var L = [['Special education programs (1200)', money(r.rsa_cost)], ['Related services', money(r.rsa_rel)], ['Transportation', money(r.rsa_trn)], ['IDEA federal grant', money(r.rsa_idea)], ['Total expenditures', money(r.rsa_tot)],
-               ['State special education aid', money(r.rsa_aid)], ['Medicaid reimbursement', money(r.rsa_med)], ['IDEA federal grant (revenue)', money(r.rsa_fed)], ['Total revenues', money(r.rsa_rev)], ['Net cost to the district', money(r.rsa_net)]];
-      return { lines: L, note: 'The table the district prints per RSA 32:11-a. It is the district’s own table, not a state series: its special programs figure differs from the DOE-25 and the MS-26 for the same year (see CONFLICTS.md). Source: ORCSD annual reports, 2025 and 2026 editions.' };
+      if (r.rsd_tot == null) return { lines: [['Special education', 'DOE-25 not yet filed']], note: 'The DOE-25 for this year has not been published.' };
+      var L = [['Instruction', money(r.rsd_ins)], ['Related services', money(r.rsd_rel)], ['Administration', money(r.rsd_adm)], ['Legal', money(r.rsd_leg)], ['Transportation', money(r.rsd_trn)], ['Tuition to other schools', money(r.rsd_tui)], ['Total expenditures', money(r.rsd_tot)],
+               ['State special education aid', money(r.rsd_aid)], ['Disabilities programs (IDEA, federal)', money(r.rsd_idea)], ['Medicaid distributions', money(r.rsd_med)], ['Total revenues', money(r.rsd_rev)], ['Net cost to the district', money(r.rsd_net)]];
+      return { lines: L, note: 'NH DOE DOE-25: the detailed special education expenditure page (page 21: instruction, related services, administration, legal, transportation, for handicapped and disabled students only), special-program tuition from page 22, and revenue accounts 3230, 4570 and 4580. The district’s own RSA 32:11-a table in its annual reports uses the same revenue and the same related services and transportation lines but a different instruction figure (see CONFLICTS.md).' };
     }
   };
-  ROWS.rsa.chg = { get: function (r) { return r.rsa_tot; }, kind: 'pct', note: 'special education spending' };
+  ROWS.rsa.chg = { get: function (r) { return r.rsd_tot; }, kind: 'pct', note: 'special education spending' };
   ROWS.gfo = {
     money: true,
     aria: 'General Fund expenditures: salaries and benefits, and everything else, by fiscal year',

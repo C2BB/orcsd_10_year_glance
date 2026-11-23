@@ -55,7 +55,7 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `spend` | `doe25`, `bud` |
 | `students` | `iach`, `ar26` |
 | `budget` | `bud`, `vote` |
-| `fb` | `audit` |
+| `fb` | `doe25` |
 | `cpp` | `doe25`, `cpp` |
 | `cmp` | `cpp`, `cppst` |
 | `lvl` | `cpp`, `doe25` |
@@ -122,7 +122,7 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `bvx` | `ar` |
 | `dflt` | `ar` |
 | `timp` | `ar` |
-| `rsa` | `ar25`, `ar26` |
+| `rsa` | `doe25`, `spaid` |
 | `gfo` | `doe25` |
 | `sps` | `doe25` |
 | `pers` | `doe25` |

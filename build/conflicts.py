@@ -6,7 +6,7 @@ Outputs:  data/conflicts.csv (every comparison made: agreements too) and CONFLIC
 Verdicts:  agree = same to the printed precision;  CONFLICT = the two sources print different numbers for the same measure and year and nothing about definitions explains it;
            definition = differs because the two sources count different things (dates, populations, fund coverage); the note says how;  internal = the district disagrees with itself.
 Year key = FY (year the school year ends); iExplore 'doe_year' is the same key (verified: 2015-16 enrollment 2,054 is doe_year 2016)."""
-import csv, json, os, re, collections
+import csv, json, os, re, collections, sys
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 P = lambda *a: os.path.join(ROOT, *a)
@@ -126,8 +126,6 @@ for fy in range(2018, 2025):
     if a and b: add("district-vs-state", "Total expenditures, governmental funds (audit) vs DOE-25 total expenditures", fy, a, b, tol=1, verdict_if_diff="different basis")
     a, b = AUs("f_revenues_total", fy), PG("rev_tot", fy, "NH DOE DOE-25, Total Revenues")
     if a and b: add("district-vs-state", "Total revenues, governmental funds (audit) vs DOE-25 total revenues", fy, a, b, tol=1, verdict_if_diff="different basis")
-    a, b = AUs("gf_fb_total", fy), PG("fb_tot", fy, "ORCSD audit, as on the page")
-    if a and b: add("district-vs-district", "General fund balance, audit vs page", fy, a, b, tol=1)
 
 
 # ---------------------------------------------------------------- 4. state vs state, and the district against itself ---------------------------------------------------
@@ -300,25 +298,37 @@ for fy in range(2018, 2026):
                         note="The district's printed 'State' averages differ from the College Board's New Hampshire report (all NH graduates who took the SAT) in every year but 2018, by up to 27 points; the district's figures do not match any other total-group table in that report either, and the source of the district's column is not stated. The page now uses the College Board figure.")
 
 # ---------------------------------------------------------------- 8. special education expenditures "per RSA 32:11-a" (annual reports 2025 and 2026) -------------------------------------------
+sys.path.insert(0, os.path.join(ROOT, "build"))
+import rc_data as _rcd
+def RSD(i, fy, label):
+    v = _rcd._RSA.get(fy)
+    return None if v is None else (label, v[i], "")
 RSAW = lambda fy: "Annual_Reports__%d_ORCSD_Annual_Report.pdf p.15 (RSA 32:11-a table)" % (2025 if fy <= 2024 else 2026)
 def msl(rep, acct, part="appropriations"):
     return next((r for r in MS if r["report"] == rep and r.get("kind") == "line" and r["part"] == part and r.get("account") == acct), None)
 for fy in (2023, 2024, 2025):
-    a = PG("rsa_cost", fy, "ORCSD annual report, RSA 32:11-a table, special education costs (1200)"); a = None if a is None else (a[0], a[1], RSAW(fy))
+    a = RSD(0, fy, "ORCSD annual report, RSA 32:11-a table, special education costs (1200)"); a = None if a is None else (a[0], a[1], RSAW(fy))
     b = PG("fn_spec", fy, "NH DOE DOE-25, special programs (as on the page)")
     if a and b: add("district-vs-state", "Special education programs (function 1200): RSA 32:11-a table vs DOE-25", fy, a, b, tol=2, verdict_if_diff="CONFLICT",
-                    note="The district's RSA 32:11-a table, the MS-26 (DRA) and the DOE-25 (DOE) give three different amounts for special programs in the same year (FY2025: $8,419,644, $7,470,356, $7,970,563). The documents do not say why; the table may include the district's share of costs that the two state forms classify elsewhere. The page's special-education row uses the district's table and labels it as the district's.")
+                    note="The district's RSA 32:11-a table, the MS-26 (DRA) and the DOE-25 (DOE) give three different amounts for special programs in the same year (FY2025: $8,419,644, $7,470,356, $7,970,563). The documents do not say why; the table may include the district's share of costs that the two state forms classify elsewhere. The page's special-education row uses the DOE-25 (state first); the district's table stays in this log.")
     for rep in (2025, 2026):
         m = msl(rep, "1200-1299")
         if m and rep - 1 == fy and a: add("district-vs-state", "Special education programs (function 1200): RSA 32:11-a table vs MS-26", fy, a, ("ORCSD annual report %d, MS-26 special programs actual" % rep, m["values"][0], MSW(rep, m["pdf_page"])), tol=2, verdict_if_diff="CONFLICT")
-    sa = PG("rsa_aid", fy, "ORCSD annual report, RSA 32:11-a table, state special education aid")
+    sa = RSD(5, fy, "ORCSD annual report, RSA 32:11-a table, state special education aid")
     for rep in (2025, 2026):
         m = msl(rep, "3230", "revenue")
         if m and rep - 1 == fy and sa: add("district-vs-state", "State special education aid: RSA 32:11-a table vs MS-26 revenue (3230)", fy, (sa[0], sa[1], RSAW(fy)), ("ORCSD annual report %d, MS-26 actual revenue" % rep, m["values"][0], MSW(rep, m["pdf_page"])), tol=2)
-    me = PG("rsa_med", fy, "ORCSD annual report, RSA 32:11-a table, Medicaid reimbursement")
+    me = RSD(6, fy, "ORCSD annual report, RSA 32:11-a table, Medicaid reimbursement")
     for rep in (2025, 2026):
         m = msl(rep, "4580", "revenue")
         if m and rep - 1 == fy and me: add("district-vs-state", "Medicaid reimbursement: RSA 32:11-a table vs MS-26 revenue (4580)", fy, (me[0], me[1], RSAW(fy)), ("ORCSD annual report %d, MS-26 actual revenue" % rep, m["values"][0], MSW(rep, m["pdf_page"])), tol=2)
+    for i, k, topic in ((1, "rsd_rel", "Related services: RSA 32:11-a table vs DOE-25 page 21"), (2, "rsd_trn", "Special education transportation: RSA 32:11-a table vs DOE-25 page 21"), (8, "rsd_rev", "Special education revenue (state aid + IDEA + Medicaid): RSA 32:11-a table vs DOE-25 revenue lines")):
+        a, b = RSD(i, fy, "ORCSD annual report, RSA 32:11-a table"), PG(k, fy, "NH DOE DOE-25 (special education detail, page 21 / revenue lines)")
+        if a and b: add("district-vs-state", topic, fy, (a[0], a[1], RSAW(fy)), b, tol=2)
+    a, b = RSD(0, fy, "ORCSD annual report, RSA 32:11-a table, special education programs (1200)"), None
+    if PAGE.get(fy, {}).get("rsd_ins") is not None:
+        b = ("NH DOE DOE-25 page 21 instruction plus page 22 special-program tuition", PAGE[fy]["rsd_ins"] + PAGE[fy]["rsd_tui"], "data/orcsd_years.json fields rsd_ins + rsd_tui")
+    if a and b: add("district-vs-state", "Special education instruction: RSA 32:11-a table vs DOE-25 page 21 instruction plus special-program tuition", fy, (a[0], a[1], RSAW(fy)), b, tol=2, verdict_if_diff="different basis")
 
 # ---------------------------------------------------------------- 9. General Fund: audited statements vs the DOE-25 Statement of Analysis of Change in Fund Equity -----------------------------
 DOEFE = lambda fy: "raw/nh-doe25 DOE25_id%d.xlsx, DOE25 sheet, Statement of Analysis of Change in Fund Equity" % {2018: 131, 2019: 306, 2020: 484, 2021: 544, 2022: 946, 2023: 1131, 2024: 2221, 2025: 2414}[fy]
@@ -328,6 +338,10 @@ for fy in range(2018, 2025):
                           ("gf_expenditures_total", "fe_gen_exp", "General Fund expenditures: audit vs DOE-25 (expenditures and other deletions)")):
         a, b = AUs(au, fy), PG(pg, fy, "NH DOE DOE-25, General Fund")
         if a and b: add("district-vs-state", topic, fy, a, (b[0], b[1], DOEFE(fy)), tol=1, verdict_if_diff="different basis")
+    a = AUs("gf_fb_total", fy)
+    if a and PAGE.get(fy, {}).get("fe_gen_end") is not None:
+        add("district-vs-state", "General Fund balance at June 30: audit vs DOE-25 General Fund plus trust funds (the audit folds the expendable trusts into the General Fund)", fy, a,
+            ("NH DOE DOE-25, General Fund equity plus trust-fund equity", round(PAGE[fy]["fe_gen_end"] + PAGE[fy]["fb_trust"], 2), DOEFE(fy)), tol=1, verdict_if_diff="different basis")
     pa, pb = AU.get(fy - 1, {}).get("gf_fb_total"), AU.get(fy, {}).get("gf_fb_total")
     if pa and pb:
         d_au = pb["v"] - pa["v"]
@@ -338,7 +352,8 @@ for fy in range(2018, 2025):
 
 # ---------------------------------------------------------------- notes, size, de-duplication, output ----------------------------------------------------------------------
 NOTES = [  # (topic prefix, note) - applied to rows that differ and have no note yet
- ("General Fund balance at June 30: audit vs DOE-25", "Not reconciled. The audit's General Fund balance is $0.6M to $1.8M higher than the DOE-25's General Fund equity in every year. Neither document says why; the audit's balance includes nonspendable, restricted and committed amounts, so the DOE-25 equity may be a narrower measure. The page's fund balance row uses the audit; the new fund-results row uses the DOE-25 (state first). Ask the business office which one the state intends to be comparable."),
+ ("General Fund balance at June 30: audit vs DOE-25 fund equity", "Not reconciled. The audit's General Fund balance is $0.6M to $1.8M higher than the DOE-25's General Fund equity every year. Most of the gap is the trust funds: the DOE-25 reports the district's expendable (capital reserve) trusts separately ($1.3M to $1.9M), and the audit folds them into the General Fund; the next table adds them back and leaves $0.1M to $0.8M unexplained. The page's fund balance row uses the DOE-25 (state first)."),
+ ("General Fund balance at June 30: audit vs DOE-25 General Fund plus trust funds", "Not reconciled; $0.1M-$0.8M apart after adding the trust funds back (FY2019 is the widest). Neither document says what else differs."),
  ("Change in General Fund balance during the year", "The two documents disagree about whether the General Fund ran a surplus or a deficit: FY2019 (audit -$146K, DOE-25 +$294K), FY2022 (audit -$109K, DOE-25 +$158K) and FY2024 (audit +$286K, DOE-25 -$139K) have opposite signs; the other four years agree on direction but not on size. The audit includes transfers and items the DOE-25's revenue and expenditure lines treat differently; the business office can reconcile the two."),
  ("Enrollment, October 1, all grades", "The district's Report Card prints the sum of the four schools for FY2019, FY2020 and FY2026 (2,157, 2,168, 2,038), which is also what the DOE's student-to-teacher file uses (2,157, 2,168, 2,038), but the DOE district total in FY2016-FY2018 and FY2021-FY2025. So the state itself has two figures: its district total (iExplore) and the sum of its schools, 25-34 apart from FY2019 on. The page uses the iExplore district total in every year."),
  ("Budget Summary by Location", "Arithmetic inside the district's own table: the FY2024 approved rows add to $1,000 more than the printed total (the other tables tie to the dollar)."),
@@ -420,7 +435,7 @@ def md():
          "12. **MS-26 (the NH DRA budget form, reprinted as images in the 2025 and 2026 reports; OCR'd, every subtotal re-added) vs DOE-25:** for FY2024 and FY2025 regular programs, vocational, student support, school administration, business, transportation and debt interest tie to the dollar, but special programs ($312K and $500K), other instruction, instructional staff services and (FY2025) plant operations differ, DOE-25 mostly higher. The 2025 report's MS-26 prints FY2024 plant operations as $0 against $4.36M in DOE-25, so its total actual spending is $4.3M low. The MS-26's FY2026 'appropriated' column includes the $1.67M of union-contract warrant articles that the page's operating budget leaves out.",
          "13. **NH SAT averages:** the district's printed State column does not match the College Board's New Hampshire report (the DOE hosts it) in any year but 2018, by up to 27 points; the page now uses the College Board's figures for all graduates (class of 2018-2025).",
          "14. **Special education spending, three amounts for one year:** for FY2025 special programs are $8,419,644 in the district's RSA 32:11-a table, $7,970,563 in the DOE-25 and $7,470,356 in the MS-26 (FY2024: $8,023,162, $7,694,329, $8,006,444). The state aid and Medicaid lines of the RSA table tie to the MS-26 revenue lines to the dollar, so the disagreement is in expenditure classification. The page shows the district's table in its own row, labeled as the district's.",
-         "15. **General Fund: the audit and the DOE-25 disagree about the balance and about the direction of change.** The audit's General Fund balance is $0.6M to $1.8M above the DOE-25's General Fund equity every year FY2018-FY2024, and in FY2019, FY2022 and FY2024 they disagree on whether the fund gained or lost money during the year (e.g. FY2024: audit +$286K, DOE-25 -$139K). The page's fund-results row uses the DOE-25 (state first); the fund balance row uses the audit. See General Fund balance in the log below.",
+         "15. **General Fund: the audit and the DOE-25 disagree about the balance and about the direction of change.** The audit's General Fund balance is $0.6M to $1.8M above the DOE-25's General Fund equity every year FY2018-FY2024. Most of that is the capital reserve trust funds, which the DOE-25 reports separately and the audit folds into the General Fund; adding them back leaves $0.1M-$0.8M unexplained. In FY2019, FY2022 and FY2024 the two also disagree on whether the General Fund gained or lost money during the year (FY2024: audit +$286K, DOE-25 -$139K). The page uses the DOE-25 (state first).",
          "", "## Where the Report Card matches the state", "",
          "Enrollment by level, average teacher salary (district), cost per pupil by level, student-to-teacher ratio (district), dropout counts against iExplore's dropout rate (count divided by grade 9-12 enrollment), and iExplore totals of expenditures, revenues, cost per pupil and salary against the DOE-25 and DOE files the page holds all agree wherever both exist (counts in the CSV). "
          "The Report Card is tied to the DOE for these measures; the differences above are where it is not.", ""]

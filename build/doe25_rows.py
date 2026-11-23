@@ -70,6 +70,35 @@ def fields():
             put("pers_%s_sal" % c, y, sum(_nz(b["cls"].get(c, [0, 0])[0]) for b in blocks))
             put("pers_%s_ben" % c, y, sum(_nz(b["cls"].get(c, [0, 0])[1]) for b in blocks))
 
+        # ---- General Fund equity by component and trust-fund equity (balance sheet, DOE25 sheet rows 30-53; GF = first fund column, trust = fifth)
+        bs = [r for r in rows if r["sheet"] == "DOE25" and 30 <= r["row"] <= 53]
+        def bsum(pred, col=0):
+            return sum(_nz((list(r["values"]) + [None] * 5)[col]) for r in bs if pred(r["label"].strip().upper()))
+        put("fb_prep", y, bsum(lambda l: l.startswith("RESERVE FOR PREPAID")))
+        put("fb_vote", y, bsum(lambda l: l.startswith("RESERVE FOR AMTS VOTED")))
+        put("fb_enc", y, bsum(lambda l: l.startswith("RESERVE FOR ENCUMBRANCES") or l.startswith("RESERVED FOR ENCUMBRANCES")) + bsum(lambda l: l.startswith("RESERVE FOR CONTINUING")))
+        put("fb_ret", y, bsum(lambda l: l.startswith("UNASSIGNED FUND BALANCE RETAINED")))
+        put("fb_una", y, bsum(lambda l: l == "UNASSIGNED FUND BALANCE"))
+        put("fb_trust", y, bsum(lambda l: l == "TOTAL FUND EQUITY", 4))
+
+        # ---- Special education expenditure detail (DOE25 sheet page 21: instruction, related services, administration, legal, transportation; page 22 tuition) and its revenue lines
+        def last(r):
+            n = [x for x in r["values"] if isinstance(x, (int, float))]
+            return n[-1] if n else 0.0
+        p21 = {str(r["line"]): r for r in rows if r["sheet"] == "DOE25" and str(r["page"]) == "21" and str(r["line"]) in ("4", "8", "12", "16", "20", "21")}
+        assert set(p21) == {"4", "8", "12", "16", "20", "21"}, (y, sorted(p21))
+        for k, ln in (("rsd_ins", "4"), ("rsd_rel", "8"), ("rsd_adm", "12"), ("rsd_leg", "16"), ("rsd_trn", "20"), ("rsd_sub", "21")):
+            put(k, y, last(p21[ln]))
+        put("rsd_tui", y, sum(last(r) for r in rows if r["sheet"] == "DOE25" and r["label"].startswith(("Special Program Tuition", "Special Program Residential"))))
+        put("rsd_tot", y, out["rsd_sub"][y] + out["rsd_tui"][y])
+        def rev(acct):
+            m = [r for r in rows if r["sheet"] == "DOE25" and str(r["acct"]) == acct and 100 < r["row"] < 175]
+            assert len(m) == 1, (y, acct, len(m))
+            return sum(_nz(x) for x in m[0]["values"][:5])
+        put("rsd_aid", y, rev("3230")); put("rsd_idea", y, rev("4570")); put("rsd_med", y, rev("4580"))
+        put("rsd_rev", y, out["rsd_aid"][y] + out["rsd_idea"][y] + out["rsd_med"][y])
+        put("rsd_net", y, out["rsd_tot"][y] - out["rsd_rev"][y])
+
         # ---- Spending by school, all funds (School Level Expenditures; first sheet year is FY2019)
         sl = [r for r in rows if r["sheet"] == "School Level"]
         for r in sl:

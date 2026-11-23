@@ -18,9 +18,6 @@ put("en_ms", per([659, 667, 665, 658, 629, 643, 618, 585, 560, 563]))
 put("en_hs", per([793, 809, 832, 835, 858, 843, 838, 825, 796, 788]))
 
 # General fund balances at June 30 (audited statements); FY2025 audit not yet posted
-put("fb_tot", {2018: 1864974, 2019: 1718793, 2020: 2746428, 2021: 3816193, 2022: 3706994, 2023: 3343147, 2024: 3629203})
-put("fb_un",  {2018: 188357,  2019: 127243,  2020: 414071,  2021: 828933,  2022: 1130890, 2023: 754798,  2024: 318833})
-put("fb_com", {2018: 1493229, 2019: 1557413, 2020: 2322307, 2021: 2575093, 2022: 2343483, 2023: 2543657, 2024: 3279007})
 
 # Average class size, DOE data printed in the ORCSD reports (district school / NH average by grade band); 2017-18 to 2025-26 (2025-26 from the iPlatform Average Class Size By School report, as of Oct 1, 2025)
 put("cs_mw12", per([21.1, 20.8, 20.0, 16.3, 17.6, 17.9, 17.5, 18.0, 18.0]))
@@ -131,7 +128,6 @@ put("pr_nes",  {2022: 2128, 2023: 2062, 2024: 2118, 2025: 2139, 2026: 2149, 2027
 put("pr_lrpc", {2019: 2153, 2020: 2175, 2021: 2136, 2022: 2115, 2023: 2076, 2024: 2047, 2025: 2015, 2026: 1988, 2027: 1978})
 
 # FY2025 unassigned general fund balance at June 30, 2025 per the June 2025 monthly financial report (preliminary, unaudited; FY2025 audit not posted)
-put("fb_un_pre", {2025: 63580})
 
 # ---- Added Nov 22, 2026: NH DOE other state aid programs and School Safety Data Collection (all keyed by FY end year) ----
 # Building aid distribution FY10-FY26 and FY27-FY41 (revised June 30, 2026): Oyster River $523,742 a year 2012-13 to 2022-23, $0 from 2023-24.
@@ -341,9 +337,7 @@ _RSA = {  # fy: (special ed 1200, related services, transportation 2722, IDEA gr
     2023: (7500199, 2248265, 305784, 558569, 10612817, 298552, 130497, 558569, 987617),
     2024: (8023162, 2413345, 406057, 520529, 11363093, 295029, 168136, 520529, 983694),
     2025: (8419644, 2620469, 259742, 500208, 11800063, 133198, 195370, 500208, 828776)}
-for _i, _n in enumerate(("rsa_cost", "rsa_rel", "rsa_trn", "rsa_idea", "rsa_tot", "rsa_aid", "rsa_med", "rsa_fed", "rsa_rev")):
-    put(_n, {y: v[_i] for y, v in _RSA.items()})
-put("rsa_net", {y: v[4] - v[8] for y, v in _RSA.items()})
+# (not on the page since 2026-11-23: the state-first rule; the page uses the DOE-25 special education detail, and CONFLICTS.md compares this table with it)
 
 # From the other sheets of the DOE-25 workbooks (doe25_rows.py reads doe25_all.json, made by doe25_extract.py): General Fund by type,
 # change in fund equity by fund, instructional pay by job class, and spending by school.

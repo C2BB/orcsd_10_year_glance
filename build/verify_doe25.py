@@ -128,6 +128,27 @@ for y in IDS:
                 chk("food service equity (Attachment W) FY%d" % y, R["fe_food_end"][y], n[0], 0.5)
             if n and t.strip().startswith("Total Expenditures"):
                 chk("food service expenditures (Attachment W) FY%d" % y, R["fe_food_exp"][y], n[0], 5.0)
+    # General Fund equity components add to the total; trust funds read independently
+    chk("GF equity components add to total FY%d" % y, sum(R[k][y] for k in ("fb_prep", "fb_vote", "fb_enc", "fb_ret", "fb_una")), R["fe_gen_end"][y], 1.0)
+    chk("trust-fund equity FY%d" % y, R["fb_trust"][y], [c.value for c in next(row for row in ws.iter_rows(min_col=1, max_col=14) if row[0].row < 60 and isinstance(row[0].value, str) and row[0].value.strip() == "Total Fund Equity")[5:10]][4])
+    # special education detail: page 21 total (line 21), special-program tuition (page 22), revenue accounts 3230 / 4570 / 4580
+    p21 = [row for row in ws.iter_rows(min_col=1, max_col=14) if str(row[1].value).strip() == "21" and str(row[2].value).strip() == "21"]
+    assert len(p21) == 1, (y, len(p21))
+    chk("special education page 21 total FY%d" % y, R["rsd_sub"][y], [c.value for c in p21[0][3:14] if isinstance(c.value, (int, float))][-1])
+    tui = 0.0
+    for row in ws.iter_rows(min_col=1, max_col=14):
+        if isinstance(row[0].value, str) and row[0].value.strip().startswith(("Special Program Tuition", "Special Program Residential")):
+            n = [c.value for c in row[1:14] if isinstance(c.value, (int, float))]
+            tui += n[-1] if n else 0.0
+    chk("special-program tuition FY%d" % y, R["rsd_tui"][y], tui)
+    for acct, k in (("3230", "rsd_aid"), ("4570", "rsd_idea"), ("4580", "rsd_med")):
+        m = [row for row in ws.iter_rows(min_col=1, max_col=14) if str(row[4].value).strip() == acct and 100 < row[0].row < 175]
+        assert len(m) == 1, (y, acct, len(m))
+        chk("%s FY%d" % (k, y), R[k][y], sum(c.value for c in m[0][5:10] if isinstance(c.value, (int, float))))
+    # the district's RSA 32:11-a revenue total (FY2023-FY2025 reports) equals the DOE-25 revenue lines
+    if y in (2023, 2024, 2025):
+        import rc_data
+        chk("district RSA table revenue = DOE-25 revenue lines FY%d" % y, rc_data._RSA[y][8], R["rsd_rev"][y], 1.0)
     # Salaries-Benefits: per-block class sums tie to block totals, and four blocks tie to the Profile's instruction pay
     sb = wb["Salaries-Benefits"]
     tot = [0.0, 0.0]
