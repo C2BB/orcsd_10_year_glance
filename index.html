@@ -37,7 +37,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 .os-yr:focus-visible,.os-md:focus-visible{outline:2px solid var(--os-c2); outline-offset:2px}
 .os-yr[aria-pressed="true"],.os-md[aria-pressed="true"]{color:var(--color-bg); background:var(--color-fg); border-color:var(--color-fg)}
 .os-yr small{font-size:11px; opacity:.75; margin-left:4px}
-.os-card{border:1px solid var(--color-border-line); border-radius:var(--cds-radius,12px); background:var(--color-panel); overflow:hidden}
+.os-card{border:1px solid var(--color-border-line); border-radius:var(--cds-radius,12px); background:var(--color-panel)}
 .os-row{display:grid; grid-template-columns:minmax(190px,260px) minmax(0,1fr); gap:20px; padding:18px 22px 10px; border-top:1px solid var(--color-border-line); align-items:start}
 .os-row:first-child{border-top:0}
 .os-row[data-k="ela"],.os-row[data-k="sci"]{padding-bottom:14px}
@@ -747,12 +747,12 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <script>
 (function () {
   function fail(e) { var d = document.createElement('div'); d.className = 'os-loaderr'; d.textContent = 'Could not load the data files (' + e + '). Open the single-file version in the dist folder, or try again.'; document.body.insertBefore(d, document.body.firstChild); }
-  Promise.all([fetch('data/orcsd_years.json?v=98b0db54b0'), fetch('data/sources.json?v=98b0db54b0')]).then(function (rs) {
+  Promise.all([fetch('data/orcsd_years.json?v=867a07b3bd'), fetch('data/sources.json?v=867a07b3bd')]).then(function (rs) {
     rs.forEach(function (r) { if (!r.ok) throw new Error(r.status + ' ' + r.url); });
     return Promise.all(rs.map(function (r) { return r.json(); }));
   }).then(function (j) {
     window.__DATA = j[0]; window.__SRC = j[1];
-    var s = document.createElement('script'); s.src = 'app.js?v=98b0db54b0'; s.onerror = function () { fail('app.js'); };
+    var s = document.createElement('script'); s.src = 'app.js?v=867a07b3bd'; s.onerror = function () { fail('app.js'); };
     document.body.appendChild(s);
   }).catch(fail);
 })();

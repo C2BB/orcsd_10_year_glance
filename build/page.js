@@ -1041,7 +1041,7 @@ dash.calc('headline', {
     },
     tip: function (r) {
       if (r.efa_tot == null) return { lines: [['Education Freedom Accounts', 'none before 2021-22']], note: '' };
-      return { lines: [['Durham', r.efa_dur.toFixed(1)], ['Lee', r.efa_lee.toFixed(1)], ['Madbury', r.efa_mad.toFixed(1)], ['State cost of an adequate education for them', money(r.efa_aid)]], note: 'Students who live in the three towns and receive an account, from the DOE’s by-municipality reports. The early reports count students in proportion to the part of the year they were enrolled, and the reports are dated June 2022, June 2023, April 2024, March 2025, March 2026 and October 2, 2026 (for 2026-27), so the years are not strictly comparable. Not every account holder left an Oyster River school.' };
+      return { lines: [['Durham', r.efa_dur.toFixed(1)], ['Lee', r.efa_lee.toFixed(1)], ['Madbury', r.efa_mad.toFixed(1)], ['State cost of an adequate education for them', money(r.efa_aid)]], note: 'Residents of the three towns who hold an account, from the DOE’s by-municipality reports (dated June 2022 to October 2026). Early reports count part-year students in proportion, so years are not strictly comparable. Not every account holder left an Oyster River school.' };
     }
   };
   ROWS.drop = {
