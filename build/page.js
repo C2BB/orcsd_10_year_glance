@@ -298,7 +298,7 @@ dash.calc('headline', {
       tip: function (r) {
         return {
           lines: [['October 1 headcount', r.enrollment != null ? num(r.enrollment) : 'no projection on file']],
-          note: r.fy === '2026-27' ? 'District October 1, 2026 count from the October 7 board packet (2,026 in classrooms; 2,037 including home-educated students). NH DOE has not published its figure.' : 'Source: NH DOE fall enrollment, via the district 2026 Annual Report.'
+          note: r.fy === '2026-27' ? 'District October 1, 2026 count from the October 7 board packet (2,026 in classrooms; 2,037 including home-educated students). NH DOE has not published its figure.' : 'Source: NH DOE iExplore, district total. The district’s annual report prints 2,157 (2018-19), 2,168 (2019-20) and 2,038 (2025-26), which are the sum of the four schools; see CONFLICTS.md in the repo.'
         };
       }
     },
@@ -320,7 +320,7 @@ dash.calc('headline', {
         };
       },
       tip: function (r) {
-        var l = [['Adopted budget', (r.budget_approx ? '≈ ' : '') + money(r.budget)], ['Enrollment used', num(r.enrollment != null ? r.enrollment : 2038)]];
+        var l = [['Adopted budget', (r.budget_approx ? '≈ ' : '') + money(r.budget)], ['Enrollment used', num(r.enrollment != null ? r.enrollment : 2064)]];
         l.push(['Budget per student', money(r.budget_per_student)]);
         if (r.nhed_cpp != null) l.push(['NH DOE actual cost per pupil', money(r.nhed_cpp)]);
         return { lines: l, note: 'Budget ÷ enrollment. The NH DOE figure is actual spending per average daily membership.' };
@@ -1144,7 +1144,7 @@ dash.calc('headline', {
       var rest = r.enrollment - r.en_hs - r.en_ms - r.en_k4;
       if (rest > 0) L.push(['Not itemized by level', num(rest)]);
       L.push(['Total', num(r.enrollment)]);
-      return { lines: L, note: 'October 1 counts. K to 4 adds kindergarten and grades 1 to 4. In 2020-21 through 2024-25 the DOE total is 25 to 30 students higher than the four levels add up to; the report does not say who they are. Source: NH DOE fall enrollment, as printed in the ORCSD 2026 annual report.' };
+      return { lines: L, note: 'October 1 counts. K to 4 adds kindergarten and grades 1 to 4. From 2018-19 on the DOE district total is 25 to 34 students higher than the four levels add up to; the DOE does not say who they are. Source: NH DOE fall enrollment (iExplore).' };
     }
   };
   ROWS.fb = {

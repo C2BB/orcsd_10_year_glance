@@ -201,7 +201,7 @@ repeat_check(["cpp_k4", "cpp_58", "cpp_912"], "Cost per pupil", ents=("district"
 
 # ---------------------------------------------------------------- notes, size, de-duplication, output ----------------------------------------------------------------------
 NOTES = [  # (topic prefix, note) - applied to rows that differ and have no note yet
- ("Enrollment, October 1, all grades", "The district's Report Card prints the sum of the four schools in FY2019, FY2020 and FY2026 (2,157, 2,168, 2,038) but the DOE's district total in FY2021-FY2025; the DOE's own district total is 25-34 above its four schools from FY2019 on (see the iExplore district-vs-schools rows)."),
+ ("Enrollment, October 1, all grades", "The district's Report Card prints the sum of the four schools for FY2019, FY2020 and FY2026 (2,157, 2,168, 2,038), which is also what the DOE's student-to-teacher file uses (2,157, 2,168, 2,038), but the DOE district total in FY2016-FY2018 and FY2021-FY2025. So the state itself has two figures: its district total (iExplore) and the sum of its schools, 25-34 apart from FY2019 on. The page uses the iExplore district total in every year."),
  ("Enrollment, high school", "One student: the district prints 795, iExplore 796 for FY2026 (iExplore's four schools sum to 2,039; the report prints 2,038)."),
  ("Average teacher salary, NH", "The state average the report prints is not the one the DOE's current files give. In FY2018 the report prints $53,984; the DOE salary file and iExplore both give about $58,277. FY2024: the DOE salary file and the report agree ($67,096); iExplore gives $66,576."),
  ("Student-to-teacher ratio, NH", "The report's NH column does not match the DOE ratio file: FY2024 prints 12.02 (DOE 11.3) and FY2025 prints 11.24, which is also the FY2023 figure (DOE 11.17)."),
@@ -232,7 +232,18 @@ for o in OUT:
         seen[k] = o
     merged.append(o)
 OUT = merged
-FIELDS = ["cls", "verdict", "size", "topic", "fy", "a_source", "a_value", "a_where", "b_source", "b_value", "b_where", "diff", "diff_pct", "note"]
+PAGE_USES = [  # (topic prefix, what the page shows; rule: state first)
+ ("Enrollment, October 1", "State: NH DOE iExplore district total, every year"),
+ ("Enrollment, high school", "State: iExplore school figure (FY2026 now 796)"), ("Enrollment, middle", "State (equal to report)"), ("Enrollment, K-4", "State (equal to report)"),
+ ("Average teacher salary", "State: DOE salary file (FY2018 NH $58,278; FY2023 and FY2025 district values not plotted)"),
+ ("Student-to-teacher", "State: DOE ratio file"), ("Cost per pupil", "State: DOE school-finance file"),
+ ("Students with disabilities", "State: iExplore share. The district's own Oct 1 special-education count is a separate row labeled as district data"),
+ ("Dropouts", "District counts (the state publishes a rate only; they agree)"),
+ ("Total expenditures", "State: DOE-25"), ("Total revenues", "State: DOE-25"), ("General fund balance", "Audit (no state series)"),
+ ("iExplore enrollment", "State: iExplore district total (not the school sum)"), ("School Year Enrollment", "Not used"), ("Same-year", "Not used"), ("Official Enrollment Counts", "Level rows shown as printed; total is the iExplore district total")]
+for o in OUT:
+    o["page_uses"] = next((u for pre, u in PAGE_USES if o["topic"].startswith(pre)), "")
+FIELDS = ["cls", "verdict", "size", "page_uses", "topic", "fy", "a_source", "a_value", "a_where", "b_source", "b_value", "b_where", "diff", "diff_pct", "note"]
 
 def md():
     C = [o for o in OUT if o["verdict"] == "CONFLICT"]; B = [o for o in OUT if o["verdict"] == "different basis"]; A = [o for o in OUT if o["verdict"] == "agree"]
@@ -242,8 +253,10 @@ def md():
          "Year key is the fiscal year (2017-18 = FY2018).", "",
          "**%d comparisons: %d agree, %d conflict, %d differ by basis.** A *conflict* means two sources print different numbers for the same measure and year and nothing about definitions explains it. "
          "A *different basis* row is a difference the documents explain only in part (audit vs the state's DOE-25 form). Where the district disagrees with itself, the row says so (`district-internal`)." % (len(OUT), len(A), len(C), len(B)), "",
+         "## Rule used on the page: state first", "",
+         "Where the district and the state print different numbers for the same measure, the page shows the state's (NH DOE or DRA) and the district's figure stays in this log. Where two state series disagree, the page uses the DOE's headline district figure and the others are listed here. District figures are used only where the state has no series for the measure (class size, SAT, special-education counts, completers, dropout counts, the audited balance sheet). Open case: the NH SAT means come from the district's reports; the DOE's College Board reports in `raw/nh-doe/` cover only some years, so they are not yet substituted.", "",
          "## What matters most", "",
-         "1. **Enrollment: the district and the DOE count different totals.** The DOE's district total (iExplore) is 25-34 students above the sum of its own four schools every year from FY2019 on. The district's Report Card prints the DOE district total for FY2021-FY2025 but the sum of schools for FY2019, FY2020 and FY2026 (2,157, 2,168, 2,038 against DOE 2,190, 2,202, 2,064). The page uses the district's printed figures. Its own Official Enrollment table therefore has a Totals row 25-30 above the sum of its level rows from FY2021.",
+         "1. **Enrollment: the DOE has two totals, and the district mixes them.** The DOE's district total (iExplore) is 25-34 above the sum of its own four schools every year from FY2019 on (the DOE student-to-teacher file uses roughly the school sum). The district's Report Card prints the DOE district total for FY2021-FY2025 but the school sum for FY2019, FY2020 and FY2026 (2,157, 2,168, 2,038 against the district total 2,190, 2,202, 2,064). Its own Official Enrollment table therefore has a Totals row 25-30 above the sum of its level rows from FY2021. **The page now uses the iExplore district total throughout.**",
          "2. **The annual report's second enrollment table (School Year Enrollment, the district's own October 1 report) disagrees with both.** For FY2022 it prints a Totals row of 2,106 that does not equal its four school rows (2,083), and the DOE says 2,130; high school is 839 against the DOE's 858.",
          "3. **The report's NH average teacher salary for FY2018 ($53,984) is not what the DOE files give ($58,277).** The report prints the DOE's 6/29/18 file; the DOE's current salary file and iExplore agree with each other at about $58,277. FY2024 differs the other way: the report and the DOE salary file say $67,096, iExplore says $66,576.",
          "4. **Student-to-teacher ratio, NH column:** the FY2025 figure (11.24) repeats FY2023's; DOE has 11.17. FY2024 prints 12.02 against DOE 11.3.",
@@ -259,6 +272,7 @@ def md():
     for t, rows in topics.items():
         L.append("### " + t); L.append("")
         if rows[0]["note"]: L += [rows[0]["note"], ""]
+        if rows[0].get("page_uses"): L += ["**On the page:** " + rows[0]["page_uses"], ""]
         L.append("| FY | A | value | B | value | diff | size |"); L.append("|---|---|---|---|---|---|---|")
         for o in rows:
             f = lambda v: ("{:,.2f}".format(v).rstrip("0").rstrip(".") if isinstance(v, float) else str(v))
