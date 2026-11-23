@@ -156,7 +156,7 @@ dash.calc('headline', {
   var sel = 7;
   var mode = 'nom';
   var MODES = { nom: { label: 'Nominal dollars', f: null }, cpi: { label: 'Northeast CPI-U', f: 'f_cpi', idx: 'cpi_ne', n: 'cpi_ne_months', nn: 12 }, eci: { label: 'education labor costs (ECI)', f: 'f_eci', idx: 'eci_edu', n: 'eci_quarters', nn: 4 } };
-  var MONEY = ['fb_tot', 'fb_un', 'fb_com', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state'];
+  var MONEY = ['fb_tot', 'fb_un', 'fb_com', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
   var NAMES = ['spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'ratio', 'lvlenr', 'fb', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part'];
 
   function svgEl(tag, attrs, parent) {
@@ -558,7 +558,7 @@ dash.calc('headline', {
       function ln(nm, lv, ls, vs) { return [nm, moneyM(lv, 2) + ' · ' + ls.toFixed(1) + '% of levy (' + vs.toFixed(1) + '% of value)']; }
       return {
         lines: [ln('Durham', r.levy_dur, r.lsh_dur, r.vsh_dur), ln('Lee', r.levy_lee, r.lsh_lee, r.vsh_lee), ln('Madbury', r.levy_mad, r.lsh_mad, r.vsh_mad), ['Total school levy', moneyM(r.levy_tot, 2)]],
-        note: 'Local education property tax assessed for schools, tax year ' + parseInt(r.fy, 10) + ', nominal dollars. The percentage in brackets is the town’s share of the district’s equalized property value. Source: NH DOE valuation and tax rate files.'
+        note: 'Local education property tax assessed for schools, tax year ' + parseInt(r.fy, 10) + (mode === 'nom' ? ', as recorded' : '') + '. The percentage in brackets is the town’s share of the district’s equalized property value. Source: NH DOE valuation and tax rate files.'
       };
     }
   };
@@ -577,7 +577,7 @@ dash.calc('headline', {
       if (r.eq_pps == null) return { lines: [['Property value', 'not yet filed']], note: 'Appears when the DOE posts the tax year.' };
       return {
         lines: [['Equalized value, three towns', '$' + (r.eq_tot / 1e9).toFixed(2) + 'B'], ['Durham', '$' + (r.eq_dur / 1e9).toFixed(2) + 'B'], ['Lee', '$' + (r.eq_lee / 1e9).toFixed(2) + 'B'], ['Madbury', '$' + (r.eq_mad / 1e9).toFixed(2) + 'B'], ['Per student', '$' + Math.round(r.eq_pps).toLocaleString('en-US')], ['School levy per $1,000 of value', '$' + r.eff_rate.toFixed(2)]],
-        note: 'Equalized value (with utilities) is the state’s estimate of full market value, tax year ' + parseInt(r.fy, 10) + ', nominal dollars. Divided by October 1 enrollment. Source: NH DOE valuation and tax rate files.'
+        note: 'Equalized value (with utilities) is the state’s estimate of full market value, tax year ' + parseInt(r.fy, 10) + ', as recorded (property values are market prices, so the inflation switch does not change them). Divided by October 1 enrollment. Source: NH DOE valuation and tax rate files.'
       };
     }
   };
@@ -747,7 +747,7 @@ dash.calc('headline', {
       return { big: p1(r.grad4), sub: 'Of the class graduated in four years', delta: r.grad5 == null ? '' : 'Five-year ' + p1(r.grad5), tag: 'Actual', prov: false, src: 'years', field: 'grad4' };
     },
     tip: function (r) {
-      if (r.grad4 == null) return { lines: [['Graduation rate', 'not available']], note: 'The DOE iExplore dashboard shows the last five years. Earlier rates are in the DOE cohort reports.' };
+      if (r.grad4 == null) return { lines: [['Graduation rate', 'not available']], note: 'Earlier rates are in the DOE cohort reports.' };
       var L = [['Four-year rate', p1(r.grad4)], ['Five-year rate', r.grad5 == null ? 'not reported' : p1(r.grad5)]];
       if (r.psenr != null) L.push(['Enrolled in college within a year', p1(r.psenr)]);
       return { lines: L, note: 'Share of the graduating cohort that finished in four (or five) years, with the year labeled as the DOE labels it. No New Hampshire figure is shown: the state value on the DOE dashboard is not a graduation rate. Source: NH DOE iExplore.' };
@@ -1517,7 +1517,7 @@ dash.calc('headline', {
       });
       tip.appendChild(dl);
       if (t.note) { var p = document.createElement('p'); p.textContent = t.note; tip.appendChild(p); }
-      if (mode !== 'nom' && spec.money) {
+      if (mode !== 'nom' && (spec.money || spec.tipMoney)) {
         var M = MODES[mode];
         var u = mode === 'cpi' ? 'months' : 'quarters';
         var extra = '';
@@ -1683,11 +1683,37 @@ dash.calc('headline', {
     eci: 'All dollar figures restated in FY 2024-25 dollars using the BLS Employment Cost Index for state and local government education workers, a measure of what school labor costs, averaged July to June.'
   };
   dash.draw('modenote', function (el) { el.textContent = MODE_NOTE[mode]; });
+  var MODE_SHORT = {
+    nom: 'Showing dollars as recorded in each year.',
+    cpi: 'Showing everything in FY 2024-25 dollars (Northeast CPI-U).',
+    eci: 'Showing everything in FY 2024-25 dollars (education labor costs, ECI).'
+  };
+  dash.draw('modeshort', function (el) { el.textContent = MODE_SHORT[mode]; });
+  // Tag on each dollar row: whether it follows the switch, and what it is showing right now.
+  var CHIP_B = ['instr', 'local', 'ben', 'adm', 'share', 'eff', 'cred', 'efa'];
+  var CHIP_C = { base: 'Property values are market prices, not spending, so they are shown as recorded.', rate: 'A tax rate per $1,000 of value is a ratio, so inflation does not apply to it.' };
+  CHIP_B.forEach(function (k) { ROWS[k].tipMoney = true; });
+  var CHIP_NAMES = Object.keys(ROWS).filter(function (k) { return ROWS[k].money; }).concat(CHIP_B, Object.keys(CHIP_C));
+  CHIP_NAMES.forEach(function (k) {
+    dash.draw('chip-' + k, function (el) {
+      var real = mode !== 'nom';
+      var t, cls, tip = '';
+      if (CHIP_C[k]) { t = 'Not adjusted'; cls = 'os-chip os-chip-n'; tip = CHIP_C[k]; }
+      else if (ROWS[k].money) { t = real ? 'In FY 2024-25 dollars' : '$ adjusts with the switch'; cls = 'os-chip os-chip-a' + (real ? ' on' : ''); }
+      else { t = real ? 'Dollar details in FY 2024-25 dollars' : 'Dollar details adjust'; cls = 'os-chip os-chip-b' + (real ? ' on' : ''); tip = 'The chart shows a share or rate, which inflation does not change. Dollar amounts in the hover details follow the switch.'; }
+      el.replaceChildren();
+      var s = document.createElement('span');
+      s.className = cls; s.textContent = t; if (tip) s.title = tip;
+      el.appendChild(s);
+    });
+  });
   function setModeButtons() {
     document.querySelectorAll('.os-md').forEach(function (b) {
       b.setAttribute('aria-pressed', String(b.getAttribute('data-m') === mode));
     });
     dash.draw('modenote');
+    dash.draw('modeshort');
+    CHIP_NAMES.forEach(function (k) { dash.draw('chip-' + k); });
   }
   document.querySelectorAll('.os-md').forEach(function (b) {
     b.addEventListener('click', function () { mode = b.getAttribute('data-m'); setModeButtons(); redrawAll(); });
@@ -1754,7 +1780,7 @@ dash.calc('headline', {
         h.classList.add('os-anch'); h.appendChild(mk(id, h.textContent.trim()));
       });
     }
-    var take = root.querySelector('.os-take');
+    var take = root.querySelector('.os-years[aria-label="Fiscal year"]');
     if (take && toc.length) {
       var nav = document.createElement('nav');
       nav.className = 'os-toc'; nav.setAttribute('aria-label', 'Jump to a section');

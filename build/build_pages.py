@@ -90,7 +90,9 @@ if hp:
     # the hosted harness allows only dash.draw to write the page, so the runtime deep-link script is left out of this copy
     _a = js.index('  // ---- Deep links'); _b = js.index('\n  })();\n', _a) + len('\n  })();\n')
     hjs = js[:_a] + js[_b:]
-    hosted = '<meta name="dash-one-writer">\n<style>\n' + css + '</style>\n' + html + '<script>\n' + pre + hjs + '</script>\n'
+    hjs = re.sub(r'(?m)^[ \t]*//[^\n]*\n', '', hjs)
+    hcss = re.sub(r'/\*.*?\*/', '', css, flags=re.S); hcss = re.sub(r'\s*([{};,>])\s*', r'\1', hcss); hcss = re.sub(r'\n+', '', hcss)
+    hosted = '<meta name="dash-one-writer">\n<style>\n' + hcss + '</style>\n' + html + '<script>\n' + pre + hjs + '</script>\n'
     # hosted copy only: trim repeated legend-swatch attributes (moved to CSS) to stay under the 256 KB document limit
     hosted = hosted.replace('<svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true">', '<svg viewBox="0 0 30 12">').replace(' stroke-linecap="round"', '')
     hosted = hosted.replace('<style>\n', '<style>\n.os-legend .lk svg{width:30px;height:12px}.os-legend .lk svg line{stroke-linecap:round}\n', 1)

@@ -4,6 +4,8 @@ Independent school-finance and outcomes dashboard for the Oyster River Cooperati
 
 Live page: https://c2bb.github.io/orcsd_10_year_glance/
 
+Picking this up? Start with [`HANDOFF.md`](HANDOFF.md): current state, how data is fetched (including the DOE's new Tableau dashboards), the build and publish steps, and the open items.
+
 ## Layout
 
 | Path | What it is |
@@ -13,7 +15,8 @@ Live page: https://c2bb.github.io/orcsd_10_year_glance/
 | `data/sources.json` | Per-row, per-year links to the original file or section page. |
 | `dist/ORCSD_Ten_Years_at_a_Glance.html` | Same page as one file with the data inlined; works from disk or as an attachment. |
 | `raw/` | Copies of the source files the values were taken from (`raw/MANIFEST.csv` lists the original URL, retrieval date, size and SHA-256 of each). |
-| `build/` | Scripts that regenerate `data/` and the page from the raw values. |
+| `build/` | Scripts that regenerate `data/` and the page from the raw values, and `build/tests/` (Playwright checks). |
+| `HANDOFF.md` | Working-memory file for whoever continues the work next. |
 
 ## Rebuilding
 

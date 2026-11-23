@@ -1,0 +1,50 @@
+# HANDOFF: where this project stands (for the next person or AI assistant)
+
+Read this first, then `README.md`. Last updated 2026-11-22. This is a working-memory file: update the "State" and "Open items" sections whenever you change something, and keep it short and factual.
+
+## What this is
+Independent dashboard "Ten years at a glance" for the Oyster River Cooperative School District (ORCSD, SAU #5; towns Durham, Lee, Madbury), FY 2017-18 to FY 2026-27. It is not an official publication. Fiscal-year key everywhere = the year the school year ends (FY2018 = 2017-18). The DOE's own year labels follow the same rule (their "2022" = 2021-22).
+
+Public page: https://c2bb.github.io/orcsd_10_year_glance/ (GitHub Pages, `main`, `index.html`). Single-file copy: `dist/ORCSD_Ten_Years_at_a_Glance.html`. A private hosted copy also exists as a Claude artifact (see "Hosted copy").
+
+## State (2026-11-22)
+- 58 rows in 9 sections (spending, cost per student, where the money goes, who pays, town shares, students, results, climate and safety, more detail), all drawn from `data/orcsd_years.json` (one object per FY, plus `meta` that documents each field) and `data/sources.json` (per-row, per-year links).
+- Features: year picker; per-row change since FY18; per-year source links; inflation switch (as recorded, CPI-U, ECI) with a top card, a sticky control and a tag on every dollar row; deep links to every section, row and note (`#ela`, `#who-pays`, `#notes-attendance`, a "Jump to" bar, link icon copies the URL).
+- Inflation switch: dollar fields listed in `MONEY` in `build/page.js` are multiplied by the year's index. Rows with `money: true` adjust in chart and label; rows in `CHIP_B` chart a share or rate but their hover dollar amounts adjust (`tipMoney`); `base` (property value per student) and `rate` (tax rate per $1,000) are deliberately not adjusted and say so. When you add a dollar field, add it to `MONEY`; when you add a row with dollars, set `money: true` (chart in dollars) or add it to `CHIP_B`/`CHIP_C` and add a `<div class="os-chip-row" data-draw="chip-K"></div>` in `page.html`.
+- Latest data pulls: adequacy-aid components FY18-FY27; official town apportionment shares FY22-FY26 (DRA sheets); graduation rates FY18-FY26 and state-test participation FY18-FY26 from the DOE's iExplore/iAchieve dashboards; FY25 graduate plans; student-teacher ratio, class size, teacher salary and teacher education for 2025-26 from iPlatform.
+
+## How to rebuild and test
+```
+cd build
+python3 make_data.py      # rc_data.py + doe25.py + nhdoe_values.py + towns_data.py -> orcsd_years.json
+python3 build_pages.py    # -> ../index.html, ../app.js, ../data/, ../dist/
+```
+Tests (Playwright, `npm i playwright`): `node build/tests/pw_check.js <abs path to dist html>` (loads, counts rows, lists page errors; the only expected error is a blocked network request), `pw_anchor.js file://<path>` (deep links), `pw_mode.js <path>` (which rows change under the inflation switch), `pw_new.js`, `pw_tip.js` (tooltips in each mode). Browsers block `fetch` on `file://`, so use `dist/` for local checks or run `python3 -m http.server`.
+
+## How data gets in (and the traps)
+- Values typed in `build/rc_data.py`, `towns_data.py`, `nhdoe_values.py`, `doe25.py` (DOE-25 workbooks), `index_fy.json`; every block has a comment naming its source file. `raw/MANIFEST.csv` lists every mirrored source with URL, date and SHA-256 (the `raw/` folder is large and is only in the git repo, not in the build tarballs).
+- **NH DOE moved its public dashboards to Tableau.** The old iPlatform menu links to `dashboard.nh.gov` are dead. Live entry points are on https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/iplatform and open as `https://jwt.nh.gov/?src_route=<view>&debug_session=false&toolbar=Hidden&Width=1300px&Height=1600px` with `<view>` = `/iExplore/Explore-Dashboard`, `iReport/FrontPage`, `iAchieve/AssessmentParticipation`, `iGrant-FinancialTransparencyfromNHSchoolsDistricts/iGrantsHome`, `iGlossary/Glossary`. They embed Tableau at dashboards.nh.gov/t/sonhpublic.
+- **Reading iExplore.** Open the wrapper in a real browser (the cloud sandbox cannot reach education.nh.gov or the state hosts). In the page, `document.querySelector('tableau-viz').workbook` is the Embedding API. Entity names are exact: `Oyster River Coop (District)`. On the Compare dashboard, worksheet `*Download Compare` returns Category, Indicator Name, Year ID, entity, value for the entities in the Compare parameters (Entity A = Oyster River, Entity B = State of New Hampshire). `await workbook.changeParameterValueAsync('Year ID Param', Y)` then wait about 3.5 s and call `getSummaryDataAsync({maxRows:5000, ignoreSelection:true})`; each call returns a three-year window ending at Y, so calling Y = 2018, 2021, 2024, 2026 returns 2016-2026. Worksheet names carry numeric prefixes on some dashboards. The State of New Hampshire column is unreliable for several indicators (the graduation rate shows about 36%, enrollment shows a single school); do not use it as a comparator without checking.
+- **iExplore indicators for Oyster River (2016-2026, 35 in all):** growth (ELA, math), participation (ELA, math, science; shown as ">90%" above 90), proficiency (ELA, math, combined), dropout, 4-year and 5-year graduation, post-secondary enrollment, average teacher salary, certified-in-subject %, experienced educators %, adequacy aid %, administration %, cost per pupil, equalized tax rate, equalized valuation per pupil, federal aid %, instructional staff %, plant maintenance %, other state aid %, total expenditures and revenues, economically disadvantaged / English learner (suppressed, "<10%"), students with disability %, total enrollment, average class size, expulsion and suspension rates (suppressed), incidents of violence, students per counselor and per non-teacher staff (2021 on), teachers per total staff (2021 on). Not yet on the page: students per counselor (Oyster River 210.7 in 2021 to 158.8 in 2026; NH 246.4 to 200.4), certified-in-subject % and experienced educators %, students with disability % (15.3% in 2021 to 17.5% in 2026), the staffing ratios.
+- iPlatform's older report viewer hangs, but its data endpoint works from a my.doe.nh.gov tab: `fetch('/iPlatform/Report/ViewReportPage/?reportPath=<path>&page=N&ReportID=<id>&SchoolYear=<Y>')` (30 to 60 s per page; SchoolYear 2026 = 2025-26). Report IDs: attendance by district 29 (returns NaN for 2023-2025, retired), average class size 36, completers by status by school 33, attendance by school 74.
+- DRA publishes the cooperative apportionment PDFs (`<tax year>-cooperative-school-district-apportionments.pdf`; file year N is the sheet for FY N+1, e.g. the 2025 file is FY2026; mirrored in `raw/nh-dra/`). 2021-2023 sheets are scanned images.
+- Some PDFs can only be fetched with a PDF tool inside the user's browser session; scanned ones need page rendering.
+- iGrant (federal grants) is Tableau too. Two data sources exist: ESSER Relief and FY23 IDEA/Preschool; parameters `Measure Type`, `Geographic Region Param`, `Funding Type Parameter` (Allocated/Budgeted/Approved/Reimbursed). A first read with the default parameters showed $0 for Oyster River; not yet explored further.
+
+## Hosted copy (Claude artifact; optional)
+`HOSTED_OUT=<path> python3 build_pages.py` writes a compacted copy. Constraints learned the hard way: the document must stay under 262,144 bytes as JSON (`{"text": html}`, `ensure_ascii=False`, compact separators; the current build is about 261.6 KB, so the margin is under 1 KB and the next row will need more trimming, e.g. shorten more repeated markup in the hosted block of `build_pages.py`); the harness only lets its own drawing code (`dash.draw`) write to the page, so the deep-link script is stripped from this copy (a runtime DOM write makes the self-check fail with "stray_write"); long URL prefixes are tokenised and legend SVG attributes are moved to CSS. Publishing is: upload `data/orcsd_years.json` as an asset, update the dataset doc's `source.url`, set the `files/index.html` document, open the artifact, wait about 25 s, and read `data/users/me/check` (must say passed).
+
+## Shipping to GitHub
+The cloud sandbox cannot push. Changes are made in a working tree, tarred (`tar czf x.tgz --exclude=__pycache__ README.md HANDOFF.md app.js index.html build data dist`), delivered to the maintainer's Mac clone, extracted there, then `git add -A && git commit && git push origin main`. Pages redeploys from `main`.
+
+## Open items (needs a person or a later release)
+1. District attendance after 2021-22: not in iExplore or iReport; the old iPlatform report is retired. Ask the DOE (info@doe.nh.gov) or the district for district attendance and chronic absenteeism for 2022-23 to 2024-25.
+2. FY2025 audited statements (not on the district's audit page; the Business Office or an RSA 91-A request).
+3. DOE-25 for FY2025-26 (the district files about mid-December; the page shows the adopted budget until then).
+4. FY27 approved town apportionment (approved Oct 30, 2026; the page shows an estimate), and Lee's 2026 DRA tax rate.
+5. SAT 2026 (College Board NH report, fall).
+6. Average teacher salary: DOE lists $63,538 for 2022-23 (looks too low) and repeats $80,573 for 2024-25. Neither is plotted; confirm with the DOE.
+7. Possible additions from the new dashboards: counselor ratio, certified and experienced educator shares, students with disability %, iGrant federal grant detail, iReport ESSA/suspension detail.
+
+## Conventions
+FY key = year the school year ends. Tags on rows: Actual, Budget, Estimate, Computed, Preliminary, Scheduled. Never plot a value you doubt; show it in the tooltip with the reason (see teacher salary). Every new row needs: values in `build/rc_data.py` (or the matching file), a `meta` entry in `make_data.py`, a section in `page.html`, a `ROWS.<key>` entry and a name in `NAMES` in `page.js`, a source entry in `build/sources.json` (`SRC` and `MAP`), a count update in the intro sentence ("Fifty-eight measures"), and a test pass. Do not commit secrets; the repo is public.

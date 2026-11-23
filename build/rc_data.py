@@ -38,9 +38,9 @@ put("sat_m_nh",  per([528, 516, 512, 514, 494, 488, 508, 491]))
 
 # What graduates do next (High School Completers table), 2017-18 to 2023-24; district / NH, percent
 # Graduation and state-test participation: NH DOE iExplore / iAchieve (Tableau dashboards), school years labeled by the DOE (2026 = 2025-26)
-put("grad4", per([None, None, None, None, 96.79, 93.85, 97.06, 98.19, 99.48]))
-put("grad5", per([None, None, None, None, 96.12, 97.24, 94.90, 97.06, 99.10]))
-put("psenr", per([None, None, None, None, 69.67, 73.26, 68.29, 74.77, None]))
+put("grad4", per([94.74, 97.25, 97.06, 96.12, 96.79, 93.85, 97.06, 98.19, 99.48]))
+put("grad5", per([97.21, 96.30, 97.80, 97.06, 96.12, 97.24, 94.90, 97.06, 99.10]))
+put("psenr", per([70.33, 68.68, 71.21, 74.37, 69.67, 73.26, 68.29, 74.77, None]))
 put("pt_ela", per([98, 98, None, 89, 96, 96, 96, 96, 95]))
 put("pt_mat", per([98, 98, None, 89, 96, 97, 96, 96, 95]))
 put("pt_sci", per([94, 90, None, 72, 95, 95, 95, 91, 89]))

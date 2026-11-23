@@ -109,6 +109,36 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 .os-toc a:focus-visible{outline:2px solid var(--os-c2); outline-offset:2px}
 .os-copied{position:fixed; left:50%; bottom:18px; transform:translateX(-50%); padding:6px 12px; font-size:12.5px; background:var(--color-fg); color:var(--color-bg); border-radius:999px; opacity:0; pointer-events:none; transition:opacity .15s; z-index:20}
 .os-copied.on{opacity:1}
+
+/* ---- Inflation switch: feature card, sticky control, per-row tags ---- */
+.os-adjust{display:flex; gap:16px; padding:18px 22px; border:1px solid var(--color-border-line); border-left:5px solid var(--os-c3); border-radius:var(--cds-radius,12px); background:var(--color-panel)}
+.os-adj-icon{flex:none; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:var(--font-anthropic-serif,"Source Serif 4",Georgia,serif); font-size:26px; line-height:1; color:var(--color-bg); background:var(--os-c3)}
+.os-adj-body{display:flex; flex-direction:column; gap:10px; min-width:0}
+.os-adj-h{margin:0; font-family:var(--font-anthropic-serif,"Source Serif 4",Georgia,serif); font-weight:400; font-size:clamp(20px,3.6vw,25px); line-height:1.18; text-wrap:balance}
+.os-adj-p{margin:0; max-width:68ch; color:var(--color-fg-muted)}
+.os-adj-note{margin:0; font-size:12.5px; color:var(--color-fg-muted); max-width:80ch}
+.os-mode{position:sticky; top:0; z-index:30; flex-direction:row; flex-wrap:wrap; align-items:center; gap:8px 14px; padding:10px 16px; border:1px solid var(--color-fg); border-radius:14px; background:var(--color-bg); box-shadow:0 8px 22px rgba(0,0,0,.12)}
+.os-mode-l{font-size:13px; letter-spacing:.04em; font-weight:700; color:var(--color-fg); text-transform:uppercase}
+.os-modes{display:flex; flex-wrap:wrap; gap:8px}
+.os-modeshort{margin:0; flex:1 1 240px; font-size:13px; color:var(--color-fg-muted)}
+.os-md{display:inline-flex; align-items:baseline; gap:6px; font-size:14px; font-weight:600; padding:9px 16px; border-width:1.5px; border-color:var(--color-fg-muted); color:var(--color-fg)}
+.os-md small{font-size:11px; font-weight:500; opacity:.75}
+.os-md[aria-pressed="true"]{color:var(--color-bg); background:var(--os-c3); border-color:var(--os-c3)}
+.os-md[aria-pressed="true"] small{opacity:.9}
+.os-chip-row{margin-top:2px}
+.os-chip-row:empty{display:none}
+.os-chip{display:inline-block; font-size:11px; font-weight:600; letter-spacing:.02em; padding:2px 8px; border-radius:999px; border:1px solid var(--color-border-line); color:var(--color-fg-muted); white-space:nowrap}
+.os-chip-a,.os-chip-b{border-color:var(--os-c3); color:var(--color-fg)}
+.os-chip-a.on,.os-chip-b.on{background:var(--os-c3); border-color:var(--os-c3); color:var(--color-bg)}
+.os-chip-n{border-style:dashed; cursor:help}
+@media (max-width:620px){
+  .os-adjust{padding:14px 14px; gap:12px}
+  .os-adj-icon{width:34px; height:34px; font-size:20px}
+  .os-mode{padding:8px 10px; border-radius:12px}
+  .os-mode-l{flex:1 0 100%}
+  .os-md{padding:7px 12px; font-size:13px}
+  .os-modeshort{display:none}
+}
 </style>
 </head>
 <body>
@@ -119,16 +149,24 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
     <p class="os-intro">Fifty-eight measures from public filings, grouped into nine sections and drawn on the same ten school years, each row on its own scale. Select a year to read its value in every row, or hover, focus or tap a point for the exact figures. Every row shows its change since FY 2017-18 and links to its source data. Under each chart, FY18 means the 2017-18 school year (the year it ends in). Solid points are results; hollow, dotted points are budgets, provisional or approximate figures.</p>
   </header>
 
-  <p class="os-take">Since FY 2017-18, actual operating spending has changed <b data-draw="t-spend">—</b> in nominal dollars (through FY 2024-25). After adjusting for inflation that is <b data-draw="t-spend-cpi">—</b> using Northeast CPI-U, or <b data-draw="t-spend-eci">—</b> using education labor costs. Actual cost per pupil is <b data-draw="t-cpp">—</b> nominal, <b data-draw="t-cpp-cpi">—</b> in CPI-U terms and <b data-draw="t-cpp-eci">—</b> in labor-cost terms, while October 1 enrollment has changed <b data-draw="t-enr">—</b> (through FY 2025-26). Reading proficiency has ranged from <b data-draw="t-elamin">—</b> to <b data-draw="t-elamax">—</b> in the district and <b data-draw="t-stmin">—</b> to <b data-draw="t-stmax">—</b> statewide.</p>
-
-  <div class="os-mode">
-    <span class="os-mode-l" id="os-mode-l">Dollars</span>
-    <div class="os-years" role="group" aria-labelledby="os-mode-l">
-      <button type="button" class="os-md" data-m="nom" aria-pressed="true">Nominal</button>
-      <button type="button" class="os-md" data-m="cpi" aria-pressed="false">Adjusted for inflation (CPI-U)</button>
-      <button type="button" class="os-md" data-m="eci" aria-pressed="false">Adjusted for school labor costs (ECI)</button>
+  <section class="os-adjust" aria-labelledby="os-adj-h">
+    <div class="os-adj-icon" aria-hidden="true">$</div>
+    <div class="os-adj-body">
+      <h2 class="os-adj-h" id="os-adj-h">Switch every dollar amount to inflation-adjusted</h2>
+      <p class="os-adj-p">A dollar in 2018 bought more than a dollar does today, so a rise in spending can overstate what really changed. The switch just below restates every dollar figure on this page, in the charts, labels and hover details, in FY 2024-25 dollars. It stays at the top of the screen as you scroll. Rows tagged <span class="os-chip os-chip-a">$ adjusts</span> follow it; <span class="os-chip os-chip-n">not adjusted</span> marks dollar figures that inflation does not apply to.</p>
+      <p class="os-take">Since FY 2017-18, actual operating spending has changed <b data-draw="t-spend">—</b> in nominal dollars (through FY 2024-25). After adjusting for inflation that is <b data-draw="t-spend-cpi">—</b> using Northeast CPI-U, or <b data-draw="t-spend-eci">—</b> using education labor costs. Actual cost per pupil is <b data-draw="t-cpp">—</b> nominal, <b data-draw="t-cpp-cpi">—</b> in CPI-U terms and <b data-draw="t-cpp-eci">—</b> in labor-cost terms, while October 1 enrollment has changed <b data-draw="t-enr">—</b> (through FY 2025-26). Reading proficiency has ranged from <b data-draw="t-elamin">—</b> to <b data-draw="t-elamax">—</b> in the district and <b data-draw="t-stmin">—</b> to <b data-draw="t-stmax">—</b> statewide.</p>
+      <p class="os-adj-note" data-draw="modenote">—</p>
     </div>
-    <p class="os-modenote" data-draw="modenote">—</p>
+  </section>
+
+  <div class="os-mode" role="group" aria-labelledby="os-mode-l">
+    <span class="os-mode-l" id="os-mode-l">Show dollars as</span>
+    <div class="os-modes">
+      <button type="button" class="os-md" data-m="nom" aria-pressed="true">As recorded</button>
+      <button type="button" class="os-md" data-m="cpi" aria-pressed="false">Inflation-adjusted<small>CPI-U</small></button>
+      <button type="button" class="os-md" data-m="eci" aria-pressed="false">School-cost adjusted<small>ECI</small></button>
+    </div>
+    <p class="os-modeshort" data-draw="modeshort" aria-live="polite">—</p>
   </div>
 
   <div class="os-years" role="group" aria-label="Fiscal year">
@@ -153,6 +191,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="spend" style="--rc:var(--os-c1)" aria-labelledby="os-n-spend">
       <div class="os-label">
         <div class="os-name" id="os-n-spend"><i class="os-dot"></i>Operating spending, actual vs. budget</div>
+        <div class="os-chip-row" data-draw="chip-spend"></div>
         <div data-draw="label-spend">—</div>
         <div class="os-src" data-draw="src-spend">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a> · <a href="https://www.orcsd.org/departments/business-office/budget-faq" target="_blank" rel="noopener">ORCSD budget pages</a></div>
       </div>
@@ -169,6 +208,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="budget" style="--rc:var(--os-c3)" aria-labelledby="os-n-budget">
       <div class="os-label">
         <div class="os-name" id="os-n-budget"><i class="os-dot"></i>Adopted budget per student</div>
+        <div class="os-chip-row" data-draw="chip-budget"></div>
         <div data-draw="label-budget">—</div>
         <div class="os-src" data-draw="src-budget">Data: <a href="https://www.orcsd.org/departments/business-office/budget-faq" target="_blank" rel="noopener">ORCSD budget pages</a> · <a href="https://www.orcsd.org/news/1823327/march-10-2026-official-voting-results" target="_blank" rel="noopener">ORCSD voting results</a></div>
       </div>
@@ -185,6 +225,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="fb" style="--rc:var(--os-c3)" aria-labelledby="os-n-fb">
       <div class="os-label">
         <div class="os-name" id="os-n-fb"><i class="os-dot"></i>General fund balance at year end</div>
+        <div class="os-chip-row" data-draw="chip-fb"></div>
         <div data-draw="label-fb">—</div>
         <div class="os-src" data-draw="src-fb">Data: <a href="https://www.orcsd.org/departments/business-office/audit-reports" target="_blank" rel="noopener">ORCSD audit reports</a></div>
       </div>
@@ -201,6 +242,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="cpp" style="--rc:var(--os-c1)" aria-labelledby="os-n-cpp">
       <div class="os-label">
         <div class="os-name" id="os-n-cpp"><i class="os-dot"></i>Cost per pupil (NH DOE)</div>
+        <div class="os-chip-row" data-draw="chip-cpp"></div>
         <div data-draw="label-cpp">—</div>
         <div class="os-src" data-draw="src-cpp">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/financial-reports" target="_blank" rel="noopener">NH DOE cost per pupil files</a> · <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a></div>
       </div>
@@ -209,6 +251,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="cmp" style="--rc:var(--os-c2)" aria-labelledby="os-n-cmp">
       <div class="os-label">
         <div class="os-name" id="os-n-cmp"><i class="os-dot"></i>Cost per pupil vs. NH average, and rank</div>
+        <div class="os-chip-row" data-draw="chip-cmp"></div>
         <div data-draw="label-cmp">—</div>
         <div class="os-src" data-draw="src-cmp">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/financial-reports" target="_blank" rel="noopener">NH DOE cost per pupil files</a></div>
       </div>
@@ -217,6 +260,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="lvl" style="--rc:var(--os-c1)" aria-labelledby="os-n-lvl">
       <div class="os-label">
         <div class="os-name" id="os-n-lvl"><i class="os-dot sq"></i>Cost per pupil by school level</div>
+        <div class="os-chip-row" data-draw="chip-lvl"></div>
         <div data-draw="label-lvl">—</div>
         <div class="os-src" data-draw="src-lvl">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/financial-reports" target="_blank" rel="noopener">NH DOE cost per pupil files</a> · <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a></div>
       </div>
@@ -233,6 +277,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="instr" style="--rc:var(--os-c3)" aria-labelledby="os-n-instr">
       <div class="os-label">
         <div class="os-name" id="os-n-instr"><i class="os-dot"></i>Share of spending on instruction</div>
+        <div class="os-chip-row" data-draw="chip-instr"></div>
         <div data-draw="label-instr">—</div>
         <div class="os-src" data-draw="src-instr">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a></div>
       </div>
@@ -241,6 +286,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="spec" style="--rc:var(--os-c3)" aria-labelledby="os-n-spec">
       <div class="os-label">
         <div class="os-name" id="os-n-spec"><i class="os-dot"></i>Special programs spending per student</div>
+        <div class="os-chip-row" data-draw="chip-spec"></div>
         <div data-draw="label-spec">—</div>
 
         <div class="os-src" data-draw="src-spec">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a></div>
@@ -250,6 +296,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="adm" style="--rc:var(--os-c2)" aria-labelledby="os-n-adm">
       <div class="os-label">
         <div class="os-name" id="os-n-adm"><i class="os-dot"></i>Administration and business share of spending</div>
+        <div class="os-chip-row" data-draw="chip-adm"></div>
         <div data-draw="label-adm">—</div>
 
         <div class="os-src" data-draw="src-adm">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a></div>
@@ -259,6 +306,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="bldg" style="--rc:var(--os-c4)" aria-labelledby="os-n-bldg">
       <div class="os-label">
         <div class="os-name" id="os-n-bldg"><i class="os-dot sq"></i>Buildings, buses and bond interest per student</div>
+        <div class="os-chip-row" data-draw="chip-bldg"></div>
         <div data-draw="label-bldg">—</div>
         <div class="os-src" data-draw="src-bldg">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a></div>
       </div>
@@ -267,6 +315,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="staff" style="--rc:var(--os-c1)" aria-labelledby="os-n-staff">
       <div class="os-label">
         <div class="os-name" id="os-n-staff"><i class="os-dot sq"></i>Instruction salaries and benefits</div>
+        <div class="os-chip-row" data-draw="chip-staff"></div>
         <div data-draw="label-staff">—</div>
         <div class="os-src" data-draw="src-staff">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a></div>
       </div>
@@ -275,6 +324,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="ben" style="--rc:var(--os-c1)" aria-labelledby="os-n-ben">
       <div class="os-label">
         <div class="os-name" id="os-n-ben"><i class="os-dot"></i>Benefits as a share of instruction salaries</div>
+        <div class="os-chip-row" data-draw="chip-ben"></div>
         <div data-draw="label-ben">—</div>
         <div class="os-src" data-draw="src-ben">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a></div>
       </div>
@@ -283,6 +333,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="tstart" style="--rc:var(--os-c3)" aria-labelledby="os-n-tstart">
       <div class="os-label">
         <div class="os-name" id="os-n-tstart"><i class="os-dot"></i>Teacher starting salary vs. NH average</div>
+        <div class="os-chip-row" data-draw="chip-tstart"></div>
         <div data-draw="label-tstart">—</div>
         <div class="os-src" data-draw="src-tstart">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/staffing-and-salary-reports" target="_blank" rel="noopener">NH DOE teacher salary reports</a></div>
       </div>
@@ -291,6 +342,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="tavg" style="--rc:var(--os-c3)" aria-labelledby="os-n-tavg">
       <div class="os-label">
         <div class="os-name" id="os-n-tavg"><i class="os-dot"></i>Average teacher salary vs. NH average</div>
+        <div class="os-chip-row" data-draw="chip-tavg"></div>
         <div data-draw="label-tavg">—</div>
         <div class="os-src" data-draw="src-tavg">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/staffing-and-salary-reports" target="_blank" rel="noopener">NH DOE teacher salary reports</a></div>
       </div>
@@ -315,6 +367,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="local" style="--rc:var(--os-c2)" aria-labelledby="os-n-local">
       <div class="os-label">
         <div class="os-name" id="os-n-local"><i class="os-dot"></i>Local property tax share of revenue</div>
+        <div class="os-chip-row" data-draw="chip-local"></div>
         <div data-draw="label-local">—</div>
         <div class="os-src" data-draw="src-local">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a></div>
       </div>
@@ -323,6 +376,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="pay" style="--rc:var(--os-c5)" aria-labelledby="os-n-pay">
       <div class="os-label">
         <div class="os-name" id="os-n-pay"><i class="os-dot"></i>Local property tax vs. state aid, per student</div>
+        <div class="os-chip-row" data-draw="chip-pay"></div>
         <div data-draw="label-pay">—</div>
         <div class="os-src" data-draw="src-pay">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a></div>
       </div>
@@ -331,6 +385,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="aid" style="--rc:var(--os-c3)" aria-labelledby="os-n-aid">
       <div class="os-label">
         <div class="os-name" id="os-n-aid"><i class="os-dot"></i>State adequacy aid: formula cost vs. grant</div>
+        <div class="os-chip-row" data-draw="chip-aid"></div>
         <div data-draw="label-aid">—</div>
         <div class="os-src" data-draw="src-aid">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/state-adequate-education-aid" target="_blank" rel="noopener">NH DOE adequacy aid files</a> · <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a></div>
       </div>
@@ -339,6 +394,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="fed" style="--rc:var(--os-c3)" aria-labelledby="os-n-fed">
       <div class="os-label">
         <div class="os-name" id="os-n-fed"><i class="os-dot"></i>Federal aid received</div>
+        <div class="os-chip-row" data-draw="chip-fed"></div>
         <div data-draw="label-fed">—</div>
         <div class="os-src" data-draw="src-fed">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a></div>
       </div>
@@ -347,6 +403,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="bldaid" style="--rc:var(--os-c2)" aria-labelledby="os-n-bldaid">
       <div class="os-label">
         <div class="os-name" id="os-n-bldaid"><i class="os-dot"></i>State building aid for school bonds</div>
+        <div class="os-chip-row" data-draw="chip-bldaid"></div>
         <div data-draw="label-bldaid">—</div>
         <div class="os-src" data-draw="src-bldaid">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/other-state-aid-programs" target="_blank" rel="noopener">NH DOE other state aid programs</a></div>
       </div>
@@ -355,6 +412,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="spedaid" style="--rc:var(--os-c4)" aria-labelledby="os-n-spedaid">
       <div class="os-label">
         <div class="os-name" id="os-n-spedaid"><i class="os-dot sq"></i>State special education aid</div>
+        <div class="os-chip-row" data-draw="chip-spedaid"></div>
         <div data-draw="label-spedaid">—</div>
         <div class="os-src" data-draw="src-spedaid">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/other-state-aid-programs" target="_blank" rel="noopener">NH DOE other state aid programs</a></div>
       </div>
@@ -363,6 +421,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="share" style="--rc:var(--os-c5)" aria-labelledby="os-n-share">
       <div class="os-label">
         <div class="os-name" id="os-n-share"><i class="os-dot sq"></i>Who pays: each town’s share of the school levy</div>
+        <div class="os-chip-row" data-draw="chip-share"></div>
         <div data-draw="label-share">—</div>
         <div class="os-src" data-draw="src-share">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/financial-reports" target="_blank" rel="noopener">NH DOE valuations and tax rates</a></div>
       </div>
@@ -371,6 +430,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="base" style="--rc:var(--os-c5)" aria-labelledby="os-n-base">
       <div class="os-label">
         <div class="os-name" id="os-n-base"><i class="os-dot"></i>Property value behind each student</div>
+        <div class="os-chip-row" data-draw="chip-base"></div>
         <div data-draw="label-base">—</div>
         <div class="os-src" data-draw="src-base">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/financial-reports" target="_blank" rel="noopener">NH DOE valuations and tax rates</a></div>
       </div>
@@ -379,6 +439,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="rate" style="--rc:var(--os-c5)" aria-labelledby="os-n-rate">
       <div class="os-label">
         <div class="os-name" id="os-n-rate"><i class="os-dot sq"></i>Local school tax rate, by town</div>
+        <div class="os-chip-row" data-draw="chip-rate"></div>
         <div data-draw="label-rate">—</div>
         <div class="os-src" data-draw="src-rate">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/financial-reports" target="_blank" rel="noopener">NH DOE valuations and tax rates</a> · <a href="https://www.revenue.nh.gov/about-dra/municipal-and-property-division/municipal-and-property-reports/municipal-and-village" target="_blank" rel="noopener">NH Dept. of Revenue</a></div>
       </div>
@@ -404,6 +465,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="eff" style="--rc:var(--os-c5)" aria-labelledby="os-n-eff">
       <div class="os-label">
         <div class="os-name" id="os-n-eff"><i class="os-dot sq"></i>School tax per $1,000 of property value</div>
+        <div class="os-chip-row" data-draw="chip-eff"></div>
         <div data-draw="label-eff">—</div>
         <div class="os-src" data-draw="src-eff">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/financial-reports" target="_blank" rel="noopener">NH DOE valuations, tax rates and equalized valuation per pupil</a></div>
       </div>
@@ -420,6 +482,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="cred" style="--rc:var(--os-c5)" aria-labelledby="os-n-cred">
       <div class="os-label">
         <div class="os-name" id="os-n-cred"><i class="os-dot sq"></i>How much of its share state aid covers, by town</div>
+        <div class="os-chip-row" data-draw="chip-cred"></div>
         <div data-draw="label-cred">—</div>
         <div class="os-src" data-draw="src-cred">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/state-adequate-education-aid" target="_blank" rel="noopener">NH DOE adequacy aid files</a> · <a href="https://www.orcsd.org/departments/business-office/annual-reports" target="_blank" rel="noopener">ORCSD annual reports</a></div>
       </div>
@@ -428,6 +491,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="pps3" style="--rc:var(--os-c5)" aria-labelledby="os-n-pps3">
       <div class="os-label">
         <div class="os-name" id="os-n-pps3"><i class="os-dot"></i>School levy per resident student, by town</div>
+        <div class="os-chip-row" data-draw="chip-pps3"></div>
         <div data-draw="label-pps3">—</div>
         <div class="os-src" data-draw="src-pps3">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/financial-reports" target="_blank" rel="noopener">NH DOE valuations, tax rates and equalized valuation per pupil</a></div>
       </div>
@@ -476,6 +540,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <section class="os-row" data-k="efa" style="--rc:var(--os-c5)" aria-labelledby="os-n-efa">
       <div class="os-label">
         <div class="os-name" id="os-n-efa"><i class="os-dot"></i>Education Freedom Account students</div>
+        <div class="os-chip-row" data-draw="chip-efa"></div>
         <div data-draw="label-efa">—</div>
         <div class="os-src" data-draw="src-efa">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/other-state-aid-programs" target="_blank" rel="noopener">NH DOE by-municipality reports</a></div>
       </div>
@@ -686,7 +751,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
   <details class="os-notes">
     <summary>Definitions, sources and data notes</summary>
     <h3>Inflation adjustment</h3>
-    <p>The dollar toggle restates spending, adopted budgets, budget per student and cost per pupil in FY 2024-25 dollars, the latest year with actual results. Two indexes from the US Bureau of Labor Statistics are offered: the Consumer Price Index for All Urban Consumers, Northeast region, all items (CUUR0100SA0), and the Employment Cost Index for total compensation of state and local government workers in educational services (CIU3016100000000I). Both are averaged July to June to match the fiscal year. CPI-U measures what households pay; the ECI measures what employers pay for labor, which is most of a school budget, but it is a national series and not specific to New Hampshire. The two give nearly the same answer over this period, and the US city average CPI-U (CUUR0000SA0) gives a slightly larger adjustment. October 2025 CPI was not collected, so FY 2025-26 CPI averages 11 months. FY 2026-27 adjustments use only the four months of CPI and one quarter of ECI published so far and should be read as estimates. Shares, test results and enrollment are not adjusted.</p>
+    <p>The dollar switch at the top of the page restates every dollar amount in FY 2024-25 dollars, the latest year with actual results: spending, adopted budgets, cost per pupil and per-student amounts, salaries, revenue and aid, fund balances, and each town's school levy. Rows tagged "$ adjusts" change in the chart and the label; rows tagged "Dollar details adjust" chart a share or rate, which inflation does not change, but the dollar amounts in their hover details do change. Two indexes from the US Bureau of Labor Statistics are offered: the Consumer Price Index for All Urban Consumers, Northeast region, all items (CUUR0100SA0), and the Employment Cost Index for total compensation of state and local government workers in educational services (CIU3016100000000I). Both are averaged July to June to match the fiscal year. CPI-U measures what households pay; the ECI measures what employers pay for labor, which is most of a school budget, but it is a national series and not specific to New Hampshire. The two give nearly the same answer over this period, and the US city average CPI-U (CUUR0000SA0) gives a slightly larger adjustment. October 2025 CPI was not collected, so FY 2025-26 CPI averages 11 months. FY 2026-27 adjustments use only the four months of CPI and one quarter of ECI published so far and should be read as estimates. Not adjusted: shares, rates, test results and counts; the property value behind each student, which is a market price rather than spending (tagged "Not adjusted"); and the local tax rate per $1,000, which is already a ratio. Each town's school levy is adjusted as a dollar amount, but the levy per $1,000 of value is not.</p>
     <h3>Spending</h3>
     <p>Total recurring expenditures from the district's DOE-25 Annual Financial Report filed with the NH Department of Education: current operating spending, excluding facility construction and bond principal. Total expenditures including construction are in each year's tooltip; FY 2020-21 and FY 2021-22 include large middle school construction outlays funded by the 2020 bond. FY 2025-26 actuals appear after the district files its report, so that year shows the adopted budget.</p>
     <h3>Adopted budget</h3>
@@ -782,12 +847,12 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <script>
 (function () {
   function fail(e) { var d = document.createElement('div'); d.className = 'os-loaderr'; d.textContent = 'Could not load the data files (' + e + '). Open the single-file version in the dist folder, or try again.'; document.body.insertBefore(d, document.body.firstChild); }
-  Promise.all([fetch('data/orcsd_years.json?v=f4aae580e6'), fetch('data/sources.json?v=f4aae580e6')]).then(function (rs) {
+  Promise.all([fetch('data/orcsd_years.json?v=cacba47bf2'), fetch('data/sources.json?v=cacba47bf2')]).then(function (rs) {
     rs.forEach(function (r) { if (!r.ok) throw new Error(r.status + ' ' + r.url); });
     return Promise.all(rs.map(function (r) { return r.json(); }));
   }).then(function (j) {
     window.__DATA = j[0]; window.__SRC = j[1];
-    var s = document.createElement('script'); s.src = 'app.js?v=f4aae580e6'; s.onerror = function () { fail('app.js'); };
+    var s = document.createElement('script'); s.src = 'app.js?v=cacba47bf2'; s.onerror = function () { fail('app.js'); };
     document.body.appendChild(s);
   }).catch(fail);
 })();
