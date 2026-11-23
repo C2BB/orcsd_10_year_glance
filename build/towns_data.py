@@ -31,10 +31,11 @@ CREDITS = {
  2024: (4143830.67, 3935723.95, 1648535.60), 2025: (4164537, 3964668, 1645118), 2026: (4106562, 3888671, 1717159),  # FY2025-26: final state aid per the DOE cooperative apportionment sheets
  2027: (4078953.07, 4208915.72, 1723365.35),
 }
-# State education property tax rate per $1,000 by tax year (FY-1): printed in the ORCSD annual reports' tax rate impact tables (current-year column)
+# State education property tax rate per $1,000 by tax year (FY-1): printed in the ORCSD annual reports' tax rate impact tables (current-year column).
+# FY2021 to FY2026 (tax years 2020 to 2025) are checked against the DRA rate sheets by build/verify_dra_ratesheets.py; Madbury FY2022 was 1.84 (a repeat of the prior year) until that check, the DRA rate is 1.81.
 STATE_RATE = {
  2018: (2.34, 2.39, 2.23), 2019: (2.01, 2.29, 2.23), 2020: (2.01, 2.39, 2.17), 2021: (2.00, 2.32, 1.84),
- 2022: (1.98, 1.52, 1.84), 2023: (1.53, 1.11, 1.27), 2024: (1.39, 1.50, 1.79), 2025: (1.21, 1.53, 1.77), 2026: (1.06, 1.57, 0.99),
+ 2022: (1.98, 1.52, 1.81), 2023: (1.53, 1.11, 1.27), 2024: (1.39, 1.50, 1.79), 2025: (1.21, 1.53, 1.77), 2026: (1.06, 1.57, 0.99),
 }
 def town_fields(y, r):
     f = {}

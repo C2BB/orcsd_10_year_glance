@@ -127,6 +127,7 @@ Files found on the DOE and DRA pages during the 2026-11-23 sweep that no dashboa
 - listed on DOE page other-state-aid-programs: 9 files, e.g. `inline-documents__2026__excel-fy-25-phase-out.xlsx`, `inline-documents__2026__excel-fy-26-phase-out.xlsx`, `inline-documents__2026__fy-2025-efa-phase-report.pdf`
 - listed on DOE page staffing-and-salary-reports: 10 files, e.g. `inline-documents__principal-salaries19-20.csv`, `inline-documents__sonh__principal-salaries20-21.xlsx`, `inline-documents__sonh__principal-salaries20-21_1.csv`
 - listed on DRA municipal and property reports page: 13 files, e.g. `documents__2023-comparison-of-full-value-tax-rates-ranking-order.pdf`, `documents__2023-equalization-survey-including-utilities.pdf`, `documents__2023-equalization-survey-including-utilities.xlsx`
+- listed on the DRA municipal and property reports page: 34 files, e.g. `documents__2021-education-tax-warrants-all.pdf`, `documents__2021-tax-rate-comparison.xlsx`, `documents__2022-education-tax-warrants-all.pdf`
 
 ## Gaps and caveats
 
