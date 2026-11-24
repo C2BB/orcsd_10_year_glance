@@ -134,6 +134,10 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `peeradj` | `assess` |
 | `scat` | `cpp`, `assess` |
 | `scat2` | `assess` |
+| `tuit` | `doe25` |
+| `trans` | `doe25` |
+| `bonds` | `doe25` |
+| `dsvc` | `doe25` |
 
 ## Mirrored but not charted
 

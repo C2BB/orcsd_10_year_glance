@@ -2,7 +2,7 @@
   <header class="os-head">
     <p class="os-eyebrow">Oyster River Cooperative School District · FY 2017-18 to FY 2026-27</p>
     <h1 class="os-title" id="os-title">Ten years at a glance</h1>
-    <p class="os-intro">Eighty-one measures from public filings, grouped into eleven sections and drawn on the same ten school years, each row on its own scale. The page opens on FY 2026-27 (the voted budget, provisional); select a year in the bar that stays at the top of the screen to read its value in every row, or hover, focus or tap a point for the exact figures. Every row shows its change since FY 2017-18 and links to its source data. Under each chart, FY18 means the 2017-18 school year (the year it ends in). Solid points are results; hollow, dotted points are budgets, provisional or approximate figures.</p>
+    <p class="os-intro">Eighty-five measures from public filings, grouped into eleven sections and drawn on the same ten school years, each row on its own scale. The page opens on FY 2026-27 (the voted budget, provisional); select a year in the bar that stays at the top of the screen to read its value in every row, or hover, focus or tap a point for the exact figures. Every row shows its change since FY 2017-18 and links to its source data. Under each chart, FY18 means the 2017-18 school year (the year it ends in). Solid points are results; hollow, dotted points are budgets, provisional or approximate figures.</p>
   </header>
 
   <section class="os-adjust" aria-labelledby="os-adj-h">
@@ -194,6 +194,24 @@
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-debt">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Total obligations</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Bonds and loans</span></span><span class="ln">Audited, June 30. Total = bonds and loans + net pension + net retiree health liabilities.</span></div></div>
     </section>
+    <section class="os-row" data-k="bonds" style="--rc:var(--os-c1)" aria-labelledby="os-n-bonds">
+      <div class="os-label">
+        <div class="os-name" id="os-n-bonds"><i class="os-dot"></i>School bonds: principal and interest still owed</div>
+        <div class="os-chip-row" data-draw="chip-bonds"></div>
+        <div data-draw="label-bonds">—</div>
+        <div class="os-src" data-draw="src-bonds">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports</a></div>
+      </div>
+      <div class="os-vis"><div class="os-chart" data-draw="chart-bonds">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Principal still owed</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Interest still to pay</span></span></div></div>
+    </section>
+    <section class="os-row" data-k="dsvc" style="--rc:var(--os-c2)" aria-labelledby="os-n-dsvc">
+      <div class="os-label">
+        <div class="os-name" id="os-n-dsvc"><i class="os-dot sq"></i>Bond payments due in the next fiscal year</div>
+        <div class="os-chip-row" data-draw="chip-dsvc"></div>
+        <div data-draw="label-dsvc">—</div>
+        <div class="os-src" data-draw="src-dsvc">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports</a></div>
+      </div>
+      <div class="os-vis"><div class="os-chart" data-draw="chart-dsvc">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Principal plus interest due</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Interest part</span></span></div></div>
+    </section>
 <section class="os-row" data-k="nhrs" style="--rc:var(--os-c5)" aria-labelledby="os-n-nhrs">
       <div class="os-label">
         <div class="os-name" id="os-n-nhrs"><i class="os-dot"></i>ORCSD’s share of the state retirement system’s shortfall</div>
@@ -328,6 +346,24 @@
         <div class="os-src" data-draw="src-bldg">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a></div>
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-bldg">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Plant operations</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Transportation</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>Bond interest</span></span></div></div>
+    </section>
+    <section class="os-row" data-k="tuit" style="--rc:var(--os-c2)" aria-labelledby="os-n-tuit">
+      <div class="os-label">
+        <div class="os-name" id="os-n-tuit"><i class="os-dot"></i>Tuition paid to other schools</div>
+        <div class="os-chip-row" data-draw="chip-tuit"></div>
+        <div data-draw="label-tuit">—</div>
+        <div class="os-src" data-draw="src-tuit">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports</a></div>
+      </div>
+      <div class="os-vis"><div class="os-chart" data-draw="chart-tuit">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Total tuition</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Special programs: private and other schools</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>Vocational and career technology</span></span></div></div>
+    </section>
+    <section class="os-row" data-k="trans" style="--rc:var(--os-c3)" aria-labelledby="os-n-trans">
+      <div class="os-label">
+        <div class="os-name" id="os-n-trans"><i class="os-dot sq"></i>Student transportation, by type of trip</div>
+        <div class="os-chip-row" data-draw="chip-trans"></div>
+        <div data-draw="label-trans">—</div>
+        <div class="os-src" data-draw="src-trans">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports</a></div>
+      </div>
+      <div class="os-vis"><div class="os-chart" data-draw="chart-trans">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>All transportation</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Special education transportation</span></span></div></div>
     </section>
 <section class="os-row" data-k="staff" style="--rc:var(--os-c1)" aria-labelledby="os-n-staff">
       <div class="os-label">

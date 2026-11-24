@@ -125,6 +125,48 @@ def fields():
                 out.setdefault(k, {})[y] = round(out.get(k, {}).get(y, 0) + tot, 2)
             else:
                 put(k, y, tot)
+
+        # ---- Tuition paid to other schools, by program (ACTIVITY block; the fourth number is the all-schools total)
+        act = [r for r in rows if r["sheet"] == "DOE25" and r.get("hdr") == "ACTIVITY"]
+        tui = []
+        for r in act:
+            m = re.match(r"(Regular|Special|Vocational) Program Tuition to (.+)$", r["label"].strip())
+            if m:
+                tui.append((m.group(1), m.group(2), _nz(r["values"][3])))
+        assert len(tui) == 12, (y, len(tui))
+        priv = sum(v for kind, dest, v in tui if kind == "Special" and dest.startswith("Private"))
+        put("tuit_priv", y, priv)
+        put("tuit_spub", y, sum(v for kind, dest, v in tui if kind == "Special") - priv)
+        put("tuit_voc", y, sum(v for kind, dest, v in tui if kind == "Vocational"))
+        put("tuit_reg", y, sum(v for kind, dest, v in tui if kind == "Regular"))
+        put("tuit_tot", y, sum(v for kind, dest, v in tui))
+
+        # ---- Student transportation by type of trip (ACTIVITY block, accounts 2721 to 2729; sixth number is the total)
+        def tr(prefix):
+            m = [r for r in act if r["label"].strip().startswith(prefix)]
+            assert len(m) == 1, (y, prefix, len(m))
+            return _nz(m[0]["values"][5])
+        put("trans_reg", y, tr("Regular To and From"))
+        put("trans_sped", y, tr("All Special Education Transportation"))
+        put("trans_voc", y, tr("Vocational Education Transportation"))
+        put("trans_oth", y, tr("Intra-District Transportation") + tr("Other Transportation"))
+        put("trans_tot", y, sum(out[k][y] for k in ("trans_reg", "trans_sped", "trans_voc", "trans_oth")))
+
+        # ---- Bond debt schedule (the statement block that holds the debt lines; five issue columns then a total)
+        ds = [r for r in rows if r["sheet"] == "DOE25" and r.get("hdr") == "STATEMENT OF ANALYSIS OF CHANGE IN FUND EQUITY"]
+
+        def dl(prefix):
+            m = [r for r in ds if r["label"].strip().startswith(prefix)]
+            assert len(m) == 1, (y, prefix, len(m))
+            return (list(m[0]["values"]) + [None] * 7)[:6]
+        rp, ri = dl("Remaining Principal Balance Due"), dl("Remaining Interest Balance Due")
+        np_, ni, nt = (dl("Amount of Principal to be Paid Next Fiscal Year"), dl("Amount of Interest to be Paid Next Fiscal Year"),
+                       dl("Total Debt Next Fiscal Year"))
+        put("bond_prin", y, _nz(rp[5])); put("bond_int", y, _nz(ri[5]))
+        put("ds_prin", y, _nz(np_[5])); put("ds_int", y, _nz(ni[5])); put("ds_tot", y, _nz(nt[5]))
+        for i in range(5):
+            put("bond_p%d" % (i + 1), y, _nz(rp[i]))
+            put("ds_n%d" % (i + 1), y, _nz(nt[i]))
     return out
 
 

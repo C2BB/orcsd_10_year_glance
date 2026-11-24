@@ -156,8 +156,8 @@ dash.calc('headline', {
   var sel = 9;
   var mode = 'nom';
   var MODES = { nom: { label: 'Nominal dollars', f: null }, cpi: { label: 'Northeast CPI-U', f: 'f_cpi', idx: 'cpi_ne', n: 'cpi_ne_months', nn: 12 }, eci: { label: 'education labor costs (ECI)', f: 'f_eci', idx: 'eci_edu', n: 'eci_quarters', nn: 4 } };
-  var MONEY = ['gfo_sal', 'gfo_ben', 'gfo_pur', 'gfo_sup', 'gfo_prop', 'gfo_oth', 'gfo_tot', 'gfo_sb', 'gfo_np', 'sch_mw', 'sch_mo', 'sch_ps', 'sch_ms', 'sch_hs', 'sch_od', 'sch_tot', 'pers_t_sal', 'pers_a_sal', 'pers_o_sal', 'pers_t_ben', 'pers_a_ben', 'pers_o_ben', 'pers_ao_sal', 'fe_gen_rev', 'fe_gen_exp', 'fe_gen_net', 'fe_gen_beg', 'fe_gen_end', 'fe_food_rev', 'fe_food_exp', 'fe_food_net', 'fe_food_beg', 'fe_food_end', 'fe_spr_rev', 'fe_spr_exp', 'fe_spr_net', 'fe_spr_beg', 'fe_spr_end', 'rsd_ins', 'rsd_rel', 'rsd_adm', 'rsd_leg', 'rsd_trn', 'rsd_tui', 'rsd_sub', 'rsd_tot', 'rsd_aid', 'rsd_idea', 'rsd_med', 'rsd_rev', 'rsd_net', 'fb_prep', 'fb_vote', 'fb_enc', 'fb_ret', 'fb_una', 'fb_trust', 'bd_unspent', 'bd_appr', 'bd_exp', 'dflt_gap', 'dflt', 'f10', 'f21', 'f22', 'f23', 'nhrs_npl', 'nhrs_do', 'nhrs_di', 'nhrs_exp', 'nhrs_con', 'nhrs_onl', 'nhrs_oexp', 'nhrs_ocon', 'debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
-  var NAMES = ['gfo', 'sps', 'pers', 'fres', 'nhrs', 'rsa', 'spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'bvx', 'dflt', 'timp', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts', 'peer', 'scat', 'peeradj', 'scat2'];
+  var MONEY = ['tuit_priv', 'tuit_spub', 'tuit_voc', 'tuit_reg', 'tuit_tot', 'trans_reg', 'trans_sped', 'trans_voc', 'trans_oth', 'trans_tot', 'bond_prin', 'bond_int', 'ds_prin', 'ds_int', 'ds_tot', 'bond_p1', 'bond_p2', 'bond_p3', 'bond_p4', 'bond_p5', 'ds_n1', 'ds_n2', 'ds_n3', 'ds_n4', 'ds_n5', 'gfo_sal', 'gfo_ben', 'gfo_pur', 'gfo_sup', 'gfo_prop', 'gfo_oth', 'gfo_tot', 'gfo_sb', 'gfo_np', 'sch_mw', 'sch_mo', 'sch_ps', 'sch_ms', 'sch_hs', 'sch_od', 'sch_tot', 'pers_t_sal', 'pers_a_sal', 'pers_o_sal', 'pers_t_ben', 'pers_a_ben', 'pers_o_ben', 'pers_ao_sal', 'fe_gen_rev', 'fe_gen_exp', 'fe_gen_net', 'fe_gen_beg', 'fe_gen_end', 'fe_food_rev', 'fe_food_exp', 'fe_food_net', 'fe_food_beg', 'fe_food_end', 'fe_spr_rev', 'fe_spr_exp', 'fe_spr_net', 'fe_spr_beg', 'fe_spr_end', 'rsd_ins', 'rsd_rel', 'rsd_adm', 'rsd_leg', 'rsd_trn', 'rsd_tui', 'rsd_sub', 'rsd_tot', 'rsd_aid', 'rsd_idea', 'rsd_med', 'rsd_rev', 'rsd_net', 'fb_prep', 'fb_vote', 'fb_enc', 'fb_ret', 'fb_una', 'fb_trust', 'bd_unspent', 'bd_appr', 'bd_exp', 'dflt_gap', 'dflt', 'f10', 'f21', 'f22', 'f23', 'nhrs_npl', 'nhrs_do', 'nhrs_di', 'nhrs_exp', 'nhrs_con', 'nhrs_onl', 'nhrs_oexp', 'nhrs_ocon', 'debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
+  var NAMES = ['gfo', 'sps', 'pers', 'fres', 'nhrs', 'rsa', 'spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'bvx', 'dflt', 'timp', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts', 'peer', 'scat', 'peeradj', 'scat2', 'tuit', 'trans', 'bonds', 'dsvc'];
 
   var SCH = [['High school', 'hs'], ['Middle school', 'ms'], ['Mast Way', 'mw'], ['Moharimet', 'mo']];
   function schLines(r, fld, fmt) {
@@ -1940,6 +1940,97 @@ dash.calc('headline', {
     tip: function () { return { lines: [] }; }
   };
   ROWS.scat2.chg = { get: function (r) { return r.pe_ses; }, kind: 'pts', dec: true, note: 'low-income share' };
+
+  // ---- DOE-25 detail: tuition, transportation, bond schedule ----
+  var BOND_SLOTS = ['$1.5M issue, 1.88%, 10 years', '$23.0M issue, 1.97%, 25 years', '$22.5M issue, 2.01%, 25 years', '$2.3M issue, 4.22%, 20 years', '$20.4M issue, 4.09%, 20 years'];
+  ROWS.tuit = {
+    money: true,
+    aria: 'Tuition the district paid to other schools: total, special programs at private and other schools, and vocational programs, by fiscal year',
+    domain: [0, 1500000], ticks: [0, 500000, 1000000, 1500000], axis: false,
+    tickFmt: function (v) { return v === 0 ? '$0' : '$' + (v / 1e6) + 'M'; },
+    series: [
+      { id: 'voc', get: function (r) { return r.tuit_voc; }, comp: true },
+      { id: 'priv', get: function (r) { return r.tuit_priv; }, alt: 'square' },
+      { id: 'tot', get: function (r) { return r.tuit_tot; }, main: true }
+    ],
+    label: function (r) {
+      if (r.tuit_tot == null) return nodata('DOE-25 for this year not yet filed', 'tuit_tot', 'years', 'Pending');
+      return { big: moneyM(r.tuit_tot, 2), sub: 'Tuition paid to other schools', delta: 'Special programs at private and other schools ' + money(r.tuit_priv), tag: 'Reported', prov: false, src: 'years', field: 'tuit_tot' };
+    },
+    tip: function (r) {
+      if (r.tuit_tot == null) return { lines: [['Tuition', 'DOE-25 not yet filed']], note: 'The DOE-25 for this year has not been published.' };
+      return { lines: [['Special programs: private and other schools', money(r.tuit_priv)], ['Special programs: public schools and academies', money(r.tuit_spub)], ['Vocational programs (career technology)', money(r.tuit_voc)], ['Regular programs', money(r.tuit_reg)], ['Total tuition paid', money(r.tuit_tot)]],
+        note: 'DOE-25 activity table: tuition by program and destination (public schools in and outside NH, public academies, private and other schools). Special-program tuition covers students the district places in other schools for special education and similar services. These payments are part of the spending shown elsewhere on the page; this row shows how much of it leaves the district’s own schools.' };
+    }
+  };
+  ROWS.tuit.chg = { get: function (r) { return r.tuit_tot; }, kind: 'pct', note: 'total tuition' };
+  ROWS.trans = {
+    money: true,
+    aria: 'Student transportation spending by type of trip, by fiscal year',
+    domain: [0, 2500000], ticks: [0, 1000000, 2000000], axis: false,
+    tickFmt: function (v) { return v === 0 ? '$0' : '$' + (v / 1e6) + 'M'; },
+    series: [
+      { id: 'sped', get: function (r) { return r.trans_sped; }, alt: 'square' },
+      { id: 'tot', get: function (r) { return r.trans_tot; }, main: true }
+    ],
+    label: function (r) {
+      if (r.trans_tot == null) return nodata('DOE-25 for this year not yet filed', 'trans_tot', 'years', 'Pending');
+      return { big: moneyM(r.trans_tot, 2), sub: 'Student transportation, all types of trip', delta: 'Regular routes ' + money(r.trans_reg) + ' · special education ' + money(r.trans_sped), tag: 'Reported', prov: false, src: 'years', field: 'trans_tot' };
+    },
+    tip: function (r) {
+      if (r.trans_tot == null) return { lines: [['Transportation', 'DOE-25 not yet filed']], note: 'The DOE-25 for this year has not been published.' };
+      var L = [['Regular to and from school', money(r.trans_reg)], ['Special education', money(r.trans_sped)], ['Vocational and career technology', money(r.trans_voc)], ['Other and within-district', money(r.trans_oth)], ['Total by type', money(r.trans_tot)]];
+      if (r.fn_trans != null) L.push(['Function-code total (used in the buses row above)', money(r.fn_trans)]);
+      return { lines: L, note: 'DOE-25 activity table, accounts 2721 to 2729. The DOE-25’s own function-code total is 0.3% to 3.6% higher than the sum of the trip types, depending on the year; the filing does not explain the difference.' };
+    }
+  };
+  ROWS.trans.chg = { get: function (r) { return r.trans_tot; }, kind: 'pct', note: 'transportation' };
+  ROWS.bonds = {
+    money: true,
+    aria: 'School bond principal and interest still owed at June 30, by fiscal year',
+    domain: [0, 60000000], ticks: [0, 20000000, 40000000, 60000000], axis: false,
+    tickFmt: function (v) { return v === 0 ? '$0' : '$' + (v / 1e6) + 'M'; },
+    series: [
+      { id: 'int', get: function (r) { return r.bond_int; }, alt: 'square' },
+      { id: 'prin', get: function (r) { return r.bond_prin; }, main: true }
+    ],
+    label: function (r) {
+      if (r.bond_prin == null) return nodata('DOE-25 for this year not yet filed', 'bond_prin', 'years', 'Pending');
+      return { big: moneyM(r.bond_prin, 1), sub: 'School bond principal still owed at June 30', delta: 'Interest still to pay ' + moneyM(r.bond_int, 1), tag: 'Reported', prov: false, src: 'years', field: 'bond_prin' };
+    },
+    tip: function (r) {
+      if (r.bond_prin == null) return { lines: [['Bond debt', 'DOE-25 not yet filed']], note: 'The DOE-25 for this year has not been published.' };
+      var L = [];
+      BOND_SLOTS.forEach(function (nm, i) { var v = r['bond_p' + (i + 1)]; if (v) L.push([nm, money(v)]); });
+      L.push(['Principal still owed', money(r.bond_prin)], ['Interest still to pay', money(r.bond_int)]);
+      if (r.debt_bonds != null) L.push(['Audited bonds and loans (long-term debt row)', money(r.debt_bonds)]);
+      return { lines: L, note: 'DOE-25 debt schedule, balances at June 30. The audited bonds-and-loans figure equals this schedule through 2019-20 and is higher in later years (' + (r.debt_bonds != null ? 'FY ' + r.fy + ': ' + money(r.debt_bonds - r.bond_prin) + ' higher' : 'audit not yet posted for this year') + '); the filings do not reconcile the two.' + (r.fy === '2020-21' ? ' The 2020-21 filing leaves the remaining interest of three older issues blank, so that year’s interest total is slightly low.' : '') };
+    }
+  };
+  ROWS.bonds.chg = { get: function (r) { return r.bond_prin; }, kind: 'pct', note: 'principal still owed' };
+  ROWS.dsvc = {
+    money: true,
+    aria: 'Bond principal and interest due in the following fiscal year, by fiscal year of the filing',
+    domain: [0, 3500000], ticks: [0, 1000000, 2000000, 3000000], axis: false,
+    tickFmt: function (v) { return v === 0 ? '$0' : '$' + (v / 1e6) + 'M'; },
+    series: [
+      { id: 'int', get: function (r) { return r.ds_int; }, alt: 'square' },
+      { id: 'tot', get: function (r) { return r.ds_tot; }, main: true }
+    ],
+    label: function (r) {
+      if (r.ds_tot == null) return nodata('DOE-25 for this year not yet filed', 'ds_tot', 'years', 'Pending');
+      var sh = r.actual_recurring ? ' · ' + (100 * r.ds_tot / r.actual_recurring).toFixed(1) + '% of this year’s operating spending' : '';
+      return { big: moneyM(r.ds_tot, 2), sub: 'Bond principal and interest due in the next fiscal year', delta: 'Principal ' + moneyM(r.ds_prin, 2) + ' · interest ' + moneyM(r.ds_int, 2) + sh, tag: 'Reported', prov: false, src: 'years', field: 'ds_tot' };
+    },
+    tip: function (r) {
+      if (r.ds_tot == null) return { lines: [['Bond payments', 'DOE-25 not yet filed']], note: 'The DOE-25 for this year has not been published.' };
+      var L = [];
+      BOND_SLOTS.forEach(function (nm, i) { var v = r['ds_n' + (i + 1)]; if (v) L.push([nm, money(v)]); });
+      L.push(['Principal due', money(r.ds_prin)], ['Interest due', money(r.ds_int)], ['Total due next fiscal year', money(r.ds_tot)]);
+      return { lines: L, note: 'DOE-25 debt schedule: the payments the district reports it must make in the fiscal year after the one shown. Bond payments are part of the district’s spending, funded from the same revenue as the rest of the budget.' };
+    }
+  };
+  ROWS.dsvc.chg = { get: function (r) { return r.ds_tot; }, kind: 'pct', note: 'payments due' };
   ROWS.sgp.chg = { get: function (r) { return r.sgp_rea; }, kind: 'pts', note: 'reading' };
   ROWS.grp.chg = { get: function (r) { return r.ela_iep; }, kind: 'pts', note: 'students with IEPs' };
   ROWS.att.chg = { get: function (r) { return r.att; }, kind: 'pts', dec: true };
