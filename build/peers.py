@@ -172,6 +172,12 @@ def compute():
             rk = 1 + sum(1 for r in sg if r['sgp'] > o['sgp'])
             f.update(pe_sgp=round(o['sgp'], 1), pe_sgp_rank=rk, pe_sgp_n=len(sg), pe_sgp_pct=_pct(rk, len(sg)),
                      pe_sgp_med=round(statistics.median(r['sgp'] for r in sg), 1))
+        cp = [(r['cost'] / (r['prof'] / 100.0), r['id']) for r in rows if r['cost'] and r['prof'] > 0]
+        mine = next((v for v, i in cp if i == ORCSD_ID), None)
+        if mine is not None:
+            rk = 1 + sum(1 for v, i in cp if v < mine)     # 1 = lowest cost per proficient student
+            f.update(pe_cpp_prof=round(mine), pe_cpp_prof_rank=rk, pe_cpp_prof_n=len(cp),
+                     pe_cpp_prof_med=round(statistics.median(v for v, i in cp)))
         se = [r for r in rows if r['ses'] is not None]
         if o['ses'] is not None and len(se) > 10:
             a_, b_, r2 = _ols([r['ses'] for r in se], [r['prof'] for r in se])

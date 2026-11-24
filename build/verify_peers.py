@@ -29,6 +29,8 @@ for r in rows:
         chk('math', r['pe_mat'], r['math'])
         if r.get('pe_sgp') is not None:
             chk('growth', r['pe_sgp'], (r['sgp_rea'] + r['sgp_mat']) / 2, 0.051)
+    if r.get('pe_cpp_prof') is not None:
+        chk('cost per proficient student', r['pe_cpp_prof'], r['pe_cost'] / (r['pe_prof'] / 100.0), 1.01)
     peers = r.get('pe_peers')
     if peers:
         me = [p for p in peers if p[5]]
