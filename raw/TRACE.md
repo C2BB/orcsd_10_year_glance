@@ -133,16 +133,12 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `nhrs` | `nhrs68`, `nhrs75` |
 | `peer` | `cpp`, `assess` |
 | `peeradj` | `assess` |
-| `scat` | `cpp`, `assess` |
-| `scat2` | `assess` |
 | `tuit` | `doe25` |
 | `trans` | `doe25` |
 | `bonds` | `doe25` |
 | `dsvc` | `doe25` |
 | `twprof` | `asmtown` |
-| `cpps` | `cpp`, `assess` |
 | `rks` | `values` |
-| `rkt` | `values` |
 | `food` | `doe25` |
 | `fedprog` | `doe25` |
 | `othloc` | `doe25` |

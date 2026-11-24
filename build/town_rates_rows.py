@@ -1,11 +1,11 @@
-"""Page fields: where Durham, Lee and Madbury rank among New Hampshire towns on school and total tax rates per $1,000 of full value.
+"""Page fields: where Durham, Lee and Madbury rank among New Hampshire towns on school tax rates per $1,000 of full value.
 
 Reads build/town_rates.json (town_rates_extract.py, NH DOE values files, tax years 2017 to 2025).  Tax year Y is shown against the
 school year Y to Y+1, so the fiscal-year key is Y+1.  For each year, among the towns with a nonzero rate:
-  rks_<t> / rkt_<t>        percentile, 0 to 100, share of towns with a LOWER rate (100 = highest rate)   t = dur, lee, mad
-  rks_val_<t> / rkt_val_<t>   the rate per $1,000 of equalized value (school = local education rate; total = all property taxes)
-  rks_rank_<t> / rkt_rank_<t> rank, 1 = lowest rate
-  rks_n, rks_med, rkt_n, rkt_med   number of towns and their median rate
+  rks_<t>        percentile, 0 to 100, share of towns with a LOWER rate (100 = highest rate)   t = dur, lee, mad
+  rks_val_<t>   the rate per $1,000 of equalized value (school = local education rate; total = all property taxes)
+  rks_rank_<t> rank, 1 = lowest rate
+  rks_n, rks_med   number of towns and their median rate
 """
 import json, os, statistics
 
@@ -18,7 +18,7 @@ def fields():
     out = {}
     for y, towns in D.items():
         fy = int(y) + 1
-        for pref, idx in (("rks", 1), ("rkt", 2)):
+        for pref, idx in (("rks", 1),):
             pool = [v[idx] for v in towns.values() if v[idx] > 0]
             n = len(pool)
             out.setdefault(pref + "_n", {})[fy] = n

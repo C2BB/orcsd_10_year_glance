@@ -83,7 +83,7 @@
 .os-anchor:hover{color:var(--color-fg)}
 .os-anchor:focus-visible{outline:2px solid var(--os-c2); outline-offset:2px}
 @media (hover:none){.os-anchor{opacity:.55}}
-.os-row,.os-h2,.os-notes h3,.os-notes{scroll-margin-top:calc(var(--os-sticky,0px) + 14px)}
+.os-row,.os-h2,.os-notes h3,.os-notes,.os-more{scroll-margin-top:calc(var(--os-sticky,0px) + 14px)}
 .os-row.is-target,.os-h2.is-target,.os-notes h3.is-target{animation:os-flash 2.6s ease-out}
 .os-notes.is-target{animation:os-flash 2.6s ease-out}
 @keyframes os-flash{0%,55%{background:color-mix(in srgb,var(--os-c2) 16%,transparent)}100%{background:transparent}}
@@ -143,8 +143,15 @@
   .os-modeshort{display:none}
 }
 
-/* ---- Peer comparison scatter ---- */
-.os-empty{padding:44px 12px; text-align:center; font-size:13px; color:var(--color-fg-muted)}
-.os-sc text{font-size:11px; fill:var(--color-fg-muted)}
-.os-sc .os-sc-me{font-size:12px; font-weight:700; fill:var(--color-fg)}
 .os-latest{display:block; width:fit-content; margin:0 0 4px; font-size:11.5px; font-weight:600; padding:2px 8px; border-radius:6px; background:var(--color-panel-alt,rgba(128,128,128,.14)); color:var(--color-fg)}
+/* ---- "More detail" section: a bordered, obvious, collapsible block ---- */
+.os-more{margin:40px 0 14px; border:2px solid var(--os-c2); border-radius:14px; padding:0 18px 10px; background:rgba(79,141,191,.07)}
+.os-more>summary{list-style:none; cursor:pointer; display:flex; flex-wrap:wrap; align-items:center; gap:4px 14px; padding:16px 0}
+.os-more>summary::-webkit-details-marker{display:none}
+.os-more>summary::before{content:"+"; flex:none; display:inline-flex; width:30px; height:30px; align-items:center; justify-content:center; border-radius:50%; background:var(--os-c2); color:#fff; font-size:22px; line-height:1; font-weight:600}
+.os-more[open]>summary::before{content:"\2212"}
+.os-more-t{font-size:20px; font-weight:700}
+.os-more-h{flex:1 1 100%; padding-left:44px; font-size:13px; color:var(--color-fg-muted)}
+.os-more>summary:focus-visible{outline:2px solid var(--os-c2); outline-offset:3px; border-radius:8px}
+.os-sub{margin:30px 0 6px; font-family:var(--font-anthropic-serif,"Source Serif 4",Georgia,serif); font-weight:400; font-size:clamp(19px,3.4vw,23px); line-height:1.2}
+.os-more.is-target{animation:os-flash 2.6s ease-out}

@@ -130,7 +130,6 @@ def _ols(xs, ys):
 
 def compute():
     fields = {}     # fy -> ORCSD fields for the years table
-    peers = {}      # fy -> rows for the scatter: [name, cost, proficiency, ses share, growth, is_orcsd]
     cache = {fy: k12(fy) for fy in CPP}
     for fy in range(2018, 2027):
         f = {}
@@ -172,12 +171,6 @@ def compute():
             rk = 1 + sum(1 for r in sg if r['sgp'] > o['sgp'])
             f.update(pe_sgp=round(o['sgp'], 1), pe_sgp_rank=rk, pe_sgp_n=len(sg), pe_sgp_pct=_pct(rk, len(sg)),
                      pe_sgp_med=round(statistics.median(r['sgp'] for r in sg), 1))
-        cp = [(r['cost'] / (r['prof'] / 100.0), r['id']) for r in rows if r['cost'] and r['prof'] > 0]
-        mine = next((v for v, i in cp if i == ORCSD_ID), None)
-        if mine is not None:
-            rk = 1 + sum(1 for v, i in cp if v < mine)     # 1 = lowest cost per proficient student
-            f.update(pe_cpp_prof=round(mine), pe_cpp_prof_rank=rk, pe_cpp_prof_n=len(cp),
-                     pe_cpp_prof_med=round(statistics.median(v for v, i in cp)))
         se = [r for r in rows if r['ses'] is not None]
         if o['ses'] is not None and len(se) > 10:
             a_, b_, r2 = _ols([r['ses'] for r in se], [r['prof'] for r in se])
@@ -189,19 +182,13 @@ def compute():
                      pe_exp=round(exp, 1), pe_res=round(res, 1), pe_res_rank=rk, pe_res_n=len(se),
                      pe_slope=round(b_, 3), pe_r2=round(r2, 3))
         fields[fy] = f
-        peers[fy] = [[r['name'], round(r['cost']) if r['cost'] else None, round(r['prof'], 1),
-                      round(r['ses'], 1) if r['ses'] is not None else None,
-                      round(r['sgp'], 1) if r['sgp'] is not None else None,
-                      1 if r['id'] == ORCSD_ID else 0] for r in sorted(rows, key=lambda r: r['name'])]
-    return fields, peers
+    return fields
 
 
 if __name__ == '__main__':
-    F, P = compute()
+    F = compute()
     for fy in sorted(F):
         print(fy, F[fy])
-    for fy in sorted(P):
-        print(fy, 'peers', len(P[fy]), 'no cost', sum(1 for p in P[fy] if p[1] is None), 'no ses', sum(1 for p in P[fy] if p[3] is None))
     for fy in sorted(ASSESS):
         cset = k12(fy if fy in CPP else 2025)
         A = assessments(fy)
