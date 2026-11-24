@@ -4,7 +4,7 @@ Independent school-finance and outcomes dashboard for the Oyster River Cooperati
 
 Live page: https://c2bb.github.io/orcsd_10_year_glance/
 
-Picking this up (person or AI assistant)? Read [`HANDOFF.md`](HANDOFF.md) first: current state, rebuild and check commands, how to reach the state sites (the DOE's Tableau dashboards, blocked downloads), the hosted-copy limits, and open items.
+Picking this up (person or AI assistant)? Read [`HANDOFF.md`](HANDOFF.md) first: current state, rebuild and check commands, how to reach the state sites (the DOE's Tableau dashboards, blocked downloads), and open items.
 
 ## Layout
 

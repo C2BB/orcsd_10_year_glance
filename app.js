@@ -1785,7 +1785,7 @@ dash.calc('headline', {
   }
   function median(a) { var s = a.slice().sort(function (p, q) { return p - q; }), m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; }
   function renderScatter(host, k, D) {
-    var spec = ROWS[k], r = D[sel];
+    var spec = ROWS[k], r = D[effIdx(k, D)];
     host.replaceChildren();
     host.style.position = 'relative';
     var pts = (r.pe_peers || []).filter(function (p) { return spec.x(p) != null && spec.y(p) != null; });
@@ -1979,6 +1979,18 @@ dash.calc('headline', {
     redrawAll();
   }
 
+  // When the selected year has no value for a row (not yet published, no test), show the nearest year that does
+  // (latest earlier year first, then a later one) and say so.
+  function effIdx(k, D) {
+    var L = ROWS[k].label;
+    function ok(i) { var l = L(D[i]); return !(l && (l.big === '\u2014' || l.tag === 'Pending' || l.tag === 'No test')); }
+    if (ok(sel)) return sel;
+    var i;
+    for (i = sel - 1; i >= 0; i--) if (ok(i)) return i;
+    for (i = sel + 1; i < D.length; i++) if (ok(i)) return i;
+    return sel;
+  }
+
   function autoDom(spec, D) {
     var vs = [];
     spec.series.forEach(function (s) { D.forEach(function (r) { var v = s.get(r); if (v != null) vs.push(v); }); });
@@ -1995,6 +2007,7 @@ dash.calc('headline', {
   function renderChart(host, k, D) {
     var spec = ROWS[k];
     if (spec.scatter) { renderScatter(host, k, D); return; }
+    var es = effIdx(k, D);
     host.replaceChildren();
     host.style.position = 'relative';
     var W = Math.max(260, host.clientWidth || 560);
@@ -2013,7 +2026,7 @@ dash.calc('headline', {
     host.appendChild(svg);
 
     // selected band
-    svgEl('rect', { x: x(sel) - step / 2, y: 0, width: step, height: H - m.b + 6, rx: 6, fill: 'var(--rc)', 'fill-opacity': 0.13 }, svg);
+    svgEl('rect', { x: x(es) - step / 2, y: 0, width: step, height: H - m.b + 6, rx: 6, fill: 'var(--rc)', 'fill-opacity': 0.13 }, svg);
     // column guides
     D.forEach(function (r, i) { svgEl('line', { x1: x(i), x2: x(i), y1: m.t - 4, y2: H - m.b, class: 'gl' }, svg); });
     // y ticks
@@ -2026,7 +2039,7 @@ dash.calc('headline', {
     // x labels
     if (showX) {
       D.forEach(function (r, i) {
-        var tx = svgEl('text', { x: x(i), y: H - 6, 'text-anchor': 'middle', class: 'ax' + (i === sel ? ' on' : '') }, svg);
+        var tx = svgEl('text', { x: x(i), y: H - 6, 'text-anchor': 'middle', class: 'ax' + (i === es ? ' on' : '') }, svg);
         tx.textContent = (step >= 38 ? 'FY' : '\u2019') + r.short.slice(3);
       });
     }
@@ -2057,7 +2070,7 @@ dash.calc('headline', {
         }, svg);
       }
       pts.forEach(function (p) {
-        var on = p.i === sel;
+        var on = p.i === es;
         var hollow = s.comp || (s.prov && s.prov(p.r));
         var fill = hollow ? 'var(--color-panel)' : color;
         var cx = x(p.i), cy = y(p.v);
@@ -2124,11 +2137,13 @@ dash.calc('headline', {
   }
 
   function renderLabel(host, k, D) {
-    var r = D[sel];
+    var es = effIdx(k, D);
+    var r = D[es];
     var L = ROWS[k].label(r);
     var real = mode !== 'nom' && ROWS[k].money;
     if (real) L.sub += ' · FY 2024-25 dollars';
     host.replaceChildren();
+    if (es !== sel) host.appendChild(div('os-latest', (es < sel ? 'Latest available: FY ' : 'Nearest available: FY ') + r.fy + ' (no value for FY ' + D[sel].fy + ')'));
     var big = div('os-big', L.big);
     if (!real) {
       big.setAttribute('data-source', L.src);
@@ -2143,7 +2158,7 @@ dash.calc('headline', {
       for (i = 0; i < D.length; i++) { if (C.get(D[i]) != null) { bi = i; break; } }
       if (cur != null && bi >= 0) {
         var txt;
-        if (D[sel] === D[bi]) txt = 'Base year' + (bi > 0 ? ' (FY ' + D[bi].fy + ')' : '');
+        if (D[es] === D[bi]) txt = 'Base year' + (bi > 0 ? ' (FY ' + D[bi].fy + ')' : '');
         else {
           var d = C.kind === 'pct' ? (cur / C.get(D[bi]) - 1) * 100 : cur - C.get(D[bi]);
           var mag = Math.abs(d);
@@ -2216,7 +2231,7 @@ dash.calc('headline', {
     return a;
   }
   function renderSrc(host, k, D) {
-    var r = D[sel];
+    var r = D[effIdx(k, D)];
     var has = ROWS[k].label(r).big !== '\u2014';
     host.replaceChildren();
     host.appendChild(document.createTextNode('Data: '));
@@ -2326,6 +2341,7 @@ dash.calc('headline', {
     var SEC = {
       'Spending, enrollment and budget': 'spending',
       'Cost per student, and how it compares': 'cost-per-student',
+      'The main picture': 'main',
       'How ORCSD compares with other NH districts': 'peers',
       'Where the money goes': 'where-the-money-goes',
       'Who pays: local taxes, state aid and federal aid': 'who-pays',

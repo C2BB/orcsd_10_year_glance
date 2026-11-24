@@ -77,42 +77,4 @@ single = re.sub(r'\n[ \t]+', '\n', single); single = re.sub(r'\n{2,}', '\n', sin
 (root/'dist').mkdir(exist_ok=True)
 (root/'dist'/'ORCSD_Ten_Years_at_a_Glance.html').write_text(single)
 
-# --- hosted artifact copy (Claude data-artifact format; optional) ---
-hp = os.environ.get('HOSTED_OUT')
-if hp:
-    # hosted copy only: shorten the long repeated URL prefixes (256 KB document limit)
-    PFX = {'A': 'https://www.education.nh.gov/sites/g/files/ehbemt326/files/inline-documents/sonh/',
-           'B': 'https://www.orcsd.org/departments/business-office/files/documents/Annual%20Reports/',
-           'C': 'https://www.education.nh.gov/sites/g/files/ehbemt326/files/inline-documents/'}
-    sj = dump(sources)
-    for k in ('A', 'B', 'C'): sj = sj.replace(PFX[k], '@' + k + '@')
-    pre = "var __P = " + dump(PFX) + ";\nwindow.__SRC = JSON.parse(" + dump(sj) + ".replace(/@([ABC])@/g, function (m, k) { return __P[k]; }));\n"
-    # the hosted harness allows only dash.draw to write the page, so the runtime deep-link script is left out of this copy
-    _a = js.index('  // ---- Deep links'); _b = js.index('\n  })();\n', _a) + len('\n  })();\n')
-    hjs = js[:_a] + js[_b:]
-    hjs = re.sub(r'(?m)^[ \t]*//[^\n]*\n', '', hjs)
-    # hosted copy only: minify (terser, local names only) when available
-    import subprocess, shutil
-    _t = os.environ.get('TERSER') or shutil.which('terser')
-    if _t:
-        _r = subprocess.run([_t, '--compress', '--mangle', '--format', 'ascii_only=false'], input=hjs, capture_output=True, text=True)
-        if _r.returncode == 0 and _r.stdout.strip(): hjs = _r.stdout
-    hcss = re.sub(r'/\*.*?\*/', '', css, flags=re.S); hcss = re.sub(r'\s*([{};,>])\s*', r'\1', hcss); hcss = re.sub(r'\n+', '', hcss)
-    hjs_all = pre + hjs
-    _hjs_path = os.environ.get('HOSTED_JS')      # two-file hosted copy: the script goes to files/app.js (each document is capped at 262,144 bytes)
-    hosted = '<meta name="dash-one-writer">\n<style>\n' + hcss + '</style>\n' + html + ('<script src="app.js"></script>\n' if _hjs_path else '<script>\n' + hjs_all + '</script>\n')
-    if _hjs_path: pathlib.Path(_hjs_path).write_text(hjs_all)
-    # hosted copy only: trim repeated legend-swatch attributes (moved to CSS) to stay under the 256 KB document limit
-    hosted = hosted.replace('<svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true">', '<svg viewBox="0 0 30 12">').replace(' stroke-linecap="round"', '')
-    # hosted copy only: the repeated legend swatches become <use> references to symbols defined once (static markup, no script)
-    import collections
-    _sv = collections.Counter(re.findall(r'<svg viewBox="0 0 30 12">(.*?)</svg>', hosted, flags=re.S))
-    _gl = [x for x, n in _sv.most_common() if n > 2]
-    for i, x in enumerate(_gl): hosted = hosted.replace('<svg viewBox="0 0 30 12">' + x + '</svg>', '<svg viewBox="0 0 30 12"><use href="#g%d"/></svg>' % i)
-    _defs = '<svg width="0" height="0" style="position:absolute" aria-hidden="true">' + ''.join('<symbol id="g%d" viewBox="0 0 30 12">%s</symbol>' % (i, x.replace('<line ', '<line stroke-linecap="round" ')) for i, x in enumerate(_gl)) + '</svg>\n'
-    hosted = hosted.replace('</style>\n', '</style>\n' + _defs, 1)
-    hosted = hosted.replace('<style>\n', '<style>\n.os-legend .lk svg{width:30px;height:12px}.os-legend .lk svg line{stroke-linecap:round}\n', 1)
-    hosted = re.sub(r'(<div class="os-src" data-draw="src-[a-z0-9]+">)Data:.*?(</div>)', r'\1—\2', hosted, flags=re.S)
-    hosted = re.sub(r'\n[ \t]+', '\n', hosted); hosted = re.sub(r'\n{2,}', '\n', hosted)
-    pathlib.Path(hp).write_text(hosted)
 print('version', ver, 'index', (root/'index.html').stat().st_size, 'app.js', (root/'app.js').stat().st_size, 'single', len(single))
