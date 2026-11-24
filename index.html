@@ -166,7 +166,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 .os-more-t{font-size:20px; font-weight:700}
 .os-more-h{flex:1 1 100%; padding-left:44px; font-size:13px; color:var(--color-fg-muted)}
 .os-more>summary:focus-visible{outline:2px solid var(--os-c2); outline-offset:3px; border-radius:8px}
-.os-sub{margin:30px 0 6px; font-family:var(--font-anthropic-serif,"Source Serif 4",Georgia,serif); font-weight:400; font-size:clamp(19px,3.4vw,23px); line-height:1.2}
+.os-subhead{margin:30px 0 6px; font-family:var(--font-anthropic-serif,"Source Serif 4",Georgia,serif); font-weight:400; font-size:clamp(19px,3.4vw,23px); line-height:1.2}
 .os-more.is-target{animation:os-flash 2.6s ease-out}
 
 .os-ctl{min-width:0; max-width:100%; box-sizing:border-box}
@@ -223,6 +223,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
     <h2 class="os-h2">Overview</h2>
     <p class="os-intro">The totals over ten years: what the district spends, how many students it has, what each one costs, how much of the money is local property tax, and how voters have responded to the budget. The page opens on FY 2026-27 (the voted budget, provisional); pick a year in the bar to read its value in every row. FY18 means the 2017-18 school year (the year it ends in). Solid points are results; hollow, dotted points are budgets, provisional or approximate figures.</p>
   </header>
+  <div class="os-card">
     <section class="os-row" data-k="spend" style="--rc:var(--os-c1)" aria-labelledby="os-n-spend">
       <div class="os-label">
         <div class="os-name" id="os-n-spend"><i class="os-dot"></i>Operating spending, actual vs. budget</div>
@@ -266,10 +267,12 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-chart" data-draw="chart-vote">—</div>
     </section>
+  </div>
   <header class="os-head os-head2">
     <h2 class="os-h2">Where the money comes from</h2>
     <p class="os-intro">How much of the school budget comes from local property taxes, state aid and federal aid, and how the local tax is divided among Durham, Lee and Madbury.</p>
   </header>
+  <div class="os-card">
     <section class="os-row" data-k="pay" style="--rc:var(--os-c5)" aria-labelledby="os-n-pay">
       <div class="os-label">
         <div class="os-name" id="os-n-pay"><i class="os-dot"></i>Local property tax vs. state aid, per student</div>
@@ -324,10 +327,12 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-eff">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Lee</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Durham</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>Madbury</span></span><span class="ln">Net school levy ÷ equalized value.</span></div></div>
     </section>
+  </div>
   <header class="os-head os-head2">
     <h2 class="os-h2">Where the money goes</h2>
     <p class="os-intro">What the money is spent on: instruction, special programs, administration, salaries and benefits, and debt.</p>
   </header>
+  <div class="os-card">
     <section class="os-row" data-k="instr" style="--rc:var(--os-c3)" aria-labelledby="os-n-instr">
       <div class="os-label">
         <div class="os-name" id="os-n-instr"><i class="os-dot"></i>Share of spending on instruction</div>
@@ -411,10 +416,12 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-bonds">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Principal still owed</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Interest still to pay</span></span></div></div>
     </section>
+  </div>
   <header class="os-head os-head2">
     <h2 class="os-h2">Students and results</h2>
     <p class="os-intro">How many students there are, how many have disabilities or hold Education Freedom Accounts, how they score and how many graduate and go on to college, and how Oyster River compares with other New Hampshire K-12 districts (53 or 54 a year). The comparison row uses the average of the state reading and math tests (share at levels 3 and 4).</p>
   </header>
+  <div class="os-card">
     <section class="os-row" data-k="efa" style="--rc:var(--os-c5)" aria-labelledby="os-n-efa">
       <div class="os-label">
         <div class="os-name" id="os-n-efa"><i class="os-dot"></i>Education Freedom Account students</div>
@@ -489,9 +496,11 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-peer">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Reading and math proficiency</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Student growth</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>Cost per pupil</span></span></div></div>
     </section>
+  </div>
   <details class="os-more">
     <summary><span class="os-more-t">More detail: 60 more measures</span><span class="os-more-h">Click to open. More on where the money comes from, where it goes, and students and results, plus student counts and enrollment.</span></summary>
-    <h3 class="os-sub">More on where the money comes from</h3>
+    <h3 class="os-subhead">More on where the money comes from</h3>
+  <div class="os-card">
     <section class="os-row" data-k="base" style="--rc:var(--os-c5)" aria-labelledby="os-n-base">
       <div class="os-label">
         <div class="os-name" id="os-n-base"><i class="os-dot"></i>Property value behind each student</div>
@@ -598,7 +607,9 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-rks">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Lee</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Durham</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>Madbury</span></span><span class="ln">Percentile among NH towns; 100 is the highest school tax rate that year.</span></div></div>
     </section>
-    <h3 class="os-sub">More on where the money goes</h3>
+  </div>
+    <h3 class="os-subhead">More on where the money goes</h3>
+  <div class="os-card">
     <section class="os-row" data-k="fb" style="--rc:var(--os-c3)" aria-labelledby="os-n-fb">
       <div class="os-label">
         <div class="os-name" id="os-n-fb"><i class="os-dot"></i>General Fund balance at year end</div>
@@ -785,7 +796,9 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-sps">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>All five school lines together</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>High school</span></span><span class="ln">DOE-25 School Level Expenditures; FY2019 to FY2025. Hover for each school and cost per pupil.</span></div></div>
     </section>
-    <h3 class="os-sub">More on students and results</h3>
+  </div>
+    <h3 class="os-subhead">More on students and results</h3>
+  <div class="os-card">
     <section class="os-row" data-k="sci" style="--rc:var(--os-c5)" aria-labelledby="os-n-sci">
       <div class="os-label">
         <div class="os-name" id="os-n-sci"><i class="os-dot sq"></i>Science proficiency</div>
@@ -948,7 +961,9 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-peeradj">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River, points above expected</span></span></div></div>
     </section>
-    <h3 class="os-sub">Other detail: who our students are, and enrollment</h3>
+  </div>
+    <h3 class="os-subhead">Other detail: who our students are, and enrollment</h3>
+  <div class="os-card">
     <section class="os-row" data-k="town" style="--rc:var(--os-c2)" aria-labelledby="os-n-town">
       <div class="os-label">
         <div class="os-name" id="os-n-town"><i class="os-dot"></i>Students living in each town</div>
@@ -1005,9 +1020,8 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-proj">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Actual</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>NESDEC projection</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>District planning committee</span></span><span class="ln">K-12, October 1.</span></div></div>
     </section>
-  </details>
-
   </div>
+  </details>
 
   <details class="os-notes">
     <summary>Definitions, sources and data notes</summary>

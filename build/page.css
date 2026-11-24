@@ -153,7 +153,7 @@
 .os-more-t{font-size:20px; font-weight:700}
 .os-more-h{flex:1 1 100%; padding-left:44px; font-size:13px; color:var(--color-fg-muted)}
 .os-more>summary:focus-visible{outline:2px solid var(--os-c2); outline-offset:3px; border-radius:8px}
-.os-sub{margin:30px 0 6px; font-family:var(--font-anthropic-serif,"Source Serif 4",Georgia,serif); font-weight:400; font-size:clamp(19px,3.4vw,23px); line-height:1.2}
+.os-subhead{margin:30px 0 6px; font-family:var(--font-anthropic-serif,"Source Serif 4",Georgia,serif); font-weight:400; font-size:clamp(19px,3.4vw,23px); line-height:1.2}
 .os-more.is-target{animation:os-flash 2.6s ease-out}
 
 .os-ctl{min-width:0; max-width:100%; box-sizing:border-box}
