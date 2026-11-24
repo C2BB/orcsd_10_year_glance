@@ -157,7 +157,7 @@ dash.calc('headline', {
   var mode = 'nom';
   var MODES = { nom: { label: 'Nominal dollars', f: null }, cpi: { label: 'Northeast CPI-U', f: 'f_cpi', idx: 'cpi_ne', n: 'cpi_ne_months', nn: 12 }, eci: { label: 'education labor costs (ECI)', f: 'f_eci', idx: 'eci_edu', n: 'eci_quarters', nn: 4 } };
   var MONEY = ['gfo_sal', 'gfo_ben', 'gfo_pur', 'gfo_sup', 'gfo_prop', 'gfo_oth', 'gfo_tot', 'gfo_sb', 'gfo_np', 'sch_mw', 'sch_mo', 'sch_ps', 'sch_ms', 'sch_hs', 'sch_od', 'sch_tot', 'pers_t_sal', 'pers_a_sal', 'pers_o_sal', 'pers_t_ben', 'pers_a_ben', 'pers_o_ben', 'pers_ao_sal', 'fe_gen_rev', 'fe_gen_exp', 'fe_gen_net', 'fe_gen_beg', 'fe_gen_end', 'fe_food_rev', 'fe_food_exp', 'fe_food_net', 'fe_food_beg', 'fe_food_end', 'fe_spr_rev', 'fe_spr_exp', 'fe_spr_net', 'fe_spr_beg', 'fe_spr_end', 'rsd_ins', 'rsd_rel', 'rsd_adm', 'rsd_leg', 'rsd_trn', 'rsd_tui', 'rsd_sub', 'rsd_tot', 'rsd_aid', 'rsd_idea', 'rsd_med', 'rsd_rev', 'rsd_net', 'fb_prep', 'fb_vote', 'fb_enc', 'fb_ret', 'fb_una', 'fb_trust', 'bd_unspent', 'bd_appr', 'bd_exp', 'dflt_gap', 'dflt', 'f10', 'f21', 'f22', 'f23', 'nhrs_npl', 'nhrs_do', 'nhrs_di', 'nhrs_exp', 'nhrs_con', 'nhrs_onl', 'nhrs_oexp', 'nhrs_ocon', 'debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
-  var NAMES = ['gfo', 'sps', 'pers', 'fres', 'nhrs', 'rsa', 'spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'bvx', 'dflt', 'timp', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts'];
+  var NAMES = ['gfo', 'sps', 'pers', 'fres', 'nhrs', 'rsa', 'spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'bvx', 'dflt', 'timp', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts', 'peer', 'scat', 'peeradj', 'scat2'];
 
   var SCH = [['High school', 'hs'], ['Middle school', 'ms'], ['Mast Way', 'mw'], ['Moharimet', 'mo']];
   function schLines(r, fld, fmt) {
@@ -1774,6 +1774,172 @@ dash.calc('headline', {
       return { lines: [['Salaries', money(r.instr_sal)], ['Benefits', money(r.instr_ben)], ['Total', money(r.instr_sal + r.instr_ben)]], note: 'Instruction accounts 1100 to 1400, general and special revenue funds. Source: DOE-25 Salaries-Benefits sheet.' };
     }
   };
+
+  // ---- ORCSD among NH K-12 districts (build/peers.py) ----
+  function niceTicks(lo, hi, n) {
+    var raw = (hi - lo) / n, p = Math.pow(10, Math.floor(Math.log10(raw)));
+    var st = [1, 2, 2.5, 5, 10].map(function (m) { return m * p; }).filter(function (s) { return s >= raw; })[0];
+    var out = [];
+    for (var t = Math.ceil(lo / st) * st; t <= hi + 1e-9; t += st) out.push(Math.round(t * 1e6) / 1e6);
+    return out;
+  }
+  function median(a) { var s = a.slice().sort(function (p, q) { return p - q; }), m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; }
+  function renderScatter(host, k, D) {
+    var spec = ROWS[k], r = D[sel];
+    host.replaceChildren();
+    host.style.position = 'relative';
+    var pts = (r.pe_peers || []).filter(function (p) { return spec.x(p) != null && spec.y(p) != null; });
+    if (pts.length < 10) { host.appendChild(div('os-empty', spec.empty(r))); return; }
+    var W = Math.max(260, host.clientWidth || 560), H = W < 480 ? 250 : 290;
+    var m = { l: 46, r: 14, t: 22, b: 40 };
+    var xs = pts.map(spec.x), ys = pts.map(spec.y);
+    var xl = Math.min.apply(null, xs), xh = Math.max.apply(null, xs), yl = Math.min.apply(null, ys), yh = Math.max.apply(null, ys);
+    var xp = (xh - xl) * 0.06, yp = (yh - yl) * 0.08;
+    var X0 = xl - xp, X1 = xh + xp, Y0 = Math.max(0, yl - yp), Y1 = Math.min(100, yh + yp);
+    var x = function (v) { return m.l + (W - m.l - m.r) * (v - X0) / (X1 - X0); };
+    var y = function (v) { return m.t + (H - m.t - m.b) * (1 - (v - Y0) / (Y1 - Y0)); };
+    var me = pts.filter(function (p) { return p[5]; })[0];
+    var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, width: '100%', height: H, role: 'img', 'class': 'os-sc',
+      'aria-label': spec.aria + ' FY ' + r.fy + '. ' + spec.sum(r, pts.length) });
+    host.appendChild(svg);
+    niceTicks(Y0, Y1, 5).forEach(function (t, j) {
+      svgEl('line', { x1: m.l, x2: W - m.r, y1: y(t), y2: y(t), 'class': j === 0 ? 'bl' : 'gl' }, svg);
+      var tx = svgEl('text', { x: m.l - 8, y: y(t) + 4, 'text-anchor': 'end', 'class': 'ax' }, svg); tx.textContent = spec.yFmt(t);
+    });
+    niceTicks(X0, X1, W < 480 ? 4 : 6).forEach(function (t) {
+      svgEl('line', { x1: x(t), x2: x(t), y1: m.t, y2: H - m.b, 'class': 'gl' }, svg);
+      var tx = svgEl('text', { x: x(t), y: H - m.b + 15, 'text-anchor': 'middle', 'class': 'ax' }, svg); tx.textContent = spec.xFmt(t);
+    });
+    var xt = svgEl('text', { x: (m.l + W - m.r) / 2, y: H - 6, 'text-anchor': 'middle' }, svg); xt.textContent = spec.xLab;
+    var yt = svgEl('text', { x: m.l, y: 12, 'text-anchor': 'start' }, svg); yt.textContent = spec.yLab;
+    var mx = median(xs), my = median(ys);
+    svgEl('line', { x1: x(mx), x2: x(mx), y1: m.t, y2: H - m.b, stroke: 'var(--color-fg-muted)', 'stroke-width': 1.2, 'stroke-dasharray': '4 4' }, svg);
+    svgEl('line', { x1: m.l, x2: W - m.r, y1: y(my), y2: y(my), stroke: 'var(--color-fg-muted)', 'stroke-width': 1.2, 'stroke-dasharray': '4 4' }, svg);
+    if (spec.fit) {
+      var n = pts.length, sx = 0, sy = 0, sxx = 0, sxy = 0;
+      pts.forEach(function (p) { var a = spec.x(p), b = spec.y(p); sx += a; sy += b; sxx += a * a; sxy += a * b; });
+      var sl = (n * sxy - sx * sy) / (n * sxx - sx * sx), ic = (sy - sl * sx) / n;
+      svgEl('line', { x1: x(X0), y1: y(ic + sl * X0), x2: x(X1), y2: y(ic + sl * X1), stroke: 'var(--rc)', 'stroke-width': 1.8, 'stroke-dasharray': '6 3' }, svg);
+      if (me) svgEl('line', { x1: x(spec.x(me)), x2: x(spec.x(me)), y1: y(spec.y(me)), y2: y(ic + sl * spec.x(me)), stroke: 'var(--rc)', 'stroke-width': 2 }, svg);
+    }
+    pts.forEach(function (p) { if (!p[5]) svgEl('circle', { cx: x(spec.x(p)), cy: y(spec.y(p)), r: 3.4, fill: 'var(--color-fg-muted)', 'fill-opacity': 0.55 }, svg); });
+    if (me) {
+      var cx = x(spec.x(me)), cy = y(spec.y(me));
+      svgEl('circle', { cx: cx, cy: cy, r: 7, fill: 'var(--rc)', stroke: 'var(--color-panel)', 'stroke-width': 2 }, svg);
+      var left = cx > (m.l + W - m.r) / 2;
+      var lb = svgEl('text', { x: left ? cx - 11 : cx + 11, y: cy - 8, 'text-anchor': left ? 'end' : 'start', 'class': 'os-sc-me' }, svg); lb.textContent = 'Oyster River';
+    }
+    var ring = svgEl('circle', { r: 8, fill: 'none', stroke: 'var(--color-fg)', 'stroke-width': 1.6 }, svg); ring.setAttribute('visibility', 'hidden');
+    var tip = div('os-tip'); tip.hidden = true; host.appendChild(tip);
+    function near(ev) {
+      var bb = svg.getBoundingClientRect(), px = (ev.clientX - bb.left) * (W / bb.width), py = (ev.clientY - bb.top) * (H / bb.height);
+      var best = null, bd = 18 * 18;
+      pts.forEach(function (p) { var ex = x(spec.x(p)) - px, ey = y(spec.y(p)) - py, d2 = ex * ex + ey * ey; if (d2 < bd) { bd = d2; best = p; } });
+      return best;
+    }
+    function show(ev) {
+      var p = near(ev);
+      if (!p) { tip.hidden = true; ring.setAttribute('visibility', 'hidden'); return; }
+      ring.setAttribute('cx', x(spec.x(p))); ring.setAttribute('cy', y(spec.y(p))); ring.setAttribute('visibility', 'visible');
+      tip.replaceChildren();
+      var h = document.createElement('h4'); h.textContent = p[0]; tip.appendChild(h);
+      var dl = document.createElement('dl');
+      spec.lines(p).forEach(function (ln) { var a = document.createElement('dt'); a.textContent = ln[0]; var b = document.createElement('dd'); b.textContent = ln[1]; dl.appendChild(a); dl.appendChild(b); });
+      tip.appendChild(dl);
+      tip.hidden = false;
+      var tw = tip.offsetWidth, th = tip.offsetHeight, px = x(spec.x(p)), py = y(spec.y(p));
+      var lf = px + 12; if (lf + tw > W) lf = px - 12 - tw; if (lf < 0) lf = 0;
+      tip.style.left = lf + 'px'; tip.style.top = Math.max(0, Math.min(H - th, py - th / 2)) + 'px';
+    }
+    var hit = svgEl('rect', { x: m.l, y: m.t, width: W - m.l - m.r, height: H - m.t - m.b, fill: 'transparent' }, svg);
+    hit.addEventListener('pointermove', show);
+    hit.addEventListener('pointerdown', show);
+    svg.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') { tip.hidden = true; ring.setAttribute('visibility', 'hidden'); } });
+  }
+  function pePend(r, field) {
+    if (r.pe_prof == null && r.no_test) return { big: '—', sub: 'No state test was given this year', delta: r.pe_cost_rank ? 'Spending: #' + r.pe_cost_rank + ' of ' + r.pe_cost_n + ' (1 = highest)' : '', tag: 'No test', prov: true, src: 'years', field: field };
+    return pend(field, 'years');
+  }
+  var peLines = function (p) {
+    var L = [];
+    if (p[1] != null) L.push(['Cost per pupil', money(p[1])]);
+    L.push(['Reading and math proficient', p[2].toFixed(1) + '%']);
+    if (p[3] != null) L.push(['Low-income (SES) share', p[3].toFixed(1) + '%']);
+    if (p[4] != null) L.push(['Mean growth percentile', p[4].toFixed(1)]);
+    return L;
+  };
+  ROWS.peer = {
+    aria: 'Oyster River percentile among New Hampshire K-12 districts for reading and math proficiency, student growth and cost per pupil, by fiscal year; 100 is the highest.',
+    domain: [0, 100], ticks: [25, 50, 75], axis: true,
+    tickFmt: function (v) { return v + 'th'; },
+    noTestMark: true,
+    series: [
+      { id: 'cost', get: function (r) { return r.pe_cost_pct; }, comp: true },
+      { id: 'sgp', get: function (r) { return r.pe_sgp_pct; }, alt: 'square' },
+      { id: 'prof', get: function (r) { return r.pe_prof_pct; }, main: true }
+    ],
+    label: function (r) {
+      if (r.pe_prof == null) return pePend(r, 'pe_prof');
+      var d = 'Spending ' + (r.pe_cost_rank ? '#' + r.pe_cost_rank + ' of ' + r.pe_cost_n : 'not yet published') + ' · Growth ' + (r.pe_sgp_rank ? '#' + r.pe_sgp_rank + ' of ' + r.pe_sgp_n : 'n/a') + ' (1 = highest)';
+      return { big: '#' + r.pe_prof_rank + ' of ' + r.pe_n, sub: 'Reading and math proficiency among NH K-12 districts', delta: d, tag: 'Actual', prov: false, src: 'years', field: 'pe_prof' };
+    },
+    tip: function (r) {
+      if (r.pe_prof == null) return { lines: [['Ranking', r.no_test ? 'no state test this year' : 'not yet published']], note: r.no_test ? 'Spending rank: ' + (r.pe_cost_rank ? '#' + r.pe_cost_rank + ' of ' + r.pe_cost_n : 'n/a') + '.' : 'Appears after the NH DOE publishes the results.' };
+      var L = [['Proficient, reading and math', r.pe_prof + '% (reading ' + r.pe_ela + ', math ' + r.pe_mat + ')'], ['Median K-12 district', r.pe_prof_med + '%'], ['Proficiency rank', r.pe_prof_rank + ' of ' + r.pe_n]];
+      if (r.pe_sgp != null) L.push(['Growth (mean percentile)', r.pe_sgp + ' · rank ' + r.pe_sgp_rank + ' of ' + r.pe_sgp_n]);
+      if (r.pe_cost != null) L.push(['Cost per pupil', money(r.pe_cost) + ' · rank ' + r.pe_cost_rank + ' of ' + r.pe_cost_n], ['Median K-12 district', money(r.pe_cost_med)]);
+      return { lines: L, note: 'Percentile: 100 = highest of the K-12 districts that year. Ranks: 1 = highest. Cost per pupil rank 1 means the highest-spending district. Growth is not available for every year.' };
+    }
+  };
+  ROWS.peer.chg = { get: function (r) { return r.pe_prof_pct; }, kind: 'pts', dec: true, note: 'proficiency percentile' };
+  ROWS.scat = {
+    scatter: true,
+    aria: 'Scatter chart of cost per pupil and reading and math proficiency for New Hampshire K-12 districts.',
+    x: function (p) { return p[1]; }, y: function (p) { return p[2]; },
+    xFmt: function (v) { return '$' + (v / 1000) + 'k'; }, yFmt: function (v) { return v + '%'; },
+    xLab: 'Cost per pupil', yLab: 'Proficient in reading and math (%)',
+    lines: peLines,
+    empty: function (r) { return r.no_test ? 'No state test was given this year.' : (r.pe_prof == null ? 'Appears after the NH DOE publishes the results.' : 'Appears after the NH DOE publishes cost per pupil for this year.'); },
+    sum: function (r, n) { return 'Oyster River: ' + money(r.pe_cost) + ' per pupil, ' + r.pe_prof + ' percent proficient; ' + n + ' districts shown.'; },
+    label: function (r) {
+      if (r.pe_prof == null) return pePend(r, 'pe_prof');
+      if (r.pe_cost == null) return { big: '—', sub: 'Cost per pupil not yet published for this year', delta: 'Proficient in reading and math: ' + r.pe_prof + '%', tag: 'Pending', prov: true, src: 'years', field: 'pe_cost' };
+      return { big: money(r.pe_cost), sub: 'Cost per pupil, with ' + r.pe_prof + '% proficient in reading and math', delta: 'NH K-12 median: ' + money(r.pe_cost_med) + ' and ' + r.pe_prof_med + '% proficient', tag: 'Actual', prov: false, src: 'years', field: 'pe_cost' };
+    },
+    tip: function () { return { lines: [] }; }
+  };
+  ROWS.peeradj = {
+    aria: 'Oyster River reading and math proficiency minus the proficiency expected for its share of low-income students, in percentage points, by fiscal year',
+    domain: [0, 20], ticks: [5, 10, 15], axis: true,
+    tickFmt: function (v) { return '+' + v; },
+    noTestMark: true,
+    series: [{ id: 'res', get: function (r) { return r.pe_res; }, main: true }],
+    label: function (r) {
+      if (r.pe_res == null) return pePend(r, 'pe_res');
+      return { big: (r.pe_res >= 0 ? '+' : '−') + Math.abs(r.pe_res).toFixed(1) + ' pts', sub: 'Proficiency vs. NH districts with similar low-income shares', delta: r.pe_prof + '% actual vs. ' + r.pe_exp + '% expected · rank ' + r.pe_res_rank + ' of ' + r.pe_res_n, tag: 'Actual', prov: false, src: 'years', field: 'pe_res' };
+    },
+    tip: function (r) {
+      if (r.pe_res == null) return { lines: [['Comparison', r.no_test ? 'no state test this year' : 'not yet published']], note: '' };
+      return { lines: [['Proficient, reading and math', r.pe_prof + '%'], ['Expected at ' + r.pe_ses + '% low-income', r.pe_exp + '%'], ['Difference', (r.pe_res >= 0 ? '+' : '−') + Math.abs(r.pe_res).toFixed(1) + ' points'], ['Rank on the difference', r.pe_res_rank + ' of ' + r.pe_res_n], ['Median district low-income share', r.pe_ses_med + '%'], ['Across districts', 'each 10 points more low-income goes with ' + Math.abs(r.pe_slope * 10).toFixed(1) + ' points ' + (r.pe_slope < 0 ? 'lower' : 'higher') + ' proficiency (R² ' + r.pe_r2 + ')']], note: 'A straight-line fit of proficiency on the SES share across the K-12 districts of that year. It leaves out everything else that differs between districts.' };
+    }
+  };
+  ROWS.peeradj.chg = { get: function (r) { return r.pe_res; }, kind: 'pts', dec: true, note: 'points above expected' };
+  ROWS.scat2 = {
+    scatter: true, fit: true,
+    aria: 'Scatter chart of the share of low-income students and reading and math proficiency for New Hampshire K-12 districts, with a straight-line fit.',
+    x: function (p) { return p[3]; }, y: function (p) { return p[2]; },
+    xFmt: function (v) { return v + '%'; }, yFmt: function (v) { return v + '%'; },
+    xLab: 'Low-income (SES) share of tested students', yLab: 'Proficient in reading and math (%)',
+    lines: peLines,
+    empty: function (r) { return r.no_test ? 'No state test was given this year.' : 'Appears after the NH DOE publishes the results.'; },
+    sum: function (r, n) { return 'Oyster River: ' + r.pe_ses + ' percent low-income, ' + r.pe_prof + ' percent proficient, ' + r.pe_res + ' points above the fit; ' + n + ' districts shown.'; },
+    label: function (r) {
+      if (r.pe_ses == null) return pePend(r, 'pe_ses');
+      return { big: r.pe_ses + '%', sub: 'Of tested students are low-income (SES); median district ' + r.pe_ses_med + '%', delta: r.pe_prof + '% proficient vs. ' + r.pe_exp + '% on the fit line', tag: 'Actual', prov: false, src: 'years', field: 'pe_ses' };
+    },
+    tip: function () { return { lines: [] }; }
+  };
+  ROWS.scat2.chg = { get: function (r) { return r.pe_ses; }, kind: 'pts', dec: true, note: 'low-income share' };
   ROWS.sgp.chg = { get: function (r) { return r.sgp_rea; }, kind: 'pts', note: 'reading' };
   ROWS.grp.chg = { get: function (r) { return r.ela_iep; }, kind: 'pts', note: 'students with IEPs' };
   ROWS.att.chg = { get: function (r) { return r.att; }, kind: 'pts', dec: true };
@@ -1828,6 +1994,7 @@ dash.calc('headline', {
 
   function renderChart(host, k, D) {
     var spec = ROWS[k];
+    if (spec.scatter) { renderScatter(host, k, D); return; }
     host.replaceChildren();
     host.style.position = 'relative';
     var W = Math.max(260, host.clientWidth || 560);
@@ -2123,7 +2290,7 @@ dash.calc('headline', {
   dash.draw('modeshort', function (el) { el.textContent = MODE_SHORT[mode]; });
   // Tag on each dollar row: whether it follows the switch, and what it is showing right now.
   var CHIP_B = ['instr', 'local', 'ben', 'adm', 'share', 'eff', 'cred', 'efa'];
-  var CHIP_C = { base: 'Property values are market prices, not spending, so they are shown as recorded.', rate: 'A tax rate per $1,000 of value is a ratio, so inflation does not apply to it.', timp: 'An estimated change in a tax rate per $1,000 of value is a ratio, so inflation does not apply to it.' };
+  var CHIP_C = { peer: 'Every district is compared in the same year, so ranks and the dollar figures in the hover are as recorded; inflation does not apply.', scat: 'Every district is compared in the same year, so the dollars on the axis are as recorded; inflation does not apply.', base: 'Property values are market prices, not spending, so they are shown as recorded.', rate: 'A tax rate per $1,000 of value is a ratio, so inflation does not apply to it.', timp: 'An estimated change in a tax rate per $1,000 of value is a ratio, so inflation does not apply to it.' };
   CHIP_B.forEach(function (k) { ROWS[k].tipMoney = true; });
   var CHIP_NAMES = Object.keys(ROWS).filter(function (k) { return ROWS[k].money; }).concat(CHIP_B, Object.keys(CHIP_C));
   CHIP_NAMES.forEach(function (k) {
@@ -2159,6 +2326,7 @@ dash.calc('headline', {
     var SEC = {
       'Spending, enrollment and budget': 'spending',
       'Cost per student, and how it compares': 'cost-per-student',
+      'How ORCSD compares with other NH districts': 'peers',
       'Where the money goes': 'where-the-money-goes',
       'Who pays: local taxes, state aid and federal aid': 'who-pays',
       'How Durham, Lee and Madbury share the school bill': 'town-shares',

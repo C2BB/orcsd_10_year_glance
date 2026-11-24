@@ -3,6 +3,7 @@ from doe25 import D
 from nhdoe_values import V
 from rc_data import fields_for
 from towns_data import town_fields
+from peers import compute as peers_compute
 cpp_lv={2018:(18421,17055,18704),2019:(17996,17409,18240),2020:(18390,18167,18130),2021:(21573,19393,19547),2022:(20831,20613,20235),2023:(21609,21347,21574),2024:(22876,22179,21511),2025:(24062,24148,23632)}
 enr={2018:2147,2019:2190,2020:2202,2021:2132,2022:2130,2023:2140,2024:2111,2025:2097,2026:2064,2027:2026}  # FY2018-26: NH DOE iExplore, district Total Enrollment (state-first rule); FY27: district Oct 7, 2026 count
 budget={2018:43787372,2019:45625555,2020:47405510,2021:47538867,2022:50173045,2023:52133325,2024:53211098,2025:56248037,2026:58002091,2027:62365067}
@@ -128,11 +129,18 @@ meta=[
  {"label":"Staff by category","value":"NH DOE iPlatform, FTE Staff by District (ReportID 38), October 1, 2017-18 to 2025-26: teachers, instruction support, specialists, librarians, administrative support and all other support, in full-time equivalents. 'All other support' dropped from 73.7 to 41.5 in 2025-26 with no explanation in the report."},
  {"label":"State rates for suspension and truancy","value":"New Hampshire suspension rates: NH DOE iReport, entity State of New Hampshire (in-school and out-of-school, All Students). New Hampshire truancy: computed here as habitually truant students over enrollment from the DOE school safety workbooks (2017-18 to 2024-25) for all New Hampshire schools reporting."},
  {"label":"Assessment results","value":"NH DOE state assessment disaggregated files (2017-18 to 2025-26); District Level, All students, All grades, regular denominator; share at levels 3 and 4 in reading (ELA), math and science. No results exist for 2019-20."},
+ {"label":"ORCSD among New Hampshire K-12 districts","value":"Peer set: the districts that report elementary, middle and high cost per pupil in the NH DOE Bureau of School Finance cost per pupil file for the year (53 or 54 a year; FY2026 uses the FY2025 set because the FY2026 file is not out). Results: NH DOE statewide disaggregated assessment files, District Level, All grades, All students, regular denominator, share at levels 3 and 4 in reading (ELA) and math; the page averages the two. Growth: mean student growth percentile in reading and math, averaged. Low-income share: tested students in the SES (socioeconomically disadvantaged) subgroup over all tested students, from the DOE's rounded student counts (midpoints of the printed ranges). Ranks: 1 = highest. Percentile: 100 = highest of the districts. Expected proficiency: straight-line fit of proficiency on low-income share across the peer districts of the same year; the difference is the residual. A description of where ORCSD sits, not a measure of what any dollar or program produced. Built by build/peers.py from files in raw/nh-doe."}
 ]
 for i,r in enumerate(rows):   # actual change in each town's local school tax rate from the previous year (state data), next to the district's estimate (ti_*)
     for t in ('dur','lee','mad'):
         a,b0=r['tax_'+t],(rows[i-1]['tax_'+t] if i else None)
         r['ta_'+t]=round(a-b0,2) if a is not None and b0 is not None else None
+_PF,_PP=peers_compute()   # ORCSD among NH K-12 districts (peers.py): ranks, residual vs low-income share, scatter points
+_pk=sorted({k for f in _PF.values() for k in f})
+for r in rows:
+    _y=int(r['fy'][:4])+1
+    for k in _pk: r[k]=_PF.get(_y,{}).get(k)
+    r['pe_peers']=_PP.get(_y)
 json.dump({"rows":rows,"meta":meta}, open("orcsd_years.json","w"), indent=1)
 b=rows[0]
 for r in rows:

@@ -130,6 +130,10 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `pers` | `doe25` |
 | `fres` | `doe25` |
 | `nhrs` | `nhrs68`, `nhrs75` |
+| `peer` | `cpp`, `assess` |
+| `peeradj` | `assess` |
+| `scat` | `cpp`, `assess` |
+| `scat2` | `assess` |
 
 ## Mirrored but not charted
 

@@ -142,3 +142,8 @@
   .os-md{padding:7px 12px; font-size:13px}
   .os-modeshort{display:none}
 }
+
+/* ---- Peer comparison scatter ---- */
+.os-empty{padding:44px 12px; text-align:center; font-size:13px; color:var(--color-fg-muted)}
+.os-sc text{font-size:11px; fill:var(--color-fg-muted)}
+.os-sc .os-sc-me{font-size:12px; font-weight:700; fill:var(--color-fg)}
