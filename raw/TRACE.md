@@ -48,6 +48,7 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `ar25` | ORCSD annual report 2025 | `orcsd/Annual_Reports__2025_ORCSD_Annual_Report.pdf` (1/1 URLs mirrored) |
 | `nhrs68` | NHRS GASB 68 employer schedules | `nhrs/gasb68_2017__kpmg-nhrs-gasb68-6-30-17.pdf`, `nhrs/gasb68_2018__pm-gasb-68-report-nhrs-june-30-2018.pdf`, `nhrs/gasb68_2019__schedule-of-employer-allocations-and-schedule-of-pension-amounts-by-employer-june-30-2019.pdf`, `nhrs/gasb68_2020__schedule-of-employer-allocations-and-schedule-of-pension-amounts-by-employer-june-30-2020.pdf` +5 more (9/9 URLs mirrored) |
 | `nhrs75` | NHRS GASB 75 employer schedules | `nhrs/gasb75_2017__kpmg-gasb-75-report-nhrs-june-30-2017.pdf`, `nhrs/gasb75_2018__pm-gasb-75-report-nhrs-june-30-2018.pdf`, `nhrs/gasb75_2019__schedule-of-employer-allocations-and-schedule-of-opeb-amounts-by-employer-june-30-2019.pdf`, `nhrs/gasb75_2020__schedule-of-employer-allocations-and-schedule-of-opeb-amounts-by-employer-june-30-2020.pdf` +5 more (9/9 URLs mirrored) |
+| `asmtown` | Assessment results by town of residence | `nh-doe/inline-documents__2026__disagdatabytownresponsible_2026_0.xlsx`, `nh-doe/inline-documents__sonh__disagdata2022_2023_2024_bytownresponsible_static.xlsx`, `nh-doe/inline-documents__sonh__disagdata2024bytownresponsible_static.xlsx`, `nh-doe/inline-documents__sonh__publicdatabytown.xlsx` (5/5 URLs mirrored) |
 
 ## Dashboard rows
 
@@ -138,6 +139,7 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `trans` | `doe25` |
 | `bonds` | `doe25` |
 | `dsvc` | `doe25` |
+| `twprof` | `asmtown` |
 
 ## Mirrored but not charted
 

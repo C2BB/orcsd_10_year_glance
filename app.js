@@ -157,7 +157,7 @@ dash.calc('headline', {
   var mode = 'nom';
   var MODES = { nom: { label: 'Nominal dollars', f: null }, cpi: { label: 'Northeast CPI-U', f: 'f_cpi', idx: 'cpi_ne', n: 'cpi_ne_months', nn: 12 }, eci: { label: 'education labor costs (ECI)', f: 'f_eci', idx: 'eci_edu', n: 'eci_quarters', nn: 4 } };
   var MONEY = ['tuit_priv', 'tuit_spub', 'tuit_voc', 'tuit_reg', 'tuit_tot', 'trans_reg', 'trans_sped', 'trans_voc', 'trans_oth', 'trans_tot', 'bond_prin', 'bond_int', 'ds_prin', 'ds_int', 'ds_tot', 'bond_p1', 'bond_p2', 'bond_p3', 'bond_p4', 'bond_p5', 'ds_n1', 'ds_n2', 'ds_n3', 'ds_n4', 'ds_n5', 'gfo_sal', 'gfo_ben', 'gfo_pur', 'gfo_sup', 'gfo_prop', 'gfo_oth', 'gfo_tot', 'gfo_sb', 'gfo_np', 'sch_mw', 'sch_mo', 'sch_ps', 'sch_ms', 'sch_hs', 'sch_od', 'sch_tot', 'pers_t_sal', 'pers_a_sal', 'pers_o_sal', 'pers_t_ben', 'pers_a_ben', 'pers_o_ben', 'pers_ao_sal', 'fe_gen_rev', 'fe_gen_exp', 'fe_gen_net', 'fe_gen_beg', 'fe_gen_end', 'fe_food_rev', 'fe_food_exp', 'fe_food_net', 'fe_food_beg', 'fe_food_end', 'fe_spr_rev', 'fe_spr_exp', 'fe_spr_net', 'fe_spr_beg', 'fe_spr_end', 'rsd_ins', 'rsd_rel', 'rsd_adm', 'rsd_leg', 'rsd_trn', 'rsd_tui', 'rsd_sub', 'rsd_tot', 'rsd_aid', 'rsd_idea', 'rsd_med', 'rsd_rev', 'rsd_net', 'fb_prep', 'fb_vote', 'fb_enc', 'fb_ret', 'fb_una', 'fb_trust', 'bd_unspent', 'bd_appr', 'bd_exp', 'dflt_gap', 'dflt', 'f10', 'f21', 'f22', 'f23', 'nhrs_npl', 'nhrs_do', 'nhrs_di', 'nhrs_exp', 'nhrs_con', 'nhrs_onl', 'nhrs_oexp', 'nhrs_ocon', 'debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
-  var NAMES = ['gfo', 'sps', 'pers', 'fres', 'nhrs', 'rsa', 'spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'bvx', 'dflt', 'timp', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts', 'peer', 'scat', 'peeradj', 'scat2', 'tuit', 'trans', 'bonds', 'dsvc'];
+  var NAMES = ['gfo', 'sps', 'pers', 'fres', 'nhrs', 'rsa', 'spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'bvx', 'dflt', 'timp', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts', 'peer', 'scat', 'peeradj', 'scat2', 'tuit', 'trans', 'bonds', 'dsvc', 'twprof'];
 
   var SCH = [['High school', 'hs'], ['Middle school', 'ms'], ['Mast Way', 'mw'], ['Moharimet', 'mo']];
   function schLines(r, fld, fmt) {
@@ -2031,6 +2031,28 @@ dash.calc('headline', {
     }
   };
   ROWS.dsvc.chg = { get: function (r) { return r.ds_tot; }, kind: 'pct', note: 'payments due' };
+
+  // ---- results by town of residence (DOE by-town assessment files) ----
+  ROWS.twprof = {
+    aria: 'Reading and math proficiency of Oyster River students living in Durham, Lee and Madbury, by fiscal year',
+    domain: [50, 90], ticks: [60, 70, 80], axis: false,
+    tickFmt: function (v) { return v + '%'; },
+    series: townSeries('twp'),
+    label: function (r) {
+      if (r.twp_lee == null) return nodata('The DOE’s by-town files start with the 2021-22 test', 'twp_lee', 'years', 'Pending');
+      return { big: pc1(r.twp_lee), sub: 'Lee students proficient in reading and math (average of the two)', delta: townDelta(r, 'twp', pc1), tag: 'Actual', prov: false, src: 'years', field: 'twp_lee' };
+    },
+    tip: function (r) {
+      if (r.twp_lee == null) return { lines: [['Results by town', 'first available for 2021-22']], note: 'The DOE publishes these files from the 2022 test on.' };
+      function ln(nm, t) {
+        var s = 'reading ' + r['tw_rea_' + t] + ', math ' + r['tw_mat_' + t] + (r['tw_sci_' + t] != null ? ', science ' + r['tw_sci_' + t] : '') + (r['tw_sgp_' + t] != null ? ', growth ' + r['tw_sgp_' + t] : '') + ' · ' + Math.round(r['tw_n_' + t]) + ' tested';
+        return [nm + ' ' + pc1(r['twp_' + t]), s];
+      }
+      return { lines: [ln('Durham', 'dur'), ln('Lee', 'lee'), ln('Madbury', 'mad')],
+        note: 'Share of tested students at levels 3 and 4 on the state tests, by the town responsible for the student, all grades. The page averages reading and math. The DOE also lists a few Barrington students; they are in the district totals but not shown here. Town groups are 150 to 500 students, so a year-to-year change of a few points is within normal variation.' };
+    }
+  };
+  ROWS.twprof.chg = { get: function (r) { return r.twp_lee; }, kind: 'pts', dec: true, note: 'Lee proficiency, since the first year' };
   ROWS.sgp.chg = { get: function (r) { return r.sgp_rea; }, kind: 'pts', note: 'reading' };
   ROWS.grp.chg = { get: function (r) { return r.ela_iep; }, kind: 'pts', note: 'students with IEPs' };
   ROWS.att.chg = { get: function (r) { return r.att; }, kind: 'pts', dec: true };

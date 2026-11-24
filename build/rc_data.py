@@ -356,6 +356,11 @@ import nhrs_rows as _nhrs
 for _k, _v in _nhrs.fields().items():
     put(_k, _v)
 
+# Results by town of residence (town_results_rows.py reads town_results.json, made by town_results_extract.py from the DOE by-town workbooks).
+import town_results_rows as _tw
+for _k, _v in _tw.fields().items():
+    put(_k, _v)
+
 FIELDS = sorted(RC)
 def fields_for(y):
     return {k: RC[k].get(y) for k in FIELDS}
