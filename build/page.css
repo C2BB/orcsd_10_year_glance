@@ -155,3 +155,42 @@
 .os-more>summary:focus-visible{outline:2px solid var(--os-c2); outline-offset:3px; border-radius:8px}
 .os-sub{margin:30px 0 6px; font-family:var(--font-anthropic-serif,"Source Serif 4",Georgia,serif); font-weight:400; font-size:clamp(19px,3.4vw,23px); line-height:1.2}
 .os-more.is-target{animation:os-flash 2.6s ease-out}
+
+/* ---- "Why have property taxes gone up?": baseline tiles, claim cards, bridge tables ---- */
+.os-claims{margin:6px 0 28px}
+.os-base{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:10px; margin:16px 0 18px}
+.os-tile{border:1px solid var(--color-border-line); border-radius:12px; padding:12px 14px; background:var(--color-panel)}
+.os-tile-t{font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--color-fg-muted)}
+.os-tile-v{margin:4px 0 2px; font-family:var(--font-anthropic-serif,"Source Serif 4",Georgia,serif); font-size:22px; line-height:1.15}
+.os-tile-c{font-size:13px; font-weight:700}
+.os-tile-n{margin-top:4px; font-size:12px; color:var(--color-fg-muted)}
+.os-cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr)); gap:14px}
+.os-claim{border:1px solid var(--color-border-line); border-radius:14px; padding:16px 18px; background:var(--color-panel); scroll-margin-top:calc(var(--os-sticky,0px) + 14px)}
+.os-claim-name{margin:0 0 2px; font-size:11.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--os-c2)}
+.os-claim-q{margin:0 0 8px; font-family:var(--font-anthropic-serif,"Source Serif 4",Georgia,serif); font-weight:400; font-size:clamp(18px,3.2vw,21px); line-height:1.25}
+.os-claim-shows{margin:0 0 10px; font-size:14.5px; line-height:1.45}
+.os-claim-shows b{display:block; font-size:11.5px; letter-spacing:.05em; text-transform:uppercase; color:var(--color-fg-muted); margin-bottom:2px}
+.os-stats{margin:0 0 10px; padding:0; display:grid; gap:6px}
+.os-stat{display:grid; grid-template-columns:minmax(0,1fr); gap:0; padding:6px 0; border-top:1px solid var(--color-border-line)}
+.os-stat dt{font-size:12.5px; color:var(--color-fg-muted)}
+.os-stat dd{margin:0; font-size:14px; font-variant-numeric:tabular-nums}
+.os-stat dd b{font-weight:700}
+.os-stat dd small{display:block; font-size:12px; color:var(--color-fg-muted)}
+.os-claim-lim{margin:0 0 8px; font-size:12.5px; color:var(--color-fg-muted); line-height:1.4}
+.os-claim-lim b{color:var(--color-fg)}
+.os-claim-links{margin:0; font-size:12.5px}
+.os-claim-links a{color:var(--color-fg); text-underline-offset:3px; margin-right:10px; display:inline-block}
+.os-bridge h3{margin:30px 0 4px; font-family:var(--font-anthropic-serif,"Source Serif 4",Georgia,serif); font-weight:400; font-size:clamp(19px,3.4vw,23px)}
+.os-bridge p{margin:0 0 8px; font-size:13px; color:var(--color-fg-muted); max-width:78ch}
+.os-tbl{overflow-x:auto; border:1px solid var(--color-border-line); border-radius:12px; background:var(--color-panel)}
+.os-tbl table{border-collapse:collapse; width:100%; min-width:640px; font-size:13px; font-variant-numeric:tabular-nums}
+.os-tbl th,.os-tbl td{padding:7px 10px; text-align:right; border-bottom:1px solid var(--color-border-line)}
+.os-tbl th:first-child,.os-tbl td:first-child{text-align:left}
+.os-tbl th{font-size:11.5px; font-weight:700; color:var(--color-fg-muted); text-transform:uppercase; letter-spacing:.03em}
+.os-tbl tr.os-tot td{font-weight:700; background:rgba(128,128,128,.07)}
+.os-tbl td.os-fast{color:var(--os-c1); font-weight:700}
+.os-tbl td.os-slow{color:var(--color-fg-muted)}
+@media (max-width:620px){.os-claim{padding:14px}}
+.os-ctl{min-width:0; max-width:100%; box-sizing:border-box}
+.os-ctl-row{min-width:0; max-width:100%}
+.os-ctl .os-years,.os-ctl .os-modes{min-width:0; max-width:100%}

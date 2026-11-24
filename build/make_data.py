@@ -4,6 +4,7 @@ from nhdoe_values import V
 from rc_data import fields_for
 from towns_data import town_fields
 from peers import compute as peers_compute
+import claims as claims_mod
 cpp_lv={2018:(18421,17055,18704),2019:(17996,17409,18240),2020:(18390,18167,18130),2021:(21573,19393,19547),2022:(20831,20613,20235),2023:(21609,21347,21574),2024:(22876,22179,21511),2025:(24062,24148,23632)}
 enr={2018:2147,2019:2190,2020:2202,2021:2132,2022:2130,2023:2140,2024:2111,2025:2097,2026:2064,2027:2026}  # FY2018-26: NH DOE iExplore, district Total Enrollment (state-first rule); FY27: district Oct 7, 2026 count
 budget={2018:43787372,2019:45625555,2020:47405510,2021:47538867,2022:50173045,2023:52133325,2024:53211098,2025:56248037,2026:58002091,2027:62365067}
@@ -144,7 +145,8 @@ _pk=sorted({k for f in _PF.values() for k in f})
 for r in rows:
     _y=int(r['fy'][:4])+1
     for k in _pk: r[k]=_PF.get(_y,{}).get(k)
-json.dump({"rows":rows,"meta":meta}, open("orcsd_years.json","w"), indent=1)
+CLAIMS=claims_mod.compute(rows)
+json.dump({"rows":rows,"meta":meta,"claims":CLAIMS}, open("orcsd_years.json","w"), indent=1)
 b=rows[0]
 for r in rows:
     if r["actual_recurring"]:

@@ -2421,17 +2421,87 @@ dash.calc('headline', {
   });
   setModeButtons();
 
+
+  // ---- "Why have property taxes gone up?" (data: window.__DATA.claims, built by build/claims.py) ----
+  function renderClaims() {
+    var host = document.querySelector('[data-claims]'), C = window.__DATA && window.__DATA.claims;
+    if (!host || !C) return;
+    function el(t, c, x) { var e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; }
+    var head = el('header', 'os-head os-head2');
+    head.appendChild(el('h2', 'os-h2', 'Why have property taxes gone up?'));
+    head.appendChild(el('p', 'os-intro', 'Eight common explanations, each checked against public state and district numbers: what the numbers show, the key figures, what they cannot tell you, and links to the full charts. Everything here compares FY ' + C.window.a + ' with FY ' + C.window.b + ', the latest year with actual spending, so the year and dollar switches further down do not change this part. “After inflation” uses the Northeast CPI-U (prices rose ' + C.window.cpi_pct + '% over these years).'));
+    host.appendChild(head);
+    var base = el('div', 'os-base');
+    C.baseline.forEach(function (b) {
+      var t = el('div', 'os-tile');
+      t.appendChild(el('div', 'os-tile-t', b.title));
+      t.appendChild(el('div', 'os-tile-v', b.a + ' → ' + b.b));
+      t.appendChild(el('div', 'os-tile-c', b.chg + ' (FY18 to FY25)'));
+      if (b.note) t.appendChild(el('div', 'os-tile-n', b.note));
+      base.appendChild(t);
+    });
+    host.appendChild(base);
+    var cards = el('div', 'os-cards');
+    C.cards.forEach(function (c) {
+      var a = el('article', 'os-claim'); a.id = 'claim-' + c.id;
+      a.appendChild(el('p', 'os-claim-name', c.name));
+      a.appendChild(el('h3', 'os-claim-q', c.title));
+      var sh = el('p', 'os-claim-shows'); sh.appendChild(el('b', null, 'What the numbers show')); sh.appendChild(document.createTextNode(c.shows)); a.appendChild(sh);
+      var dl = el('dl', 'os-stats');
+      c.stats.forEach(function (s) {
+        var row = el('div', 'os-stat'); row.appendChild(el('dt', null, s.label));
+        var dd = el('dd');
+        if (s.text) { dd.textContent = s.text; }
+        else {
+          dd.appendChild(document.createTextNode(s.a + ' → ' + s.b));
+          if (s.chg) { dd.appendChild(document.createTextNode('  ')); dd.appendChild(el('b', null, s.chg)); }
+          var extra = [];
+          if (s.real) extra.push(s.real + ' after inflation');
+          if (s.note) extra.push(s.note);
+          if (extra.length) dd.appendChild(el('small', null, extra.join(' · ')));
+        }
+        row.appendChild(dd); dl.appendChild(row);
+      });
+      a.appendChild(dl);
+      var lim = el('p', 'os-claim-lim'); lim.appendChild(el('b', null, 'What the numbers cannot tell you: ')); lim.appendChild(document.createTextNode(c.limits)); a.appendChild(lim);
+      var ln = el('p', 'os-claim-links'); ln.appendChild(document.createTextNode('See the charts: '));
+      c.links.forEach(function (l) { var x = el('a', null, l[0]); x.href = '#' + l[1]; ln.appendChild(x); });
+      a.appendChild(ln); cards.appendChild(a);
+    });
+    host.appendChild(cards);
+    var br = el('div', 'os-bridge'), BR = C.bridge;
+    function table(cols, rows, totals) {
+      var w = el('div', 'os-tbl'), t = el('table'), th = el('thead'), tr = el('tr');
+      cols.forEach(function (x) { tr.appendChild(el('th', null, x)); }); th.appendChild(tr); t.appendChild(th);
+      var tb = el('tbody');
+      rows.forEach(function (r) { var q = el('tr'); r.forEach(function (v, i) { var d = el('td', (v && v.cls) || null, v && v.t != null ? v.t : v); q.appendChild(d); }); tb.appendChild(q); });
+      totals.forEach(function (r) { var q = el('tr', 'os-tot'); r.forEach(function (v) { q.appendChild(el('td', null, v)); }); tb.appendChild(q); });
+      t.appendChild(tb); w.appendChild(t); return w;
+    }
+    br.appendChild(el('h3', null, 'Where the extra spending went'));
+    br.appendChild(el('p', null, 'Operating spending rose ' + BR.total.chg.replace('+', '') + ' from FY ' + C.window.a + ' to FY ' + C.window.b + '. This table splits that increase by what the money was spent on, and shows whether each part grew faster or slower than the whole. The categories are the DOE-25’s; they add up to the operating spending shown elsewhere on the page.'));
+    br.appendChild(table(['What the money was spent on', 'FY ' + C.window.a, 'FY ' + C.window.b, 'Change', 'After inflation', 'Share of spending in FY18', 'Share of the increase', 'Compared with the whole'],
+      BR.spend.map(function (r) { return [r.name, r.a, r.b, r.chg, r.real, r.base_share, r.inc_share, { t: r.flag === 'faster' ? 'Grew faster' : 'Grew slower', cls: r.flag === 'faster' ? 'os-fast' : 'os-slow' }]; }),
+      [[BR.total.name, BR.total.a, BR.total.b, BR.total.chg, BR.total.real, '100%', '100%', ''], [BR.principal.name, BR.principal.a, BR.principal.b, BR.principal.chg, BR.principal.real, '', '', ''], [BR.total_all.name, BR.total_all.a, BR.total_all.b, BR.total_all.chg, BR.total_all.real, '', '', '']]));
+    br.appendChild(el('h3', null, 'Who paid for it'));
+    br.appendChild(el('p', null, 'The same years from the revenue side: how much more came from local property taxes, the state, the federal government and other local sources. Revenue and spending do not match to the dollar in any one year, because construction timing, fund balances and transfers move between years. The state line includes the statewide education property tax, which is collected on local tax bills and kept in the district.'));
+    br.appendChild(table(['Where the money came from', 'FY ' + C.window.a, 'FY ' + C.window.b, 'Change', 'Share of revenue in FY18', 'Share of revenue in FY25', 'Share of the increase'],
+      BR.revenue.map(function (r) { return [r.name, r.a, r.b, r.chg, r.base_share, r.end_share, r.inc_share]; }),
+      [[BR.revenue_total.name, BR.revenue_total.a, BR.revenue_total.b, BR.revenue_total.chg, '100%', '100%', '100%']]));
+    host.appendChild(br);
+  }
   // ---- Deep links: every section, row and note heading has an address (#ela, #who-pays, #notes-attendance)
   (function () {
     var root = document.querySelector('.os');
     if (!root) return;
+    renderClaims();
     var SEC = {
       'Spending, enrollment and budget': 'spending',
       'Cost per student, and how it compares': 'cost-per-student',
-      'The main picture': 'main',
+      'Why have property taxes gone up?': 'why',
+      'The big picture, year by year': 'main',
       'Where the money comes from': 'money-in',
       'Where it goes': 'money-out',
-      'What it gains us': 'gains',
       'Where the money goes': 'where-the-money-goes',
       'Who pays: local taxes, state aid and federal aid': 'who-pays',
       'How Durham, Lee and Madbury share the school bill': 'town-shares',
@@ -2491,7 +2561,7 @@ dash.calc('headline', {
         h.classList.add('os-anch'); h.appendChild(mk(id, h.textContent.trim()));
       });
     }
-    var take = root.querySelector('.os-ctl');
+    var take = root.querySelector('header.os-head');
     if (take && toc.length) {
       var nav = document.createElement('nav');
       nav.className = 'os-toc'; nav.setAttribute('aria-label', 'Jump to a section');
