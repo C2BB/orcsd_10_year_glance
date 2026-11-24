@@ -157,7 +157,7 @@ dash.calc('headline', {
   var mode = 'nom';
   var MODES = { nom: { label: 'Nominal dollars', f: null }, cpi: { label: 'Northeast CPI-U', f: 'f_cpi', idx: 'cpi_ne', n: 'cpi_ne_months', nn: 12 }, eci: { label: 'education labor costs (ECI)', f: 'f_eci', idx: 'eci_edu', n: 'eci_quarters', nn: 4 } };
   var MONEY = ['tuit_priv', 'tuit_spub', 'tuit_voc', 'tuit_reg', 'tuit_tot', 'trans_reg', 'trans_sped', 'trans_voc', 'trans_oth', 'trans_tot', 'bond_prin', 'bond_int', 'ds_prin', 'ds_int', 'ds_tot', 'bond_p1', 'bond_p2', 'bond_p3', 'bond_p4', 'bond_p5', 'ds_n1', 'ds_n2', 'ds_n3', 'ds_n4', 'ds_n5', 'gfo_sal', 'gfo_ben', 'gfo_pur', 'gfo_sup', 'gfo_prop', 'gfo_oth', 'gfo_tot', 'gfo_sb', 'gfo_np', 'sch_mw', 'sch_mo', 'sch_ps', 'sch_ms', 'sch_hs', 'sch_od', 'sch_tot', 'pers_t_sal', 'pers_a_sal', 'pers_o_sal', 'pers_t_ben', 'pers_a_ben', 'pers_o_ben', 'pers_ao_sal', 'fe_gen_rev', 'fe_gen_exp', 'fe_gen_net', 'fe_gen_beg', 'fe_gen_end', 'fe_food_rev', 'fe_food_exp', 'fe_food_net', 'fe_food_beg', 'fe_food_end', 'fe_spr_rev', 'fe_spr_exp', 'fe_spr_net', 'fe_spr_beg', 'fe_spr_end', 'rsd_ins', 'rsd_rel', 'rsd_adm', 'rsd_leg', 'rsd_trn', 'rsd_tui', 'rsd_sub', 'rsd_tot', 'rsd_aid', 'rsd_idea', 'rsd_med', 'rsd_rev', 'rsd_net', 'fb_prep', 'fb_vote', 'fb_enc', 'fb_ret', 'fb_una', 'fb_trust', 'bd_unspent', 'bd_appr', 'bd_exp', 'dflt_gap', 'dflt', 'f10', 'f21', 'f22', 'f23', 'nhrs_npl', 'nhrs_do', 'nhrs_di', 'nhrs_exp', 'nhrs_con', 'nhrs_onl', 'nhrs_oexp', 'nhrs_ocon', 'debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
-  var NAMES = ['gfo', 'sps', 'pers', 'fres', 'nhrs', 'rsa', 'spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'bvx', 'dflt', 'timp', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts', 'peer', 'scat', 'peeradj', 'scat2', 'tuit', 'trans', 'bonds', 'dsvc', 'twprof', 'cpps'];
+  var NAMES = ['gfo', 'sps', 'pers', 'fres', 'nhrs', 'rsa', 'spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'bvx', 'dflt', 'timp', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts', 'peer', 'scat', 'peeradj', 'scat2', 'tuit', 'trans', 'bonds', 'dsvc', 'twprof', 'cpps', 'rks', 'rkt'];
 
   var SCH = [['High school', 'hs'], ['Middle school', 'ms'], ['Mast Way', 'mw'], ['Moharimet', 'mo']];
   function schLines(r, fld, fmt) {
@@ -2074,6 +2074,30 @@ dash.calc('headline', {
     }
   };
   ROWS.cpps.chg = { get: function (r) { return r.pe_cpp_prof; }, kind: 'pct', note: 'spending per proficient student' };
+
+  // ---- rank among NH towns on school and total tax rates (NH DOE values files) ----
+  function rankRow(pref, what, whatLong) {
+    var S = {
+      aria: whatLong + ': rank of Durham, Lee and Madbury among New Hampshire towns, by fiscal year; 100 is the highest rate',
+      domain: [0, 100], ticks: [25, 50, 75], axis: false,
+      tickFmt: function (v) { return v + 'th'; },
+      series: townSeries(pref),
+      label: function (r) {
+        if (r[pref + '_lee'] == null) return nodata('The DOE’s town files start with tax year 2017', pref + '_lee', 'years', 'Pending');
+        return { big: '#' + r[pref + '_rank_lee'] + ' of ' + r[pref + '_n'], sub: 'Lee’s ' + what + ' per $1,000 of full value, among NH towns (1 = lowest)', delta: 'Durham #' + r[pref + '_rank_dur'] + ' · Madbury #' + r[pref + '_rank_mad'], tag: 'Actual', prov: false, src: 'years', field: pref + '_lee' };
+      },
+      tip: function (r) {
+        if (r[pref + '_lee'] == null) return { lines: [['Rank among NH towns', 'first available for tax year 2017']], note: '' };
+        function ln(nm, t) { return [nm, d2(r[pref + '_val_' + t]) + ' · #' + r[pref + '_rank_' + t] + ' of ' + r[pref + '_n']]; }
+        return { lines: [ln('Durham', 'dur'), ln('Lee', 'lee'), ln('Madbury', 'mad'), ['Median NH town', d2(r[pref + '_med'])]],
+          note: 'Tax year ' + parseInt(r.fy, 10) + ' rates per $1,000 of equalized (full) value, from the NH DOE’s valuations and tax rates file, so towns with different assessment levels compare fairly. Rank 1 is the lowest rate. The ranking covers the towns in the file with a nonzero rate; unincorporated places are mostly outside it. The DOE and the DRA publish the same school rate and agree town by town (see build/verify_town_rates.py).' };
+      }
+    };
+    S.chg = { get: function (r) { return r[pref + '_lee']; }, kind: 'pts', dec: true, note: 'Lee percentile' };
+    return S;
+  }
+  ROWS.rks = rankRow('rks', 'school tax', 'School property tax per $1,000 of full value');
+  ROWS.rkt = rankRow('rkt', 'total property tax', 'Total property tax per $1,000 of full value');
   ROWS.sgp.chg = { get: function (r) { return r.sgp_rea; }, kind: 'pts', note: 'reading' };
   ROWS.grp.chg = { get: function (r) { return r.ela_iep; }, kind: 'pts', note: 'students with IEPs' };
   ROWS.att.chg = { get: function (r) { return r.att; }, kind: 'pts', dec: true };
@@ -2439,7 +2463,7 @@ dash.calc('headline', {
   dash.draw('modeshort', function (el) { el.textContent = MODE_SHORT[mode]; });
   // Tag on each dollar row: whether it follows the switch, and what it is showing right now.
   var CHIP_B = ['instr', 'local', 'ben', 'adm', 'share', 'eff', 'cred', 'efa'];
-  var CHIP_C = { cpps: 'Every district is compared in the same year, so the dollars are as recorded; inflation does not apply.', peer: 'Every district is compared in the same year, so ranks and the dollar figures in the hover are as recorded; inflation does not apply.', scat: 'Every district is compared in the same year, so the dollars on the axis are as recorded; inflation does not apply.', base: 'Property values are market prices, not spending, so they are shown as recorded.', rate: 'A tax rate per $1,000 of value is a ratio, so inflation does not apply to it.', timp: 'An estimated change in a tax rate per $1,000 of value is a ratio, so inflation does not apply to it.' };
+  var CHIP_C = { rks: 'Every town is compared in the same year, so the dollar figures in the hover are as recorded; inflation does not apply.', rkt: 'Every town is compared in the same year, so the dollar figures in the hover are as recorded; inflation does not apply.', cpps: 'Every district is compared in the same year, so the dollars are as recorded; inflation does not apply.', peer: 'Every district is compared in the same year, so ranks and the dollar figures in the hover are as recorded; inflation does not apply.', scat: 'Every district is compared in the same year, so the dollars on the axis are as recorded; inflation does not apply.', base: 'Property values are market prices, not spending, so they are shown as recorded.', rate: 'A tax rate per $1,000 of value is a ratio, so inflation does not apply to it.', timp: 'An estimated change in a tax rate per $1,000 of value is a ratio, so inflation does not apply to it.' };
   CHIP_B.forEach(function (k) { ROWS[k].tipMoney = true; });
   var CHIP_NAMES = Object.keys(ROWS).filter(function (k) { return ROWS[k].money; }).concat(CHIP_B, Object.keys(CHIP_C));
   CHIP_NAMES.forEach(function (k) {

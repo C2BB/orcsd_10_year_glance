@@ -361,6 +361,11 @@ import town_results_rows as _tw
 for _k, _v in _tw.fields().items():
     put(_k, _v)
 
+# Ranks among all NH towns on school and total tax rates (town_rates_rows.py reads town_rates.json, made by town_rates_extract.py).
+import town_rates_rows as _tr
+for _k, _v in _tr.fields().items():
+    put(_k, _v)
+
 FIELDS = sorted(RC)
 def fields_for(y):
     return {k: RC[k].get(y) for k in FIELDS}

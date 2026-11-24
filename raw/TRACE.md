@@ -141,6 +141,8 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `dsvc` | `doe25` |
 | `twprof` | `asmtown` |
 | `cpps` | `cpp`, `assess` |
+| `rks` | `values` |
+| `rkt` | `values` |
 
 ## Mirrored but not charted
 
