@@ -169,41 +169,6 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 .os-sub{margin:30px 0 6px; font-family:var(--font-anthropic-serif,"Source Serif 4",Georgia,serif); font-weight:400; font-size:clamp(19px,3.4vw,23px); line-height:1.2}
 .os-more.is-target{animation:os-flash 2.6s ease-out}
 
-/* ---- "Why have property taxes gone up?": baseline tiles, claim cards, bridge tables ---- */
-.os-claims{margin:6px 0 28px}
-.os-base{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:10px; margin:16px 0 18px}
-.os-tile{border:1px solid var(--color-border-line); border-radius:12px; padding:12px 14px; background:var(--color-panel)}
-.os-tile-t{font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--color-fg-muted)}
-.os-tile-v{margin:4px 0 2px; font-family:var(--font-anthropic-serif,"Source Serif 4",Georgia,serif); font-size:22px; line-height:1.15}
-.os-tile-c{font-size:13px; font-weight:700}
-.os-tile-n{margin-top:4px; font-size:12px; color:var(--color-fg-muted)}
-.os-cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr)); gap:14px}
-.os-claim{border:1px solid var(--color-border-line); border-radius:14px; padding:16px 18px; background:var(--color-panel); scroll-margin-top:calc(var(--os-sticky,0px) + 14px)}
-.os-claim-name{margin:0 0 2px; font-size:11.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--os-c2)}
-.os-claim-q{margin:0 0 8px; font-family:var(--font-anthropic-serif,"Source Serif 4",Georgia,serif); font-weight:400; font-size:clamp(18px,3.2vw,21px); line-height:1.25}
-.os-claim-shows{margin:0 0 10px; font-size:14.5px; line-height:1.45}
-.os-claim-shows b{display:block; font-size:11.5px; letter-spacing:.05em; text-transform:uppercase; color:var(--color-fg-muted); margin-bottom:2px}
-.os-stats{margin:0 0 10px; padding:0; display:grid; gap:6px}
-.os-stat{display:grid; grid-template-columns:minmax(0,1fr); gap:0; padding:6px 0; border-top:1px solid var(--color-border-line)}
-.os-stat dt{font-size:12.5px; color:var(--color-fg-muted)}
-.os-stat dd{margin:0; font-size:14px; font-variant-numeric:tabular-nums}
-.os-stat dd b{font-weight:700}
-.os-stat dd small{display:block; font-size:12px; color:var(--color-fg-muted)}
-.os-claim-lim{margin:0 0 8px; font-size:12.5px; color:var(--color-fg-muted); line-height:1.4}
-.os-claim-lim b{color:var(--color-fg)}
-.os-claim-links{margin:0; font-size:12.5px}
-.os-claim-links a{color:var(--color-fg); text-underline-offset:3px; margin-right:10px; display:inline-block}
-.os-bridge h3{margin:30px 0 4px; font-family:var(--font-anthropic-serif,"Source Serif 4",Georgia,serif); font-weight:400; font-size:clamp(19px,3.4vw,23px)}
-.os-bridge p{margin:0 0 8px; font-size:13px; color:var(--color-fg-muted); max-width:78ch}
-.os-tbl{overflow-x:auto; border:1px solid var(--color-border-line); border-radius:12px; background:var(--color-panel)}
-.os-tbl table{border-collapse:collapse; width:100%; min-width:640px; font-size:13px; font-variant-numeric:tabular-nums}
-.os-tbl th,.os-tbl td{padding:7px 10px; text-align:right; border-bottom:1px solid var(--color-border-line)}
-.os-tbl th:first-child,.os-tbl td:first-child{text-align:left}
-.os-tbl th{font-size:11.5px; font-weight:700; color:var(--color-fg-muted); text-transform:uppercase; letter-spacing:.03em}
-.os-tbl tr.os-tot td{font-weight:700; background:rgba(128,128,128,.07)}
-.os-tbl td.os-fast{color:var(--os-c1); font-weight:700}
-.os-tbl td.os-slow{color:var(--color-fg-muted)}
-@media (max-width:620px){.os-claim{padding:14px}}
 .os-ctl{min-width:0; max-width:100%; box-sizing:border-box}
 .os-ctl-row{min-width:0; max-width:100%}
 .os-ctl .os-years,.os-ctl .os-modes{min-width:0; max-width:100%}
@@ -214,10 +179,8 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
   <header class="os-head">
     <p class="os-eyebrow">Oyster River Cooperative School District · FY 2017-18 to FY 2026-27</p>
     <h1 class="os-title" id="os-title">Ten years at a glance</h1>
-    <p class="os-intro">Property taxes are up, and everyone has a reason: the state, vouchers, administration, special education, teacher pay, debt. This page tests each explanation against public state and district numbers, then lets you dig into every figure behind it. Start with the quick view below. The year-by-year charts follow, and a “More detail” section at the bottom holds sixty more measures.</p>
+    <p class="os-intro">Public numbers on the Oyster River Cooperative School District's budget, students and results over ten years. Every row shows how a figure has changed and links to its source. The sections follow where the money comes from, where it goes, and how students are doing. A “More detail” section at the bottom holds sixty more measures, one click to open.</p>
   </header>
-
-  <section class="os-claims" data-claims aria-label="Why have property taxes gone up?"></section>
 
   <section class="os-adjust" aria-labelledby="os-adj-h">
     <div class="os-adj-icon" aria-hidden="true">$</div>
@@ -257,8 +220,8 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
   </div>
 
   <header class="os-head os-head2">
-    <h2 class="os-h2">The big picture, year by year</h2>
-    <p class="os-intro">The same story as nine charts: how much the district spends, how many students it has, what each costs, how much of the money is local, how much goes to instruction, what teachers earn, how students score and how voters have responded. The page opens on FY 2026-27 (the voted budget, provisional); pick a year in the bar to read its value in every row. FY18 means the 2017-18 school year (the year it ends in). Solid points are results; hollow, dotted points are budgets, provisional or approximate figures. Every row links to its source data.</p>
+    <h2 class="os-h2">Overview</h2>
+    <p class="os-intro">The totals over ten years: what the district spends, how many students it has, what each one costs, how much of the money is local property tax, and how voters have responded to the budget. The page opens on FY 2026-27 (the voted budget, provisional); pick a year in the bar to read its value in every row. FY18 means the 2017-18 school year (the year it ends in). Solid points are results; hollow, dotted points are budgets, provisional or approximate figures.</p>
   </header>
     <section class="os-row" data-k="spend" style="--rc:var(--os-c1)" aria-labelledby="os-n-spend">
       <div class="os-label">
@@ -295,40 +258,6 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-local">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Local property tax</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>State aid</span></span></div></div>
     </section>
-    <section class="os-row" data-k="instr" style="--rc:var(--os-c3)" aria-labelledby="os-n-instr">
-      <div class="os-label">
-        <div class="os-name" id="os-n-instr"><i class="os-dot"></i>Share of spending on instruction</div>
-        <div class="os-chip-row" data-draw="chip-instr"></div>
-        <div data-draw="label-instr">—</div>
-        <div class="os-src" data-draw="src-instr">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a></div>
-      </div>
-      <div class="os-chart" data-draw="chart-instr">—</div>
-    </section>
-    <section class="os-row" data-k="tavg" style="--rc:var(--os-c3)" aria-labelledby="os-n-tavg">
-      <div class="os-label">
-        <div class="os-name" id="os-n-tavg"><i class="os-dot"></i>Average teacher salary vs. NH average</div>
-        <div class="os-chip-row" data-draw="chip-tavg"></div>
-        <div data-draw="label-tavg">—</div>
-        <div class="os-src" data-draw="src-tavg">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/staffing-and-salary-reports" target="_blank" rel="noopener">NH DOE teacher salary reports</a></div>
-      </div>
-      <div class="os-vis"><div class="os-chart" data-draw="chart-tavg">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>NH average</span></span><span class="ln">Before benefits. Two years are left off the Oyster River line because the DOE files look unreliable (see notes).</span></div></div>
-    </section>
-    <section class="os-row" data-k="ela" style="--rc:var(--os-c4)" aria-labelledby="os-n-ela">
-      <div class="os-label">
-        <div class="os-name" id="os-n-ela"><i class="os-dot sq"></i>Reading and writing proficiency</div>
-        <div data-draw="label-ela">—</div>
-        <div class="os-src" data-draw="src-ela">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/assessment-data" target="_blank" rel="noopener">NH DOE assessment files</a></div>
-      </div>
-      <div class="os-vis"><div class="os-chart" data-draw="chart-ela">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>All New Hampshire</span></span></div></div>
-    </section>
-    <section class="os-row" data-k="math" style="--rc:var(--os-c4)" aria-labelledby="os-n-math">
-      <div class="os-label">
-        <div class="os-name" id="os-n-math"><i class="os-dot sq"></i>Math proficiency</div>
-        <div data-draw="label-math">—</div>
-        <div class="os-src" data-draw="src-math">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/assessment-data" target="_blank" rel="noopener">NH DOE assessment files</a></div>
-      </div>
-      <div class="os-vis"><div class="os-chart" data-draw="chart-math">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>All New Hampshire</span></span></div></div>
-    </section>
     <section class="os-row" data-k="vote" style="--rc:var(--os-c3)" aria-labelledby="os-n-vote">
       <div class="os-label">
         <div class="os-name" id="os-n-vote"><i class="os-dot"></i>Operating budget vote: share voting yes</div>
@@ -339,7 +268,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
     </section>
   <header class="os-head os-head2">
     <h2 class="os-h2">Where the money comes from</h2>
-    <p class="os-intro">Local property taxes pay for most of the budget. The state adds adequacy aid, and the federal government a small share. Durham, Lee and Madbury each pay a part of the local tax, set by a formula that weighs student numbers and property value equally.</p>
+    <p class="os-intro">How much of the school budget comes from local property taxes, state aid and federal aid, and how the local tax is divided among Durham, Lee and Madbury.</p>
   </header>
     <section class="os-row" data-k="pay" style="--rc:var(--os-c5)" aria-labelledby="os-n-pay">
       <div class="os-label">
@@ -368,6 +297,15 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-chart" data-draw="chart-fed">—</div>
     </section>
+    <section class="os-row" data-k="bldaid" style="--rc:var(--os-c2)" aria-labelledby="os-n-bldaid">
+      <div class="os-label">
+        <div class="os-name" id="os-n-bldaid"><i class="os-dot"></i>State building aid for school bonds</div>
+        <div class="os-chip-row" data-draw="chip-bldaid"></div>
+        <div data-draw="label-bldaid">—</div>
+        <div class="os-src" data-draw="src-bldaid">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/other-state-aid-programs" target="_blank" rel="noopener">NH DOE other state aid programs</a></div>
+      </div>
+      <div class="os-vis"><div class="os-chart" data-draw="chart-bldaid">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Building aid</span></span><span class="ln">Paid toward school construction bonds.</span></div></div>
+    </section>
     <section class="os-row" data-k="share" style="--rc:var(--os-c5)" aria-labelledby="os-n-share">
       <div class="os-label">
         <div class="os-name" id="os-n-share"><i class="os-dot sq"></i>Who pays: each town’s share of the school levy</div>
@@ -387,44 +325,17 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       <div class="os-vis"><div class="os-chart" data-draw="chart-eff">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Lee</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Durham</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>Madbury</span></span><span class="ln">Net school levy ÷ equalized value.</span></div></div>
     </section>
   <header class="os-head os-head2">
-    <h2 class="os-h2">Where it goes</h2>
-    <p class="os-intro">How the budget is divided: what each student costs, what the money is spent on, how much reaches teachers and classrooms, and what the district owes.</p>
+    <h2 class="os-h2">Where the money goes</h2>
+    <p class="os-intro">What the money is spent on: instruction, special programs, administration, salaries and benefits, and debt.</p>
   </header>
-    <section class="os-row" data-k="budget" style="--rc:var(--os-c3)" aria-labelledby="os-n-budget">
+    <section class="os-row" data-k="instr" style="--rc:var(--os-c3)" aria-labelledby="os-n-instr">
       <div class="os-label">
-        <div class="os-name" id="os-n-budget"><i class="os-dot"></i>Adopted budget per student</div>
-        <div class="os-chip-row" data-draw="chip-budget"></div>
-        <div data-draw="label-budget">—</div>
-        <div class="os-src" data-draw="src-budget">Data: <a href="https://www.orcsd.org/departments/business-office/budget-faq" target="_blank" rel="noopener">ORCSD budget pages</a> · <a href="https://www.orcsd.org/news/1823327/march-10-2026-official-voting-results" target="_blank" rel="noopener">ORCSD voting results</a></div>
+        <div class="os-name" id="os-n-instr"><i class="os-dot"></i>Share of spending on instruction</div>
+        <div class="os-chip-row" data-draw="chip-instr"></div>
+        <div data-draw="label-instr">—</div>
+        <div class="os-src" data-draw="src-instr">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a></div>
       </div>
-      <div class="os-chart" data-draw="chart-budget">—</div>
-    </section>
-    <section class="os-row" data-k="gfo" style="--rc:var(--os-c4)" aria-labelledby="os-n-gfo">
-      <div class="os-label">
-        <div class="os-name" id="os-n-gfo"><i class="os-dot"></i>General Fund spending by type</div>
-        <div class="os-chip-row" data-draw="chip-gfo"></div>
-        <div data-draw="label-gfo">—</div>
-        <div class="os-src" data-draw="src-gfo">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25" target="_blank" rel="noopener">NH DOE DOE-25 reports</a></div>
-      </div>
-      <div class="os-vis"><div class="os-chart" data-draw="chart-gfo">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Salaries and benefits</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Everything else: purchased services, supplies, property, other</span></span><span class="ln">DOE-25, General Fund only; FY2018 to FY2025.</span></div></div>
-    </section>
-    <section class="os-row" data-k="sps" style="--rc:var(--os-c2)" aria-labelledby="os-n-sps">
-      <div class="os-label">
-        <div class="os-name" id="os-n-sps"><i class="os-dot"></i>Spending by school</div>
-        <div class="os-chip-row" data-draw="chip-sps"></div>
-        <div data-draw="label-sps">—</div>
-        <div class="os-src" data-draw="src-sps">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25" target="_blank" rel="noopener">NH DOE DOE-25 reports</a></div>
-      </div>
-      <div class="os-vis"><div class="os-chart" data-draw="chart-sps">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>All five school lines together</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>High school</span></span><span class="ln">DOE-25 School Level Expenditures; FY2019 to FY2025. Hover for each school and cost per pupil.</span></div></div>
-    </section>
-    <section class="os-row" data-k="pers" style="--rc:var(--os-c5)" aria-labelledby="os-n-pers">
-      <div class="os-label">
-        <div class="os-name" id="os-n-pers"><i class="os-dot"></i>Teacher, aide and other instructional pay</div>
-        <div class="os-chip-row" data-draw="chip-pers"></div>
-        <div data-draw="label-pers">—</div>
-        <div class="os-src" data-draw="src-pers">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25" target="_blank" rel="noopener">NH DOE DOE-25 reports</a></div>
-      </div>
-      <div class="os-vis"><div class="os-chart" data-draw="chart-pers">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Teacher salaries</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Aide, paraprofessional and other instructional salaries</span></span><span class="ln">DOE-25 Salaries-Benefits sheet; FY2018 to FY2025.</span></div></div>
+      <div class="os-chart" data-draw="chart-instr">—</div>
     </section>
     <section class="os-row" data-k="spec" style="--rc:var(--os-c3)" aria-labelledby="os-n-spec">
       <div class="os-label">
@@ -446,6 +357,42 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-chart" data-draw="chart-adm">—</div>
     </section>
+    <section class="os-row" data-k="gfo" style="--rc:var(--os-c4)" aria-labelledby="os-n-gfo">
+      <div class="os-label">
+        <div class="os-name" id="os-n-gfo"><i class="os-dot"></i>General Fund spending by type</div>
+        <div class="os-chip-row" data-draw="chip-gfo"></div>
+        <div data-draw="label-gfo">—</div>
+        <div class="os-src" data-draw="src-gfo">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25" target="_blank" rel="noopener">NH DOE DOE-25 reports</a></div>
+      </div>
+      <div class="os-vis"><div class="os-chart" data-draw="chart-gfo">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Salaries and benefits</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Everything else: purchased services, supplies, property, other</span></span><span class="ln">DOE-25, General Fund only; FY2018 to FY2025.</span></div></div>
+    </section>
+    <section class="os-row" data-k="pers" style="--rc:var(--os-c5)" aria-labelledby="os-n-pers">
+      <div class="os-label">
+        <div class="os-name" id="os-n-pers"><i class="os-dot"></i>Teacher, aide and other instructional pay</div>
+        <div class="os-chip-row" data-draw="chip-pers"></div>
+        <div data-draw="label-pers">—</div>
+        <div class="os-src" data-draw="src-pers">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25" target="_blank" rel="noopener">NH DOE DOE-25 reports</a></div>
+      </div>
+      <div class="os-vis"><div class="os-chart" data-draw="chart-pers">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Teacher salaries</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Aide, paraprofessional and other instructional salaries</span></span><span class="ln">DOE-25 Salaries-Benefits sheet; FY2018 to FY2025.</span></div></div>
+    </section>
+    <section class="os-row" data-k="ben" style="--rc:var(--os-c1)" aria-labelledby="os-n-ben">
+      <div class="os-label">
+        <div class="os-name" id="os-n-ben"><i class="os-dot"></i>Benefits as a share of instruction salaries</div>
+        <div class="os-chip-row" data-draw="chip-ben"></div>
+        <div data-draw="label-ben">—</div>
+        <div class="os-src" data-draw="src-ben">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a></div>
+      </div>
+      <div class="os-chart" data-draw="chart-ben">—</div>
+    </section>
+    <section class="os-row" data-k="tavg" style="--rc:var(--os-c3)" aria-labelledby="os-n-tavg">
+      <div class="os-label">
+        <div class="os-name" id="os-n-tavg"><i class="os-dot"></i>Average teacher salary vs. NH average</div>
+        <div class="os-chip-row" data-draw="chip-tavg"></div>
+        <div data-draw="label-tavg">—</div>
+        <div class="os-src" data-draw="src-tavg">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/staffing-and-salary-reports" target="_blank" rel="noopener">NH DOE teacher salary reports</a></div>
+      </div>
+      <div class="os-vis"><div class="os-chart" data-draw="chart-tavg">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>NH average</span></span><span class="ln">Before benefits. Two years are left off the Oyster River line because the DOE files look unreliable (see notes).</span></div></div>
+    </section>
     <section class="os-row" data-k="debt" style="--rc:var(--os-c5)" aria-labelledby="os-n-debt">
       <div class="os-label">
         <div class="os-name" id="os-n-debt"><i class="os-dot"></i>Long-term debt and pension obligations</div>
@@ -455,35 +402,51 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-debt">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Total obligations</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Bonds and loans</span></span><span class="ln">Audited, June 30. Total = bonds and loans + net pension + net retiree health liabilities.</span></div></div>
     </section>
+    <section class="os-row" data-k="bonds" style="--rc:var(--os-c1)" aria-labelledby="os-n-bonds">
+      <div class="os-label">
+        <div class="os-name" id="os-n-bonds"><i class="os-dot"></i>School bonds: principal and interest still owed</div>
+        <div class="os-chip-row" data-draw="chip-bonds"></div>
+        <div data-draw="label-bonds">—</div>
+        <div class="os-src" data-draw="src-bonds">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports</a></div>
+      </div>
+      <div class="os-vis"><div class="os-chart" data-draw="chart-bonds">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Principal still owed</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Interest still to pay</span></span></div></div>
+    </section>
   <header class="os-head os-head2">
-    <h2 class="os-h2">How students are doing</h2>
-    <p class="os-intro">How much students learn and grow, how many graduate and go on to college, class sizes and staffing, and how Oyster River compares with other New Hampshire K-12 districts (53 or 54 a year). The comparison rows use the average of the state reading and math tests (share at levels 3 and 4); low-income means the state's SES group. They describe where Oyster River sits and cannot show what any one dollar produced.</p>
+    <h2 class="os-h2">Students and results</h2>
+    <p class="os-intro">How many students there are, how many have disabilities or hold Education Freedom Accounts, how they score and how many graduate and go on to college, and how Oyster River compares with other New Hampshire K-12 districts (53 or 54 a year). The comparison row uses the average of the state reading and math tests (share at levels 3 and 4).</p>
   </header>
-    <section class="os-row" data-k="cmp" style="--rc:var(--os-c2)" aria-labelledby="os-n-cmp">
+    <section class="os-row" data-k="efa" style="--rc:var(--os-c5)" aria-labelledby="os-n-efa">
       <div class="os-label">
-        <div class="os-name" id="os-n-cmp"><i class="os-dot"></i>Cost per pupil vs. NH average, and rank</div>
-        <div class="os-chip-row" data-draw="chip-cmp"></div>
-        <div data-draw="label-cmp">—</div>
-        <div class="os-src" data-draw="src-cmp">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/financial-reports" target="_blank" rel="noopener">NH DOE cost per pupil files</a></div>
+        <div class="os-name" id="os-n-efa"><i class="os-dot"></i>Education Freedom Account students</div>
+        <div class="os-chip-row" data-draw="chip-efa"></div>
+        <div data-draw="label-efa">—</div>
+        <div class="os-src" data-draw="src-efa">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/other-state-aid-programs" target="_blank" rel="noopener">NH DOE by-municipality reports</a></div>
       </div>
-      <div class="os-vis"><div class="os-chart" data-draw="chart-cmp">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>NH average</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Median K-12 district</span></span></div></div>
+      <div class="os-chart" data-draw="chart-efa">—</div>
     </section>
-    <section class="os-row" data-k="peer" style="--rc:var(--os-c1)" aria-labelledby="os-n-peer">
+    <section class="os-row" data-k="swd" style="--rc:var(--os-c5)" aria-labelledby="os-n-swd">
       <div class="os-label">
-        <div class="os-name" id="os-n-peer"><i class="os-dot"></i>Spending and results, ranked among NH K-12 districts</div>
-        <div class="os-chip-row" data-draw="chip-peer"></div>
-        <div data-draw="label-peer">—</div>
-        <div class="os-src" data-draw="src-peer">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/financial-reports" target="_blank" rel="noopener">NH DOE cost per pupil files</a> · <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/assessment-data" target="_blank" rel="noopener">NH DOE assessment data</a></div>
+        <div class="os-name" id="os-n-swd"><i class="os-dot sq"></i>Students with disabilities vs. NH</div>
+        <div data-draw="label-swd">—</div>
+        <div class="os-src" data-draw="src-swd">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/iplatform" target="_blank" rel="noopener">NH DOE iExplore</a></div>
       </div>
-      <div class="os-vis"><div class="os-chart" data-draw="chart-peer">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Reading and math proficiency</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Student growth</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>Cost per pupil</span></span></div></div>
+      <div class="os-vis"><div class="os-chart" data-draw="chart-swd">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>New Hampshire</span></span><span class="ln">Share of enrolled students with an individualized education program, DOE count.</span></div></div>
     </section>
-    <section class="os-row" data-k="peeradj" style="--rc:var(--os-c2)" aria-labelledby="os-n-peeradj">
+    <section class="os-row" data-k="ela" style="--rc:var(--os-c4)" aria-labelledby="os-n-ela">
       <div class="os-label">
-        <div class="os-name" id="os-n-peeradj"><i class="os-dot sq"></i>Results compared with districts that have similar shares of low-income students</div>
-        <div data-draw="label-peeradj">—</div>
-        <div class="os-src" data-draw="src-peeradj">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/assessment-data" target="_blank" rel="noopener">NH DOE assessment data</a></div>
+        <div class="os-name" id="os-n-ela"><i class="os-dot sq"></i>Reading and writing proficiency</div>
+        <div data-draw="label-ela">—</div>
+        <div class="os-src" data-draw="src-ela">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/assessment-data" target="_blank" rel="noopener">NH DOE assessment files</a></div>
       </div>
-      <div class="os-vis"><div class="os-chart" data-draw="chart-peeradj">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River, points above expected</span></span></div></div>
+      <div class="os-vis"><div class="os-chart" data-draw="chart-ela">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>All New Hampshire</span></span></div></div>
+    </section>
+    <section class="os-row" data-k="math" style="--rc:var(--os-c4)" aria-labelledby="os-n-math">
+      <div class="os-label">
+        <div class="os-name" id="os-n-math"><i class="os-dot sq"></i>Math proficiency</div>
+        <div data-draw="label-math">—</div>
+        <div class="os-src" data-draw="src-math">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/assessment-data" target="_blank" rel="noopener">NH DOE assessment files</a></div>
+      </div>
+      <div class="os-vis"><div class="os-chart" data-draw="chart-math">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>All New Hampshire</span></span></div></div>
     </section>
     <section class="os-row" data-k="sgp" style="--rc:var(--os-c4)" aria-labelledby="os-n-sgp">
       <div class="os-label">
@@ -517,16 +480,17 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-ratio">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>NH total</span></span><span class="ln">As the DOE counts them. Posted as files only through 2021-22.</span></div></div>
     </section>
-    <section class="os-row" data-k="cls" style="--rc:var(--os-c1)" aria-labelledby="os-n-cls">
+    <section class="os-row" data-k="peer" style="--rc:var(--os-c1)" aria-labelledby="os-n-peer">
       <div class="os-label">
-        <div class="os-name" id="os-n-cls"><i class="os-dot"></i>Average class size, grades 1 to 4</div>
-        <div data-draw="label-cls">—</div>
-        <div class="os-src" data-draw="src-cls">Data: <a href="https://www.orcsd.org/departments/business-office/annual-reports" target="_blank" rel="noopener">ORCSD annual reports</a> · <a href="https://my.doe.nh.gov/iPlatform" target="_blank" rel="noopener">NH DOE iPlatform</a></div>
+        <div class="os-name" id="os-n-peer"><i class="os-dot"></i>Spending and results, ranked among NH K-12 districts</div>
+        <div class="os-chip-row" data-draw="chip-peer"></div>
+        <div data-draw="label-peer">—</div>
+        <div class="os-src" data-draw="src-peer">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/financial-reports" target="_blank" rel="noopener">NH DOE cost per pupil files</a> · <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/assessment-data" target="_blank" rel="noopener">NH DOE assessment data</a></div>
       </div>
-      <div class="os-vis"><div class="os-chart" data-draw="chart-cls">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>New Hampshire</span></span><span class="ln">Average of the four school and grade-band figures.</span></div></div>
+      <div class="os-vis"><div class="os-chart" data-draw="chart-peer">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Reading and math proficiency</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Student growth</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>Cost per pupil</span></span></div></div>
     </section>
   <details class="os-more">
-    <summary><span class="os-more-t">More detail: 60 more measures</span><span class="os-more-h">Click to open. More on where the money comes from, where it goes and how students are doing, plus student counts and enrollment.</span></summary>
+    <summary><span class="os-more-t">More detail: 60 more measures</span><span class="os-more-h">Click to open. More on where the money comes from, where it goes, and students and results, plus student counts and enrollment.</span></summary>
     <h3 class="os-sub">More on where the money comes from</h3>
     <section class="os-row" data-k="base" style="--rc:var(--os-c5)" aria-labelledby="os-n-base">
       <div class="os-label">
@@ -554,15 +518,6 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
         <div class="os-src" data-draw="src-timp">Data: <a href="https://www.orcsd.org/departments/business-office/annual-reports" target="_blank" rel="noopener">ORCSD annual reports</a></div>
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-timp">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Durham</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Lee</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>Madbury</span></span><span class="ln">The district’s estimate, per $1,000 of assessed value; actual change is in the hover.</span></div></div>
-    </section>
-    <section class="os-row" data-k="bldaid" style="--rc:var(--os-c2)" aria-labelledby="os-n-bldaid">
-      <div class="os-label">
-        <div class="os-name" id="os-n-bldaid"><i class="os-dot"></i>State building aid for school bonds</div>
-        <div class="os-chip-row" data-draw="chip-bldaid"></div>
-        <div data-draw="label-bldaid">—</div>
-        <div class="os-src" data-draw="src-bldaid">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/other-state-aid-programs" target="_blank" rel="noopener">NH DOE other state aid programs</a></div>
-      </div>
-      <div class="os-vis"><div class="os-chart" data-draw="chart-bldaid">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Building aid</span></span><span class="ln">Paid toward school construction bonds.</span></div></div>
     </section>
     <section class="os-row" data-k="spedaid" style="--rc:var(--os-c4)" aria-labelledby="os-n-spedaid">
       <div class="os-label">
@@ -643,7 +598,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-rks">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Lee</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Durham</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>Madbury</span></span><span class="ln">Percentile among NH towns; 100 is the highest school tax rate that year.</span></div></div>
     </section>
-    <h3 class="os-sub">More on where it goes</h3>
+    <h3 class="os-sub">More on where the money goes</h3>
     <section class="os-row" data-k="fb" style="--rc:var(--os-c3)" aria-labelledby="os-n-fb">
       <div class="os-label">
         <div class="os-name" id="os-n-fb"><i class="os-dot"></i>General Fund balance at year end</div>
@@ -652,15 +607,6 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
         <div class="os-src" data-draw="src-fb">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">NH DOE DOE-25 reports</a></div>
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-fb">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>General Fund balance</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Trust funds (capital reserves)</span></span><span class="ln">DOE-25 balance sheet, June 30 of each fiscal year. The audit folds the trust funds into the General Fund.</span></div></div>
-    </section>
-    <section class="os-row" data-k="bonds" style="--rc:var(--os-c1)" aria-labelledby="os-n-bonds">
-      <div class="os-label">
-        <div class="os-name" id="os-n-bonds"><i class="os-dot"></i>School bonds: principal and interest still owed</div>
-        <div class="os-chip-row" data-draw="chip-bonds"></div>
-        <div data-draw="label-bonds">—</div>
-        <div class="os-src" data-draw="src-bonds">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports</a></div>
-      </div>
-      <div class="os-vis"><div class="os-chart" data-draw="chart-bonds">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Principal still owed</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Interest still to pay</span></span></div></div>
     </section>
     <section class="os-row" data-k="dsvc" style="--rc:var(--os-c2)" aria-labelledby="os-n-dsvc">
       <div class="os-label">
@@ -770,15 +716,6 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-staff">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Salaries</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Benefits</span></span></div></div>
     </section>
-    <section class="os-row" data-k="ben" style="--rc:var(--os-c1)" aria-labelledby="os-n-ben">
-      <div class="os-label">
-        <div class="os-name" id="os-n-ben"><i class="os-dot"></i>Benefits as a share of instruction salaries</div>
-        <div class="os-chip-row" data-draw="chip-ben"></div>
-        <div data-draw="label-ben">—</div>
-        <div class="os-src" data-draw="src-ben">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25/DOE25Reports" target="_blank" rel="noopener">DOE-25 reports (NH DOE)</a></div>
-      </div>
-      <div class="os-chart" data-draw="chart-ben">—</div>
-    </section>
     <section class="os-row" data-k="tstart" style="--rc:var(--os-c3)" aria-labelledby="os-n-tstart">
       <div class="os-label">
         <div class="os-name" id="os-n-tstart"><i class="os-dot"></i>Teacher starting salary vs. NH average</div>
@@ -830,7 +767,25 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-nts">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>New Hampshire</span></span><span class="ln">Share of classes taught by an educator certified in the subject.</span></div></div>
     </section>
-    <h3 class="os-sub">More on how students are doing</h3>
+    <section class="os-row" data-k="budget" style="--rc:var(--os-c3)" aria-labelledby="os-n-budget">
+      <div class="os-label">
+        <div class="os-name" id="os-n-budget"><i class="os-dot"></i>Adopted budget per student</div>
+        <div class="os-chip-row" data-draw="chip-budget"></div>
+        <div data-draw="label-budget">—</div>
+        <div class="os-src" data-draw="src-budget">Data: <a href="https://www.orcsd.org/departments/business-office/budget-faq" target="_blank" rel="noopener">ORCSD budget pages</a> · <a href="https://www.orcsd.org/news/1823327/march-10-2026-official-voting-results" target="_blank" rel="noopener">ORCSD voting results</a></div>
+      </div>
+      <div class="os-chart" data-draw="chart-budget">—</div>
+    </section>
+    <section class="os-row" data-k="sps" style="--rc:var(--os-c2)" aria-labelledby="os-n-sps">
+      <div class="os-label">
+        <div class="os-name" id="os-n-sps"><i class="os-dot"></i>Spending by school</div>
+        <div class="os-chip-row" data-draw="chip-sps"></div>
+        <div data-draw="label-sps">—</div>
+        <div class="os-src" data-draw="src-sps">Data: <a href="https://my.doe.nh.gov/iPlatform/DOE25" target="_blank" rel="noopener">NH DOE DOE-25 reports</a></div>
+      </div>
+      <div class="os-vis"><div class="os-chart" data-draw="chart-sps">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>All five school lines together</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>High school</span></span><span class="ln">DOE-25 School Level Expenditures; FY2019 to FY2025. Hover for each school and cost per pupil.</span></div></div>
+    </section>
+    <h3 class="os-sub">More on students and results</h3>
     <section class="os-row" data-k="sci" style="--rc:var(--os-c5)" aria-labelledby="os-n-sci">
       <div class="os-label">
         <div class="os-name" id="os-n-sci"><i class="os-dot sq"></i>Science proficiency</div>
@@ -968,6 +923,31 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-vis"><div class="os-chart" data-draw="chart-attlvl">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>New Hampshire</span></span><span class="ln">Average of kindergarten, elementary, middle and high school.</span></div></div>
     </section>
+    <section class="os-row" data-k="cmp" style="--rc:var(--os-c2)" aria-labelledby="os-n-cmp">
+      <div class="os-label">
+        <div class="os-name" id="os-n-cmp"><i class="os-dot"></i>Cost per pupil vs. NH average, and rank</div>
+        <div class="os-chip-row" data-draw="chip-cmp"></div>
+        <div data-draw="label-cmp">—</div>
+        <div class="os-src" data-draw="src-cmp">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/financial-reports" target="_blank" rel="noopener">NH DOE cost per pupil files</a></div>
+      </div>
+      <div class="os-vis"><div class="os-chart" data-draw="chart-cmp">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>NH average</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="7 3 1 3"/><rect x="11" y="2" width="8" height="8" rx="1.5" fill="var(--rc)" fill-opacity="0.9" stroke="var(--color-panel)" stroke-width="1.2"/></svg><span>Median K-12 district</span></span></div></div>
+    </section>
+    <section class="os-row" data-k="cls" style="--rc:var(--os-c1)" aria-labelledby="os-n-cls">
+      <div class="os-label">
+        <div class="os-name" id="os-n-cls"><i class="os-dot"></i>Average class size, grades 1 to 4</div>
+        <div data-draw="label-cls">—</div>
+        <div class="os-src" data-draw="src-cls">Data: <a href="https://www.orcsd.org/departments/business-office/annual-reports" target="_blank" rel="noopener">ORCSD annual reports</a> · <a href="https://my.doe.nh.gov/iPlatform" target="_blank" rel="noopener">NH DOE iPlatform</a></div>
+      </div>
+      <div class="os-vis"><div class="os-chart" data-draw="chart-cls">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>New Hampshire</span></span><span class="ln">Average of the four school and grade-band figures.</span></div></div>
+    </section>
+    <section class="os-row" data-k="peeradj" style="--rc:var(--os-c2)" aria-labelledby="os-n-peeradj">
+      <div class="os-label">
+        <div class="os-name" id="os-n-peeradj"><i class="os-dot sq"></i>Results compared with districts that have similar shares of low-income students</div>
+        <div data-draw="label-peeradj">—</div>
+        <div class="os-src" data-draw="src-peeradj">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/assessment-data" target="_blank" rel="noopener">NH DOE assessment data</a></div>
+      </div>
+      <div class="os-vis"><div class="os-chart" data-draw="chart-peeradj">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River, points above expected</span></span></div></div>
+    </section>
     <h3 class="os-sub">Other detail: who our students are, and enrollment</h3>
     <section class="os-row" data-k="town" style="--rc:var(--os-c2)" aria-labelledby="os-n-town">
       <div class="os-label">
@@ -993,14 +973,6 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
       </div>
       <div class="os-chart" data-draw="chart-sped">—</div>
     </section>
-    <section class="os-row" data-k="swd" style="--rc:var(--os-c5)" aria-labelledby="os-n-swd">
-      <div class="os-label">
-        <div class="os-name" id="os-n-swd"><i class="os-dot sq"></i>Students with disabilities vs. NH</div>
-        <div data-draw="label-swd">—</div>
-        <div class="os-src" data-draw="src-swd">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/iplatform" target="_blank" rel="noopener">NH DOE iExplore</a></div>
-      </div>
-      <div class="os-vis"><div class="os-chart" data-draw="chart-swd">—</div><div class="os-legend"><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--rc)" stroke-width="2.4" stroke-linecap="round"/><circle cx="15" cy="6" r="3.6" fill="var(--rc)" stroke="var(--rc)" stroke-width="1.8"/></svg><span>Oyster River</span></span><span class="lk"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="2" y1="6" x2="28" y2="6" stroke="var(--color-fg-muted)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 4"/><polygon points="15,1.5 19.5,6 15,10.5 10.5,6" fill="var(--color-panel)" stroke="var(--color-fg-muted)" stroke-width="1.6"/></svg><span>New Hampshire</span></span><span class="ln">Share of enrolled students with an individualized education program, DOE count.</span></div></div>
-    </section>
     <section class="os-row" data-k="incl" style="--rc:var(--os-c5)" aria-labelledby="os-n-incl">
       <div class="os-label">
         <div class="os-name" id="os-n-incl"><i class="os-dot sq"></i>Students with disabilities in regular classes</div>
@@ -1024,15 +996,6 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
         <div class="os-src" data-draw="src-ell">Data: <a href="https://www.orcsd.org/departments/business-office/annual-reports" target="_blank" rel="noopener">ORCSD annual reports</a> · <a href="https://my.doe.nh.gov/iPlatform" target="_blank" rel="noopener">NH DOE iPlatform</a></div>
       </div>
       <div class="os-chart" data-draw="chart-ell">—</div>
-    </section>
-    <section class="os-row" data-k="efa" style="--rc:var(--os-c5)" aria-labelledby="os-n-efa">
-      <div class="os-label">
-        <div class="os-name" id="os-n-efa"><i class="os-dot"></i>Education Freedom Account students</div>
-        <div class="os-chip-row" data-draw="chip-efa"></div>
-        <div data-draw="label-efa">—</div>
-        <div class="os-src" data-draw="src-efa">Data: <a href="https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/other-state-aid-programs" target="_blank" rel="noopener">NH DOE by-municipality reports</a></div>
-      </div>
-      <div class="os-chart" data-draw="chart-efa">—</div>
     </section>
     <section class="os-row" data-k="proj" style="--rc:var(--os-c4)" aria-labelledby="os-n-proj">
       <div class="os-label">
@@ -1145,12 +1108,12 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);padding-block:32p
 <script>
 (function () {
   function fail(e) { var d = document.createElement('div'); d.className = 'os-loaderr'; d.textContent = 'Could not load the data files (' + e + '). Open the single-file version in the dist folder, or try again.'; document.body.insertBefore(d, document.body.firstChild); }
-  Promise.all([fetch('data/orcsd_years.json?v=7122603c86'), fetch('data/sources.json?v=7122603c86')]).then(function (rs) {
+  Promise.all([fetch('data/orcsd_years.json?v=dc090a4446'), fetch('data/sources.json?v=dc090a4446')]).then(function (rs) {
     rs.forEach(function (r) { if (!r.ok) throw new Error(r.status + ' ' + r.url); });
     return Promise.all(rs.map(function (r) { return r.json(); }));
   }).then(function (j) {
     window.__DATA = j[0]; window.__SRC = j[1];
-    var s = document.createElement('script'); s.src = 'app.js?v=7122603c86'; s.onerror = function () { fail('app.js'); };
+    var s = document.createElement('script'); s.src = 'app.js?v=dc090a4446'; s.onerror = function () { fail('app.js'); };
     document.body.appendChild(s);
   }).catch(fail);
 })();
