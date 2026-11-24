@@ -7,7 +7,7 @@ import os, re, sys, warnings
 warnings.filterwarnings("ignore")
 import openpyxl
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import doe25_rows
+import doe25_rows, doe25
 
 DIR = "raw/nh-doe25"
 IDS = {2018: 131, 2019: 306, 2020: 484, 2021: 544, 2022: 946, 2023: 1131, 2024: 2221, 2025: 2414}
@@ -76,6 +76,32 @@ for y, i in IDS.items():
     chk("issue principals add to total FY%d" % y, sum(R["bond_p%d" % s][y] for s in range(1, 6)), R["bond_prin"][y])
     chk("issue payments add to total FY%d" % y, sum(R["ds_n%d" % s][y] for s in range(1, 6)), R["ds_tot"][y])
     chk("principal + interest due = total due FY%d" % y, R["ds_prin"][y] + R["ds_int"][y], R["ds_tot"][y])
+    # revenue lines: columns F to J of the DOE25 sheet are the General, Food Service, Special Revenue, Capital Projects and Trust funds
+    def rline(acct):
+        m = [row for row in ws.iter_rows(min_col=1, max_col=14) if str(row[4].value).strip() == str(acct) and 85 <= row[0].row <= 200 and isinstance(row[0].value, str)]
+        assert len(m) <= 1, (y, acct, len(m))
+        return [c.value if isinstance(c.value, (int, float)) else 0.0 for c in m[0][5:10]] if m else [0.0] * 5
+
+    def rtot(prefix):
+        m = [row for row in ws.iter_rows(min_col=1, max_col=14) if isinstance(row[0].value, str) and row[0].value.strip().startswith(prefix) and 85 <= row[0].row <= 200]
+        assert len(m) == 1, (y, prefix, len(m))
+        return [c.value if isinstance(c.value, (int, float)) else 0.0 for c in m[0][5:10]]
+    chk("food_sales FY%d" % y, R["food_sales"][y], rline(1600)[1])
+    chk("food_fed FY%d" % y, R["food_fed"][y], rline(4560)[1])
+    chk("food_state FY%d" % y, R["food_state"][y], rline(3260)[1])
+    chk("food_tot FY%d" % y, R["food_tot"][y], rtot("Total Revenue & Other Financing Sources")[1])
+    # the explicit remaining food-service lines (other local revenue, donations and transfers) equal the residual used on the page
+    chk("food_oth FY%d = lines 1990, 1920, 5200 in the Food Service column" % y, R["food_oth"][y], rline(1990)[1] + rline(1920)[1] + rline(5200)[1])
+    chk("fin_bonds FY%d" % y, R["fin_bonds"][y], sum(rline(5100)))
+    chk("fin_res FY%d" % y, R["fin_res"][y], rline(5250)[0])
+    chk("oloc_inv FY%d" % y, R["oloc_inv"][y], rline(1500)[0])
+    chk("oloc_rent FY%d" % y, R["oloc_rent"][y], rline(1910)[0])
+    chk("oloc_tot FY%d" % y, R["oloc_tot"][y], rtot("Total Additional/Other Revenue")[0])
+    chk("oloc_oth FY%d = lines 1990, 1920, 1930, 1700 in the General Fund column" % y, R["oloc_oth"][y], rline(1990)[0] + rline(1920)[0] + rline(1930)[0] + rline(1700)[0])
+    for k, acct in (("fp_idea", (4570,)), ("fp_lunch", (4560,)), ("fp_title", (4520, 4530)), ("fp_med", (4580,)), ("fp_relief", (4100, 4590, 4595)), ("fp_tot", (4000,))):
+        chk("%s FY%d" % (k, y), R[k][y], sum(sum(rline(a)) for a in acct))
+    chk("federal programs add to the federal total, no remainder FY%d" % y, R["fp_oth"][y], 0.0)
+    chk("federal total equals the District Profile federal revenue FY%d" % y, R["fp_tot"][y], doe25.D[y]["rev_fed"], 1.01)
     beg_total[y] = last["bp"][-1]
 # roll-forward: this year's opening principal equals last year's closing principal (documented exceptions: FY2022 and FY2025)
 for y in range(2019, 2026):

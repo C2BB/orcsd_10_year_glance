@@ -156,8 +156,8 @@ dash.calc('headline', {
   var sel = 9;
   var mode = 'nom';
   var MODES = { nom: { label: 'Nominal dollars', f: null }, cpi: { label: 'Northeast CPI-U', f: 'f_cpi', idx: 'cpi_ne', n: 'cpi_ne_months', nn: 12 }, eci: { label: 'education labor costs (ECI)', f: 'f_eci', idx: 'eci_edu', n: 'eci_quarters', nn: 4 } };
-  var MONEY = ['tuit_priv', 'tuit_spub', 'tuit_voc', 'tuit_reg', 'tuit_tot', 'trans_reg', 'trans_sped', 'trans_voc', 'trans_oth', 'trans_tot', 'bond_prin', 'bond_int', 'ds_prin', 'ds_int', 'ds_tot', 'bond_p1', 'bond_p2', 'bond_p3', 'bond_p4', 'bond_p5', 'ds_n1', 'ds_n2', 'ds_n3', 'ds_n4', 'ds_n5', 'gfo_sal', 'gfo_ben', 'gfo_pur', 'gfo_sup', 'gfo_prop', 'gfo_oth', 'gfo_tot', 'gfo_sb', 'gfo_np', 'sch_mw', 'sch_mo', 'sch_ps', 'sch_ms', 'sch_hs', 'sch_od', 'sch_tot', 'pers_t_sal', 'pers_a_sal', 'pers_o_sal', 'pers_t_ben', 'pers_a_ben', 'pers_o_ben', 'pers_ao_sal', 'fe_gen_rev', 'fe_gen_exp', 'fe_gen_net', 'fe_gen_beg', 'fe_gen_end', 'fe_food_rev', 'fe_food_exp', 'fe_food_net', 'fe_food_beg', 'fe_food_end', 'fe_spr_rev', 'fe_spr_exp', 'fe_spr_net', 'fe_spr_beg', 'fe_spr_end', 'rsd_ins', 'rsd_rel', 'rsd_adm', 'rsd_leg', 'rsd_trn', 'rsd_tui', 'rsd_sub', 'rsd_tot', 'rsd_aid', 'rsd_idea', 'rsd_med', 'rsd_rev', 'rsd_net', 'fb_prep', 'fb_vote', 'fb_enc', 'fb_ret', 'fb_una', 'fb_trust', 'bd_unspent', 'bd_appr', 'bd_exp', 'dflt_gap', 'dflt', 'f10', 'f21', 'f22', 'f23', 'nhrs_npl', 'nhrs_do', 'nhrs_di', 'nhrs_exp', 'nhrs_con', 'nhrs_onl', 'nhrs_oexp', 'nhrs_ocon', 'debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
-  var NAMES = ['gfo', 'sps', 'pers', 'fres', 'nhrs', 'rsa', 'spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'bvx', 'dflt', 'timp', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts', 'peer', 'scat', 'peeradj', 'scat2', 'tuit', 'trans', 'bonds', 'dsvc', 'twprof', 'cpps', 'rks', 'rkt'];
+  var MONEY = ['food_sales', 'food_fed', 'food_state', 'food_oth', 'food_tot', 'fin_bonds', 'fin_res', 'oloc_inv', 'oloc_rent', 'oloc_oth', 'oloc_tot', 'fp_idea', 'fp_lunch', 'fp_title', 'fp_med', 'fp_relief', 'fp_oth', 'fp_tot', 'tuit_priv', 'tuit_spub', 'tuit_voc', 'tuit_reg', 'tuit_tot', 'trans_reg', 'trans_sped', 'trans_voc', 'trans_oth', 'trans_tot', 'bond_prin', 'bond_int', 'ds_prin', 'ds_int', 'ds_tot', 'bond_p1', 'bond_p2', 'bond_p3', 'bond_p4', 'bond_p5', 'ds_n1', 'ds_n2', 'ds_n3', 'ds_n4', 'ds_n5', 'gfo_sal', 'gfo_ben', 'gfo_pur', 'gfo_sup', 'gfo_prop', 'gfo_oth', 'gfo_tot', 'gfo_sb', 'gfo_np', 'sch_mw', 'sch_mo', 'sch_ps', 'sch_ms', 'sch_hs', 'sch_od', 'sch_tot', 'pers_t_sal', 'pers_a_sal', 'pers_o_sal', 'pers_t_ben', 'pers_a_ben', 'pers_o_ben', 'pers_ao_sal', 'fe_gen_rev', 'fe_gen_exp', 'fe_gen_net', 'fe_gen_beg', 'fe_gen_end', 'fe_food_rev', 'fe_food_exp', 'fe_food_net', 'fe_food_beg', 'fe_food_end', 'fe_spr_rev', 'fe_spr_exp', 'fe_spr_net', 'fe_spr_beg', 'fe_spr_end', 'rsd_ins', 'rsd_rel', 'rsd_adm', 'rsd_leg', 'rsd_trn', 'rsd_tui', 'rsd_sub', 'rsd_tot', 'rsd_aid', 'rsd_idea', 'rsd_med', 'rsd_rev', 'rsd_net', 'fb_prep', 'fb_vote', 'fb_enc', 'fb_ret', 'fb_una', 'fb_trust', 'bd_unspent', 'bd_appr', 'bd_exp', 'dflt_gap', 'dflt', 'f10', 'f21', 'f22', 'f23', 'nhrs_npl', 'nhrs_do', 'nhrs_di', 'nhrs_exp', 'nhrs_con', 'nhrs_onl', 'nhrs_oexp', 'nhrs_ocon', 'debt_total', 'debt_bonds', 'debt_pension', 'debt_opeb', 'netpos', 'debt_int', 'instr_sal', 'instr_ben', 'actual_recurring', 'actual_total', 'construction', 'budget', 'budget_per_student', 'nhed_cpp', 'cpp_el', 'cpp_ms', 'cpp_hs', 'spend_value', 'instr_amt', 'supp_amt', 'adm_amt', 'state_aid_amt', 'fn_reg', 'fn_spec', 'fn_voc', 'fn_oi', 'fn_ss', 'fn_isup', 'fn_gab', 'fn_sadm', 'fn_bus', 'fn_plant', 'fn_trans', 'fn_bint', 'fn_food', 'rev_local', 'rev_oth_local', 'rev_adeq', 'rev_ostate', 'rev_fed', 'rev_tot', 'spec_pps', 'plant_pps', 'trans_pps', 'debt_pps', 'local_pps', 'state_pps', 'adq_cost', 'adq_swept', 'adq_total', 'adq_extra', 'adq_base', 'adq_fr', 'adq_sped', 'adq_ell', 'adq_home', 'cpp_state_avg', 'cpp_k12_med', 'pps_dur', 'pps_lee', 'pps_mad', 'bld_aid', 'sp_ent', 'sp_paid', 'sp_cost', 'cte_tt', 'efa_po', 't_start', 't_start_state', 't_avg', 't_avg_state', 'ts_ma_max', 'ts_ma_max_nh', 'ts_ba_max', 'ts_ba_max_nh', 'co_sup', 'co_sup_med', 'co_asst', 'co_asst_med', 'co_ba', 'co_ba_med', 'levy_tot', 'levy_dur', 'levy_lee', 'levy_mad', 'cr_dur', 'cr_lee', 'cr_mad', 'efa_aid'];
+  var NAMES = ['gfo', 'sps', 'pers', 'fres', 'nhrs', 'rsa', 'spend', 'students', 'budget', 'ela', 'cpp', 'instr', 'local', 'math', 'sci', 'ben', 'fed', 'rate', 'sgp', 'grp', 'att', 'lvl', 'spec', 'adm', 'bldg', 'pay', 'aid', 'cmp', 'staff', 'share', 'base', 'tstart', 'tavg', 'tmax', 'cpay', 'ratio', 'lvlenr', 'fb', 'debt', 'bvx', 'dflt', 'timp', 'cls', 'sat', 'coll', 'sped', 'frl', 'ell', 'efa', 'drop', 'ctc', 'tdeg', 'texp', 'attlvl', 'proj', 'app', 'eff', 'sch', 'cred', 'pps3', 'vote', 'bldaid', 'spedaid', 'trunt', 'susp', 'bully', 'viol', 'restr', 'grad', 'part', 'cslr', 'cert', 'swd', 'town', 'essa', 'incl', 'nts', 'peer', 'scat', 'peeradj', 'scat2', 'tuit', 'trans', 'bonds', 'dsvc', 'twprof', 'cpps', 'rks', 'rkt', 'food', 'fedprog', 'othloc', 'fin'];
 
   var SCH = [['High school', 'hs'], ['Middle school', 'ms'], ['Mast Way', 'mw'], ['Moharimet', 'mo']];
   function schLines(r, fld, fmt) {
@@ -2098,6 +2098,90 @@ dash.calc('headline', {
   }
   ROWS.rks = rankRow('rks', 'school tax', 'School property tax per $1,000 of full value');
   ROWS.rkt = rankRow('rkt', 'total property tax', 'Total property tax per $1,000 of full value');
+
+  // ---- DOE-25 revenue detail: school meals, federal programs, other local revenue, borrowing and reserves ----
+  ROWS.food = {
+    money: true,
+    aria: 'School meal program: meal sales, federal reimbursement and program spending, by fiscal year',
+    domain: [0, 1400000], ticks: [0, 500000, 1000000], axis: false,
+    tickFmt: function (v) { return v === 0 ? '$0' : '$' + (v / 1e6) + 'M'; },
+    series: [
+      { id: 'exp', get: function (r) { return r.fe_food_exp; }, comp: true },
+      { id: 'fed', get: function (r) { return r.food_fed; }, alt: 'square' },
+      { id: 'sales', get: function (r) { return r.food_sales; }, main: true }
+    ],
+    label: function (r) {
+      if (r.food_sales == null) return nodata('DOE-25 for this year not yet filed', 'food_sales', 'years', 'Pending');
+      return { big: moneyM(r.food_sales, 2), sub: 'School meal sales (Food Service Fund)', delta: 'Federal reimbursement ' + moneyM(r.food_fed, 2) + ' · program spending ' + moneyM(r.fe_food_exp, 2), tag: 'Reported', prov: false, src: 'years', field: 'food_sales' };
+    },
+    tip: function (r) {
+      if (r.food_sales == null) return { lines: [['School meals', 'DOE-25 not yet filed']], note: 'The DOE-25 for this year has not been published.' };
+      return { lines: [['Meal sales', money(r.food_sales)], ['Federal child nutrition reimbursement', money(r.food_fed)], ['State child nutrition aid', money(r.food_state)], ['Donations, other and transfers', money(r.food_oth)], ['Total revenue', money(r.food_tot)], ['Program spending', money(r.fe_food_exp)]],
+        note: 'DOE-25 Food Service Fund revenue by source. In 2020-21 and 2021-22 sales fell and federal reimbursement rose, the years of the federal pandemic-era meal waivers; sales recovered afterward and federal reimbursement fell back.' };
+    }
+  };
+  ROWS.food.chg = { get: function (r) { return r.food_sales; }, kind: 'pct', note: 'meal sales' };
+  ROWS.fedprog = {
+    money: true,
+    aria: 'Federal aid by program: all federal aid, special education (IDEA) and pandemic relief, by fiscal year',
+    domain: [0, 2500000], ticks: [0, 1000000, 2000000], axis: false,
+    tickFmt: function (v) { return v === 0 ? '$0' : '$' + (v / 1e6) + 'M'; },
+    series: [
+      { id: 'relief', get: function (r) { return r.fp_relief; }, comp: true },
+      { id: 'idea', get: function (r) { return r.fp_idea; }, alt: 'square' },
+      { id: 'tot', get: function (r) { return r.fp_tot; }, main: true }
+    ],
+    label: function (r) {
+      if (r.fp_tot == null) return nodata('DOE-25 for this year not yet filed', 'fp_tot', 'years', 'Pending');
+      return { big: moneyM(r.fp_tot, 2), sub: 'Federal aid, all programs', delta: 'Special education (IDEA) ' + money(r.fp_idea) + ' · pandemic relief ' + money(r.fp_relief), tag: 'Reported', prov: false, src: 'years', field: 'fp_tot' };
+    },
+    tip: function (r) {
+      if (r.fp_tot == null) return { lines: [['Federal aid', 'DOE-25 not yet filed']], note: 'The DOE-25 for this year has not been published.' };
+      return { lines: [['Special education (IDEA)', money(r.fp_idea)], ['School lunch (child nutrition)', money(r.fp_lunch)], ['Title I and other ESEA', money(r.fp_title)], ['Medicaid distributions', money(r.fp_med)], ['Pandemic relief (ESSER and other)', money(r.fp_relief)], ['Total federal aid', money(r.fp_tot)]],
+        note: 'DOE-25 revenue from federal sources, all funds. The total equals the federal revenue on the DOE-25 District Profile in every year. Pandemic relief is the ESSER grant, other restricted federal aid passed through the state, and direct federal aid in 2020-21 to 2023-24.' };
+    }
+  };
+  ROWS.fedprog.chg = { get: function (r) { return r.fp_tot; }, kind: 'pct', note: 'federal aid' };
+  ROWS.othloc = {
+    money: true,
+    aria: 'General Fund other local revenue: all, earnings on investments and rentals, by fiscal year',
+    domain: [0, 400000], ticks: [0, 100000, 200000, 300000, 400000], axis: false,
+    tickFmt: function (v) { return v === 0 ? '$0' : '$' + (v / 1000) + 'K'; },
+    series: [
+      { id: 'rent', get: function (r) { return r.oloc_rent; }, comp: true },
+      { id: 'inv', get: function (r) { return r.oloc_inv; }, alt: 'square' },
+      { id: 'tot', get: function (r) { return r.oloc_tot; }, main: true }
+    ],
+    label: function (r) {
+      if (r.oloc_tot == null) return nodata('DOE-25 for this year not yet filed', 'oloc_tot', 'years', 'Pending');
+      return { big: money(r.oloc_tot), sub: 'Other local revenue, General Fund (not taxes, tuition or aid)', delta: 'Investment earnings ' + money(r.oloc_inv) + ' · rentals ' + money(r.oloc_rent), tag: 'Reported', prov: false, src: 'years', field: 'oloc_tot' };
+    },
+    tip: function (r) {
+      if (r.oloc_tot == null) return { lines: [['Other local revenue', 'DOE-25 not yet filed']], note: 'The DOE-25 for this year has not been published.' };
+      return { lines: [['Earnings on investments', money(r.oloc_inv)], ['Rentals', money(r.oloc_rent)], ['Other (donations, asset sales, miscellaneous)', money(r.oloc_oth)], ['Total other local revenue', money(r.oloc_tot)]],
+        note: 'DOE-25 General Fund column, accounts 1500, 1910, 1920, 1930 and 1990. The miscellaneous line varies a lot from year to year and was negative in 2023-24. Earnings of the trust funds are reported separately and are not included.' };
+    }
+  };
+  ROWS.othloc.chg = { get: function (r) { return r.oloc_tot; }, kind: 'pct', note: 'other local revenue' };
+  ROWS.fin = {
+    money: true,
+    aria: 'Bond and note proceeds received, and money moved into the General Fund from reserve and trust funds, by fiscal year',
+    domain: [0, 30000000], ticks: [0, 10000000, 20000000, 30000000], axis: false,
+    tickFmt: function (v) { return v === 0 ? '$0' : '$' + (v / 1e6) + 'M'; },
+    series: [
+      { id: 'res', get: function (r) { return r.fin_res; }, alt: 'square' },
+      { id: 'bonds', get: function (r) { return r.fin_bonds; }, main: true }
+    ],
+    label: function (r) {
+      if (r.fin_bonds == null) return nodata('DOE-25 for this year not yet filed', 'fin_bonds', 'years', 'Pending');
+      return { big: r.fin_bonds ? kM(r.fin_bonds) : '$0', sub: 'Bond and note proceeds received this year', delta: 'Moved in from reserve and trust funds ' + (r.fin_res ? kM(r.fin_res) : '$0'), tag: 'Reported', prov: false, src: 'years', field: 'fin_bonds' };
+    },
+    tip: function (r) {
+      if (r.fin_bonds == null) return { lines: [['Borrowing and reserves', 'DOE-25 not yet filed']], note: 'The DOE-25 for this year has not been published.' };
+      return { lines: [['Sale of bonds and notes (Capital Projects Fund)', money(r.fin_bonds)], ['From capital reserve and other trust funds (General Fund)', money(r.fin_res)]],
+        note: 'DOE-25 revenue and other financing sources. The bond proceeds of 2019-20 to 2021-22 are the borrowing behind the larger bond balance and construction spending shown elsewhere. Transfers from trust funds were $200,000 in 2021-22 and $500,000 in 2024-25; the DOE-25 does not say what they paid for.' };
+    }
+  };
   ROWS.sgp.chg = { get: function (r) { return r.sgp_rea; }, kind: 'pts', note: 'reading' };
   ROWS.grp.chg = { get: function (r) { return r.ela_iep; }, kind: 'pts', note: 'students with IEPs' };
   ROWS.att.chg = { get: function (r) { return r.att; }, kind: 'pts', dec: true };

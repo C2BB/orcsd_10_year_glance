@@ -143,6 +143,10 @@ Status per source: **file** = the original file is in `raw/`; **mixed** = some y
 | `cpps` | `cpp`, `assess` |
 | `rks` | `values` |
 | `rkt` | `values` |
+| `food` | `doe25` |
+| `fedprog` | `doe25` |
+| `othloc` | `doe25` |
+| `fin` | `doe25` |
 
 ## Mirrored but not charted
 

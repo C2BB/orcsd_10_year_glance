@@ -167,6 +167,36 @@ def fields():
         for i in range(5):
             put("bond_p%d" % (i + 1), y, _nz(rp[i]))
             put("ds_n%d" % (i + 1), y, _nz(nt[i]))
+
+        # ---- Revenue detail (DOE25 sheet, revenue lines; five fund columns: General, Food Service, Special Revenue, Capital Projects, Trust)
+        rv = [r for r in rows if r["sheet"] == "DOE25" and r.get("hdr") == "BALANCE SHEET" and 85 <= r["row"] <= 200]
+
+        def ra(acct):
+            m = [r for r in rv if r.get("acct") == acct and r["label"]]
+            assert len(m) <= 1, (y, acct, len(m))
+            return [_nz(x) for x in (list(m[0]["values"]) + [None] * 5)[:5]] if m else [0.0] * 5
+
+        def tot(prefix):
+            m = [r for r in rv if r["label"].strip().startswith(prefix)]
+            assert len(m) == 1, (y, prefix, len(m))
+            return [_nz(x) for x in (list(m[0]["values"]) + [None] * 5)[:5]]
+        # school meals (Food Service fund)
+        ftot = tot("Total Revenue & Other Financing Sources")[1]
+        put("food_sales", y, ra(1600)[1]); put("food_fed", y, ra(4560)[1]); put("food_state", y, ra(3260)[1])
+        put("food_tot", y, ftot)
+        put("food_oth", y, ftot - ra(1600)[1] - ra(4560)[1] - ra(3260)[1])
+        # money borrowed and drawn from reserve funds
+        put("fin_bonds", y, sum(ra(5100))); put("fin_res", y, ra(5250)[0])
+        # other local revenue, General Fund
+        otot = tot("Total Additional/Other Revenue")[0]
+        put("oloc_inv", y, ra(1500)[0]); put("oloc_rent", y, ra(1910)[0]); put("oloc_tot", y, otot)
+        put("oloc_oth", y, otot - ra(1500)[0] - ra(1910)[0])
+        # federal aid by program, all funds
+        ftotal = sum(ra(4000))
+        put("fp_idea", y, sum(ra(4570))); put("fp_lunch", y, sum(ra(4560))); put("fp_title", y, sum(ra(4520)) + sum(ra(4530)))
+        put("fp_med", y, sum(ra(4580))); put("fp_relief", y, sum(ra(4100)) + sum(ra(4590)) + sum(ra(4595)))
+        put("fp_tot", y, ftotal)
+        put("fp_oth", y, ftotal - sum(out[k][y] for k in ("fp_idea", "fp_lunch", "fp_title", "fp_med", "fp_relief")))
     return out
 
 
